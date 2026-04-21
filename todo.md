@@ -64,4 +64,8 @@
 - [x] Remove all emojis from UI
 - [x] Wire all features end-to-end
 - [x] Test mobile design on actual devices
-- [x] Final checkpoint with mobile pixel art design
+- [x] Refine pixel art buttons with chunky, blocky styling (3D shadows)
+- [x] Refine pixel art text boxes with pixelated borders (inset depth)
+- [x] Implement authentic pixel art font (Press Start 2P + VT323)
+- [x] Polish overall pixel art aesthetic and consistency
+- [x] Final checkpoint with refined pixel art UI

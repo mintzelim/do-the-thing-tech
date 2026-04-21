@@ -1,0 +1,554 @@
+/* Refined Pixel Art Design System - 8-bit Authentic Style */
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  /* Pixel Art Color Palette - Classic 8-bit */
+  --pixel-bg: #f0f0f0;
+  --pixel-card-bg: #ffffff;
+  --pixel-border: #000000;
+  --pixel-text: #1a1a1a;
+  --pixel-text-light: #666666;
+  --pixel-accent: #6366f1;
+  --pixel-accent-dark: #4f46e5;
+  --pixel-success: #10b981;
+  --pixel-error: #ef4444;
+  --pixel-shadow: #00000033;
+  
+  /* Pixel sizes for consistent grid */
+  --pixel-unit: 4px;
+  --pixel-border-width: 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'VT323', 'Courier New', monospace;
+  background-color: var(--pixel-bg);
+  color: var(--pixel-text);
+  line-height: 1.6;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile Phone Frame - Pixel Art Style */
+.mobile-frame {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--pixel-card-bg);
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  border-radius: 0;
+  overflow: hidden;
+  box-shadow: 
+    8px 8px 0 var(--pixel-shadow),
+    16px 16px 0 rgba(0, 0, 0, 0.1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Pixel Art Notch */
+.mobile-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 20px;
+  background: var(--pixel-border);
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  border-top: none;
+  z-index: 10;
+}
+
+.mobile-content {
+  flex: 1;
+  padding: 24px 16px 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    180deg,
+    var(--pixel-bg) 0%,
+    var(--pixel-bg) 100%
+  );
+}
+
+/* Typography - Pixel Art Fonts */
+.mobile-heading-1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  color: var(--pixel-text);
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-heading-2 {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+  color: var(--pixel-text);
+  letter-spacing: 1px;
+}
+
+.mobile-heading-3 {
+  font-family: 'VT323', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  color: var(--pixel-text);
+  letter-spacing: 0.5px;
+}
+
+.mobile-body-lg {
+  font-family: 'VT323', monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--pixel-text);
+  letter-spacing: 0.5px;
+}
+
+.mobile-body {
+  font-family: 'VT323', monospace;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--pixel-text-light);
+  letter-spacing: 0.5px;
+}
+
+.mobile-body-sm {
+  font-family: 'VT323', monospace;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--pixel-text-light);
+  letter-spacing: 0.5px;
+}
+
+/* Pixel Art Card */
+.mobile-card {
+  background: var(--pixel-card-bg);
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  border-radius: 0;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 
+    4px 4px 0 var(--pixel-shadow),
+    8px 8px 0 rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.mobile-card::after {
+  content: '';
+  position: absolute;
+  top: var(--pixel-border-width);
+  left: var(--pixel-border-width);
+  right: var(--pixel-border-width);
+  bottom: var(--pixel-border-width);
+  pointer-events: none;
+  background: 
+    linear-gradient(90deg, transparent 0%, transparent calc(100% - 1px), rgba(255, 255, 255, 0.5) calc(100% - 1px), rgba(255, 255, 255, 0.5) 100%),
+    linear-gradient(180deg, transparent 0%, transparent calc(100% - 1px), rgba(0, 0, 0, 0.1) calc(100% - 1px), rgba(0, 0, 0, 0.1) 100%);
+}
+
+.mobile-card-accent {
+  border-color: var(--pixel-accent);
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3f4ff 100%);
+}
+
+/* Pixel Art Input */
+.mobile-input,
+.mobile-textarea {
+  width: 100%;
+  padding: 12px;
+  font-family: 'VT323', monospace;
+  font-size: 13px;
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  border-radius: 0;
+  background: var(--pixel-card-bg);
+  color: var(--pixel-text);
+  transition: all 0.1s ease;
+  margin-bottom: 12px;
+  box-shadow: 
+    inset 2px 2px 0 rgba(0, 0, 0, 0.1),
+    inset -2px -2px 0 rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
+}
+
+.mobile-input:focus,
+.mobile-textarea:focus {
+  outline: none;
+  border-color: var(--pixel-accent);
+  box-shadow: 
+    inset 2px 2px 0 rgba(0, 0, 0, 0.1),
+    inset -2px -2px 0 rgba(255, 255, 255, 0.5),
+    0 0 0 3px var(--pixel-accent);
+}
+
+.mobile-textarea {
+  resize: vertical;
+  min-height: 100px;
+  font-size: 12px;
+}
+
+/* Pixel Art Button - Chunky 8-bit Style */
+.mobile-button {
+  width: 100%;
+  padding: 14px 16px;
+  font-family: 'VT323', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  border-radius: 0;
+  background: var(--pixel-accent);
+  color: white;
+  cursor: pointer;
+  transition: all 0.05s ease;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 
+    4px 4px 0 var(--pixel-border),
+    8px 8px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  user-select: none;
+}
+
+.mobile-button:active {
+  transform: translate(4px, 4px);
+  box-shadow: 
+    0 0 0 var(--pixel-border),
+    4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-button:hover:not(:disabled) {
+  background: var(--pixel-accent-dark);
+}
+
+.mobile-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mobile-button-secondary {
+  background: var(--pixel-card-bg);
+  color: var(--pixel-accent);
+  border-color: var(--pixel-accent);
+}
+
+.mobile-button-secondary:active {
+  background: #f3f4ff;
+}
+
+.mobile-button-success {
+  background: var(--pixel-success);
+  border-color: var(--pixel-border);
+}
+
+.mobile-button-small {
+  padding: 8px 12px;
+  font-size: 11px;
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 8px;
+  box-shadow: 
+    2px 2px 0 var(--pixel-border),
+    4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-button-small:active {
+  transform: translate(2px, 2px);
+  box-shadow: 
+    0 0 0 var(--pixel-border),
+    2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Pixel Art Preset Buttons */
+.mobile-preset-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.mobile-preset-button {
+  flex: 1;
+  min-width: 80px;
+  padding: 10px 12px;
+  font-family: 'VT323', monospace;
+  font-size: 11px;
+  font-weight: 400;
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  border-radius: 0;
+  background: var(--pixel-card-bg);
+  color: var(--pixel-text);
+  cursor: pointer;
+  transition: all 0.05s ease;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 
+    2px 2px 0 var(--pixel-shadow),
+    4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.mobile-preset-button.active {
+  background: var(--pixel-accent);
+  color: white;
+  border-color: var(--pixel-border);
+  box-shadow: 
+    2px 2px 0 var(--pixel-border),
+    4px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-preset-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 
+    0 0 0 var(--pixel-shadow),
+    2px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Pixel Art Slider */
+.mobile-slider {
+  width: 100%;
+  height: 8px;
+  border-radius: 0;
+  background: linear-gradient(90deg, #e0e7ff 0%, var(--pixel-accent) 100%);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 16px 0;
+  border: 2px solid var(--pixel-border);
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  background: var(--pixel-accent);
+  cursor: pointer;
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 0;
+  background: var(--pixel-accent);
+  cursor: pointer;
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Pixel Art Checkbox */
+.mobile-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--pixel-accent);
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  border-radius: 0;
+}
+
+/* Pixel Art Task Item */
+.mobile-task-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: var(--pixel-border-width) solid var(--pixel-border);
+  border-radius: 0;
+  margin-bottom: 12px;
+  background: var(--pixel-card-bg);
+  align-items: flex-start;
+  box-shadow: 
+    2px 2px 0 var(--pixel-shadow),
+    4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+.mobile-task-item.completed {
+  opacity: 0.6;
+  background: #f5f5f5;
+}
+
+.mobile-task-checkbox {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.mobile-task-content {
+  flex: 1;
+}
+
+.mobile-task-title {
+  font-family: 'VT323', monospace;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 4px;
+  color: var(--pixel-text);
+  letter-spacing: 0.5px;
+}
+
+.mobile-task-desc {
+  font-family: 'VT323', monospace;
+  font-size: 11px;
+  color: var(--pixel-text-light);
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.mobile-task-time {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mobile-task-time-input {
+  width: 50px;
+  padding: 6px 8px;
+  font-family: 'VT323', monospace;
+  font-size: 11px;
+  border: 2px solid var(--pixel-border);
+  border-radius: 0;
+  background: var(--pixel-card-bg);
+  color: var(--pixel-text);
+  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-task-delete {
+  padding: 6px 10px;
+  font-family: 'VT323', monospace;
+  font-size: 10px;
+  background: #ffebee;
+  color: var(--pixel-error);
+  border: 2px solid var(--pixel-error);
+  border-radius: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.05s ease;
+  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-task-delete:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Pixel Art Summary Card */
+.mobile-summary {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3f4ff 100%);
+  border: var(--pixel-border-width) solid var(--pixel-accent);
+  border-radius: 0;
+  padding: 16px;
+  margin-bottom: 16px;
+  color: var(--pixel-text);
+  box-shadow: 
+    3px 3px 0 var(--pixel-shadow),
+    6px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.mobile-summary-label {
+  font-family: 'VT323', monospace;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--pixel-text-light);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mobile-summary-value {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--pixel-accent);
+  line-height: 1.2;
+}
+
+/* Pixel Art Success Message */
+.mobile-success-message {
+  background: #d1fae5;
+  border: var(--pixel-border-width) solid var(--pixel-success);
+  border-radius: 0;
+  padding: 20px 16px;
+  text-align: center;
+  box-shadow: 
+    4px 4px 0 var(--pixel-shadow),
+    8px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.mobile-success-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--pixel-success);
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+.mobile-success-text {
+  font-family: 'VT323', monospace;
+  font-size: 12px;
+  color: var(--pixel-text);
+  letter-spacing: 0.5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .mobile-frame {
+    border-radius: 0;
+    border: 2px solid var(--pixel-border);
+  }
+  
+  .mobile-content {
+    padding: 16px 12px;
+  }
+  
+  .mobile-heading-1 {
+    font-size: 24px;
+  }
+}
+
+/* Animations - Pixel Art Style */
+@keyframes pixel-blink {
+  0%, 49%, 100% { opacity: 1; }
+  50%, 99% { opacity: 0; }
+}
+
+@keyframes pixel-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+.pixel-blink {
+  animation: pixel-blink 1s infinite;
+}
+
+.pixel-bounce {
+  animation: pixel-bounce 0.3s ease-out;
+}

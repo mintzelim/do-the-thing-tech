@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
-import "../mobile-pixel-theme.css";
+import "../pixel-art-refined.css";
 
 type Step = {
   id: string;
@@ -130,10 +130,10 @@ export default function Home() {
         {/* Flow: Input */}
         {flowState === "input" && (
           <>
-            <h1 className="mobile-heading-1">Do The Thing</h1>
+            <h1 className="mobile-heading-1">DO THE THING</h1>
 
             <div className="mobile-card">
-              <h2 className="mobile-heading-2">I need to...</h2>
+              <h2 className="mobile-heading-2">I NEED TO...</h2>
               <p className="mobile-body" style={{ marginBottom: "16px" }}>
                 Enter a single task or brain dump everything you need to do.
               </p>
@@ -147,7 +147,7 @@ export default function Home() {
 
               <div style={{ marginBottom: "20px" }}>
                 <p className="mobile-body-lg" style={{ marginBottom: "12px", fontWeight: 600 }}>
-                  Task Breakdown Size
+                  TASK BREAKDOWN SIZE
                 </p>
 
                 <div className="mobile-preset-group">
@@ -155,19 +155,19 @@ export default function Home() {
                     className={`mobile-preset-button ${granularityPreset === "tiny" ? "active" : ""}`}
                     onClick={() => handleGranularityPreset("tiny")}
                   >
-                    Tiny Steps
+                    TINY
                   </button>
                   <button
                     className={`mobile-preset-button ${granularityPreset === "balanced" ? "active" : ""}`}
                     onClick={() => handleGranularityPreset("balanced")}
                   >
-                    Balanced
+                    BALANCED
                   </button>
                   <button
                     className={`mobile-preset-button ${granularityPreset === "big" ? "active" : ""}`}
                     onClick={() => handleGranularityPreset("big")}
                   >
-                    Big
+                    BIG
                   </button>
                 </div>
 
@@ -189,7 +189,7 @@ export default function Home() {
                 onClick={handleBrainDumpSubmit}
                 disabled={isLoading || !brainDump.trim()}
               >
-                {isLoading ? "Processing..." : "Break It Down"}
+                {isLoading ? "PROCESSING..." : "BREAK IT DOWN"}
               </button>
             </div>
           </>
@@ -198,15 +198,15 @@ export default function Home() {
         {/* Flow: Breakdown */}
         {flowState === "breakdown" && (
           <>
-            <h1 className="mobile-heading-1">Your Tasks</h1>
+            <h1 className="mobile-heading-1">YOUR TASKS</h1>
 
             <div className="mobile-summary">
-              <div className="mobile-summary-label">Total Time</div>
+              <div className="mobile-summary-label">TOTAL TIME</div>
               <div className="mobile-summary-value">
-                {Math.round(totalTime / 60)}h {totalTime % 60}m
+                {Math.round(totalTime / 60)}H {totalTime % 60}M
               </div>
               <div className="mobile-body-sm" style={{ marginTop: "8px" }}>
-                {completedCount} of {steps.length} completed
+                {completedCount} OF {steps.length} DONE
               </div>
             </div>
 
@@ -262,7 +262,7 @@ export default function Home() {
               disabled={isLoading || steps.length === 0}
               className="mobile-button"
             >
-              {isLoading ? "Exporting..." : "Export to Calendar"}
+              {isLoading ? "EXPORTING..." : "EXPORT TO CALENDAR"}
             </button>
           </>
         )}
@@ -272,9 +272,9 @@ export default function Home() {
           <>
             <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center" }}>
               <div className="mobile-success-message">
-                <div className="mobile-success-title">Success!</div>
+                <div className="mobile-success-title">SUCCESS!</div>
                 <div className="mobile-success-text">
-                  Your {steps.length} tasks have been exported to your calendar.
+                  {steps.length} TASKS EXPORTED TO CALENDAR
                 </div>
               </div>
             </div>
@@ -287,7 +287,7 @@ export default function Home() {
               }}
               className="mobile-button"
             >
-              Start Over
+              START OVER
             </button>
           </>
         )}
