@@ -73,3 +73,85 @@
 - [x] Restore focus level selector (Hyperfocus, Normal, Distracted) to input screen
 - [x] Add countdown timer to total time display (clickable, red highlight when active)
 - [x] Final checkpoint with all UI improvements
+
+## Guest Mode & Profile System
+- [ ] Implement guest mode (no login required)
+- [ ] Create optional profile creation flow with skip option
+- [ ] Add 5-question onboarding (neurodivergent, work env, distractions, work style, biggest challenge)
+- [ ] Store profile data in database
+- [ ] Create user_profiles table in schema
+- [ ] Implement profile editing UI
+- [ ] Add "Create Profile" button to home screen
+
+## Personalization Engine
+- [ ] Create personalization scoring system based on profile answers
+- [ ] Adjust task breakdown granularity based on profile
+- [ ] Customize time estimates based on work style and distractions
+- [ ] Add break suggestions based on distraction patterns
+- [ ] Implement personalized breakdown prompts for LLM
+
+## Subscription & Monetization
+- [ ] Implement free vs paid tier logic
+- [ ] Add Stripe integration for payments
+- [ ] Create subscription check for Google export features
+- [ ] Add ad system for free tier (Google AdSense or similar)
+- [ ] Implement ad-free experience for paid users
+- [ ] Create billing/subscription management UI
+- [ ] Add subscription status indicator in header
+
+## Google Integration
+- [ ] Set up Google OAuth flow for login
+- [ ] Implement Google Calendar export with OAuth
+- [ ] Implement Google Tasks export with OAuth
+- [ ] Add login requirement check before exports
+- [ ] Handle OAuth token refresh and expiration
+- [ ] Add "Connect Google" button to export screen
+
+## Database Schema Updates
+- [ ] Add user_profiles table with 5 profile questions
+- [ ] Add subscriptions table for tracking paid users
+- [ ] Add user_preferences table for personalization settings
+- [ ] Add google_oauth_tokens table for token storage
+- [ ] Update users table with subscription_id foreign key
+
+## UI/UX Improvements
+- [ ] Create profile onboarding modal/flow
+- [ ] Add "Skip for now" button to profile questions
+- [ ] Add profile indicator in header (guest/profile created)
+- [ ] Create subscription banner for free users
+- [ ] Add "Upgrade to remove ads" CTA
+- [ ] Create settings/profile management page
+- [ ] Add Google login button to export screen
+
+## Final Polish & Deployment
+- [ ] Test guest mode flow end-to-end
+- [ ] Test profile creation and personalization
+- [ ] Test subscription checkout flow
+- [ ] Test Google OAuth integration
+- [ ] Test ad display on free tier
+- [ ] Verify ad-free experience on paid tier
+- [ ] Performance optimization for lightweight experience
+- [ ] Final checkpoint with complete feature set
+- [ ] Deploy to production
+
+## Content & SEO
+- [x] Create About page explaining ADHD and DoTheThing mission
+- [x] Write 5 SEO/GEO-optimized blog posts
+- [x] Integrate blog into website navigation
+- [ ] Add meta tags and structured data for SEO (optional enhancement)
+- [x] Create blog listing page
+- [x] Add blog post routing
+
+## Blog Post Topics (SEO/GEO Optimized)
+- [x] Blog 1: "How ADHD Affects Task Management" (global + local variations)
+- [x] Blog 2: "Time Blindness in ADHD: Why You're Always Late" (time management focus)
+- [x] Blog 3: "Breaking Down Big Tasks: A Guide for ADHD Brains" (productivity focus)
+- [x] Blog 4: "Executive Dysfunction and Task Paralysis: What's the Difference?" (education focus)
+- [x] Blog 5: "Best Tools for ADHD Task Management in 2024" (comparison/review focus)
+
+## Final Deployment
+- [x] Test About page and blog navigation
+- [ ] Verify SEO meta tags and structured data (optional enhancement)
+- [x] Test blog post routing
+- [x] Final checkpoint with complete website
+- [ ] Deploy to production

@@ -38,3 +38,48 @@ export const taskSessions = mysqlTable("task_sessions", {
 
 export type TaskSession = typeof taskSessions.$inferSelect;
 export type InsertTaskSession = typeof taskSessions.$inferInsert;
+
+export const userProfiles = mysqlTable("user_profiles", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull().references(() => users.id, { onDelete: "cascade" }).unique(),
+  isNeurodivergent: varchar("isNeurodivergent", { length: 50 }),
+  workEnvironment: varchar("workEnvironment", { length: 100 }),
+  mainDistraction: varchar("mainDistraction", { length: 100 }),
+  workStyle: varchar("workStyle", { length: 100 }),
+  biggestChallenge: varchar("biggestChallenge", { length: 100 }),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type UserProfile = typeof userProfiles.$inferSelect;
+export type InsertUserProfile = typeof userProfiles.$inferInsert;
+
+export const subscriptions = mysqlTable("subscriptions", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull().references(() => users.id, { onDelete: "cascade" }).unique(),
+  stripeCustomerId: varchar("stripeCustomerId", { length: 255 }),
+  stripeSubscriptionId: varchar("stripeSubscriptionId", { length: 255 }),
+  plan: mysqlEnum("plan", ["free", "pro"]).default("free").notNull(),
+  status: mysqlEnum("status", ["active", "canceled", "past_due"]).default("active").notNull(),
+  currentPeriodStart: timestamp("currentPeriodStart"),
+  currentPeriodEnd: timestamp("currentPeriodEnd"),
+  canceledAt: timestamp("canceledAt"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type Subscription = typeof subscriptions.$inferSelect;
+export type InsertSubscription = typeof subscriptions.$inferInsert;
+
+export const googleOAuthTokens = mysqlTable("google_oauth_tokens", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull().references(() => users.id, { onDelete: "cascade" }).unique(),
+  accessToken: text("accessToken").notNull(),
+  refreshToken: text("refreshToken"),
+  expiresAt: timestamp("expiresAt"),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type GoogleOAuthToken = typeof googleOAuthTokens.$inferSelect;
+export type InsertGoogleOAuthToken = typeof googleOAuthTokens.$inferInsert;

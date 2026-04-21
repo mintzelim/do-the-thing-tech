@@ -15,6 +15,13 @@
       "when": 1776776847853,
       "tag": "0001_mature_daimon_hellstrom",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1776781028678,
+      "tag": "0002_breezy_invaders",
+      "breakpoints": true
     }
   ]
 }

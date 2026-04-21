@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "wouter";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
@@ -17,6 +18,7 @@ type GranularityPreset = "tiny" | "balanced" | "big";
 
 export default function Home() {
   const { user, isAuthenticated } = useAuth();
+  const [, navigate] = useLocation();
   const [flowState, setFlowState] = useState<FlowState>("input");
   const [brainDump, setBrainDump] = useState("");
   const [focusLevel, setFocusLevel] = useState<"hyperfocus" | "normal" | "distracted">("normal");
@@ -367,6 +369,27 @@ export default function Home() {
           </>
         )}
       </div>
+      
+      {/* Footer Navigation */}
+      <footer className="border-t-2 border-border p-4 bg-card text-center space-y-3">
+        <div className="flex gap-2 justify-center flex-wrap">
+          <button
+            onClick={() => navigate("/about")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            ABOUT
+          </button>
+          <button
+            onClick={() => navigate("/blog")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            BLOG
+          </button>
+        </div>
+        <p className="font-vt323 text-xs text-muted-foreground">
+          DoTheThing - Task Management for ADHD Brains
+        </p>
+      </footer>
     </div>
   );
 }
