@@ -68,4 +68,6 @@
 - [x] Refine pixel art text boxes with pixelated borders (inset depth)
 - [x] Implement authentic pixel art font (Press Start 2P + VT323)
 - [x] Polish overall pixel art aesthetic and consistency
-- [x] Final checkpoint with refined pixel art UI
+- [x] Increase body text size for better readability (14-16px body, 15px task titles)
+- [x] Add back button to return to edit from breakdown view
+- [x] Final checkpoint with all UI improvements

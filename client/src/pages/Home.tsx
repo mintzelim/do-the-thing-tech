@@ -198,7 +198,16 @@ export default function Home() {
         {/* Flow: Breakdown */}
         {flowState === "breakdown" && (
           <>
-            <h1 className="mobile-heading-1">YOUR TASKS</h1>
+            <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
+              <button
+                onClick={() => setFlowState("input")}
+                className="mobile-button-small"
+                style={{ marginBottom: 0 }}
+              >
+                BACK
+              </button>
+              <h1 className="mobile-heading-1" style={{ margin: 0 }}>YOUR TASKS</h1>
+            </div>
 
             <div className="mobile-summary">
               <div className="mobile-summary-label">TOTAL TIME</div>
