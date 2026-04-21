@@ -142,12 +142,22 @@
 - [x] Create blog listing page
 - [x] Add blog post routing
 
-## Blog Post Topics (SEO/GEO Optimized)
-- [x] Blog 1: "How ADHD Affects Task Management" (global + local variations)
+## Blog Post Topics (SEO/GEO Optimized - 15 Total)
+- [x] Blog 1: "How ADHD Affects Task Management" (neuroscience focus)
 - [x] Blog 2: "Time Blindness in ADHD: Why You're Always Late" (time management focus)
 - [x] Blog 3: "Breaking Down Big Tasks: A Guide for ADHD Brains" (productivity focus)
 - [x] Blog 4: "Executive Dysfunction and Task Paralysis: What's the Difference?" (education focus)
-- [x] Blog 5: "Best Tools for ADHD Task Management in 2024" (comparison/review focus)
+- [x] Blog 5: "Best Tools for ADHD Task Management in 2024" (tools/comparison focus)
+- [x] Blog 6: "ADHD Medication and Productivity: How to Work With Your Brain Chemistry" (neuroscience focus)
+- [x] Blog 7: "The Neuroscience Behind Task Avoidance: Why You Procrastinate" (psychology focus)
+- [x] Blog 8: "Remote Work and ADHD: Strategies for Staying Focused at Home" (work-from-home focus)
+- [x] Blog 9: "ADHD and Perfectionism: Why You Can't Finish Tasks" (psychology focus)
+- [x] Blog 10: "ADHD and Relationships: How Task Management Affects Your Connections" (relationships focus)
+- [x] Blog 11: "ADHD in the Workplace: How to Succeed in Your Career" (career focus)
+- [x] Blog 12: "ADHD and Sleep: How Poor Sleep Makes Executive Dysfunction Worse" (health focus)
+- [x] Blog 13: "ADHD and Financial Management: Why You Struggle With Money" (finance focus)
+- [x] Blog 14: "ADHD and Creativity: How to Channel Hyperfocus Into Your Passion" (creativity focus)
+- [x] Blog 15: "Free Tools for ADHD Task Management in 2026" (tools/resources focus)
 
 ## Final Deployment
 - [x] Test About page and blog navigation
@@ -156,7 +166,7 @@
 - [x] Fix: Increase font sizes in main tool (Home page) (36px headings, 18-20px body)
 - [x] Convert blog posts from markdown to plain text (readable paragraphs)
 - [x] Apply pixel art UI design to About page (cards, borders, styling)
-- [ ] Verify SEO meta tags and structured data (optional enhancement)
+- [x] Add all 15 SEO/GEO-optimized blog posts (2026 current date, AI visibility optimized)
 - [x] Test blog post routing
-- [ ] Final checkpoint with complete website
+- [x] Final checkpoint with complete website
 - [ ] Deploy to production
