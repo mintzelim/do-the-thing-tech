@@ -31,16 +31,7 @@ export default function Home() {
 
   const breakdownMutation = trpc.tasks.breakdown.useMutation();
   const estimateMutation = trpc.tasks.estimateTasks.useMutation();
-  const exportMutation = trpc.tasks.exportToCalendar.useQuery(
-    {
-      tasks: steps.map((s) => ({
-        title: s.title,
-        description: s.description,
-        estimatedTime: s.estimatedTime,
-      })),
-    },
-    { enabled: false }
-  );
+  const exportMutation = trpc.tasks.exportToCalendar.useMutation();
 
   const handleBrainDumpSubmit = async () => {
     if (!brainDump.trim()) {
@@ -122,11 +113,23 @@ export default function Home() {
 
     setIsLoading(true);
     try {
-      // Export logic would go here
-      toast.success("Tasks exported to calendar");
-      setFlowState("export");
+      const calendarEvents = await exportMutation.mutateAsync({
+        tasks: steps.map((s) => ({
+          title: s.title,
+          description: s.description,
+          estimatedTime: s.estimatedTime,
+        })),
+      });
+
+      if (calendarEvents && calendarEvents.totalEvents > 0) {
+        toast.success(`${calendarEvents.totalEvents} tasks exported to calendar`);
+        setFlowState("export");
+      } else {
+        toast.error("Failed to generate calendar events");
+      }
     } catch (error) {
       toast.error("Failed to export tasks");
+      console.error(error);
     } finally {
       setIsLoading(false);
     }

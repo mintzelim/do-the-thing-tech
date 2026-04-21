@@ -114,7 +114,7 @@ export const appRouter = router({
           startDate: z.date().optional(),
         })
       )
-      .query(async ({ input }) => {
+      .mutation(async ({ input }) => {
         const { generateCalendarEvents, estimateTotalCalendarTime, formatForGoogleCalendar } = await import(
           "../server/services/googleCalendarExport"
         );
