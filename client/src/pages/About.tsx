@@ -9,10 +9,10 @@ export default function About() {
         {/* Back Button */}
         <button
           onClick={() => navigate("/")}
-          className="font-pressstart text-sm mb-8 text-black border-4 border-black px-4 py-3 active:translate-y-1 active:shadow-none transition-all hover:bg-gray-100"
+          className="text-sm mb-8 text-black border-4 border-black px-4 py-3 active:translate-y-1 active:shadow-none transition-all hover:bg-gray-100"
           style={{
             boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
-            fontFamily: 'Press Start 2P, monospace',
+            fontFamily: 'VT323, monospace',
             fontSize: '12px',
             letterSpacing: '2px'
           }}
@@ -24,8 +24,8 @@ export default function About() {
         <div className="border-4 border-black p-6 mb-8 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h1 className="font-pressstart text-4xl md:text-5xl mb-4 text-black" style={{
-            fontFamily: 'Press Start 2P, monospace',
+          <h1 className="text-4xl md:text-5xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
             fontSize: '36px',
             letterSpacing: '3px',
             lineHeight: '1.2'
@@ -33,7 +33,7 @@ export default function About() {
             ABOUT DO THE THING
           </h1>
           <p className="text-lg md:text-xl text-gray-700" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '18px',
             lineHeight: '1.6'
           }}>
@@ -45,15 +45,15 @@ export default function About() {
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'Press Start 2P, monospace',
+          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
             fontSize: '24px',
             letterSpacing: '2px'
           }}>
             OUR MISSION
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '16px',
             lineHeight: '1.8'
           }}>
@@ -70,15 +70,15 @@ export default function About() {
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'Press Start 2P, monospace',
+          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
             fontSize: '24px',
             letterSpacing: '2px'
           }}>
             ADHD AND TASK MANAGEMENT
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '16px',
             lineHeight: '1.8'
           }}>
@@ -100,15 +100,15 @@ export default function About() {
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'Press Start 2P, monospace',
+          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
             fontSize: '24px',
             letterSpacing: '2px'
           }}>
             WHY DO THE THING EXISTS
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '16px',
             lineHeight: '1.8'
           }}>
@@ -132,15 +132,15 @@ export default function About() {
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'Press Start 2P, monospace',
+          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
             fontSize: '24px',
             letterSpacing: '2px'
           }}>
             HOW IT WORKS
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '16px',
             lineHeight: '1.8'
           }}>
@@ -171,15 +171,15 @@ export default function About() {
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'Press Start 2P, monospace',
+          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
             fontSize: '24px',
             letterSpacing: '2px'
           }}>
             KEY FEATURES
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '16px',
             lineHeight: '1.8'
           }}>
@@ -214,15 +214,15 @@ export default function About() {
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'Press Start 2P, monospace',
+          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
             fontSize: '24px',
             letterSpacing: '2px'
           }}>
             FOR WHOM
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '16px',
             lineHeight: '1.8'
           }}>
@@ -241,15 +241,15 @@ export default function About() {
         <div className="border-4 border-black p-6 mb-8 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'Press Start 2P, monospace',
+          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
             fontSize: '24px',
             letterSpacing: '2px'
           }}>
             READY TO DO THE THING?
           </h2>
           <p className="text-base md:text-lg text-gray-700 mb-6" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '16px',
             lineHeight: '1.8'
           }}>
@@ -257,10 +257,10 @@ export default function About() {
           </p>
           <button
             onClick={() => navigate("/")}
-            className="font-pressstart text-sm md:text-base bg-black text-white border-4 border-black px-6 py-4 hover:bg-gray-800 active:translate-y-1 active:shadow-none transition-all"
+            className="text-sm md:text-base bg-black text-white border-4 border-black px-6 py-4 hover:bg-gray-800 active:translate-y-1 active:shadow-none transition-all"
             style={{
               boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
-              fontFamily: 'Press Start 2P, monospace',
+              fontFamily: 'VT323, monospace',
               fontSize: '14px',
               letterSpacing: '2px'
             }}
@@ -272,7 +272,7 @@ export default function About() {
         {/* Footer */}
         <div className="text-center pt-8 border-t-4 border-black">
           <p className="text-sm md:text-base text-gray-600" style={{
-            fontFamily: 'Inter, sans-serif',
+            fontFamily: 'VT323, monospace',
             fontSize: '14px'
           }}>
             DoTheThing is a free tool designed for neurodivergent individuals. Built with care by people who understand ADHD.

@@ -581,19 +581,19 @@ export default function Blog() {
         <div className="max-w-2xl mx-auto">
           <button
             onClick={() => setSelectedPost(null)}
-            className="font-pressstart text-sm mb-6 text-blue-600 hover:text-blue-800 border-2 border-blue-600 px-3 py-2"
+            className="text-sm mb-6 text-black hover:text-gray-800 border-2 border-black px-3 py-2" style={{ fontFamily: 'VT323, monospace' }}
           >
             BACK TO ALL POSTS
           </button>
 
-          <h1 className="font-pressstart text-2xl md:text-3xl mb-4 text-black border-2 border-black p-4">
+          <h1 className="text-2xl md:text-3xl mb-4 text-black border-2 border-black p-4" style={{ fontFamily: 'VT323, monospace' }}>
             {post.title}
           </h1>
 
-          <div className="text-sm text-gray-600 mb-6 space-y-1">
+          <div className="text-sm text-gray-600 mb-6 space-y-1" style={{ fontFamily: 'VT323, monospace' }}>
             <p>{post.date}</p>
             <p>{post.readTime}</p>
-            <p className="text-blue-600">{post.category}</p>
+            <p className="text-gray-700">{post.category}</p>
             <div className="flex flex-wrap gap-2 mt-2">
               {post.seoKeywords.map((keyword, idx) => (
                 <span key={idx} className="text-xs bg-gray-200 px-2 py-1">
@@ -603,7 +603,7 @@ export default function Blog() {
             </div>
           </div>
 
-          <div className="prose prose-sm max-w-none border-2 border-black p-4 mb-8">
+          <div className="prose prose-sm max-w-none border-2 border-black p-4 mb-8" style={{ fontFamily: 'VT323, monospace' }}>
             {post.content.split('\n\n').map((paragraph, idx) => (
               <p key={idx} className="text-gray-700 mb-4 leading-relaxed text-base">
                 {paragraph}
@@ -613,7 +613,7 @@ export default function Blog() {
 
           <button
             onClick={() => setSelectedPost(null)}
-            className="font-pressstart text-sm mb-6 text-blue-600 hover:text-blue-800 border-2 border-blue-600 px-3 py-2"
+            className="text-sm mb-6 text-black hover:text-gray-800 border-2 border-black px-3 py-2" style={{ fontFamily: 'VT323, monospace' }}
           >
             BACK TO ALL POSTS
           </button>
@@ -627,16 +627,16 @@ export default function Blog() {
       <div className="max-w-2xl mx-auto">
         <button
           onClick={() => setLocation('/')}
-          className="font-pressstart text-sm mb-6 text-blue-600 hover:text-blue-800 border-2 border-blue-600 px-3 py-2"
+          className="text-sm mb-6 text-black hover:text-gray-800 border-2 border-black px-3 py-2" style={{ fontFamily: 'VT323, monospace' }}
         >
           BACK TO HOME
         </button>
 
-        <h1 className="font-pressstart text-3xl md:text-4xl mb-2 text-black border-2 border-black p-4">
+        <h1 className="text-3xl md:text-4xl mb-2 text-black border-2 border-black p-4" style={{ fontFamily: 'VT323, monospace' }}>
           BLOG
         </h1>
 
-        <p className="text-gray-600 mb-8 text-base">
+        <p className="text-gray-600 mb-8 text-base" style={{ fontFamily: 'VT323, monospace' }}>
           Resources and insights for ADHD task management
         </p>
 
@@ -645,12 +645,12 @@ export default function Blog() {
             <div
               key={post.id}
               onClick={() => setSelectedPost(post.id)}
-              className="border-2 border-black p-4 cursor-pointer hover:bg-blue-50 transition"
+              className="border-2 border-black p-4 cursor-pointer hover:bg-gray-100 transition"
             >
-              <h2 className="font-pressstart text-lg mb-2 text-black">
+              <h2 className="text-lg mb-2 text-black" style={{ fontFamily: 'VT323, monospace' }}>
                 {post.title}
               </h2>
-              <p className="text-gray-700 mb-3 text-sm">
+              <p className="text-gray-700 mb-3 text-sm" style={{ fontFamily: 'VT323, monospace' }}>
                 {post.excerpt}
               </p>
               <div className="flex justify-between items-center text-xs text-gray-600">

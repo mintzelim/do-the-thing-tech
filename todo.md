@@ -172,5 +172,6 @@
 - [x] Fix About page colors to match Home page (no new colors, black/white/gray only)
 - [x] Fix TypeScript error in storageProxy.ts
 - [x] Fix JSX error in Blog.tsx
+- [x] Update all fonts to VT323 (remove Press Start 2P, use VT323 for all text)
 - [ ] Final checkpoint with complete website
 - [ ] Deploy to production
