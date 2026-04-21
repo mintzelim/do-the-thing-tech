@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLocation } from "wouter";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { trpc } from "@/lib/trpc";
@@ -13,7 +13,7 @@ type Step = {
   estimatedTime: number;
 };
 
-type FlowState = "input" | "focus" | "breakdown" | "export";
+type FlowState = "input" | "breakdown" | "completion";
 type GranularityPreset = "tiny" | "balanced" | "big";
 
 export default function Home() {
@@ -28,11 +28,94 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [timerActive, setTimerActive] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(0);
+  const clickSoundRef = useRef<HTMLAudioElement | null>(null);
+
+  // Load persisted state from localStorage
+  useEffect(() => {
+    const savedState = localStorage.getItem('doTheThing_state');
+    if (savedState) {
+      try {
+        const parsed = JSON.parse(savedState);
+        setBrainDump(parsed.brainDump || '');
+        setFocusLevel(parsed.focusLevel || 'normal');
+        setGranularity(parsed.granularity || 50);
+        setGranularityPreset(parsed.granularityPreset || 'balanced');
+        setSteps(parsed.steps || []);
+        setFlowState(parsed.flowState || 'input');
+        setTimeRemaining(parsed.timeRemaining || 0);
+      } catch (error) {
+        console.error('Failed to load saved state:', error);
+      }
+    }
+  }, []);
+
+  // Save state to localStorage whenever it changes
+  useEffect(() => {
+    const state = {
+      brainDump,
+      focusLevel,
+      granularity,
+      granularityPreset,
+      steps,
+      flowState,
+      timeRemaining,
+    };
+    localStorage.setItem('doTheThing_state', JSON.stringify(state));
+  }, [brainDump, focusLevel, granularity, granularityPreset, steps, flowState, timeRemaining]);
 
   const breakdownMutation = trpc.tasks.breakdown.useMutation();
   const estimateMutation = trpc.tasks.estimateTasks.useMutation();
-  const exportMutation = trpc.tasks.exportToCalendar.useMutation();
 
+  // Create click sound on component mount
+  useEffect(() => {
+    const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+    const oscillator = audioContext.createOscillator();
+    const gainNode = audioContext.createGain();
+    oscillator.connect(gainNode);
+    gainNode.connect(audioContext.destination);
+    
+    // Store reference for later use
+    clickSoundRef.current = { audioContext, oscillator, gainNode } as any;
+  }, []);
+
+  // Play satisfying click sound
+  const playClickSound = () => {
+    try {
+      const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+      
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+      
+      oscillator.frequency.value = 800;
+      oscillator.type = "sine";
+      
+      gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+      
+      oscillator.start(audioContext.currentTime);
+      oscillator.stop(audioContext.currentTime + 0.1);
+    } catch (error) {
+      console.error("Could not play sound:", error);
+    }
+  };
+
+  // Tab close confirmation
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      if (steps.length > 0 && flowState === "breakdown") {
+        e.preventDefault();
+        e.returnValue = "";
+        return "";
+      }
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, [steps, flowState]);
+
+  // Timer countdown
   useEffect(() => {
     if (!timerActive || timeRemaining <= 0) {
       setTimerActive(false);
@@ -59,6 +142,19 @@ export default function Home() {
     if (preset === "tiny") setGranularity(20);
     if (preset === "balanced") setGranularity(50);
     if (preset === "big") setGranularity(80);
+  };
+
+  // Sync slider with presets when slider is manually adjusted
+  const handleSliderChange = (value: number) => {
+    setGranularity(value);
+    // Auto-detect which preset the slider is closest to
+    if (value <= 35) {
+      setGranularityPreset("tiny");
+    } else if (value <= 65) {
+      setGranularityPreset("balanced");
+    } else {
+      setGranularityPreset("big");
+    }
   };
 
   const handleBrainDumpSubmit = async () => {
@@ -101,9 +197,21 @@ export default function Home() {
   };
 
   const toggleStepComplete = (stepId: string) => {
-    setSteps((prev) =>
-      prev.map((s) => (s.id === stepId ? { ...s, completed: !s.completed } : s))
-    );
+    playClickSound();
+    
+    setSteps((prev) => {
+      const updated = prev.map((s) => (s.id === stepId ? { ...s, completed: !s.completed } : s));
+      
+      // Check if all tasks are completed
+      const allCompleted = updated.every((s) => s.completed);
+      if (allCompleted && updated.length > 0) {
+        setTimeout(() => {
+          setFlowState("completion");
+        }, 500);
+      }
+      
+      return updated;
+    });
   };
 
   const updateStepTime = (stepId: string, time: number) => {
@@ -114,36 +222,6 @@ export default function Home() {
 
   const deleteStep = (stepId: string) => {
     setSteps((prev) => prev.filter((s) => s.id !== stepId));
-  };
-
-  const handleExport = async () => {
-    if (steps.length === 0) {
-      toast.error("No steps to export");
-      return;
-    }
-
-    setIsLoading(true);
-    try {
-      const calendarEvents = await exportMutation.mutateAsync({
-        tasks: steps.map((s) => ({
-          title: s.title,
-          description: s.description,
-          estimatedTime: s.estimatedTime,
-        })),
-      });
-
-      if (calendarEvents && calendarEvents.totalEvents > 0) {
-        toast.success(`${calendarEvents.totalEvents} tasks exported`);
-        setFlowState("export");
-      } else {
-        toast.error("Failed to generate calendar events");
-      }
-    } catch (error) {
-      toast.error("Failed to export tasks");
-      console.error(error);
-    } finally {
-      setIsLoading(false);
-    }
   };
 
   const totalTime = timerActive ? timeRemaining : steps.reduce((sum, s) => sum + s.estimatedTime, 0);
@@ -229,10 +307,7 @@ export default function Home() {
                   min="0"
                   max="100"
                   value={granularity}
-                  onChange={(e) => {
-                    setGranularity(parseInt(e.target.value));
-                    setGranularityPreset("balanced");
-                  }}
+                  onChange={(e) => handleSliderChange(parseInt(e.target.value))}
                 />
               </div>
 
@@ -333,25 +408,23 @@ export default function Home() {
                 </div>
               ))}
             </div>
-
-            <button
-              onClick={handleExport}
-              disabled={isLoading || steps.length === 0}
-              className="mobile-button"
-            >
-              {isLoading ? "EXPORTING..." : "EXPORT TO CALENDAR"}
-            </button>
           </>
         )}
 
-        {/* Flow: Export Success */}
-        {flowState === "export" && (
+        {/* Flow: Completion */}
+        {flowState === "completion" && (
           <>
-            <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: "24px" }}>
               <div className="mobile-success-message">
-                <div className="mobile-success-title">SUCCESS!</div>
-                <div className="mobile-success-text">
-                  {steps.length} TASKS EXPORTED TO CALENDAR
+                <div className="mobile-success-title" style={{ fontSize: "48px", marginBottom: "16px" }}>
+                  🎉
+                </div>
+                <div className="mobile-success-title">YOU DID IT!</div>
+                <div className="mobile-success-text" style={{ marginTop: "12px" }}>
+                  ALL {steps.length} TASKS COMPLETED
+                </div>
+                <div className="mobile-body" style={{ marginTop: "12px", color: "var(--pixel-text-light)" }}>
+                  Amazing work! You crushed it today.
                 </div>
               </div>
             </div>
@@ -361,6 +434,8 @@ export default function Home() {
                 setFlowState("input");
                 setBrainDump("");
                 setSteps([]);
+                setTimerActive(false);
+                localStorage.removeItem('doTheThing_state');
               }}
               className="mobile-button"
             >

@@ -174,5 +174,13 @@
 - [x] Fix JSX error in Blog.tsx
 - [x] Update all fonts to VT323 (remove Press Start 2P, use VT323 for all text)
 - [x] Update home page copy to "TODAY, I NEED TO..." (instead of "I NEED TO...")
+- [x] Remove calendar export feature (no longer needed)
+- [x] Fix slider to sync with presets (slider should match selected preset position)
+- [x] Add satisfying click sound when tasks are crossed off
+- [x] Add positive completion message when all tasks are done
+- [x] Add tab close confirmation alert (warn before closing tab)
+- [x] Persist task state so users can keep tab open and work on tasks
+- [x] Implement localStorage persistence for all task state
+- [x] Improve slider-preset synchronization (auto-detect closest preset)
 - [ ] Final checkpoint with complete website
 - [ ] Deploy to production
