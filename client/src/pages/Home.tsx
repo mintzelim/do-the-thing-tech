@@ -1,13 +1,8 @@
 import { useState } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
-import { Button } from "@/components/ui/button";
-import { Textarea } from "@/components/ui/textarea";
-import { Slider } from "@/components/ui/slider";
-import { Checkbox } from "@/components/ui/checkbox";
-import { Card } from "@/components/ui/card";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
-import { ChevronRight, Loader2, Check } from "lucide-react";
+import "../pixel-art-theme.css";
 
 type Step = {
   id: string;
@@ -18,6 +13,7 @@ type Step = {
 };
 
 type FlowState = "input" | "estimates" | "breakdown" | "export";
+type GranularityPreset = "tiny" | "balanced" | "big";
 
 export default function Home() {
   const { user, isAuthenticated } = useAuth();
@@ -25,6 +21,7 @@ export default function Home() {
   const [brainDump, setBrainDump] = useState("");
   const [focusLevel, setFocusLevel] = useState<"hyperfocus" | "normal" | "distracted">("normal");
   const [granularity, setGranularity] = useState(50);
+  const [granularityPreset, setGranularityPreset] = useState<GranularityPreset>("balanced");
   const [steps, setSteps] = useState<Step[]>([]);
   const [estimatedTasks, setEstimatedTasks] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -32,6 +29,14 @@ export default function Home() {
   const breakdownMutation = trpc.tasks.breakdown.useMutation();
   const estimateMutation = trpc.tasks.estimateTasks.useMutation();
   const exportMutation = trpc.tasks.exportToCalendar.useMutation();
+
+  // Granularity preset handler
+  const handleGranularityPreset = (preset: GranularityPreset) => {
+    setGranularityPreset(preset);
+    if (preset === "tiny") setGranularity(20);
+    if (preset === "balanced") setGranularity(50);
+    if (preset === "big") setGranularity(80);
+  };
 
   const handleBrainDumpSubmit = async () => {
     if (!brainDump.trim()) {
@@ -41,7 +46,6 @@ export default function Home() {
 
     setIsLoading(true);
     try {
-      // First, get estimates for the brain dump
       const compiled = await breakdownMutation.mutateAsync({
         input: brainDump,
         granularity,
@@ -139,255 +143,254 @@ export default function Home() {
   const completedCount = steps.filter((s) => s.completed).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="flex">
-        {/* Main Content */}
-        <div className="flex-1 p-8 max-w-4xl mx-auto">
-          {/* Header */}
-          <div className="mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">DoTheThing</h1>
-            <p className="text-gray-600">
-              {isAuthenticated ? `Welcome, ${user?.name}` : "Break down your tasks into manageable steps"}
-            </p>
-          </div>
+    <div style={{ backgroundColor: "#1a1a2e", minHeight: "100vh", padding: "20px" }}>
+      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+        {/* Header */}
+        <div style={{ marginBottom: "40px" }}>
+          <h1 className="pixel-heading pixel-heading-large">DoTheThing</h1>
+          <p className="pixel-text" style={{ color: "#16c784", marginTop: "8px" }}>
+            {isAuthenticated ? `Welcome, ${user?.name}` : "Break down your tasks"}
+          </p>
+        </div>
 
-          {/* Flow: Input */}
-          {flowState === "input" && (
-            <div className="space-y-6">
-              <Card className="p-8 border-2 border-gray-200">
-                <div className="mb-6">
-                  <label className="block text-lg font-semibold text-gray-900 mb-3">
-                    I need to...
-                  </label>
-                  <p className="text-sm text-gray-600 mb-4">
-                    Enter a single task or brain dump everything you need to do. Be as specific or vague as you want.
-                  </p>
+        {/* Flow: Input */}
+        {flowState === "input" && (
+          <div style={{ marginBottom: "20px" }}>
+            <div className="pixel-card" style={{ padding: "24px" }}>
+              <h2 className="pixel-heading">I need to...</h2>
+
+              <p className="pixel-text" style={{ color: "#f5f5f5", marginTop: "16px", marginBottom: "16px" }}>
+                Enter a single task or brain dump everything you need to do.
+              </p>
+
+              <textarea
+                className="pixel-textarea"
+                placeholder="e.g., Write project proposal, update documentation, respond to emails"
+                value={brainDump}
+                onChange={(e) => setBrainDump(e.target.value)}
+                style={{
+                  width: "100%",
+                  minHeight: "120px",
+                  marginBottom: "20px",
+                  boxSizing: "border-box",
+                }}
+              />
+
+              <div style={{ marginBottom: "20px" }}>
+                <p className="pixel-text" style={{ color: "#f5f5f5", marginBottom: "12px" }}>
+                  Task Breakdown Size
+                </p>
+
+                {/* Granularity Presets */}
+                <div style={{ display: "flex", gap: "8px", marginBottom: "12px", flexWrap: "wrap" }}>
+                  <button
+                    className={`pixel-preset-button ${granularityPreset === "tiny" ? "active" : ""}`}
+                    onClick={() => handleGranularityPreset("tiny")}
+                  >
+                    Tiny Steps
+                  </button>
+                  <button
+                    className={`pixel-preset-button ${granularityPreset === "balanced" ? "active" : ""}`}
+                    onClick={() => handleGranularityPreset("balanced")}
+                  >
+                    Balanced
+                  </button>
+                  <button
+                    className={`pixel-preset-button ${granularityPreset === "big" ? "active" : ""}`}
+                    onClick={() => handleGranularityPreset("big")}
+                  >
+                    Big Milestones
+                  </button>
                 </div>
 
-                <Textarea
-                  placeholder="e.g., Write project proposal, update documentation, respond to emails, plan team meeting"
-                  value={brainDump}
-                  onChange={(e) => setBrainDump(e.target.value)}
-                  className="min-h-32 text-base"
+                {/* Granularity Slider */}
+                <input
+                  type="range"
+                  className="pixel-slider"
+                  min="0"
+                  max="100"
+                  value={granularity}
+                  onChange={(e) => {
+                    setGranularity(parseInt(e.target.value));
+                    setGranularityPreset("balanced"); // Reset preset when manually adjusting
+                  }}
+                  style={{ width: "100%", marginBottom: "8px" }}
                 />
 
-                <div className="mt-6 space-y-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Task Breakdown Size
-                    </label>
-                    <div className="flex items-center gap-4">
-                      <span className="text-xs text-gray-600">Tiny Steps</span>
-                      <Slider
-                        value={[granularity]}
-                        onValueChange={(val) => setGranularity(val[0])}
-                        min={0}
-                        max={100}
-                        step={10}
-                        className="flex-1"
-                      />
-                      <span className="text-xs text-gray-600">Big Milestones</span>
-                    </div>
-                    <div className="mt-2 text-xs text-gray-600">
-                      {granularity < 33 && "Tiny steps - very detailed breakdown"}
-                      {granularity >= 33 && granularity < 66 && "Balanced - moderate detail"}
-                      {granularity >= 66 && "Big milestones - high-level overview"}
-                    </div>
-                  </div>
-                </div>
-
-                <Button
-                  onClick={handleBrainDumpSubmit}
-                  disabled={isLoading || !brainDump.trim()}
-                  className="w-full mt-6 h-12 text-base font-semibold bg-blue-500 hover:bg-blue-600"
-                >
-                  {isLoading ? (
-                    <>
-                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                      Processing...
-                    </>
-                  ) : (
-                    <>
-                      Break It Down
-                      <ChevronRight className="w-4 h-4 ml-2" />
-                    </>
-                  )}
-                </Button>
-              </Card>
-            </div>
-          )}
-
-          {/* Flow: Estimates */}
-          {flowState === "estimates" && (
-            <div className="space-y-6">
-              <Card className="p-8 border-2 border-gray-200">
-                <h2 className="text-2xl font-bold text-gray-900 mb-6">How focused are you?</h2>
-
-                <div className="space-y-3 mb-8">
-                  {(["hyperfocus", "normal", "distracted"] as const).map((level) => (
-                    <button
-                      key={level}
-                      onClick={() => setFocusLevel(level)}
-                      className={`w-full p-4 text-left rounded-lg border-2 transition-colors ${
-                        focusLevel === level
-                          ? "border-blue-500 bg-blue-50"
-                          : "border-gray-200 bg-white hover:border-gray-300"
-                      }`}
-                    >
-                      <div className="font-semibold text-gray-900 capitalize">{level}</div>
-                      <div className="text-sm text-gray-600 mt-1">
-                        {level === "hyperfocus" && "You can focus deeply with minimal distractions"}
-                        {level === "normal" && "You have typical focus and attention span"}
-                        {level === "distracted" && "You're easily distracted and need more buffer time"}
-                      </div>
-                    </button>
-                  ))}
-                </div>
-
-                <Button
-                  onClick={handleEstimatesToBreakdown}
-                  disabled={isLoading}
-                  className="w-full h-12 text-base font-semibold bg-blue-500 hover:bg-blue-600"
-                >
-                  {isLoading ? (
-                    <>
-                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                      Estimating...
-                    </>
-                  ) : (
-                    <>
-                      Get Time Estimates
-                      <ChevronRight className="w-4 h-4 ml-2" />
-                    </>
-                  )}
-                </Button>
-              </Card>
-            </div>
-          )}
-
-          {/* Flow: Breakdown */}
-          {flowState === "breakdown" && (
-            <div className="space-y-6">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-gray-900">Your Tasks</h2>
-                <div className="text-sm text-gray-600">
-                  {completedCount} of {steps.length} completed
+                <div style={{ display: "flex", justifyContent: "space-between" }}>
+                  <span className="pixel-text" style={{ fontSize: "10px", color: "#888888" }}>
+                    Tiny
+                  </span>
+                  <span className="pixel-text" style={{ fontSize: "10px", color: "#888888" }}>
+                    Big
+                  </span>
                 </div>
               </div>
 
-              <div className="space-y-3">
-                {steps.map((step) => (
-                  <Card
-                    key={step.id}
-                    className={`p-4 border-2 transition-colors ${
-                      step.completed ? "border-green-200 bg-green-50" : "border-gray-200 bg-white"
-                    }`}
+              <button
+                className="pixel-button"
+                onClick={handleBrainDumpSubmit}
+                disabled={isLoading || !brainDump.trim()}
+                style={{ width: "100%", padding: "16px" }}
+              >
+                {isLoading ? "Processing..." : "Break It Down"}
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Flow: Estimates */}
+        {flowState === "estimates" && (
+          <div style={{ marginBottom: "20px" }}>
+            <div className="pixel-card" style={{ padding: "24px" }}>
+              <h2 className="pixel-heading">How focused are you?</h2>
+
+              <div style={{ marginTop: "20px", marginBottom: "20px" }}>
+                {(["hyperfocus", "normal", "distracted"] as const).map((level) => (
+                  <button
+                    key={level}
+                    className={`pixel-focus-button ${focusLevel === level ? "active" : ""}`}
+                    onClick={() => setFocusLevel(level)}
                   >
-                    <div className="flex items-start gap-4">
-                      <Checkbox
-                        checked={step.completed}
-                        onCheckedChange={() => toggleStepComplete(step.id)}
-                        className="mt-1"
-                      />
-
-                      <div className="flex-1">
-                        <h3
-                          className={`font-semibold ${
-                            step.completed ? "text-gray-500 line-through" : "text-gray-900"
-                          }`}
-                        >
-                          {step.title}
-                        </h3>
-                        {step.description && (
-                          <p className="text-sm text-gray-600 mt-1">{step.description}</p>
-                        )}
-                      </div>
-
-                      <div className="flex items-center gap-2">
-                        <input
-                          type="number"
-                          min="5"
-                          max="480"
-                          value={step.estimatedTime}
-                          onChange={(e) => updateStepTime(step.id, parseInt(e.target.value))}
-                          className="w-16 px-2 py-1 text-sm border border-gray-300 rounded text-center"
-                        />
-                        <span className="text-sm text-gray-600 w-8">min</span>
-                        <button
-                          onClick={() => deleteStep(step.id)}
-                          className="px-2 py-1 text-sm text-red-600 hover:bg-red-50 rounded"
-                        >
-                          Delete
-                        </button>
-                      </div>
+                    <div style={{ marginBottom: "4px" }}>{level.toUpperCase()}</div>
+                    <div style={{ fontSize: "10px" }}>
+                      {level === "hyperfocus" && "Deep focus, minimal distractions"}
+                      {level === "normal" && "Typical focus and attention"}
+                      {level === "distracted" && "Easily distracted, need buffer time"}
                     </div>
-                  </Card>
+                  </button>
                 ))}
               </div>
 
-              <Card className="p-4 bg-blue-50 border-2 border-blue-200">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <p className="text-sm text-gray-600">Total estimated time</p>
-                    <p className="text-2xl font-bold text-gray-900">
-                      {Math.round(totalTime / 60)}h {totalTime % 60}m
-                    </p>
-                  </div>
-                  <Button
-                    onClick={handleExport}
-                    disabled={isLoading || steps.length === 0}
-                    className="h-12 px-8 text-base font-semibold bg-green-500 hover:bg-green-600"
-                  >
-                    {isLoading ? (
-                      <>
-                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                        Exporting...
-                      </>
-                    ) : (
-                      "Export to Calendar"
-                    )}
-                  </Button>
-                </div>
-              </Card>
-            </div>
-          )}
-
-          {/* Flow: Export Success */}
-          {flowState === "export" && (
-            <Card className="p-8 border-2 border-green-200 bg-green-50 text-center">
-              <Check className="w-12 h-12 text-green-600 mx-auto mb-4" />
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">All set!</h2>
-              <p className="text-gray-600 mb-6">Your tasks have been exported to Google Calendar</p>
-              <Button
-                onClick={() => {
-                  setFlowState("input");
-                  setBrainDump("");
-                  setSteps([]);
-                }}
-                className="bg-blue-500 hover:bg-blue-600"
+              <button
+                className="pixel-button"
+                onClick={handleEstimatesToBreakdown}
+                disabled={isLoading}
+                style={{ width: "100%", padding: "16px" }}
               >
-                Start Over
-              </Button>
-            </Card>
-          )}
-        </div>
-
-        {/* Sidebar - Ads */}
-        <div className="w-80 bg-white border-l border-gray-200 p-6 hidden lg:block">
-          <div className="space-y-6">
-            <div className="bg-gray-100 rounded-lg p-6 text-center text-gray-500 text-sm">
-              Advertisement
-            </div>
-            <div className="bg-gray-100 rounded-lg p-6 text-center text-gray-500 text-sm">
-              Advertisement
+                {isLoading ? "Estimating..." : "Get Time Estimates"}
+              </button>
             </div>
           </div>
-        </div>
-      </div>
+        )}
 
-      {/* Bottom Ad Banner */}
-      <div className="bg-white border-t border-gray-200 p-4 text-center text-gray-500 text-sm lg:hidden">
-        Advertisement
+        {/* Flow: Breakdown */}
+        {flowState === "breakdown" && (
+          <div style={{ marginBottom: "20px" }}>
+            <div style={{ marginBottom: "20px" }}>
+              <h2 className="pixel-heading">Your Tasks</h2>
+              <p className="pixel-text" style={{ color: "#888888", marginTop: "8px" }}>
+                {completedCount} of {steps.length} completed
+              </p>
+            </div>
+
+            <div style={{ marginBottom: "20px" }}>
+              {steps.map((step) => (
+                <div
+                  key={step.id}
+                  className="pixel-card"
+                  style={{
+                    padding: "16px",
+                    marginBottom: "12px",
+                    opacity: step.completed ? 0.6 : 1,
+                  }}
+                >
+                  <div style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                    <input
+                      type="checkbox"
+                      className="pixel-checkbox"
+                      checked={step.completed}
+                      onChange={() => toggleStepComplete(step.id)}
+                      style={{ marginTop: "4px" }}
+                    />
+
+                    <div style={{ flex: 1 }}>
+                      <h3
+                        className="pixel-text"
+                        style={{
+                          textDecoration: step.completed ? "line-through" : "none",
+                          color: step.completed ? "#888888" : "#f5f5f5",
+                          marginBottom: "4px",
+                        }}
+                      >
+                        {step.title}
+                      </h3>
+                      {step.description && (
+                        <p className="pixel-text" style={{ fontSize: "10px", color: "#cccccc" }}>
+                          {step.description}
+                        </p>
+                      )}
+                    </div>
+
+                    <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                      <input
+                        type="number"
+                        min="5"
+                        max="480"
+                        value={step.estimatedTime}
+                        onChange={(e) => updateStepTime(step.id, parseInt(e.target.value))}
+                        className="pixel-input"
+                        style={{ width: "60px", padding: "8px", fontSize: "10px" }}
+                      />
+                      <span className="pixel-text" style={{ fontSize: "10px" }}>min</span>
+                      <button
+                        onClick={() => deleteStep(step.id)}
+                        className="pixel-preset-button"
+                        style={{ padding: "6px 12px", fontSize: "10px" }}
+                      >
+                        Del
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="pixel-card" style={{ padding: "20px", backgroundColor: "#0f3460" }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                <div>
+                  <p className="pixel-text" style={{ fontSize: "10px", color: "#888888", marginBottom: "4px" }}>
+                    Total Time
+                  </p>
+                  <p className="pixel-heading" style={{ fontSize: "20px", color: "#16c784" }}>
+                    {Math.round(totalTime / 60)}h {totalTime % 60}m
+                  </p>
+                </div>
+                <button
+                  onClick={handleExport}
+                  disabled={isLoading || steps.length === 0}
+                  className="pixel-button"
+                  style={{ padding: "16px 24px" }}
+                >
+                  {isLoading ? "Exporting..." : "Export"}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Flow: Export Success */}
+        {flowState === "export" && (
+          <div className="pixel-card" style={{ padding: "32px", textAlign: "center", backgroundColor: "#00d084" }}>
+            <h2 className="pixel-heading" style={{ color: "#1a1a2e", marginBottom: "16px" }}>
+              SUCCESS!
+            </h2>
+            <p className="pixel-text" style={{ color: "#1a1a2e", marginBottom: "24px" }}>
+              Your tasks have been exported to calendar
+            </p>
+            <button
+              onClick={() => {
+                setFlowState("input");
+                setBrainDump("");
+                setSteps([]);
+              }}
+              className="pixel-button"
+              style={{ padding: "16px 32px" }}
+            >
+              Start Over
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

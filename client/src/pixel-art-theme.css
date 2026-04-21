@@ -1,0 +1,353 @@
+/* Pixel Art 3D Design System for DoTheThing */
+
+/* Retro Pixel Art Color Palette */
+:root {
+  /* Primary colors - Retro gaming aesthetic */
+  --pixel-dark: #1a1a2e;
+  --pixel-blue: #0f3460;
+  --pixel-cyan: #16c784;
+  --pixel-purple: #e94560;
+  --pixel-yellow: #ffd700;
+  --pixel-orange: #ff8c00;
+  --pixel-green: #00d084;
+  --pixel-red: #ff4444;
+  --pixel-white: #f5f5f5;
+  --pixel-gray: #888888;
+  --pixel-light-gray: #cccccc;
+  
+  /* 3D Shadow colors */
+  --pixel-shadow-dark: #0a0a1a;
+  --pixel-shadow-light: #ffffff;
+}
+
+/* Pixel Art Font Stack */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: var(--pixel-dark);
+  color: var(--pixel-white);
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+/* 3D Pixel Button Style */
+.pixel-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  padding: 12px 24px;
+  border: none;
+  background: linear-gradient(135deg, var(--pixel-blue) 0%, var(--pixel-cyan) 100%);
+  color: var(--pixel-white);
+  cursor: pointer;
+  position: relative;
+  transform: translateY(0);
+  transition: all 0.1s ease;
+  
+  /* 3D effect with box-shadow */
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    4px 4px 0px var(--pixel-shadow-dark),
+    8px 8px 0px rgba(0, 0, 0, 0.3);
+}
+
+.pixel-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    6px 6px 0px var(--pixel-shadow-dark),
+    10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.pixel-button:active {
+  transform: translateY(2px);
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    2px 2px 0px var(--pixel-shadow-dark),
+    4px 4px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* 3D Pixel Text Input */
+.pixel-input,
+.pixel-textarea {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  padding: 12px;
+  background-color: var(--pixel-white);
+  color: var(--pixel-dark);
+  border: none;
+  
+  /* 3D beveled border effect */
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    3px 3px 0px var(--pixel-shadow-dark);
+}
+
+.pixel-input:focus,
+.pixel-textarea:focus {
+  outline: none;
+  background-color: var(--pixel-light-gray);
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    3px 3px 0px var(--pixel-cyan);
+}
+
+/* 3D Pixel Card/Panel */
+.pixel-card {
+  background-color: var(--pixel-blue);
+  padding: 20px;
+  border: none;
+  
+  /* 3D beveled effect */
+  box-shadow: 
+    inset -3px -3px 0px var(--pixel-shadow-dark),
+    inset 3px 3px 0px var(--pixel-shadow-light),
+    6px 6px 0px var(--pixel-shadow-dark),
+    10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+/* 3D Pixel Checkbox */
+.pixel-checkbox {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: var(--pixel-cyan);
+  
+  /* Make checkbox appear more pixelated */
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: var(--pixel-white);
+  border: 2px solid var(--pixel-dark);
+  box-shadow: 
+    inset -1px -1px 0px var(--pixel-shadow-dark),
+    inset 1px 1px 0px var(--pixel-shadow-light),
+    2px 2px 0px var(--pixel-shadow-dark);
+}
+
+.pixel-checkbox:checked {
+  background-color: var(--pixel-cyan);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%231a1a2e' d='M2 8l4 4 8-8'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px;
+}
+
+/* Pixel Art Slider */
+.pixel-slider {
+  width: 100%;
+  height: 12px;
+  border-radius: 0;
+  background: linear-gradient(90deg, var(--pixel-blue), var(--pixel-cyan));
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light);
+}
+
+.pixel-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, var(--pixel-yellow), var(--pixel-orange));
+  cursor: pointer;
+  border-radius: 0;
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    3px 3px 0px var(--pixel-shadow-dark);
+}
+
+.pixel-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, var(--pixel-yellow), var(--pixel-orange));
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    3px 3px 0px var(--pixel-shadow-dark);
+}
+
+/* Pixel Art Heading */
+.pixel-heading {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  color: var(--pixel-cyan);
+  text-shadow: 
+    2px 2px 0px var(--pixel-shadow-dark),
+    4px 4px 0px var(--pixel-purple);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.pixel-heading-large {
+  font-size: 32px;
+}
+
+.pixel-heading-small {
+  font-size: 16px;
+}
+
+/* Pixel Art Text */
+.pixel-text {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+/* Pixel Art Preset Button */
+.pixel-preset-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 11px;
+  padding: 8px 16px;
+  margin: 4px;
+  border: none;
+  background-color: var(--pixel-gray);
+  color: var(--pixel-white);
+  cursor: pointer;
+  position: relative;
+  
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    3px 3px 0px var(--pixel-shadow-dark);
+}
+
+.pixel-preset-button.active {
+  background-color: var(--pixel-cyan);
+  color: var(--pixel-dark);
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    3px 3px 0px var(--pixel-cyan);
+}
+
+.pixel-preset-button:hover {
+  background-color: var(--pixel-blue);
+}
+
+/* Pixel Art Container */
+.pixel-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Pixel Art Focus Level Button */
+.pixel-focus-button {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  padding: 16px 24px;
+  margin: 8px;
+  width: 100%;
+  border: none;
+  background-color: var(--pixel-blue);
+  color: var(--pixel-white);
+  cursor: pointer;
+  text-align: left;
+  
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    4px 4px 0px var(--pixel-shadow-dark);
+}
+
+.pixel-focus-button.active {
+  background-color: var(--pixel-cyan);
+  color: var(--pixel-dark);
+}
+
+.pixel-focus-button:hover {
+  background-color: var(--pixel-purple);
+  color: var(--pixel-white);
+}
+
+/* Pixel Art Animations */
+@keyframes pixel-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes pixel-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.pixel-pulse {
+  animation: pixel-pulse 0.5s ease-in-out infinite;
+}
+
+.pixel-bounce {
+  animation: pixel-bounce 0.4s ease-in-out infinite;
+}
+
+/* Pixel Art Divider */
+.pixel-divider {
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--pixel-cyan),
+    var(--pixel-cyan) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+  margin: 16px 0;
+}
+
+/* Pixel Art Success Message */
+.pixel-success {
+  background-color: var(--pixel-green);
+  color: var(--pixel-dark);
+  padding: 16px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    4px 4px 0px var(--pixel-shadow-dark);
+}
+
+/* Pixel Art Error Message */
+.pixel-error {
+  background-color: var(--pixel-red);
+  color: var(--pixel-white);
+  padding: 16px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  box-shadow: 
+    inset -2px -2px 0px var(--pixel-shadow-dark),
+    inset 2px 2px 0px var(--pixel-shadow-light),
+    4px 4px 0px var(--pixel-shadow-dark);
+}
+
+/* Responsive Pixel Art */
+@media (max-width: 768px) {
+  .pixel-heading {
+    font-size: 18px;
+  }
+  
+  .pixel-heading-large {
+    font-size: 24px;
+  }
+  
+  .pixel-text {
+    font-size: 10px;
+  }
+  
+  .pixel-button {
+    font-size: 10px;
+    padding: 8px 16px;
+  }
+}

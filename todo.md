@@ -4,7 +4,8 @@
 - [x] Define refined color palette and typography system
 - [x] Create ADHD-friendly design tokens in Tailwind
 - [x] Build core layout with sidebar (for ads) and main content area
-- [x] Set up Google Ads placeholder zones (sidebar + bottom banner)
+- [x] Remove all Google Ads zones and code
+- [x] Implement pixel art 3D aesthetic design
 - [x] Update fonts to Clash Display (headlines) and Inter (body)
 
 ## Core Entry Point
@@ -20,7 +21,7 @@
 ## AI-Powered Task Breakdown
 - [x] Integrate LLM for task breakdown (single task)
 - [x] Build granularity slider (Tiny Steps to Big Milestones)
-- [x] Implement ADHD-friendly presets (auto-position slider)
+- [x] Restore ADHD-friendly presets UI (Tiny Steps, Balanced, Big Milestones)
 - [x] Create step display UI with edit/delete capabilities
 - [x] Add brain dump compiler logic (organize unstructured input)
 - [x] Write and pass unit tests for breakdown service
@@ -50,15 +51,15 @@
 - [ ] Add ability to load and edit previous sessions (optional for MVP)
 
 ## Google Ads Integration
-- [x] Set up Google Ads placeholder zones (sidebar + bottom banner)
-- [x] Ensure ads are non-intrusive and clearly separated
-- [ ] Set up Google AdSense integration
+- [x] Remove all Google Ads code and zones
+- [x] Clean up layout after ad removal
+- [ ] Set up Google AdSense integration (optional future feature)
 
 ## Polish & Deployment
 - [x] Add animations and transitions (subtle, ADHD-friendly)
 - [x] Create comprehensive unit tests (33 passing)
-- [x] Implement neurodiversity design system fully
+- [x] Implement pixel art 3D aesthetic fully
 - [x] Remove all emojis from UI
 - [x] Wire all features end-to-end
-- [x] Optimize performance
-- [x] Final checkpoint and ready for production
+- [x] Test pixel art design on mobile and desktop
+- [x] Final checkpoint with new design
