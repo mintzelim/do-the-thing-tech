@@ -1,0 +1,455 @@
+/* Mobile-First Pixel Art Design System for DoTheThing */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Clean, modern pixel palette */
+  --mobile-bg: #f8f7f4;
+  --mobile-card-bg: #ffffff;
+  --mobile-border: #2c2c2c;
+  --mobile-text-primary: #1a1a1a;
+  --mobile-text-secondary: #666666;
+  --mobile-accent: #6366f1;
+  --mobile-accent-light: #e0e7ff;
+  --mobile-success: #10b981;
+  --mobile-success-light: #d1fae5;
+  --mobile-error: #ef4444;
+  --mobile-error-light: #fee2e2;
+  --mobile-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --mobile-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background-color: var(--mobile-bg);
+  color: var(--mobile-text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Mobile Phone Frame */
+.mobile-frame {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--mobile-card-bg);
+  border: 3px solid var(--mobile-border);
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: var(--mobile-shadow-lg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mobile-frame::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 24px;
+  background: var(--mobile-border);
+  border-radius: 0 0 20px 20px;
+  z-index: 10;
+}
+
+.mobile-content {
+  flex: 1;
+  padding: 32px 20px 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Typography - LARGE AND CLEAR */
+.mobile-heading-1 {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+  color: var(--mobile-text-primary);
+  letter-spacing: -0.5px;
+}
+
+.mobile-heading-2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 12px 0;
+  color: var(--mobile-text-primary);
+}
+
+.mobile-heading-3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+  color: var(--mobile-text-primary);
+}
+
+.mobile-body-lg {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--mobile-text-primary);
+}
+
+.mobile-body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--mobile-text-secondary);
+}
+
+.mobile-body-sm {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--mobile-text-secondary);
+}
+
+/* Pixel Art Card */
+.mobile-card {
+  background: var(--mobile-card-bg);
+  border: 2px solid var(--mobile-border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: var(--mobile-shadow);
+}
+
+.mobile-card-accent {
+  border-color: var(--mobile-accent);
+  background: var(--mobile-accent-light);
+}
+
+/* Pixel Art Input */
+.mobile-input,
+.mobile-textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid var(--mobile-border);
+  border-radius: 8px;
+  background: var(--mobile-card-bg);
+  color: var(--mobile-text-primary);
+  transition: all 0.2s ease;
+  margin-bottom: 12px;
+}
+
+.mobile-input:focus,
+.mobile-textarea:focus {
+  outline: none;
+  border-color: var(--mobile-accent);
+  box-shadow: 0 0 0 3px var(--mobile-accent-light);
+}
+
+.mobile-textarea {
+  resize: vertical;
+  min-height: 120px;
+  font-size: 14px;
+}
+
+/* Pixel Art Button - LARGE AND CLEAR */
+.mobile-button {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 2px solid var(--mobile-border);
+  border-radius: 8px;
+  background: var(--mobile-accent);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mobile-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mobile-button-secondary {
+  background: var(--mobile-card-bg);
+  color: var(--mobile-accent);
+  border-color: var(--mobile-accent);
+}
+
+.mobile-button-success {
+  background: var(--mobile-success);
+}
+
+.mobile-button-small {
+  padding: 10px 16px;
+  font-size: 13px;
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 8px;
+}
+
+/* Pixel Art Preset Buttons */
+.mobile-preset-group {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.mobile-preset-button {
+  flex: 1;
+  min-width: 100px;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 2px solid var(--mobile-border);
+  border-radius: 8px;
+  background: var(--mobile-card-bg);
+  color: var(--mobile-text-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.mobile-preset-button.active {
+  background: var(--mobile-accent);
+  color: white;
+  border-color: var(--mobile-accent);
+}
+
+.mobile-preset-button:active {
+  transform: translateY(1px);
+}
+
+/* Pixel Art Slider */
+.mobile-slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--mobile-accent-light), var(--mobile-accent));
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 20px 0;
+}
+
+.mobile-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--mobile-accent);
+  cursor: pointer;
+  border: 2px solid var(--mobile-border);
+  box-shadow: var(--mobile-shadow);
+}
+
+.mobile-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--mobile-accent);
+  cursor: pointer;
+  border: 2px solid var(--mobile-border);
+  box-shadow: var(--mobile-shadow);
+}
+
+/* Pixel Art Checkbox */
+.mobile-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--mobile-accent);
+  border: 2px solid var(--mobile-border);
+  border-radius: 4px;
+}
+
+/* Pixel Art Focus Level Selection */
+.mobile-focus-option {
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 2px solid var(--mobile-border);
+  border-radius: 8px;
+  background: var(--mobile-card-bg);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mobile-focus-option.active {
+  background: var(--mobile-accent-light);
+  border-color: var(--mobile-accent);
+}
+
+.mobile-focus-option-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--mobile-text-primary);
+}
+
+.mobile-focus-option-desc {
+  font-size: 12px;
+  color: var(--mobile-text-secondary);
+}
+
+/* Pixel Art Task Item */
+.mobile-task-item {
+  display: flex;
+  gap: 12px;
+  padding: 16px;
+  border: 2px solid var(--mobile-border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background: var(--mobile-card-bg);
+  align-items: flex-start;
+}
+
+.mobile-task-item.completed {
+  opacity: 0.6;
+}
+
+.mobile-task-checkbox {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.mobile-task-content {
+  flex: 1;
+}
+
+.mobile-task-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--mobile-text-primary);
+}
+
+.mobile-task-desc {
+  font-size: 12px;
+  color: var(--mobile-text-secondary);
+  margin-bottom: 8px;
+}
+
+.mobile-task-time {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.mobile-task-time-input {
+  width: 60px;
+  padding: 6px 8px;
+  font-size: 13px;
+  border: 1px solid var(--mobile-border);
+  border-radius: 4px;
+}
+
+.mobile-task-delete {
+  padding: 6px 12px;
+  font-size: 12px;
+  background: var(--mobile-error-light);
+  color: var(--mobile-error);
+  border: 1px solid var(--mobile-error);
+  border-radius: 4px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Pixel Art Summary Card */
+.mobile-summary {
+  background: linear-gradient(135deg, var(--mobile-accent-light), var(--mobile-accent));
+  border: 2px solid var(--mobile-accent);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  color: var(--mobile-text-primary);
+}
+
+.mobile-summary-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--mobile-text-secondary);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mobile-summary-value {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--mobile-accent);
+}
+
+/* Success Message */
+.mobile-success-message {
+  background: var(--mobile-success-light);
+  border: 2px solid var(--mobile-success);
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.mobile-success-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--mobile-success);
+  margin-bottom: 8px;
+}
+
+.mobile-success-text {
+  font-size: 14px;
+  color: var(--mobile-text-primary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .mobile-frame {
+    border-radius: 0;
+    border: none;
+  }
+  
+  .mobile-content {
+    padding: 20px 16px;
+  }
+  
+  .mobile-heading-1 {
+    font-size: 28px;
+  }
+}
+
+/* Animations */
+@keyframes mobile-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-fade-in {
+  animation: mobile-fade-in 0.3s ease-out;
+}

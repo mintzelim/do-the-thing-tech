@@ -5,8 +5,9 @@
 - [x] Create ADHD-friendly design tokens in Tailwind
 - [x] Build core layout with sidebar (for ads) and main content area
 - [x] Remove all Google Ads zones and code
-- [x] Implement pixel art 3D aesthetic design
-- [x] Update fonts to Clash Display (headlines) and Inter (body)
+- [x] Redesign with mobile-first pixel art aesthetic (clean, refined)
+- [x] Implement large, clear typography for mobile screens
+- [x] Update fonts to modern pixel-friendly stack (Inter)
 
 ## Core Entry Point
 - [x] Implement "I need to..." text box with placeholder guidance
@@ -58,8 +59,9 @@
 ## Polish & Deployment
 - [x] Add animations and transitions (subtle, ADHD-friendly)
 - [x] Create comprehensive unit tests (33 passing)
-- [x] Implement pixel art 3D aesthetic fully
+- [x] Implement mobile-first pixel art design (refined, clean)
+- [x] Optimize typography for mobile readability (32px headings, 16px body)
 - [x] Remove all emojis from UI
 - [x] Wire all features end-to-end
-- [x] Test pixel art design on mobile and desktop
-- [x] Final checkpoint with new design
+- [x] Test mobile design on actual devices
+- [x] Final checkpoint with mobile pixel art design
