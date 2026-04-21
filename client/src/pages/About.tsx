@@ -15,7 +15,7 @@ export default function About() {
             BACK TO HOME
           </button>
           <h1 className="text-4xl md:text-5xl font-bold font-pressstart mb-2">ABOUT DO THE THING</h1>
-          <p className="text-lg font-vt323">Understanding ADHD, Task Management, and Why We Built This App</p>
+          <p className="text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>Understanding ADHD, Task Management, and Why We Built This App</p>
         </div>
       </header>
 
@@ -24,10 +24,10 @@ export default function About() {
         {/* Mission Section */}
         <section className="border-2 border-border p-6 bg-card">
           <h2 className="text-3xl font-bold font-pressstart mb-4">Our Mission</h2>
-          <p className="text-lg font-vt323 mb-4">
+          <p className="text-lg mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
             DoTheThing exists to help neurodivergent individuals—especially those with ADHD—break down overwhelming tasks into manageable steps, estimate realistic time, and actually get things done.
           </p>
-          <p className="text-lg font-vt323">
+          <p className="text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
             We believe that executive dysfunction isn't a personal failure. It's a neurological difference that deserves tools designed specifically for how ADHD brains work.
           </p>
         </section>
@@ -35,7 +35,7 @@ export default function About() {
         {/* ADHD & Task Management */}
         <section className="border-2 border-border p-6 bg-card">
           <h2 className="text-3xl font-bold font-pressstart mb-4">ADHD and Task Management</h2>
-          <div className="space-y-4 font-vt323 text-lg">
+          <div className="space-y-4 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
             <p>
               People with ADHD often struggle with executive function—the brain's ability to plan, organize, and execute tasks. This isn't laziness or lack of motivation. It's how their neurology works.
             </p>
@@ -55,7 +55,7 @@ export default function About() {
         {/* Why DoTheThing */}
         <section className="border-2 border-border p-6 bg-card">
           <h2 className="text-3xl font-bold font-pressstart mb-4">Why We Built DoTheThing</h2>
-          <div className="space-y-4 font-vt323 text-lg">
+          <div className="space-y-4 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
             <p>
               Existing task management apps weren't designed for ADHD brains. They often make things worse by:
             </p>
@@ -83,7 +83,7 @@ export default function About() {
         {/* How It Works */}
         <section className="border-2 border-border p-6 bg-card">
           <h2 className="text-3xl font-bold font-pressstart mb-4">How DoTheThing Works</h2>
-          <div className="space-y-4 font-vt323 text-lg">
+          <div className="space-y-4 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
             <p>
               DoTheThing uses a simple 4-step process designed for ADHD brains:
             </p>
@@ -111,7 +111,7 @@ export default function About() {
         {/* Key Features */}
         <section className="border-2 border-border p-6 bg-card">
           <h2 className="text-3xl font-bold font-pressstart mb-4">Key Features</h2>
-          <div className="grid md:grid-cols-2 gap-4 font-vt323">
+          <div className="grid md:grid-cols-2 gap-4" style={{ fontFamily: 'Inter, sans-serif' }}>
             <div className="border border-border p-4">
               <h3 className="font-bold text-lg mb-2">Smart Breakdown</h3>
               <p>AI-powered task decomposition that creates micro-steps perfect for ADHD brains</p>
@@ -142,10 +142,10 @@ export default function About() {
         {/* Who This Is For */}
         <section className="border-2 border-border p-6 bg-card">
           <h2 className="text-3xl font-bold font-pressstart mb-4">Who This Is For</h2>
-          <p className="font-vt323 text-lg mb-4">
+          <p className="text-lg mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
             DoTheThing is designed for anyone who struggles with task management, but especially:
           </p>
-          <ul className="list-disc list-inside space-y-2 ml-4 font-vt323 text-lg">
+          <ul className="list-disc list-inside space-y-2 ml-4 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
             <li>People with ADHD (diagnosed or undiagnosed)</li>
             <li>Those with executive dysfunction</li>
             <li>Anyone who experiences time blindness</li>
@@ -158,7 +158,7 @@ export default function About() {
         {/* Get Started */}
         <section className="border-2 border-border p-6 bg-primary text-primary-foreground text-center">
           <h2 className="text-3xl font-bold font-pressstart mb-4">Ready to Do The Thing?</h2>
-          <p className="font-vt323 text-lg mb-6">
+          <p className="text-lg mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
             Stop feeling overwhelmed. Start breaking things down.
           </p>
           <button
@@ -172,7 +172,7 @@ export default function About() {
 
       {/* Footer */}
       <footer className="border-t-2 border-border p-4 md:p-6 mt-12 bg-card">
-        <div className="max-w-4xl mx-auto text-center font-vt323">
+        <div className="max-w-4xl mx-auto text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
           <p className="mb-2">DoTheThing - Task Management for ADHD Brains</p>
           <p className="text-sm text-muted-foreground">
             Built with care for neurodivergent individuals

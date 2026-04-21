@@ -407,7 +407,7 @@ export default function Blog() {
             {selectedPost ? "BACK TO BLOG" : "BACK TO HOME"}
           </button>
           <h1 className="text-4xl md:text-5xl font-bold font-pressstart mb-2">BLOG</h1>
-          <p className="text-lg font-vt323">Resources and insights for ADHD task management</p>
+          <p className="text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>Resources and insights for ADHD task management</p>
         </div>
       </header>
 
@@ -418,7 +418,7 @@ export default function Blog() {
           <article className="prose prose-invert max-w-none">
             <div className="border-2 border-border p-6 bg-card mb-6">
               <h1 className="text-4xl font-bold font-pressstart mb-4">{selectedPost.title}</h1>
-              <div className="flex gap-4 font-vt323 text-sm mb-6">
+              <div className="flex gap-4 text-sm mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
                 <span>{selectedPost.date}</span>
                 <span>•</span>
                 <span>{selectedPost.readTime}</span>
@@ -437,7 +437,7 @@ export default function Blog() {
               </div>
             </div>
 
-            <div className="border-2 border-border p-6 bg-card space-y-4 font-vt323 text-lg whitespace-pre-wrap">
+            <div className="border-2 border-border p-6 bg-card space-y-4 text-lg whitespace-pre-wrap" style={{ fontFamily: 'Inter, sans-serif' }}>
               {selectedPost.content}
             </div>
 
@@ -459,12 +459,12 @@ export default function Blog() {
               >
                 <div className="flex justify-between items-start mb-3">
                   <h2 className="text-2xl font-bold font-pressstart flex-1 mr-4">{post.title}</h2>
-                  <span className="text-sm font-vt323 text-primary whitespace-nowrap">{post.readTime}</span>
+                  <span className="text-sm text-primary whitespace-nowrap" style={{ fontFamily: 'Inter, sans-serif' }}>{post.readTime}</span>
                 </div>
 
-                <p className="font-vt323 text-lg mb-4">{post.excerpt}</p>
+                <p className="text-lg mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>{post.excerpt}</p>
 
-                <div className="flex gap-4 font-vt323 text-sm mb-4">
+                <div className="flex gap-4 text-sm mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
                   <span>{post.date}</span>
                   <span>•</span>
                   <span className="text-primary">{post.category}</span>
@@ -481,7 +481,7 @@ export default function Blog() {
                   ))}
                 </div>
 
-                <div className="mt-4 text-primary font-vt323 font-bold">READ MORE →</div>
+                <div className="mt-4 text-primary font-bold" style={{ fontFamily: 'Inter, sans-serif' }}>READ MORE →</div>
               </article>
             ))}
           </div>
@@ -490,7 +490,7 @@ export default function Blog() {
 
       {/* Footer */}
       <footer className="border-t-2 border-border p-4 md:p-6 mt-12 bg-card">
-        <div className="max-w-4xl mx-auto text-center font-vt323">
+        <div className="max-w-4xl mx-auto text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
           <p className="mb-2">DoTheThing Blog - ADHD Task Management Resources</p>
           <p className="text-sm text-muted-foreground">
             Insights and strategies for neurodivergent productivity

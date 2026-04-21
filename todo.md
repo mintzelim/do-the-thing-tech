@@ -151,7 +151,8 @@
 
 ## Final Deployment
 - [x] Test About page and blog navigation
+- [x] Refine typography: Press Start 2P for headlines, Inter for body text (About & Blog)
 - [ ] Verify SEO meta tags and structured data (optional enhancement)
 - [x] Test blog post routing
-- [x] Final checkpoint with complete website
+- [ ] Final checkpoint with complete website
 - [ ] Deploy to production
