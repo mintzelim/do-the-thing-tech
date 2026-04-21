@@ -1,5 +1,20 @@
 {
   "version": "7",
   "dialect": "mysql",
-  "entries": []
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1776776404696,
+      "tag": "0000_material_winter_soldier",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1776776847853,
+      "tag": "0001_mature_daimon_hellstrom",
+      "breakpoints": true
+    }
+  ]
 }

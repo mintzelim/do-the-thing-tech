@@ -1,10 +1,14 @@
 import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
-import { publicProcedure, router } from "./_core/trpc";
+import { publicProcedure, router, protectedProcedure } from "./_core/trpc";
+import { z } from "zod";
+import { TRPCError } from "@trpc/server";
+import { getDb } from "./db";
+import { taskSessions } from "../drizzle/schema";
+import { eq, desc } from "drizzle-orm";
 
 export const appRouter = router({
-    // if you need to use socket.io, read and register route in server/_core/index.ts, all api should start with '/api/' so that the gateway can route correctly
   system: systemRouter,
   auth: router({
     me: publicProcedure.query(opts => opts.ctx.user),
@@ -17,12 +21,85 @@ export const appRouter = router({
     }),
   }),
 
-  // TODO: add feature routers here, e.g.
-  // todo: router({
-  //   list: protectedProcedure.query(({ ctx }) =>
-  //     db.getUserTodos(ctx.user.id)
-  //   ),
-  // }),
+  tasks: router({
+    breakdown: protectedProcedure
+      .input(
+        z.object({
+          input: z.string().min(1, "Task input is required"),
+          granularity: z.number().min(0).max(100).default(50),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const { breakdownTasks } = await import("../server/services/taskBreakdown");
+        return breakdownTasks(input.input, input.granularity);
+      }),
+
+    estimateTasks: protectedProcedure
+      .input(
+        z.object({
+          tasks: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string().optional(),
+            })
+          ),
+          focusLevel: z.enum(["hyperfocus", "normal", "distracted"]).default("normal"),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const { estimateTasksWithBuffer } = await import("../server/services/taskEstimator");
+        return estimateTasksWithBuffer(input.tasks, input.focusLevel);
+      }),
+
+    saveTasks: protectedProcedure
+      .input(
+        z.object({
+          title: z.string().min(1, "Task list title is required"),
+          tasks: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string().optional(),
+              estimatedTime: z.number().optional(),
+              completed: z.boolean().default(false),
+            })
+          ),
+          focusLevel: z.enum(["hyperfocus", "normal", "distracted"]),
+          granularity: z.number(),
+        })
+      )
+      .mutation(async ({ input, ctx }) => {
+        const db = await getDb();
+        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "Database unavailable" });
+
+        const result = await db.insert(taskSessions).values({
+          userId: ctx.user.id,
+          title: input.title,
+          tasks: JSON.stringify(input.tasks),
+          focusLevel: input.focusLevel,
+          granularity: input.granularity,
+          createdAt: new Date(),
+        });
+
+        return { ...input };
+      }),
+
+    getSessions: protectedProcedure.query(async ({ ctx }) => {
+      const db = await getDb();
+      if (!db) return [];
+
+      const sessions = await db
+        .select()
+        .from(taskSessions)
+        .where(eq(taskSessions.userId, ctx.user.id))
+        .orderBy(desc(taskSessions.createdAt))
+        .limit(50);
+
+      return sessions.map((s) => ({
+        ...s,
+        tasks: JSON.parse(s.tasks || "[]"),
+      }));
+    }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;

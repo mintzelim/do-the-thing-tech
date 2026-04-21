@@ -25,4 +25,16 @@ export const users = mysqlTable("users", {
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
 
-// TODO: Add your tables here
+export const taskSessions = mysqlTable("task_sessions", {
+  id: int("id").autoincrement().primaryKey(),
+  userId: int("userId").notNull().references(() => users.id, { onDelete: "cascade" }),
+  title: varchar("title", { length: 255 }).notNull(),
+  tasks: text("tasks").notNull(),
+  focusLevel: mysqlEnum("focusLevel", ["hyperfocus", "normal", "distracted"]).default("normal").notNull(),
+  granularity: int("granularity").default(50).notNull(),
+  createdAt: timestamp("createdAt").defaultNow().notNull(),
+  updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
+});
+
+export type TaskSession = typeof taskSessions.$inferSelect;
+export type InsertTaskSession = typeof taskSessions.$inferInsert;

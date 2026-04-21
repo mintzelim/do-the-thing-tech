@@ -7,32 +7,60 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 
 function Router() {
-  // make sure to consider if you need authentication for certain routes
   return (
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <Router />
+          <div className="flex min-h-screen bg-background">
+            {/* Main Content */}
+            <main className="flex-1 flex flex-col">
+              <Router />
+            </main>
+            
+            {/* Sidebar for Google Ads */}
+            <aside className="hidden lg:block w-80 bg-card border-l border-border p-6 overflow-y-auto">
+              <div className="space-y-6">
+                {/* Ad Placeholder 1 */}
+                <div className="bg-muted rounded-lg p-4 h-96 flex items-center justify-center text-muted-foreground text-sm">
+                  <div className="text-center">
+                    <p className="font-medium">Advertisement</p>
+                    <p className="text-xs mt-1">Google Ads will appear here</p>
+                  </div>
+                </div>
+                
+                {/* Ad Placeholder 2 */}
+                <div className="bg-muted rounded-lg p-4 h-96 flex items-center justify-center text-muted-foreground text-sm">
+                  <div className="text-center">
+                    <p className="font-medium">Advertisement</p>
+                    <p className="text-xs mt-1">Google Ads will appear here</p>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+          
+          {/* Bottom Ad Banner */}
+          <footer className="bg-card border-t border-border">
+            <div className="container mx-auto px-4 py-4">
+              <div className="bg-muted rounded-lg p-4 h-24 flex items-center justify-center text-muted-foreground text-sm">
+                <div className="text-center">
+                  <p className="font-medium">Advertisement</p>
+                  <p className="text-xs mt-1">Google Ads will appear here</p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
