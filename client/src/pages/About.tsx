@@ -1,184 +1,284 @@
-import { useLocation } from "wouter";
+import { useLocation } from 'wouter';
 
 export default function About() {
   const [, navigate] = useLocation();
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* Header */}
-      <header className="border-b-2 border-border p-4 md:p-6">
-        <div className="max-w-4xl mx-auto">
-          <button
-            onClick={() => navigate("/")}
-            className="mb-4 px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323"
-          >
-            BACK TO HOME
-          </button>
-          <h1 className="text-4xl md:text-5xl font-bold font-pressstart mb-2" style={{ fontFamily: 'Press Start 2P, monospace' }}>ABOUT DO THE THING</h1>
-          <p className="text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>Understanding ADHD, Task Management, and Why We Built This App</p>
-        </div>
-      </header>
+    <div className="min-h-screen bg-white p-4 font-inter">
+      <div className="max-w-3xl mx-auto">
+        {/* Back Button */}
+        <button
+          onClick={() => navigate("/")}
+          className="font-pressstart text-sm mb-8 text-blue-600 hover:text-blue-800 border-4 border-blue-600 px-4 py-3 active:translate-y-1 active:shadow-none transition-all"
+          style={{
+            boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '12px',
+            letterSpacing: '2px'
+          }}
+        >
+          BACK TO HOME
+        </button>
 
-      {/* Main Content */}
-      <main className="max-w-4xl mx-auto p-4 md:p-6">
+        {/* Main Title */}
+        <div className="border-4 border-black p-6 mb-8 bg-white" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+        }}>
+          <h1 className="font-pressstart text-4xl md:text-5xl mb-4 text-black" style={{
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '36px',
+            letterSpacing: '3px',
+            lineHeight: '1.2'
+          }}>
+            ABOUT DO THE THING
+          </h1>
+          <p className="text-lg md:text-xl text-gray-700" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '18px',
+            lineHeight: '1.6'
+          }}>
+            Understanding ADHD, Task Management, and Why We Built This App
+          </p>
+        </div>
+
         {/* Mission Section */}
-        <section className="border-2 border-border p-6 bg-card mb-6">
-          <h2 className="text-2xl font-bold font-pressstart mb-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>Our Mission</h2>
-          <p className="text-lg mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
-            DoTheThing exists to help neurodivergent individuals—especially those with ADHD—break down overwhelming tasks into manageable steps, estimate realistic time, and actually get things done.
-          </p>
-          <p className="text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-            We believe that executive dysfunction isn't a personal failure. It's a neurological difference that deserves tools designed specifically for how ADHD brains work.
-          </p>
-        </section>
+        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+        }}>
+          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '24px',
+            letterSpacing: '2px'
+          }}>
+            OUR MISSION
+          </h2>
+          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '16px',
+            lineHeight: '1.8'
+          }}>
+            <p>
+              DoTheThing exists to help neurodivergent individuals—especially those with ADHD—break down overwhelming tasks into manageable steps, estimate realistic time, and actually get things done.
+            </p>
+            <p>
+              We believe that executive dysfunction isn't a personal failure. It's a neurological difference that deserves tools designed specifically for how ADHD brains work.
+            </p>
+          </div>
+        </div>
 
         {/* ADHD & Task Management */}
-        <section className="border-2 border-border p-6 bg-card mb-6">
-          <h2 className="text-2xl font-bold font-pressstart mb-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>ADHD and Task Management</h2>
-          <div className="space-y-4 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
+        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+        }}>
+          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '24px',
+            letterSpacing: '2px'
+          }}>
+            ADHD AND TASK MANAGEMENT
+          </h2>
+          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '16px',
+            lineHeight: '1.8'
+          }}>
             <p>
               People with ADHD often struggle with executive function—the brain's ability to plan, organize, and execute tasks. This isn't laziness or lack of motivation. It's how their neurology works.
             </p>
-            <p>
-              Common challenges include:
-            </p>
-            <ul className="list-disc list-inside space-y-2 ml-4">
-              <li><strong>Time Blindness:</strong> Difficulty perceiving how much time has passed or will be needed</li>
-              <li><strong>Task Paralysis:</strong> Feeling overwhelmed by large tasks and not knowing where to start</li>
-              <li><strong>Executive Dysfunction:</strong> Difficulty initiating, planning, and completing tasks</li>
-              <li><strong>Time Estimation Errors:</strong> Consistently underestimating how long things take</li>
-              <li><strong>Hyperfocus Variability:</strong> Ability to focus intensely on interesting tasks but struggling with boring ones</li>
+            <p className="font-bold">Common challenges include:</p>
+            <ul className="space-y-2 ml-6">
+              <li>• <strong>Time Blindness:</strong> Difficulty perceiving how much time has passed or will be needed</li>
+              <li>• <strong>Task Paralysis:</strong> Feeling overwhelmed by large tasks and not knowing where to start</li>
+              <li>• <strong>Executive Dysfunction:</strong> Difficulty initiating, planning, and completing tasks</li>
+              <li>• <strong>Time Estimation Errors:</strong> Consistently underestimating how long things take</li>
+              <li>• <strong>Hyperfocus Variability:</strong> Ability to focus intensely on interesting tasks but struggling with boring ones</li>
             </ul>
           </div>
-        </section>
+        </div>
 
-        {/* Why DoTheThing */}
-        <section className="border-2 border-border p-6 bg-card mb-6">
-          <h2 className="text-2xl font-bold font-pressstart mb-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>Why We Built DoTheThing</h2>
-          <div className="space-y-4 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
+        {/* Why DoTheThing Exists */}
+        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+        }}>
+          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '24px',
+            letterSpacing: '2px'
+          }}>
+            WHY DO THE THING EXISTS
+          </h2>
+          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '16px',
+            lineHeight: '1.8'
+          }}>
             <p>
-              Existing task management apps weren't designed for ADHD brains. They often make things worse by:
+              Traditional task management apps were built for neurotypical brains. They assume you can estimate time accurately, break down tasks logically, and maintain focus on boring work. For ADHD brains, these apps often make things worse.
             </p>
-            <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Requiring too much upfront planning and organization</li>
-              <li>Not accounting for time blindness in estimates</li>
-              <li>Breaking tasks into steps that are still too big</li>
-              <li>Ignoring focus levels and distraction patterns</li>
-              <li>Adding visual clutter and distractions</li>
-            </ul>
-            <p className="mt-4">
-              DoTheThing solves this by:
+            <p>
+              DoTheThing is different. We built it specifically for how ADHD brains work:
             </p>
-            <ul className="list-disc list-inside space-y-2 ml-4">
-              <li>Accepting brain dumps—no need for perfect planning</li>
-              <li>Using AI to intelligently break down tasks into micro-steps</li>
-              <li>Automatically adding time buffers for time blindness (20-30%)</li>
-              <li>Adjusting estimates based on focus level (Hyperfocus, Normal, Distracted)</li>
-              <li>Providing a clean, pixel-art interface that's engaging without being distracting</li>
-              <li>Including a countdown timer to help with time awareness</li>
+            <ul className="space-y-2 ml-6">
+              <li>• <strong>AI-Powered Breakdown:</strong> Instantly breaks tasks into micro-steps</li>
+              <li>• <strong>Smart Time Estimates:</strong> Includes buffers for time blindness (20-30%)</li>
+              <li>• <strong>Focus-Level Adjustment:</strong> Estimates change based on your focus level today</li>
+              <li>• <strong>Countdown Timer:</strong> Visual timer to help with time perception</li>
+              <li>• <strong>Minimal Friction:</strong> No complex setup. Start immediately.</li>
             </ul>
           </div>
-        </section>
+        </div>
 
         {/* How It Works */}
-        <section className="border-2 border-border p-6 bg-card mb-6">
-          <h2 className="text-2xl font-bold font-pressstart mb-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>How DoTheThing Works</h2>
-          <div className="space-y-4 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-            <p>
-              DoTheThing uses a simple 4-step process designed for ADHD brains:
-            </p>
-            <div className="space-y-3 ml-4">
-              <div>
-                <strong className="text-primary">1. Brain Dump</strong>
-                <p>Write everything you need to do—no organization needed. Single task or complete brain dump.</p>
-              </div>
-              <div>
-                <strong className="text-primary">2. Select Focus Level</strong>
-                <p>Tell us how focused you are today: Hyperfocus, Normal, or Distracted. We adjust time estimates accordingly.</p>
-              </div>
-              <div>
-                <strong className="text-primary">3. Choose Breakdown Size</strong>
-                <p>Pick how detailed you want: Tiny Steps (maximum detail), Balanced, or Big Milestones (high-level overview).</p>
-              </div>
-              <div>
-                <strong className="text-primary">4. AI Breakdown & Estimates</strong>
-                <p>Our AI breaks down your tasks into manageable steps with realistic time estimates that account for ADHD time blindness.</p>
-              </div>
+        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+        }}>
+          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '24px',
+            letterSpacing: '2px'
+          }}>
+            HOW IT WORKS
+          </h2>
+          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '16px',
+            lineHeight: '1.8'
+          }}>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">1. BRAIN DUMP</p>
+              <p>Enter a single task or brain dump everything you need to do. No organization needed.</p>
+            </div>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">2. SELECT FOCUS LEVEL</p>
+              <p>Tell us if you're hyperfocused, normal, or distracted today. This adjusts time estimates.</p>
+            </div>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">3. CHOOSE BREAKDOWN SIZE</p>
+              <p>Pick how detailed you want the breakdown: Tiny Steps, Balanced, or Big Milestones.</p>
+            </div>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">4. GET AI BREAKDOWN</p>
+              <p>AI instantly breaks your task into micro-steps with realistic time estimates.</p>
+            </div>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">5. EDIT & EXECUTE</p>
+              <p>Adjust steps, check them off, and use the countdown timer to stay on track.</p>
             </div>
           </div>
-        </section>
+        </div>
 
         {/* Key Features */}
-        <section className="border-2 border-border p-6 bg-card mb-6">
-          <h2 className="text-2xl font-bold font-pressstart mb-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>Key Features</h2>
-          <div className="grid md:grid-cols-2 gap-4" style={{ fontFamily: 'Inter, sans-serif' }}>
-            <div className="border border-border p-4">
-              <h3 className="font-bold text-lg mb-2">Smart Breakdown</h3>
-              <p>AI-powered task decomposition that creates micro-steps perfect for ADHD brains</p>
+        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+        }}>
+          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '24px',
+            letterSpacing: '2px'
+          }}>
+            KEY FEATURES
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base md:text-lg text-gray-700" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '16px',
+            lineHeight: '1.8'
+          }}>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">AI Task Breakdown</p>
+              <p>Instantly decompose tasks into actionable steps</p>
             </div>
-            <div className="border border-border p-4">
-              <h3 className="font-bold text-lg mb-2">Time Blindness Buffer</h3>
-              <p>Automatic 20-30% time buffer based on focus level to account for ADHD time perception</p>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">Smart Time Estimates</p>
+              <p>Realistic estimates with ADHD-friendly buffers</p>
             </div>
-            <div className="border border-border p-4">
-              <h3 className="font-bold text-lg mb-2">Countdown Timer</h3>
-              <p>Visual timer to help with time awareness and keep you on track</p>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">Focus Level Adjustment</p>
+              <p>Estimates change based on your focus today</p>
             </div>
-            <div className="border border-border p-4">
-              <h3 className="font-bold text-lg mb-2">Editable Steps</h3>
-              <p>Customize tasks, adjust time estimates, and mark progress with checkboxes</p>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">Countdown Timer</p>
+              <p>Visual timer to help with time perception</p>
             </div>
-            <div className="border border-border p-4">
-              <h3 className="font-bold text-lg mb-2">Granularity Control</h3>
-              <p>Choose how detailed your breakdown is: from tiny steps to big milestones</p>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">Editable Steps</p>
+              <p>Adjust, delete, or reorder steps as needed</p>
             </div>
-            <div className="border border-border p-4">
-              <h3 className="font-bold text-lg mb-2">Focus Level Adjustment</h3>
-              <p>Tell us your focus level and we adjust estimates to match your reality</p>
+            <div className="border-2 border-gray-300 p-4">
+              <p className="font-bold mb-2">No Login Required</p>
+              <p>Start immediately. Use as a guest.</p>
             </div>
           </div>
-        </section>
+        </div>
 
-        {/* Who This Is For */}
-        <section className="border-2 border-border p-6 bg-card mb-6">
-          <h2 className="text-2xl font-bold font-pressstart mb-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>Who This Is For</h2>
-          <p className="text-lg mb-4" style={{ fontFamily: 'Inter, sans-serif' }}>
-            DoTheThing is designed for anyone who struggles with task management, but especially:
-          </p>
-          <ul className="list-disc list-inside space-y-2 ml-4 text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>
-            <li>People with ADHD (diagnosed or undiagnosed)</li>
-            <li>Those with executive dysfunction</li>
-            <li>Anyone who experiences time blindness</li>
-            <li>People who get overwhelmed by large tasks</li>
-            <li>Those who struggle with task initiation</li>
-            <li>Anyone who consistently underestimates how long things take</li>
-          </ul>
-        </section>
+        {/* For Whom */}
+        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+        }}>
+          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '24px',
+            letterSpacing: '2px'
+          }}>
+            FOR WHOM
+          </h2>
+          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '16px',
+            lineHeight: '1.8'
+          }}>
+            <p>DoTheThing is built for:</p>
+            <ul className="space-y-2 ml-6">
+              <li>• People with ADHD who struggle with task initiation and time management</li>
+              <li>• Anyone with executive dysfunction or time blindness</li>
+              <li>• Neurodivergent individuals who need tools designed for their brain</li>
+              <li>• People who feel overwhelmed by large projects</li>
+              <li>• Anyone who consistently underestimates how long things take</li>
+            </ul>
+          </div>
+        </div>
 
-        {/* Get Started */}
-        <section className="border-2 border-border p-6 bg-primary text-primary-foreground text-center">
-          <h2 className="text-2xl font-bold font-pressstart mb-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>Ready to Do The Thing?</h2>
-          <p className="text-lg mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
-            Stop feeling overwhelmed. Start breaking things down.
+        {/* CTA Section */}
+        <div className="border-4 border-blue-600 p-6 mb-8 bg-blue-50" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+        }}>
+          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-blue-600" style={{
+            fontFamily: 'Press Start 2P, monospace',
+            fontSize: '24px',
+            letterSpacing: '2px'
+          }}>
+            READY TO DO THE THING?
+          </h2>
+          <p className="text-base md:text-lg text-gray-700 mb-6" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '16px',
+            lineHeight: '1.8'
+          }}>
+            Start breaking down your tasks right now. No signup required. No credit card. Just enter your task and let AI do the work.
           </p>
           <button
             onClick={() => navigate("/")}
-            className="px-8 py-4 bg-background text-foreground border-2 border-foreground font-bold font-pressstart text-lg hover:bg-accent"
+            className="font-pressstart text-sm md:text-base bg-blue-600 text-white border-4 border-blue-600 px-6 py-4 hover:bg-blue-700 active:translate-y-1 active:shadow-none transition-all"
+            style={{
+              boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
+              fontFamily: 'Press Start 2P, monospace',
+              fontSize: '14px',
+              letterSpacing: '2px'
+            }}
           >
             START NOW
           </button>
-        </section>
-      </main>
+        </div>
 
-      {/* Footer */}
-      <footer className="border-t-2 border-border p-4 md:p-6 mt-12 bg-card">
-        <div className="max-w-4xl mx-auto text-center" style={{ fontFamily: 'Inter, sans-serif' }}>
-          <p className="mb-2">DoTheThing - Task Management for ADHD Brains</p>
-          <p className="text-sm text-muted-foreground">
-            Built with care for neurodivergent individuals
+        {/* Footer */}
+        <div className="text-center pt-8 border-t-4 border-black">
+          <p className="text-sm md:text-base text-gray-600" style={{
+            fontFamily: 'Inter, sans-serif',
+            fontSize: '14px'
+          }}>
+            DoTheThing is a free tool designed for neurodivergent individuals. Built with care by people who understand ADHD.
           </p>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
