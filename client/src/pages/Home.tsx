@@ -78,24 +78,35 @@ export default function Home() {
     clickSoundRef.current = { audioContext, oscillator, gainNode } as any;
   }, []);
 
-  // Play satisfying click sound
+  // Play mouse click sound
   const playClickSound = () => {
     try {
       const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
+      const now = audioContext.currentTime;
+      
+      // Create a short, sharp click sound like a mouse click
       const oscillator = audioContext.createOscillator();
       const gainNode = audioContext.createGain();
+      const filter = audioContext.createBiquadFilter();
       
-      oscillator.connect(gainNode);
+      oscillator.connect(filter);
+      filter.connect(gainNode);
       gainNode.connect(audioContext.destination);
       
-      oscillator.frequency.value = 800;
-      oscillator.type = "sine";
+      // Higher frequency for a sharp click
+      oscillator.frequency.setValueAtTime(150, now);
+      oscillator.frequency.exponentialRampToValueAtTime(50, now + 0.05);
+      oscillator.type = "square";
       
-      gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
-      gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+      // Very short duration with quick fade
+      gainNode.gain.setValueAtTime(0.2, now);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
       
-      oscillator.start(audioContext.currentTime);
-      oscillator.stop(audioContext.currentTime + 0.1);
+      filter.type = "highpass";
+      filter.frequency.value = 200;
+      
+      oscillator.start(now);
+      oscillator.stop(now + 0.05);
     } catch (error) {
       console.error("Could not play sound:", error);
     }
@@ -415,18 +426,15 @@ export default function Home() {
         {flowState === "completion" && (
           <>
             <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", gap: "24px" }}>
-              <div className="mobile-success-message">
-                <div className="mobile-success-title" style={{ fontSize: "48px", marginBottom: "16px" }}>
-                  🎉
-                </div>
-                <div className="mobile-success-title">YOU DID IT!</div>
-                <div className="mobile-success-text" style={{ marginTop: "12px" }}>
-                  ALL {steps.length} TASKS COMPLETED
-                </div>
-                <div className="mobile-body" style={{ marginTop: "12px", color: "var(--pixel-text-light)" }}>
-                  Amazing work! You crushed it today.
-                </div>
+            <div className="mobile-success-message">
+              <div className="mobile-success-title">YOU DID IT!</div>
+              <div className="mobile-success-text" style={{ marginTop: "12px" }}>
+                ALL {steps.length} TASKS COMPLETED
               </div>
+              <div className="mobile-body" style={{ marginTop: "12px", color: "var(--pixel-text-light)" }}>
+                Amazing work! You crushed it today.
+              </div>
+            </div>
             </div>
 
             <button

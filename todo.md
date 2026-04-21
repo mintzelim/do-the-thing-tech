@@ -182,5 +182,10 @@
 - [x] Persist task state so users can keep tab open and work on tasks
 - [x] Implement localStorage persistence for all task state
 - [x] Improve slider-preset synchronization (auto-detect closest preset)
+- [x] Ensure mobile phone frame displays centered on desktop (not full width)
+- [x] Add desktop-specific styling to show mobile frame mockup
+- [x] Remove mobile phone frame - make it normal desktop site
+- [x] Change click sound from beep to mouse click sound
+- [x] Remove emoji from celebratory completion message
 - [ ] Final checkpoint with complete website
 - [ ] Deploy to production

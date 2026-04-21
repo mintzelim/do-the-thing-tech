@@ -28,6 +28,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
@@ -41,36 +42,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Mobile Phone Frame - Pixel Art Style */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Normal Desktop Site */
 .mobile-frame {
-  max-width: 480px;
-  margin: 0 auto;
-  background: var(--pixel-card-bg);
-  border: var(--pixel-border-width) solid var(--pixel-border);
+  width: 100%;
+  max-width: 100%;
+  background: var(--pixel-bg);
+  border: none;
   border-radius: 0;
-  overflow: hidden;
-  box-shadow: 
-    8px 8px 0 var(--pixel-shadow),
-    16px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: visible;
+  box-shadow: none;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
+  flex-shrink: 0;
 }
 
-/* Pixel Art Notch */
 .mobile-frame::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 120px;
-  height: 20px;
-  background: var(--pixel-border);
-  border: var(--pixel-border-width) solid var(--pixel-border);
-  border-top: none;
-  z-index: 10;
+  display: none;
 }
 
 .mobile-content {
