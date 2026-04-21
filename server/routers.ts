@@ -71,7 +71,7 @@ export const appRouter = router({
         const db = await getDb();
         if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "Database unavailable" });
 
-        const result = await db.insert(taskSessions).values({
+        await db.insert(taskSessions).values({
           userId: ctx.user.id,
           title: input.title,
           tasks: JSON.stringify(input.tasks),
@@ -99,6 +99,47 @@ export const appRouter = router({
         tasks: JSON.parse(s.tasks || "[]"),
       }));
     }),
+
+    exportToCalendar: protectedProcedure
+      .input(
+        z.object({
+          tasks: z.array(
+            z.object({
+              title: z.string(),
+              description: z.string().optional(),
+              estimatedTime: z.number(),
+              priority: z.enum(["high", "medium", "low"]).optional(),
+            })
+          ),
+          startDate: z.date().optional(),
+        })
+      )
+      .query(async ({ input }) => {
+        const { generateCalendarEvents, estimateTotalCalendarTime, formatForGoogleCalendar } = await import(
+          "../server/services/googleCalendarExport"
+        );
+
+        const events = generateCalendarEvents(input.tasks, input.startDate);
+        const timeEstimate = estimateTotalCalendarTime(input.tasks);
+        const formattedEvents = formatForGoogleCalendar(events);
+
+        return {
+          events: formattedEvents,
+          timeEstimate,
+          totalEvents: events.length,
+        };
+      }),
+
+    compileBrainDump: protectedProcedure
+      .input(
+        z.object({
+          brainDump: z.string().min(1, "Brain dump text is required"),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const { compileBrainDump } = await import("../server/services/brainDumpCompiler");
+        return compileBrainDump(input.brainDump);
+      }),
   }),
 });
 

@@ -30,11 +30,14 @@
 - [x] Write and pass unit tests for estimator service
 
 ## Google Calendar & Tasks Export
+- [x] Build intelligent scheduling service for calendar events
+- [x] Implement calendar event generation with time buffers
+- [x] Add break scheduling between tasks
+- [x] Write and pass unit tests for calendar export
 - [ ] Set up Google OAuth integration
-- [ ] Implement Google Calendar export with scheduling logic
+- [ ] Implement actual Google Calendar API integration
 - [ ] Implement Google Tasks export
 - [ ] Build one-click export UI
-- [ ] Add intelligent scheduling to find available time slots
 
 ## Persistence & User Sessions
 - [x] Create database schema for task sessions
