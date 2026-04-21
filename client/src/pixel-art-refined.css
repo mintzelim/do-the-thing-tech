@@ -89,7 +89,7 @@ body {
 /* Typography - Pixel Art Fonts */
 .mobile-heading-1 {
   font-family: 'Press Start 2P', cursive;
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 16px 0;
@@ -100,7 +100,7 @@ body {
 
 .mobile-heading-2 {
   font-family: 'VT323', monospace;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   line-height: 1.4;
   margin: 0 0 12px 0;
@@ -110,7 +110,7 @@ body {
 
 .mobile-heading-3 {
   font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.4;
   margin: 0 0 8px 0;
@@ -120,7 +120,7 @@ body {
 
 .mobile-body-lg {
   font-family: 'VT323', monospace;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
   color: var(--pixel-text);
@@ -129,7 +129,7 @@ body {
 
 .mobile-body {
   font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: var(--pixel-text-light);
@@ -138,7 +138,7 @@ body {
 
 .mobile-body-sm {
   font-family: 'VT323', monospace;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   color: var(--pixel-text-light);

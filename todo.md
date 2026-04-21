@@ -152,6 +152,8 @@
 ## Final Deployment
 - [x] Test About page and blog navigation
 - [x] Refine typography: Press Start 2P for headlines, Inter for body text (About & Blog)
+- [x] Fix: Apply Press Start 2P font class to About & Blog headlines
+- [x] Fix: Increase font sizes in main tool (Home page) (36px headings, 18-20px body)
 - [ ] Verify SEO meta tags and structured data (optional enhancement)
 - [x] Test blog post routing
 - [ ] Final checkpoint with complete website

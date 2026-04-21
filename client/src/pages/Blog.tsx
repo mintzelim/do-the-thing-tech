@@ -406,7 +406,7 @@ export default function Blog() {
           >
             {selectedPost ? "BACK TO BLOG" : "BACK TO HOME"}
           </button>
-          <h1 className="text-4xl md:text-5xl font-bold font-pressstart mb-2">BLOG</h1>
+          <h1 className="text-4xl md:text-5xl font-bold font-pressstart mb-2" style={{ fontFamily: 'Press Start 2P, monospace' }}>BLOG</h1>
           <p className="text-lg" style={{ fontFamily: 'Inter, sans-serif' }}>Resources and insights for ADHD task management</p>
         </div>
       </header>
@@ -417,7 +417,7 @@ export default function Blog() {
           // Single Post View
           <article className="prose prose-invert max-w-none">
             <div className="border-2 border-border p-6 bg-card mb-6">
-              <h1 className="text-4xl font-bold font-pressstart mb-4">{selectedPost.title}</h1>
+              <h1 className="text-4xl font-bold font-pressstart mb-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>{selectedPost.title}</h1>
               <div className="flex gap-4 text-sm mb-6" style={{ fontFamily: 'Inter, sans-serif' }}>
                 <span>{selectedPost.date}</span>
                 <span>•</span>
@@ -458,7 +458,7 @@ export default function Blog() {
                 onClick={() => setSelectedPost(post)}
               >
                 <div className="flex justify-between items-start mb-3">
-                  <h2 className="text-2xl font-bold font-pressstart flex-1 mr-4">{post.title}</h2>
+                  <h2 className="text-2xl font-bold font-pressstart flex-1 mr-4" style={{ fontFamily: 'Press Start 2P, monospace' }}>{post.title}</h2>
                   <span className="text-sm text-primary whitespace-nowrap" style={{ fontFamily: 'Inter, sans-serif' }}>{post.readTime}</span>
                 </div>
 
