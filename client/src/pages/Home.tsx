@@ -158,7 +158,7 @@ export default function Home() {
             <h1 className="mobile-heading-1">DO THE THING</h1>
 
             <div className="mobile-card">
-              <h2 className="mobile-heading-2">I NEED TO...</h2>
+              <h2 className="mobile-heading-2">TODAY, I NEED TO...</h2>
               <p className="mobile-body" style={{ marginBottom: "16px" }}>
                 Enter a single task or brain dump everything you need to do.
               </p>

@@ -173,5 +173,6 @@
 - [x] Fix TypeScript error in storageProxy.ts
 - [x] Fix JSX error in Blog.tsx
 - [x] Update all fonts to VT323 (remove Press Start 2P, use VT323 for all text)
+- [x] Update home page copy to "TODAY, I NEED TO..." (instead of "I NEED TO...")
 - [ ] Final checkpoint with complete website
 - [ ] Deploy to production
