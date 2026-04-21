@@ -70,4 +70,5 @@
 - [x] Polish overall pixel art aesthetic and consistency
 - [x] Increase body text size for better readability (14-16px body, 15px task titles)
 - [x] Add back button to return to edit from breakdown view
+- [x] Restore focus level selector (Hyperfocus, Normal, Distracted) to input screen
 - [x] Final checkpoint with all UI improvements

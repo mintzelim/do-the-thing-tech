@@ -147,6 +147,33 @@ export default function Home() {
 
               <div style={{ marginBottom: "20px" }}>
                 <p className="mobile-body-lg" style={{ marginBottom: "12px", fontWeight: 600 }}>
+                  HOW FOCUSED ARE YOU TODAY?
+                </p>
+
+                <div className="mobile-preset-group">
+                  <button
+                    className={`mobile-preset-button ${focusLevel === "hyperfocus" ? "active" : ""}`}
+                    onClick={() => setFocusLevel("hyperfocus")}
+                  >
+                    HYPERFOCUS
+                  </button>
+                  <button
+                    className={`mobile-preset-button ${focusLevel === "normal" ? "active" : ""}`}
+                    onClick={() => setFocusLevel("normal")}
+                  >
+                    NORMAL
+                  </button>
+                  <button
+                    className={`mobile-preset-button ${focusLevel === "distracted" ? "active" : ""}`}
+                    onClick={() => setFocusLevel("distracted")}
+                  >
+                    DISTRACTED
+                  </button>
+                </div>
+              </div>
+
+              <div style={{ marginBottom: "20px" }}>
+                <p className="mobile-body-lg" style={{ marginBottom: "12px", fontWeight: 600 }}>
                   TASK BREAKDOWN SIZE
                 </p>
 
@@ -183,6 +210,10 @@ export default function Home() {
                   }}
                 />
               </div>
+
+              <p className="mobile-body-sm" style={{ marginBottom: "16px", color: "var(--pixel-text-light)", fontStyle: "italic" }}>
+                Time estimates adjust based on your focus level
+              </p>
 
               <button
                 className="mobile-button"
