@@ -9,7 +9,7 @@ export default function About() {
         {/* Back Button */}
         <button
           onClick={() => navigate("/")}
-          className="font-pressstart text-sm mb-8 text-blue-600 hover:text-blue-800 border-4 border-blue-600 px-4 py-3 active:translate-y-1 active:shadow-none transition-all"
+          className="font-pressstart text-sm mb-8 text-black border-4 border-black px-4 py-3 active:translate-y-1 active:shadow-none transition-all hover:bg-gray-100"
           style={{
             boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
             fontFamily: 'Press Start 2P, monospace',
@@ -238,10 +238,10 @@ export default function About() {
         </div>
 
         {/* CTA Section */}
-        <div className="border-4 border-blue-600 p-6 mb-8 bg-blue-50" style={{
+        <div className="border-4 border-black p-6 mb-8 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
         }}>
-          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-blue-600" style={{
+          <h2 className="font-pressstart text-2xl md:text-3xl mb-4 text-black" style={{
             fontFamily: 'Press Start 2P, monospace',
             fontSize: '24px',
             letterSpacing: '2px'
@@ -257,7 +257,7 @@ export default function About() {
           </p>
           <button
             onClick={() => navigate("/")}
-            className="font-pressstart text-sm md:text-base bg-blue-600 text-white border-4 border-blue-600 px-6 py-4 hover:bg-blue-700 active:translate-y-1 active:shadow-none transition-all"
+            className="font-pressstart text-sm md:text-base bg-black text-white border-4 border-black px-6 py-4 hover:bg-gray-800 active:translate-y-1 active:shadow-none transition-all"
             style={{
               boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
               fontFamily: 'Press Start 2P, monospace',
