@@ -189,3 +189,13 @@
 - [x] Remove emoji from celebratory completion message
 - [ ] Final checkpoint with complete website
 - [ ] Deploy to production
+
+## Final Polish & Legal Compliance
+- [x] Fix footer to stay at bottom on all pages
+- [x] Create Privacy Policy page
+- [x] Create Terms of Service page
+- [x] Add confirmation dialog when navigating away from incomplete tasks
+- [x] Add top navigation bar with links to all pages
+- [x] Polish and ensure responsive design consistency across all pages
+- [x] Final checkpoint with complete website
+- [ ] Deploy to production

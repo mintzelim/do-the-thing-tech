@@ -1,11 +1,14 @@
+import Navigation from '@/components/Navigation';
 import { useLocation } from 'wouter';
 
 export default function About() {
   const [, navigate] = useLocation();
 
   return (
-    <div className="min-h-screen bg-white p-4 font-inter">
-      <div className="max-w-3xl mx-auto">
+    <div className="mobile-frame">
+      <Navigation />
+      <div className="mobile-content">
+        <div className="max-w-3xl mx-auto">
         {/* Back Button */}
         <button
           onClick={() => navigate("/")}
@@ -278,7 +281,41 @@ export default function About() {
             DoTheThing is a free tool designed for neurodivergent individuals. Built with care by people who understand ADHD.
           </p>
         </div>
+        </div>
       </div>
+      
+      {/* Footer Navigation */}
+      <footer className="border-t-2 border-border p-4 bg-card text-center space-y-3 mt-auto">
+        <div className="flex gap-2 justify-center flex-wrap">
+          <button
+            onClick={() => navigate("/")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            HOME
+          </button>
+          <button
+            onClick={() => navigate("/blog")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            BLOG
+          </button>
+          <button
+            onClick={() => navigate("/privacy")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            PRIVACY
+          </button>
+          <button
+            onClick={() => navigate("/terms")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            TERMS
+          </button>
+        </div>
+        <p className="font-vt323 text-xs text-muted-foreground">
+          DoTheThing - Task Management for ADHD Brains
+        </p>
+      </footer>
     </div>
   );
 }

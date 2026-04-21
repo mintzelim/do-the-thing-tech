@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useLocation } from 'wouter';
+import Navigation from '@/components/Navigation';
+import '../pixel-art-refined.css';
 
 interface BlogPost {
   id: string;
@@ -623,8 +625,11 @@ export default function Blog() {
   }
 
   return (
-    <div className="min-h-screen bg-white p-4 font-inter">
-      <div className="max-w-2xl mx-auto">
+    <div className="mobile-frame">
+      <Navigation />
+      <div className="mobile-content">
+        <div className="min-h-screen bg-white p-4 font-inter">
+          <div className="max-w-2xl mx-auto">
         <button
           onClick={() => setLocation('/')}
           className="text-sm mb-6 text-black hover:text-gray-800 border-2 border-black px-3 py-2" style={{ fontFamily: 'VT323, monospace' }}
@@ -669,8 +674,43 @@ export default function Blog() {
           >
             BACK TO HOME
           </button>
+          </div>
         </div>
       </div>
+      </div>
+      
+      {/* Footer Navigation */}
+      <footer className="border-t-2 border-border p-4 bg-card text-center space-y-3 mt-auto">
+        <div className="flex gap-2 justify-center flex-wrap">
+          <button
+            onClick={() => setLocation("/")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            HOME
+          </button>
+          <button
+            onClick={() => setLocation("/about")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            ABOUT
+          </button>
+          <button
+            onClick={() => setLocation("/privacy")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            PRIVACY
+          </button>
+          <button
+            onClick={() => setLocation("/terms")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            TERMS
+          </button>
+        </div>
+        <p className="font-vt323 text-xs text-muted-foreground">
+          DoTheThing - Task Management for ADHD Brains
+        </p>
+      </footer>
     </div>
   );
 }

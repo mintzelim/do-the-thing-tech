@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
+import Navigation from "@/components/Navigation";
 import "../pixel-art-refined.css";
 
 type Step = {
@@ -28,6 +29,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [timerActive, setTimerActive] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(0);
+  const [pendingNavigation, setPendingNavigation] = useState<string | null>(null);
   const clickSoundRef = useRef<HTMLAudioElement | null>(null);
 
   // Load persisted state from localStorage
@@ -155,6 +157,15 @@ export default function Home() {
     if (preset === "big") setGranularity(80);
   };
 
+  // Handle navigation with confirmation
+  const handleNavigation = (path: string) => {
+    if (flowState === "breakdown" && steps.length > 0 && !steps.every(s => s.completed)) {
+      setPendingNavigation(path);
+    } else {
+      navigate(path);
+    }
+  };
+
   // Sync slider with presets when slider is manually adjusted
   const handleSliderChange = (value: number) => {
     setGranularity(value);
@@ -240,6 +251,72 @@ export default function Home() {
 
   return (
     <div className="mobile-frame">
+      <Navigation />
+      
+      {/* Navigation Confirmation Dialog */}
+      {pendingNavigation && (
+        <div style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.5)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          zIndex: 1000,
+        }}>
+          <div style={{
+            backgroundColor: "var(--pixel-card-bg)",
+            border: "3px solid var(--pixel-border)",
+            padding: "24px",
+            maxWidth: "400px",
+            textAlign: "center",
+          }}>
+            <h2 style={{ fontFamily: "'VT323', monospace", fontSize: "20px", marginBottom: "16px" }}>
+              UNSAVED TASKS
+            </h2>
+            <p style={{ fontFamily: "'VT323', monospace", fontSize: "14px", marginBottom: "24px", color: "var(--pixel-text-light)" }}>
+              You have incomplete tasks. Navigating away will lose your breakdown. Continue anyway?
+            </p>
+            <div style={{ display: "flex", gap: "12px", justifyContent: "center" }}>
+              <button
+                onClick={() => {
+                  navigate(pendingNavigation);
+                  setPendingNavigation(null);
+                }}
+                style={{
+                  padding: "8px 16px",
+                  border: "2px solid var(--pixel-border)",
+                  backgroundColor: "var(--pixel-error)",
+                  color: "white",
+                  fontFamily: "'VT323', monospace",
+                  cursor: "pointer",
+                  fontSize: "12px",
+                }}
+              >
+                YES, LOSE IT
+              </button>
+              <button
+                onClick={() => setPendingNavigation(null)}
+                style={{
+                  padding: "8px 16px",
+                  border: "2px solid var(--pixel-border)",
+                  backgroundColor: "var(--pixel-accent)",
+                  color: "white",
+                  fontFamily: "'VT323', monospace",
+                  cursor: "pointer",
+                  fontSize: "12px",
+                }}
+              >
+                CANCEL
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      
       <div className="mobile-content">
         {/* Flow: Input */}
         {flowState === "input" && (
@@ -454,19 +531,31 @@ export default function Home() {
       </div>
       
       {/* Footer Navigation */}
-      <footer className="border-t-2 border-border p-4 bg-card text-center space-y-3">
+      <footer className="border-t-2 border-border p-4 bg-card text-center space-y-3 mt-auto">
         <div className="flex gap-2 justify-center flex-wrap">
           <button
-            onClick={() => navigate("/about")}
+            onClick={() => handleNavigation("/about")}
             className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
           >
             ABOUT
           </button>
           <button
-            onClick={() => navigate("/blog")}
+            onClick={() => handleNavigation("/blog")}
             className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
           >
             BLOG
+          </button>
+          <button
+            onClick={() => handleNavigation("/privacy")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            PRIVACY
+          </button>
+          <button
+            onClick={() => handleNavigation("/terms")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            TERMS
           </button>
         </div>
         <p className="font-vt323 text-xs text-muted-foreground">
