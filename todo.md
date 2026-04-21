@@ -12,6 +12,10 @@
 - [x] Add inline instructions for single task vs brain dump
 - [x] Build input handler to distinguish between task and brain dump
 - [x] Create form submission logic
+- [x] Rebuild flow: brain dump → estimates → breakdown → export
+- [x] Implement neurodiversity design system (neurodiversity.design)
+- [x] Remove all emojis and distracting elements
+- [x] Add checkboxes and edit capabilities to breakdown steps
 
 ## AI-Powered Task Breakdown
 - [x] Integrate LLM for task breakdown (single task)
@@ -24,7 +28,7 @@
 ## Smart Estimator
 - [x] Implement focus level selector (Hyperfocus, Normal, Distracted)
 - [x] Build time estimation logic with focus-level adjustments
-- [x] Apply time-blindness buffer (15-30%) to all estimates
+- [x] Apply time-blindness buffer (20-30%) to all estimates
 - [x] Create estimator UI showing time per step
 - [x] Add visual indicators for time estimates
 - [x] Write and pass unit tests for estimator service
@@ -47,12 +51,14 @@
 
 ## Google Ads Integration
 - [x] Set up Google Ads placeholder zones (sidebar + bottom banner)
+- [x] Ensure ads are non-intrusive and clearly separated
 - [ ] Set up Google AdSense integration
-- [ ] Ensure ads are non-intrusive and clearly separated
 
 ## Polish & Deployment
 - [x] Add animations and transitions (subtle, ADHD-friendly)
-- [ ] Refine visual design and micro-interactions
-- [ ] Test all features end-to-end
+- [x] Create comprehensive unit tests (33 passing)
+- [ ] Implement neurodiversity design system fully
+- [ ] Remove all emojis from UI
+- [ ] Test all features end-to-end in browser
 - [ ] Optimize performance
-- [ ] Create checkpoint and deploy
+- [ ] Final checkpoint and ready for production

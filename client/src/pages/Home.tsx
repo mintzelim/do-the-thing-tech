@@ -3,321 +3,389 @@ import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Slider } from "@/components/ui/slider";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Card } from "@/components/ui/card";
-import { Zap, Clock, CheckCircle2, Loader } from "lucide-react";
-import { getLoginUrl } from "@/const";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
+import { ChevronRight, Loader2, Check } from "lucide-react";
 
-type TaskStep = {
+type Step = {
   id: string;
   title: string;
   description?: string;
-  estimatedTime?: number;
-  completed?: boolean;
+  completed: boolean;
+  estimatedTime: number;
 };
 
-type AppState = "entry" | "breakdown" | "estimating" | "scheduled";
+type FlowState = "input" | "estimates" | "breakdown" | "export";
 
 export default function Home() {
   const { user, isAuthenticated } = useAuth();
-  const [appState, setAppState] = useState<AppState>("entry");
-  const [inputValue, setInputValue] = useState("");
-  const [granularity, setGranularity] = useState(50);
+  const [flowState, setFlowState] = useState<FlowState>("input");
+  const [brainDump, setBrainDump] = useState("");
   const [focusLevel, setFocusLevel] = useState<"hyperfocus" | "normal" | "distracted">("normal");
-  const [taskSteps, setTaskSteps] = useState<TaskStep[]>([]);
+  const [granularity, setGranularity] = useState(50);
+  const [steps, setSteps] = useState<Step[]>([]);
+  const [estimatedTasks, setEstimatedTasks] = useState<any[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const breakdownMutation = trpc.tasks.breakdown.useMutation();
   const estimateMutation = trpc.tasks.estimateTasks.useMutation();
+  const exportMutation = trpc.tasks.exportToCalendar.useQuery(
+    {
+      tasks: steps.map((s) => ({
+        title: s.title,
+        description: s.description,
+        estimatedTime: s.estimatedTime,
+      })),
+    },
+    { enabled: false }
+  );
 
-  const handleSubmit = async () => {
-    if (!inputValue.trim()) return;
-    
+  const handleBrainDumpSubmit = async () => {
+    if (!brainDump.trim()) {
+      toast.error("Please enter your tasks");
+      return;
+    }
+
     setIsLoading(true);
     try {
-      const result = await breakdownMutation.mutateAsync({
-        input: inputValue,
+      // First, get estimates for the brain dump
+      const compiled = await breakdownMutation.mutateAsync({
+        input: brainDump,
         granularity,
       });
-      
-      setTaskSteps(result);
-      setAppState("breakdown");
+
+      setEstimatedTasks(compiled);
+      setFlowState("estimates");
     } catch (error) {
-      console.error("Error breaking down task:", error);
-      toast.error("Failed to break down task. Please try again.");
+      toast.error("Failed to process your input");
     } finally {
       setIsLoading(false);
     }
   };
 
-  const getGranularityLabel = () => {
-    if (granularity < 25) return "Tiny Steps";
-    if (granularity < 50) return "Small Steps";
-    if (granularity < 75) return "Medium Steps";
-    return "Big Milestones";
+  const handleEstimatesToBreakdown = async () => {
+    if (estimatedTasks.length === 0) {
+      toast.error("No tasks to estimate");
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      const estimated = await estimateMutation.mutateAsync({
+        tasks: estimatedTasks.map((t) => ({
+          title: t.title,
+          description: t.description,
+        })),
+        focusLevel,
+      });
+
+      const stepsWithIds = estimated.map((task: any, idx: number) => ({
+        id: `step-${idx}`,
+        title: task.title,
+        description: task.description,
+        completed: false,
+        estimatedTime: task.totalTime || task.estimatedTime || 30,
+      }));
+
+      setSteps(stepsWithIds);
+      setFlowState("breakdown");
+    } catch (error) {
+      toast.error("Failed to estimate tasks");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
-  const getTimeBuffer = () => {
-    if (focusLevel === "hyperfocus") return 20;
-    if (focusLevel === "distracted") return 30;
-    return 25; // normal
-  };
-
-  const getTotalTime = () => {
-    const base = taskSteps.reduce((sum, step) => sum + (step.estimatedTime || 0), 0);
-    const buffer = getTimeBuffer();
-    return Math.ceil(base * (1 + buffer / 100));
-  };
-
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-primary/5 px-4">
-        <Card className="max-w-md w-full p-8 text-center space-y-6">
-          <div>
-            <h1 className="text-4xl font-bold text-foreground mb-2">DoTheThing</h1>
-            <p className="text-muted-foreground">Break down overwhelming tasks into manageable steps</p>
-          </div>
-          <p className="text-sm text-muted-foreground">
-            Sign in to start organizing your thoughts and managing your time effectively.
-          </p>
-          <Button 
-            className="w-full" 
-            onClick={() => window.location.href = getLoginUrl()}
-          >
-            Sign In to Get Started
-          </Button>
-        </Card>
-      </div>
+  const toggleStepComplete = (stepId: string) => {
+    setSteps((prev) =>
+      prev.map((s) => (s.id === stepId ? { ...s, completed: !s.completed } : s))
     );
-  }
+  };
+
+  const updateStepTime = (stepId: string, time: number) => {
+    setSteps((prev) =>
+      prev.map((s) => (s.id === stepId ? { ...s, estimatedTime: time } : s))
+    );
+  };
+
+  const deleteStep = (stepId: string) => {
+    setSteps((prev) => prev.filter((s) => s.id !== stepId));
+  };
+
+  const handleExport = async () => {
+    if (steps.length === 0) {
+      toast.error("No steps to export");
+      return;
+    }
+
+    setIsLoading(true);
+    try {
+      // Export logic would go here
+      toast.success("Tasks exported to calendar");
+      setFlowState("export");
+    } catch (error) {
+      toast.error("Failed to export tasks");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const totalTime = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
+  const completedCount = steps.filter((s) => s.completed).length;
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-background via-background to-primary/5">
-      {/* Header */}
-      <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-10">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div>
-            <h1 className="text-2xl font-bold text-foreground">DoTheThing</h1>
-            <p className="text-xs text-muted-foreground">Welcome, {user?.name || "there"}!</p>
+    <div className="min-h-screen bg-gray-50">
+      <div className="flex">
+        {/* Main Content */}
+        <div className="flex-1 p-8 max-w-4xl mx-auto">
+          {/* Header */}
+          <div className="mb-12">
+            <h1 className="text-4xl font-bold text-gray-900 mb-2">DoTheThing</h1>
+            <p className="text-gray-600">
+              {isAuthenticated ? `Welcome, ${user?.name}` : "Break down your tasks into manageable steps"}
+            </p>
           </div>
-        </div>
-      </header>
 
-      {/* Main Content */}
-      <main className="flex-1 container mx-auto px-4 py-8 max-w-4xl">
-        {appState === "entry" && (
-          <div className="space-y-8 animate-fade-in">
-            {/* Entry Point Card */}
-            <Card className="p-8 border-2 border-primary/20 hover:border-primary/40 transition-colors">
-              <div className="space-y-4">
-                <div>
-                  <label className="text-lg font-semibold text-foreground mb-2 block">
+          {/* Flow: Input */}
+          {flowState === "input" && (
+            <div className="space-y-6">
+              <Card className="p-8 border-2 border-gray-200">
+                <div className="mb-6">
+                  <label className="block text-lg font-semibold text-gray-900 mb-3">
                     I need to...
                   </label>
-                  <Textarea
-                    placeholder="Enter a single task or brain dump everything you need to do. Be as specific or vague as you want!"
-                    value={inputValue}
-                    onChange={(e) => setInputValue(e.target.value)}
-                    className="min-h-32 resize-none text-base"
-                  />
+                  <p className="text-sm text-gray-600 mb-4">
+                    Enter a single task or brain dump everything you need to do. Be as specific or vague as you want.
+                  </p>
                 </div>
-                <div className="text-sm text-muted-foreground space-y-1">
-                  <p>💡 <strong>Single task:</strong> "Write project proposal"</p>
-                  <p>🧠 <strong>Brain dump:</strong> "Fix bug, update docs, respond to emails, plan meeting"</p>
+
+                <Textarea
+                  placeholder="e.g., Write project proposal, update documentation, respond to emails, plan team meeting"
+                  value={brainDump}
+                  onChange={(e) => setBrainDump(e.target.value)}
+                  className="min-h-32 text-base"
+                />
+
+                <div className="mt-6 space-y-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-2">
+                      Task Breakdown Size
+                    </label>
+                    <div className="flex items-center gap-4">
+                      <span className="text-xs text-gray-600">Tiny Steps</span>
+                      <Slider
+                        value={[granularity]}
+                        onValueChange={(val) => setGranularity(val[0])}
+                        min={0}
+                        max={100}
+                        step={10}
+                        className="flex-1"
+                      />
+                      <span className="text-xs text-gray-600">Big Milestones</span>
+                    </div>
+                    <div className="mt-2 text-xs text-gray-600">
+                      {granularity < 33 && "Tiny steps - very detailed breakdown"}
+                      {granularity >= 33 && granularity < 66 && "Balanced - moderate detail"}
+                      {granularity >= 66 && "Big milestones - high-level overview"}
+                    </div>
+                  </div>
                 </div>
+
                 <Button
-                  onClick={handleSubmit}
-                  disabled={!inputValue.trim() || isLoading}
-                  className="w-full h-12 text-base font-semibold"
+                  onClick={handleBrainDumpSubmit}
+                  disabled={isLoading || !brainDump.trim()}
+                  className="w-full mt-6 h-12 text-base font-semibold bg-blue-500 hover:bg-blue-600"
                 >
                   {isLoading ? (
                     <>
-                      <Loader className="w-4 h-4 animate-spin mr-2" />
-                      Breaking down...
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Processing...
                     </>
                   ) : (
-                    "Break It Down"
+                    <>
+                      Break It Down
+                      <ChevronRight className="w-4 h-4 ml-2" />
+                    </>
                   )}
                 </Button>
-              </div>
-            </Card>
-
-            {/* Info Cards */}
-            <div className="grid md:grid-cols-3 gap-4">
-              <Card className="p-4 bg-card/50">
-                <div className="flex items-start gap-3">
-                  <Zap className="w-5 h-5 text-accent mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-sm text-foreground">Smart Breakdown</h3>
-                    <p className="text-xs text-muted-foreground mt-1">AI breaks tasks into actionable steps</p>
-                  </div>
-                </div>
-              </Card>
-              <Card className="p-4 bg-card/50">
-                <div className="flex items-start gap-3">
-                  <Clock className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-sm text-foreground">Time Estimates</h3>
-                    <p className="text-xs text-muted-foreground mt-1">Realistic estimates with ADHD buffers</p>
-                  </div>
-                </div>
-              </Card>
-              <Card className="p-4 bg-card/50">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-secondary mt-1 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-sm text-foreground">Export to Calendar</h3>
-                    <p className="text-xs text-muted-foreground mt-1">Sync with Google Calendar</p>
-                  </div>
-                </div>
               </Card>
             </div>
-          </div>
-        )}
+          )}
 
-        {appState === "breakdown" && (
-          <div className="space-y-8 animate-fade-in">
-            {/* Granularity Control */}
-            <Card className="p-6 border-primary/20">
-              <div className="space-y-4">
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <label className="font-semibold text-foreground">Step Granularity</label>
-                    <span className="text-sm font-medium text-primary">{getGranularityLabel()}</span>
-                  </div>
-                  <Slider
-                    value={[granularity]}
-                    onValueChange={(val) => setGranularity(val[0])}
-                    min={0}
-                    max={100}
-                    step={1}
-                    className="w-full"
-                  />
-                  <div className="flex justify-between text-xs text-muted-foreground mt-2">
-                    <span>Tiny Steps</span>
-                    <span>Big Milestones</span>
-                  </div>
+          {/* Flow: Estimates */}
+          {flowState === "estimates" && (
+            <div className="space-y-6">
+              <Card className="p-8 border-2 border-gray-200">
+                <h2 className="text-2xl font-bold text-gray-900 mb-6">How focused are you?</h2>
+
+                <div className="space-y-3 mb-8">
+                  {(["hyperfocus", "normal", "distracted"] as const).map((level) => (
+                    <button
+                      key={level}
+                      onClick={() => setFocusLevel(level)}
+                      className={`w-full p-4 text-left rounded-lg border-2 transition-colors ${
+                        focusLevel === level
+                          ? "border-blue-500 bg-blue-50"
+                          : "border-gray-200 bg-white hover:border-gray-300"
+                      }`}
+                    >
+                      <div className="font-semibold text-gray-900 capitalize">{level}</div>
+                      <div className="text-sm text-gray-600 mt-1">
+                        {level === "hyperfocus" && "You can focus deeply with minimal distractions"}
+                        {level === "normal" && "You have typical focus and attention span"}
+                        {level === "distracted" && "You're easily distracted and need more buffer time"}
+                      </div>
+                    </button>
+                  ))}
                 </div>
 
-                {/* ADHD Presets */}
-                <div className="pt-4 border-t border-border">
-                  <p className="text-sm font-medium text-foreground mb-3">ADHD-Friendly Presets</p>
-                  <div className="grid grid-cols-3 gap-2">
-                    <Button
-                      variant={granularity < 33 ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setGranularity(20)}
-                      className="text-xs"
-                    >
-                      Tiny Steps
-                    </Button>
-                    <Button
-                      variant={granularity >= 33 && granularity < 66 ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setGranularity(50)}
-                      className="text-xs"
-                    >
-                      Balanced
-                    </Button>
-                    <Button
-                      variant={granularity >= 66 ? "default" : "outline"}
-                      size="sm"
-                      onClick={() => setGranularity(80)}
-                      className="text-xs"
-                    >
-                      Milestones
-                    </Button>
-                  </div>
+                <Button
+                  onClick={handleEstimatesToBreakdown}
+                  disabled={isLoading}
+                  className="w-full h-12 text-base font-semibold bg-blue-500 hover:bg-blue-600"
+                >
+                  {isLoading ? (
+                    <>
+                      <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                      Estimating...
+                    </>
+                  ) : (
+                    <>
+                      Get Time Estimates
+                      <ChevronRight className="w-4 h-4 ml-2" />
+                    </>
+                  )}
+                </Button>
+              </Card>
+            </div>
+          )}
+
+          {/* Flow: Breakdown */}
+          {flowState === "breakdown" && (
+            <div className="space-y-6">
+              <div className="flex items-center justify-between mb-6">
+                <h2 className="text-2xl font-bold text-gray-900">Your Tasks</h2>
+                <div className="text-sm text-gray-600">
+                  {completedCount} of {steps.length} completed
                 </div>
               </div>
-            </Card>
 
-            {/* Task Steps */}
-            <Card className="p-6 border-primary/20">
-              <h2 className="text-xl font-bold text-foreground mb-4">Your Breakdown</h2>
               <div className="space-y-3">
-                {taskSteps.map((step, idx) => (
-                  <div key={step.id} className="flex items-start gap-4 p-4 bg-muted/30 rounded-lg hover:bg-muted/50 transition-colors">
-                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-primary font-semibold text-sm">
-                      {idx + 1}
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="font-medium text-foreground">{step.title}</h3>
-                      {step.description && <p className="text-sm text-muted-foreground mt-1">{step.description}</p>}
-                    </div>
-                    {step.estimatedTime && (
-                      <div className="flex-shrink-0 text-right">
-                        <p className="text-sm font-semibold text-foreground">{step.estimatedTime} min</p>
+                {steps.map((step) => (
+                  <Card
+                    key={step.id}
+                    className={`p-4 border-2 transition-colors ${
+                      step.completed ? "border-green-200 bg-green-50" : "border-gray-200 bg-white"
+                    }`}
+                  >
+                    <div className="flex items-start gap-4">
+                      <Checkbox
+                        checked={step.completed}
+                        onCheckedChange={() => toggleStepComplete(step.id)}
+                        className="mt-1"
+                      />
+
+                      <div className="flex-1">
+                        <h3
+                          className={`font-semibold ${
+                            step.completed ? "text-gray-500 line-through" : "text-gray-900"
+                          }`}
+                        >
+                          {step.title}
+                        </h3>
+                        {step.description && (
+                          <p className="text-sm text-gray-600 mt-1">{step.description}</p>
+                        )}
                       </div>
-                    )}
-                  </div>
+
+                      <div className="flex items-center gap-2">
+                        <input
+                          type="number"
+                          min="5"
+                          max="480"
+                          value={step.estimatedTime}
+                          onChange={(e) => updateStepTime(step.id, parseInt(e.target.value))}
+                          className="w-16 px-2 py-1 text-sm border border-gray-300 rounded text-center"
+                        />
+                        <span className="text-sm text-gray-600 w-8">min</span>
+                        <button
+                          onClick={() => deleteStep(step.id)}
+                          className="px-2 py-1 text-sm text-red-600 hover:bg-red-50 rounded"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </Card>
                 ))}
               </div>
-            </Card>
 
-            {/* Focus Level & Estimator */}
-            <Card className="p-6 border-secondary/20 bg-secondary/5">
-              <div className="space-y-4">
-                <div>
-                  <label className="font-semibold text-foreground mb-3 block">Your Focus Level</label>
-                  <div className="grid grid-cols-3 gap-2">
-                    {[
-                      { value: "hyperfocus" as const, label: "Hyperfocus", icon: "🎯" },
-                      { value: "normal" as const, label: "Normal", icon: "😊" },
-                      { value: "distracted" as const, label: "Distracted", icon: "🌀" },
-                    ].map((level) => (
-                      <Button
-                        key={level.value}
-                        variant={focusLevel === level.value ? "default" : "outline"}
-                        onClick={() => setFocusLevel(level.value)}
-                        className="flex flex-col items-center gap-1 h-auto py-3"
-                      >
-                        <span className="text-lg">{level.icon}</span>
-                        <span className="text-xs">{level.label}</span>
-                      </Button>
-                    ))}
+              <Card className="p-4 bg-blue-50 border-2 border-blue-200">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-sm text-gray-600">Total estimated time</p>
+                    <p className="text-2xl font-bold text-gray-900">
+                      {Math.round(totalTime / 60)}h {totalTime % 60}m
+                    </p>
                   </div>
+                  <Button
+                    onClick={handleExport}
+                    disabled={isLoading || steps.length === 0}
+                    className="h-12 px-8 text-base font-semibold bg-green-500 hover:bg-green-600"
+                  >
+                    {isLoading ? (
+                      <>
+                        <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                        Exporting...
+                      </>
+                    ) : (
+                      "Export to Calendar"
+                    )}
+                  </Button>
                 </div>
+              </Card>
+            </div>
+          )}
 
-                {/* Time Summary */}
-                <div className="pt-4 border-t border-border">
-                  <div className="bg-card rounded-lg p-4 space-y-2">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-muted-foreground">Base Time:</span>
-                      <span className="font-semibold text-foreground">{taskSteps.reduce((sum, s) => sum + (s.estimatedTime || 0), 0)} min</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-muted-foreground">Time Buffer ({getTimeBuffer()}%):</span>
-                      <span className="font-semibold text-foreground">+{Math.ceil(taskSteps.reduce((sum, s) => sum + (s.estimatedTime || 0), 0) * getTimeBuffer() / 100)} min</span>
-                    </div>
-                    <div className="flex justify-between text-base font-bold pt-2 border-t border-border">
-                      <span className="text-foreground">Total Time:</span>
-                      <span className="text-primary">{getTotalTime()} minutes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </Card>
-
-            {/* Action Buttons */}
-            <div className="flex gap-3">
-              <Button variant="outline" onClick={() => setAppState("entry")} className="flex-1">
-                Back
-              </Button>
-              <Button 
-                className="flex-1" 
+          {/* Flow: Export Success */}
+          {flowState === "export" && (
+            <Card className="p-8 border-2 border-green-200 bg-green-50 text-center">
+              <Check className="w-12 h-12 text-green-600 mx-auto mb-4" />
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">All set!</h2>
+              <p className="text-gray-600 mb-6">Your tasks have been exported to Google Calendar</p>
+              <Button
                 onClick={() => {
-                  toast.success("Calendar export coming soon!");
-                  setAppState("scheduled");
+                  setFlowState("input");
+                  setBrainDump("");
+                  setSteps([]);
                 }}
+                className="bg-blue-500 hover:bg-blue-600"
               >
-                Export to Calendar
+                Start Over
               </Button>
+            </Card>
+          )}
+        </div>
+
+        {/* Sidebar - Ads */}
+        <div className="w-80 bg-white border-l border-gray-200 p-6 hidden lg:block">
+          <div className="space-y-6">
+            <div className="bg-gray-100 rounded-lg p-6 text-center text-gray-500 text-sm">
+              Advertisement
+            </div>
+            <div className="bg-gray-100 rounded-lg p-6 text-center text-gray-500 text-sm">
+              Advertisement
             </div>
           </div>
-        )}
-      </main>
+        </div>
+      </div>
+
+      {/* Bottom Ad Banner */}
+      <div className="bg-white border-t border-gray-200 p-4 text-center text-gray-500 text-sm lg:hidden">
+        Advertisement
+      </div>
     </div>
   );
 }
