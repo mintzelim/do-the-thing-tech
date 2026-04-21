@@ -71,4 +71,5 @@
 - [x] Increase body text size for better readability (14-16px body, 15px task titles)
 - [x] Add back button to return to edit from breakdown view
 - [x] Restore focus level selector (Hyperfocus, Normal, Distracted) to input screen
+- [x] Add countdown timer to total time display (clickable, red highlight when active)
 - [x] Final checkpoint with all UI improvements

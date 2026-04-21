@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
@@ -24,10 +24,33 @@ export default function Home() {
   const [granularityPreset, setGranularityPreset] = useState<GranularityPreset>("balanced");
   const [steps, setSteps] = useState<Step[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [timerActive, setTimerActive] = useState(false);
+  const [timeRemaining, setTimeRemaining] = useState(0);
 
   const breakdownMutation = trpc.tasks.breakdown.useMutation();
   const estimateMutation = trpc.tasks.estimateTasks.useMutation();
   const exportMutation = trpc.tasks.exportToCalendar.useMutation();
+
+  useEffect(() => {
+    if (!timerActive || timeRemaining <= 0) {
+      setTimerActive(false);
+      return;
+    }
+    const interval = setInterval(() => {
+      setTimeRemaining((prev) => (prev <= 1 ? 0 : prev - 1));
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [timerActive, timeRemaining]);
+
+  const handleStartTimer = () => {
+    const total = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
+    setTimeRemaining(total);
+    setTimerActive(true);
+  };
+
+  const handleStopTimer = () => {
+    setTimerActive(false);
+  };
 
   const handleGranularityPreset = (preset: GranularityPreset) => {
     setGranularityPreset(preset);
@@ -121,7 +144,7 @@ export default function Home() {
     }
   };
 
-  const totalTime = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
+  const totalTime = timerActive ? timeRemaining : steps.reduce((sum, s) => sum + s.estimatedTime, 0);
   const completedCount = steps.filter((s) => s.completed).length;
 
   return (
@@ -240,12 +263,24 @@ export default function Home() {
               <h1 className="mobile-heading-1" style={{ margin: 0 }}>YOUR TASKS</h1>
             </div>
 
-            <div className="mobile-summary">
-              <div className="mobile-summary-label">TOTAL TIME</div>
-              <div className="mobile-summary-value">
+            <div
+              className="mobile-summary"
+              style={{
+                cursor: "pointer",
+                position: "relative",
+                background: timerActive ? "linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)" : undefined,
+                borderColor: timerActive ? "#ef4444" : undefined,
+              }}
+              onClick={timerActive ? handleStopTimer : handleStartTimer}
+            >
+              <div className="mobile-summary-label">{timerActive ? "TIME REMAINING" : "TOTAL TIME"}</div>
+              <div className="mobile-summary-value" style={{ color: timerActive ? "#ef4444" : "var(--pixel-accent)" }}>
                 {Math.round(totalTime / 60)}H {totalTime % 60}M
               </div>
               <div className="mobile-body-sm" style={{ marginTop: "8px" }}>
+                {timerActive ? "Click to stop" : "Click to start countdown"}
+              </div>
+              <div className="mobile-body-sm" style={{ marginTop: "4px" }}>
                 {completedCount} OF {steps.length} DONE
               </div>
             </div>
