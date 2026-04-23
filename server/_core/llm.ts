@@ -209,17 +209,6 @@ const normalizeToolChoice = (
   return toolChoice;
 };
 
-const resolveApiUrl = () =>
-  ENV.forgeApiUrl && ENV.forgeApiUrl.trim().length > 0
-    ? `${ENV.forgeApiUrl.replace(/\/$/, "")}/v1/chat/completions`
-    : "https://forge.manus.im/v1/chat/completions";
-
-const assertApiKey = () => {
-  if (!ENV.forgeApiKey) {
-    throw new Error("OPENAI_API_KEY is not configured");
-  }
-};
-
 const normalizeResponseFormat = ({
   responseFormat,
   response_format,
@@ -265,8 +254,16 @@ const normalizeResponseFormat = ({
   };
 };
 
+const assertApiKey = (): string => {
+  const key = process.env.GOOGLE_GEMINI_API_KEY;
+  if (!key) {
+    throw new Error("GOOGLE_GEMINI_API_KEY is not configured");
+  }
+  return key;
+};
+
 export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
-  assertApiKey();
+  const apiKey = assertApiKey();
 
   const {
     messages,
@@ -279,44 +276,30 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     response_format,
   } = params;
 
-  const payload: Record<string, unknown> = {
-    model: "gemini-2.5-flash",
-    messages: messages.map(normalizeMessage),
-  };
-
-  if (tools && tools.length > 0) {
-    payload.tools = tools;
-  }
-
-  const normalizedToolChoice = normalizeToolChoice(
-    toolChoice || tool_choice,
-    tools
-  );
-  if (normalizedToolChoice) {
-    payload.tool_choice = normalizedToolChoice;
-  }
-
-  payload.max_tokens = 32768
-  payload.thinking = {
-    "budget_tokens": 128
-  }
-
-  const normalizedResponseFormat = normalizeResponseFormat({
-    responseFormat,
-    response_format,
-    outputSchema,
-    output_schema,
+  // Convert messages to Gemini format
+  const geminiMessages = messages.map(msg => {
+    const normalizedMsg = normalizeMessage(msg);
+    return {
+      role: msg.role === "assistant" ? "model" : "user",
+      parts: [{ text: typeof normalizedMsg.content === "string" ? normalizedMsg.content : JSON.stringify(normalizedMsg.content) }]
+    };
   });
 
-  if (normalizedResponseFormat) {
-    payload.response_format = normalizedResponseFormat;
-  }
+  const payload: Record<string, unknown> = {
+    contents: geminiMessages,
+    generationConfig: {
+      maxOutputTokens: 1024,
+      temperature: 0.7,
+    },
+  };
 
-  const response = await fetch(resolveApiUrl(), {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`;
+
+  const response = await fetch(url, {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      authorization: `Bearer ${ENV.forgeApiKey}`,
+      "x-goog-api-key": apiKey,
     },
     body: JSON.stringify(payload),
   });
@@ -328,5 +311,29 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     );
   }
 
-  return (await response.json()) as InvokeResult;
+  const data = await response.json() as any;
+
+  // Transform Gemini response to match our format
+  const content = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+
+  return {
+    id: data.candidates?.[0]?.index?.toString() || "0",
+    created: Date.now(),
+    model: "gemini-flash-latest",
+    choices: [
+      {
+        index: 0,
+        message: {
+          role: "assistant",
+          content: content,
+        },
+        finish_reason: data.candidates?.[0]?.finishReason || "stop",
+      },
+    ],
+    usage: {
+      prompt_tokens: data.usageMetadata?.promptTokenCount || 0,
+      completion_tokens: data.usageMetadata?.candidatesTokenCount || 0,
+      total_tokens: data.usageMetadata?.totalTokenCount || 0,
+    },
+  };
 }

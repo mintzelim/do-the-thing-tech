@@ -198,4 +198,5 @@
 - [x] Add top navigation bar with links to all pages
 - [x] Polish and ensure responsive design consistency across all pages
 - [x] Final checkpoint with complete website
+- [x] Integrate Google Gemini Free tier API (gemini-flash-latest)
 - [ ] Deploy to production
