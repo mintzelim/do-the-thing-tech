@@ -78,6 +78,7 @@ body {
     var(--pixel-bg) 0%,
     var(--pixel-bg) 100%
   );
+  width: 100%;
 }
 
 /* Typography - Pixel Art Fonts */
@@ -513,6 +514,90 @@ body {
 }
 
 /* Responsive adjustments */
+/* Desktop Optimization - 768px and above */
+@media (min-width: 768px) {
+  .mobile-content {
+    padding: 32px 40px 24px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .mobile-heading-1 {
+    font-size: 42px;
+    margin-bottom: 24px;
+  }
+  
+  .mobile-heading-2 {
+    font-size: 26px;
+    margin-bottom: 16px;
+  }
+  
+  .mobile-body-text {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  
+  .mobile-input-box {
+    padding: 16px;
+    font-size: 15px;
+    min-height: 120px;
+  }
+  
+  .mobile-button {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .mobile-focus-buttons,
+  .mobile-granularity-buttons {
+    gap: 12px;
+  }
+  
+  .mobile-focus-button,
+  .mobile-granularity-button {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+  
+  .mobile-task-item {
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  
+  .mobile-summary {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet - 481px to 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  .mobile-content {
+    padding: 24px 20px 16px;
+  }
+  
+  .mobile-heading-1 {
+    font-size: 32px;
+  }
+  
+  .mobile-heading-2 {
+    font-size: 24px;
+  }
+  
+  .mobile-input-box {
+    padding: 14px;
+    font-size: 14px;
+    min-height: 100px;
+  }
+  
+  .mobile-button {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+/* Mobile - 480px and below */
 @media (max-width: 480px) {
   .mobile-frame {
     border-radius: 0;
@@ -525,6 +610,56 @@ body {
   
   .mobile-heading-1 {
     font-size: 24px;
+    margin-bottom: 12px;
+  }
+  
+  .mobile-heading-2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .mobile-body-text {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .mobile-input-box {
+    padding: 12px;
+    font-size: 13px;
+    min-height: 80px;
+  }
+  
+  .mobile-button {
+    padding: 10px 16px;
+    font-size: 12px;
+    width: 100%;
+  }
+  
+  .mobile-focus-buttons,
+  .mobile-granularity-buttons {
+    gap: 8px;
+    flex-direction: column;
+  }
+  
+  .mobile-focus-button,
+  .mobile-granularity-button {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  
+  .mobile-task-item {
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .mobile-summary {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .mobile-success-message {
+    padding: 16px 12px;
   }
 }
 

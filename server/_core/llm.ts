@@ -254,16 +254,58 @@ const normalizeResponseFormat = ({
   };
 };
 
-const assertApiKey = (): string => {
-  const key = process.env.GOOGLE_GEMINI_API_KEY;
-  if (!key) {
-    throw new Error("GOOGLE_GEMINI_API_KEY is not configured");
+const resolveApiUrl = () =>
+  ENV.forgeApiUrl && ENV.forgeApiUrl.trim().length > 0
+    ? `${ENV.forgeApiUrl.replace(/\/$/, "")}/v1/chat/completions`
+    : "https://forge.manus.im/v1/chat/completions";
+
+const assertApiKey = () => {
+  if (!ENV.forgeApiKey) {
+    throw new Error("BUILT_IN_FORGE_API_KEY is not configured");
   }
-  return key;
+};
+
+const normalizeToolChoice2 = (
+  toolChoice: ToolChoice | undefined,
+  tools: Tool[] | undefined
+): "none" | "auto" | ToolChoiceExplicit | undefined => {
+  if (!toolChoice) return undefined;
+
+  if (toolChoice === "none" || toolChoice === "auto") {
+    return toolChoice;
+  }
+
+  if (toolChoice === "required") {
+    if (!tools || tools.length === 0) {
+      throw new Error(
+        "tool_choice 'required' was provided but no tools were configured"
+      );
+    }
+
+    if (tools.length > 1) {
+      throw new Error(
+        "tool_choice 'required' needs a single tool or specify the tool name explicitly"
+      );
+    }
+
+    return {
+      type: "function",
+      function: { name: tools[0].function.name },
+    };
+  }
+
+  if ("name" in toolChoice) {
+    return {
+      type: "function",
+      function: { name: toolChoice.name },
+    };
+  }
+
+  return toolChoice;
 };
 
 export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
-  const apiKey = assertApiKey();
+  assertApiKey();
 
   const {
     messages,
@@ -276,30 +318,41 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     response_format,
   } = params;
 
-  // Convert messages to Gemini format
-  const geminiMessages = messages.map(msg => {
-    const normalizedMsg = normalizeMessage(msg);
-    return {
-      role: msg.role === "assistant" ? "model" : "user",
-      parts: [{ text: typeof normalizedMsg.content === "string" ? normalizedMsg.content : JSON.stringify(normalizedMsg.content) }]
-    };
-  });
-
   const payload: Record<string, unknown> = {
-    contents: geminiMessages,
-    generationConfig: {
-      maxOutputTokens: 1024,
-      temperature: 0.7,
-    },
+    model: "gpt-4o-mini",
+    messages: messages.map(normalizeMessage),
   };
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`;
+  if (tools && tools.length > 0) {
+    payload.tools = tools;
+  }
 
-  const response = await fetch(url, {
+  const normalizedToolChoice = normalizeToolChoice2(
+    toolChoice || tool_choice,
+    tools
+  );
+  if (normalizedToolChoice) {
+    payload.tool_choice = normalizedToolChoice;
+  }
+
+  payload.max_tokens = 32768;
+
+  const normalizedResponseFormat = normalizeResponseFormat({
+    responseFormat,
+    response_format,
+    outputSchema,
+    output_schema,
+  });
+
+  if (normalizedResponseFormat) {
+    payload.response_format = normalizedResponseFormat;
+  }
+
+  const response = await fetch(resolveApiUrl(), {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      "x-goog-api-key": apiKey,
+      authorization: `Bearer ${ENV.forgeApiKey}`,
     },
     body: JSON.stringify(payload),
   });
@@ -311,29 +364,5 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     );
   }
 
-  const data = await response.json() as any;
-
-  // Transform Gemini response to match our format
-  const content = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
-
-  return {
-    id: data.candidates?.[0]?.index?.toString() || "0",
-    created: Date.now(),
-    model: "gemini-flash-latest",
-    choices: [
-      {
-        index: 0,
-        message: {
-          role: "assistant",
-          content: content,
-        },
-        finish_reason: data.candidates?.[0]?.finishReason || "stop",
-      },
-    ],
-    usage: {
-      prompt_tokens: data.usageMetadata?.promptTokenCount || 0,
-      completion_tokens: data.usageMetadata?.candidatesTokenCount || 0,
-      total_tokens: data.usageMetadata?.totalTokenCount || 0,
-    },
-  };
+  return (await response.json()) as InvokeResult;
 }
