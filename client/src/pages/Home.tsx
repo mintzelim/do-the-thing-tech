@@ -27,6 +27,8 @@ export default function Home() {
   const [granularityPreset, setGranularityPreset] = useState<GranularityPreset>("balanced");
   const [steps, setSteps] = useState<Step[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [retryCount, setRetryCount] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
   const [timeRemaining, setTimeRemaining] = useState(0);
   const [pendingNavigation, setPendingNavigation] = useState<string | null>(null);
@@ -211,8 +213,17 @@ export default function Home() {
 
       setSteps(stepsWithIds);
       setFlowState("breakdown");
-    } catch (error) {
-      toast.error("Failed to process your input");
+    } catch (error: any) {
+      let errorMessage = error?.message || "Failed to process your input";
+      
+      // Handle rate limit errors
+      if (errorMessage.includes("429") || errorMessage.includes("quota")) {
+        errorMessage = "API rate limit exceeded. Please wait a moment and try again.";
+      }
+      
+      setError(errorMessage);
+      toast.error(errorMessage);
+      setRetryCount(prev => prev + 1);
     } finally {
       setIsLoading(false);
     }
@@ -403,12 +414,50 @@ export default function Home() {
                 Time estimates adjust based on your focus level
               </p>
 
+              {error && (
+                <div style={{
+                  backgroundColor: "#ffebee",
+                  border: "2px solid #c62828",
+                  padding: "12px",
+                  marginBottom: "16px",
+                  fontFamily: "'VT323', monospace",
+                  fontSize: "12px",
+                  color: "#c62828",
+                }}>
+                  <div style={{ marginBottom: "8px" }}>ERROR: {error}</div>
+                  {retryCount > 0 && (
+                    <div style={{ fontSize: "10px", opacity: 0.8 }}>
+                      Retry attempt {retryCount}
+                    </div>
+                  )}
+                </div>
+              )}
+
               <button
                 className="mobile-button"
                 onClick={handleBrainDumpSubmit}
                 disabled={isLoading || !brainDump.trim()}
+                style={{
+                  opacity: isLoading ? 0.6 : 1,
+                  cursor: isLoading ? "not-allowed" : "pointer",
+                }}
               >
-                {isLoading ? "PROCESSING..." : "BREAK IT DOWN"}
+                {isLoading ? (
+                  <span style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                    <span style={{
+                      display: "inline-block",
+                      width: "12px",
+                      height: "12px",
+                      border: "2px solid white",
+                      borderTop: "2px solid transparent",
+                      borderRadius: "50%",
+                      animation: "spin 0.6s linear infinite",
+                    }} />
+                    PROCESSING...
+                  </span>
+                ) : (
+                  "BREAK IT DOWN"
+                )}
               </button>
             </div>
           </>

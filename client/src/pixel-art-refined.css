@@ -47,6 +47,16 @@ body {
   min-height: 100vh;
 }
 
+/* Loading Spinner Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Normal Desktop Site */
 .mobile-frame {
   width: 100%;
