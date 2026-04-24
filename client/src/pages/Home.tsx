@@ -4,6 +4,7 @@ import { useAuth } from "@/_core/hooks/useAuth";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
+import { useTimer } from "@/contexts/TimerContext";
 import "../pixel-art-refined.css";
 
 type Step = {
@@ -29,8 +30,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [retryCount, setRetryCount] = useState(0);
-  const [timerActive, setTimerActive] = useState(false);
-  const [timeRemaining, setTimeRemaining] = useState(0);
+  const { timerActive: globalTimerActive, timeRemaining: globalTimeRemaining, startTimer: globalStartTimer, stopTimer: globalStopTimer } = useTimer();
   const [pendingNavigation, setPendingNavigation] = useState<string | null>(null);
   const clickSoundRef = useRef<HTMLAudioElement | null>(null);
 
@@ -46,14 +46,14 @@ export default function Home() {
         setGranularityPreset(parsed.granularityPreset || 'balanced');
         setSteps(parsed.steps || []);
         setFlowState(parsed.flowState || 'input');
-        setTimeRemaining(parsed.timeRemaining || 0);
+        // Timer state is managed by TimerContext
       } catch (error) {
         console.error('Failed to load saved state:', error);
       }
     }
   }, []);
 
-  // Save state to localStorage whenever it changes
+  // Save state to local  // Save state to localStorage
   useEffect(() => {
     const state = {
       brainDump,
@@ -62,12 +62,11 @@ export default function Home() {
       granularityPreset,
       steps,
       flowState,
-      timeRemaining,
+      timeRemaining: globalTimeRemaining,
+      timerActive: globalTimerActive,
     };
     localStorage.setItem('doTheThing_state', JSON.stringify(state));
-  }, [brainDump, focusLevel, granularity, granularityPreset, steps, flowState, timeRemaining]);
-
-  const breakdownMutation = trpc.tasks.breakdown.useMutation();
+  }, [brainDump, focusLevel, granularity, granularityPreset, steps, flowState, globalTimeRemaining, globalTimerActive]);const breakdownMutation = trpc.tasks.breakdown.useMutation();
   const estimateMutation = trpc.tasks.estimateTasks.useMutation();
 
   // Create click sound on component mount
@@ -119,7 +118,7 @@ export default function Home() {
   // Tab close confirmation
   useEffect(() => {
     const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-      if (steps.length > 0 && flowState === "breakdown") {
+      if ((steps.length > 0 && flowState === "breakdown") || globalTimerActive) {
         e.preventDefault();
         e.returnValue = "";
         return "";
@@ -128,28 +127,17 @@ export default function Home() {
 
     window.addEventListener("beforeunload", handleBeforeUnload);
     return () => window.removeEventListener("beforeunload", handleBeforeUnload);
-  }, [steps, flowState]);
+  }, [steps, flowState, globalTimerActive]);
 
-  // Timer countdown
-  useEffect(() => {
-    if (!timerActive || timeRemaining <= 0) {
-      setTimerActive(false);
-      return;
-    }
-    const interval = setInterval(() => {
-      setTimeRemaining((prev) => (prev <= 1 ? 0 : prev - 1));
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [timerActive, timeRemaining]);
+  // Global timer is managed by TimerContext
 
   const handleStartTimer = () => {
     const total = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
-    setTimeRemaining(total);
-    setTimerActive(true);
+    globalStartTimer(total);
   };
 
   const handleStopTimer = () => {
-    setTimerActive(false);
+    globalStopTimer();
   };
 
   const handleGranularityPreset = (preset: GranularityPreset) => {
@@ -261,7 +249,7 @@ export default function Home() {
     setSteps((prev) => prev.filter((s) => s.id !== stepId));
   };
 
-  const totalTime = timerActive ? timeRemaining : steps.reduce((sum, s) => sum + s.estimatedTime, 0);
+  const totalTime = globalTimerActive ? globalTimeRemaining : steps.reduce((sum, s) => sum + s.estimatedTime, 0);
   const completedCount = steps.filter((s) => s.completed).length;
 
   return (
@@ -486,17 +474,17 @@ export default function Home() {
               style={{
                 cursor: "pointer",
                 position: "relative",
-                background: timerActive ? "linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)" : undefined,
-                borderColor: timerActive ? "#ef4444" : undefined,
+                background: globalTimerActive ? "linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)" : undefined,
+                borderColor: globalTimerActive ? "#ef4444" : undefined,
               }}
-              onClick={timerActive ? handleStopTimer : handleStartTimer}
+              onClick={globalTimerActive ? handleStopTimer : handleStartTimer}
             >
-              <div className="mobile-summary-label">{timerActive ? "TIME REMAINING" : "TOTAL TIME"}</div>
-              <div className="mobile-summary-value" style={{ color: timerActive ? "#ef4444" : "var(--pixel-accent)" }}>
-                {Math.round(totalTime / 60)}H {totalTime % 60}M
+              <div className="mobile-summary-label">{globalTimerActive ? "TIME REMAINING" : "TOTAL TIME"}</div>
+              <div className="mobile-summary-value" style={{ color: globalTimerActive ? "#ef4444" : "var(--pixel-accent)" }}>
+                {Math.round(globalTimeRemaining / 60)}H {globalTimeRemaining % 60}M
               </div>
               <div className="mobile-body-sm" style={{ marginTop: "8px" }}>
-                {timerActive ? "Click to stop" : "Click to start countdown"}
+                {globalTimerActive ? "Click to stop" : "Click to start countdown"}
               </div>
               <div className="mobile-body-sm" style={{ marginTop: "4px" }}>
                 {completedCount} OF {steps.length} DONE
@@ -572,7 +560,7 @@ export default function Home() {
                 setFlowState("input");
                 setBrainDump("");
                 setSteps([]);
-                setTimerActive(false);
+                globalStopTimer();
                 localStorage.removeItem('doTheThing_state');
               }}
               className="mobile-button"

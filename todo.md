@@ -209,6 +209,9 @@
 - [x] Add toast notifications for user feedback
 - [ ] Add retry mechanism for failed requests
 - [x] Increase font sizes throughout app (textarea, tasks, all text)
+- [x] Make countdown timer persist across page navigation (global state)
+- [x] Create mobile burger menu for navigation
+- [x] Keep CURRENT TASKS visible in mobile navigation
 - [x] Create CURRENT TASKS page in navigation
 - [x] Move breakdown/timer UI to CURRENT TASKS page
 - [x] Update Home page to redirect to CURRENT TASKS after breakdown

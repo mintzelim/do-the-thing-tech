@@ -4,6 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { TimerProvider } from "./contexts/TimerContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
@@ -30,12 +31,14 @@ function App() {
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
-        <TooltipProvider>
-          <Toaster />
-          <main className="flex-1 flex flex-col">
-            <Router />
-          </main>
-        </TooltipProvider>
+        <TimerProvider>
+          <TooltipProvider>
+            <Toaster />
+            <main className="flex-1 flex flex-col">
+              <Router />
+            </main>
+          </TooltipProvider>
+        </TimerProvider>
       </ThemeProvider>
     </ErrorBoundary>
   );

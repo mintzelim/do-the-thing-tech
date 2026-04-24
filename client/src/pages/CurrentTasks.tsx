@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "wouter";
+import { useTimer } from "@/contexts/TimerContext";
 import Navigation from "@/components/Navigation";
 import "../pixel-art-refined.css";
 
@@ -14,8 +15,7 @@ type Step = {
 export default function CurrentTasks() {
   const [, navigate] = useLocation();
   const [steps, setSteps] = useState<Step[]>([]);
-  const [timerActive, setTimerActive] = useState(false);
-  const [timeRemaining, setTimeRemaining] = useState(0);
+  const { timerActive, timeRemaining, startTimer, stopTimer } = useTimer();
   const clickSoundRef = useRef<HTMLAudioElement | null>(null);
 
   // Load persisted state from localStorage
@@ -25,7 +25,7 @@ export default function CurrentTasks() {
       try {
         const parsed = JSON.parse(savedState);
         setSteps(parsed.steps || []);
-        setTimeRemaining(parsed.timeRemaining || 0);
+        // Timer state is managed by TimerContext
       } catch (error) {
         console.error('Failed to load saved state:', error);
       }
@@ -47,17 +47,7 @@ export default function CurrentTasks() {
     }
   }, [steps, timeRemaining]);
 
-  // Timer countdown
-  useEffect(() => {
-    if (!timerActive || timeRemaining <= 0) {
-      setTimerActive(false);
-      return;
-    }
-    const interval = setInterval(() => {
-      setTimeRemaining((prev) => (prev <= 1 ? 0 : prev - 1));
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [timerActive, timeRemaining]);
+  // Global timer is managed by TimerContextRemaining]);
 
   // Play mouse click sound
   const playClickSound = () => {
@@ -92,12 +82,11 @@ export default function CurrentTasks() {
 
   const handleStartTimer = () => {
     const total = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
-    setTimeRemaining(total);
-    setTimerActive(true);
+    startTimer(total);
   };
 
   const handleStopTimer = () => {
-    setTimerActive(false);
+    stopTimer();
   };
 
   const toggleStepComplete = (stepId: string) => {
@@ -218,7 +207,7 @@ export default function CurrentTasks() {
             >
               <div className="mobile-summary-label">{timerActive ? "TIME REMAINING" : "TOTAL TIME"}</div>
               <div className="mobile-summary-value" style={{ color: timerActive ? "#ef4444" : "var(--pixel-accent)" }}>
-                {Math.round(totalTime / 60)}H {totalTime % 60}M
+                {Math.round(timeRemaining / 60)}H {timeRemaining % 60}M
               </div>
               <div className="mobile-body-sm" style={{ marginTop: "8px" }}>
                 {timerActive ? "Click to stop" : "Click to start countdown"}
