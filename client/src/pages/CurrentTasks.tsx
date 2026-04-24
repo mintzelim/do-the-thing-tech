@@ -206,35 +206,25 @@ export default function CurrentTasks() {
               </h1>
             </div>
 
-            <div className="mobile-card">
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "16px" }}>
-                <div>
-                  <p className="mobile-body-sm" style={{ marginBottom: "4px" }}>
-                    PROGRESS: {completedCount}/{steps.length}
-                  </p>
-                  <p className="mobile-body-lg" style={{ fontWeight: 600, marginBottom: 0 }}>
-                    {formatTime(totalTime)}
-                  </p>
-                </div>
-                <div style={{ display: "flex", gap: "8px" }}>
-                  {!timerActive ? (
-                    <button
-                      className="mobile-button-small"
-                      onClick={handleStartTimer}
-                      style={{ marginBottom: 0, marginRight: 0 }}
-                    >
-                      START
-                    </button>
-                  ) : (
-                    <button
-                      className="mobile-button-small"
-                      onClick={handleStopTimer}
-                      style={{ marginBottom: 0, marginRight: 0, backgroundColor: "#ef4444" }}
-                    >
-                      STOP
-                    </button>
-                  )}
-                </div>
+            <div
+              className="mobile-summary"
+              style={{
+                cursor: "pointer",
+                position: "relative",
+                background: timerActive ? "linear-gradient(135deg, #fee2e2 0%, #fecaca 100%)" : undefined,
+                borderColor: timerActive ? "#ef4444" : undefined,
+              }}
+              onClick={timerActive ? handleStopTimer : handleStartTimer}
+            >
+              <div className="mobile-summary-label">{timerActive ? "TIME REMAINING" : "TOTAL TIME"}</div>
+              <div className="mobile-summary-value" style={{ color: timerActive ? "#ef4444" : "var(--pixel-accent)" }}>
+                {Math.round(totalTime / 60)}H {totalTime % 60}M
+              </div>
+              <div className="mobile-body-sm" style={{ marginTop: "8px" }}>
+                {timerActive ? "Click to stop" : "Click to start countdown"}
+              </div>
+              <div className="mobile-body-sm" style={{ marginTop: "8px", color: "var(--pixel-text-light)" }}>
+                PROGRESS: {completedCount}/{steps.length}
               </div>
             </div>
 
