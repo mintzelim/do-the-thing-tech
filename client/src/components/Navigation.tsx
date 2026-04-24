@@ -9,7 +9,6 @@ export default function Navigation() {
 
   const navItems = [
     { path: "/", label: "HOME" },
-    { path: "/current-tasks", label: "CURRENT TASKS" },
     { path: "/about", label: "ABOUT" },
     { path: "/blog", label: "BLOG" },
     { path: "/privacy", label: "PRIVACY" },
@@ -24,7 +23,7 @@ export default function Navigation() {
   return (
     <>
       <nav className="border-b-2 border-border bg-card px-6 py-4">
-        <div className="flex items-center justify-between gap-6">
+        <div className="flex items-center justify-between gap-4">
           <button
             onClick={() => navigate("/")}
             className="font-vt323 text-2xl font-bold text-foreground hover:text-accent transition-colors"
@@ -47,18 +46,40 @@ export default function Navigation() {
                 {item.label}
               </button>
             ))}
+            <button
+              onClick={() => handleNavClick("/current-tasks")}
+              className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
+                isActive("/current-tasks")
+                  ? "border-accent bg-accent text-white"
+                  : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
+              }`}
+            >
+              CURRENT TASKS
+            </button>
           </div>
 
-          {/* Mobile Hamburger Menu */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden flex flex-col gap-1 p-2"
-            aria-label="Toggle menu"
-          >
-            <div className="w-6 h-0.5 bg-foreground transition-all" />
-            <div className="w-6 h-0.5 bg-foreground transition-all" />
-            <div className="w-6 h-0.5 bg-foreground transition-all" />
-          </button>
+          {/* Mobile: CURRENT TASKS button (always visible) + Hamburger */}
+          <div className="md:hidden flex items-center gap-2">
+            <button
+              onClick={() => handleNavClick("/current-tasks")}
+              className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
+                isActive("/current-tasks")
+                  ? "border-accent bg-accent text-white"
+                  : "border-border bg-background text-foreground"
+              }`}
+            >
+              TASKS
+            </button>
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="flex flex-col gap-1 p-2"
+              aria-label="Toggle menu"
+            >
+              <div className="w-6 h-0.5 bg-foreground transition-all" />
+              <div className="w-6 h-0.5 bg-foreground transition-all" />
+              <div className="w-6 h-0.5 bg-foreground transition-all" />
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -80,15 +101,6 @@ export default function Navigation() {
           </div>
         )}
       </nav>
-
-      {/* Mobile Timer Display (always visible) */}
-      <div className="md:hidden bg-card border-b-2 border-border px-4 py-2">
-        {location === "/current-tasks" && (
-          <div className="text-center font-vt323 text-sm text-foreground">
-            ⏱ Timer running in background
-          </div>
-        )}
-      </div>
     </>
   );
 }
