@@ -10,7 +10,7 @@ export default function Navigation() {
       <div className="flex items-center justify-between gap-6">
         <button
           onClick={() => navigate("/")}
-          className="font-vt323 text-lg font-bold text-foreground hover:text-accent transition-colors"
+          className="font-vt323 text-2xl font-bold text-foreground hover:text-accent transition-colors"
         >
           DO THE THING
         </button>
@@ -18,7 +18,7 @@ export default function Navigation() {
         <div className="flex gap-4">
           <button
             onClick={() => navigate("/")}
-            className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
+            className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
               isActive("/")
                 ? "border-accent bg-accent text-white"
                 : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
@@ -28,7 +28,7 @@ export default function Navigation() {
           </button>
           <button
             onClick={() => navigate("/about")}
-            className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
+            className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
               isActive("/about")
                 ? "border-accent bg-accent text-white"
                 : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
@@ -38,7 +38,7 @@ export default function Navigation() {
           </button>
           <button
             onClick={() => navigate("/blog")}
-            className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
+            className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
               isActive("/blog")
                 ? "border-accent bg-accent text-white"
                 : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
@@ -48,7 +48,7 @@ export default function Navigation() {
           </button>
           <button
             onClick={() => navigate("/privacy")}
-            className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
+            className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
               isActive("/privacy")
                 ? "border-accent bg-accent text-white"
                 : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
@@ -58,7 +58,7 @@ export default function Navigation() {
           </button>
           <button
             onClick={() => navigate("/terms")}
-            className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
+            className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
               isActive("/terms")
                 ? "border-accent bg-accent text-white"
                 : "border-border bg-background text-foreground hover:bg-accent hover:text-white"

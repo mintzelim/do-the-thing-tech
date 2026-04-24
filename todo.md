@@ -208,4 +208,5 @@
 - [x] Add error messages for failed API calls
 - [x] Add toast notifications for user feedback
 - [ ] Add retry mechanism for failed requests
+- [x] Increase font sizes throughout app (textarea, tasks, all text)
 - [ ] Deploy to production
