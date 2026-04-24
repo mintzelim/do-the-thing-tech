@@ -209,4 +209,8 @@
 - [x] Add toast notifications for user feedback
 - [ ] Add retry mechanism for failed requests
 - [x] Increase font sizes throughout app (textarea, tasks, all text)
+- [x] Create CURRENT TASKS page in navigation
+- [x] Move breakdown/timer UI to CURRENT TASKS page
+- [x] Update Home page to redirect to CURRENT TASKS after breakdown
+- [x] Ensure localStorage persistence works across page navigation
 - [ ] Deploy to production

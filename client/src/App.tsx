@@ -9,11 +9,13 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import CurrentTasks from "./pages/CurrentTasks";
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/current-tasks"} component={CurrentTasks} />
       <Route path={"/about"} component={About} />
       <Route path={"/blog"} component={Blog} />
       <Route path={"/privacy"} component={Privacy} />

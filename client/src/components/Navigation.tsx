@@ -27,6 +27,16 @@ export default function Navigation() {
             HOME
           </button>
           <button
+            onClick={() => navigate("/current-tasks")}
+            className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
+              isActive("/current-tasks")
+                ? "border-accent bg-accent text-white"
+                : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
+            }`}
+          >
+            CURRENT TASKS
+          </button>
+          <button
             onClick={() => navigate("/about")}
             className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
               isActive("/about")

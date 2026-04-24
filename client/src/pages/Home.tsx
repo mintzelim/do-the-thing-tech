@@ -213,6 +213,10 @@ export default function Home() {
 
       setSteps(stepsWithIds);
       setFlowState("breakdown");
+      // Redirect to current tasks page
+      setTimeout(() => {
+        navigate("/current-tasks");
+      }, 500);
     } catch (error: any) {
       let errorMessage = error?.message || "Failed to process your input";
       
