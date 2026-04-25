@@ -269,3 +269,10 @@
 ## Footer Updates (Complete)
 - [x] Add CONTACT link to footer (Home, About, Privacy, Terms, Contact pages)
 - [x] Verified: Blog.tsx and NotFound.tsx don't have footers (no changes needed)
+
+
+## Bug Fixes (Complete)
+- [x] Fix Total Time display to show sum of all breakdown task durations
+- [x] Update Total Time when tasks are added, edited, or deleted
+- [x] Create 8 vitest tests for Total Time calculation (all passing)
+- [x] Verified in browser: Total Time updates correctly when tasks are edited or deleted
