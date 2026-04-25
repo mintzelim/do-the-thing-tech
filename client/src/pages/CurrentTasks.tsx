@@ -140,7 +140,7 @@ export default function CurrentTasks() {
     );
   }
 
-  const totalTime = timerActive ? timeRemaining : steps.reduce((sum, s) => sum + s.estimatedTime, 0);
+  const totalTime = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
   const completedCount = steps.filter((s) => s.completed).length;
   const allCompleted = steps.every((s) => s.completed);
 
