@@ -15,11 +15,23 @@
   },
   "routes": [
     {
-      "src": "/api/.*",
+      "src": "/public/(.*)",
+      "dest": "/public/$1"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/public/assets/$1"
+    },
+    {
+      "src": "/blog-posts.json",
+      "dest": "/public/blog-posts.json"
+    },
+    {
+      "src": "/api/(.*)",
       "dest": "/dist/index.js"
     },
     {
-      "src": "/.*",
+      "src": "/(.*)",
       "dest": "/dist/index.js"
     }
   ]
