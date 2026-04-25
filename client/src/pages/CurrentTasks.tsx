@@ -81,7 +81,7 @@ export default function CurrentTasks() {
   };
 
   const handleStartTimer = () => {
-    const total = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
+    const total = steps.reduce((sum, s) => sum + s.estimatedTime * 60, 0); // Convert minutes to seconds
     startTimer(total);
   };
 
