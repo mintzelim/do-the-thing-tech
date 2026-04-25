@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Contact from "./pages/Contact";
 import CurrentTasks from "./pages/CurrentTasks";
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
       <Route path={"/current-tasks"} component={CurrentTasks} />
       <Route path={"/about"} component={About} />
       <Route path={"/blog"} component={Blog} />
+      <Route path={"/contact"} component={Contact} />
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/terms"} component={Terms} />
       <Route path={"/404"} component={NotFound} />

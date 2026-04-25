@@ -247,3 +247,13 @@
   - [x] Create 9 countdown accuracy vitest tests (all passing)
   - [x] Create 13 integration tests for timer behavior (all passing)
   - [x] Total: 22 timer tests passing, verified no skipping or stopping
+
+
+## Contact Page (Complete)
+- [x] Create Contact.tsx page component with form (matches pixel art aesthetic)
+- [x] Add contact form submission endpoint (uses notifyOwner to send to support@dothething.my)
+- [x] Add Contact link to navigation (visible in desktop and mobile menus)
+- [x] Create 18 vitest tests for contact form validation (all passing)
+- [x] Create 14 vitest tests for contact router integration (all passing)
+- [x] Verify contact page displays correctly in browser
+- [x] Test end-to-end form submission in browser (verified: form submits, clears, no errors)

@@ -141,6 +141,40 @@ export const appRouter = router({
         return compileBrainDump(input.brainDump);
       }),
   }),
+
+  contact: router({
+    submit: publicProcedure
+      .input(
+        z.object({
+          name: z.string().min(1, "Name is required"),
+          email: z.string().email("Invalid email"),
+          type: z.enum(["question", "partnership", "bug"]),
+          message: z.string().min(1, "Message is required"),
+        })
+      )
+        // Contact form submissions are sent to the project owner via notifyOwner.
+        // The owner can respond to the user's email (support@dothething.my) directly.
+      .mutation(async ({ input }) => {
+        const { notifyOwner } = await import("../server/_core/notification");
+
+        const typeLabel = {
+          question: "Question",
+          partnership: "Partnership Inquiry",
+          bug: "Bug Report",
+        }[input.type];
+
+        const title = `${typeLabel} from ${input.name}`;
+        const content = `Email: ${input.email}\n\nMessage:\n${input.message}`;
+
+        try {
+          await notifyOwner({ title, content });
+          return { success: true, message: "Message sent successfully" };
+        } catch (error) {
+          console.error("Failed to send contact notification:", error);
+          return { success: false, message: "Failed to send message" };
+        }
+      }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;
