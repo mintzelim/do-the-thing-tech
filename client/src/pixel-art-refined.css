@@ -213,7 +213,9 @@ body {
 .mobile-textarea {
   resize: vertical;
   min-height: 100px;
-  font-size: 12px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 /* Pixel Art Button - Chunky 8-bit Style */

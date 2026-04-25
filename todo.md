@@ -237,3 +237,13 @@
 - [x] Verify blog detail view shows sources and related posts
 - [ ] Deploy to Vercel and verify blog posts load from JSON
 - [ ] Test adding a new blog post via Markdown file
+
+
+## Current Tasks (Complete)
+- [x] Update textbox font styling (22px, weight 400, line-height 1.6)
+- [x] Fix countdown timer accuracy and ensure it doesn't stop midway
+  - [x] Rewrite TimerContext with useRef to prevent interval restart
+  - [x] Fix timer display in CurrentTasks to use formatTime function
+  - [x] Create 9 countdown accuracy vitest tests (all passing)
+  - [x] Create 13 integration tests for timer behavior (all passing)
+  - [x] Total: 22 timer tests passing, verified no skipping or stopping

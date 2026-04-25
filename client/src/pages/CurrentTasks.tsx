@@ -207,7 +207,7 @@ export default function CurrentTasks() {
             >
               <div className="mobile-summary-label">{timerActive ? "TIME REMAINING" : "TOTAL TIME"}</div>
               <div className="mobile-summary-value" style={{ color: timerActive ? "#ef4444" : "var(--pixel-accent)" }}>
-                {Math.round(timeRemaining / 60)}H {timeRemaining % 60}M
+                {formatTime(timeRemaining)}
               </div>
               <div className="mobile-body-sm" style={{ marginTop: "8px" }}>
                 {timerActive ? "Click to stop" : "Click to start countdown"}
