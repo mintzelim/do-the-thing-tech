@@ -1,0 +1,513 @@
+[
+  {
+    "id": "1",
+    "title": "How ADHD Affects Task Management",
+    "excerpt": "Understanding the neuroscience behind executive dysfunction and why traditional task management fails for ADHD brains.",
+    "date": "April 15, 2024",
+    "readTime": "5 min read",
+    "category": "ADHD Education",
+    "seoKeywords": [
+      "ADHD",
+      "Task Management",
+      "Executive Function"
+    ],
+    "sources": [
+      {
+        "title": "National Institute of Mental Health - ADHD",
+        "url": "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
+      },
+      {
+        "title": "American Psychiatric Association - ADHD Diagnostic Criteria",
+        "url": "https://www.psychiatry.org/patients-families/adhd"
+      },
+      {
+        "title": "Frontiers in Psychology - Executive Function in ADHD",
+        "url": "https://www.frontiersin.org/journals/psychology"
+      }
+    ],
+    "relatedPosts": [
+      "2",
+      "4",
+      "6"
+    ],
+    "content": "ADHD affects how the brain manages executive functions—planning, organizing, prioritizing, and executing tasks.\n\nPeople with ADHD don't struggle because they lack motivation or intelligence. Their brains work differently. The prefrontal cortex, responsible for executive function, has lower dopamine levels, making it harder to initiate and sustain focus on tasks.\n\nKey challenges include task initiation (starting feels overwhelming), time blindness (difficulty estimating time), working memory issues (trouble holding multiple steps), emotional dysregulation (tasks feel more taxing), and hyperfocus vs hypofocus (extreme difficulty switching).\n\nTraditional task management apps assume neurotypical brains. They often make ADHD worse by adding complexity, requiring too much planning upfront, or using vague time estimates.\n\nDoTheThing solves this by breaking tasks into micro-steps, providing realistic time estimates with buffers, and letting users work at their own pace.",
+    "slug": "how-adhd-affects-task-management"
+  },
+  {
+    "id": "2",
+    "title": "Time Blindness in ADHD: Why You're Always Late",
+    "excerpt": "Exploring time blindness, how it affects ADHD individuals, and practical strategies to manage it.",
+    "date": "April 10, 2024",
+    "readTime": "6 min read",
+    "category": "Time Management",
+    "seoKeywords": [
+      "Time Blindness",
+      "ADHD",
+      "Time Management"
+    ],
+    "sources": [
+      {
+        "title": "ADHD Online - Time Blindness Research",
+        "url": "https://www.adhdonline.com/"
+      },
+      {
+        "title": "Neuroscience News - Time Perception in ADHD",
+        "url": "https://neurosciencenews.com/"
+      },
+      {
+        "title": "Psychology Today - ADHD and Time Management",
+        "url": "https://www.psychologytoday.com/us/basics/adhd"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "3",
+      "5"
+    ],
+    "content": "Time blindness is one of the most frustrating aspects of ADHD. It's not about having a bad sense of time—it's about the brain not perceiving time the same way neurotypical brains do.\n\nWhat is Time Blindness? Time blindness means your brain doesn't automatically track time passing. You might start a task at 2 PM and suddenly realize it's 6 PM. You weren't focused on time—you were focused on the task. Your brain doesn't send regular \"time check\" signals like neurotypical brains do.\n\nWhy ADHD Brains Have Time Blindness: The brain's time perception is controlled by the prefrontal cortex, which has lower dopamine in ADHD brains. Without dopamine, the brain can't maintain a sense of time passing. You're either hyperfocused (time disappears) or hypofocused (time feels frozen).\n\nHow Time Blindness Affects Life: You're consistently late to appointments. You underestimate how long tasks take. You miss deadlines because they feel abstract. You rush at the last minute. You feel like you're always behind.\n\nStrategies for Managing Time Blindness: Use external time markers (alarms, timers, reminders). Set multiple reminders before appointments. Use visual timers so you can see time passing. Break tasks into timed chunks. Use calendar blocking. Build in buffer time. Use apps like DoTheThing that provide realistic time estimates.\n\nThe key is creating external systems because your internal time sense isn't reliable. That's not a failure—it's just how your brain works.",
+    "slug": "time-blindness-in-adhd"
+  },
+  {
+    "id": "3",
+    "title": "Breaking Down Big Tasks: A Guide for ADHD Brains",
+    "excerpt": "How to decompose overwhelming projects into manageable micro-steps that actually get done.",
+    "date": "April 5, 2024",
+    "readTime": "7 min read",
+    "category": "Productivity",
+    "seoKeywords": [
+      "Task Breakdown",
+      "ADHD",
+      "Productivity"
+    ],
+    "sources": [
+      {
+        "title": "Getting Things Done - David Allen",
+        "url": "https://gettingthingsdone.com/"
+      },
+      {
+        "title": "ADHD Coaching - Task Breakdown Strategies",
+        "url": "https://www.adhdcoach.com/"
+      },
+      {
+        "title": "Center for ADHD Awareness - Task Management",
+        "url": "https://www.chadd.org/"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "4",
+      "5"
+    ],
+    "content": "One of the biggest challenges for ADHD brains is task initiation. A big project feels so overwhelming that you don't know where to start. So you don't start at all.\n\nThe solution: Break tasks into micro-steps.\n\nWhy Big Tasks Feel Impossible: Your brain perceives big tasks as emotionally overwhelming. \"Write a report\" feels like climbing Mount Everest. Your brain doesn't see the path forward. It just sees a massive, undefined mountain of work. So it avoids the task entirely.\n\nThe Power of Micro-Steps: When you break a task into tiny, specific steps, something magical happens. Each step feels doable. Your brain can see what to do next. You can start immediately. You build momentum.\n\nExample: \"Write a report\" becomes:\n\n1. Open blank document (2 min)\n\n2. Write outline (5 min)\n\n3. Write introduction (10 min)\n\n4. Write section 1 (15 min)\n\n5. Write section 2 (15 min)\n\n6. Write conclusion (10 min)\n\n7. Proofread (10 min)\n\nSuddenly, instead of one impossible task, you have seven doable tasks.\n\nHow to Break Down Tasks: Start with the end goal. What does \"done\" look like? Then work backward. What's the last step? What comes before that? Keep breaking until each step takes 5-15 minutes.\n\nUse DoTheThing to automate this. Enter your task, and AI breaks it into perfect micro-steps. Adjust the granularity based on how much detail you need.\n\nThe Result: You start tasks faster. You feel less overwhelmed. You actually complete projects. Your confidence grows.",
+    "slug": "breaking-down-big-tasks"
+  },
+  {
+    "id": "4",
+    "title": "Executive Dysfunction and Task Paralysis: What's the Difference?",
+    "excerpt": "Understanding the distinction between executive dysfunction and task paralysis, and how to address each.",
+    "date": "March 28, 2024",
+    "readTime": "6 min read",
+    "category": "ADHD Education",
+    "seoKeywords": [
+      "Executive Dysfunction",
+      "Task Paralysis",
+      "ADHD"
+    ],
+    "sources": [
+      {
+        "title": "Verywell Mind - Executive Dysfunction",
+        "url": "https://www.verywellmind.com/"
+      },
+      {
+        "title": "ADHD Institute - Executive Function Disorders",
+        "url": "https://www.adhd-institute.com/"
+      },
+      {
+        "title": "Journal of Attention Disorders",
+        "url": "https://journals.sagepub.com/home/jad"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "3",
+      "6"
+    ],
+    "content": "Executive dysfunction and task paralysis are related but different challenges. Understanding the difference helps you address them effectively.\n\nExecutive Dysfunction: This is a neurological issue. Your brain struggles with planning, organizing, prioritizing, and executing. It's like your brain's management system is offline. You can't access the functions you need to manage tasks.\n\nSymptoms include: Difficulty starting tasks, trouble organizing thoughts, trouble prioritizing, trouble switching between tasks, trouble managing time, trouble with working memory.\n\nTask Paralysis: This is an emotional issue. You can do the task, but you feel so overwhelmed or anxious that you can't start. It's like your emotions are blocking your ability to act.\n\nSymptoms include: Feeling overwhelmed, anxiety about the task, perfectionism, fear of failure, emotional avoidance, procrastination.\n\nThe Key Difference: Executive dysfunction is \"I don't know how to start.\" Task paralysis is \"I'm too anxious to start.\"\n\nHow to Address Executive Dysfunction: Break tasks into micro-steps. Create external structure. Use timers and reminders. Use apps like DoTheThing. Build routines. Reduce decision-making.\n\nHow to Address Task Paralysis: Address the emotion first. Acknowledge the anxiety. Practice self-compassion. Start with the easiest step. Use body doubling (work with someone else). Celebrate small wins. Consider therapy for anxiety.\n\nMany people experience both. You might have executive dysfunction making the task feel unclear, AND task paralysis making you anxious about starting. Address both: break the task into steps AND address the emotion.",
+    "slug": "executive-dysfunction-vs-task-paralysis"
+  },
+  {
+    "id": "5",
+    "title": "Best Tools for ADHD Task Management in 2024",
+    "excerpt": "A comprehensive review of the top tools designed to help ADHD individuals manage tasks and stay organized.",
+    "date": "March 20, 2024",
+    "readTime": "8 min read",
+    "category": "Tools & Reviews",
+    "seoKeywords": [
+      "ADHD Tools",
+      "Task Management",
+      "Productivity Apps"
+    ],
+    "sources": [
+      {
+        "title": "Todoist Official Site",
+        "url": "https://todoist.com/"
+      },
+      {
+        "title": "Forest App",
+        "url": "https://www.forestapp.cc/"
+      },
+      {
+        "title": "Focusmate Virtual Coworking",
+        "url": "https://www.focusmate.com/"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "2",
+      "3"
+    ],
+    "content": "There are many tools available for ADHD task management. Here's a guide to help you find what works for your brain.\n\nDoTheThing (Free): Brain dump input, AI task breakdown, time estimates with ADHD buffers, countdown timer. Perfect for initial task planning and breakdown. This is where you start.\n\nTodoist (Free tier): Simple task management, recurring tasks, project organization. Perfect for ongoing task management after DoTheThing breaks things down.\n\nMicrosoft To Do (Free): Simple, clean interface, shared lists, integration with Outlook. Perfect for basic task lists.\n\nForest (Free tier): Gamified focus timer, visual tree-growing mechanic, distraction blocking. Perfect for focus sessions while working on tasks.\n\nBe Focused (Free tier): Pomodoro timer, task tracking, break reminders. Perfect for structured work sessions.\n\nGoogle Calendar (Free): Schedule management, reminders, shared calendars. Perfect for time blocking and scheduling tasks.\n\nNotion (Free): Highly customizable, database features, templates. Perfect for building custom task systems.\n\nHabitica (Free): Gamified task management, RPG-style interface, habit tracking. Perfect for building new habits.\n\nFocusmate (Free tier): Virtual coworking, 25-minute sessions, accountability partner. Perfect for staying accountable.\n\nThe key is finding tools that match your brain, not using too many. Start with DoTheThing, then layer on one or two other tools based on your needs.",
+    "slug": "best-tools-for-adhd-task-management"
+  },
+  {
+    "id": "6",
+    "title": "ADHD Medication and Productivity: How to Work With Your Brain Chemistry",
+    "excerpt": "Understanding how ADHD medication affects productivity and how to maximize its benefits with proper task management.",
+    "date": "March 15, 2026",
+    "readTime": "7 min read",
+    "category": "ADHD Management",
+    "seoKeywords": [
+      "ADHD medication",
+      "productivity",
+      "dopamine",
+      "executive function"
+    ],
+    "sources": [
+      {
+        "title": "Mayo Clinic - ADHD Medications",
+        "url": "https://www.mayoclinic.org/diseases-conditions/adhd/diagnosis-treatment/drc-20350889"
+      },
+      {
+        "title": "FDA - ADHD Medication Guide",
+        "url": "https://www.fda.gov/"
+      },
+      {
+        "title": "American Academy of Pediatrics - ADHD Treatment",
+        "url": "https://www.aap.org/"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "4",
+      "5"
+    ],
+    "content": "Many people with ADHD take medication to manage their symptoms. But medication alone isn't a complete solution—you still need strategies to manage tasks effectively.\n\nUnderstanding Medication and Executive Function: ADHD medication works by increasing dopamine and norepinephrine in the brain. Dopamine is crucial for task initiation, motivation, focus, and emotional regulation. When medication is working well, you might notice easier task initiation, better focus for 2-4 hours, improved working memory, and reduced emotional overwhelm.\n\nBut here's the key: medication gives you a window of opportunity. It doesn't automatically make tasks happen. You still need a clear plan.\n\nThe Medication Plus Strategy Approach: Medication is most effective when combined with task breakdown (smaller steps are easier to start), time management tools (timers, reminders), external structure (schedules, accountability), and environmental support (quiet space, minimal distractions).\n\nThink of medication as turning up the volume on your executive function. But you still need a clear plan for what to do with that improved focus.\n\nTiming Your Medication for Maximum Productivity: Most ADHD medications have a peak effect time. Immediate-release peaks 1-2 hours after taking. Extended-release peaks 2-4 hours after taking. Strategy: Schedule your most important tasks during peak medication time.\n\nWorking With Medication Crashes: Many people experience a crash when medication wears off. Plan easier tasks for after the crash. Use DoTheThing to break down tasks into smaller chunks so you can make progress even during low-focus periods.\n\nKey Takeaway: Medication is a tool. Combined with good task management strategies, it can dramatically improve your productivity.",
+    "slug": "adhd-medication-and-productivity"
+  },
+  {
+    "id": "7",
+    "title": "The Neuroscience Behind Task Avoidance: Why You Procrastinate and How to Stop",
+    "excerpt": "Understanding the brain chemistry of procrastination and evidence-based strategies to overcome it.",
+    "date": "March 10, 2024",
+    "readTime": "7 min read",
+    "category": "Psychology",
+    "seoKeywords": [
+      "Procrastination",
+      "Task Avoidance",
+      "ADHD"
+    ],
+    "sources": [
+      {
+        "title": "American Psychological Association - Procrastination",
+        "url": "https://www.apa.org/"
+      },
+      {
+        "title": "Temporal Motivation Theory Research",
+        "url": "https://en.wikipedia.org/wiki/Temporal_motivation_theory"
+      },
+      {
+        "title": "Emotion Regulation and Procrastination Study",
+        "url": "https://journals.sagepub.com/"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "3",
+      "4"
+    ],
+    "content": "Procrastination isn't laziness. It's emotion regulation. Your brain is trying to avoid negative emotions associated with the task.\n\nThe Emotion Regulation Model: Tasks trigger negative emotions: anxiety, boredom, overwhelm, self-doubt. Your brain's goal is to regulate these emotions. The easiest way? Avoid the task. So you procrastinate.\n\nThis is especially true for ADHD brains. The emotional centers of the brain are more reactive. Tasks feel more emotionally taxing. So the urge to avoid is stronger.\n\nWhy Traditional Willpower Fails: \"Just do it\" doesn't work because you're fighting your brain's emotional regulation system. Willpower is finite. Emotion regulation is powerful.\n\nThe Solution: Address the emotion, not the task. Before starting, acknowledge the negative emotion. Practice self-compassion. Use body doubling (work with someone else). Start with the easiest step. Use external structure to reduce decision-making.\n\nBreak tasks into micro-steps so each step feels less emotionally overwhelming. Use DoTheThing to automate this.\n\nReframe the task. Instead of \"I have to write a report,\" think \"I'm going to write an outline in 5 minutes.\" Smaller, more specific tasks feel less emotionally taxing.\n\nKey Insight: Procrastination is a feature of your brain, not a flaw. Your brain is trying to protect you from negative emotions. Once you understand this, you can work with your brain instead of against it.",
+    "slug": "neuroscience-task-avoidance"
+  },
+  {
+    "id": "8",
+    "title": "Remote Work and ADHD: Strategies for Staying Focused at Home",
+    "excerpt": "Practical strategies for maintaining focus and productivity when working from home with ADHD.",
+    "date": "March 5, 2024",
+    "readTime": "6 min read",
+    "category": "Work Environment",
+    "seoKeywords": [
+      "Remote Work",
+      "ADHD",
+      "Work From Home"
+    ],
+    "sources": [
+      {
+        "title": "American Psychological Association - Remote Work and ADHD",
+        "url": "https://www.apa.org/"
+      },
+      {
+        "title": "Harvard Business Review - Focus at Home",
+        "url": "https://hbr.org/"
+      },
+      {
+        "title": "Society for Human Resource Management - Remote Work Best Practices",
+        "url": "https://www.shrm.org/"
+      }
+    ],
+    "relatedPosts": [
+      "2",
+      "5",
+      "11"
+    ],
+    "content": "Remote work can be amazing for ADHD brains—no commute, fewer distractions, flexible schedule. But it also removes external structure that many ADHD brains rely on.\n\nThe Challenge: At home, there are no external cues telling you to focus. You're responsible for creating your own structure. For ADHD brains, this is hard.\n\nCommon Issues: Difficulty starting work, getting distracted by home tasks, trouble switching between work and personal time, isolation and lack of accountability, hyperfocus leading to skipped breaks.\n\nStrategies for Success: Create a dedicated workspace. Even a corner of your desk works. Your brain needs to associate that space with work.\n\nEstablish a morning routine. Same time every day. Your brain needs predictability. Even 10 minutes of routine helps.\n\nUse timers and external structure. Pomodoro technique, time blocking, scheduled breaks. Your brain needs external cues.\n\nUse body doubling. Virtual coworking (Focusmate), working with a friend, or even background noise helps. Your brain works better with external presence.\n\nBreak work into tasks using DoTheThing. Clear tasks are easier to start than vague \"work on project\" goals.\n\nSchedule breaks. ADHD brains often hyperfocus and skip breaks. Set reminders. Your body needs movement and rest.\n\nUse visual timers. Seeing time pass helps with time blindness. Apps like Time Timer or Forest help.\n\nCreate a shutdown routine. At end of day, explicitly close your work. This helps your brain switch to personal time.\n\nThe key is creating external structure because remote work removes the structure that offices provide.",
+    "slug": "remote-work-adhd"
+  },
+  {
+    "id": "9",
+    "title": "ADHD and Perfectionism: Why You Can't Finish Tasks",
+    "excerpt": "Exploring the perfectionism trap in ADHD and how to embrace \"good enough\" to actually complete work.",
+    "date": "February 28, 2024",
+    "readTime": "6 min read",
+    "category": "Psychology",
+    "seoKeywords": [
+      "Perfectionism",
+      "ADHD",
+      "Task Completion"
+    ],
+    "sources": [
+      {
+        "title": "Psychology Today - Perfectionism and ADHD",
+        "url": "https://www.psychologytoday.com/"
+      },
+      {
+        "title": "Journal of Attention Disorders - Perfectionism",
+        "url": "https://journals.sagepub.com/home/jad"
+      },
+      {
+        "title": "Cognitive Behavioral Therapy - Perfectionism",
+        "url": "https://www.apa.org/"
+      }
+    ],
+    "relatedPosts": [
+      "3",
+      "4",
+      "7"
+    ],
+    "content": "Many people with ADHD struggle with perfectionism. This seems contradictory—ADHD is associated with impulsivity and rushing, not perfectionism. But perfectionism is actually common in ADHD.\n\nWhy ADHD and Perfectionism Go Together: ADHD brains are all-or-nothing. You either hyperfocus and obsess over details, or you hypofocus and can't engage at all. There's little middle ground.\n\nPerfectionism also serves as a defense mechanism. If you can't start, you can't fail. If you can't finish, you can't be judged. Perfectionism keeps you safe.\n\nThe Perfectionism Trap: You set impossibly high standards. You start a task. You realize you can't meet your standards. So you avoid the task. You procrastinate. You never finish.\n\nThis is especially true for creative work, writing, or anything subjective. Your brain can't define \"done\" so it keeps going forever.\n\nHow Perfectionism Blocks Completion: You spend hours on details that don't matter. You can't ship work because it's not \"perfect.\" You abandon projects because they're not good enough. You never build a portfolio or body of work.\n\nThe Solution: Define \"done\" explicitly. What does good enough look like? Write it down. Stick to it. Your brain needs a clear finish line.\n\nUse time limits. \"I'm working on this for 30 minutes, then I'm done.\" This forces you to prioritize what matters.\n\nPractice self-compassion. Your work doesn't have to be perfect. It has to be done.\n\nEmbrace iteration. Ship version 1.0, then improve it. Done is better than perfect.\n\nUse DoTheThing to break tasks into small, completable chunks. Finishing small tasks builds momentum and confidence.\n\nKey Insight: Perfectionism isn't about quality—it's about fear. Address the fear, and you can finish work.",
+    "slug": "adhd-perfectionism"
+  },
+  {
+    "id": "10",
+    "title": "ADHD and Relationships: How Task Management Affects Your Connections",
+    "excerpt": "Understanding how ADHD executive dysfunction impacts relationships and how to communicate about it.",
+    "date": "February 20, 2024",
+    "readTime": "7 min read",
+    "category": "Relationships",
+    "seoKeywords": [
+      "ADHD",
+      "Relationships",
+      "Communication"
+    ],
+    "sources": [
+      {
+        "title": "Psychology Today - ADHD and Relationships",
+        "url": "https://www.psychologytoday.com/"
+      },
+      {
+        "title": "National Institutes of Health - ADHD Social Impact",
+        "url": "https://www.nih.gov/"
+      },
+      {
+        "title": "Couples Therapy and ADHD",
+        "url": "https://www.aamft.org/"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "6",
+      "11"
+    ],
+    "content": "ADHD doesn't just affect your productivity—it affects your relationships. Partners, family, and friends often don't understand why you struggle with tasks.\n\nCommon Relationship Challenges: You forget commitments. You're late to plans. You don't follow through on promises. You get hyperfocused and neglect your partner. You struggle with household tasks and chores.\n\nYour partner might think you don't care. They might feel hurt or resentful. They might not understand that this is your brain, not your character.\n\nThe Impact: Conflict and misunderstanding. Your partner feels unsupported. You feel criticized and misunderstood. Over time, this erodes the relationship.\n\nHow to Address It: Communicate about your ADHD. Explain that you struggle with task initiation, working memory, and time blindness. It's not about effort—it's about how your brain works.\n\nUse external systems. Shared calendars, reminders, task apps. Make commitments visible so you don't forget.\n\nAsk for support. \"Can you remind me about the appointment?\" is not weakness—it's smart.\n\nCelebrate effort, not perfection. You're trying. That matters.\n\nUse DoTheThing to manage household tasks. Break chores into micro-steps. Use timers and reminders. Make tasks feel doable.\n\nPractice communication. \"I'm struggling with this task. Can we problem-solve together?\" builds connection.\n\nConsider couples therapy. A therapist can help you both understand ADHD and develop strategies together.\n\nKey Insight: ADHD is not a personal failing. It's a neurological difference. When partners understand this, they can support instead of criticize. This transforms relationships.",
+    "slug": "adhd-relationships"
+  },
+  {
+    "id": "11",
+    "title": "ADHD in the Workplace: How to Succeed in Your Career",
+    "excerpt": "Strategies for thriving at work with ADHD, including accommodations, communication, and task management.",
+    "date": "February 15, 2024",
+    "readTime": "8 min read",
+    "category": "Career",
+    "seoKeywords": [
+      "ADHD",
+      "Workplace",
+      "Career"
+    ],
+    "sources": [
+      {
+        "title": "Americans with Disabilities Act - ADHD Accommodations",
+        "url": "https://www.ada.gov/"
+      },
+      {
+        "title": "CHADD - Workplace Resources",
+        "url": "https://www.chadd.org/"
+      },
+      {
+        "title": "Harvard Business Review - ADHD at Work",
+        "url": "https://hbr.org/"
+      }
+    ],
+    "relatedPosts": [
+      "2",
+      "8",
+      "10"
+    ],
+    "content": "ADHD can be a superpower at work. Many successful entrepreneurs, creatives, and leaders have ADHD. But you need strategies to succeed.\n\nADHD Strengths at Work: Hyperfocus on interesting projects. Creative problem-solving. Ability to think outside the box. High energy and enthusiasm. Resilience and adaptability.\n\nADHD Challenges at Work: Difficulty with routine tasks. Trouble with deadlines. Forgetfulness. Difficulty with meetings and sitting still. Emotional reactivity to criticism.\n\nHow to Succeed: Communicate about your ADHD with your manager. You don't have to disclose, but if you do, you can request accommodations.\n\nRequest accommodations: Flexible schedule, remote work options, written instructions, regular check-ins, task management tools, quiet workspace.\n\nUse external structure: Calendars, reminders, task apps, timers. Your brain needs external cues.\n\nBreak projects into milestones. Instead of \"complete project,\" break into weekly milestones. This creates accountability and progress.\n\nUse DoTheThing to manage your workload. Break projects into tasks. Estimate time. Track progress.\n\nFind your hyperfocus triggers. What projects engage you? Advocate for work that matches your strengths.\n\nBuild a support system. Mentors, peers, managers who understand ADHD. Community matters.\n\nManage your energy. ADHD brains get tired faster. Take breaks. Protect your focus time.\n\nAdvocate for yourself. \"I work better with written instructions.\" \"Can we do a quick check-in?\" \"I need a quiet space to focus.\"\n\nKey Insight: ADHD is not a career limitation—it's a different way of working. When you understand your brain and advocate for yourself, you can build a successful career.",
+    "slug": "adhd-workplace"
+  },
+  {
+    "id": "12",
+    "title": "ADHD and Sleep: How Poor Sleep Makes Executive Dysfunction Worse",
+    "excerpt": "Understanding the bidirectional relationship between ADHD and sleep, and strategies for better rest.",
+    "date": "February 10, 2024",
+    "readTime": "6 min read",
+    "category": "Health",
+    "seoKeywords": [
+      "ADHD",
+      "Sleep",
+      "Executive Function"
+    ],
+    "sources": [
+      {
+        "title": "National Sleep Foundation - ADHD and Sleep",
+        "url": "https://www.sleepfoundation.org/"
+      },
+      {
+        "title": "Mayo Clinic - Sleep and ADHD",
+        "url": "https://www.mayoclinic.org/"
+      },
+      {
+        "title": "Sleep Research Society - ADHD Studies",
+        "url": "https://www.sleepresearchsociety.org/"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "6",
+      "4"
+    ],
+    "content": "Sleep and ADHD have a bidirectional relationship. ADHD makes sleep harder. Poor sleep makes ADHD worse.\n\nThe ADHD Sleep Problem: ADHD brains have trouble with sleep initiation (falling asleep), sleep maintenance (staying asleep), and sleep quality. Racing thoughts, hyperfocus on activities before bed, difficulty winding down.\n\nHow Poor Sleep Affects ADHD: Executive function gets worse. Emotional regulation gets worse. Impulse control gets worse. Time blindness gets worse. Everything gets harder.\n\nThe Cycle: Poor sleep makes ADHD worse. Worse ADHD makes sleep harder. You're stuck in a cycle.\n\nStrategies for Better Sleep: Establish a consistent sleep schedule. Same bedtime every night. Your brain needs predictability.\n\nCreate a wind-down routine. 30 minutes before bed, no screens. Dim lights. Calm activities. Your brain needs time to transition.\n\nUse a sleep timer. Set a timer for bedtime. Your brain needs an external cue.\n\nAvoid caffeine after 2 PM. Caffeine affects ADHD brains more strongly.\n\nExercise during the day. Physical activity improves sleep quality.\n\nKeep your bedroom cool and dark. Optimal sleep environment.\n\nUse white noise. Helps with racing thoughts.\n\nConsider melatonin. Talk to your doctor. Melatonin can help with sleep initiation.\n\nAvoid screens 1 hour before bed. Blue light suppresses melatonin.\n\nUse DoTheThing to manage your day. A structured day with clear tasks helps you wind down at night.\n\nKey Insight: Sleep is foundational. When you sleep well, everything else gets easier. Prioritize sleep.",
+    "slug": "adhd-sleep"
+  },
+  {
+    "id": "13",
+    "title": "ADHD and Financial Management: Why You Struggle With Money",
+    "excerpt": "Understanding ADHD-related financial challenges and practical strategies for managing money.",
+    "date": "February 5, 2024",
+    "readTime": "7 min read",
+    "category": "Finance",
+    "seoKeywords": [
+      "ADHD",
+      "Financial Management",
+      "Money"
+    ],
+    "sources": [
+      {
+        "title": "Financial Health Network - ADHD and Money",
+        "url": "https://www.finhealthnetwork.org/"
+      },
+      {
+        "title": "National Endowment for Financial Education",
+        "url": "https://www.nefe.org/"
+      },
+      {
+        "title": "YNAB - You Need A Budget",
+        "url": "https://www.ynab.com/"
+      }
+    ],
+    "relatedPosts": [
+      "2",
+      "7",
+      "11"
+    ],
+    "content": "ADHD makes financial management harder. It's not about intelligence or responsibility—it's about executive function.\n\nWhy ADHD Brains Struggle With Money: Time blindness makes bills feel abstract. Working memory issues make tracking spending hard. Task avoidance makes dealing with finances feel overwhelming. Impulsivity leads to unplanned purchases. Hyperfocus can lead to overspending on interests.\n\nCommon Issues: Missed bill payments. Overdraft fees. Debt accumulation. Difficulty budgeting. Impulse purchases. Difficulty tracking spending.\n\nThe Impact: Financial stress. Anxiety. Shame. Damaged credit. Limited opportunities.\n\nStrategies for Better Financial Management: Automate everything. Automatic bill pay, automatic transfers to savings. Your brain doesn't have to remember.\n\nUse a simple budgeting app. YNAB, Mint, or similar. Visual tracking helps.\n\nBreak financial tasks into micro-steps. Instead of \"manage finances,\" break into: check account balance, pay bills, review spending.\n\nUse calendar reminders. Bill due dates, financial check-ins, budget reviews.\n\nSimplify your finances. Fewer accounts, fewer credit cards. Less to track.\n\nUse visual systems. Spreadsheets, apps, charts. Your brain processes visual information better.\n\nFind an accountability partner. Someone to check in with monthly about finances.\n\nPractice self-compassion. Financial management is hard for ADHD brains. You're not failing—you're learning.\n\nConsider working with a financial advisor. Professional help can reduce overwhelm.\n\nKey Insight: Financial management is a skill, not a character trait. With the right systems, you can manage money effectively.",
+    "slug": "adhd-financial-management"
+  },
+  {
+    "id": "14",
+    "title": "ADHD and Creativity: How to Channel Hyperfocus Into Your Passion",
+    "excerpt": "Harnessing ADHD hyperfocus as a creative superpower and building sustainable creative practices.",
+    "date": "January 30, 2024",
+    "readTime": "7 min read",
+    "category": "Creativity",
+    "seoKeywords": [
+      "ADHD",
+      "Creativity",
+      "Hyperfocus"
+    ],
+    "sources": [
+      {
+        "title": "Psychology Today - ADHD and Creativity",
+        "url": "https://www.psychologytoday.com/"
+      },
+      {
+        "title": "Creative Minds Research - ADHD",
+        "url": "https://www.creativeminds.org/"
+      },
+      {
+        "title": "Thrive Global - ADHD and Creative Work",
+        "url": "https://www.thriveglobal.com/"
+      }
+    ],
+    "relatedPosts": [
+      "1",
+      "5",
+      "11"
+    ],
+    "content": "ADHD and creativity go together. Many creative professionals have ADHD. The key is channeling hyperfocus into your passion.\n\nADHD Creative Strengths: Hyperfocus on interesting projects. Ability to make novel connections. Creative problem-solving. High energy and enthusiasm. Willingness to take risks.\n\nThe Challenge: You hyperfocus on some projects and can't engage with others. You start projects but don't finish. You struggle with the boring parts (editing, administrative tasks).\n\nHow to Harness Hyperfocus: Identify what triggers your hyperfocus. What projects engage you? What conditions help you focus?\n\nCreate those conditions intentionally. Quiet space, specific time of day, specific tools, specific people.\n\nUse hyperfocus strategically. Schedule hyperfocus time for important creative work. Protect it.\n\nBreak projects into hyperfocus-friendly chunks. Instead of \"finish project,\" break into \"create outline,\" \"write first draft,\" \"edit.\"\n\nUse DoTheThing to manage the boring parts. Break administrative tasks into micro-steps. Use timers and reminders.\n\nFind accountability partners. Other creatives who understand ADHD. Community matters.\n\nEmbrace your creative process. You don't work like neurotypical creatives. That's okay. Your process is valid.\n\nBuild systems for the parts you struggle with. Templates, checklists, automation. Don't rely on willpower.\n\nPractice self-compassion. You're not lazy. Your brain works differently. That's a feature, not a bug.\n\nKey Insight: ADHD is a creative advantage. When you understand your brain and work with it, you can create amazing things.",
+    "slug": "adhd-creativity"
+  },
+  {
+    "id": "15",
+    "title": "Free Tools for ADHD Task Management in 2026: Beyond DoTheThing",
+    "excerpt": "A curated list of free tools and resources for ADHD task management, organization, and productivity.",
+    "date": "January 25, 2026",
+    "readTime": "8 min read",
+    "category": "Tools & Resources",
+    "seoKeywords": [
+      "Free Tools",
+      "ADHD",
+      "Task Management"
+    ],
+    "sources": [
+      {
+        "title": "Todoist Official Site",
+        "url": "https://todoist.com/"
+      },
+      {
+        "title": "Notion Templates and Resources",
+        "url": "https://www.notion.so/"
+      },
+      {
+        "title": "ADHD Tools and Apps Directory",
+        "url": "https://www.adhdtools.com/"
+      }
+    ],
+    "relatedPosts": [
+      "3",
+      "5",
+      "8"
+    ],
+    "content": "DoTheThing is perfect for breaking down tasks and estimating time. But you'll need other tools for ongoing management, focus, and accountability.\n\nTask Management: Todoist (free tier) - Simple, clean, powerful. Perfect for managing tasks after DoTheThing breaks them down.\n\nMicrosoft To Do (free) - Integrated with Outlook, simple interface, shared lists.\n\nGoogle Tasks (free) - Minimal, integrates with Gmail and Calendar.\n\nTime Management: Forest (free tier) - Gamified focus timer, visual tree-growing mechanic.\n\nBe Focused (free tier) - Pomodoro timer, task tracking, break reminders.\n\nGoogle Calendar (free) - Schedule management, time blocking, reminders.\n\nOrganization: Notion (free) - Highly customizable, database features, templates. Build custom systems.\n\nGoogle Drive (free) - Cloud storage, documents, spreadsheets, organization.\n\nAccountability & Community: Focusmate (free tier) - Virtual coworking, 25-minute sessions with accountability partner.\n\nADHD Discord communities - Free communities for support and advice.\n\nReddit r/ADHD - Large community, lots of resources.\n\nHabit Building: Habitica (free) - Gamified habit tracking, RPG-style interface.\n\nStreaks (free tier) - Simple habit tracker with visual streaks.\n\nFocus & Distraction Blocking: Freedom (free tier) - Block distracting websites and apps.\n\nCold Turkey (free tier) - Aggressive distraction blocking.\n\nAdditional Resources: CHADD.org - Free resources, support groups, webinars.\n\nADDitude Magazine - Free articles and resources.\n\nYouTube ADHD channels - Free education and strategies.\n\nThe Key: Don't use all these tools. Pick 2-3 that match your brain. Start with DoTheThing for task breakdown, then add one tool for ongoing management and one for focus/accountability.\n\nToo many tools = overwhelm. Fewer tools = better results.\n\nKey Insight: Free tools are powerful. You don't need to pay for productivity. You need the right system for your brain.",
+    "slug": "free-tools-2026"
+  }
+]

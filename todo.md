@@ -220,3 +220,20 @@
 - [x] Update Home page to redirect to CURRENT TASKS after breakdown
 - [x] Ensure localStorage persistence works across page navigation
 - [ ] Deploy to production
+
+
+## File-Based Blog System (Complete)
+- [x] Create /blog directory structure for Markdown files
+- [x] Create blog post template with YAML frontmatter
+- [x] Migrate all 15 hardcoded blog posts to .md files
+- [x] Create build script to parse .md files and generate blog-posts.json
+- [x] Update Blog.tsx to read from generated JSON instead of hardcoded array
+- [x] Add blog build script to package.json
+- [x] Install js-yaml dependency for YAML parsing
+- [x] Create 22 vitest tests for blog generation validation (all passing)
+- [x] Test blog rendering with file-based posts (verified: all 15 posts load, sources display, related posts work)
+- [x] Document blog post creation process in BLOG_GUIDE.md
+- [x] Fix blog-posts.json serving path (moved to client/public/)
+- [x] Verify blog detail view shows sources and related posts
+- [ ] Deploy to Vercel and verify blog posts load from JSON
+- [ ] Test adding a new blog post via Markdown file
