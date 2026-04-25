@@ -1,0 +1,26 @@
+{
+  "buildCommand": "npm run build",
+  "startCommand": "npm start",
+  "outputDirectory": "dist",
+  "framework": "express",
+  "nodeVersion": "22.x",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "functions": {
+    "dist/index.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/.*",
+      "dest": "/dist/index.js"
+    },
+    {
+      "src": "/.*",
+      "dest": "/dist/index.js"
+    }
+  ]
+}
