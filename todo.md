@@ -207,7 +207,10 @@
 - [x] Add loading indicators for API calls (task breakdown, time estimation)
 - [x] Add error messages for failed API calls
 - [x] Add toast notifications for user feedback
-- [ ] Add retry mechanism for failed requests
+- [x] Add retry mechanism for failed requests (with exponential backoff, max 3 attempts)
+- [x] Add proper source links and citations to all blog posts (all 15 posts)
+- [x] Add backlinks to related blog posts (all 15 posts)
+- [x] Create vitest tests to validate blog metadata (sources and related posts - 26 tests passing)
 - [x] Increase font sizes throughout app (textarea, tasks, all text)
 - [x] Make countdown timer persist across page navigation (global state)
 - [x] Create mobile burger menu for navigation

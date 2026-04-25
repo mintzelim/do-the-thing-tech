@@ -418,8 +418,37 @@ export default function Home() {
                 }}>
                   <div style={{ marginBottom: "8px" }}>ERROR: {error}</div>
                   {retryCount > 0 && (
-                    <div style={{ fontSize: "10px", opacity: 0.8 }}>
-                      Retry attempt {retryCount}
+                    <div style={{ fontSize: "10px", opacity: 0.8, marginBottom: "8px" }}>
+                      Retry attempt {retryCount} of 3
+                    </div>
+                  )}
+                  {retryCount < 3 && (
+                    <button
+                      onClick={() => {
+                        setError(null);
+                        const backoffMs = Math.pow(2, retryCount) * 1000;
+                        toast.loading(`Retrying in ${backoffMs / 1000}s...`);
+                        setTimeout(() => {
+                          handleBrainDumpSubmit();
+                        }, backoffMs);
+                      }}
+                      style={{
+                        backgroundColor: "#c62828",
+                        color: "white",
+                        border: "1px solid #c62828",
+                        padding: "4px 8px",
+                        fontFamily: "'VT323', monospace",
+                        fontSize: "10px",
+                        cursor: "pointer",
+                        marginTop: "4px",
+                      }}
+                    >
+                      RETRY
+                    </button>
+                  )}
+                  {retryCount >= 3 && (
+                    <div style={{ fontSize: "10px", opacity: 0.8, marginTop: "4px" }}>
+                      Max retries reached. Please try again later.
                     </div>
                   )}
                 </div>
