@@ -616,6 +616,12 @@ export default function Home() {
             BLOG
           </button>
           <button
+            onClick={() => handleNavigation("/contact")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            CONTACT
+          </button>
+          <button
             onClick={() => handleNavigation("/privacy")}
             className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
           >

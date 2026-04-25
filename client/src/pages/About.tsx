@@ -300,6 +300,12 @@ export default function About() {
             BLOG
           </button>
           <button
+            onClick={() => navigate("/contact")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            CONTACT
+          </button>
+          <button
             onClick={() => navigate("/privacy")}
             className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
           >

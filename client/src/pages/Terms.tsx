@@ -93,6 +93,12 @@ export default function Terms() {
           >
             BLOG
           </button>
+          <button
+            onClick={() => navigate("/contact")}
+            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
+          >
+            CONTACT
+          </button>
         </div>
         <p className="font-vt323 text-xs text-muted-foreground">
           DoTheThing - Task Management for ADHD Brains

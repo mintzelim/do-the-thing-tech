@@ -264,3 +264,8 @@
 - [x] Add meta description (50-160 characters) to home page - "Break down overwhelming tasks into manageable steps with AI..." (136 chars)
 - [x] Add keywords meta tag to home page - "ADHD task management, task breakdown, productivity tool, time estimation, executive dysfunction, task organization"
 - [x] Verify SEO improvements on / route (all meta tags verified in browser console)
+
+
+## Footer Updates (Complete)
+- [x] Add CONTACT link to footer (Home, About, Privacy, Terms, Contact pages)
+- [x] Verified: Blog.tsx and NotFound.tsx don't have footers (no changes needed)
