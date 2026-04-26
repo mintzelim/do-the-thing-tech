@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { calculateTotalTime, formatTime, FOCUS_MULTIPLIERS, applyFocusLevelToMinutes, normalizeMinutes } from "./taskEstimator";
+import { calculateTotalTime, formatTime, FOCUS_MULTIPLIERS, applyFocusLevelToMinutes, normalizeMinutes, getMockEstimate } from "./taskEstimator";
 
 describe("Task Estimator Service", () => {
   describe("focus multipliers", () => {
@@ -32,6 +32,19 @@ describe("Task Estimator Service", () => {
       expect(normalizeMinutes(2)).toBe(5);
       expect(normalizeMinutes(12)).toBe(10);
       expect(normalizeMinutes(13)).toBe(15);
+    });
+  });
+
+  describe("fallback minute estimation", () => {
+    it("gives short admin work a light estimate", () => {
+      expect(getMockEstimate("Reply to email")).toBe(15);
+      expect(getMockEstimate("Prepare files and gather links")).toBe(10);
+    });
+
+    it("gives deeper work longer estimates", () => {
+      expect(getMockEstimate("Write project proposal")).toBe(30);
+      expect(getMockEstimate("Fix production deployment bug")).toBe(60);
+      expect(getMockEstimate("Client meeting and presentation")).toBe(60);
     });
   });
 

@@ -33,7 +33,6 @@ export async function estimateTasksWithBuffer(
   tasks: Array<{ title: string; description?: string }>,
   focusLevel: FocusLevel
 ): Promise<TaskWithEstimate[]> {
-  const focusMultiplier = getFocusMultiplier(focusLevel);
   const estimates = await getTimeEstimates(tasks);
 
   return estimates.map((est) => {
@@ -113,7 +112,7 @@ Return a JSON array with this structure (no other text):
     return tasks.map((task) => ({
       title: task.title,
       description: task.description,
-      estimatedTime: getMockEstimate(task.title),
+      estimatedTime: getMockEstimate(task.title, task.description),
     }));
   }
 }
@@ -131,10 +130,29 @@ export function applyFocusLevelToMinutes(baseMinutes: number, focusLevel: FocusL
   return normalizeMinutes(baseMinutes * getFocusMultiplier(focusLevel));
 }
 
-function getMockEstimate(taskTitle: string): number {
-  // Simple heuristic for demo: longer titles = longer tasks
-  const baseTime = Math.max(15, Math.min(120, taskTitle.length * 2));
-  return Math.round(baseTime / 5) * 5; // Round to nearest 5
+export function getMockEstimate(taskTitle: string, description?: string): number {
+  const text = `${taskTitle} ${description ?? ""}`.toLowerCase();
+
+  const keywordRules = [
+    { minutes: 10, keywords: ["open", "gather", "collect", "find", "locate", "prepare", "set up", "setup"] },
+    { minutes: 15, keywords: ["email", "reply", "message", "call", "confirm", "schedule", "book"] },
+    { minutes: 20, keywords: ["review", "proofread", "test", "check", "verify", "update", "edit", "refine"] },
+    { minutes: 30, keywords: ["write", "draft", "outline", "research", "plan", "document", "summarize"] },
+    { minutes: 45, keywords: ["build", "implement", "design", "analyze", "debug", "fix", "code"] },
+    { minutes: 60, keywords: ["meeting", "presentation", "report", "migration", "deploy", "integration"] },
+  ] as const;
+
+  const matchedMinutes = keywordRules
+    .filter((rule) => rule.keywords.some((keyword) => text.includes(keyword)))
+    .map((rule) => rule.minutes);
+
+  if (matchedMinutes.length > 0) {
+    return normalizeMinutes(Math.max(...matchedMinutes));
+  }
+
+  const wordCount = text.split(/\s+/).filter(Boolean).length;
+  const heuristicMinutes = 10 + wordCount * 4;
+  return normalizeMinutes(Math.min(90, heuristicMinutes));
 }
 
 /**
