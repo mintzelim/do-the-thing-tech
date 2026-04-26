@@ -278,13 +278,13 @@
 - [x] Verified in browser: Total Time updates correctly when tasks are edited or deleted
 
 
-## Task Completion Feature (In Progress)
-- [ ] Update CurrentTasks component to handle checkbox completion
-- [ ] Implement time deduction when tasks are marked complete
-- [ ] Update progress counter to reflect completed tasks
-- [ ] Add satisfying click sound when task is completed
-- [ ] Create vitest tests for task completion logic
-- [ ] Test in browser and verify timer updates correctly
+## Task Completion Feature (Complete)
+- [x] Update CurrentTasks component to handle checkbox completion
+- [x] Implement time deduction when tasks are marked complete
+- [x] Update progress counter to reflect completed tasks
+- [x] Add satisfying click sound when task is completed
+- [x] Create vitest tests for task completion logic
+- [x] Test in browser and verify timer updates correctly
 
 
 ## Time Estimation Bug Fix (In Progress)
