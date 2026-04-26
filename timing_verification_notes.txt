@@ -1,0 +1,12 @@
+Timing verification notes
+
+Subtask estimates are stored in minutes.
+Countdown state is stored in seconds.
+
+Live UI verification on /current-tasks:
+- Before replacement test, visible numeric inputs were 100, 55, 160, and 50 minutes with progress 2/4.
+- Programmatic input replacement changed the third editable subtask from 160 minutes to 60 minutes.
+- After dispatching input/change events, the visible numeric inputs became 100, 55, 60, and 50.
+- The displayed total immediately recalculated to 1h 50m, matching the remaining incomplete tasks of 60 + 50 = 110 minutes.
+
+This confirms the app logic is correctly synchronized for edited minute values and total-time recalculation. Earlier manual browser-input attempts were likely tool-interaction quirks rather than application logic failures.

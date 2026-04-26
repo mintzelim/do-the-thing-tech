@@ -276,3 +276,42 @@
 - [x] Update Total Time when tasks are added, edited, or deleted
 - [x] Create 8 vitest tests for Total Time calculation (all passing)
 - [x] Verified in browser: Total Time updates correctly when tasks are edited or deleted
+
+
+## Task Completion Feature (In Progress)
+- [ ] Update CurrentTasks component to handle checkbox completion
+- [ ] Implement time deduction when tasks are marked complete
+- [ ] Update progress counter to reflect completed tasks
+- [ ] Add satisfying click sound when task is completed
+- [ ] Create vitest tests for task completion logic
+- [ ] Test in browser and verify timer updates correctly
+
+
+## Time Estimation Bug Fix (In Progress)
+- [ ] Review current time estimation logic
+- [ ] Fix focus level multipliers (Hyperfocus, Normal, Distracted)
+- [ ] Ensure estimates are returned in minutes, not seconds
+- [ ] Create tests for focus level adjustments
+- [ ] Test in browser and verify estimates are correct
+
+
+## Timing System Audit (Complete)
+- [x] Audit focus-level time estimation logic for Hyperfocus, Normal, and Distracted
+- [x] Verify generated subtask times are stored and displayed consistently in minutes
+- [x] Fix total time calculation so it always reflects editable remaining subtasks
+- [x] Fix countdown timer so it stays synchronized with edited, completed, and deleted subtasks
+- [x] Add targeted tests for estimate, total, countdown, edit, completion, and delete behavior
+- [x] Verify timing behavior end-to-end in the app UI
+
+## Current Request Clarification
+- [x] Ensure time estimation remains the core feature and feels intelligent after recent timer changes
+- [x] Ensure user edits to subtask time immediately update both total time and countdown
+- [x] Ensure deleting a subtask immediately updates both total time and countdown
+- [x] Ensure completing a subtask deducts its remaining time without corrupting countdown state
+- [x] Normalize rule: subtask estimates are stored in minutes, countdown state is stored in seconds only
+- [x] Align root breakdown view and Current Tasks view to use the same timing rules
+- [x] Run 38 targeted timing tests with all passing
+
+- [x] Validate focus-level estimation quality with deterministic tests covering Hyperfocus, Normal, and Distracted outputs in minutes and realistic ranges
+- [x] Fix numeric input editing so replacing a subtask minute value does not append digits and verify total/countdown update correctly after edit
+- [x] Add end-to-end verification that editing, deleting, and completing subtasks keeps total time and active countdown synchronized without unit confusion

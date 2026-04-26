@@ -3,36 +3,48 @@ import { invokeLLM } from "../_core/llm";
 export type TaskWithEstimate = {
   title: string;
   description?: string;
-  estimatedTime: number; // in minutes
-  bufferTime: number; // in minutes
-  totalTime: number; // base + buffer
+  estimatedTime: number; // final user-facing estimate in minutes
+  bufferTime: number; // difference from base estimate in minutes
+  totalTime: number; // final total in minutes
 };
+
+type BaseEstimate = {
+  title: string;
+  description?: string;
+  estimatedTime: number; // base estimate in minutes before focus adjustment
+};
+
+export const FOCUS_MULTIPLIERS = {
+  hyperfocus: 0.75,
+  normal: 1,
+  distracted: 1.5,
+} as const;
 
 type FocusLevel = "hyperfocus" | "normal" | "distracted";
 
 /**
- * Estimates time for tasks with ADHD-friendly buffers
- * Focus levels affect the buffer percentage:
- * - hyperfocus: 15% buffer (user can focus deeply)
- * - normal: 20% buffer (standard ADHD adjustment)
- * - distracted: 30% buffer (user struggles with focus)
+ * Estimates time for tasks with focus level adjustments
+ * Focus levels affect the time multiplier:
+ * - hyperfocus: 0.75x multiplier (25% reduction - can focus deeply)
+ * - normal: 1.0x multiplier (no change - baseline)
+ * - distracted: 1.5x multiplier (50% increase - struggles with focus)
  */
 export async function estimateTasksWithBuffer(
   tasks: Array<{ title: string; description?: string }>,
   focusLevel: FocusLevel
 ): Promise<TaskWithEstimate[]> {
-  const bufferPercentage = getBufferPercentage(focusLevel);
-
-  // Get base estimates from LLM
+  const focusMultiplier = getFocusMultiplier(focusLevel);
   const estimates = await getTimeEstimates(tasks);
 
-  // Apply buffer to each estimate
   return estimates.map((est) => {
-    const bufferTime = Math.ceil(est.estimatedTime * (bufferPercentage / 100));
+    const adjustedTime = applyFocusLevelToMinutes(est.estimatedTime, focusLevel);
+    const bufferTime = adjustedTime - normalizeMinutes(est.estimatedTime);
+
     return {
       ...est,
+      estimatedTime: adjustedTime,
       bufferTime,
-      totalTime: est.estimatedTime + bufferTime,
+      totalTime: adjustedTime,
     };
   });
 }
@@ -42,7 +54,7 @@ export async function estimateTasksWithBuffer(
  */
 async function getTimeEstimates(
   tasks: Array<{ title: string; description?: string }>
-): Promise<Array<{ title: string; description?: string; estimatedTime: number }>> {
+): Promise<BaseEstimate[]> {
   const systemPrompt = `You are an expert time estimation assistant for task management. You help estimate realistic time for tasks.
 
 Guidelines:
@@ -106,17 +118,17 @@ Return a JSON array with this structure (no other text):
   }
 }
 
-function getBufferPercentage(focusLevel: FocusLevel): number {
-  switch (focusLevel) {
-    case "hyperfocus":
-      return 20; // Minimum ADHD buffer
-    case "normal":
-      return 25; // Standard ADHD buffer
-    case "distracted":
-      return 30; // Maximum buffer for distracted state
-    default:
-      return 25;
-  }
+function getFocusMultiplier(focusLevel: FocusLevel): number {
+  return FOCUS_MULTIPLIERS[focusLevel] ?? FOCUS_MULTIPLIERS.normal;
+}
+
+export function normalizeMinutes(value: number): number {
+  const roundedToFive = Math.round(value / 5) * 5;
+  return Math.max(5, roundedToFive);
+}
+
+export function applyFocusLevelToMinutes(baseMinutes: number, focusLevel: FocusLevel): number {
+  return normalizeMinutes(baseMinutes * getFocusMultiplier(focusLevel));
 }
 
 function getMockEstimate(taskTitle: string): number {

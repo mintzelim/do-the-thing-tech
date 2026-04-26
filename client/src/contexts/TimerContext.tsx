@@ -1,12 +1,14 @@
 import React, { createContext, useContext, useState, useEffect, useRef, ReactNode } from "react";
 
 type TimerContextType = {
-  timeRemaining: number;
+  timeRemaining: number; // countdown state is always stored in seconds
   timerActive: boolean;
   setTimeRemaining: (time: number) => void;
   setTimerActive: (active: boolean) => void;
   startTimer: (totalSeconds: number) => void;
   stopTimer: () => void;
+  adjustTime: (deltaSeconds: number) => void;
+  deductTime: (seconds: number) => void;
 };
 
 const TimerContext = createContext<TimerContextType | undefined>(undefined);
@@ -14,108 +16,100 @@ const TimerContext = createContext<TimerContextType | undefined>(undefined);
 export function TimerProvider({ children }: { children: ReactNode }) {
   const [timeRemaining, setTimeRemaining] = useState(0);
   const [timerActive, setTimerActive] = useState(false);
-  const timerRefRef = useRef<NodeJS.Timeout | null>(null);
-  const timeRemainingRef = useRef(0);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Load persisted timer state
   useEffect(() => {
-    const savedState = localStorage.getItem('doTheThing_state');
-    if (savedState) {
-      try {
-        const parsed = JSON.parse(savedState);
-        const savedTime = parsed.timeRemaining || 0;
-        setTimeRemaining(savedTime);
-        timeRemainingRef.current = savedTime;
-        setTimerActive(parsed.timerActive || false);
-      } catch (error) {
-        console.error('Failed to load timer state:', error);
-      }
+    const savedState = localStorage.getItem("doTheThing_state");
+    if (!savedState) return;
+
+    try {
+      const parsed = JSON.parse(savedState);
+      setTimeRemaining(Number(parsed.timeRemaining) || 0);
+      setTimerActive(Boolean(parsed.timerActive));
+    } catch (error) {
+      console.error("Failed to load timer state:", error);
     }
   }, []);
 
-  // Save timer state to localStorage
   useEffect(() => {
-    const savedState = localStorage.getItem('doTheThing_state');
-    if (savedState) {
-      try {
-        const parsed = JSON.parse(savedState);
-        parsed.timeRemaining = timeRemaining;
-        parsed.timerActive = timerActive;
-        localStorage.setItem('doTheThing_state', JSON.stringify(parsed));
-      } catch (error) {
-        console.error('Failed to save timer state:', error);
-      }
-    }
+    const savedState = localStorage.getItem("doTheThing_state");
+    const parsed = savedState ? JSON.parse(savedState) : {};
+
+    parsed.timeRemaining = timeRemaining;
+    parsed.timerActive = timerActive;
+
+    localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
   }, [timeRemaining, timerActive]);
 
-  // Accurate countdown timer using useRef to avoid dependency issues
   useEffect(() => {
-    // Update ref when state changes
-    timeRemainingRef.current = timeRemaining;
-  }, [timeRemaining]);
-
-  useEffect(() => {
-    // Clear any existing interval
-    if (timerRefRef.current) {
-      clearInterval(timerRefRef.current);
-      timerRefRef.current = null;
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
     }
 
-    // If timer is not active or time is 0 or less, stop it
     if (!timerActive || timeRemaining <= 0) {
-      if (timeRemaining <= 0 && timerActive) {
+      if (timerActive && timeRemaining <= 0) {
         setTimerActive(false);
       }
       return;
     }
 
-    // Create a new interval that runs every 1000ms
-    timerRefRef.current = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       setTimeRemaining((prev) => {
-        const newTime = prev - 1;
-        timeRemainingRef.current = newTime;
-        
-        // Stop timer when it reaches 0
-        if (newTime <= 0) {
+        const next = Math.max(0, prev - 1);
+
+        if (next <= 0) {
           setTimerActive(false);
-          if (timerRefRef.current) {
-            clearInterval(timerRefRef.current);
-            timerRefRef.current = null;
+          if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+            intervalRef.current = null;
           }
-          return 0;
         }
-        
-        return newTime;
+
+        return next;
       });
     }, 1000);
 
-    // Cleanup function
     return () => {
-      if (timerRefRef.current) {
-        clearInterval(timerRefRef.current);
-        timerRefRef.current = null;
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
       }
     };
-  }, [timerActive]); // Only depend on timerActive, not timeRemaining
+  }, [timerActive, timeRemaining]);
 
   const startTimer = (totalSeconds: number) => {
-    // Clear any existing timer first
-    if (timerRefRef.current) {
-      clearInterval(timerRefRef.current);
-      timerRefRef.current = null;
-    }
-    
-    setTimeRemaining(totalSeconds);
-    timeRemainingRef.current = totalSeconds;
-    setTimerActive(true);
+    const safeSeconds = Math.max(0, Math.round(totalSeconds));
+    setTimeRemaining(safeSeconds);
+    setTimerActive(safeSeconds > 0);
   };
 
   const stopTimer = () => {
     setTimerActive(false);
-    if (timerRefRef.current) {
-      clearInterval(timerRefRef.current);
-      timerRefRef.current = null;
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
     }
+  };
+
+  const adjustTime = (deltaSeconds: number) => {
+    setTimeRemaining((prev) => {
+      const next = Math.max(0, prev + Math.round(deltaSeconds));
+
+      if (next <= 0) {
+        setTimerActive(false);
+        if (intervalRef.current) {
+          clearInterval(intervalRef.current);
+          intervalRef.current = null;
+        }
+      }
+
+      return next;
+    });
+  };
+
+  const deductTime = (seconds: number) => {
+    adjustTime(-Math.abs(seconds));
   };
 
   return (
@@ -127,6 +121,8 @@ export function TimerProvider({ children }: { children: ReactNode }) {
         setTimerActive,
         startTimer,
         stopTimer,
+        adjustTime,
+        deductTime,
       }}
     >
       {children}

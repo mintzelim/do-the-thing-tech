@@ -1,13 +1,18 @@
 import { describe, it, expect, beforeEach, vi, afterEach } from "vitest";
 
-/**
- * Timer Integration Tests
- * Verifies that the timer:
- * - Starts with correct total time from steps
- * - Counts down continuously without stopping
- * - Formats time correctly (h/m/s)
- * - Handles various edge cases
- */
+const minutesToSeconds = (minutes: number) => minutes * 60;
+const getRemainingTotalSeconds = (
+  steps: Array<{ estimatedTime: number; completed: boolean }>
+) => steps.filter((step) => !step.completed).reduce((sum, step) => sum + minutesToSeconds(step.estimatedTime), 0);
+
+const formatDisplayTime = (seconds: number) => {
+  const hours = Math.floor(seconds / 3600);
+  const minutes = Math.floor((seconds % 3600) / 60);
+  const secs = seconds % 60;
+
+  if (hours > 0) return `${hours}h ${minutes}m`;
+  return `${minutes}m ${secs}s`;
+};
 
 describe("Timer Integration", () => {
   beforeEach(() => {
@@ -15,288 +20,115 @@ describe("Timer Integration", () => {
   });
 
   afterEach(() => {
-    vi.restoreAllMocks();
+    vi.useRealTimers();
   });
 
-  it("should calculate total time from steps correctly", () => {
+  it("calculates countdown start time from incomplete step minutes", () => {
     const steps = [
-      { id: "1", title: "Task 1", estimatedTime: 300 }, // 5 min
-      { id: "2", title: "Task 2", estimatedTime: 600 }, // 10 min
-      { id: "3", title: "Task 3", estimatedTime: 300 }, // 5 min
+      { id: "1", title: "Task 1", estimatedTime: 100, completed: false },
+      { id: "2", title: "Task 2", estimatedTime: 50, completed: false },
+      { id: "3", title: "Task 3", estimatedTime: 38, completed: true },
     ];
 
-    const total = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
-    expect(total).toBe(1200); // 20 minutes in seconds
+    expect(getRemainingTotalSeconds(steps)).toBe(9000);
   });
 
-  it("should format time correctly from seconds", () => {
-    const formatTime = (seconds: number) => {
-      const hours = Math.floor(seconds / 3600);
-      const minutes = Math.floor((seconds % 3600) / 60);
-      const secs = seconds % 60;
-      if (hours > 0) {
-        return `${hours}h ${minutes}m`;
-      }
-      return `${minutes}m ${secs}s`;
-    };
-
-    expect(formatTime(0)).toBe("0m 0s");
-    expect(formatTime(30)).toBe("0m 30s");
-    expect(formatTime(60)).toBe("1m 0s");
-    expect(formatTime(90)).toBe("1m 30s");
-    expect(formatTime(300)).toBe("5m 0s");
-    expect(formatTime(600)).toBe("10m 0s");
-    expect(formatTime(3600)).toBe("1h 0m");
-    expect(formatTime(3661)).toBe("1h 1m");
-    expect(formatTime(7200)).toBe("2h 0m");
+  it("formats hour-based countdown without switching to second-first display", () => {
+    expect(formatDisplayTime(23640)).toBe("6h 34m");
+    expect(formatDisplayTime(23280)).toBe("6h 28m");
   });
 
-  it("should serialize and restore timer state", () => {
+  it("formats shorter countdown values in minutes and seconds", () => {
+    expect(formatDisplayTime(125)).toBe("2m 5s");
+    expect(formatDisplayTime(45)).toBe("0m 45s");
+  });
+
+  it("counts down continuously second by second", () => {
+    let timeRemaining = 180;
+    const interval = setInterval(() => {
+      timeRemaining = Math.max(0, timeRemaining - 1);
+      if (timeRemaining === 0) clearInterval(interval);
+    }, 1000);
+
+    vi.advanceTimersByTime(3000);
+    expect(timeRemaining).toBe(177);
+
+    vi.advanceTimersByTime(177000);
+    expect(timeRemaining).toBe(0);
+  });
+
+  it("deducts completed task time from an active countdown", () => {
+    const activeCountdownSeconds = minutesToSeconds(288);
+    const completedTaskSeconds = minutesToSeconds(100);
+
+    const updated = Math.max(0, activeCountdownSeconds - completedTaskSeconds);
+    expect(updated).toBe(minutesToSeconds(188));
+    expect(formatDisplayTime(updated)).toBe("3h 8m");
+  });
+
+  it("adds time delta when an incomplete task duration is edited upward during countdown", () => {
+    const currentCountdownSeconds = minutesToSeconds(257);
+    const deltaSeconds = minutesToSeconds(31);
+
+    expect(currentCountdownSeconds + deltaSeconds).toBe(minutesToSeconds(288));
+  });
+
+  it("subtracts time delta when an incomplete task duration is edited downward during countdown", () => {
+    const currentCountdownSeconds = minutesToSeconds(257);
+    const deltaSeconds = minutesToSeconds(-19);
+
+    expect(currentCountdownSeconds + deltaSeconds).toBe(minutesToSeconds(238));
+  });
+
+  it("removes an incomplete task from the total when deleted", () => {
+    const steps = [
+      { id: "1", title: "Write report", estimatedTime: 300, completed: false },
+      { id: "2", title: "Attend meeting", estimatedTime: 94, completed: false },
+    ];
+
+    const remaining = steps.filter((step) => step.id !== "2");
+    expect(getRemainingTotalSeconds(remaining)).toBe(minutesToSeconds(300));
+    expect(formatDisplayTime(getRemainingTotalSeconds(remaining))).toBe("5h 0m");
+  });
+
+  it("ignores completed tasks in total time when timer is idle", () => {
+    const steps = [
+      { id: "1", title: "Task 1", estimatedTime: 60, completed: true },
+      { id: "2", title: "Task 2", estimatedTime: 45, completed: false },
+      { id: "3", title: "Task 3", estimatedTime: 15, completed: false },
+    ];
+
+    expect(getRemainingTotalSeconds(steps)).toBe(minutesToSeconds(60));
+    expect(formatDisplayTime(getRemainingTotalSeconds(steps))).toBe("1h 0m");
+  });
+
+  it("restores serialized timer state with seconds preserved", () => {
     const state = {
-      steps: [
-        { id: "1", title: "Task 1", estimatedTime: 300, completed: false },
-      ],
-      timeRemaining: 300,
+      steps: [{ id: "1", title: "Task 1", estimatedTime: 50, completed: false }],
+      timeRemaining: minutesToSeconds(50),
       timerActive: true,
     };
 
-    const serialized = JSON.stringify(state);
-    const restored = JSON.parse(serialized);
-
-    expect(restored.timeRemaining).toBe(300);
+    const restored = JSON.parse(JSON.stringify(state));
+    expect(restored.steps[0].estimatedTime).toBe(50);
+    expect(restored.timeRemaining).toBe(3000);
     expect(restored.timerActive).toBe(true);
-    expect(restored.steps.length).toBe(1);
   });
 
-  it("should restore timer state after serialization", () => {
-    const beforeNav = {
-      steps: [
-        { id: "1", title: "Task 1", estimatedTime: 600, completed: false },
-        { id: "2", title: "Task 2", estimatedTime: 300, completed: true },
-      ],
-      timeRemaining: 450, // 7m 30s remaining
-      timerActive: true,
-    };
-
-    const serialized = JSON.stringify(beforeNav);
-    const afterNav = JSON.parse(serialized);
-
-    expect(afterNav.timeRemaining).toBe(450);
-    expect(afterNav.timerActive).toBe(true);
-    expect(afterNav.steps.length).toBe(2);
-  });
-
-  it("should handle timer countdown with multiple ticks", () => {
-    let timeRemaining = 300; // 5 minutes
-    const tickHistory: number[] = [];
+  it("stops the countdown cleanly at zero", () => {
+    let timeRemaining = 2;
+    let timerActive = true;
 
     const interval = setInterval(() => {
-      tickHistory.push(timeRemaining);
       timeRemaining = Math.max(0, timeRemaining - 1);
       if (timeRemaining === 0) {
+        timerActive = false;
         clearInterval(interval);
       }
     }, 1000);
 
-    // Simulate 5 minutes of countdown
-    vi.advanceTimersByTime(300000);
-
-    expect(tickHistory.length).toBe(300);
-    expect(tickHistory[0]).toBe(300);
-    expect(tickHistory[299]).toBe(1);
+    vi.advanceTimersByTime(2000);
     expect(timeRemaining).toBe(0);
-  });
-
-  it("should not skip seconds during long countdown", () => {
-    let timeRemaining = 3600; // 1 hour
-    let tickCount = 0;
-    const expectedTicks = 3600;
-
-    const interval = setInterval(() => {
-      tickCount++;
-      timeRemaining--;
-      if (timeRemaining <= 0) {
-        clearInterval(interval);
-      }
-    }, 1000);
-
-    // Simulate 1 hour of countdown
-    vi.advanceTimersByTime(3600000);
-
-    expect(tickCount).toBe(expectedTicks);
-    expect(timeRemaining).toBe(0);
-  });
-
-  it("should handle timer stop and resume", () => {
-    let timeRemaining = 600; // 10 minutes
-    let isActive = true;
-    let tickCount = 0;
-
-    const interval = setInterval(() => {
-      if (isActive) {
-        tickCount++;
-        timeRemaining--;
-        if (timeRemaining <= 0) {
-          isActive = false;
-          clearInterval(interval);
-        }
-      }
-    }, 1000);
-
-    // Countdown for 3 minutes
-    vi.advanceTimersByTime(180000);
-    expect(tickCount).toBe(180);
-    expect(timeRemaining).toBe(420); // 7 minutes remaining
-
-    // Stop timer
-    isActive = false;
-    vi.advanceTimersByTime(60000); // Advance 1 more minute
-    expect(tickCount).toBe(180); // No new ticks
-    expect(timeRemaining).toBe(420); // Time unchanged
-
-    // Resume timer
-    isActive = true;
-    vi.advanceTimersByTime(60000); // Advance 1 more minute
-    expect(tickCount).toBe(240); // 60 new ticks
-    expect(timeRemaining).toBe(360); // 6 minutes remaining
-  });
-
-  it("should handle edge case: very short timer (1 second)", () => {
-    let timeRemaining = 1;
-    let tickCount = 0;
-
-    const interval = setInterval(() => {
-      tickCount++;
-      timeRemaining--;
-      if (timeRemaining <= 0) {
-        clearInterval(interval);
-      }
-    }, 1000);
-
-    vi.advanceTimersByTime(1000);
-
-    expect(tickCount).toBe(1);
-    expect(timeRemaining).toBe(0);
-  });
-
-  it("should handle edge case: very long timer (24 hours)", () => {
-    let timeRemaining = 86400; // 24 hours in seconds
-    let tickCount = 0;
-
-    const interval = setInterval(() => {
-      tickCount++;
-      timeRemaining--;
-      if (timeRemaining <= 0) {
-        clearInterval(interval);
-      }
-    }, 1000);
-
-    // Advance 1 hour
-    vi.advanceTimersByTime(3600000);
-
-    expect(tickCount).toBe(3600);
-    expect(timeRemaining).toBe(82800); // 23 hours remaining
-  });
-
-  it("should correctly format time display for timer", () => {
-    const formatTime = (seconds: number) => {
-      const hours = Math.floor(seconds / 3600);
-      const minutes = Math.floor((seconds % 3600) / 60);
-      const secs = seconds % 60;
-      if (hours > 0) {
-        return `${hours}h ${minutes}m`;
-      }
-      return `${minutes}m ${secs}s`;
-    };
-
-    // Test various time values
-    const testCases = [
-      { input: 0, expected: "0m 0s" },
-      { input: 45, expected: "0m 45s" },
-      { input: 125, expected: "2m 5s" },
-      { input: 1800, expected: "30m 0s" },
-      { input: 3665, expected: "1h 1m" },
-      { input: 7325, expected: "2h 2m" },
-    ];
-
-    testCases.forEach(({ input, expected }) => {
-      expect(formatTime(input)).toBe(expected);
-    });
-  });
-
-  it("should handle timer with completed tasks", () => {
-    const steps = [
-      { id: "1", title: "Task 1", estimatedTime: 300, completed: true },
-      { id: "2", title: "Task 2", estimatedTime: 600, completed: false },
-      { id: "3", title: "Task 3", estimatedTime: 300, completed: false },
-    ];
-
-    // Total time should include all steps, regardless of completion
-    const total = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
-    expect(total).toBe(1200); // 20 minutes
-
-    // But we can track progress
-    const completed = steps.filter((s) => s.completed).length;
-    expect(completed).toBe(1);
-  });
-
-  it("should maintain accurate countdown without stopping midway", () => {
-    let timeRemaining = 120; // 2 minutes
-    let tickCount = 0;
-    let lastValue = timeRemaining;
-
-    const interval = setInterval(() => {
-      tickCount++;
-      lastValue = timeRemaining;
-      timeRemaining--;
-      if (timeRemaining <= 0) {
-        clearInterval(interval);
-      }
-    }, 1000);
-
-    // Simulate 2 minutes of countdown
-    vi.advanceTimersByTime(120000);
-
-    // Should have exactly 120 ticks
-    expect(tickCount).toBe(120);
-    // Should reach 0
-    expect(timeRemaining).toBe(0);
-    // Last value before decrement should be 1
-    expect(lastValue).toBe(1);
-  });
-
-  it("should handle rapid timer state changes", () => {
-    let timeRemaining = 300;
-    let startCount = 0;
-    let stopCount = 0;
-    let isActive = false;
-
-    const startTimer = (seconds: number) => {
-      startCount++;
-      timeRemaining = seconds;
-      isActive = true;
-    };
-
-    const stopTimer = () => {
-      stopCount++;
-      isActive = false;
-    };
-
-    // Rapid start/stop cycles
-    startTimer(300);
-    expect(startCount).toBe(1);
-    expect(isActive).toBe(true);
-
-    stopTimer();
-    expect(stopCount).toBe(1);
-    expect(isActive).toBe(false);
-
-    startTimer(300);
-    expect(startCount).toBe(2);
-    expect(isActive).toBe(true);
-
-    stopTimer();
-    expect(stopCount).toBe(2);
-    expect(isActive).toBe(false);
+    expect(timerActive).toBe(false);
   });
 });

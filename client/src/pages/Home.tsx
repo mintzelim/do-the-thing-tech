@@ -30,7 +30,13 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [retryCount, setRetryCount] = useState(0);
-  const { timerActive: globalTimerActive, timeRemaining: globalTimeRemaining, startTimer: globalStartTimer, stopTimer: globalStopTimer } = useTimer();
+  const {
+    timerActive: globalTimerActive,
+    timeRemaining: globalTimeRemaining,
+    startTimer: globalStartTimer,
+    stopTimer: globalStopTimer,
+    adjustTime: globalAdjustTime,
+  } = useTimer();
   const [pendingNavigation, setPendingNavigation] = useState<string | null>(null);
   const clickSoundRef = useRef<HTMLAudioElement | null>(null);
 
@@ -66,7 +72,9 @@ export default function Home() {
       timerActive: globalTimerActive,
     };
     localStorage.setItem('doTheThing_state', JSON.stringify(state));
-  }, [brainDump, focusLevel, granularity, granularityPreset, steps, flowState, globalTimeRemaining, globalTimerActive]);const breakdownMutation = trpc.tasks.breakdown.useMutation();
+  }, [brainDump, focusLevel, granularity, granularityPreset, steps, flowState, globalTimeRemaining, globalTimerActive]);
+
+  const breakdownMutation = trpc.tasks.breakdown.useMutation();
   const estimateMutation = trpc.tasks.estimateTasks.useMutation();
 
   // Create click sound on component mount
@@ -132,8 +140,10 @@ export default function Home() {
   // Global timer is managed by TimerContext
 
   const handleStartTimer = () => {
-    const total = steps.reduce((sum, s) => sum + s.estimatedTime, 0);
-    globalStartTimer(total);
+    const totalSeconds = steps
+      .filter((step) => !step.completed)
+      .reduce((sum, step) => sum + step.estimatedTime * 60, 0);
+    globalStartTimer(totalSeconds);
   };
 
   const handleStopTimer = () => {
@@ -223,34 +233,75 @@ export default function Home() {
 
   const toggleStepComplete = (stepId: string) => {
     playClickSound();
-    
+
     setSteps((prev) => {
-      const updated = prev.map((s) => (s.id === stepId ? { ...s, completed: !s.completed } : s));
-      
-      // Check if all tasks are completed
+      const step = prev.find((s) => s.id === stepId);
+      if (!step) return prev;
+
+      const nextCompleted = !step.completed;
+      const stepSeconds = step.estimatedTime * 60;
+
+      if (globalTimerActive) {
+        globalAdjustTime(nextCompleted ? -stepSeconds : stepSeconds);
+      }
+
+      const updated = prev.map((s) => (s.id === stepId ? { ...s, completed: nextCompleted } : s));
       const allCompleted = updated.every((s) => s.completed);
+
       if (allCompleted && updated.length > 0) {
+        globalStopTimer();
         setTimeout(() => {
           setFlowState("completion");
         }, 500);
       }
-      
+
       return updated;
     });
   };
 
   const updateStepTime = (stepId: string, time: number) => {
-    setSteps((prev) =>
-      prev.map((s) => (s.id === stepId ? { ...s, estimatedTime: time } : s))
-    );
+    const safeMinutes = Math.max(1, Number.isFinite(time) ? time : 1);
+
+    setSteps((prev) => {
+      const step = prev.find((s) => s.id === stepId);
+      if (!step) return prev;
+
+      if (globalTimerActive && !step.completed) {
+        globalAdjustTime((safeMinutes - step.estimatedTime) * 60);
+      }
+
+      return prev.map((s) => (s.id === stepId ? { ...s, estimatedTime: safeMinutes } : s));
+    });
   };
 
   const deleteStep = (stepId: string) => {
-    setSteps((prev) => prev.filter((s) => s.id !== stepId));
+    setSteps((prev) => {
+      const step = prev.find((s) => s.id === stepId);
+      if (!step) return prev;
+
+      if (globalTimerActive && !step.completed) {
+        globalAdjustTime(-step.estimatedTime * 60);
+      }
+
+      return prev.filter((s) => s.id !== stepId);
+    });
   };
 
-  const totalTime = globalTimerActive ? globalTimeRemaining : steps.reduce((sum, s) => sum + s.estimatedTime, 0);
+  const remainingMinutes = steps
+    .filter((step) => !step.completed)
+    .reduce((sum, step) => sum + step.estimatedTime, 0);
+  const totalTimeSeconds = remainingMinutes * 60;
   const completedCount = steps.filter((s) => s.completed).length;
+
+  const formatDisplayTime = (seconds: number) => {
+    const safeSeconds = Math.max(0, Math.round(seconds));
+    const hours = Math.floor(safeSeconds / 3600);
+    const minutes = Math.floor((safeSeconds % 3600) / 60);
+    const secs = safeSeconds % 60;
+
+    if (hours > 0) return `${hours}h ${minutes}m`;
+    return `${minutes}m ${secs}s`;
+  };
 
   return (
     <div className="mobile-frame">
@@ -510,7 +561,7 @@ export default function Home() {
             >
               <div className="mobile-summary-label">{globalTimerActive ? "TIME REMAINING" : "TOTAL TIME"}</div>
               <div className="mobile-summary-value" style={{ color: globalTimerActive ? "#ef4444" : "var(--pixel-accent)" }}>
-                {Math.round(globalTimeRemaining / 60)}H {globalTimeRemaining % 60}M
+                {globalTimerActive ? formatDisplayTime(globalTimeRemaining) : formatDisplayTime(totalTimeSeconds)}
               </div>
               <div className="mobile-body-sm" style={{ marginTop: "8px" }}>
                 {globalTimerActive ? "Click to stop" : "Click to start countdown"}
@@ -551,6 +602,8 @@ export default function Home() {
                         min="5"
                         max="480"
                         value={step.estimatedTime}
+                        onFocus={(e) => e.currentTarget.select()}
+                        onClick={(e) => e.currentTarget.select()}
                         onChange={(e) => updateStepTime(step.id, parseInt(e.target.value))}
                         className="mobile-task-time-input"
                       />
