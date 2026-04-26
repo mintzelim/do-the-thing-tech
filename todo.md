@@ -288,11 +288,11 @@
 
 
 ## Time Estimation Bug Fix (In Progress)
-- [ ] Review current time estimation logic
-- [ ] Fix focus level multipliers (Hyperfocus, Normal, Distracted)
-- [ ] Ensure estimates are returned in minutes, not seconds
-- [ ] Create tests for focus level adjustments
-- [ ] Test in browser and verify estimates are correct
+- [x] Review current time estimation logic
+- [x] Fix focus level multipliers (Hyperfocus, Normal, Distracted)
+- [x] Ensure estimates are returned in minutes, not seconds
+- [x] Create tests for focus level adjustments
+- [x] Test in browser and verify estimates are correct
 
 
 ## Timing System Audit (Complete)
@@ -310,7 +310,7 @@
 - [x] Ensure completing a subtask deducts its remaining time without corrupting countdown state
 - [x] Normalize rule: subtask estimates are stored in minutes, countdown state is stored in seconds only
 - [x] Align root breakdown view and Current Tasks view to use the same timing rules
-- [x] Run 38 targeted timing tests with all passing
+- [x] Run 42 targeted timing and estimator tests with all passing
 
 - [x] Validate focus-level estimation quality with deterministic tests covering Hyperfocus, Normal, and Distracted outputs in minutes and realistic ranges
 - [x] Fix numeric input editing so replacing a subtask minute value does not append digits and verify total/countdown update correctly after edit

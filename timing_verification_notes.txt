@@ -10,3 +10,8 @@ Live UI verification on /current-tasks:
 - The displayed total immediately recalculated to 1h 50m, matching the remaining incomplete tasks of 60 + 50 = 110 minutes.
 
 This confirms the app logic is correctly synchronized for edited minute values and total-time recalculation. Earlier manual browser-input attempts were likely tool-interaction quirks rather than application logic failures.
+
+Additional validation
+- Added keyword-based fallback minute estimation so the core experience remains sensible during LLM quota or rate-limit failures.
+- Exported and tested fallback estimation directly.
+- Targeted timing and estimator suite now has 42 passing tests.
