@@ -581,3 +581,8 @@
 - [x] Configure GitHub backend for Decap CMS (DONE: GitHub OAuth app_id added)
 - [x] Create admin interface at /admin (DONE: Admin interface created)
 - [x] Test blog post editing through Decap CMS (DONE: Decap CMS interface created at /admin)
+
+- [x] Diagnose why Decap CMS admin is empty after login (DONE: missing GitHub OAuth proxy routes and incorrect backend base_url/auth_endpoint)
+- [x] Verify Decap CMS authentication flow and backend settings (DONE: same-site OAuth proxy implemented at /api/decap/auth and /api/decap/callback)
+- [x] Fix Decap CMS content collection loading for existing blog posts (DONE: config updated to use the blog folder with frontmatter)
+- [ ] Validate the admin can list and edit blog markdown files after the GitHub OAuth app callback URL is updated to https://dothething.tech/api/decap/callback

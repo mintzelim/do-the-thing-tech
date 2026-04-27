@@ -5,69 +5,41 @@ backend:
   name: github
   repo: mintzelim/do-the-thing-tech
   branch: main
-  auth_endpoint: api/auth
-  app_id: Ov23liZGqgbtyWXMd5qv
+  base_url: https://dothething.tech/api/decap
+  auth_endpoint: auth
+  site_domain: dothething.tech
+  squash_merges: true
 
 media_folder: public/uploads
 public_path: /uploads
 
 collections:
-  - name: "blog"
-    label: "Blog Posts"
-    folder: "blog"
+  - name: blog
+    label: Blog Posts
+    folder: blog
     create: true
-    slug: "{{num}}-{{slug}}"
-    format: "frontmatter"
+    slug: "{{slug}}"
+    format: frontmatter
     frontmatter_delimiter: "---"
     fields:
-      - label: "ID"
-        name: "id"
-        widget: "string"
-        required: true
-      - label: "Title"
-        name: "title"
-        widget: "string"
-        required: true
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
-        required: true
-      - label: "Date"
-        name: "date"
-        widget: "string"
-        required: true
-      - label: "Read Time"
-        name: "readTime"
-        widget: "string"
-        required: true
-      - label: "Category"
-        name: "category"
-        widget: "string"
-        required: true
-      - label: "SEO Keywords"
-        name: "seoKeywords"
-        widget: "list"
-        field:
-          label: "Keyword"
-          name: "keyword"
-          widget: "string"
-      - label: "Sources"
-        name: "sources"
-        widget: "list"
+      - { label: ID, name: id, widget: string, required: true }
+      - { label: Title, name: title, widget: string, required: true }
+      - { label: Excerpt, name: excerpt, widget: text, required: true }
+      - { label: Date, name: date, widget: string, required: true }
+      - { label: Read Time, name: readTime, widget: string, required: true }
+      - { label: Category, name: category, widget: string, required: true }
+      - label: SEO Keywords
+        name: seoKeywords
+        widget: list
+        field: { label: Keyword, name: keyword, widget: string }
+      - label: Sources
+        name: sources
+        widget: list
         fields:
-          - label: "Title"
-            name: "title"
-            widget: "string"
-          - label: "URL"
-            name: "url"
-            widget: "string"
-      - label: "Related Posts"
-        name: "relatedPosts"
-        widget: "list"
-        field:
-          label: "Post ID"
-          name: "id"
-          widget: "string"
-      - label: "Body"
-        name: "body"
-        widget: "markdown"
+          - { label: Title, name: title, widget: string }
+          - { label: URL, name: url, widget: string }
+      - label: Related Posts
+        name: relatedPosts
+        widget: list
+        field: { label: Post ID, name: id, widget: string }
+      - { label: Body, name: body, widget: markdown }
