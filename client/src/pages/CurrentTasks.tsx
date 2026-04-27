@@ -91,7 +91,12 @@ export default function CurrentTasks() {
           // If completing the task, deduct its time from the timer
           if (isCompleting && timerActive) {
             const timeInSeconds = minutesToSeconds(step.estimatedTime);
-            adjustTime(-timeInSeconds);
+            // Defer adjustTime to after render to avoid React warning
+            setTimeout(() => adjustTime(-timeInSeconds), 0);
+          } else if (!isCompleting && timerActive) {
+            // When unchecking, add time back
+            const timeInSeconds = minutesToSeconds(step.estimatedTime);
+            setTimeout(() => adjustTime(timeInSeconds), 0);
           }
           return { ...step, completed: !step.completed };
         }
@@ -108,7 +113,8 @@ export default function CurrentTasks() {
       
       // If timer is active, adjust it by the time difference
       if (timerActive && timeDifference !== 0) {
-        adjustTime(timeDifference);
+        // Defer adjustTime to after render to avoid React warning
+        setTimeout(() => adjustTime(timeDifference), 0);
       }
     }
     
@@ -124,7 +130,8 @@ export default function CurrentTasks() {
       
       // If timer is active, decrease it by the task's estimated time
       if (timerActive && timeToDeduce > 0) {
-        adjustTime(-timeToDeduce);
+        // Defer adjustTime to after render to avoid React warning
+        setTimeout(() => adjustTime(-timeToDeduce), 0);
       }
     }
     
@@ -143,7 +150,8 @@ export default function CurrentTasks() {
     
     // Increase timer by the new task's estimated time if timer is active
     if (timerActive) {
-      adjustTime(15 * 60); // Convert minutes to seconds
+      // Defer adjustTime to after render to avoid React warning
+      setTimeout(() => adjustTime(15 * 60), 0); // Convert minutes to seconds
     }
   };
 
