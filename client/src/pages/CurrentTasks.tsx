@@ -181,7 +181,10 @@ export default function CurrentTasks() {
               <p className="mobile-body" style={{ marginBottom: "24px" }}>
                 Great work! You've completed everything on your list.
               </p>
-              <button className="mobile-button" onClick={() => navigate("/")}>CREATE NEW TASKS</button>
+              <button className="mobile-button" onClick={() => {
+                localStorage.removeItem('doTheThing_state');
+                navigate("/");
+              }}>CREATE NEW TASKS</button>
             </div>
           </>
         ) : (
