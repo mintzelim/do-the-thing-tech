@@ -47,17 +47,19 @@ Time estimation:
 - Most individual subtasks should be 5-30 minutes
 - Be generous but realistic for ADHD users
 
-Return ONLY a valid JSON array with no additional text`;
+Return ONLY a valid JSON array wrapped in markdown code blocks with no additional text.`;
 
   const userPrompt = `Please break down this task into actionable steps and estimate time for each:
 
 "${input}"
 
-Return a JSON array of objects with this structure (no other text):
+Return a JSON array of objects with this structure, wrapped in markdown code blocks:
+\`\`\`json
 [
   { "id": "1", "title": "Step title", "description": "Brief description", "estimatedTime": 10 },
   { "id": "2", "title": "Next step", "description": "Brief description", "estimatedTime": 15 }
-]`;
+]
+\`\`\``;
 
   try {
     const response = await invokeLLM({
@@ -65,6 +67,27 @@ Return a JSON array of objects with this structure (no other text):
         { role: "system", content: systemPrompt },
         { role: "user", content: userPrompt },
       ],
+      response_format: {
+        type: "json_schema",
+        json_schema: {
+          name: "task_breakdown",
+          strict: true,
+          schema: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                id: { type: "string" },
+                title: { type: "string" },
+                description: { type: "string" },
+                estimatedTime: { type: "number" },
+              },
+              required: ["id", "title", "estimatedTime"],
+              additionalProperties: false,
+            },
+          },
+        },
+      },
     });
 
     const messageContent = response.choices[0]?.message.content;
@@ -83,11 +106,125 @@ Return a JSON array of objects with this structure (no other text):
       throw new Error("Unexpected response format");
     }
 
-    // Extract JSON from the response
-    const jsonMatch = content.match(/\[[\s\S]*\]/);
-    if (!jsonMatch) throw new Error("Could not extract JSON from response");
+    // Extract JSON from markdown code blocks or raw JSON
+    let jsonStr = "";
+    
+    // First try to extract from markdown code blocks
+    const markdownMatch = content.match(/```(?:json)?\s*([\s\S]*?)```/);
+    if (markdownMatch) {
+      jsonStr = markdownMatch[1].trim();
+    } else {
+      // Fall back to extracting raw JSON using brace/bracket counting
+      let braceCount = 0;
+      let bracketCount = 0;
+      let inString = false;
+      let escaped = false;
+      let foundStart = false;
 
-    const steps = JSON.parse(jsonMatch[0]) as TaskStep[];
+      for (let i = 0; i < content.length; i++) {
+        const char = content[i];
+        
+        // Handle string escaping
+        if (char === '\\' && !escaped) {
+          escaped = true;
+          if (foundStart) jsonStr += char;
+          continue;
+        }
+        
+        if (char === '"' && !escaped) {
+          inString = !inString;
+          if (foundStart) jsonStr += char;
+          escaped = false;
+          continue;
+        }
+        
+        escaped = false;
+        
+        if (!inString) {
+          if (char === '{') {
+            foundStart = true;
+            braceCount++;
+            jsonStr += char;
+          } else if (char === '}') {
+            braceCount--;
+            jsonStr += char;
+            if (foundStart && braceCount === 0 && bracketCount === 0) {
+              break;
+            }
+          } else if (char === '[') {
+            foundStart = true;
+            bracketCount++;
+            jsonStr += char;
+          } else if (char === ']') {
+            bracketCount--;
+            jsonStr += char;
+            if (foundStart && bracketCount === 0 && braceCount === 0) {
+              break;
+            }
+          } else if (foundStart) {
+            jsonStr += char;
+          }
+        } else {
+          if (foundStart) jsonStr += char;
+        }
+      }
+    }
+
+    if (!jsonStr) {
+      console.error("Failed to extract JSON. Response content:", content.substring(0, 500));
+      throw new Error("Could not extract JSON from response. Response may not be valid JSON.");
+    }
+
+    // Manual parsing to handle malformed JSON from Gemini
+    const steps: TaskStep[] = [];
+    
+    // Try standard JSON parsing first
+    try {
+      const parsed = JSON.parse(jsonStr);
+      const arr = Array.isArray(parsed) ? parsed : [parsed];
+      steps.push(...arr);
+      console.log("Successfully parsed JSON using standard parser");
+    } catch (parseError) {
+      console.error("Standard JSON parse failed, attempting manual extraction");
+      
+      // Manual field extraction using regex
+      // Match individual objects: { "id": "...", "title": "...", ... }
+      const objectPattern = /\{\s*"id"\s*:\s*"([^"]*)"\s*,\s*"title"\s*:\s*"([^"]*)"\s*(?:,\s*"description"\s*:\s*"([^"]*)"\s*)?(?:,\s*"estimatedTime"\s*:\s*(\d+)\s*)?\}/g;
+      
+      let match;
+      let index = 0;
+      while ((match = objectPattern.exec(jsonStr)) !== null) {
+        steps.push({
+          id: String(index + 1),
+          title: match[2] || "Step",
+          description: match[3],
+          estimatedTime: match[4] ? parseInt(match[4]) : 10,
+        });
+        index++;
+      }
+      
+      if (steps.length === 0) {
+        // Last resort: try to extract at least titles
+        const titlePattern = /"title"\s*:\s*"([^"]*)"/g;
+        let titleMatch;
+        let titleIndex = 0;
+        while ((titleMatch = titlePattern.exec(jsonStr)) !== null) {
+          steps.push({
+            id: String(titleIndex + 1),
+            title: titleMatch[1],
+            estimatedTime: 10,
+          });
+          titleIndex++;
+        }
+      }
+      
+      if (steps.length === 0) {
+        console.error("Manual extraction failed. Raw JSON:", jsonStr.substring(0, 300));
+        throw new Error("Could not extract task steps from response");
+      }
+      
+      console.log("Successfully extracted", steps.length, "steps using manual parsing");
+    }
     
     // Validate and normalize time estimates
     return steps.map((step, index) => ({
@@ -97,117 +234,28 @@ Return a JSON array of objects with this structure (no other text):
     }));
   } catch (error) {
     console.error("Error breaking down task:", error);
-    // Don't return a fallback - let the error propagate to the user
     throw error;
   }
 }
 
 function getGranularityLevel(granularity: number): string {
-  if (granularity < 33) return "Tiny Steps";
-  if (granularity < 67) return "Medium Steps";
-  return "Big Milestones";
+  if (granularity < 34) return "Tiny Steps (5-10 small, specific actions)";
+  if (granularity < 67) return "Balanced Steps (3-5 moderate-sized actions)";
+  return "Big Milestones (2-3 large milestones)";
 }
 
 function getFocusContext(focusLevel: FocusLevel): string {
   switch (focusLevel) {
     case "hyperfocus":
-      return "Can concentrate deeply, may be faster";
-    case "normal":
-      return "Standard pace";
+      return "Can concentrate deeply, may be faster but don't underestimate setup time";
     case "distracted":
-      return "Struggles with focus, needs buffer time";
+      return "Struggles with focus, needs buffer time for distractions";
     default:
-      return "Unknown";
+      return "Standard pace, realistic estimates";
   }
 }
 
-function normalizeMinutes(value: number): number {
-  const roundedToFive = Math.round(value / 5) * 5;
-  return Math.max(5, roundedToFive);
-}
-
-/**
- * Detects if input is a brain dump (multiple tasks) or single task
- */
-export function isBrainDump(input: string): boolean {
-  const sentences = input.split(/[.!?]+/).filter(s => s.trim().length > 0);
-  return sentences.length > 2;
-}
-
-export function getMockBreakdown(
-  input: string,
-  granularity: number,
-  focusLevel: FocusLevel = "normal"
-): TaskStep[] {
-  // Task-aware fallback breakdown when LLM fails
-  const lowerInput = input.toLowerCase().trim();
-  const granularityLevel = getGranularityLevel(granularity);
-
-  // Simple task detection with realistic breakdowns
-  const simpleTaskPatterns: { [key: string]: TaskStep[] } = {
-    "make coffee": [
-      { id: "1", title: "Gather coffee supplies", description: "Get coffee, filter, cup", estimatedTime: 5 },
-      { id: "2", title: "Prepare coffee maker", description: "Fill with water and add grounds", estimatedTime: 5 },
-      { id: "3", title: "Brew coffee", description: "Start the brewing process", estimatedTime: 5 },
-      { id: "4", title: "Pour and enjoy", description: "Pour into cup and add cream/sugar if desired", estimatedTime: 3 },
-    ],
-    "email": [
-      { id: "1", title: "Open email", description: "Launch email application", estimatedTime: 2 },
-      { id: "2", title: "Compose message", description: "Write your email", estimatedTime: 10 },
-      { id: "3", title: "Review and send", description: "Check for errors and send", estimatedTime: 3 },
-    ],
-    "call": [
-      { id: "1", title: "Find contact info", description: "Locate phone number", estimatedTime: 3 },
-      { id: "2", title: "Make the call", description: "Dial and connect", estimatedTime: 2 },
-      { id: "3", title: "Have conversation", description: "Discuss what you need", estimatedTime: 10 },
-    ],
-    "meeting": [
-      { id: "1", title: "Prepare agenda", description: "List topics to discuss", estimatedTime: 10 },
-      { id: "2", title: "Join meeting", description: "Connect at scheduled time", estimatedTime: 5 },
-      { id: "3", title: "Participate", description: "Engage in discussion", estimatedTime: 30 },
-      { id: "4", title: "Follow up", description: "Send notes or action items", estimatedTime: 10 },
-    ],
-  };
-
-  // Check for exact matches
-  for (const [pattern, steps] of Object.entries(simpleTaskPatterns)) {
-    if (lowerInput.includes(pattern)) {
-      return steps;
-    }
-  }
-
-  // Brain dump detection
-  if (isBrainDump(input)) {
-    return [
-      { id: "1", title: "List all tasks", description: "Write down everything you need to do", estimatedTime: 10 },
-      { id: "2", title: "Prioritize", description: "Identify what's most important", estimatedTime: 10 },
-      { id: "3", title: "Group by category", description: "Organize tasks by type or urgency", estimatedTime: 10 },
-      { id: "4", title: "Schedule time blocks", description: "Allocate time for each task", estimatedTime: 15 },
-      { id: "5", title: "Start with first task", description: "Begin working through your list", estimatedTime: 5 },
-    ];
-  }
-
-  // Generic fallback for unknown tasks
-  if (granularityLevel === "Tiny Steps") {
-    return [
-      { id: "1", title: "Understand the task", description: "Clarify what needs to be done", estimatedTime: 5 },
-      { id: "2", title: "Gather resources", description: "Collect what you need", estimatedTime: 5 },
-      { id: "3", title: "Prepare workspace", description: "Set up your environment", estimatedTime: 5 },
-      { id: "4", title: "Do the work", description: "Complete the main task", estimatedTime: 15 },
-      { id: "5", title: "Check your work", description: "Review for quality", estimatedTime: 5 },
-      { id: "6", title: "Finish up", description: "Clean up and wrap up", estimatedTime: 5 },
-    ];
-  } else if (granularityLevel === "Medium Steps") {
-    return [
-      { id: "1", title: "Prepare", description: "Gather resources and set up", estimatedTime: 10 },
-      { id: "2", title: "Execute", description: "Do the main work", estimatedTime: 20 },
-      { id: "3", title: "Review and finish", description: "Check and wrap up", estimatedTime: 10 },
-    ];
-  } else {
-    return [
-      { id: "1", title: "Plan and prepare", description: "Understand scope and gather resources", estimatedTime: 15 },
-      { id: "2", title: "Execute", description: "Complete the main work", estimatedTime: 30 },
-      { id: "3", title: "Review and deliver", description: "Quality check and finalize", estimatedTime: 15 },
-    ];
-  }
+function normalizeMinutes(minutes: number): number {
+  // Ensure time estimates are reasonable (5-120 minutes)
+  return Math.max(5, Math.min(120, Math.round(minutes)));
 }
