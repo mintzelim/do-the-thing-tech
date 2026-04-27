@@ -4,6 +4,7 @@ import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
 import { useTimer } from "@/contexts/TimerContext";
+import { ErrorModal } from "@/components/ErrorModal";
 import "../pixel-art-refined.css";
 
 type Step = {
@@ -27,6 +28,7 @@ export default function Home() {
   const [steps, setSteps] = useState<Step[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showErrorModal, setShowErrorModal] = useState(false);
   const [retryCount, setRetryCount] = useState(0);
   const {
     timerActive: globalTimerActive,
@@ -216,21 +218,11 @@ export default function Home() {
       }, 500);
     } catch (error: any) {
       let errorMessage = error?.message || "Failed to process your input";
-      const isRateLimit = errorMessage.includes("429") || errorMessage.includes("quota");
       
-      // Handle rate limit errors with user-friendly message
-      if (isRateLimit) {
-        errorMessage = "Busy traffic. Try again in 60s";
-        // Show a more prominent toast for rate limit errors
-        toast.error(errorMessage, {
-          duration: 5000,
-          description: "The service is experiencing high traffic. Please wait a moment before trying again."
-        });
-      } else {
-        toast.error(errorMessage);
-      }
-      
+      // Only show error modal if it's a real error (not rate limit that was handled by fallback)
+      // Rate limits should be retried silently with fallback models
       setError(errorMessage);
+      setShowErrorModal(true);
       setRetryCount(prev => prev + 1);
     } finally {
       setIsLoading(false);
@@ -697,6 +689,21 @@ export default function Home() {
           DoTheThing - Task Management for ADHD Brains
         </p>
       </footer>
+      
+      {/* Error Modal */}
+      <ErrorModal
+        isOpen={showErrorModal}
+        message={error || "An error occurred. Please try again."}
+        onRetry={() => {
+          setShowErrorModal(false);
+          setError(null);
+          handleBrainDumpSubmit();
+        }}
+        onClose={() => {
+          setShowErrorModal(false);
+          setError(null);
+        }}
+      />
     </div>
   );
 }

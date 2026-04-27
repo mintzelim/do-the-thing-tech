@@ -262,6 +262,21 @@ const assertApiKey = (): string => {
   return key;
 };
 
+async function tryModel(
+  model: string,
+  payload: Record<string, unknown>,
+  apiKey: string
+): Promise<Response> {
+  const url = `https://generativelanguage.googleapis.com/v1/models/${model}:generateContent?key=${apiKey}`;
+  return fetch(url, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+}
+
 export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
   const apiKey = assertApiKey();
 
@@ -293,15 +308,14 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     },
   };
 
-  const url = `https://generativelanguage.googleapis.com/v1/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`;
-
-  const response = await fetch(url, {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-    },
-    body: JSON.stringify(payload),
-  });
+  // Try primary model first, fallback to Flash if rate limited
+  let response = await tryModel("gemini-2.5-flash-lite", payload, apiKey);
+  
+  // If rate limited (429), try fallback model
+  if (!response.ok && response.status === 429) {
+    console.log("Rate limited on gemini-2.5-flash-lite, trying gemini-2.5-flash...");
+    response = await tryModel("gemini-2.5-flash", payload, apiKey);
+  }
 
   if (!response.ok) {
     const errorText = await response.text();
