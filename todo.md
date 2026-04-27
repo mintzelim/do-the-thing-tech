@@ -554,3 +554,7 @@
 - [x] Improve blog post metadata (date, reading time, category)
 - [x] Add better navigation between blog posts
 - [x] Enhance pixel art styling consistency across blog pages
+
+
+## UI/UX Fixes (Current)
+- [x] Fix blog post card hover state - purple background makes purple tag and grey text unreadable (FIXED: Use light accent background #e0e7ff for better contrast)

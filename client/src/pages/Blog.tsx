@@ -123,10 +123,17 @@ export default function Blog() {
                     }}
                     onMouseEnter={(e) => {
                       const el = e.currentTarget as HTMLElement;
-                      el.style.backgroundColor = "var(--pixel-accent)";
-                      el.style.color = "white";
+                      // Use a light accent background instead of full purple for better contrast
+                      el.style.backgroundColor = "#e0e7ff";
+                      el.style.color = "var(--pixel-text)";
                       el.style.transform = "translate(-2px, -2px)";
                       el.style.boxShadow = "6px 6px 0 rgba(0, 0, 0, 0.15)";
+                      // Update tag styling for hover state
+                      const tag = el.querySelector('span[style*="background-color"]') as HTMLElement;
+                      if (tag) {
+                        tag.style.backgroundColor = "var(--pixel-accent)";
+                        tag.style.color = "white";
+                      }
                     }}
                     onMouseLeave={(e) => {
                       const el = e.currentTarget as HTMLElement;
