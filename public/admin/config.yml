@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: mintzelim/do-the-thing-tech
+  branch: main
+  auth_endpoint: api/auth
+  app_id: Ov23liZGqgbtyWXMd5qv
+
+media_folder: public/uploads
+public_path: /uploads
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "blog"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "ID", name: "id", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Read Time", name: "readTime", widget: "string" }
+      - { label: "Category", name: "category", widget: "string" }
+      - { label: "SEO Keywords", name: "seoKeywords", widget: "list" }
+      - { label: "Sources", name: "sources", widget: "list", fields: [{ label: "Title", name: "title", widget: "string" }, { label: "URL", name: "url", widget: "string" }] }
+      - { label: "Related Posts", name: "relatedPosts", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -574,3 +574,10 @@
 ## SEO & Site Discovery
 - [x] Create and deploy sitemap.xml with all blog posts and main pages (DONE: 18 posts + 6 main pages)
 - [x] Create robots.txt for search engine crawling (DONE: Configured for all search engines)
+
+
+## CMS Integration (Current)
+- [x] Set up Decap CMS for blog post editing (DONE: Decap CMS configured)
+- [x] Configure GitHub backend for Decap CMS (DONE: GitHub OAuth app_id added)
+- [x] Create admin interface at /admin (DONE: Admin interface created)
+- [ ] Test blog post editing through Decap CMS
