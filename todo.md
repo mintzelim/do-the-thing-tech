@@ -467,7 +467,7 @@
 
 
 ## Blog Post Markdown Formatting (Complete)
-- [x] Support headings (H1, H2, H3) with different sizes and proper styling
+- [x] Support headings (H1-H3) with different sizes and proper styling
 - [x] Support bold (**text**) and italic (*text*) formatting
 - [x] Support unordered (- item) and ordered (1. item) lists with indentation
 - [x] Support blockquotes (> text) with left border styling
@@ -476,3 +476,7 @@
 - [x] Update BlogContentRenderer with full markdown support
 - [x] Write vitest tests for markdown parsing (19 tests passing)
 - [x] Inline links support maintained with markdown formatting
+- [x] Updated TEMPLATE.md with markdown examples
+- [x] Updated all 15 blog posts with markdown formatting
+- [x] Added section headers (## and ###) for better structure
+- [x] Added bold formatting to key terms and highlights
