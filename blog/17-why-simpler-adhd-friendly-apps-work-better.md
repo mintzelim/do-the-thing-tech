@@ -35,19 +35,13 @@ relatedPosts:
 
 Discover why complex productivity tools fail ADHD users and how simpler task breakdown features lead to better outcomes. This piece challenges the feature arms race and argues that the best app is the one you'll actually open.
 
-> **Direct Answer (AEO Snippet):** Complex productivity apps fail ADHD users because setup and maintenance become additional executive function tasks. The winning ADHD-friendly apps prioritize instant-start task breakdown over feature richness. DoTheThing succeeds by delivering value in the first 30 seconds with zero configuration—measuring success by friction, not capabilities.
+> **Quick Answer:** Complex productivity apps fail ADHD users because setup and maintenance become additional executive function tasks. The winning ADHD-friendly apps prioritize instant-start task breakdown over feature richness. DoTheThing succeeds by delivering value in the first 30 seconds with zero configuration—measuring success by friction, not capabilities.
 
-## Key Takeaways
+## TL;DR
 - **Feature-rich apps fail ADHD users** - Complex setup and maintenance become additional executive function tasks, leading to the "app graveyard" most neurodivergent people know too well.
 - **Simplicity is the killer feature** - The best ADHD-friendly apps deliver value in the first thirty seconds with zero configuration, like simple task breakdown features over elaborate scheduling engines.
 - **Friction is the real metric** - Measure productivity tools by how many taps to get value, not by their capabilities. The tool that works is the one you'll actually open tomorrow.
-
-## TL;DR
-
-* **Feature-rich apps fail ADHD users** - Complex setup and maintenance become additional executive function tasks, leading to the "app graveyard" most neurodivergent people know too well.
-* **Simplicity is the killer feature** - The best ADHD-friendly apps deliver value in the first thirty seconds with zero configuration, like simple task breakdown features over elaborate scheduling engines.
-* **Researching tools is itself the problem** - The evaluation process demands the exact cognitive resources ADHD brains are already short on, creating a paradox the industry ignores.
-* **Think ramps, not systems** - Measure productivity tools by their friction (taps to first micro-win), not their capabilities. The tool that works is the one you'll actually open tomorrow.
+- **Researching tools is itself the problem** - The evaluation process demands the exact cognitive resources ADHD brains are already short on, creating a paradox the industry ignores.
 
 ## You Already Know the App Isn't Going to Work
 
