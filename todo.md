@@ -287,12 +287,14 @@
 - [x] Test in browser and verify timer updates correctly
 
 
-## Time Estimation Bug Fix (In Progress)
+## Time Estimation Bug Fix (Complete)
 - [x] Review current time estimation logic
 - [x] Fix focus level multipliers (Hyperfocus, Normal, Distracted)
 - [x] Ensure estimates are returned in minutes, not seconds
 - [x] Create tests for focus level adjustments
 - [x] Test in browser and verify estimates are correct
+- [x] Fix JSON extraction to handle markdown code blocks from Gemini
+- [x] Fix LLM service to report actual model used in fallback chain
 
 
 ## Timing System Audit (Complete)
