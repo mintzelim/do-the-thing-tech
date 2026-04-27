@@ -438,3 +438,11 @@
 - [x] Example: change task from 5min to 10min = +5min to timer
 - [x] Write vitest tests for timer adjustment on task edit (9 tests passing)
 - [x] Test in browser: verify timer adjusts when editing task times (verified: 36m 20s → 41m 11s when changing task from 5min to 10min)
+
+
+## Timer Decrease on Task Deletion (Complete)
+- [x] When user deletes a task, decrease countdown timer by that task's estimated time
+- [x] Only adjust timer if timer is active
+- [x] Update deleteStep function to call adjustTime with negative value
+- [x] Write vitest tests for timer decrease on task deletion (8 tests passing)
+- [x] Test in browser: verify timer decreases when deleting tasks (verified: 38m 3s → 27m 44s when deleting 10m task)

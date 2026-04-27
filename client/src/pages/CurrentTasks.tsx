@@ -118,6 +118,16 @@ export default function CurrentTasks() {
   };
 
   const deleteStep = (stepId: string) => {
+    const stepToDelete = steps.find((s) => s.id === stepId);
+    if (stepToDelete) {
+      const timeToDeduce = stepToDelete.estimatedTime * 60; // Convert minutes to seconds
+      
+      // If timer is active, decrease it by the task's estimated time
+      if (timerActive && timeToDeduce > 0) {
+        adjustTime(-timeToDeduce);
+      }
+    }
+    
     setSteps((prev) => prev.filter((step) => step.id !== stepId));
   };
 
