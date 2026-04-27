@@ -7,6 +7,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const blogDir = path.join(__dirname, '../blog');
 const outputFile = path.join(__dirname, '../client/public/blog-posts.json');
 
+function parseDateValue(dateString) {
+  const timestamp = Date.parse(dateString);
+  return Number.isNaN(timestamp) ? 0 : timestamp;
+}
+
 /**
  * Parse YAML frontmatter from markdown content
  * Returns { frontmatter: object, content: string }
@@ -96,6 +101,18 @@ function generateBlogPosts() {
       process.exit(1);
     }
   }
+
+  blogPosts.sort((a, b) => {
+    const dateDiff = parseDateValue(b.date) - parseDateValue(a.date);
+    if (dateDiff !== 0) {
+      return dateDiff;
+    }
+
+    return String(b.id).localeCompare(String(a.id), undefined, {
+      numeric: true,
+      sensitivity: 'base',
+    });
+  });
 
   return blogPosts;
 }

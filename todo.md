@@ -586,3 +586,6 @@
 - [x] Verify Decap CMS authentication flow and backend settings (DONE: same-site OAuth proxy implemented at /api/decap/auth and /api/decap/callback)
 - [x] Fix Decap CMS content collection loading for existing blog posts (DONE: config updated to use the blog folder with frontmatter)
 - [ ] Validate the admin can list and edit blog markdown files after the GitHub OAuth app callback URL is updated to https://dothething.tech/api/decap/callback
+- [x] Ensure blog posts are displayed newest first and oldest last across the site
+- [x] Fix blog page script error caused by error-protection.js returning HTML instead of JavaScript
+- [x] Verify /blog loads without script errors after repairing error-protection.js
