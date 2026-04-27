@@ -51,7 +51,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between gap-4">
           <button
             onClick={() => navigate("/")}
-            className="hover:opacity-80 transition-opacity"
+            className=""
             title="DoTheThing"
           >
             <img
