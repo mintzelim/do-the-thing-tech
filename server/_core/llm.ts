@@ -308,19 +308,35 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     },
   };
 
-  // Try primary model first, fallback to Flash if rate limited
-  let response = await tryModel("gemini-2.5-flash-lite", payload, apiKey);
+  // Try models in order: Flash Lite -> Flash -> Pro
+  const models = ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-2.5-pro"];
+  let response: Response | null = null;
   
-  // If rate limited (429), try fallback model
-  if (!response.ok && response.status === 429) {
-    console.log("Rate limited on gemini-2.5-flash-lite, trying gemini-2.5-flash...");
-    response = await tryModel("gemini-2.5-flash", payload, apiKey);
+  for (let i = 0; i < models.length; i++) {
+    const model = models[i];
+    response = await tryModel(model, payload, apiKey);
+    
+    if (response.ok) {
+      if (i > 0) {
+        console.log(`Successfully used fallback model: ${model}`);
+      }
+      break;
+    }
+    
+    // If rate limited (429) and not the last model, try next
+    if (response.status === 429 && i < models.length - 1) {
+      console.log(`Rate limited on ${model}, trying ${models[i + 1]}...`);
+      continue;
+    }
+    
+    // If not rate limited or last model, break
+    break;
   }
 
-  if (!response.ok) {
-    const errorText = await response.text();
+  if (!response || !response.ok) {
+    const errorText = response ? await response.text() : "No response from LLM service";
     throw new Error(
-      `LLM invoke failed: ${response.status} ${response.statusText} – ${errorText}`
+      `LLM invoke failed: ${response?.status || "unknown"} ${response?.statusText || "error"} – ${errorText}`
     );
   }
 
