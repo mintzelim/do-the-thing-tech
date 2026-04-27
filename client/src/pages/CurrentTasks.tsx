@@ -19,6 +19,9 @@ const getRemainingTotalSeconds = (steps: Step[]) =>
 export default function CurrentTasks() {
   const [, navigate] = useLocation();
   const [steps, setSteps] = useState<Step[]>([]);
+  const [draggedId, setDraggedId] = useState<string | null>(null);
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editingTitle, setEditingTitle] = useState("");
   const { timerActive, timeRemaining, startTimer, stopTimer, adjustTime } = useTimer();
 
   useEffect(() => {
@@ -117,6 +120,13 @@ export default function CurrentTasks() {
     });
   };
 
+  const updateStepTitle = (stepId: string, newTitle: string) => {
+    setSteps((prev) =>
+      prev.map((s) => (s.id === stepId ? { ...s, title: newTitle } : s))
+    );
+    setEditingId(null);
+  };
+
   const deleteStep = (stepId: string) => {
     setSteps((prev) => {
       const step = prev.find((s) => s.id === stepId);
@@ -128,6 +138,55 @@ export default function CurrentTasks() {
 
       return prev.filter((s) => s.id !== stepId);
     });
+  };
+
+  const addCustomTask = () => {
+    const newTask: Step = {
+      id: `custom-${Date.now()}`,
+      title: "New Task",
+      completed: false,
+      estimatedTime: 15,
+    };
+    setSteps((prev) => [...prev, newTask]);
+    setEditingId(newTask.id);
+    setEditingTitle("New Task");
+  };
+
+  const handleDragStart = (e: React.DragEvent, stepId: string) => {
+    setDraggedId(stepId);
+    if (e.dataTransfer) {
+      e.dataTransfer.effectAllowed = "move";
+    }
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+    if (e.dataTransfer) {
+      e.dataTransfer.dropEffect = "move";
+    }
+  };
+
+  const handleDrop = (e: React.DragEvent, targetId: string) => {
+    e.preventDefault();
+    if (!draggedId || draggedId === targetId) {
+      setDraggedId(null);
+      return;
+    }
+
+    setSteps((prev) => {
+      const draggedIndex = prev.findIndex((s) => s.id === draggedId);
+      const targetIndex = prev.findIndex((s) => s.id === targetId);
+
+      if (draggedIndex === -1 || targetIndex === -1) return prev;
+
+      const newSteps = [...prev];
+      const [draggedStep] = newSteps.splice(draggedIndex, 1);
+      newSteps.splice(targetIndex, 0, draggedStep);
+
+      return newSteps;
+    });
+
+    setDraggedId(null);
   };
 
   if (steps.length === 0) {
@@ -223,7 +282,37 @@ export default function CurrentTasks() {
 
             <div>
               {steps.map((step) => (
-                <div key={step.id} className={`mobile-task-item ${step.completed ? "completed" : ""}`}>
+                <div
+                  key={step.id}
+                  className={`mobile-task-item ${step.completed ? "completed" : ""} ${draggedId === step.id ? "dragging" : ""}`}
+                  draggable
+                  onDragStart={(e) => handleDragStart(e, step.id)}
+                  onDragOver={handleDragOver}
+                  onDrop={(e) => handleDrop(e, step.id)}
+                  style={{
+                    cursor: draggedId === step.id ? "grabbing" : "grab",
+                    opacity: draggedId === step.id ? 0.5 : 1,
+                    transition: "opacity 0.2s",
+                  }}
+                >
+                  {/* Drag Handle */}
+                  <div style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "2px",
+                    marginRight: "8px",
+                    cursor: draggedId === step.id ? "grabbing" : "grab",
+                  }}>
+                    {[...Array(6)].map((_, i) => (
+                      <div key={i} style={{
+                        width: "4px",
+                        height: "4px",
+                        backgroundColor: "var(--pixel-text-light)",
+                        borderRadius: "1px",
+                      }} />
+                    ))}
+                  </div>
+
                   <input
                     type="checkbox"
                     className="mobile-task-checkbox"
@@ -232,9 +321,47 @@ export default function CurrentTasks() {
                     style={{ width: "20px", height: "20px", cursor: "pointer" }}
                   />
                   <div className="mobile-task-content">
-                    <div className="mobile-task-title" style={{ textDecoration: step.completed ? "line-through" : "none" }}>
-                      {step.title}
-                    </div>
+                    {editingId === step.id ? (
+                      <input
+                        type="text"
+                        value={editingTitle}
+                        onChange={(e) => setEditingTitle(e.target.value)}
+                        onBlur={() => updateStepTitle(step.id, editingTitle)}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            updateStepTitle(step.id, editingTitle);
+                          } else if (e.key === "Escape") {
+                            setEditingId(null);
+                          }
+                        }}
+                        autoFocus
+                        style={{
+                          fontFamily: "'VT323', monospace",
+                          fontSize: "14px",
+                          padding: "4px",
+                          border: "2px solid var(--pixel-accent)",
+                          backgroundColor: "var(--pixel-bg)",
+                          color: "var(--pixel-text)",
+                          width: "100%",
+                        }}
+                      />
+                    ) : (
+                      <div
+                        className="mobile-task-title"
+                        style={{
+                          textDecoration: step.completed ? "line-through" : "none",
+                          cursor: "pointer",
+                          padding: "4px",
+                          borderRadius: "2px",
+                        }}
+                        onDoubleClick={() => {
+                          setEditingId(step.id);
+                          setEditingTitle(step.title);
+                        }}
+                      >
+                        {step.title}
+                      </div>
+                    )}
                     {step.description && (
                       <div className="mobile-task-desc" style={{ textDecoration: step.completed ? "line-through" : "none" }}>
                         {step.description}
@@ -259,6 +386,33 @@ export default function CurrentTasks() {
                 </div>
               ))}
             </div>
+
+            {/* Add Task Button */}
+            <button
+              onClick={addCustomTask}
+              style={{
+                width: "100%",
+                padding: "12px",
+                marginTop: "16px",
+                border: "2px dashed var(--pixel-border)",
+                backgroundColor: "var(--pixel-bg)",
+                color: "var(--pixel-text)",
+                fontFamily: "'VT323', monospace",
+                fontSize: "14px",
+                cursor: "pointer",
+                transition: "all 0.2s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = "var(--pixel-accent)";
+                e.currentTarget.style.color = "white";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = "var(--pixel-bg)";
+                e.currentTarget.style.color = "var(--pixel-text)";
+              }}
+            >
+              + ADD TASK
+            </button>
           </>
         )}
       </div>
