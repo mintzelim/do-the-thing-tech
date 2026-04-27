@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import { useTimer } from "@/contexts/TimerContext";
 import { ErrorModal } from "@/components/ErrorModal";
 import "../pixel-art-refined.css";
@@ -653,43 +654,7 @@ export default function Home() {
       </div>
       
       {/* Footer Navigation */}
-      <footer className="border-t-2 border-border p-4 bg-card text-center space-y-3 mt-auto">
-        <div className="flex gap-2 justify-center flex-wrap">
-          <button
-            onClick={() => handleNavigation("/about")}
-            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
-          >
-            ABOUT
-          </button>
-          <button
-            onClick={() => handleNavigation("/blog")}
-            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
-          >
-            BLOG
-          </button>
-          <button
-            onClick={() => handleNavigation("/contact")}
-            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
-          >
-            CONTACT
-          </button>
-          <button
-            onClick={() => handleNavigation("/privacy")}
-            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
-          >
-            PRIVACY
-          </button>
-          <button
-            onClick={() => handleNavigation("/terms")}
-            className="px-4 py-2 border-2 border-border bg-background hover:bg-accent text-foreground font-vt323 text-sm"
-          >
-            TERMS
-          </button>
-        </div>
-        <p className="font-vt323 text-xs text-muted-foreground">
-          DoTheThing - Task Management for ADHD Brains
-        </p>
-      </footer>
+      <Footer />
       
       {/* Error Modal */}
       <ErrorModal

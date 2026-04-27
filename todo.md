@@ -343,6 +343,26 @@
 - [x] Add + icon button to add custom tasks
 - [x] Persist reordered task list to localStorage
 - [x] Test drag-and-drop on mobile and desktop
+- [x] Implement snappy pixel-art drag movement (instant snap, no smooth animation)
+- [x] Add blocky 3D shadow effect when item is grabbed (shift up-left with shadow down-right)
+
+## Task Editing Enhancements
+- [x] Add EDIT button for task titles (not just double-click)
+- [x] Add EDIT button for task descriptions
+- [x] Add description field to added/custom tasks
+- [x] Allow editing description inline with EDIT button
+- [x] Persist description changes to localStorage
+- [x] Write vitest tests for task editing features (12 tests passing)
+
+## Footer Consistency
+- [x] Create shared footer component used across all pages
+- [x] Apply consistent footer to Homepage
+- [x] Apply consistent footer to About page
+- [x] Apply consistent footer to Blog page
+- [x] Apply consistent footer to Contact page
+- [x] Apply consistent footer to Privacy page
+- [x] Apply consistent footer to Terms page
+- [x] Verify footer styling matches pixel-art aesthetic
 
 ## Public Access Without Manus Login (In Progress)
 - [ ] Audit all auth checks and login-dependent UI in the public site flow

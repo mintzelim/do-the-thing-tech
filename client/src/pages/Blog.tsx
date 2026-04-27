@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import "../pixel-art-refined.css";
 
 type BlogPost = {
@@ -234,6 +235,9 @@ export default function Blog() {
           </>
         )}
       </div>
+      
+      {/* Footer Navigation */}
+      <Footer />
     </div>
   );
 }
