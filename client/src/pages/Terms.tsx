@@ -14,10 +14,10 @@ export default function Terms() {
         <div className="max-w-4xl mx-auto">
           <h1 className="mobile-heading-1" style={{ marginBottom: "24px" }}>TERMS OF SERVICE</h1>
 
-          <div className="mobile-card" style={{ marginBottom: "20px", fontFamily: "'Noto Sans Mono', monospace" }}>
+          <div className="mobile-card" style={{ marginBottom: "20px", fontFamily: "'Roboto Mono', monospace" }}>
             <h2 className="mobile-heading-2" style={{ fontFamily: 'VT323, monospace' }}>Last Updated: April 2026</h2>
             
-            <div className="mobile-body" style={{ marginTop: "16px", lineHeight: "1.8", fontFamily: "'Noto Sans Mono', monospace", fontSize: '14px' }}>
+            <div className="mobile-body" style={{ marginTop: "16px", lineHeight: "1.8", fontFamily: "'Roboto Mono', monospace", fontSize: '14px' }}>
               <p style={{ marginBottom: "16px" }}>
                 These Terms of Service ("Terms") govern your use of the Do The Thing website and application (the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to abide by the above, please do not use this service.
               </p>

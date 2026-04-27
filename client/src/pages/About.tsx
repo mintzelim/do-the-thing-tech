@@ -37,7 +37,7 @@ export default function About() {
             ABOUT DO THE THING
           </h1>
           <p className="text-lg md:text-xl text-gray-700" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '16px',
             lineHeight: '1.6'
           }}>
@@ -48,7 +48,7 @@ export default function About() {
         {/* Mission Section */}
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Noto Sans Mono', monospace"
+          fontFamily: "'Roboto Mono', monospace"
         }}>
           <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
             fontFamily: 'VT323, monospace',
@@ -58,7 +58,7 @@ export default function About() {
             OUR MISSION
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '14px',
             lineHeight: '1.8'
           }}>
@@ -74,7 +74,7 @@ export default function About() {
         {/* ADHD & Task Management */}
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Noto Sans Mono', monospace"
+          fontFamily: "'Roboto Mono', monospace"
         }}>
           <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
             fontFamily: 'VT323, monospace',
@@ -84,7 +84,7 @@ export default function About() {
             ADHD AND TASK MANAGEMENT
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '14px',
             lineHeight: '1.8'
           }}>
@@ -105,7 +105,7 @@ export default function About() {
         {/* Why DoTheThing Exists */}
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Noto Sans Mono', monospace"
+          fontFamily: "'Roboto Mono', monospace"
         }}>
           <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
             fontFamily: 'VT323, monospace',
@@ -115,7 +115,7 @@ export default function About() {
             WHY DO THE THING EXISTS
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '14px',
             lineHeight: '1.8'
           }}>
@@ -138,7 +138,7 @@ export default function About() {
         {/* How It Works */}
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Noto Sans Mono', monospace"
+          fontFamily: "'Roboto Mono', monospace"
         }}>
           <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
             fontFamily: 'VT323, monospace',
@@ -148,7 +148,7 @@ export default function About() {
             HOW IT WORKS
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '14px',
             lineHeight: '1.8'
           }}>
@@ -178,7 +178,7 @@ export default function About() {
         {/* Key Features */}
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Noto Sans Mono', monospace"
+          fontFamily: "'Roboto Mono', monospace"
         }}>
           <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
             fontFamily: 'VT323, monospace',
@@ -188,7 +188,7 @@ export default function About() {
             KEY FEATURES
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '14px',
             lineHeight: '1.8'
           }}>
@@ -222,7 +222,7 @@ export default function About() {
         {/* For Whom */}
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Noto Sans Mono', monospace"
+          fontFamily: "'Roboto Mono', monospace"
         }}>
           <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
             fontFamily: 'VT323, monospace',
@@ -232,7 +232,7 @@ export default function About() {
             FOR WHOM
           </h2>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '14px',
             lineHeight: '1.8'
           }}>
@@ -250,7 +250,7 @@ export default function About() {
         {/* CTA Section */}
         <div className="border-4 border-black p-6 mb-8 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Noto Sans Mono', monospace"
+          fontFamily: "'Roboto Mono', monospace"
         }}>
           <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
             fontFamily: 'VT323, monospace',
@@ -260,7 +260,7 @@ export default function About() {
             READY TO DO THE THING?
           </h2>
           <p className="text-base md:text-lg text-gray-700 mb-6" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '14px',
             lineHeight: '1.8'
           }}>
@@ -283,7 +283,7 @@ export default function About() {
         {/* Footer */}
         <div className="text-center pt-8 border-t-4 border-black">
           <p className="text-sm md:text-base text-gray-600" style={{
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '12px'
           }}>
             DoTheThing is a free tool designed for neurodivergent individuals. Built with care by people who understand ADHD.

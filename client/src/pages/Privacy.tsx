@@ -14,10 +14,10 @@ export default function Privacy() {
         <div className="max-w-4xl mx-auto">
           <h1 className="mobile-heading-1" style={{ marginBottom: "24px" }}>PRIVACY POLICY</h1>
 
-          <div className="mobile-card" style={{ marginBottom: "20px", fontFamily: "'Noto Sans Mono', monospace" }}>
+          <div className="mobile-card" style={{ marginBottom: "20px", fontFamily: "'Roboto Mono', monospace" }}>
             <h2 className="mobile-heading-2" style={{ fontFamily: 'VT323, monospace' }}>Last Updated: April 2026</h2>
             
-            <div className="mobile-body" style={{ marginTop: "16px", lineHeight: "1.8", fontFamily: "'Noto Sans Mono', monospace", fontSize: '14px' }}>
+            <div className="mobile-body" style={{ marginTop: "16px", lineHeight: "1.8", fontFamily: "'Roboto Mono', monospace", fontSize: '14px' }}>
               <p style={{ marginBottom: "16px" }}>
                 Do The Thing ("we," "us," "our," or "Company") operates the Do The Thing website and application. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
               </p>

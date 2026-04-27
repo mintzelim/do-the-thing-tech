@@ -526,7 +526,7 @@
 - [x] Apply Body Text: 16px-18px sizing (16px base, 18px large)
 - [x] Apply Button Text: 18px-20px sizing (18px)
 - [x] Apply Captions/Small: 12px-14px sizing (14px)
-- [x] Import Noto Sans Mono font
+- [x] Import Roboto Mono font (weight 500)
 - [x] Keep VT323 for Home page and Current Tasks (all text)
-- [x] Use Noto Sans Mono for blog posts body text
-- [x] Use Noto Sans Mono for About, Contact, Privacy, Terms pages
+- [x] Use Roboto Mono weight 500 for blog posts body text
+- [x] Use Roboto Mono weight 500 for About, Contact, Privacy, Terms pages

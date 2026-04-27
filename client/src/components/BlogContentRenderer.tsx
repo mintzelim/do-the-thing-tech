@@ -65,7 +65,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
             marginBottom: '12px',
             fontStyle: 'italic',
             color: 'var(--pixel-text)',
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontWeight: 500,
           }}
         >
@@ -88,7 +88,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
         i++;
       }
       elements.push(
-        <ul key={`ul-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Noto Sans Mono', monospace", fontWeight: 500 }}>
+        <ul key={`ul-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Roboto Mono', monospace", fontWeight: 500 }}>
           {listItems}
         </ul>
       );
@@ -111,7 +111,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
         i++;
       }
       elements.push(
-        <ol key={`ol-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Noto Sans Mono', monospace", fontWeight: 500 }}>
+        <ol key={`ol-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Roboto Mono', monospace", fontWeight: 500 }}>
           {listItems}
         </ol>
       );
@@ -137,7 +137,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
             borderRadius: '4px',
             overflowX: 'auto',
             marginBottom: '12px',
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '11px',
           }}
         >
@@ -164,7 +164,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
                 width: '100%',
                 borderCollapse: 'collapse',
                 border: '1px solid var(--pixel-border)',
-                fontFamily: "'Noto Sans Mono', monospace",
+                fontFamily: "'Roboto Mono', monospace",
                 fontWeight: 500,
               }}
             >
@@ -218,7 +218,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
 
     // Regular paragraph
     elements.push(
-      <p key={`p-${i}`} style={{ marginBottom: '12px', lineHeight: '1.6', fontFamily: "'Noto Sans Mono', monospace", fontSize: '16px', fontWeight: 500 }}>
+      <p key={`p-${i}`} style={{ marginBottom: '12px', lineHeight: '1.6', fontFamily: "'Roboto Mono', monospace", fontSize: '16px', fontWeight: 500 }}>
         {parseInlineMarkdown(line)}
       </p>
     );
@@ -270,7 +270,7 @@ function parseInlineMarkdown(text: string): React.ReactNode[] {
             backgroundColor: 'var(--pixel-card-bg)',
             padding: '2px 4px',
             borderRadius: '2px',
-            fontFamily: "'Noto Sans Mono', monospace",
+            fontFamily: "'Roboto Mono', monospace",
             fontSize: '0.9em',
           }}
         >
@@ -295,7 +295,7 @@ function parseInlineMarkdown(text: string): React.ReactNode[] {
               color: 'var(--pixel-accent)',
               textDecoration: 'underline',
               cursor: 'pointer',
-              fontFamily: "'Noto Sans Mono', monospace",
+              fontFamily: "'Roboto Mono', monospace",
               fontSize: 'inherit',
               padding: '0',
               margin: '0',
@@ -314,7 +314,7 @@ function parseInlineMarkdown(text: string): React.ReactNode[] {
             style={{
               color: 'var(--pixel-accent)',
               textDecoration: 'underline',
-              fontFamily: "'Noto Sans Mono', monospace",
+              fontFamily: "'Roboto Mono', monospace",
               fontSize: 'inherit',
             }}
           >
