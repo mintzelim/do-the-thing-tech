@@ -13,15 +13,58 @@ collections:
     label: "Blog Posts"
     folder: "blog"
     create: true
-    slug: "{{slug}}"
+    slug: "{{num}}-{{slug}}"
+    format: "frontmatter"
+    frontmatter_delimiter: "---"
     fields:
-      - { label: "ID", name: "id", widget: "string" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "text" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Read Time", name: "readTime", widget: "string" }
-      - { label: "Category", name: "category", widget: "string" }
-      - { label: "SEO Keywords", name: "seoKeywords", widget: "list" }
-      - { label: "Sources", name: "sources", widget: "list", fields: [{ label: "Title", name: "title", widget: "string" }, { label: "URL", name: "url", widget: "string" }] }
-      - { label: "Related Posts", name: "relatedPosts", widget: "list" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "ID"
+        name: "id"
+        widget: "string"
+        required: true
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: true
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        required: true
+      - label: "Date"
+        name: "date"
+        widget: "string"
+        required: true
+      - label: "Read Time"
+        name: "readTime"
+        widget: "string"
+        required: true
+      - label: "Category"
+        name: "category"
+        widget: "string"
+        required: true
+      - label: "SEO Keywords"
+        name: "seoKeywords"
+        widget: "list"
+        field:
+          label: "Keyword"
+          name: "keyword"
+          widget: "string"
+      - label: "Sources"
+        name: "sources"
+        widget: "list"
+        fields:
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "URL"
+            name: "url"
+            widget: "string"
+      - label: "Related Posts"
+        name: "relatedPosts"
+        widget: "list"
+        field:
+          label: "Post ID"
+          name: "id"
+          widget: "string"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
