@@ -558,3 +558,12 @@
 
 ## UI/UX Fixes (Current)
 - [x] Fix blog post card hover state - purple background makes purple tag and grey text unreadable (FIXED: Use light accent background #e0e7ff for better contrast)
+
+
+## Blog Post Management
+- [x] Convert "Neurodivergent Productivity: 7 Tactics That Actually Work" from Markdown to JSON format
+- [x] Add new blog post to blog-posts.json with proper metadata
+
+- [ ] Set up automated blog post upload system - allow uploading .md files to /blog directory and auto-convert to JSON
+- [ ] Create GitHub workflow to process markdown blog posts and update blog-posts.json
+- [ ] Add documentation for blog post format and upload process
