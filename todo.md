@@ -430,3 +430,11 @@
 - [x] Ensure timer continues counting down from the new total
 - [x] Write vitest tests for timer increase on manual task addition (8 tests passing)
 - [x] Test in browser: verify timer increases when adding tasks (verified: 25m → 40m when adding 15m task)
+
+
+## Timer Adjustment on Task Time Edit (Complete)
+- [x] When user edits a task's time estimate, calculate the difference
+- [x] If timer is active, adjust timer by the time difference
+- [x] Example: change task from 5min to 10min = +5min to timer
+- [x] Write vitest tests for timer adjustment on task edit (9 tests passing)
+- [x] Test in browser: verify timer adjusts when editing task times (verified: 36m 20s → 41m 11s when changing task from 5min to 10min)

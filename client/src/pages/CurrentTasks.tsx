@@ -102,6 +102,16 @@ export default function CurrentTasks() {
   };
 
   const updateStepTime = (stepId: string, newTime: number) => {
+    const oldStep = steps.find((s) => s.id === stepId);
+    if (oldStep) {
+      const timeDifference = (newTime - oldStep.estimatedTime) * 60; // Convert minutes to seconds
+      
+      // If timer is active, adjust it by the time difference
+      if (timerActive && timeDifference !== 0) {
+        adjustTime(timeDifference);
+      }
+    }
+    
     setSteps((prev) =>
       prev.map((step) => (step.id === stepId ? { ...step, estimatedTime: newTime } : step))
     );
