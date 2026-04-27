@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import PinTabTutorial from "@/components/PinTabTutorial";
 import { useTimer } from "@/contexts/TimerContext";
 import { ErrorModal } from "@/components/ErrorModal";
+import PocketsFullModal from "@/components/PocketsFullModal";
 import "../pixel-art-refined.css";
 
 type Step = {
@@ -40,6 +41,7 @@ export default function Home() {
     adjustTime: globalAdjustTime,
   } = useTimer();
   const [pendingNavigation, setPendingNavigation] = useState<string | null>(null);
+  const [showPocketsFull, setShowPocketsFull] = useState(false);
   const clickSoundRef = useRef<HTMLAudioElement | null>(null);
 
   // Load persisted state from localStorage
@@ -194,6 +196,33 @@ export default function Home() {
       return;
     }
 
+    // Check if there are existing unfinished tasks
+    // First, ensure current state is saved
+    const currentState = {
+      brainDump,
+      focusLevel,
+      granularity,
+      granularityPreset,
+      steps,
+      flowState,
+      timeRemaining: globalTimeRemaining,
+      timerActive: globalTimerActive,
+    };
+    
+    // Check if there are existing unfinished tasks from previous session
+    const savedState = localStorage.getItem('doTheThing_state');
+    if (savedState) {
+      try {
+        const parsed = JSON.parse(savedState);
+        if (parsed.steps && parsed.steps.length > 0 && !parsed.steps.every((s: any) => s.completed)) {
+          setShowPocketsFull(true);
+          return;
+        }
+      } catch (error) {
+        console.error("Failed to check existing tasks:", error);
+      }
+    }
+
     setIsLoading(true);
     try {
       // Breakdown now handles both breakdown AND time estimation
@@ -230,6 +259,15 @@ export default function Home() {
     } finally {
       setIsLoading(false);
     }
+  };
+
+  const handleStartOver = () => {
+    // Clear existing tasks and proceed with new breakdown
+    localStorage.removeItem('doTheThing_state');
+    setSteps([]);
+    setFlowState('input');
+    // Now trigger the breakdown with the current input
+    handleBrainDumpSubmit();
   };
 
   const toggleStepComplete = (stepId: string) => {
@@ -673,6 +711,13 @@ export default function Home() {
           setShowErrorModal(false);
           setError(null);
         }}
+      />
+      
+      {/* Pockets Full Modal */}
+      <PocketsFullModal
+        isOpen={showPocketsFull}
+        onClose={() => setShowPocketsFull(false)}
+        onStartOver={handleStartOver}
       />
     </div>
   );
