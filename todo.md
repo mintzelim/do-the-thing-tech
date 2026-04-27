@@ -569,3 +569,8 @@
 - [x] Set up automated blog post upload system - allow uploading .md files to /blog directory and auto-convert to JSON (DONE: Script already exists)
 - [x] Create GitHub workflow to process markdown blog posts and update blog-posts.json (DONE: generate-blog-posts.mjs script)
 - [x] Add documentation for blog post format and upload process (DONE: Documented frontmatter format)
+
+
+## SEO & Site Discovery
+- [x] Create and deploy sitemap.xml with all blog posts and main pages (DONE: 18 posts + 6 main pages)
+- [x] Create robots.txt for search engine crawling (DONE: Configured for all search engines)
