@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLocation } from "wouter";
 import { useTimer } from "@/contexts/TimerContext";
 import Navigation from "@/components/Navigation";
@@ -26,6 +26,9 @@ export default function CurrentTasks() {
   const [editingTitle, setEditingTitle] = useState("");
   const [editingDescription, setEditingDescription] = useState("");
   const { timerActive, timeRemaining, startTimer, stopTimer, adjustTime } = useTimer();
+  
+  // Track pending timer adjustments to apply after state updates
+  const pendingAdjustmentRef = useRef<number | null>(null);
 
   useEffect(() => {
     const savedState = localStorage.getItem("doTheThing_state");
@@ -45,6 +48,14 @@ export default function CurrentTasks() {
     parsed.steps = steps;
     localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
   }, [steps]);
+
+  // Apply pending timer adjustments after state updates
+  useEffect(() => {
+    if (pendingAdjustmentRef.current !== null) {
+      adjustTime(pendingAdjustmentRef.current);
+      pendingAdjustmentRef.current = null;
+    }
+  }, [steps, adjustTime]);
 
   const playClickSound = () => {
     try {
@@ -88,10 +99,14 @@ export default function CurrentTasks() {
       const updatedSteps = prev.map((step) => {
         if (step.id === stepId) {
           const isCompleting = !step.completed;
-          // If completing the task, deduct its time from the timer
+          // Queue timer adjustment to happen after state update
           if (isCompleting && timerActive) {
             const timeInSeconds = minutesToSeconds(step.estimatedTime);
-            adjustTime(-timeInSeconds);
+            pendingAdjustmentRef.current = -timeInSeconds;
+          } else if (!isCompleting && timerActive) {
+            // When unchecking, add time back
+            const timeInSeconds = minutesToSeconds(step.estimatedTime);
+            pendingAdjustmentRef.current = timeInSeconds;
           }
           return { ...step, completed: !step.completed };
         }
@@ -106,9 +121,9 @@ export default function CurrentTasks() {
     if (oldStep) {
       const timeDifference = (newTime - oldStep.estimatedTime) * 60; // Convert minutes to seconds
       
-      // If timer is active, adjust it by the time difference
+      // Queue timer adjustment to happen after state update
       if (timerActive && timeDifference !== 0) {
-        adjustTime(timeDifference);
+        pendingAdjustmentRef.current = timeDifference;
       }
     }
     
@@ -122,9 +137,9 @@ export default function CurrentTasks() {
     if (stepToDelete) {
       const timeToDeduce = stepToDelete.estimatedTime * 60; // Convert minutes to seconds
       
-      // If timer is active, decrease it by the task's estimated time
+      // Queue timer adjustment to happen after state update
       if (timerActive && timeToDeduce > 0) {
-        adjustTime(-timeToDeduce);
+        pendingAdjustmentRef.current = -timeToDeduce;
       }
     }
     
@@ -143,7 +158,7 @@ export default function CurrentTasks() {
     
     // Increase timer by the new task's estimated time if timer is active
     if (timerActive) {
-      adjustTime(15 * 60); // Convert minutes to seconds
+      pendingAdjustmentRef.current = 15 * 60; // Convert minutes to seconds
     }
   };
 
@@ -295,195 +310,110 @@ export default function CurrentTasks() {
               </div>
             </div>
 
-            <div>
+            <div style={{ display: "grid", gap: "12px", marginTop: "20px" }}>
               {steps.map((step) => (
                 <div
                   key={step.id}
-                  className={`mobile-task-item ${step.completed ? "completed" : ""} ${draggedId === step.id ? "dragging" : ""}`}
                   draggable
                   onDragStart={(e) => handleDragStart(e, step.id)}
                   onDragOver={handleDragOver}
                   onDrop={(e) => handleDrop(e, step.id)}
+                  className="mobile-card"
                   style={{
-                    cursor: draggedId === step.id ? "grabbing" : "grab",
-                    transform: draggedId === step.id ? "translate(-4px, -4px)" : "translate(0, 0)",
-                    boxShadow: draggedId === step.id ? "6px 6px 0px rgba(0, 0, 0, 0.3)" : "2px 2px 0px rgba(0, 0, 0, 0.1)",
-                    transition: "none",
+                    opacity: step.completed ? 0.6 : 1,
+                    textDecoration: step.completed ? "line-through" : "none",
+                    cursor: "grab",
                   }}
                 >
-                  {/* Drag Handle */}
-                  <div style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "2px",
-                    marginRight: "8px",
-                    cursor: draggedId === step.id ? "grabbing" : "grab",
-                  }}>
-                    {[...Array(6)].map((_, i) => (
-                      <div key={i} style={{
-                        width: "4px",
-                        height: "4px",
-                        backgroundColor: "var(--pixel-text-light)",
-                        borderRadius: "1px",
-                      }} />
-                    ))}
-                  </div>
-
-                  <input
-                    type="checkbox"
-                    className="mobile-task-checkbox"
-                    checked={step.completed}
-                    onChange={() => toggleStepComplete(step.id)}
-                    style={{ width: "20px", height: "20px", cursor: "pointer" }}
-                  />
-                  <div className="mobile-task-content">
-                    {editingId === step.id ? (
-                      <div style={{ display: "flex", flexDirection: "column", gap: "8px", width: "100%" }}>
-                        <input
-                          type="text"
-                          value={editingTitle}
-                          onChange={(e) => setEditingTitle(e.target.value)}
-                          placeholder="Task title"
-                          style={{
-                            fontFamily: "'VT323', monospace",
-                            fontSize: "14px",
-                            padding: "4px",
-                            border: "2px solid var(--pixel-accent)",
-                            backgroundColor: "var(--pixel-bg)",
-                            color: "var(--pixel-text)",
-                            width: "100%",
-                          }}
-                        />
-                        <textarea
-                          value={editingDescription}
-                          onChange={(e) => setEditingDescription(e.target.value)}
-                          placeholder="Task description"
-                          style={{
-                            fontFamily: "'VT323', monospace",
-                            fontSize: "12px",
-                            padding: "4px",
-                            border: "2px solid var(--pixel-accent)",
-                            backgroundColor: "var(--pixel-bg)",
-                            color: "var(--pixel-text)",
-                            width: "100%",
-                            minHeight: "60px",
-                            resize: "vertical",
-                          }}
-                        />
-                        <div style={{ display: "flex", gap: "8px" }}>
-                          <button
-                            onClick={() => finishEditing(step.id)}
-                            style={{
-                              flex: 1,
-                              padding: "6px",
-                              border: "2px solid var(--pixel-accent)",
-                              backgroundColor: "var(--pixel-accent)",
-                              color: "white",
-                              fontFamily: "'VT323', monospace",
-                              fontSize: "12px",
-                              cursor: "pointer",
-                            }}
-                          >
-                            SAVE
-                          </button>
-                          <button
-                            onClick={() => setEditingId(null)}
-                            style={{
-                              flex: 1,
-                              padding: "6px",
-                              border: "2px solid var(--pixel-border)",
-                              backgroundColor: "var(--pixel-bg)",
-                              color: "var(--pixel-text)",
-                              fontFamily: "'VT323', monospace",
-                              fontSize: "12px",
-                              cursor: "pointer",
-                            }}
-                          >
-                            CANCEL
-                          </button>
-                        </div>
-                      </div>
-                    ) : (
-                      <div style={{ width: "100%" }}>
-                        <div
-                          className="mobile-task-title"
-                          style={{
-                            textDecoration: step.completed ? "line-through" : "none",
-                            cursor: "pointer",
-                            padding: "4px",
-                            borderRadius: "2px",
-                          }}
-                        >
-                          {step.title}
-                        </div>
-                        {step.description && (
-                          <div className="mobile-task-desc" style={{ textDecoration: step.completed ? "line-through" : "none" }}>
-                            {step.description}
+                  <div style={{ display: "flex", gap: "12px", alignItems: "flex-start" }}>
+                    <input
+                      type="checkbox"
+                      checked={step.completed}
+                      onChange={() => toggleStepComplete(step.id)}
+                      style={{
+                        width: "20px",
+                        height: "20px",
+                        cursor: "pointer",
+                        marginTop: "2px",
+                        flexShrink: 0,
+                      }}
+                    />
+                    <div style={{ flex: 1, minWidth: 0 }}>
+                      {editingId === step.id ? (
+                        <>
+                          <input
+                            type="text"
+                            value={editingTitle}
+                            onChange={(e) => setEditingTitle(e.target.value)}
+                            className="mobile-input"
+                            style={{ marginBottom: "8px" }}
+                          />
+                          <textarea
+                            value={editingDescription}
+                            onChange={(e) => setEditingDescription(e.target.value)}
+                            className="mobile-textarea"
+                            style={{ marginBottom: "8px", minHeight: "60px" }}
+                          />
+                          <div style={{ display: "flex", gap: "8px" }}>
+                            <button
+                              onClick={() => finishEditing(step.id)}
+                              className="mobile-button-small"
+                              style={{ marginBottom: 0 }}
+                            >
+                              SAVE
+                            </button>
+                            <button
+                              onClick={() => setEditingId(null)}
+                              className="mobile-button-small"
+                              style={{ marginBottom: 0 }}
+                            >
+                              CANCEL
+                            </button>
                           </div>
-                        )}
-                        <div style={{ display: "flex", gap: "8px", alignItems: "center", marginTop: "8px" }}>
-                          <div className="mobile-task-time">
-                            <input
-                              type="number"
-                              className="mobile-task-time-input"
-                              value={step.estimatedTime}
-                              onFocus={(e) => e.currentTarget.select()}
-                              onClick={(e) => e.currentTarget.select()}
-                              onChange={(e) => updateStepTime(step.id, parseInt(e.target.value, 10) || 0)}
-                              min="1"
-                            />
-                            <span className="mobile-body-sm" style={{ marginBottom: 0 }}>MIN</span>
+                        </>
+                      ) : (
+                        <>
+                          <h3 className="mobile-heading-3" style={{ margin: "0 0 4px 0" }}>
+                            {step.title}
+                          </h3>
+                          {step.description && (
+                            <p className="mobile-body-sm" style={{ margin: "0 0 8px 0", color: "var(--pixel-text-light)" }}>
+                              {step.description}
+                            </p>
+                          )}
+                          <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
+                            <span className="mobile-body-sm" style={{ fontWeight: "bold" }}>
+                              {step.estimatedTime}m
+                            </span>
+                            <button
+                              onClick={() => startEditing(step.id)}
+                              className="mobile-button-small"
+                              style={{ marginBottom: 0, padding: "4px 8px", fontSize: "12px" }}
+                            >
+                              EDIT
+                            </button>
+                            <button
+                              onClick={() => deleteStep(step.id)}
+                              className="mobile-button-small"
+                              style={{ marginBottom: 0, padding: "4px 8px", fontSize: "12px", backgroundColor: "#fee2e2", color: "#c62828" }}
+                            >
+                              DELETE
+                            </button>
                           </div>
-                          <button
-                            onClick={() => startEditing(step.id)}
-                            style={{
-                              padding: "4px 8px",
-                              border: "2px solid var(--pixel-accent)",
-                              backgroundColor: "var(--pixel-accent)",
-                              color: "white",
-                              fontFamily: "'VT323', monospace",
-                              fontSize: "12px",
-                              cursor: "pointer",
-                            }}
-                          >
-                            EDIT
-                          </button>
-                          <button className="mobile-task-delete" onClick={() => deleteStep(step.id)}>
-                            DELETE
-                          </button>
-                        </div>
-                      </div>
-                    )}
+                        </>
+                      )}
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
 
-            {/* Add Task Button */}
             <button
               onClick={addCustomTask}
-              style={{
-                width: "100%",
-                padding: "12px",
-                marginTop: "16px",
-                border: "2px dashed var(--pixel-border)",
-                backgroundColor: "var(--pixel-bg)",
-                color: "var(--pixel-text)",
-                fontFamily: "'VT323', monospace",
-                fontSize: "14px",
-                cursor: "pointer",
-                transition: "all 0.2s",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "var(--pixel-accent)";
-                e.currentTarget.style.color = "white";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "var(--pixel-bg)";
-                e.currentTarget.style.color = "var(--pixel-text)";
-              }}
+              className="mobile-button"
+              style={{ marginTop: "20px" }}
             >
-              + ADD TASK
+              + ADD CUSTOM TASK
             </button>
           </>
         )}

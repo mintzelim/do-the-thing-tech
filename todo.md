@@ -551,3 +551,6 @@
 - [x] Improve blog post metadata (date, reading time, category)
 - [x] Add better navigation between blog posts
 - [x] Enhance pixel art styling consistency across blog pages
+
+## Bug Fixes (In Progress)
+- [x] Fix: React warning "Cannot update a component (TimerProvider) while rendering a different component (CurrentTasks)" (FIXED: Use useRef to queue adjustments, apply in useEffect)
