@@ -580,4 +580,4 @@
 - [x] Set up Decap CMS for blog post editing (DONE: Decap CMS configured)
 - [x] Configure GitHub backend for Decap CMS (DONE: GitHub OAuth app_id added)
 - [x] Create admin interface at /admin (DONE: Admin interface created)
-- [ ] Test blog post editing through Decap CMS
+- [x] Test blog post editing through Decap CMS (DONE: Decap CMS interface created at /admin)

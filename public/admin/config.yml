@@ -1,3 +1,6 @@
+site_url: https://dothething.tech
+logo_url: https://dothething.tech/logo.png
+
 backend:
   name: github
   repo: mintzelim/do-the-thing-tech
