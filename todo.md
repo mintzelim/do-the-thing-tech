@@ -540,3 +540,6 @@
 - [x] Audit all production environment variables and reduce Vercel requirements to the minimum necessary set
 - [x] Make Manus-specific auth and platform variables optional for public Vercel deployment where possible
 - [ ] Document the exact final environment variables needed in Vercel after code hardening
+
+## Bug Fixes (Current)
+- [x] Fix: Timer doesn't add time back when unchecking a completed task

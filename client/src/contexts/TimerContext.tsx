@@ -132,6 +132,12 @@ export function TimerProvider({ children }: { children: ReactNode }) {
     setTimeRemaining((prev) => {
       const next = Math.max(0, prev + Math.round(deltaSeconds));
 
+      // If adding time back and timer was stopped, restart it
+      if (deltaSeconds > 0 && !timerActive && next > 0) {
+        setTimerActive(true);
+      }
+
+      // If time reaches zero, stop the timer
       if (next <= 0) {
         setTimerActive(false);
         if (intervalRef.current) {
