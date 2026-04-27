@@ -33,18 +33,11 @@ function parseFrontmatter(content) {
 }
 
 /**
- * Convert markdown content to plain text (remove markdown syntax)
+ * Preserve markdown content (keep markdown formatting for rendering)
  */
-function markdownToPlainText(markdown) {
-  return markdown
-    .replace(/^#+\s+/gm, '') // Remove headings
-    .replace(/\*\*(.*?)\*\*/g, '$1') // Remove bold
-    .replace(/\*(.*?)\*/g, '$1') // Remove italic
-    .replace(/\[(.*?)\]\(.*?\)/g, '$1') // Remove links
-    .replace(/^[\s\n]+|[\s\n]+$/g, '') // Trim whitespace
-    .split('\n')
-    .filter(line => line.trim())
-    .join('\n\n');
+function preserveMarkdown(markdown) {
+  // Just trim whitespace, keep all markdown formatting
+  return markdown.trim();
 }
 
 /**
@@ -64,8 +57,8 @@ function generateBlogPosts() {
     try {
       const { frontmatter, content: markdown } = parseFrontmatter(content);
       
-      // Convert markdown content to plain text
-      const plainContent = markdownToPlainText(markdown);
+      // Preserve markdown content with formatting
+      const plainContent = preserveMarkdown(markdown);
 
       // Ensure arrays are properly formatted
       const seoKeywords = Array.isArray(frontmatter.seoKeywords) 
