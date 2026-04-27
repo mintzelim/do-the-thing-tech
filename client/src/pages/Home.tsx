@@ -48,8 +48,15 @@ export default function Home() {
         setFocusLevel(parsed.focusLevel || 'normal');
         setGranularity(parsed.granularity || 50);
         setGranularityPreset(parsed.granularityPreset || 'balanced');
-        setSteps(parsed.steps || []);
-        setFlowState(parsed.flowState || 'input');
+        const savedSteps = parsed.steps || [];
+        setSteps(savedSteps);
+        // Only restore flowState if there are actually steps to work on
+        // Otherwise, always start in 'input' state for fresh sessions
+        if (savedSteps.length > 0) {
+          setFlowState(parsed.flowState || 'input');
+        } else {
+          setFlowState('input');
+        }
         // Timer state is managed by TimerContext
       } catch (error) {
         console.error('Failed to load saved state:', error);
