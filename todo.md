@@ -221,6 +221,12 @@
 - [x] Ensure localStorage persistence works across page navigation
 - [ ] Deploy to production
 
+## Safety Features (Phase 2)
+- [x] Implement beforeunload event listener for safety warning
+- [x] Add timestamp-based timer recovery to localStorage
+- [x] Create pixel-art pin-tab tutorial component
+- [x] Write and pass 13 vitest tests for safety features
+- [x] Test all features on dev server
 
 ## File-Based Blog System (Complete)
 - [x] Create /blog directory structure for Markdown files

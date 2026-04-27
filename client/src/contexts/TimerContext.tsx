@@ -24,8 +24,21 @@ export function TimerProvider({ children }: { children: ReactNode }) {
 
     try {
       const parsed = JSON.parse(savedState);
-      setTimeRemaining(Number(parsed.timeRemaining) || 0);
-      setTimerActive(Boolean(parsed.timerActive));
+      
+      // Recover timer with timestamp-based recovery
+      if (parsed.timerActive && parsed.timerStartTimestamp) {
+        const now = Date.now();
+        const elapsedMs = now - parsed.timerStartTimestamp;
+        const elapsedSeconds = Math.floor(elapsedMs / 1000);
+        const originalTimeRemaining = Number(parsed.timeRemaining) || 0;
+        const recoveredTime = Math.max(0, originalTimeRemaining - elapsedSeconds);
+        
+        setTimeRemaining(recoveredTime);
+        setTimerActive(recoveredTime > 0);
+      } else {
+        setTimeRemaining(Number(parsed.timeRemaining) || 0);
+        setTimerActive(Boolean(parsed.timerActive));
+      }
     } catch (error) {
       console.error("Failed to load timer state:", error);
     }
@@ -37,9 +50,40 @@ export function TimerProvider({ children }: { children: ReactNode }) {
 
     parsed.timeRemaining = timeRemaining;
     parsed.timerActive = timerActive;
+    
+    // Save timestamp when timer is active for recovery
+    if (timerActive) {
+      parsed.timerStartTimestamp = Date.now();
+    } else {
+      delete parsed.timerStartTimestamp;
+    }
 
     localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
   }, [timeRemaining, timerActive]);
+
+  // Add beforeunload warning when timer is active or tasks exist
+  useEffect(() => {
+    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      const savedState = localStorage.getItem("doTheThing_state");
+      if (!savedState) return;
+      
+      try {
+        const parsed = JSON.parse(savedState);
+        const hasUnfinishedTasks = parsed.steps && parsed.steps.some((step: any) => !step.completed);
+        const timerRunning = parsed.timerActive && parsed.timeRemaining > 0;
+        
+        if (hasUnfinishedTasks || timerRunning) {
+          e.preventDefault();
+          e.returnValue = "";
+        }
+      } catch (error) {
+        console.error("Failed to check beforeunload condition:", error);
+      }
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
+  }, []);
 
   useEffect(() => {
     if (intervalRef.current) {
@@ -82,6 +126,12 @@ export function TimerProvider({ children }: { children: ReactNode }) {
     const safeSeconds = Math.max(0, Math.round(totalSeconds));
     setTimeRemaining(safeSeconds);
     setTimerActive(safeSeconds > 0);
+    
+    // Save start timestamp for recovery
+    const savedState = localStorage.getItem("doTheThing_state");
+    const parsed = savedState ? JSON.parse(savedState) : {};
+    parsed.timerStartTimestamp = Date.now();
+    localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
   };
 
   const stopTimer = () => {
@@ -89,6 +139,14 @@ export function TimerProvider({ children }: { children: ReactNode }) {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
+    }
+    
+    // Clear timer timestamp when stopped
+    const savedState = localStorage.getItem("doTheThing_state");
+    if (savedState) {
+      const parsed = JSON.parse(savedState);
+      delete parsed.timerStartTimestamp;
+      localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
     }
   };
 

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import { useTimer } from "@/contexts/TimerContext";
 import Navigation from "@/components/Navigation";
+import PinTabTutorial from "@/components/PinTabTutorial";
 import "../pixel-art-refined.css";
 
 type Step = {
@@ -82,55 +83,30 @@ export default function CurrentTasks() {
 
   const toggleStepComplete = (stepId: string) => {
     playClickSound();
-
-    setSteps((prev) => {
-      const step = prev.find((s) => s.id === stepId);
-      if (!step) return prev;
-
-      const seconds = minutesToSeconds(step.estimatedTime);
-      const nextCompleted = !step.completed;
-
-      if (timerActive) {
-        adjustTime(nextCompleted ? -seconds : seconds);
-      }
-
-      const updated = prev.map((s) => (s.id === stepId ? { ...s, completed: nextCompleted } : s));
-      const allCompleted = updated.length > 0 && updated.every((s) => s.completed);
-
-      if (allCompleted) {
-        stopTimer();
-      }
-
-      return updated;
-    });
-  };
-
-  const updateStepTime = (stepId: string, nextMinutes: number) => {
-    const safeMinutes = Math.max(1, Number.isFinite(nextMinutes) ? nextMinutes : 1);
-
-    setSteps((prev) => {
-      const step = prev.find((s) => s.id === stepId);
-      if (!step) return prev;
-
-      if (timerActive && !step.completed) {
-        const deltaSeconds = minutesToSeconds(safeMinutes - step.estimatedTime);
-        adjustTime(deltaSeconds);
-      }
-
-      return prev.map((s) => (s.id === stepId ? { ...s, estimatedTime: safeMinutes } : s));
-    });
-  };
-
-  const updateStepTitle = (stepId: string, newTitle: string) => {
     setSteps((prev) =>
-      prev.map((s) => (s.id === stepId ? { ...s, title: newTitle } : s))
+      prev.map((step) => (step.id === stepId ? { ...step, completed: !step.completed } : step))
     );
   };
 
-  const updateStepDescription = (stepId: string, newDescription: string) => {
+  const updateStepTime = (stepId: string, newTime: number) => {
     setSteps((prev) =>
-      prev.map((s) => (s.id === stepId ? { ...s, description: newDescription } : s))
+      prev.map((step) => (step.id === stepId ? { ...step, estimatedTime: newTime } : step))
     );
+  };
+
+  const deleteStep = (stepId: string) => {
+    setSteps((prev) => prev.filter((step) => step.id !== stepId));
+  };
+
+  const addCustomTask = () => {
+    const newStep: Step = {
+      id: `custom-${Date.now()}`,
+      title: "New Task",
+      description: "",
+      completed: false,
+      estimatedTime: 15,
+    };
+    setSteps((prev) => [...prev, newStep]);
   };
 
   const startEditing = (stepId: string) => {
@@ -143,60 +119,38 @@ export default function CurrentTasks() {
   };
 
   const finishEditing = (stepId: string) => {
-    updateStepTitle(stepId, editingTitle);
-    updateStepDescription(stepId, editingDescription);
+    setSteps((prev) =>
+      prev.map((step) =>
+        step.id === stepId
+          ? { ...step, title: editingTitle, description: editingDescription }
+          : step
+      )
+    );
     setEditingId(null);
-  };
-
-  const deleteStep = (stepId: string) => {
-    setSteps((prev) => {
-      const step = prev.find((s) => s.id === stepId);
-      if (!step) return prev;
-
-      if (timerActive && !step.completed) {
-        adjustTime(-minutesToSeconds(step.estimatedTime));
-      }
-
-      return prev.filter((s) => s.id !== stepId);
-    });
-  };
-
-  const addCustomTask = () => {
-    const newTask: Step = {
-      id: `custom-${Date.now()}`,
-      title: "New Task",
-      description: "",
-      completed: false,
-      estimatedTime: 15,
-    };
-    setSteps((prev) => [...prev, newTask]);
-    startEditing(newTask.id);
+    setEditingTitle("");
+    setEditingDescription("");
   };
 
   const handleDragStart = (e: React.DragEvent, stepId: string) => {
     setDraggedId(stepId);
-    if (e.dataTransfer) {
-      e.dataTransfer.effectAllowed = "move";
-    }
+    e.dataTransfer.effectAllowed = "move";
   };
 
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
-    if (e.dataTransfer) {
-      e.dataTransfer.dropEffect = "move";
-    }
+    e.dataTransfer.dropEffect = "move";
   };
 
-  const handleDrop = (e: React.DragEvent, targetId: string) => {
+  const handleDrop = (e: React.DragEvent, targetStepId: string) => {
     e.preventDefault();
-    if (!draggedId || draggedId === targetId) {
+    if (!draggedId || draggedId === targetStepId) {
       setDraggedId(null);
       return;
     }
 
     setSteps((prev) => {
       const draggedIndex = prev.findIndex((s) => s.id === draggedId);
-      const targetIndex = prev.findIndex((s) => s.id === targetId);
+      const targetIndex = prev.findIndex((s) => s.id === targetStepId);
 
       if (draggedIndex === -1 || targetIndex === -1) return prev;
 
@@ -214,6 +168,7 @@ export default function CurrentTasks() {
     return (
       <div className="mobile-frame">
         <Navigation />
+        <PinTabTutorial />
         <div className="mobile-content">
           <div style={{ textAlign: "center", padding: "40px 20px" }}>
             <h2 className="mobile-heading-2" style={{ marginBottom: "20px" }}>NO TASKS YET</h2>
@@ -244,6 +199,7 @@ export default function CurrentTasks() {
   return (
     <div className="mobile-frame">
       <Navigation />
+      <PinTabTutorial />
 
       <div className="mobile-content">
         {allCompleted ? (
