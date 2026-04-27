@@ -400,3 +400,9 @@
 - [x] Replace custom footer HTML in CurrentTasks with shared Footer component
 - [x] Verify footer is consistent with other pages (HOME, ABOUT, BLOG, CONTACT, PRIVACY, TERMS)
 - [x] Test in browser: footer now displays correctly on CurrentTasks page
+
+## BeforeUnload Modal Fix (Complete)
+- [x] Fix native browser warning showing alongside custom modal
+- [x] Updated BeforeUnloadModal to properly prevent default beforeunload behavior
+- [x] e.preventDefault() and e.returnValue now suppress native warning
+- [x] Only custom pixel-art modal shows when user tries to close tab

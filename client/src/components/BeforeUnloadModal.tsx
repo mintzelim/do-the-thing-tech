@@ -16,8 +16,10 @@ export default function BeforeUnloadModal() {
 
         if ((hasUnfinishedTasks || timerRunning) && !allowLeave) {
           setShowModal(true);
+          // Prevent the default browser warning - we show our custom modal instead
           e.preventDefault();
           e.returnValue = "";
+          return "";
         }
       } catch (error) {
         console.error("Failed to check beforeunload condition:", error);
@@ -34,7 +36,11 @@ export default function BeforeUnloadModal() {
 
   const handleLeave = () => {
     setAllowLeave(true);
-    window.location.href = "/";
+    setShowModal(false);
+    // Use a small delay to ensure the event listener sees allowLeave=true
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 100);
   };
 
   if (!showModal) return null;
