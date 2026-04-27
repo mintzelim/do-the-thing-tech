@@ -455,3 +455,12 @@
 - [x] Add primaryEntity and secondaryEntities to all blog posts
 - [x] Verify all blog posts have updated frontmatter with new fields
 - [x] All 15 blog posts now include: id, title, excerpt, date, readTime, category, primaryEntity, secondaryEntities, seoKeywords, sources, relatedPosts
+
+
+## Blog Post Inline Links (Complete)
+- [x] Support markdown links in blog post content (e.g., [text](url))
+- [x] Allow linking to other blog posts by ID (e.g., [Related Post](post:2))
+- [x] Allow linking to external resources with full URLs
+- [x] Create BlogContentRenderer component to parse and render links
+- [x] Write vitest tests for link parsing (11 tests passing)
+- [x] Update Blog.tsx to use BlogContentRenderer component

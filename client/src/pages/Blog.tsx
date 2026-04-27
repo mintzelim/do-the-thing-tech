@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import BlogContentRenderer from "@/components/BlogContentRenderer";
 import "../pixel-art-refined.css";
 
 type BlogPost = {
@@ -165,8 +166,11 @@ export default function Blog() {
             </div>
 
             <div className="mobile-card" style={{ marginBottom: "24px" }}>
-              <div className="mobile-body" style={{ whiteSpace: "pre-wrap", lineHeight: "1.6" }}>
-                {selectedPost.content}
+              <div className="mobile-body">
+                <BlogContentRenderer 
+                  content={selectedPost.content}
+                  onInternalLinkClick={(postId) => setSelectedPostId(postId)}
+                />
               </div>
             </div>
 
