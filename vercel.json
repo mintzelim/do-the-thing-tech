@@ -1,6 +1,5 @@
 {
   "buildCommand": "npm run build",
-  "startCommand": "npm start",
   "outputDirectory": "dist",
   "framework": "express",
   "nodeVersion": "22.x",
