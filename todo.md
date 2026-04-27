@@ -335,14 +335,14 @@
 - [ ] Fix Vercel live domain returning DEPLOYMENT_NOT_FOUND at www.dothething.tech
 
 
-## Current Tasks Page Enhancements
-- [ ] HOME button in navigation should navigate to homepage
-- [ ] Add drag-and-drop reordering with six-dot drag handle
-- [ ] Show grabbing cursor when dragging tasks
-- [ ] Make task titles editable inline
-- [ ] Add + icon button to add custom tasks
-- [ ] Persist reordered task list to localStorage
-- [ ] Test drag-and-drop on mobile and desktop
+## Current Tasks Page Enhancements (Complete)
+- [x] HOME button in navigation should navigate to homepage
+- [x] Add drag-and-drop reordering with six-dot drag handle
+- [x] Show grabbing cursor when dragging tasks
+- [x] Make task titles editable inline
+- [x] Add + icon button to add custom tasks
+- [x] Persist reordered task list to localStorage
+- [x] Test drag-and-drop on mobile and desktop
 
 ## Public Access Without Manus Login (In Progress)
 - [ ] Audit all auth checks and login-dependent UI in the public site flow

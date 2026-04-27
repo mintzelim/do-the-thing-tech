@@ -291,8 +291,9 @@ export default function CurrentTasks() {
                   onDrop={(e) => handleDrop(e, step.id)}
                   style={{
                     cursor: draggedId === step.id ? "grabbing" : "grab",
-                    opacity: draggedId === step.id ? 0.5 : 1,
-                    transition: "opacity 0.2s",
+                    transform: draggedId === step.id ? "translate(-4px, -4px)" : "translate(0, 0)",
+                    boxShadow: draggedId === step.id ? "6px 6px 0px rgba(0, 0, 0, 0.3)" : "2px 2px 0px rgba(0, 0, 0, 0.1)",
+                    transition: "none",
                   }}
                 >
                   {/* Drag Handle */}
