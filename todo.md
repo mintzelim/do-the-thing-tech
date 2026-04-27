@@ -315,3 +315,13 @@
 - [x] Validate focus-level estimation quality with deterministic tests covering Hyperfocus, Normal, and Distracted outputs in minutes and realistic ranges
 - [x] Fix numeric input editing so replacing a subtask minute value does not append digits and verify total/countdown update correctly after edit
 - [x] Add end-to-end verification that editing, deleting, and completing subtasks keeps total time and active countdown synchronized without unit confusion
+
+- [ ] Fix Vercel live domain returning DEPLOYMENT_NOT_FOUND at www.dothething.tech
+
+
+## Public Access Without Manus Login (In Progress)
+- [ ] Audit all auth checks and login-dependent UI in the public site flow
+- [ ] Remove login requirement from the core task breakdown, current tasks, blog, about, contact, privacy, and terms pages
+- [ ] Ensure anonymous users can use the app without Manus authentication
+- [ ] Add tests for anonymous access behavior
+- [ ] Verify deployed/public access works without login

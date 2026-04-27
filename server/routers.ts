@@ -22,7 +22,7 @@ export const appRouter = router({
   }),
 
   tasks: router({
-    breakdown: protectedProcedure
+    breakdown: publicProcedure
       .input(
         z.object({
           input: z.string().min(1, "Task input is required"),
@@ -34,7 +34,7 @@ export const appRouter = router({
         return breakdownTasks(input.input, input.granularity);
       }),
 
-    estimateTasks: protectedProcedure
+    estimateTasks: publicProcedure
       .input(
         z.object({
           tasks: z.array(
@@ -130,7 +130,7 @@ export const appRouter = router({
         };
       }),
 
-    compileBrainDump: protectedProcedure
+    compileBrainDump: publicProcedure
       .input(
         z.object({
           brainDump: z.string().min(1, "Brain dump text is required"),

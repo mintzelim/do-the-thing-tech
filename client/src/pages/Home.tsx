@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { useLocation } from "wouter";
-import { useAuth } from "@/_core/hooks/useAuth";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
@@ -19,7 +18,6 @@ type FlowState = "input" | "breakdown" | "completion";
 type GranularityPreset = "tiny" | "balanced" | "big";
 
 export default function Home() {
-  const { user, isAuthenticated } = useAuth();
   const [, navigate] = useLocation();
   const [flowState, setFlowState] = useState<FlowState>("input");
   const [brainDump, setBrainDump] = useState("");
