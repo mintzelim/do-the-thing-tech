@@ -80,7 +80,7 @@ export default function Home() {
   }, [brainDump, focusLevel, granularity, granularityPreset, steps, flowState, globalTimeRemaining, globalTimerActive]);
 
   const breakdownMutation = trpc.tasks.breakdown.useMutation();
-  const estimateMutation = trpc.tasks.estimateTasks.useMutation();
+  // estimateMutation is no longer needed - breakdown handles estimation
 
   // Create click sound on component mount
   useEffect(() => {
@@ -192,26 +192,20 @@ export default function Home() {
 
     setIsLoading(true);
     try {
+      // Breakdown now handles both breakdown AND time estimation
       const compiled = await breakdownMutation.mutateAsync({
         input: brainDump,
         granularity,
-      });
-
-      // Estimate tasks immediately
-      const estimated = await estimateMutation.mutateAsync({
-        tasks: compiled.map((t: any) => ({
-          title: t.title,
-          description: t.description,
-        })),
         focusLevel,
       });
 
-      const stepsWithIds = estimated.map((task: any, idx: number) => ({
+      // Steps already have estimatedTime from Gemini
+      const stepsWithIds = compiled.map((task: any, idx: number) => ({
         id: `step-${idx}`,
         title: task.title,
         description: task.description,
         completed: false,
-        estimatedTime: task.totalTime || task.estimatedTime || 30,
+        estimatedTime: task.estimatedTime || 15,
       }));
 
       setSteps(stepsWithIds);

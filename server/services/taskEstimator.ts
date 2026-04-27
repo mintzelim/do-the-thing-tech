@@ -57,8 +57,12 @@ async function getTimeEstimates(
   const systemPrompt = `You are an expert time estimation assistant for task management. You help estimate realistic time for tasks.
 
 Guidelines:
-- Consider realistic time including setup, execution, and cleanup
-- For ADHD users, be slightly generous with estimates
+- Estimate time for SUBTASKS, not entire projects
+- For simple subtasks like "gather resources", "set up", "execute", estimate 5-15 minutes
+- For medium subtasks like "review", "check", "verify", estimate 10-20 minutes
+- For complex subtasks like "write", "design", "analyze", estimate 20-45 minutes
+- Be realistic: most individual steps are quick (under 30 minutes)
+- For ADHD users, include small buffers but don't inflate estimates
 - Return ONLY a valid JSON array with no additional text
 - Time should be in minutes`;
 
@@ -66,14 +70,14 @@ Guidelines:
     .map((t, i) => `${i + 1}. ${t.title}${t.description ? ` (${t.description})` : ""}`)
     .join("\n");
 
-  const userPrompt = `Please estimate the time needed for these tasks:
+  const userPrompt = `Please estimate the time needed for these subtasks:
 
 ${taskList}
 
 Return a JSON array with this structure (no other text):
 [
-  { "title": "Task 1", "description": "description if provided", "estimatedTime": 30 },
-  { "title": "Task 2", "description": "description if provided", "estimatedTime": 45 }
+  { "title": "Task 1", "description": "description if provided", "estimatedTime": 10 },
+  { "title": "Task 2", "description": "description if provided", "estimatedTime": 15 }
 ]`;
 
   try {
@@ -105,7 +109,13 @@ Return a JSON array with this structure (no other text):
     if (!jsonMatch) throw new Error("Could not extract JSON from response");
 
     const estimates = JSON.parse(jsonMatch[0]);
-    return estimates;
+    
+    // Validate and cap estimates to reasonable values for subtasks
+    return estimates.map((est: any) => ({
+      title: est.title,
+      description: est.description,
+      estimatedTime: Math.min(Math.max(est.estimatedTime || 10, 5), 60), // Clamp to 5-60 minutes
+    }));
   } catch (error) {
     console.error("Error estimating tasks:", error);
     // Return mock estimates on error
@@ -133,13 +143,24 @@ export function applyFocusLevelToMinutes(baseMinutes: number, focusLevel: FocusL
 export function getMockEstimate(taskTitle: string, description?: string): number {
   const text = `${taskTitle} ${description ?? ""}`.toLowerCase();
 
+  // For subtasks, use smaller time estimates
   const keywordRules = [
-    { minutes: 10, keywords: ["open", "gather", "collect", "find", "locate", "prepare", "set up", "setup"] },
-    { minutes: 15, keywords: ["email", "reply", "message", "call", "confirm", "schedule", "book"] },
-    { minutes: 20, keywords: ["review", "proofread", "test", "check", "verify", "update", "edit", "refine"] },
-    { minutes: 30, keywords: ["write", "draft", "outline", "research", "plan", "document", "summarize"] },
-    { minutes: 45, keywords: ["build", "implement", "design", "analyze", "debug", "fix", "code"] },
-    { minutes: 60, keywords: ["meeting", "presentation", "report", "migration", "deploy", "integration"] },
+    // Quick prep tasks (5 minutes)
+    { minutes: 5, keywords: ["gather", "collect", "find", "locate", "prepare"] },
+    // Setup tasks (5-10 minutes)
+    { minutes: 10, keywords: ["set up", "setup", "open", "arrange", "organize"] },
+    // Quick communication (10 minutes)
+    { minutes: 10, keywords: ["email", "reply", "message", "call", "confirm", "schedule", "book"] },
+    // Review/check tasks (10-15 minutes)
+    { minutes: 15, keywords: ["review", "proofread", "test", "check", "verify", "update", "edit", "refine"] },
+    // Execution tasks (15-20 minutes)
+    { minutes: 20, keywords: ["execute", "do", "perform", "complete", "finish"] },
+    // Writing/documentation (20-30 minutes)
+    { minutes: 25, keywords: ["write", "draft", "outline", "research", "plan", "document", "summarize"] },
+    // Complex tasks (30-45 minutes)
+    { minutes: 35, keywords: ["build", "implement", "design", "analyze", "debug", "fix", "code"] },
+    // Meetings/presentations (45-60 minutes)
+    { minutes: 45, keywords: ["meeting", "presentation", "report", "migration", "deploy", "integration"] },
   ] as const;
 
   const matchedMinutes = keywordRules
@@ -150,9 +171,10 @@ export function getMockEstimate(taskTitle: string, description?: string): number
     return normalizeMinutes(Math.max(...matchedMinutes));
   }
 
+  // Default heuristic for subtasks: shorter estimates
   const wordCount = text.split(/\s+/).filter(Boolean).length;
-  const heuristicMinutes = 10 + wordCount * 4;
-  return normalizeMinutes(Math.min(90, heuristicMinutes));
+  const heuristicMinutes = 5 + wordCount * 2; // Reduced from 4x to 2x multiplier
+  return normalizeMinutes(Math.min(45, heuristicMinutes)); // Cap at 45 minutes for subtasks
 }
 
 /**

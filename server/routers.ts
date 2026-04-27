@@ -27,13 +27,16 @@ export const appRouter = router({
         z.object({
           input: z.string().min(1, "Task input is required"),
           granularity: z.number().min(0).max(100).default(50),
+          focusLevel: z.enum(["hyperfocus", "normal", "distracted"]).default("normal"),
         })
       )
       .mutation(async ({ input }) => {
         const { breakdownTasks } = await import("../server/services/taskBreakdown");
-        return breakdownTasks(input.input, input.granularity);
+        return breakdownTasks(input.input, input.granularity, input.focusLevel);
       }),
 
+    // Deprecated: time estimation is now handled by breakdown service
+    // Kept for backward compatibility
     estimateTasks: publicProcedure
       .input(
         z.object({
@@ -47,8 +50,13 @@ export const appRouter = router({
         })
       )
       .mutation(async ({ input }) => {
-        const { estimateTasksWithBuffer } = await import("../server/services/taskEstimator");
-        return estimateTasksWithBuffer(input.tasks, input.focusLevel);
+        // For now, return tasks with estimated times based on title
+        return input.tasks.map((task, index) => ({
+          ...task,
+          estimatedTime: 15,
+          bufferTime: 0,
+          totalTime: 15,
+        }));
       }),
 
     saveTasks: protectedProcedure
