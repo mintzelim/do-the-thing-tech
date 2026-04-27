@@ -542,7 +542,7 @@
 - [ ] Document the exact final environment variables needed in Vercel after code hardening
 
 ## Bug Fixes (Current)
-- [x] Fix: Timer doesn't add time back when unchecking a completed task (FIXED: Always call adjustTime, not just when timer is active)
+- [x] Fix: Timer doesn't add time back when unchecking a completed task
 
 ## Blog Layout Improvements
 - [x] Improve blog post layout for better polish and readability
@@ -551,6 +551,3 @@
 - [x] Improve blog post metadata (date, reading time, category)
 - [x] Add better navigation between blog posts
 - [x] Enhance pixel art styling consistency across blog pages
-
-## Bug Fixes (In Progress)
-- [x] Fix: React warning "Cannot update a component (TimerProvider) while rendering a different component (CurrentTasks)" (FIXED: Use useRef to queue adjustments, apply in useEffect)

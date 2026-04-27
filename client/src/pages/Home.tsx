@@ -280,10 +280,9 @@ export default function Home() {
       const nextCompleted = !step.completed;
       const stepSeconds = step.estimatedTime * 60;
 
-      // Always adjust time, regardless of timer state
-      // This ensures time is added back when unchecking
-      globalAdjustTime(nextCompleted ? -stepSeconds : stepSeconds);
-
+      if (globalTimerActive) {
+        globalAdjustTime(nextCompleted ? -stepSeconds : stepSeconds);
+      }
 
       const updated = prev.map((s) => (s.id === stepId ? { ...s, completed: nextCompleted } : s));
       const allCompleted = updated.every((s) => s.completed);
