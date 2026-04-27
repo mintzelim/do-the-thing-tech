@@ -1,9 +1,33 @@
 import { useLocation } from "wouter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navigation() {
   const [location, navigate] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [hasRunningTasks, setHasRunningTasks] = useState(false);
+
+  useEffect(() => {
+    const checkTasks = () => {
+      const savedState = localStorage.getItem('doTheThing_state');
+      if (savedState) {
+        try {
+          const parsed = JSON.parse(savedState);
+          const steps = parsed.steps || [];
+          setHasRunningTasks(steps.length > 0);
+        } catch (error) {
+          setHasRunningTasks(false);
+        }
+      } else {
+        setHasRunningTasks(false);
+      }
+    };
+
+    checkTasks();
+
+    // Listen for storage changes
+    window.addEventListener('storage', checkTasks);
+    return () => window.removeEventListener('storage', checkTasks);
+  }, [location]);
 
   const isActive = (path: string) => location === path;
 
@@ -47,30 +71,34 @@ export default function Navigation() {
                 {item.label}
               </button>
             ))}
-            <button
-              onClick={() => handleNavClick("/current-tasks")}
-              className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
-                isActive("/current-tasks")
-                  ? "border-accent bg-accent text-white"
-                  : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
-              }`}
-            >
-              CURRENT TASKS
-            </button>
+            {hasRunningTasks && (
+              <button
+                onClick={() => handleNavClick("/current-tasks")}
+                className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
+                  isActive("/current-tasks")
+                    ? "border-accent bg-accent text-white"
+                    : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
+                }`}
+              >
+                CURRENT TASKS
+              </button>
+            )}
           </div>
 
-          {/* Mobile: CURRENT TASKS button (always visible) + Hamburger */}
+          {/* Mobile: CURRENT TASKS button (only if running tasks) + Hamburger */}
           <div className="md:hidden flex items-center gap-2">
-            <button
-              onClick={() => handleNavClick("/current-tasks")}
-              className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
-                isActive("/current-tasks")
-                  ? "border-accent bg-accent text-white"
-                  : "border-border bg-background text-foreground"
-              }`}
-            >
-              TASKS
-            </button>
+            {hasRunningTasks && (
+              <button
+                onClick={() => handleNavClick("/current-tasks")}
+                className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
+                  isActive("/current-tasks")
+                    ? "border-accent bg-accent text-white"
+                    : "border-border bg-background text-foreground"
+                }`}
+              >
+                TASKS
+              </button>
+            )}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="flex flex-col gap-1 p-2"

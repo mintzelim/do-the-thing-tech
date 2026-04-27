@@ -320,6 +320,17 @@
 - [x] Fix numeric input editing so replacing a subtask minute value does not append digits and verify total/countdown update correctly after edit
 - [x] Add end-to-end verification that editing, deleting, and completing subtasks keeps total time and active countdown synchronized without unit confusion
 
+## Recent Fixes (Complete)
+- [x] Fix auto-redirect issue when creating new tasks after completion (localStorage cleared)
+- [x] Simplify LLM service to use only Gemini 2.5 Flash Lite
+- [x] Improve task breakdown prompt for better subtask decomposition
+- [x] Add pixel-art styled error modal for API failures
+- [x] Implement Gemini fallback chain (Flash Lite to Flash to Pro)
+- [x] Optimize SEO title
+- [x] Add click sound for task completion
+- [x] Verify Google Adsense code is correctly configured
+- [x] Ensure code is Vercel deployment ready
+
 - [ ] Fix Vercel live domain returning DEPLOYMENT_NOT_FOUND at www.dothething.tech
 
 
