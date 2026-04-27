@@ -44,26 +44,25 @@ export default function CurrentTasks() {
     try {
       const audioContext = new (window.AudioContext || (window as any).webkitAudioContext)();
       const now = audioContext.currentTime;
+      
+      // Create a satisfying click sound - high frequency percussive tone
       const oscillator = audioContext.createOscillator();
       const gainNode = audioContext.createGain();
-      const filter = audioContext.createBiquadFilter();
-
-      oscillator.connect(filter);
-      filter.connect(gainNode);
+      
+      oscillator.connect(gainNode);
       gainNode.connect(audioContext.destination);
-
-      oscillator.frequency.setValueAtTime(150, now);
-      oscillator.frequency.exponentialRampToValueAtTime(50, now + 0.05);
-      oscillator.type = "square";
-
-      gainNode.gain.setValueAtTime(0.2, now);
-      gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
-
-      filter.type = "highpass";
-      filter.frequency.value = 200;
-
+      
+      // High frequency click that quickly decays
+      oscillator.frequency.setValueAtTime(1200, now);
+      oscillator.frequency.exponentialRampToValueAtTime(400, now + 0.1);
+      oscillator.type = "sine";
+      
+      // Quick attack and decay for percussive feel
+      gainNode.gain.setValueAtTime(0.25, now);
+      gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+      
       oscillator.start(now);
-      oscillator.stop(now + 0.05);
+      oscillator.stop(now + 0.1);
     } catch (error) {
       console.error("Could not play sound:", error);
     }
