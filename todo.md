@@ -542,7 +542,7 @@
 - [ ] Document the exact final environment variables needed in Vercel after code hardening
 
 ## Bug Fixes (Current)
-- [x] Fix: Timer doesn't add time back when unchecking a completed task
+- [x] Fix: Timer doesn't add time back when unchecking a completed task (FIXED: Always call adjustTime, not just when timer is active)
 
 ## Blog Layout Improvements
 - [x] Improve blog post layout for better polish and readability
