@@ -295,6 +295,8 @@
 - [x] Test in browser and verify estimates are correct
 - [x] Fix JSON extraction to handle markdown code blocks from Gemini
 - [x] Fix LLM service to report actual model used in fallback chain
+- [x] Revert to proven working JSON extraction logic (brace counting + manual regex)
+- [x] Implement Gemini fallback chain (Flash Lite → Flash → Pro)
 
 
 ## Timing System Audit (Complete)

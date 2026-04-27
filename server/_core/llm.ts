@@ -313,9 +313,12 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
   let response: Response | null = null;
   let usedModel = "";
   
+  console.log("[LLM] Starting model fallback chain");
   for (let i = 0; i < models.length; i++) {
     const model = models[i];
+    console.log(`[LLM] Trying model: ${model}`);
     response = await tryModel(model, payload, apiKey);
+    console.log(`[LLM] Response status: ${response.status}`);
     
     if (response.ok) {
       usedModel = model;
