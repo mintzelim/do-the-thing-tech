@@ -1,25 +1,31 @@
 ---
 id: '11'
 title: 'ADHD in the Workplace: How to Succeed in Your Career'
-excerpt: 'Strategies for thriving at work with ADHD, including accommodations, communication, and task management.'
-date: 'February 15, 2024'
-readTime: '8 min read'
-category: 'Career'
+excerpt: Strategies for thriving at work with ADHD, including accommodations, communication,
+  and task management.
+date: February 15, 2024
+readTime: 8 min read
+category: Career
+primaryEntity: ADHD in the Workplace
+secondaryEntities:
+- Work Performance
+- ADHD
+- Accommodations
 seoKeywords:
-  - 'ADHD'
-  - 'Workplace'
-  - 'Career'
+- ADHD
+- Workplace
+- Career
 sources:
-  - title: 'Americans with Disabilities Act - ADHD Accommodations'
-    url: 'https://www.ada.gov/'
-  - title: 'CHADD - Workplace Resources'
-    url: 'https://www.chadd.org/'
-  - title: 'Harvard Business Review - ADHD at Work'
-    url: 'https://hbr.org/'
+- title: Americans with Disabilities Act - ADHD Accommodations
+  url: https://www.ada.gov/
+- title: CHADD - Workplace Resources
+  url: https://www.chadd.org/
+- title: Harvard Business Review - ADHD at Work
+  url: https://hbr.org/
 relatedPosts:
-  - '2'
-  - '8'
-  - '10'
+- '2'
+- '8'
+- '10'
 ---
 
 ADHD can be a superpower at work. Many successful entrepreneurs, creatives, and leaders have ADHD. But you need strategies to succeed.

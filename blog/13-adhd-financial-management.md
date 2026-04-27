@@ -1,25 +1,31 @@
 ---
 id: '13'
 title: 'ADHD and Financial Management: Why You Struggle With Money'
-excerpt: 'Understanding ADHD-related financial challenges and practical strategies for managing money.'
-date: 'February 5, 2024'
-readTime: '7 min read'
-category: 'Finance'
+excerpt: Understanding ADHD-related financial challenges and practical strategies
+  for managing money.
+date: February 5, 2024
+readTime: 7 min read
+category: Finance
+primaryEntity: ADHD Financial Management
+secondaryEntities:
+- Money Management
+- ADHD
+- Organization
 seoKeywords:
-  - 'ADHD'
-  - 'Financial Management'
-  - 'Money'
+- ADHD
+- Financial Management
+- Money
 sources:
-  - title: 'Financial Health Network - ADHD and Money'
-    url: 'https://www.finhealthnetwork.org/'
-  - title: 'National Endowment for Financial Education'
-    url: 'https://www.nefe.org/'
-  - title: 'YNAB - You Need A Budget'
-    url: 'https://www.ynab.com/'
+- title: Financial Health Network - ADHD and Money
+  url: https://www.finhealthnetwork.org/
+- title: National Endowment for Financial Education
+  url: https://www.nefe.org/
+- title: YNAB - You Need A Budget
+  url: https://www.ynab.com/
 relatedPosts:
-  - '2'
-  - '7'
-  - '11'
+- '2'
+- '7'
+- '11'
 ---
 
 ADHD makes financial management harder. It's not about intelligence or responsibility—it's about executive function.

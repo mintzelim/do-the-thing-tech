@@ -1,25 +1,31 @@
 ---
 id: '7'
 title: 'The Neuroscience Behind Task Avoidance: Why You Procrastinate and How to Stop'
-excerpt: 'Understanding the brain chemistry of procrastination and evidence-based strategies to overcome it.'
-date: 'March 10, 2024'
-readTime: '7 min read'
-category: 'Psychology'
+excerpt: Understanding the brain chemistry of procrastination and evidence-based strategies
+  to overcome it.
+date: March 10, 2024
+readTime: 7 min read
+category: Psychology
+primaryEntity: Task Avoidance
+secondaryEntities:
+- Procrastination
+- ADHD
+- Neuroscience
 seoKeywords:
-  - 'Procrastination'
-  - 'Task Avoidance'
-  - 'ADHD'
+- Procrastination
+- Task Avoidance
+- ADHD
 sources:
-  - title: 'American Psychological Association - Procrastination'
-    url: 'https://www.apa.org/'
-  - title: 'Temporal Motivation Theory Research'
-    url: 'https://en.wikipedia.org/wiki/Temporal_motivation_theory'
-  - title: 'Emotion Regulation and Procrastination Study'
-    url: 'https://journals.sagepub.com/'
+- title: American Psychological Association - Procrastination
+  url: https://www.apa.org/
+- title: Temporal Motivation Theory Research
+  url: https://en.wikipedia.org/wiki/Temporal_motivation_theory
+- title: Emotion Regulation and Procrastination Study
+  url: https://journals.sagepub.com/
 relatedPosts:
-  - '1'
-  - '3'
-  - '4'
+- '1'
+- '3'
+- '4'
 ---
 
 Procrastination isn't laziness. It's emotion regulation. Your brain is trying to avoid negative emotions associated with the task.

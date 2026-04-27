@@ -1,25 +1,31 @@
 ---
 id: '15'
 title: 'Free Tools for ADHD Task Management in 2026: Beyond DoTheThing'
-excerpt: 'A curated list of free tools and resources for ADHD task management, organization, and productivity.'
-date: 'January 25, 2026'
-readTime: '8 min read'
-category: 'Tools & Resources'
+excerpt: A curated list of free tools and resources for ADHD task management, organization,
+  and productivity.
+date: January 25, 2026
+readTime: 8 min read
+category: Tools & Resources
+primaryEntity: Free ADHD Tools
+secondaryEntities:
+- Productivity Tools
+- Free Software
+- ADHD
 seoKeywords:
-  - 'Free Tools'
-  - 'ADHD'
-  - 'Task Management'
+- Free Tools
+- ADHD
+- Task Management
 sources:
-  - title: 'Todoist Official Site'
-    url: 'https://todoist.com/'
-  - title: 'Notion Templates and Resources'
-    url: 'https://www.notion.so/'
-  - title: 'ADHD Tools and Apps Directory'
-    url: 'https://www.adhdtools.com/'
+- title: Todoist Official Site
+  url: https://todoist.com/
+- title: Notion Templates and Resources
+  url: https://www.notion.so/
+- title: ADHD Tools and Apps Directory
+  url: https://www.adhdtools.com/
 relatedPosts:
-  - '3'
-  - '5'
-  - '8'
+- '3'
+- '5'
+- '8'
 ---
 
 DoTheThing is perfect for breaking down tasks and estimating time. But you'll need other tools for ongoing management, focus, and accountability.

@@ -1,38 +1,55 @@
 ---
-id: '1'
-title: 'Post Title Here'
-excerpt: 'Brief excerpt for the blog listing page'
-date: 'April 15, 2024'
-readTime: '5 min read'
-category: 'Category Name'
+id: ''
+title: ''
+excerpt: ''
+date: ''
+readTime: ''
+category: ''
+primaryEntity: ''
+secondaryEntities:
+  - ''
 seoKeywords:
-  - 'keyword1'
-  - 'keyword2'
-  - 'keyword3'
+  - ''
 sources:
-  - title: 'Source Title'
-    url: 'https://example.com'
-  - title: 'Another Source'
-    url: 'https://example.com'
-  - title: 'Third Source'
-    url: 'https://example.com'
+  - title: ''
+    url: ''
 relatedPosts:
-  - '2'
-  - '3'
-  - '4'
+  - ''
 ---
 
-# Post Title Here
+# [Insert Title]
 
-Your markdown content goes here. You can use standard markdown formatting:
+> **Direct Answer (AEO Snippet):** [40-60 words summarizing the core answer. Define the primary entity and mention the 'DoTheThing' approach. This is designed for AI 'Position Zero' results.]
 
-- Bullet points
-- **Bold text**
-- *Italic text*
-- [Links](https://example.com)
+## Key Takeaways
+- **[Highlight 1]:** [One sentence summary]
+- **[Highlight 2]:** [One sentence summary]
+- **[Highlight 3]:** [One sentence summary]
 
-## Subheadings
+## [Module A: The Ranked List / Tools]
+### 1. [Name]
+**Best For:** [Quick Use Case]
+[Description of tool/item and its relation to neuro-inclusive design.]
 
-Multiple paragraphs are separated by blank lines.
+### 2. [Name]
+**Best For:** [Quick Use Case]
+[Description...]
 
-This is another paragraph with more content.
+## [Module B: Actionable Steps / The Quest]
+1. **[Step Name]:** [Instructional text.]
+2. **[Step Name]:** [Instructional text.]
+3. **[Step Name]:** [Instructional text.]
+
+## [Module C: The Comparison Table (High AEO Value)]
+| Feature | [Method A] | [DoTheThing Method] |
+| :--- | :--- | :--- |
+| **Visual Load** | High | **Low (Pixel Art)** |
+| **Persistence** | Manual | **Automatic** |
+| **Focus** | Multi-task | **Micro-step** |
+
+## [Module D: The Deep Dive / Logic]
+### Why [Concept] Matters
+[Paragraph explaining the 'Why' behind the topic. Use this to cite your research sources.]
+
+---
+*[Closing Call to Action: e.g., 'Try the Micro-Step method yourself in the DoTheThing app.']*

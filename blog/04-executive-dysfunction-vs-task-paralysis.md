@@ -1,25 +1,31 @@
 ---
 id: '4'
 title: 'Executive Dysfunction and Task Paralysis: What''s the Difference?'
-excerpt: 'Understanding the distinction between executive dysfunction and task paralysis, and how to address each.'
-date: 'March 28, 2024'
-readTime: '6 min read'
-category: 'ADHD Education'
+excerpt: Understanding the distinction between executive dysfunction and task paralysis,
+  and how to address each.
+date: March 28, 2024
+readTime: 6 min read
+category: ADHD Education
+primaryEntity: Executive Dysfunction
+secondaryEntities:
+- Task Paralysis
+- ADHD
+- Motivation
 seoKeywords:
-  - 'Executive Dysfunction'
-  - 'Task Paralysis'
-  - 'ADHD'
+- Executive Dysfunction
+- Task Paralysis
+- ADHD
 sources:
-  - title: 'Verywell Mind - Executive Dysfunction'
-    url: 'https://www.verywellmind.com/'
-  - title: 'ADHD Institute - Executive Function Disorders'
-    url: 'https://www.adhd-institute.com/'
-  - title: 'Journal of Attention Disorders'
-    url: 'https://journals.sagepub.com/home/jad'
+- title: Verywell Mind - Executive Dysfunction
+  url: https://www.verywellmind.com/
+- title: ADHD Institute - Executive Function Disorders
+  url: https://www.adhd-institute.com/
+- title: Journal of Attention Disorders
+  url: https://journals.sagepub.com/home/jad
 relatedPosts:
-  - '1'
-  - '3'
-  - '6'
+- '1'
+- '3'
+- '6'
 ---
 
 Executive dysfunction and task paralysis are related but different challenges. Understanding the difference helps you address them effectively.

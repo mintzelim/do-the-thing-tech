@@ -1,25 +1,31 @@
 ---
 id: '8'
 title: 'Remote Work and ADHD: Strategies for Staying Focused at Home'
-excerpt: 'Practical strategies for maintaining focus and productivity when working from home with ADHD.'
-date: 'March 5, 2024'
-readTime: '6 min read'
-category: 'Work Environment'
+excerpt: Practical strategies for maintaining focus and productivity when working
+  from home with ADHD.
+date: March 5, 2024
+readTime: 6 min read
+category: Work Environment
+primaryEntity: Remote Work ADHD
+secondaryEntities:
+- Work From Home
+- ADHD
+- Productivity
 seoKeywords:
-  - 'Remote Work'
-  - 'ADHD'
-  - 'Work From Home'
+- Remote Work
+- ADHD
+- Work From Home
 sources:
-  - title: 'American Psychological Association - Remote Work and ADHD'
-    url: 'https://www.apa.org/'
-  - title: 'Harvard Business Review - Focus at Home'
-    url: 'https://hbr.org/'
-  - title: 'Society for Human Resource Management - Remote Work Best Practices'
-    url: 'https://www.shrm.org/'
+- title: American Psychological Association - Remote Work and ADHD
+  url: https://www.apa.org/
+- title: Harvard Business Review - Focus at Home
+  url: https://hbr.org/
+- title: Society for Human Resource Management - Remote Work Best Practices
+  url: https://www.shrm.org/
 relatedPosts:
-  - '2'
-  - '5'
-  - '11'
+- '2'
+- '5'
+- '11'
 ---
 
 Remote work can be amazing for ADHD brains—no commute, fewer distractions, flexible schedule. But it also removes external structure that many ADHD brains rely on.

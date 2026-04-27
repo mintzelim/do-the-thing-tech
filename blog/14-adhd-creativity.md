@@ -1,25 +1,31 @@
 ---
 id: '14'
 title: 'ADHD and Creativity: How to Channel Hyperfocus Into Your Passion'
-excerpt: 'Harnessing ADHD hyperfocus as a creative superpower and building sustainable creative practices.'
-date: 'January 30, 2024'
-readTime: '7 min read'
-category: 'Creativity'
+excerpt: Harnessing ADHD hyperfocus as a creative superpower and building sustainable
+  creative practices.
+date: January 30, 2024
+readTime: 7 min read
+category: Creativity
+primaryEntity: ADHD Creativity
+secondaryEntities:
+- Creative Thinking
+- ADHD
+- Innovation
 seoKeywords:
-  - 'ADHD'
-  - 'Creativity'
-  - 'Hyperfocus'
+- ADHD
+- Creativity
+- Hyperfocus
 sources:
-  - title: 'Psychology Today - ADHD and Creativity'
-    url: 'https://www.psychologytoday.com/'
-  - title: 'Creative Minds Research - ADHD'
-    url: 'https://www.creativeminds.org/'
-  - title: 'Thrive Global - ADHD and Creative Work'
-    url: 'https://www.thriveglobal.com/'
+- title: Psychology Today - ADHD and Creativity
+  url: https://www.psychologytoday.com/
+- title: Creative Minds Research - ADHD
+  url: https://www.creativeminds.org/
+- title: Thrive Global - ADHD and Creative Work
+  url: https://www.thriveglobal.com/
 relatedPosts:
-  - '1'
-  - '5'
-  - '11'
+- '1'
+- '5'
+- '11'
 ---
 
 ADHD and creativity go together. Many creative professionals have ADHD. The key is channeling hyperfocus into your passion.

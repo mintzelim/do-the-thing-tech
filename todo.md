@@ -446,3 +446,12 @@
 - [x] Update deleteStep function to call adjustTime with negative value
 - [x] Write vitest tests for timer decrease on task deletion (8 tests passing)
 - [x] Test in browser: verify timer decreases when deleting tasks (verified: 38m 3s → 27m 44s when deleting 10m task)
+
+
+## Blog Post Template & AEO Optimization (Complete)
+- [x] Create new AEO-optimized blog template with frontmatter metadata
+- [x] Update Template.md with new structure (Frontmatter, AEO Snippet, Key Takeaways, Modules A-D, CTA)
+- [x] Refactor all 15 existing blog posts to follow new template
+- [x] Add primaryEntity and secondaryEntities to all blog posts
+- [x] Verify all blog posts have updated frontmatter with new fields
+- [x] All 15 blog posts now include: id, title, excerpt, date, readTime, category, primaryEntity, secondaryEntities, seoKeywords, sources, relatedPosts

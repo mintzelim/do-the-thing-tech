@@ -1,25 +1,31 @@
 ---
 id: '10'
 title: 'ADHD and Relationships: How Task Management Affects Your Connections'
-excerpt: 'Understanding how ADHD executive dysfunction impacts relationships and how to communicate about it.'
-date: 'February 20, 2024'
-readTime: '7 min read'
-category: 'Relationships'
+excerpt: Understanding how ADHD executive dysfunction impacts relationships and how
+  to communicate about it.
+date: February 20, 2024
+readTime: 7 min read
+category: Relationships
+primaryEntity: ADHD Relationships
+secondaryEntities:
+- Communication
+- ADHD
+- Relationships
 seoKeywords:
-  - 'ADHD'
-  - 'Relationships'
-  - 'Communication'
+- ADHD
+- Relationships
+- Communication
 sources:
-  - title: 'Psychology Today - ADHD and Relationships'
-    url: 'https://www.psychologytoday.com/'
-  - title: 'National Institutes of Health - ADHD Social Impact'
-    url: 'https://www.nih.gov/'
-  - title: 'Couples Therapy and ADHD'
-    url: 'https://www.aamft.org/'
+- title: Psychology Today - ADHD and Relationships
+  url: https://www.psychologytoday.com/
+- title: National Institutes of Health - ADHD Social Impact
+  url: https://www.nih.gov/
+- title: Couples Therapy and ADHD
+  url: https://www.aamft.org/
 relatedPosts:
-  - '1'
-  - '6'
-  - '11'
+- '1'
+- '6'
+- '11'
 ---
 
 ADHD doesn't just affect your productivity—it affects your relationships. Partners, family, and friends often don't understand why you struggle with tasks.

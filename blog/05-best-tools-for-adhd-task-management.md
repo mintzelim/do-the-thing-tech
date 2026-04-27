@@ -1,25 +1,31 @@
 ---
 id: '5'
-title: 'Best Tools for ADHD Task Management in 2024'
-excerpt: 'A comprehensive review of the top tools designed to help ADHD individuals manage tasks and stay organized.'
-date: 'March 20, 2024'
-readTime: '8 min read'
-category: 'Tools & Reviews'
+title: Best Tools for ADHD Task Management in 2024
+excerpt: A comprehensive review of the top tools designed to help ADHD individuals
+  manage tasks and stay organized.
+date: March 20, 2024
+readTime: 8 min read
+category: Tools & Reviews
+primaryEntity: ADHD Task Management Tools
+secondaryEntities:
+- Productivity Apps
+- ADHD Tools
+- Time Management
 seoKeywords:
-  - 'ADHD Tools'
-  - 'Task Management'
-  - 'Productivity Apps'
+- ADHD Tools
+- Task Management
+- Productivity Apps
 sources:
-  - title: 'Todoist Official Site'
-    url: 'https://todoist.com/'
-  - title: 'Forest App'
-    url: 'https://www.forestapp.cc/'
-  - title: 'Focusmate Virtual Coworking'
-    url: 'https://www.focusmate.com/'
+- title: Todoist Official Site
+  url: https://todoist.com/
+- title: Forest App
+  url: https://www.forestapp.cc/
+- title: Focusmate Virtual Coworking
+  url: https://www.focusmate.com/
 relatedPosts:
-  - '1'
-  - '2'
-  - '3'
+- '1'
+- '2'
+- '3'
 ---
 
 There are many tools available for ADHD task management. Here's a guide to help you find what works for your brain.

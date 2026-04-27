@@ -1,25 +1,31 @@
 ---
 id: '9'
 title: 'ADHD and Perfectionism: Why You Can''t Finish Tasks'
-excerpt: 'Exploring the perfectionism trap in ADHD and how to embrace "good enough" to actually complete work.'
-date: 'February 28, 2024'
-readTime: '6 min read'
-category: 'Psychology'
+excerpt: Exploring the perfectionism trap in ADHD and how to embrace "good enough"
+  to actually complete work.
+date: February 28, 2024
+readTime: 6 min read
+category: Psychology
+primaryEntity: ADHD Perfectionism
+secondaryEntities:
+- Perfectionism
+- ADHD
+- Productivity
 seoKeywords:
-  - 'Perfectionism'
-  - 'ADHD'
-  - 'Task Completion'
+- Perfectionism
+- ADHD
+- Task Completion
 sources:
-  - title: 'Psychology Today - Perfectionism and ADHD'
-    url: 'https://www.psychologytoday.com/'
-  - title: 'Journal of Attention Disorders - Perfectionism'
-    url: 'https://journals.sagepub.com/home/jad'
-  - title: 'Cognitive Behavioral Therapy - Perfectionism'
-    url: 'https://www.apa.org/'
+- title: Psychology Today - Perfectionism and ADHD
+  url: https://www.psychologytoday.com/
+- title: Journal of Attention Disorders - Perfectionism
+  url: https://journals.sagepub.com/home/jad
+- title: Cognitive Behavioral Therapy - Perfectionism
+  url: https://www.apa.org/
 relatedPosts:
-  - '3'
-  - '4'
-  - '7'
+- '3'
+- '4'
+- '7'
 ---
 
 Many people with ADHD struggle with perfectionism. This seems contradictory—ADHD is associated with impulsivity and rushing, not perfectionism. But perfectionism is actually common in ADHD.

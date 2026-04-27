@@ -1,26 +1,32 @@
 ---
 id: '6'
 title: 'ADHD Medication and Productivity: How to Work With Your Brain Chemistry'
-excerpt: 'Understanding how ADHD medication affects productivity and how to maximize its benefits with proper task management.'
-date: 'March 15, 2026'
-readTime: '7 min read'
-category: 'ADHD Management'
+excerpt: Understanding how ADHD medication affects productivity and how to maximize
+  its benefits with proper task management.
+date: March 15, 2026
+readTime: 7 min read
+category: ADHD Management
+primaryEntity: ADHD Medication
+secondaryEntities:
+- Productivity
+- Stimulant Medication
+- Focus
 seoKeywords:
-  - 'ADHD medication'
-  - 'productivity'
-  - 'dopamine'
-  - 'executive function'
+- ADHD medication
+- productivity
+- dopamine
+- executive function
 sources:
-  - title: 'Mayo Clinic - ADHD Medications'
-    url: 'https://www.mayoclinic.org/diseases-conditions/adhd/diagnosis-treatment/drc-20350889'
-  - title: 'FDA - ADHD Medication Guide'
-    url: 'https://www.fda.gov/'
-  - title: 'American Academy of Pediatrics - ADHD Treatment'
-    url: 'https://www.aap.org/'
+- title: Mayo Clinic - ADHD Medications
+  url: https://www.mayoclinic.org/diseases-conditions/adhd/diagnosis-treatment/drc-20350889
+- title: FDA - ADHD Medication Guide
+  url: https://www.fda.gov/
+- title: American Academy of Pediatrics - ADHD Treatment
+  url: https://www.aap.org/
 relatedPosts:
-  - '1'
-  - '4'
-  - '5'
+- '1'
+- '4'
+- '5'
 ---
 
 Many people with ADHD take medication to manage their symptoms. But medication alone isn't a complete solution—you still need strategies to manage tasks effectively.
