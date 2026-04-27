@@ -187,6 +187,7 @@
 - [x] Remove mobile phone frame - make it normal desktop site
 - [x] Change click sound from beep to mouse click sound
 - [x] Remove emoji from celebratory completion message
+- [x] Update subpage fonts: VT323 for headings, Noto Sans Mono for body text (About, Contact, Privacy, Terms)
 - [ ] Final checkpoint with complete website
 - [ ] Deploy to production
 
@@ -496,3 +497,18 @@
 - [x] Pushed to GitHub main branch
 - [x] Verified dev server running with new blog post
 - [x] Documented workflow: Upload markdown to /blog folder → Auto-regenerate JSON → Live site updates
+
+
+## Blog Table Formatting Fix (In Progress)
+- [ ] Fix table rendering in blog posts (proper borders, alignment, spacing)
+- [ ] Add CSS styling for markdown tables
+- [ ] Test table display on all blog posts
+
+## Font Styling Updates (In Progress)
+- [ ] Keep VT323 font for all headings (H1, H2, H3) across all pages
+- [ ] Change body text to Noto Sans Mono Normal for blog posts
+- [ ] Change body text to Noto Sans Mono Normal for all subpages (About, Contact, Privacy, Terms)
+- [ ] Keep Home page and CurrentTasks with original font styling
+- [ ] Update BlogContentRenderer to apply correct fonts
+- [ ] Update subpage components to apply correct fonts
+- [ ] Test font rendering on dev server

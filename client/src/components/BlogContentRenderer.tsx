@@ -24,7 +24,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
     // Headings
     if (line.startsWith('# ')) {
       elements.push(
-        <h1 key={`h1-${i}`} className="mobile-heading-1" style={{ marginBottom: '16px', marginTop: '16px' }}>
+        <h1 key={`h1-${i}`} className="mobile-heading-1" style={{ marginBottom: '16px', marginTop: '16px', fontFamily: "'VT323', monospace" }}>
           {parseInlineMarkdown(line.substring(2))}
         </h1>
       );
@@ -34,7 +34,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
 
     if (line.startsWith('## ')) {
       elements.push(
-        <h2 key={`h2-${i}`} className="mobile-heading-2" style={{ marginBottom: '12px', marginTop: '12px' }}>
+        <h2 key={`h2-${i}`} className="mobile-heading-2" style={{ marginBottom: '12px', marginTop: '12px', fontFamily: "'VT323', monospace" }}>
           {parseInlineMarkdown(line.substring(3))}
         </h2>
       );
@@ -44,7 +44,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
 
     if (line.startsWith('### ')) {
       elements.push(
-        <h3 key={`h3-${i}`} className="mobile-heading-3" style={{ marginBottom: '8px', marginTop: '8px' }}>
+        <h3 key={`h3-${i}`} className="mobile-heading-3" style={{ marginBottom: '8px', marginTop: '8px', fontFamily: "'VT323', monospace" }}>
           {parseInlineMarkdown(line.substring(4))}
         </h3>
       );
@@ -65,6 +65,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
             marginBottom: '12px',
             fontStyle: 'italic',
             color: 'var(--pixel-text)',
+            fontFamily: "'Noto Sans Mono', monospace",
           }}
         >
           {parseInlineMarkdown(line.substring(2))}
@@ -86,7 +87,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
         i++;
       }
       elements.push(
-        <ul key={`ul-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px' }}>
+        <ul key={`ul-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Noto Sans Mono', monospace" }}>
           {listItems}
         </ul>
       );
@@ -109,7 +110,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
         i++;
       }
       elements.push(
-        <ol key={`ol-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px' }}>
+        <ol key={`ol-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Noto Sans Mono', monospace" }}>
           {listItems}
         </ol>
       );
@@ -135,13 +136,65 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
             borderRadius: '4px',
             overflowX: 'auto',
             marginBottom: '12px',
-            fontFamily: "'Courier New', monospace",
+            fontFamily: "'Noto Sans Mono', monospace",
             fontSize: '11px',
           }}
         >
           <code>{codeLines.join('\n')}</code>
         </pre>
       );
+      continue;
+    }
+
+    // Tables
+    if (line.includes('|')) {
+      const tableRows: string[][] = [];
+      while (i < lines.length && lines[i].includes('|')) {
+        const cells = lines[i].split('|').map(cell => cell.trim()).filter(cell => cell);
+        tableRows.push(cells);
+        i++;
+      }
+      
+      if (tableRows.length > 0) {
+        elements.push(
+          <div key={`table-${i}`} style={{ overflowX: 'auto', marginBottom: '12px' }}>
+            <table
+              style={{
+                width: '100%',
+                borderCollapse: 'collapse',
+                border: '1px solid var(--pixel-border)',
+                fontFamily: "'Noto Sans Mono', monospace",
+              }}
+            >
+              <tbody>
+                {tableRows.map((row, rowIndex) => (
+                  <tr
+                    key={`tr-${rowIndex}`}
+                    style={{
+                      borderBottom: '1px solid var(--pixel-border)',
+                      backgroundColor: rowIndex === 0 ? 'var(--pixel-card-bg)' : 'transparent',
+                    }}
+                  >
+                    {row.map((cell, cellIndex) => (
+                      <td
+                        key={`td-${rowIndex}-${cellIndex}`}
+                        style={{
+                          padding: '8px 12px',
+                          borderRight: cellIndex < row.length - 1 ? '1px solid var(--pixel-border)' : 'none',
+                          fontWeight: rowIndex === 0 ? 'bold' : 'normal',
+                          textAlign: 'left',
+                        }}
+                      >
+                        {parseInlineMarkdown(cell)}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        );
+      }
       continue;
     }
 
@@ -163,7 +216,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
 
     // Regular paragraph
     elements.push(
-      <p key={`p-${i}`} style={{ marginBottom: '12px', lineHeight: '1.6' }}>
+      <p key={`p-${i}`} style={{ marginBottom: '12px', lineHeight: '1.6', fontFamily: "'Noto Sans Mono', monospace" }}>
         {parseInlineMarkdown(line)}
       </p>
     );
@@ -215,7 +268,7 @@ function parseInlineMarkdown(text: string): React.ReactNode[] {
             backgroundColor: 'var(--pixel-card-bg)',
             padding: '2px 4px',
             borderRadius: '2px',
-            fontFamily: "'Courier New', monospace",
+            fontFamily: "'Noto Sans Mono', monospace",
             fontSize: '0.9em',
           }}
         >
@@ -240,7 +293,7 @@ function parseInlineMarkdown(text: string): React.ReactNode[] {
               color: 'var(--pixel-accent)',
               textDecoration: 'underline',
               cursor: 'pointer',
-              fontFamily: 'inherit',
+              fontFamily: "'Noto Sans Mono', monospace",
               fontSize: 'inherit',
               padding: '0',
               margin: '0',
@@ -259,7 +312,7 @@ function parseInlineMarkdown(text: string): React.ReactNode[] {
             style={{
               color: 'var(--pixel-accent)',
               textDecoration: 'underline',
-              fontFamily: 'inherit',
+              fontFamily: "'Noto Sans Mono', monospace",
               fontSize: 'inherit',
             }}
           >
