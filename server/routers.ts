@@ -77,22 +77,25 @@ export const appRouter = router({
       )
       .mutation(async ({ input, ctx }) => {
         const db = await getDb();
-        if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "Database unavailable" });
 
-        // For public access, use a default user ID or skip saving to DB
-        if (!ctx.user?.id) {
-          // Return success without saving to DB for public users
+        // For public access or deployments without a database, return the payload
+        // so the UI can continue using local persistence without failing the request.
+        if (!db || !ctx.user?.id) {
           return { ...input };
         }
 
-        await db.insert(taskSessions).values({
-          userId: ctx.user.id,
-          title: input.title,
-          tasks: JSON.stringify(input.tasks),
-          focusLevel: input.focusLevel,
-          granularity: input.granularity,
-          createdAt: new Date(),
-        });
+        try {
+          await db.insert(taskSessions).values({
+            userId: ctx.user.id,
+            title: input.title,
+            tasks: JSON.stringify(input.tasks),
+            focusLevel: input.focusLevel,
+            granularity: input.granularity,
+            createdAt: new Date(),
+          });
+        } catch (error) {
+          console.warn("tasks.saveTasks falling back to local-only mode", error);
+        }
 
         return { ...input };
       }),
@@ -101,17 +104,22 @@ export const appRouter = router({
       const db = await getDb();
       if (!db || !ctx.user?.id) return [];
 
-      const sessions = await db
-        .select()
-        .from(taskSessions)
-        .where(eq(taskSessions.userId, ctx.user.id))
-        .orderBy(desc(taskSessions.createdAt))
-        .limit(50);
+      try {
+        const sessions = await db
+          .select()
+          .from(taskSessions)
+          .where(eq(taskSessions.userId, ctx.user.id))
+          .orderBy(desc(taskSessions.createdAt))
+          .limit(50);
 
-      return sessions.map((s) => ({
-        ...s,
-        tasks: JSON.parse(s.tasks || "[]"),
-      }));
+        return sessions.map((s) => ({
+          ...s,
+          tasks: JSON.parse(s.tasks || "[]"),
+        }));
+      } catch (error) {
+        console.warn("tasks.getSessions falling back to empty list", error);
+        return [];
+      }
     }),
 
     exportToCalendar: publicProcedure

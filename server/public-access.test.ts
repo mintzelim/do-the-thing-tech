@@ -1,5 +1,4 @@
 import { describe, expect, it, vi } from "vitest";
-import { TRPCError } from "@trpc/server";
 import { appRouter } from "./routers";
 import type { TrpcContext } from "./_core/context";
 
@@ -57,18 +56,17 @@ describe("Public access without Manus authentication", () => {
     expect(result[0]).toHaveProperty("priority");
   }, { timeout: 15000 });
 
-  it("still blocks anonymous users from saving sessions", async () => {
+  it("allows anonymous users to save tasks with a graceful local-only fallback", async () => {
     const caller = appRouter.createCaller(createAnonymousContext());
 
-    await expect(
-      caller.tasks.saveTasks({
-        title: "Anonymous session",
-        tasks: [{ title: "Task 1", estimatedTime: 30 }],
-        focusLevel: "normal",
-        granularity: 50,
-      }),
-    ).rejects.toMatchObject<Partial<TRPCError>>({
-      code: "UNAUTHORIZED",
+    const result = await caller.tasks.saveTasks({
+      title: "Anonymous session",
+      tasks: [{ title: "Task 1", estimatedTime: 30 }],
+      focusLevel: "normal",
+      granularity: 50,
     });
+
+    expect(result.title).toBe("Anonymous session");
+    expect(result.tasks).toHaveLength(1);
   });
 });

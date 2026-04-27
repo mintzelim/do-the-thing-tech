@@ -534,3 +534,9 @@
 - [x] Fix Vercel production runtime crash caused by missing lightningcss native binary during requests to / and favicon assets
 - [x] Verify the production runtime no longer loads lightningcss in the local production bundle
 - [ ] Confirm Vercel serves homepage and favicon assets without 500 errors after redeploy
+- [x] Identify all production environment variables required for the Vercel deployment
+- [x] Configure or document GOOGLE_GEMINI_API_KEY and any other required secrets for Vercel
+- [ ] Confirm the Vercel deployment boots successfully after secrets are added
+- [x] Audit all production environment variables and reduce Vercel requirements to the minimum necessary set
+- [x] Make Manus-specific auth and platform variables optional for public Vercel deployment where possible
+- [ ] Document the exact final environment variables needed in Vercel after code hardening
