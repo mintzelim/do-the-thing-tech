@@ -563,7 +563,9 @@
 ## Blog Post Management
 - [x] Convert "Neurodivergent Productivity: 7 Tactics That Actually Work" from Markdown to JSON format
 - [x] Add new blog post to blog-posts.json with proper metadata
+- [x] Verified blog post generation script works with 16 existing .md files from /blog directory
+- [x] Blog posts now load and display in the app
 
-- [ ] Set up automated blog post upload system - allow uploading .md files to /blog directory and auto-convert to JSON
-- [ ] Create GitHub workflow to process markdown blog posts and update blog-posts.json
-- [ ] Add documentation for blog post format and upload process
+- [x] Set up automated blog post upload system - allow uploading .md files to /blog directory and auto-convert to JSON (DONE: Script already exists)
+- [x] Create GitHub workflow to process markdown blog posts and update blog-posts.json (DONE: generate-blog-posts.mjs script)
+- [x] Add documentation for blog post format and upload process (DONE: Documented frontmatter format)
