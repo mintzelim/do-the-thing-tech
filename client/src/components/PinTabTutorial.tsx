@@ -9,20 +9,17 @@ export default function PinTabTutorial({ showAfterBreakdown = false }: PinTabTut
   const [showTutorial, setShowTutorial] = useState(false);
 
   useEffect(() => {
-    // Show tutorial only on first task addition
-    const hasSeenTutorial = localStorage.getItem("doTheThing_pinTabTutorialSeen");
-    const savedState = localStorage.getItem("doTheThing_state");
-    
-    if (!hasSeenTutorial && savedState) {
-      try {
-        const parsed = JSON.parse(savedState);
-        if (parsed.steps && parsed.steps.length > 0) {
-          setShowTutorial(true);
-          localStorage.setItem("doTheThing_pinTabTutorialSeen", "true");
-        }
-      } catch (error) {
-        console.error("Failed to check tutorial condition:", error);
-      }
+    // Home page: always show
+    if (showAfterBreakdown) {
+      setShowTutorial(true);
+      return;
+    }
+
+    // CurrentTasks page: show only on first visit (no tasks loaded yet)
+    const hasSeenTutorialOnCurrentTasks = localStorage.getItem("doTheThing_pinTabTutorialSeenOnCurrentTasks");
+    if (!hasSeenTutorialOnCurrentTasks) {
+      setShowTutorial(true);
+      localStorage.setItem("doTheThing_pinTabTutorialSeenOnCurrentTasks", "true");
     }
   }, [showAfterBreakdown]);
 

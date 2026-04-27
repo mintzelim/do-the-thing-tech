@@ -378,11 +378,13 @@
 - [ ] Verify deployed/public access works without login
 
 
-## Safety Features Refinements (Phase 3)
+## Safety Features Refinements (Phase 3) - COMPLETE
 - [x] Create custom pixel-art beforeunload modal (replaces native browser warning)
 - [x] Update modal message to "If you close the tab, I'll forget everything we did! Are you sure?"
-- [x] Move Pro Tip tutorial to Home page (after BREAK IT DOWN button)
-- [x] Keep Pro Tip tutorial on CurrentTasks page (fixed position, bottom-right)
+- [x] Move Pro Tip tutorial to Home page (after BREAK IT DOWN button) - ALWAYS SHOWING
+- [x] Keep Pro Tip tutorial on CurrentTasks page (fixed position, bottom-right) - SHOWS ON FIRST VISIT
 - [x] Update PinTabTutorial component to accept showAfterBreakdown prop
 - [x] Add BeforeUnloadModal to App.tsx global context
-- [x] Test custom modal and Pro Tip tutorial on dev server
+- [x] Test custom modal and Pro Tip tutorial on dev server - VERIFIED WORKING
+- [x] Simplify Pro Tip logic to show on Home always, CurrentTasks on first visit only
+- [x] All 13 vitest tests passing for safety features

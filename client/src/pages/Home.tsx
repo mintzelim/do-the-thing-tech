@@ -533,7 +533,7 @@ export default function Home() {
                 )}
               </button>
 
-              {/* Pro Tip Tutorial - shows after BREAK IT DOWN */}
+              {/* Pro Tip Tutorial - always shows below BREAK IT DOWN */}
               <PinTabTutorial showAfterBreakdown={true} />
             </div>
           </>
