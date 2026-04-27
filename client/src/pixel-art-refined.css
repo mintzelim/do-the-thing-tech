@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@400;500;600;700&display=swap');
 
 :root {
   /* Pixel Art Color Palette - Classic 8-bit */
@@ -94,7 +95,7 @@ body {
 /* Typography - Pixel Art Fonts */
 .mobile-heading-1 {
   font-family: 'VT323', monospace;
-  font-size: 36px;
+  font-size: clamp(32px, 5vw, 40px);
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 16px 0;
@@ -105,7 +106,7 @@ body {
 
 .mobile-heading-2 {
   font-family: 'VT323', monospace;
-  font-size: 28px;
+  font-size: clamp(24px, 4vw, 28px);
   font-weight: 400;
   line-height: 1.4;
   margin: 0 0 12px 0;
@@ -115,7 +116,7 @@ body {
 
 .mobile-heading-3 {
   font-family: 'VT323', monospace;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.4;
   margin: 0 0 8px 0;
@@ -125,7 +126,7 @@ body {
 
 .mobile-body-lg {
   font-family: 'VT323', monospace;
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: var(--pixel-text);
@@ -134,7 +135,7 @@ body {
 
 .mobile-body {
   font-family: 'VT323', monospace;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.6;
   color: var(--pixel-text-light);
@@ -143,7 +144,7 @@ body {
 
 .mobile-body-sm {
   font-family: 'VT323', monospace;
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.5;
   color: var(--pixel-text-light);
@@ -223,7 +224,7 @@ body {
   width: 100%;
   padding: 14px 16px;
   font-family: 'VT323', monospace;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 400;
   border: var(--pixel-border-width) solid var(--pixel-border);
   border-radius: 0;

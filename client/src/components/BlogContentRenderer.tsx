@@ -216,7 +216,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
 
     // Regular paragraph
     elements.push(
-      <p key={`p-${i}`} style={{ marginBottom: '12px', lineHeight: '1.6', fontFamily: "'Noto Sans Mono', monospace" }}>
+      <p key={`p-${i}`} style={{ marginBottom: '12px', lineHeight: '1.6', fontFamily: "'Noto Sans Mono', monospace", fontSize: '16px' }}>
         {parseInlineMarkdown(line)}
       </p>
     );

@@ -59,7 +59,7 @@ export const appRouter = router({
         }));
       }),
 
-    saveTasks: protectedProcedure
+    saveTasks: publicProcedure
       .input(
         z.object({
           title: z.string().min(1, "Task list title is required"),
@@ -79,6 +79,12 @@ export const appRouter = router({
         const db = await getDb();
         if (!db) throw new TRPCError({ code: "INTERNAL_SERVER_ERROR", message: "Database unavailable" });
 
+        // For public access, use a default user ID or skip saving to DB
+        if (!ctx.user?.id) {
+          // Return success without saving to DB for public users
+          return { ...input };
+        }
+
         await db.insert(taskSessions).values({
           userId: ctx.user.id,
           title: input.title,
@@ -91,9 +97,9 @@ export const appRouter = router({
         return { ...input };
       }),
 
-    getSessions: protectedProcedure.query(async ({ ctx }) => {
+    getSessions: publicProcedure.query(async ({ ctx }) => {
       const db = await getDb();
-      if (!db) return [];
+      if (!db || !ctx.user?.id) return [];
 
       const sessions = await db
         .select()
@@ -108,7 +114,7 @@ export const appRouter = router({
       }));
     }),
 
-    exportToCalendar: protectedProcedure
+    exportToCalendar: publicProcedure
       .input(
         z.object({
           tasks: z.array(

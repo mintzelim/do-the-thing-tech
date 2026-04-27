@@ -3,7 +3,7 @@ id: 'does-adhd-go-away-with-age'
 title: 'Does ADHD Go Away? What the Research Says About ADHD Across the Lifespan'
 excerpt: 'Many people are told they will "grow out of" ADHD. The research tells a different story. Learn what actually happens to ADHD symptoms with age, why adult ADHD looks different from childhood ADHD, and how the DoTheThing method adapts to changing demands.'
 date: '2025-07-29'
-readTime: '7 min'
+readTime: 7 min read
 category: 'ADHD Basics'
 primaryEntity: 'ADHD Across the Lifespan'
 secondaryEntities:

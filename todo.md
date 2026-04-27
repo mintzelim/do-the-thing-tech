@@ -499,16 +499,34 @@
 - [x] Documented workflow: Upload markdown to /blog folder → Auto-regenerate JSON → Live site updates
 
 
-## Blog Table Formatting Fix (In Progress)
-- [ ] Fix table rendering in blog posts (proper borders, alignment, spacing)
-- [ ] Add CSS styling for markdown tables
-- [ ] Test table display on all blog posts
+## Blog Table Formatting Fix (Complete)
+- [x] Fix table rendering in blog posts (proper borders, alignment, spacing)
+- [x] Add CSS styling for markdown tables
+- [x] Test table display on all blog posts
 
-## Font Styling Updates (In Progress)
-- [ ] Keep VT323 font for all headings (H1, H2, H3) across all pages
-- [ ] Change body text to Noto Sans Mono Normal for blog posts
-- [ ] Change body text to Noto Sans Mono Normal for all subpages (About, Contact, Privacy, Terms)
-- [ ] Keep Home page and CurrentTasks with original font styling
-- [ ] Update BlogContentRenderer to apply correct fonts
-- [ ] Update subpage components to apply correct fonts
-- [ ] Test font rendering on dev server
+## Font Styling Updates (Complete)
+- [x] Keep VT323 font for all headings (H1, H2, H3) across all pages
+- [x] Change body text to Noto Sans Mono Normal for blog posts
+- [x] Change body text to Noto Sans Mono Normal for all subpages (About, Contact, Privacy, Terms)
+- [x] Keep Home page and CurrentTasks with original font styling
+- [x] Update BlogContentRenderer to apply correct fonts
+- [x] Update subpage components to apply correct fonts
+- [x] Test font rendering on dev server
+
+
+## Public Access Implementation (Complete)
+- [x] Remove Manus OAuth requirement from all pages
+- [x] Make site completely public without login
+- [x] Change protectedProcedure to publicProcedure for task endpoints
+- [x] Handle null user context gracefully
+
+## Typography Sizing Updates (Complete)
+- [x] Apply H1: 32px-40px sizing to all headings (clamp 32-40px)
+- [x] Apply H2: 24px-28px sizing to subheadings (clamp 24-28px)
+- [x] Apply Body Text: 16px-18px sizing (16px base, 18px large)
+- [x] Apply Button Text: 18px-20px sizing (18px)
+- [x] Apply Captions/Small: 12px-14px sizing (14px)
+- [x] Import Noto Sans Mono font
+- [x] Keep VT323 for Home page and Current Tasks (all text)
+- [x] Use Noto Sans Mono for blog posts body text
+- [x] Use Noto Sans Mono for About, Contact, Privacy, Terms pages
