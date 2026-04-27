@@ -388,3 +388,15 @@
 - [x] Test custom modal and Pro Tip tutorial on dev server - VERIFIED WORKING
 - [x] Simplify Pro Tip logic to show on Home always, CurrentTasks on first visit only
 - [x] All 13 vitest tests passing for safety features
+
+
+## Timer Deduction on Task Completion (Complete)
+- [x] When user checks off a task, deduct that task's remaining time from countdown timer
+- [x] Update toggleStepComplete in CurrentTasks to call adjustTime when task is completed
+- [x] Timer only deducts when timer is active
+- [x] Test in browser: verified timer decreases when task is checked off
+
+## CurrentTasks Footer Fix (Complete)
+- [x] Replace custom footer HTML in CurrentTasks with shared Footer component
+- [x] Verify footer is consistent with other pages (HOME, ABOUT, BLOG, CONTACT, PRIVACY, TERMS)
+- [x] Test in browser: footer now displays correctly on CurrentTasks page

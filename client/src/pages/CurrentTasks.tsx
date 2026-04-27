@@ -3,6 +3,7 @@ import { useLocation } from "wouter";
 import { useTimer } from "@/contexts/TimerContext";
 import Navigation from "@/components/Navigation";
 import PinTabTutorial from "@/components/PinTabTutorial";
+import Footer from "@/components/Footer";
 import "../pixel-art-refined.css";
 
 type Step = {
@@ -83,9 +84,21 @@ export default function CurrentTasks() {
 
   const toggleStepComplete = (stepId: string) => {
     playClickSound();
-    setSteps((prev) =>
-      prev.map((step) => (step.id === stepId ? { ...step, completed: !step.completed } : step))
-    );
+    setSteps((prev) => {
+      const updatedSteps = prev.map((step) => {
+        if (step.id === stepId) {
+          const isCompleting = !step.completed;
+          // If completing the task, deduct its time from the timer
+          if (isCompleting && timerActive) {
+            const timeInSeconds = minutesToSeconds(step.estimatedTime);
+            adjustTime(-timeInSeconds);
+          }
+          return { ...step, completed: !step.completed };
+        }
+        return step;
+      });
+      return updatedSteps;
+    });
   };
 
   const updateStepTime = (stepId: string, newTime: number) => {
@@ -451,22 +464,7 @@ export default function CurrentTasks() {
         )}
       </div>
 
-      <footer
-        style={{
-          textAlign: "center",
-          padding: "20px",
-          borderTop: "3px solid var(--pixel-border)",
-          marginTop: "auto",
-          backgroundColor: "var(--pixel-card-bg)",
-          fontFamily: "'VT323', monospace",
-          fontSize: "12px",
-          color: "var(--pixel-text-light)",
-        }}
-      >
-        <a href="/" style={{ color: "var(--pixel-text-light)", textDecoration: "none", marginRight: "16px" }}>HOME</a>
-        <a href="/privacy" style={{ color: "var(--pixel-text-light)", textDecoration: "none", marginRight: "16px" }}>PRIVACY</a>
-        <a href="/terms" style={{ color: "var(--pixel-text-light)", textDecoration: "none" }}>TERMS</a>
-      </footer>
+      <Footer />
     </div>
   );
 }
