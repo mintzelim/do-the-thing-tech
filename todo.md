@@ -414,3 +414,19 @@
 - [x] Pro Tip closure persists in localStorage
 - [x] Pro Tip still shows on Home page after BREAK IT DOWN
 - [x] Both Pro Tips have consistent styling with 💾 icon
+
+## Pockets Full Modal (Complete)
+- [x] Create PocketsFullModal component with pixel-art styling (🎒 icon, custom modal)
+- [x] Add logic to detect existing tasks and show modal on BREAK IT DOWN
+- [x] Implement TAKE ME THERE button (navigate to CurrentTasks)
+- [x] Implement START OVER button (clear tasks and proceed)
+- [x] Write vitest tests for pockets full modal logic (6 tests passing)
+- [x] Test in browser: verify modal shows when trying to break down with existing tasks
+
+
+## Timer Increase on Manual Task Addition (Complete)
+- [x] When user adds a task manually, increase countdown timer by that task's estimated time
+- [x] Update the timer display to reflect the new total time
+- [x] Ensure timer continues counting down from the new total
+- [x] Write vitest tests for timer increase on manual task addition (8 tests passing)
+- [x] Test in browser: verify timer increases when adding tasks (verified: 25m → 40m when adding 15m task)

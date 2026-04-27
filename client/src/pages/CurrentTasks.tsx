@@ -120,6 +120,11 @@ export default function CurrentTasks() {
       estimatedTime: 15,
     };
     setSteps((prev) => [...prev, newStep]);
+    
+    // Increase timer by the new task's estimated time if timer is active
+    if (timerActive) {
+      adjustTime(15 * 60); // Convert minutes to seconds
+    }
   };
 
   const startEditing = (stepId: string) => {
