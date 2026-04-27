@@ -311,12 +311,14 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
   // Try models in order: Flash Lite -> Flash -> Pro
   const models = ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-2.5-pro"];
   let response: Response | null = null;
+  let usedModel = "";
   
   for (let i = 0; i < models.length; i++) {
     const model = models[i];
     response = await tryModel(model, payload, apiKey);
     
     if (response.ok) {
+      usedModel = model;
       if (i > 0) {
         console.log(`Successfully used fallback model: ${model}`);
       }
@@ -348,7 +350,7 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
   return {
     id: data.candidates?.[0]?.index?.toString() || "0",
     created: Date.now(),
-    model: "gemini-2.5-flash-lite",
+    model: usedModel,
     choices: [
       {
         index: 0,
