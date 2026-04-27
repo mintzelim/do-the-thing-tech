@@ -26,13 +26,13 @@ export const appRouter = router({
       .input(
         z.object({
           input: z.string().min(1, "Task input is required"),
-          granularity: z.number().min(0).max(100).default(50),
+          granularity: z.enum(["tiny", "balanced", "big"]).default("balanced"),
           focusLevel: z.enum(["hyperfocus", "normal", "distracted"]).default("normal"),
         })
       )
       .mutation(async ({ input }) => {
-        const { breakdownTasks } = await import("../server/services/taskBreakdown");
-        return breakdownTasks(input.input, input.granularity, input.focusLevel);
+        const { breakdownTask } = await import("../server/services/taskBreakdown");
+        return breakdownTask(input.input, input.focusLevel, input.granularity);
       }),
 
     // Deprecated: time estimation is now handled by breakdown service

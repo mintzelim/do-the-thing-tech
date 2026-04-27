@@ -197,7 +197,7 @@ export default function Home() {
       // Breakdown now handles both breakdown AND time estimation
       const compiled = await breakdownMutation.mutateAsync({
         input: brainDump,
-        granularity,
+        granularity: granularityPreset,
         focusLevel,
       });
 
