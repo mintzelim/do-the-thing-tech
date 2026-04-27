@@ -280,9 +280,9 @@ export default function Home() {
       const nextCompleted = !step.completed;
       const stepSeconds = step.estimatedTime * 60;
 
-      if (globalTimerActive) {
-        globalAdjustTime(nextCompleted ? -stepSeconds : stepSeconds);
-      }
+      // Always adjust time when toggling tasks (fixes: time not added back on uncheck)
+      globalAdjustTime(nextCompleted ? -stepSeconds : stepSeconds);
+
 
       const updated = prev.map((s) => (s.id === stepId ? { ...s, completed: nextCompleted } : s));
       const allCompleted = updated.every((s) => s.completed);
@@ -619,6 +619,16 @@ export default function Home() {
                   key={step.id}
                   className={`mobile-task-item ${step.completed ? "completed" : ""}`}
                 >
+                  <div className="mobile-task-drag-handle" title="Drag to reorder">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="8" cy="6" r="1" fill="currentColor" />
+                      <circle cx="8" cy="12" r="1" fill="currentColor" />
+                      <circle cx="8" cy="18" r="1" fill="currentColor" />
+                      <circle cx="16" cy="6" r="1" fill="currentColor" />
+                      <circle cx="16" cy="12" r="1" fill="currentColor" />
+                      <circle cx="16" cy="18" r="1" fill="currentColor" />
+                    </svg>
+                  </div>
                   <input
                     type="checkbox"
                     className="mobile-checkbox mobile-task-checkbox"

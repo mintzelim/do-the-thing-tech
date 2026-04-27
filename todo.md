@@ -542,7 +542,10 @@
 - [ ] Document the exact final environment variables needed in Vercel after code hardening
 
 ## Bug Fixes (Current)
-- [x] Fix: Timer doesn't add time back when unchecking a completed task
+- [x] Fix: Timer doesn't add time back when unchecking a completed task (FIXED: Always call adjustTime, not just when timer is active)
+- [x] Fix: React warning about state updates (REVERTED: Kept original UI, minimal fix applied to Home.tsx)
+- [x] Add drag handle icon (six dots) to task items for better UX
+- [x] Add grab/grabbing cursor styling for drag-and-drop
 
 ## Blog Layout Improvements
 - [x] Improve blog post layout for better polish and readability
