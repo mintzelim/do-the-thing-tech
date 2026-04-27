@@ -487,3 +487,12 @@
 - [x] Regenerated blog-posts.json with markdown formatting preserved
 - [x] Verified blog post rendering with proper headings, lists, blockquotes, and spacing
 - [x] All blog posts now display with proper formatting (H1/H2/H3, bold, lists, blockquotes)
+
+
+## GitHub Blog Post Auto-Update Workflow (Complete)
+- [x] Verified GitHub integration is configured (user_github remote)
+- [x] Added new blog post: "Does ADHD Go Away?" from user upload
+- [x] Regenerated blog-posts.json with new post (16 total)
+- [x] Pushed to GitHub main branch
+- [x] Verified dev server running with new blog post
+- [x] Documented workflow: Upload markdown to /blog folder → Auto-regenerate JSON → Live site updates
