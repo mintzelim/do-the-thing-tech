@@ -11,20 +11,18 @@ export async function setupVite(app: Express, server: Server) {
   }
   
   const { createServer: createViteServer } = await import("vite");
-  const viteConfig = (await import("../../vite.config")).default;
-  
-  const serverOptions = {
-    middlewareMode: true,
-    hmr: { server },
-    allowedHosts: true as const,
-  };
+  const configFile = path.resolve(import.meta.dirname, "../..", "vite.config.ts");
 
   const vite = await createViteServer({
-    ...viteConfig,
-    configFile: false,
-    server: serverOptions,
+    configFile,
+    server: {
+      middlewareMode: true,
+      hmr: { server },
+      allowedHosts: true,
+    },
     appType: "custom",
   });
+
 
   app.use(vite.middlewares);
   app.use("*", async (req, res, next) => {
@@ -54,7 +52,7 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(import.meta.dirname, "../..", "dist", "public");
+  const distPath = path.resolve(process.cwd(), "dist", "public");
   
   if (!fs.existsSync(distPath)) {
     console.error(

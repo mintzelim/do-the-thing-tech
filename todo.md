@@ -530,3 +530,7 @@
 - [x] Keep VT323 for Home page and Current Tasks (all text)
 - [x] Use Roboto Mono weight 500 for blog posts body text
 - [x] Use Roboto Mono weight 500 for About, Contact, Privacy, Terms pages
+
+- [x] Fix Vercel production runtime crash caused by missing lightningcss native binary during requests to / and favicon assets
+- [x] Verify the production runtime no longer loads lightningcss in the local production bundle
+- [ ] Confirm Vercel serves homepage and favicon assets without 500 errors after redeploy
