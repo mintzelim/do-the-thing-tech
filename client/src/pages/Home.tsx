@@ -4,6 +4,7 @@ import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import PinTabTutorial from "@/components/PinTabTutorial";
 import { useTimer } from "@/contexts/TimerContext";
 import { ErrorModal } from "@/components/ErrorModal";
 import "../pixel-art-refined.css";
@@ -531,6 +532,9 @@ export default function Home() {
                   "BREAK IT DOWN"
                 )}
               </button>
+
+              {/* Pro Tip Tutorial - shows after BREAK IT DOWN */}
+              <PinTabTutorial showAfterBreakdown={true} />
             </div>
           </>
         )}

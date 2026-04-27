@@ -376,3 +376,13 @@
 - [ ] Ensure anonymous users can use the app without Manus authentication
 - [ ] Add tests for anonymous access behavior
 - [ ] Verify deployed/public access works without login
+
+
+## Safety Features Refinements (Phase 3)
+- [x] Create custom pixel-art beforeunload modal (replaces native browser warning)
+- [x] Update modal message to "If you close the tab, I'll forget everything we did! Are you sure?"
+- [x] Move Pro Tip tutorial to Home page (after BREAK IT DOWN button)
+- [x] Keep Pro Tip tutorial on CurrentTasks page (fixed position, bottom-right)
+- [x] Update PinTabTutorial component to accept showAfterBreakdown prop
+- [x] Add BeforeUnloadModal to App.tsx global context
+- [x] Test custom modal and Pro Tip tutorial on dev server

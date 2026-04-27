@@ -168,7 +168,7 @@ export default function CurrentTasks() {
     return (
       <div className="mobile-frame">
         <Navigation />
-        <PinTabTutorial />
+        <PinTabTutorial showAfterBreakdown={false} />
         <div className="mobile-content">
           <div style={{ textAlign: "center", padding: "40px 20px" }}>
             <h2 className="mobile-heading-2" style={{ marginBottom: "20px" }}>NO TASKS YET</h2>
@@ -199,7 +199,7 @@ export default function CurrentTasks() {
   return (
     <div className="mobile-frame">
       <Navigation />
-      <PinTabTutorial />
+      <PinTabTutorial showAfterBreakdown={false} />
 
       <div className="mobile-content">
         {allCompleted ? (

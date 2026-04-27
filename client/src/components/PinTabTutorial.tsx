@@ -1,7 +1,11 @@
 import { useState, useEffect } from "react";
 import { X } from "lucide-react";
 
-export default function PinTabTutorial() {
+interface PinTabTutorialProps {
+  showAfterBreakdown?: boolean;
+}
+
+export default function PinTabTutorial({ showAfterBreakdown = false }: PinTabTutorialProps) {
   const [showTutorial, setShowTutorial] = useState(false);
 
   useEffect(() => {
@@ -20,16 +24,22 @@ export default function PinTabTutorial() {
         console.error("Failed to check tutorial condition:", error);
       }
     }
-  }, []);
+  }, [showAfterBreakdown]);
 
   if (!showTutorial) return null;
 
+  // Position: bottom-right for CurrentTasks, inline for Home after BREAK IT DOWN
+  const positionClass = showAfterBreakdown ? "" : "fixed bottom-6 right-6 z-50";
+  const containerClass = showAfterBreakdown ? "border-4 border-foreground bg-card p-4 mt-4" : "border-4 border-foreground bg-card p-4 relative";
+
   return (
-    <div className="fixed bottom-6 right-6 z-50 max-w-xs">
+    <div className={`${positionClass} ${showAfterBreakdown ? "" : "max-w-xs"}`}>
       {/* Pixel-art speech bubble */}
-      <div className="border-4 border-foreground bg-card p-4 relative">
-        {/* Speech bubble pointer */}
-        <div className="absolute -bottom-3 right-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-foreground"></div>
+      <div className={containerClass}>
+        {/* Speech bubble pointer - only show for fixed position */}
+        {!showAfterBreakdown && (
+          <div className="absolute -bottom-3 right-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-foreground"></div>
+        )}
         
         <div className="flex items-start gap-3">
           {/* Pixel-art character */}

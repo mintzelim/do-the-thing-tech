@@ -61,29 +61,7 @@ export function TimerProvider({ children }: { children: ReactNode }) {
     localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
   }, [timeRemaining, timerActive]);
 
-  // Add beforeunload warning when timer is active or tasks exist
-  useEffect(() => {
-    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-      const savedState = localStorage.getItem("doTheThing_state");
-      if (!savedState) return;
-      
-      try {
-        const parsed = JSON.parse(savedState);
-        const hasUnfinishedTasks = parsed.steps && parsed.steps.some((step: any) => !step.completed);
-        const timerRunning = parsed.timerActive && parsed.timeRemaining > 0;
-        
-        if (hasUnfinishedTasks || timerRunning) {
-          e.preventDefault();
-          e.returnValue = "";
-        }
-      } catch (error) {
-        console.error("Failed to check beforeunload condition:", error);
-      }
-    };
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
-  }, []);
+  // Beforeunload warning is now handled by BeforeUnloadModal component
 
   useEffect(() => {
     if (intervalRef.current) {
