@@ -5,7 +5,11 @@ import { nanoid } from "nanoid";
 import path from "path";
 
 export async function setupVite(app: Express, server: Server) {
-  // Dynamically import Vite only in development to avoid loading Rollup in production
+  // Development only - dynamically import Vite to avoid loading in production
+  if (process.env.NODE_ENV !== "development") {
+    return;
+  }
+  
   const { createServer: createViteServer } = await import("vite");
   const viteConfig = (await import("../../vite.config")).default;
   
@@ -50,16 +54,22 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
-  const distPath = path.resolve(import.meta.dirname, "../\..", "dist", "public");
+  const distPath = path.resolve(import.meta.dirname, "../..", "dist", "public");
+  
   if (!fs.existsSync(distPath)) {
     console.error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
     );
+    return;
   }
 
-  app.use(express.static(distPath));
+  // Serve static files
+  app.use(express.static(distPath, { 
+    maxAge: "1d",
+    etag: false 
+  }));
 
-  // fall through to index.html if the file doesn't exist
+  // SPA fallback - serve index.html for all non-file routes
   app.use("*", (_req, res) => {
     res.sendFile(path.resolve(distPath, "index.html"));
   });
