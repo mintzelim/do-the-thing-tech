@@ -1,34 +1,11 @@
 {
   "buildCommand": "npm run build",
   "installCommand": "npm install --include=optional",
-  "outputDirectory": "dist",
   "framework": "express",
   "functions": {
     "dist/index.js": {
       "memory": 1024,
       "maxDuration": 60
     }
-  },
-  "rewrites": [
-    {
-      "source": "/public/(.*)",
-      "destination": "/public/$1"
-    },
-    {
-      "source": "/assets/(.*)",
-      "destination": "/public/assets/$1"
-    },
-    {
-      "source": "/blog-posts.json",
-      "destination": "/public/blog-posts.json"
-    },
-    {
-      "source": "/api/(.*)",
-      "destination": "/dist/index.js"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/dist/index.js"
-    }
-  ]
+  }
 }
