@@ -6,6 +6,11 @@ export default function BeforeUnloadModal() {
 
   useEffect(() => {
     const handleBeforeUnload = (e: BeforeUnloadEvent) => {
+      // If user clicked LEAVE, allow the navigation without showing anything
+      if (allowLeave) {
+        return;
+      }
+
       const savedState = localStorage.getItem("doTheThing_state");
       if (!savedState) return;
 
@@ -14,12 +19,13 @@ export default function BeforeUnloadModal() {
         const hasUnfinishedTasks = parsed.steps && parsed.steps.some((step: any) => !step.completed);
         const timerRunning = parsed.timerActive && parsed.timeRemaining > 0;
 
-        if ((hasUnfinishedTasks || timerRunning) && !allowLeave) {
+        if (hasUnfinishedTasks || timerRunning) {
+          // Show our custom modal instead of the browser warning
           setShowModal(true);
-          // Prevent the default browser warning - we show our custom modal instead
+          // Prevent the default browser warning
           e.preventDefault();
           e.returnValue = "";
-          return "";
+          // Don't return anything - just prevent default
         }
       } catch (error) {
         console.error("Failed to check beforeunload condition:", error);
@@ -37,10 +43,8 @@ export default function BeforeUnloadModal() {
   const handleLeave = () => {
     setAllowLeave(true);
     setShowModal(false);
-    // Use a small delay to ensure the event listener sees allowLeave=true
-    setTimeout(() => {
-      window.location.href = "/";
-    }, 100);
+    // Allow the page to unload without triggering beforeunload again
+    window.location.href = "/";
   };
 
   if (!showModal) return null;

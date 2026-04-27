@@ -406,3 +406,11 @@
 - [x] Updated BeforeUnloadModal to properly prevent default beforeunload behavior
 - [x] e.preventDefault() and e.returnValue now suppress native warning
 - [x] Only custom pixel-art modal shows when user tries to close tab
+- [x] Refactored to check allowLeave flag before showing anything
+
+## Pro Tip Tutorial Improvements (Complete)
+- [x] Pro Tip now always visible on CurrentTasks page at the top
+- [x] User can close Pro Tip with X button
+- [x] Pro Tip closure persists in localStorage
+- [x] Pro Tip still shows on Home page after BREAK IT DOWN
+- [x] Both Pro Tips have consistent styling with 💾 icon

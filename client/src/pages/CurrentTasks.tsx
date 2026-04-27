@@ -212,9 +212,9 @@ export default function CurrentTasks() {
   return (
     <div className="mobile-frame">
       <Navigation />
-      <PinTabTutorial showAfterBreakdown={false} />
 
       <div className="mobile-content">
+        <PinTabTutorial alwaysShowOnCurrentTasks={true} />
         {allCompleted ? (
           <>
             <h1 className="mobile-heading-1" style={{ textAlign: "center", marginBottom: "20px" }}>
