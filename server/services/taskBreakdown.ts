@@ -97,8 +97,8 @@ Return a JSON array of objects with this structure (no other text):
     }));
   } catch (error) {
     console.error("Error breaking down task:", error);
-    // Return mock breakdown on error for demo purposes
-    return getMockBreakdown(input, granularity, focusLevel);
+    // Don't return a fallback - let the error propagate to the user
+    throw error;
   }
 }
 
