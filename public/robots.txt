@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://dothething-zkgytwax.manus.space/sitemap.xml
+Sitemap: https://dothething.tech/sitemap.xml
 
 # Crawl delay (optional - allows 1 request per 1 second)
 Crawl-delay: 1
