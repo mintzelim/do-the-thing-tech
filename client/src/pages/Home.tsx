@@ -216,14 +216,21 @@ export default function Home() {
       }, 500);
     } catch (error: any) {
       let errorMessage = error?.message || "Failed to process your input";
+      const isRateLimit = errorMessage.includes("429") || errorMessage.includes("quota");
       
-      // Handle rate limit errors
-      if (errorMessage.includes("429") || errorMessage.includes("quota")) {
-        errorMessage = "API rate limit exceeded. Please wait a moment and try again.";
+      // Handle rate limit errors with user-friendly message
+      if (isRateLimit) {
+        errorMessage = "Busy traffic. Try again in 60s";
+        // Show a more prominent toast for rate limit errors
+        toast.error(errorMessage, {
+          duration: 5000,
+          description: "The service is experiencing high traffic. Please wait a moment before trying again."
+        });
+      } else {
+        toast.error(errorMessage);
       }
       
       setError(errorMessage);
-      toast.error(errorMessage);
       setRetryCount(prev => prev + 1);
     } finally {
       setIsLoading(false);
