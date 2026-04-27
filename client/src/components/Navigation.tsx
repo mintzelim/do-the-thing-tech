@@ -51,9 +51,14 @@ export default function Navigation() {
         <div className="flex items-center justify-between gap-4">
           <button
             onClick={() => navigate("/")}
-            className="font-vt323 text-2xl font-bold text-foreground hover:text-accent transition-colors"
+            className="hover:opacity-80 transition-opacity"
+            title="DoTheThing"
           >
-            DO THE THING
+            <img
+              src="/manus-storage/DoTheThing_Logo_166a1c8b.png"
+              alt="DoTheThing Logo"
+              className="h-12 w-auto"
+            />
           </button>
 
           {/* Desktop Navigation */}
