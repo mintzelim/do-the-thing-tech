@@ -543,7 +543,7 @@
 
 ## Bug Fixes (Current)
 - [x] Fix: Timer doesn't add time back when unchecking a completed task (FIXED: Always call adjustTime, not just when timer is active)
-- [x] Fix: React warning about state updates (REVERTED: Kept original UI, minimal fix applied to Home.tsx)
+- [x] Fix: React warning about state updates in CurrentTasks (FIXED: Use useRef to queue adjustments, apply in useEffect)
 - [x] Add drag handle icon (six dots) to task items for better UX
 - [x] Add grab/grabbing cursor styling for drag-and-drop
 
