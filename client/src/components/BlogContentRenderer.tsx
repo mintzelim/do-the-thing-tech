@@ -6,6 +6,132 @@ interface BlogContentRendererProps {
 }
 
 export default function BlogContentRenderer({ content, onInternalLinkClick }: BlogContentRendererProps) {
+  // Parse inline markdown (bold, italic, links, code)
+  const parseInlineMarkdown = (text: string): React.ReactNode[] => {
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+
+    // Combined regex for all inline elements: **bold**, *italic*, [links], `code`
+    const inlineRegex = /(\*\*[^\*]+\*\*|\*[^\*]+\*|`[^`]+`|\[([^\]]+)\]\(([^)]+)\))/g;
+    let match;
+
+    while ((match = inlineRegex.exec(text)) !== null) {
+      // Add text before the match
+      if (match.index > lastIndex) {
+        parts.push(text.substring(lastIndex, match.index));
+      }
+
+      const fullMatch = match[0];
+
+      // Bold text
+      if (fullMatch.startsWith('**') && fullMatch.endsWith('**')) {
+        parts.push(
+          <strong key={`bold-${match.index}`} style={{ fontWeight: 'bold', color: 'var(--pixel-accent)' }}>
+            {fullMatch.substring(2, fullMatch.length - 2)}
+          </strong>
+        );
+      }
+      // Italic text
+      else if (fullMatch.startsWith('*') && fullMatch.endsWith('*')) {
+        parts.push(
+          <em key={`italic-${match.index}`} style={{ fontStyle: 'italic' }}>
+            {fullMatch.substring(1, fullMatch.length - 1)}
+          </em>
+        );
+      }
+      // Inline code
+      else if (fullMatch.startsWith('`') && fullMatch.endsWith('`')) {
+        parts.push(
+          <code
+            key={`inline-code-${match.index}`}
+            style={{
+              backgroundColor: 'rgba(99, 102, 241, 0.1)',
+              padding: '2px 6px',
+              borderRadius: '2px',
+              fontFamily: "'Roboto Mono', monospace",
+              fontSize: '0.95em',
+              border: '1px solid var(--pixel-accent)',
+              color: 'var(--pixel-accent)'
+            }}
+          >
+            {fullMatch.substring(1, fullMatch.length - 1)}
+          </code>
+        );
+      }
+      // Links
+      else if (fullMatch.includes('[')) {
+        const linkText = match[2];
+        const linkUrl = match[3];
+
+        if (linkUrl.startsWith('post:')) {
+          const postId = linkUrl.substring(5);
+          parts.push(
+            <button
+              key={`link-${match.index}`}
+              onClick={() => {
+                if (onInternalLinkClick) {
+                  onInternalLinkClick(postId);
+                }
+              }}
+              style={{
+                backgroundColor: 'transparent',
+                border: 'none',
+                color: 'var(--pixel-accent)',
+                textDecoration: 'underline',
+                cursor: 'pointer',
+                fontFamily: "'Roboto Mono', monospace",
+                fontSize: 'inherit',
+                padding: '0',
+                margin: '0',
+                transition: 'all 0.2s'
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.fontWeight = 'bold';
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.fontWeight = 'normal';
+              }}
+            >
+              {linkText}
+            </button>
+          );
+        } else {
+          parts.push(
+            <a
+              key={`link-${match.index}`}
+              href={linkUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: 'var(--pixel-accent)',
+                textDecoration: 'underline',
+                cursor: 'pointer',
+                transition: 'all 0.2s'
+              }}
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.fontWeight = 'bold';
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.fontWeight = 'normal';
+              }}
+            >
+              {linkText}
+            </a>
+          );
+        }
+      }
+
+      lastIndex = inlineRegex.lastIndex;
+    }
+
+    // Add remaining text
+    if (lastIndex < text.length) {
+      parts.push(text.substring(lastIndex));
+    }
+
+    return parts;
+  };
+
   // Split content into lines for processing
   const lines = content.split('\n');
   const elements: React.ReactNode[] = [];
@@ -234,131 +360,4 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
   }
 
   return <div style={{ whiteSpace: 'normal' }}>{elements}</div>;
-}
-
-// Parse inline markdown (bold, italic, links, code)
-function parseInlineMarkdown(text: string): React.ReactNode[] {
-  const parts: React.ReactNode[] = [];
-  let lastIndex = 0;
-
-  // Combined regex for all inline elements: **bold**, *italic*, [links], `code`
-  const inlineRegex = /(\*\*[^\*]+\*\*|\*[^\*]+\*|`[^`]+`|\[([^\]]+)\]\(([^)]+)\))/g;
-  let match;
-
-  while ((match = inlineRegex.exec(text)) !== null) {
-    // Add text before the match
-    if (match.index > lastIndex) {
-      parts.push(text.substring(lastIndex, match.index));
-    }
-
-    const fullMatch = match[0];
-
-    // Bold text
-    if (fullMatch.startsWith('**') && fullMatch.endsWith('**')) {
-      parts.push(
-        <strong key={`bold-${match.index}`} style={{ fontWeight: 'bold', color: 'var(--pixel-accent)' }}>
-          {fullMatch.substring(2, fullMatch.length - 2)}
-        </strong>
-      );
-    }
-    // Italic text
-    else if (fullMatch.startsWith('*') && fullMatch.endsWith('*')) {
-      parts.push(
-        <em key={`italic-${match.index}`} style={{ fontStyle: 'italic' }}>
-          {fullMatch.substring(1, fullMatch.length - 1)}
-        </em>
-      );
-    }
-    // Inline code
-    else if (fullMatch.startsWith('`') && fullMatch.endsWith('`')) {
-      parts.push(
-        <code
-          key={`inline-code-${match.index}`}
-          style={{
-            backgroundColor: 'rgba(99, 102, 241, 0.1)',
-            padding: '2px 6px',
-            borderRadius: '2px',
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '0.95em',
-            border: '1px solid var(--pixel-accent)',
-            color: 'var(--pixel-accent)'
-          }}
-        >
-          {fullMatch.substring(1, fullMatch.length - 1)}
-        </code>
-      );
-    }
-    // Links
-    else if (fullMatch.includes('[')) {
-      const linkText = match[2];
-      const linkUrl = match[3];
-
-      if (linkUrl.startsWith('post:')) {
-        const postId = linkUrl.substring(5);
-        parts.push(
-          <button
-            key={`link-${match.index}`}
-            onClick={() => {
-              if (onInternalLinkClick) {
-                onInternalLinkClick(postId);
-              }
-            }}
-            style={{
-              backgroundColor: 'transparent',
-              border: 'none',
-              color: 'var(--pixel-accent)',
-              textDecoration: 'underline',
-              cursor: 'pointer',
-              fontFamily: "'Roboto Mono', monospace",
-              fontSize: 'inherit',
-              padding: '0',
-              margin: '0',
-              transition: 'all 0.2s'
-            }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.fontWeight = 'bold';
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.fontWeight = 'normal';
-            }}
-          >
-            {linkText}
-          </button>
-        );
-      } else {
-        parts.push(
-          <a
-            key={`link-${match.index}`}
-            href={linkUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              color: 'var(--pixel-accent)',
-              textDecoration: 'underline',
-              fontFamily: "'Roboto Mono', monospace",
-              fontSize: 'inherit',
-              transition: 'all 0.2s'
-            }}
-            onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.fontWeight = 'bold';
-            }}
-            onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.fontWeight = 'normal';
-            }}
-          >
-            {linkText} ↗
-          </a>
-        );
-      }
-    }
-
-    lastIndex = inlineRegex.lastIndex;
-  }
-
-  // Add remaining text
-  if (lastIndex < text.length) {
-    parts.push(text.substring(lastIndex));
-  }
-
-  return parts.length > 0 ? parts : [text];
 }
