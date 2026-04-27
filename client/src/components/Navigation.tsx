@@ -55,7 +55,7 @@ export default function Navigation() {
             title="DoTheThing"
           >
             <img
-              src="/manus-storage/DoTheThing_Logo_166a1c8b.png"
+              src="/logo.png"
               alt="DoTheThing Logo"
               className="h-12 w-auto"
             />
