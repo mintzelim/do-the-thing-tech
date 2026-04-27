@@ -66,6 +66,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
             fontStyle: 'italic',
             color: 'var(--pixel-text)',
             fontFamily: "'Noto Sans Mono', monospace",
+            fontWeight: 500,
           }}
         >
           {parseInlineMarkdown(line.substring(2))}
@@ -87,7 +88,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
         i++;
       }
       elements.push(
-        <ul key={`ul-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Noto Sans Mono', monospace" }}>
+        <ul key={`ul-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Noto Sans Mono', monospace", fontWeight: 500 }}>
           {listItems}
         </ul>
       );
@@ -110,7 +111,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
         i++;
       }
       elements.push(
-        <ol key={`ol-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Noto Sans Mono', monospace" }}>
+        <ol key={`ol-${i}`} style={{ paddingLeft: '24px', marginBottom: '12px', fontFamily: "'Noto Sans Mono', monospace", fontWeight: 500 }}>
           {listItems}
         </ol>
       );
@@ -164,6 +165,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
                 borderCollapse: 'collapse',
                 border: '1px solid var(--pixel-border)',
                 fontFamily: "'Noto Sans Mono', monospace",
+                fontWeight: 500,
               }}
             >
               <tbody>
@@ -216,7 +218,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
 
     // Regular paragraph
     elements.push(
-      <p key={`p-${i}`} style={{ marginBottom: '12px', lineHeight: '1.6', fontFamily: "'Noto Sans Mono', monospace", fontSize: '16px' }}>
+      <p key={`p-${i}`} style={{ marginBottom: '12px', lineHeight: '1.6', fontFamily: "'Noto Sans Mono', monospace", fontSize: '16px', fontWeight: 500 }}>
         {parseInlineMarkdown(line)}
       </p>
     );
