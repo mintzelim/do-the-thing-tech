@@ -543,3 +543,11 @@
 
 ## Bug Fixes (Current)
 - [x] Fix: Timer doesn't add time back when unchecking a completed task
+
+## Blog Layout Improvements
+- [x] Improve blog post layout for better polish and readability
+- [x] Add visual hierarchy with better typography spacing
+- [x] Implement card-based design for blog listing
+- [x] Improve blog post metadata (date, reading time, category)
+- [x] Add better navigation between blog posts
+- [x] Enhance pixel art styling consistency across blog pages
