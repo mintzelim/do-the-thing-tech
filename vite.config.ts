@@ -153,9 +153,6 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
-  css: {
-    transformer: process.env.NODE_ENV === "production" ? undefined : "lightningcss",
-  },
   plugins,
   resolve: {
     alias: {
