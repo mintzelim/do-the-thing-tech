@@ -95,9 +95,6 @@ export default function CurrentTasks() {
 
       if (allCompleted) {
         stopTimer();
-        setTimeout(() => {
-          navigate("/");
-        }, 1000);
       }
 
       return updated;
@@ -179,7 +176,7 @@ export default function CurrentTasks() {
                 ALL {steps.length} TASKS COMPLETED
               </h2>
               <p className="mobile-body" style={{ marginBottom: "24px" }}>
-                Great work! You've completed everything on your list.
+                Amazing work! You crushed it today.
               </p>
               <button className="mobile-button" onClick={() => {
                 localStorage.removeItem('doTheThing_state');
