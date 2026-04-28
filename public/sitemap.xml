@@ -1,149 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
   <url>
     <loc>https://dothething.tech/</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://dothething.tech/about</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://dothething.tech/blog</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://dothething.tech/contact</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://dothething.tech/privacy</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://dothething.tech/terms</loc>
-    <lastmod>2026-04-27</lastmod>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Blog Posts -->
   <url>
-    <loc>https://dothething.tech/blog/1</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/free-tools-2026</loc>
+    <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/2</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/one-task-is-enough-simple-self-acceptance</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/3</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/why-simpler-adhd-friendly-apps-work-better</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/4</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/neurodivergent-productivity-7-tactics</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/5</loc>
-    <lastmod>2026-01-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://dothething.tech/blog/6</loc>
+    <loc>https://dothething.tech/blog/adhd-medication-and-productivity</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/7</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/does-adhd-go-away</loc>
+    <lastmod>2025-07-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/8</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/how-adhd-affects-task-management</loc>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/9</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/time-blindness-in-adhd</loc>
+    <lastmod>2024-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/10</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/breaking-down-big-tasks</loc>
+    <lastmod>2024-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/11</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/executive-dysfunction-vs-task-paralysis</loc>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/12</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/best-tools-for-adhd-task-management</loc>
+    <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/13</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/neuroscience-task-avoidance</loc>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/14</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/remote-work-adhd</loc>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/15</loc>
-    <lastmod>2026-04-10</lastmod>
+    <loc>https://dothething.tech/blog/adhd-perfectionism</loc>
+    <lastmod>2024-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/16</loc>
-    <lastmod>2026-04-27</lastmod>
+    <loc>https://dothething.tech/blog/adhd-relationships</loc>
+    <lastmod>2024-02-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/17</loc>
-    <lastmod>2026-04-27</lastmod>
+    <loc>https://dothething.tech/blog/adhd-workplace</loc>
+    <lastmod>2024-02-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dothething.tech/blog/18</loc>
-    <lastmod>2026-04-27</lastmod>
+    <loc>https://dothething.tech/blog/adhd-sleep</loc>
+    <lastmod>2024-02-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dothething.tech/blog/adhd-financial-management</loc>
+    <lastmod>2024-02-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dothething.tech/blog/adhd-creativity</loc>
+    <lastmod>2024-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
