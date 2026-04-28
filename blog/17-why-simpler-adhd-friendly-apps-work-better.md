@@ -85,7 +85,7 @@ Effective task breakdown features for ADHD brains share three qualities:
 * **Visual progress.** Not a percentage bar buried in a dashboard. Something you can see and feel, like Forest's growing tree or a simple checklist that shrinks as you work.
 * **No punishment for absence.** The app doesn't guilt you with streaks, overdue badges, or "you missed 14 tasks" notifications. It just waits.
 
-This is where tools like [DoTheThing](https://do-the-thing-tech-dxx965bx1-min-8336bdd3.vercel.app/blog) get it right. Instead of layering on energy-aware scheduling algorithms and AI-driven customization, it strips the experience down to what actually matters: breaking a task into something small enough to start, without making you feel terrible about yesterday. It's not trying to be your second brain. It's trying to help you do one thing.
+This is where tools like [DoTheThing](https://dothething.tech) get it right. Instead of layering on energy-aware scheduling algorithms and AI-driven customization, it strips the experience down to what actually matters: breaking a task into something small enough to start, without making you feel terrible about yesterday. It's not trying to be your second brain. It's trying to help you do one thing.
 
 Now compare that with tools like Motion, which experts recommend for people who can "surrender schedule control to an AI autopilot." Surrendering control sounds liberating in theory. In practice, for many ADHD users, it means watching an algorithm rearrange your day in ways that don't match your energy, then feeling like a failure when you can't follow the plan someone else's software made for you.
 
