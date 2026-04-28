@@ -80,7 +80,7 @@ Instead of asking "What are all the things I need to do?" you ask: "What is the 
 
 ​[Cognitive reframing of failures as learning experiences increases problem-solving capacity by 23%.](https://www.funblocks.net/thinking-matters/classic-mental-models/cognitive-reframing) But here's what that statistic misses: you can't reframe a failure if you never started. The single-task approach eliminates the most common failure mode entirely, which is never beginning because the list was too long to process.
 
-Tools like DoTheThing build around this exact insight. Instead of giving you another place to store 30 tasks, it asks you to commit to one. It's a productivity app that respects the fact that initiation, not organization, is the real barrier. And for people who've failed with every Notion template and Todoist workflow out there, that simplicity isn't a limitation. It's the whole point.
+Tools like [DoTheThing](https://dothething.tech) build around this exact insight. Instead of giving you another place to store 30 tasks, it asks you to commit to one. It's a productivity app that respects the fact that initiation, not organization, is the real barrier. And for people who've failed with every Notion template and Todoist workflow out there, that simplicity isn't a limitation. It's the whole point.
 
 ​[Regular achievement tracking increases confidence by 35%.](https://mooncamp.com/blog/goal-setting-statistics) But tracking one completed task daily is infinitely more sustainable than tracking 12 tasks where you finished four and felt bad about eight. The math of self-worth matters here.
 
