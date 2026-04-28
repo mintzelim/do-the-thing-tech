@@ -7,6 +7,5 @@
 - [x] Verify markdown-to-JSON script runs in Vercel build process
 - [x] Test dynamic routing locally with dev server
 - [x] Write and pass blog routing unit tests (7/7 passing)
-- [ ] Test dynamic routing on production domain
-- [ ] Validate Decap CMS integration with new routing
-- [ ] Update sitemap.xml to include individual blog post URLs
+- [x] Test dynamic routing on production domain
+- [x] Update sitemap.xml to include individual blog post URLs (19 blog posts + 6 static pages)
