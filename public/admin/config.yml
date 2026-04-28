@@ -6,7 +6,7 @@ backend:
   repo: mintzelim/do-the-thing-tech
   branch: main
   base_url: https://dothething.tech
-  auth_endpoint: api/decap/auth
+  auth_endpoint: auth
   site_domain: dothething.tech
   squash_merges: true
 

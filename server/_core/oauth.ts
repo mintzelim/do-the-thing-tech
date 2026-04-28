@@ -123,6 +123,69 @@ async function exchangeGithubCodeForToken(code: string, origin: string) {
   return payload.access_token;
 }
 
+async function handleDecapAuth(req: Request, res: Response) {
+  try {
+    const origin = getRequestOrigin(req);
+    const state = crypto.randomBytes(24).toString("hex");
+    const secure = origin.startsWith("https://");
+
+    res.cookie(DECAP_STATE_COOKIE, state, {
+      httpOnly: true,
+      sameSite: "lax",
+      secure,
+      path: "/",
+      maxAge: 10 * 60 * 1000,
+    });
+
+    res.redirect(302, buildDecapAuthorizeUrl(origin, state));
+  } catch (error) {
+    console.error("[Decap OAuth] Auth redirect failed", error);
+    res.status(500).send("Unable to start GitHub authentication for Decap CMS.");
+  }
+}
+
+async function handleDecapCallback(req: Request, res: Response) {
+  const code = getQueryParam(req, "code");
+  const state = getQueryParam(req, "state");
+  const expectedState = getCookieValue(req, DECAP_STATE_COOKIE);
+
+  if (!code || !state || !expectedState || state !== expectedState) {
+    res
+      .status(400)
+      .type("html")
+      .send(
+        renderDecapAuthResponse("error", {
+          error: "invalid_oauth_state",
+          error_description: "The Decap CMS OAuth state is missing or invalid.",
+        }),
+      );
+    return;
+  }
+
+  try {
+    const origin = getRequestOrigin(req);
+    const token = await exchangeGithubCodeForToken(code, origin);
+
+    res.clearCookie(DECAP_STATE_COOKIE, { path: "/" });
+    res.status(200).type("html").send(
+      renderDecapAuthResponse("success", {
+        token,
+        provider: "github",
+      }),
+    );
+  } catch (error) {
+    console.error("[Decap OAuth] Callback failed", error);
+    res.clearCookie(DECAP_STATE_COOKIE, { path: "/" });
+    res.status(401).type("html").send(
+      renderDecapAuthResponse("error", {
+        error: "github_oauth_failed",
+        error_description:
+          error instanceof Error ? error.message : "GitHub authentication failed.",
+      }),
+    );
+  }
+}
+
 export function registerOAuthRoutes(app: Express) {
   app.get("/api/oauth/callback", async (req: Request, res: Response) => {
     const code = getQueryParam(req, "code");
@@ -165,66 +228,9 @@ export function registerOAuthRoutes(app: Express) {
     }
   });
 
-  app.get("/api/decap/auth", async (req: Request, res: Response) => {
-    try {
-      const origin = getRequestOrigin(req);
-      const state = crypto.randomBytes(24).toString("hex");
-      const secure = origin.startsWith("https://");
+  app.get("/api/decap/auth", handleDecapAuth);
+  app.get("/auth", handleDecapAuth);
 
-      res.cookie(DECAP_STATE_COOKIE, state, {
-        httpOnly: true,
-        sameSite: "lax",
-        secure,
-        path: "/",
-        maxAge: 10 * 60 * 1000,
-      });
-
-      res.redirect(302, buildDecapAuthorizeUrl(origin, state));
-    } catch (error) {
-      console.error("[Decap OAuth] Auth redirect failed", error);
-      res.status(500).send("Unable to start GitHub authentication for Decap CMS.");
-    }
-  });
-
-  app.get("/api/decap/callback", async (req: Request, res: Response) => {
-    const code = getQueryParam(req, "code");
-    const state = getQueryParam(req, "state");
-    const expectedState = getCookieValue(req, DECAP_STATE_COOKIE);
-
-    if (!code || !state || !expectedState || state !== expectedState) {
-      res
-        .status(400)
-        .type("html")
-        .send(
-          renderDecapAuthResponse("error", {
-            error: "invalid_oauth_state",
-            error_description: "The Decap CMS OAuth state is missing or invalid.",
-          }),
-        );
-      return;
-    }
-
-    try {
-      const origin = getRequestOrigin(req);
-      const token = await exchangeGithubCodeForToken(code, origin);
-
-      res.clearCookie(DECAP_STATE_COOKIE, { path: "/" });
-      res.status(200).type("html").send(
-        renderDecapAuthResponse("success", {
-          token,
-          provider: "github",
-        }),
-      );
-    } catch (error) {
-      console.error("[Decap OAuth] Callback failed", error);
-      res.clearCookie(DECAP_STATE_COOKIE, { path: "/" });
-      res.status(401).type("html").send(
-        renderDecapAuthResponse("error", {
-          error: "github_oauth_failed",
-          error_description:
-            error instanceof Error ? error.message : "GitHub authentication failed.",
-        }),
-      );
-    }
-  });
+  app.get("/api/decap/callback", handleDecapCallback);
+  app.get("/callback", handleDecapCallback);
 }
