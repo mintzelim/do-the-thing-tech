@@ -1,8 +1,7 @@
 ---
 id: '15'
 title: 'Free Tools for ADHD Task Management in 2026: Beyond DoTheThing'
-excerpt: A curated list of free tools and resources for ADHD task management, organization,
-  and productivity.
+excerpt: Every tool you need for a complete ADHD productivity system is free. This guide covers the best free ADHD task management tools in 2026 — organized by what they do and paired with where they fit in the DoTheThing workflow.
 date: April 28, 2026
 readTime: 12 min read
 category: Tools & Resources
