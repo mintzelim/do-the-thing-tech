@@ -367,10 +367,10 @@ export default function Home() {
             maxWidth: "400px",
             textAlign: "center",
           }}>
-            <h2 style={{ fontFamily: "'VT323', monospace", fontSize: "20px", marginBottom: "16px" }}>
+            <h2 style={{ fontFamily: "'VT323', monospace", fontSize: "24px", marginBottom: "16px" }}>
               UNSAVED TASKS
             </h2>
-            <p style={{ fontFamily: "'VT323', monospace", fontSize: "14px", marginBottom: "24px", color: "var(--pixel-text-light)" }}>
+            <p style={{ fontFamily: "'VT323', monospace", fontSize: "18px", marginBottom: "24px", color: "var(--pixel-text-light)" }}>
               You have incomplete tasks. Navigating away will lose your breakdown. Continue anyway?
             </p>
             <div style={{ display: "flex", gap: "12px", justifyContent: "center" }}>
@@ -386,7 +386,7 @@ export default function Home() {
                   color: "white",
                   fontFamily: "'VT323', monospace",
                   cursor: "pointer",
-                  fontSize: "12px",
+                  fontSize: "16px",
                 }}
               >
                 YES, LOSE IT
@@ -400,7 +400,7 @@ export default function Home() {
                   color: "white",
                   fontFamily: "'VT323', monospace",
                   cursor: "pointer",
-                  fontSize: "12px",
+                  fontSize: "16px",
                 }}
               >
                 CANCEL
@@ -503,12 +503,12 @@ export default function Home() {
                   padding: "12px",
                   marginBottom: "16px",
                   fontFamily: "'VT323', monospace",
-                  fontSize: "12px",
+                  fontSize: "16px",
                   color: "#c62828",
                 }}>
                   <div style={{ marginBottom: "8px" }}>ERROR: {error}</div>
                   {retryCount > 0 && (
-                    <div style={{ fontSize: "10px", opacity: 0.8, marginBottom: "8px" }}>
+                    <div style={{ fontSize: "14px", opacity: 0.8, marginBottom: "8px" }}>
                       Retry attempt {retryCount} of 3
                     </div>
                   )}
@@ -528,7 +528,7 @@ export default function Home() {
                         border: "1px solid #c62828",
                         padding: "4px 8px",
                         fontFamily: "'VT323', monospace",
-                        fontSize: "10px",
+                        fontSize: "14px",
                         cursor: "pointer",
                         marginTop: "4px",
                       }}
@@ -537,7 +537,7 @@ export default function Home() {
                     </button>
                   )}
                   {retryCount >= 3 && (
-                    <div style={{ fontSize: "10px", opacity: 0.8, marginTop: "4px" }}>
+                    <div style={{ fontSize: "14px", opacity: 0.8, marginTop: "4px" }}>
                       Max retries reached. Please try again later.
                     </div>
                   )}

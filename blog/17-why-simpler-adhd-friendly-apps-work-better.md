@@ -135,7 +135,7 @@ If you've abandoned more than two productivity apps in the past year, the proble
 
 ​[https://positivereseteatontown.com/task-initiation-adhd-understanding-the-science-behind-why-starting-feels-impossible/](https://positivereseteatontown.com/task-initiation-adhd-understanding-the-science-behind-why-starting-feels-impossible/)​
 
-​[https://do-the-thing-tech-dxx965bx1-min-8336bdd3.vercel.app/blog](https://do-the-thing-tech-dxx965bx1-min-8336bdd3.vercel.app/blog)​
+​[https://dothething.tech/blog](https://dothething.tech/blog)​
 
 ​[https://www.openpr.com/news/4462186/leading-companies-spearheading-innovation-and-growth-in](https://www.openpr.com/news/4462186/leading-companies-spearheading-innovation-and-growth-in)​
 

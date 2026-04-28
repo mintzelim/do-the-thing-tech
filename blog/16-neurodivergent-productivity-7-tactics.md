@@ -186,7 +186,7 @@ Absolutely. Strategies like shrinking the task, naming the freeze, and using ext
 
 ​[https://blog.cognifit.com/what-a-new-study-reveals-about-strengths-in-adults-with-adhd/](https://blog.cognifit.com/what-a-new-study-reveals-about-strengths-in-adults-with-adhd/)​
 
-​[https://do-the-thing-tech-dxx965bx1-min-8336bdd3.vercel.app/blog](https://do-the-thing-tech-dxx965bx1-min-8336bdd3.vercel.app/blog)​
+​[https://dothething.tech/blog](https://dothething.tech/blog)​
 
 ​[https://exceptionalindividuals.com/about-us/blog/why-neurodiverse-teams-can-be-30-more-productive/](https://exceptionalindividuals.com/about-us/blog/why-neurodiverse-teams-can-be-30-more-productive/)​
 

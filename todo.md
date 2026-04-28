@@ -589,3 +589,5 @@
 - [x] Ensure blog posts are displayed newest first and oldest last across the site
 - [x] Fix blog page script error caused by error-protection.js returning HTML instead of JavaScript
 - [x] Verify /blog loads without script errors after repairing error-protection.js
+- [x] Increase all VT font sizes by 4px across the site
+- [x] Replace DoTheThing backlinks in blog posts so they point to https://dothething.tech instead of Vercel URLs
