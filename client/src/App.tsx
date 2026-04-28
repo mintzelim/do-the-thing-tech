@@ -9,6 +9,7 @@ import { TimerProvider } from "./contexts/TimerContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
@@ -20,6 +21,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/current-tasks"} component={CurrentTasks} />
       <Route path={"/about"} component={About} />
+      <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/blog"} component={Blog} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/privacy"} component={Privacy} />

@@ -3,6 +3,7 @@ import fs from "fs";
 import { type Server } from "http";
 import { nanoid } from "nanoid";
 import path from "path";
+import { findBlogPostBySlug, injectBlogMetadata } from "../blog-metadata.js";
 
 export async function setupVite(app: Express, server: Server) {
   // Development only - dynamically import Vite to avoid loading in production
@@ -42,6 +43,17 @@ export async function setupVite(app: Express, server: Server) {
         `src="/src/main.tsx"`,
         `src="/src/main.tsx?v=${nanoid()}"`
       );
+      
+      // Inject blog metadata for blog post routes
+      const blogSlugMatch = url.match(/^\/blog\/([^/?]+)/);
+      if (blogSlugMatch) {
+        const slug = blogSlugMatch[1];
+        const post = findBlogPostBySlug(slug);
+        if (post) {
+          template = injectBlogMetadata(template, post);
+        }
+      }
+      
       const page = await vite.transformIndexHtml(url, template);
       res.status(200).set({ "Content-Type": "text/html" }).end(page);
     } catch (e) {
@@ -68,7 +80,25 @@ export function serveStatic(app: Express) {
   }));
 
   // SPA fallback - serve index.html for all non-file routes
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  app.use("*", (req, res) => {
+    try {
+      const indexPath = path.resolve(distPath, "index.html");
+      let template = fs.readFileSync(indexPath, "utf-8");
+      
+      // Inject blog metadata for blog post routes in production
+      const blogSlugMatch = req.originalUrl.match(/^\/blog\/([^/?]+)/);
+      if (blogSlugMatch) {
+        const slug = blogSlugMatch[1];
+        const post = findBlogPostBySlug(slug);
+        if (post) {
+          template = injectBlogMetadata(template, post);
+        }
+      }
+      
+      res.status(200).set({ "Content-Type": "text/html" }).end(template);
+    } catch (e) {
+      console.error("Error serving index.html:", e);
+      res.status(500).end("Internal Server Error");
+    }
   });
 }

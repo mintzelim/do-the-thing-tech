@@ -29,7 +29,13 @@ export default function Navigation() {
     return () => window.removeEventListener('storage', checkTasks);
   }, [location]);
 
-  const isActive = (path: string) => location === path;
+  const isActive = (path: string) => {
+    if (path === "/blog") {
+      // Blog is active for both /blog and /blog/:slug routes
+      return location === "/blog" || location.startsWith("/blog/");
+    }
+    return location === path;
+  };
 
   const navItems = [
     { path: "/", label: "HOME" },
