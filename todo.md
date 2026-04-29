@@ -23,3 +23,4 @@
 - [x] Implement localStorage versioning to safely migrate or clear old state when code changes
 - [x] Test cache-busting behavior locally and on production domain
 - [x] Add Google Tag Manager (GTM-576H3JGG) to track analytics and optimize AdSense performance
+- [x] Add Google Analytics 4 (GA4 - G-7GSBSS1DMV) for detailed event and conversion tracking
