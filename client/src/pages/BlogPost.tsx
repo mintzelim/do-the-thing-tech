@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useRoute } from "wouter";
+import { useRoute, useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BlogContentRenderer from "@/components/BlogContentRenderer";
@@ -20,6 +20,7 @@ type BlogPost = {
 };
 
 export default function BlogPost() {
+  const [, navigate] = useLocation();
   const [match, params] = useRoute("/blog/:slug");
   const [post, setPost] = useState<BlogPost | null>(null);
   const [allPosts, setAllPosts] = useState<BlogPost[]>([]);
@@ -190,7 +191,7 @@ export default function BlogPost() {
                   onInternalLinkClick={(postId) => {
                     const relatedPost = allPosts.find(p => p.id === postId);
                     if (relatedPost) {
-                      window.location.href = `/blog/${relatedPost.slug}`;
+                      navigate(`/blog/${relatedPost.slug}`, { replace: false });
                     }
                   }}
                 />

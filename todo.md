@@ -9,8 +9,9 @@
 - [x] Write and pass blog routing unit tests (7/7 passing)
 - [x] Test dynamic routing on production domain
 - [x] Update sitemap.xml to include individual blog post URLs (19 blog posts + 6 static pages)
-- [ ] Diagnose why deployed /blog/free-tools-2026 still serves stale content despite GitHub main containing the updated markdown
-- [ ] Verify whether deployed blog-posts.json and runtime HTML are sourced from the latest generated artifacts
-- [ ] Fix the deployment pipeline so GitHub markdown updates reliably appear on Vercel preview and dothething.tech
-- [ ] Re-test the affected post on both the Vercel preview URL and dothething.tech after the fix
+- [x] Diagnose why deployed /blog/free-tools-2026 still serves stale content despite GitHub main containing the updated markdown (root public/blog-posts.json was stale on Vercel)
+- [x] Verify whether deployed blog-posts.json and runtime HTML are sourced from the latest generated artifacts
+- [x] Fix the deployment pipeline so GitHub markdown updates reliably appear on Vercel preview and dothething.tech
+- [ ] Re-test the affected post on both the Vercel preview URL and dothething.tech after the fix (custom domain verified; Vercel preview requires authentication/user check)
 
+- [x] Fix the leave-page warning so it appears only on tab close or reload, not when opening blog posts or navigating within the site

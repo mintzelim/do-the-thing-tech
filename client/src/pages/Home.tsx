@@ -40,7 +40,6 @@ export default function Home() {
     stopTimer: globalStopTimer,
     adjustTime: globalAdjustTime,
   } = useTimer();
-  const [pendingNavigation, setPendingNavigation] = useState<string | null>(null);
   const [showPocketsFull, setShowPocketsFull] = useState(false);
   const clickSoundRef = useRef<HTMLAudioElement | null>(null);
 
@@ -168,13 +167,9 @@ export default function Home() {
     if (preset === "big") setGranularity(80);
   };
 
-  // Handle navigation with confirmation
+  // Internal site navigation should not trigger a leave warning.
   const handleNavigation = (path: string) => {
-    if (flowState === "breakdown" && steps.length > 0 && !steps.every(s => s.completed)) {
-      setPendingNavigation(path);
-    } else {
-      navigate(path);
-    }
+    navigate(path);
   };
 
   // Sync slider with presets when slider is manually adjusted
@@ -345,70 +340,6 @@ export default function Home() {
   return (
     <div className="mobile-frame">
       <Navigation />
-      
-      {/* Navigation Confirmation Dialog */}
-      {pendingNavigation && (
-        <div style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          zIndex: 1000,
-        }}>
-          <div style={{
-            backgroundColor: "var(--pixel-card-bg)",
-            border: "3px solid var(--pixel-border)",
-            padding: "24px",
-            maxWidth: "400px",
-            textAlign: "center",
-          }}>
-            <h2 style={{ fontFamily: "'VT323', monospace", fontSize: "24px", marginBottom: "16px" }}>
-              UNSAVED TASKS
-            </h2>
-            <p style={{ fontFamily: "'VT323', monospace", fontSize: "18px", marginBottom: "24px", color: "var(--pixel-text-light)" }}>
-              You have incomplete tasks. Navigating away will lose your breakdown. Continue anyway?
-            </p>
-            <div style={{ display: "flex", gap: "12px", justifyContent: "center" }}>
-              <button
-                onClick={() => {
-                  navigate(pendingNavigation);
-                  setPendingNavigation(null);
-                }}
-                style={{
-                  padding: "8px 16px",
-                  border: "2px solid var(--pixel-border)",
-                  backgroundColor: "var(--pixel-error)",
-                  color: "white",
-                  fontFamily: "'VT323', monospace",
-                  cursor: "pointer",
-                  fontSize: "16px",
-                }}
-              >
-                YES, LOSE IT
-              </button>
-              <button
-                onClick={() => setPendingNavigation(null)}
-                style={{
-                  padding: "8px 16px",
-                  border: "2px solid var(--pixel-border)",
-                  backgroundColor: "var(--pixel-accent)",
-                  color: "white",
-                  fontFamily: "'VT323', monospace",
-                  cursor: "pointer",
-                  fontSize: "16px",
-                }}
-              >
-                CANCEL
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
       
       <div className="mobile-content">
         {/* Flow: Input */}
