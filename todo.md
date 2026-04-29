@@ -13,7 +13,7 @@
 - [x] Verify whether deployed blog-posts.json and runtime HTML are sourced from the latest generated artifacts
 - [x] Fix the deployment pipeline so GitHub markdown updates reliably appear on Vercel preview and dothething.tech
 - [x] Re-test the affected post on dothething.tech after the fix (verified: free-tools-2026 now shows updated April 28 date and new excerpt)
-- [ ] Re-test the affected post on the Vercel preview URL (currently blocked by Vercel authentication)
+- [ ] Re-test the affected post on the Vercel preview URL (currently blocked by Vercel authentication - awaiting user browser takeover or preview protection disabling)
 
 - [x] Fix the leave-page warning so it appears only on tab close or reload, not when opening blog posts or navigating within the site
 
@@ -22,3 +22,4 @@
 - [x] Add cache-busting headers and asset versioning to prevent stale cached content on deployments
 - [x] Implement localStorage versioning to safely migrate or clear old state when code changes
 - [x] Test cache-busting behavior locally and on production domain
+- [x] Add Google Tag Manager (GTM-576H3JGG) to track analytics and optimize AdSense performance
