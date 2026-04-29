@@ -12,6 +12,13 @@
 - [x] Diagnose why deployed /blog/free-tools-2026 still serves stale content despite GitHub main containing the updated markdown (root public/blog-posts.json was stale on Vercel)
 - [x] Verify whether deployed blog-posts.json and runtime HTML are sourced from the latest generated artifacts
 - [x] Fix the deployment pipeline so GitHub markdown updates reliably appear on Vercel preview and dothething.tech
-- [ ] Re-test the affected post on both the Vercel preview URL and dothething.tech after the fix (custom domain verified; Vercel preview requires authentication/user check)
+- [x] Re-test the affected post on dothething.tech after the fix (verified: free-tools-2026 now shows updated April 28 date and new excerpt)
+- [ ] Re-test the affected post on the Vercel preview URL (currently blocked by Vercel authentication)
 
 - [x] Fix the leave-page warning so it appears only on tab close or reload, not when opening blog posts or navigating within the site
+
+## Cache & Persistence Management
+
+- [x] Add cache-busting headers and asset versioning to prevent stale cached content on deployments
+- [x] Implement localStorage versioning to safely migrate or clear old state when code changes
+- [x] Test cache-busting behavior locally and on production domain

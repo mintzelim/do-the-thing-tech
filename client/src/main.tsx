@@ -3,8 +3,21 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { httpBatchLink } from "@trpc/client";
 import { createRoot } from "react-dom/client";
 import superjson from "superjson";
+import { initializeStorageVersion } from "@/lib/storageVersion";
 import App from "./App";
 import "./index.css";
+
+// Initialize storage versioning to clear stale state on deployments
+initializeStorageVersion();
+
+// Add cache-busting headers to prevent stale assets
+if (typeof window !== "undefined") {
+  // Force browsers to revalidate cached assets on each visit
+  const meta = document.createElement("meta");
+  meta.httpEquiv = "Cache-Control";
+  meta.content = "no-cache, no-store, must-revalidate";
+  document.head.appendChild(meta);
+}
 
 const queryClient = new QueryClient();
 

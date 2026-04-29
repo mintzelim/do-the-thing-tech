@@ -31,6 +31,26 @@ async function findAvailablePort(startPort: number = 3000): Promise<number> {
 async function startServer() {
   const app = express();
   const server = createServer(app);
+  
+  // Cache-busting middleware: Set appropriate cache headers
+  app.use((req, res, next) => {
+    // HTML files: no cache, always revalidate
+    if (req.path.endsWith(".html") || req.path === "/") {
+      res.set("Cache-Control", "no-cache, no-store, must-revalidate");
+      res.set("Pragma", "no-cache");
+      res.set("Expires", "0");
+    }
+    // JSON files (blog-posts.json, etc): short cache with revalidation
+    else if (req.path.endsWith(".json")) {
+      res.set("Cache-Control", "public, max-age=3600, must-revalidate");
+    }
+    // Static assets (JS, CSS, images): long cache with versioning
+    else if (/\.(js|css|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/i.test(req.path)) {
+      res.set("Cache-Control", "public, max-age=31536000, immutable");
+    }
+    next();
+  });
+  
   // Configure body parser with larger size limit for file uploads
   app.use(express.json({ limit: "50mb" }));
   app.use(express.urlencoded({ limit: "50mb", extended: true }));
