@@ -65,7 +65,7 @@ export default function PinTabTutorial({ showAfterBreakdown = false, alwaysShowO
           </div>
           
           <div className="flex-1">
-            <p className="font-vt323 text-sm text-foreground leading-tight mb-3">
+            <p className="font-vt323 text-lg text-foreground leading-tight mb-3">
               Pro Tip: Pin this tab so I stay safe while you work!
             </p>
             <p className="font-vt323 text-xs text-muted-foreground mb-3">

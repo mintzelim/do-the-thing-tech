@@ -133,19 +133,7 @@ export default function Home() {
     }
   };
 
-  // Tab close confirmation
-  useEffect(() => {
-    const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-      if ((steps.length > 0 && flowState === "breakdown") || globalTimerActive) {
-        e.preventDefault();
-        e.returnValue = "";
-        return "";
-      }
-    };
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-    return () => window.removeEventListener("beforeunload", handleBeforeUnload);
-  }, [steps, flowState, globalTimerActive]);
+  // Tab close confirmation removed - no leave-page warnings
 
   // Global timer is managed by TimerContext
 

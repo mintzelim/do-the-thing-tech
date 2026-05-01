@@ -3,7 +3,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
-import BeforeUnloadModal from "./components/BeforeUnloadModal";
+// BeforeUnloadModal removed - no leave-page warnings
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { TimerProvider } from "./contexts/TimerContext";
 import Home from "./pages/Home";
@@ -39,7 +39,7 @@ function App() {
         <TimerProvider>
           <TooltipProvider>
             <Toaster />
-            <BeforeUnloadModal />
+            {/* BeforeUnloadModal removed - no leave-page warnings */}
             <main className="flex-1 flex flex-col">
               <Router />
             </main>

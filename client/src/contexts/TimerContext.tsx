@@ -46,7 +46,17 @@ export function TimerProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     const savedState = localStorage.getItem("doTheThing_state");
-    const parsed = savedState ? JSON.parse(savedState) : {};
+    let parsed: any = {};
+    
+    if (savedState) {
+      try {
+        parsed = JSON.parse(savedState);
+      } catch (error) {
+        console.error("[Timer] Failed to parse saved state, clearing corrupted data:", error);
+        localStorage.removeItem("doTheThing_state");
+        parsed = {};
+      }
+    }
 
     parsed.timeRemaining = timeRemaining;
     parsed.timerActive = timerActive;
@@ -107,7 +117,15 @@ export function TimerProvider({ children }: { children: ReactNode }) {
     
     // Save start timestamp for recovery
     const savedState = localStorage.getItem("doTheThing_state");
-    const parsed = savedState ? JSON.parse(savedState) : {};
+    let parsed: any = {};
+    if (savedState) {
+      try {
+        parsed = JSON.parse(savedState);
+      } catch (error) {
+        console.error("[Timer] Failed to parse saved state in startTimer:", error);
+        parsed = {};
+      }
+    }
     parsed.timerStartTimestamp = Date.now();
     localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
   };
@@ -122,9 +140,14 @@ export function TimerProvider({ children }: { children: ReactNode }) {
     // Clear timer timestamp when stopped
     const savedState = localStorage.getItem("doTheThing_state");
     if (savedState) {
-      const parsed = JSON.parse(savedState);
-      delete parsed.timerStartTimestamp;
-      localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
+      try {
+        const parsed = JSON.parse(savedState);
+        delete parsed.timerStartTimestamp;
+        localStorage.setItem("doTheThing_state", JSON.stringify(parsed));
+      } catch (error) {
+        console.error("[Timer] Failed to parse saved state in stopTimer:", error);
+        localStorage.removeItem("doTheThing_state");
+      }
     }
   };
 
