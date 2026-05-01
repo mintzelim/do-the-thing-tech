@@ -1,5 +1,5 @@
 ---
-id: 0
+id: 19
 title: "ADHD Morning Routine When You Have Zero Motivation: The Minimum Viable Morning"
 description: "Forget the 12-step plan. Here's the ADHD morning routine for when you have no motivation — the Minimum Viable Morning, backed by neuroscience."
 slug: "/adhd-morning-routine-no-motivation"
