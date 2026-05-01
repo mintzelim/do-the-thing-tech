@@ -69,7 +69,7 @@ If you're searching for an ADHD morning routine when you have no motivation, thi
 
 Motivation is not the entry point for an ADHD brain. Momentum is. If you're waiting to feel ready before getting up, you'll be waiting for a signal that your brain's wiring makes genuinely difficult to generate on demand.
 
-Research published in *[Motivation Deficit in ADHD is Associated with Dysfunction of the Dopamine Reward Pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC3010326/)* (Volkow et al., 2011) used PET imaging to show decreased function in the brain's dopamine reward pathway in adults with ADHD — the exact system responsible for feeling motivated to start something. This isn't a mindset problem. It's a neurological one.
+Research published in *[Motivation Deficit in ADHD is Associated with Dysfunction of the Dopamine Reward Pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC3010326/)* used PET imaging to show decreased function in the brain's dopamine reward pathway in adults with ADHD — the exact system responsible for feeling motivated to start something. This isn't a mindset problem. It's a neurological one.
 
 What this means practically: the ADHD brain doesn't generate motivation before a task begins. It generates it during or after movement. Action comes first. The dopamine follows. Every piece of your morning routine needs to be built around this sequence — not the neurotypical version where you feel motivated, then act.
 
@@ -81,7 +81,7 @@ The shame spiral that tends to accompany ADHD mornings makes this worse. When yo
 
 ADHD mornings are not harder because you're undisciplined. They're harder because of biology that affects the majority of people with the diagnosis.
 
-According to research published in *[Frontiers in Psychiatry](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full)* (2025), an estimated 73–78% of adults with ADHD have a delayed sleep/wake cycle — a circadian rhythm running significantly behind the conventional clock. Melatonin onset is delayed by approximately 90 minutes compared to neurotypical adults. That means when a standard alarm fires at 7am, your brain is physiologically closer to 5:30am. Executive function is offline. Decision-making is impaired. Task initiation feels physically impossible.
+According to research published in *[Frontiers in Psychiatry](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full)*, an estimated 73–78% of adults with ADHD have a delayed sleep/wake cycle — a circadian rhythm running significantly behind the conventional clock. Melatonin onset is delayed by approximately 90 minutes compared to neurotypical adults. That means when a standard alarm fires at 7am, your brain is physiologically closer to 5:30am. Executive function is offline. Decision-making is impaired. Task initiation feels physically impossible.
 
 This is also where time blindness compounds the problem. When your circadian rhythm is delayed and your executive function is degraded, accurately sensing how much time has passed — or how long getting ready will take — becomes nearly impossible. The result isn't just a slow start. It's a cascading series of missed transitions that can derail the entire morning before you've left the bedroom.
 
