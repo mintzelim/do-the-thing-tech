@@ -27,7 +27,7 @@ sources:
   - title: "ADDA — Attention Deficit Disorder Association"
     url: "https://add.org/"
 relatedPosts:
-  - 0
+  - 18
   - 0
   - 0
 faq:
@@ -184,7 +184,7 @@ Two actions. That's it.
 
 **2. Name one thing out loud.** Say the name of one task you need to do today. Out loud. To no one. Just say it. "I need to send that email." Externalising the thought converts it from an abstract pressure into a concrete object — one of the core strategies recommended by [ADDA (Attention Deficit Disorder Association)](https://add.org/) for managing executive dysfunction in daily life.
 
-If you do those two things, the morning counts. You're not behind. You're not failing. You started differently than planned, and that's allowed. The [INTERNAL LINK: anchor → /adhd-self-compassion-productivity] research on shame and ADHD consistently shows that self-criticism after a routine failure makes the next attempt harder, not easier. Call the circuit breaker a win and move into the day.
+If you do those two things, the morning counts. You're not behind. You're not failing. You started differently than planned, and that's allowed. [Shame and lack of self-acceptance](https://dothething.tech/blog/one-task-is-enough-simple-self-acceptance) consistently shows that self-criticism after a routine failure makes the next attempt harder, not easier. Call the circuit breaker a win and move into the day.
 
 ---
 
