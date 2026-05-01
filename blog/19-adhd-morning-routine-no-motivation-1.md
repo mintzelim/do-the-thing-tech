@@ -69,7 +69,7 @@ If you're searching for an ADHD morning routine when you have no motivation, thi
 
 Motivation is not the entry point for an ADHD brain. Momentum is. If you're waiting to feel ready before getting up, you'll be waiting for a signal that your brain's wiring makes genuinely difficult to generate on demand.
 
-[INTERNAL LINK: anchor → /adhd-dopamine-explained] Research published in *[Motivation Deficit in ADHD is Associated with Dysfunction of the Dopamine Reward Pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC3010326/)* (Volkow et al., 2011) used PET imaging to show decreased function in the brain's dopamine reward pathway in adults with ADHD — the exact system responsible for feeling motivated to start something. This isn't a mindset problem. It's a neurological one.
+Research published in *[Motivation Deficit in ADHD is Associated with Dysfunction of the Dopamine Reward Pathway](https://pmc.ncbi.nlm.nih.gov/articles/PMC3010326/)* (Volkow et al., 2011) used PET imaging to show decreased function in the brain's dopamine reward pathway in adults with ADHD — the exact system responsible for feeling motivated to start something. This isn't a mindset problem. It's a neurological one.
 
 What this means practically: the ADHD brain doesn't generate motivation before a task begins. It generates it during or after movement. Action comes first. The dopamine follows. Every piece of your morning routine needs to be built around this sequence — not the neurotypical version where you feel motivated, then act.
 
