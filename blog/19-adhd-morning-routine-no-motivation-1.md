@@ -146,7 +146,7 @@ The dopamine on-ramp is not a reward for completing your morning — it's the ig
 
 This is where the morning connects to the day. Not your full to-do list. Not your priorities ranked 1–10. One task. The single thing that would make today feel like it moved forward.
 
-Open DoTheThing and name that one task. Let it help you break it into the actual first step — not "write the report" but "open the document". The [INTERNAL LINK: anchor → /how-dothethingg-breaks-down-tasks] distinction matters because ADHD task paralysis almost always lives in the gap between the abstract task name and the concrete first action. DoTheThing closes that gap before the day starts, so when you sit down to work, you already know where to put your hands.
+Open DoTheThing and name that one task. Let it help you break it into the actual first step — not "write the report" but "open the document". [How DoTheThing breaks down tasks](https://dothething.tech/blog/how-to-break-down-tasks-adhd) matters here because ADHD task paralysis almost always lives in the gap between the abstract task name and the concrete first action. DoTheThing closes that gap before the day starts, so when you sit down to work, you already know where to put your hands.
 
 This step takes under two minutes and functions as external working memory — it offloads the cognitive weight of "figuring out what to do" so your brain doesn't have to carry it through breakfast, getting dressed, and out the door.
 
