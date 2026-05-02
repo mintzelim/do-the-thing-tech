@@ -4,7 +4,7 @@ title: "How ADHD Affects Task Management"
 description: "ADHD brains run on different neurochemistry. Traditional task management was built for a different brain. Here's the science — and what actually works instead."
 slug: "/how-adhd-affects-task-management"
 excerpt: "Understanding the neuroscience behind executive dysfunction and why traditional task management fails for ADHD brains."
-date: "April 15, 2024"
+date: "April 15, 2026"
 readTime: "8 min read"
 category: "ADHD Education"
 seoKeywords:
