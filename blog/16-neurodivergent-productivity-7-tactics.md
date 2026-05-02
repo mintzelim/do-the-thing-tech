@@ -178,8 +178,6 @@ Traditional tools assume functional executive function: they give you lists, cal
 
 Absolutely. Strategies like shrinking the task, naming the freeze, and using external prompts translate directly to guiding others through overwhelm. In fact, walking someone else through a micro-tactic often activates your own executive function through social cognition, making it a two-for-one approach when both of you are stuck.
 
-## Sources
-
 ​[https://www.eurekalert.org/news-releases/1035436](https://www.eurekalert.org/news-releases/1035436)​
 
 ​[https://www.aiprm.com/ai-in-workplace-statistics/](https://www.aiprm.com/ai-in-workplace-statistics/)​

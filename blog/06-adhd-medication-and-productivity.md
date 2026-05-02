@@ -199,8 +199,6 @@ No — and this is one of the most important things to understand about ADHD med
 
 ---
 
-## Sources
-
 https://pmc.ncbi.nlm.nih.gov/articles/PMC11604610/
 https://www.ncbi.nlm.nih.gov/books/NBK610422/
 https://pmc.ncbi.nlm.nih.gov/articles/PMC3733520/

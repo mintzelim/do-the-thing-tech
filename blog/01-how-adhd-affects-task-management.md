@@ -238,8 +238,6 @@ Three approaches have strong evidence: breaking tasks into micro-steps (removes 
 
 ---
 
-## Sources
-
 https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12303959/
 https://theconversation.com/adhd-brains-present-unique-challenges-but-the-condition-is-highly-treatable-a-primary-care-nurse-practitioner-with-adhd-explains-the-science-230062

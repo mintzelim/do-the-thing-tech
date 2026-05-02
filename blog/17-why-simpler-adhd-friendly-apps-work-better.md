@@ -133,8 +133,6 @@ Prioritize instant-start task breakdown features, visual progress indicators, an
 
 If you've abandoned more than two productivity apps in the past year, the problem likely isn't commitment. It's friction. Look for tools with lower initiation costs rather than more powerful features.
 
-## Sources
-
 ​[https://www.marketreportsworld.com/market-reports/adhd-apps-market-14713447](https://www.marketreportsworld.com/market-reports/adhd-apps-market-14713447)​
 
 ​[https://positivereseteatontown.com/task-initiation-adhd-understanding-the-science-behind-why-starting-feels-impossible/](https://positivereseteatontown.com/task-initiation-adhd-understanding-the-science-behind-why-starting-feels-impossible/)​

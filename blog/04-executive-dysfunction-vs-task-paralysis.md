@@ -205,8 +205,6 @@ Start with the emotion, not the task. Name what you're feeling — overwhelm, an
 
 ---
 
-## Sources
-
 https://pmc.ncbi.nlm.nih.gov/articles/PMC10827919/
 https://add.org/adhd-paralysis/
 https://add.org/the-body-double/

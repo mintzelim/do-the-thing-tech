@@ -124,8 +124,6 @@ Most self-compassion content treats it as a mental health practice separate from
 
 That feeling is the old system talking. A completed "small" task builds more confidence and resilience than an ambitious list you abandoned. [Research shows regular achievement tracking, even of small wins, increases self-efficacy by 35%.](https://inchealthy.com/celebrating-small-wins/)​
 
-## Sources
-
 ​[https://www.stress.org/news/80-of-employees-report-productivity-anxiety-and-lower-well-being-in-new-study/](https://www.stress.org/news/80-of-employees-report-productivity-anxiety-and-lower-well-being-in-new-study/)​
 
 ​[https://pmc.ncbi.nlm.nih.gov/articles/PMC6119549/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6119549/)​

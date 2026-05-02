@@ -75,3 +75,5 @@
 - [x] Ensure internal links are touch-friendly on mobile (44px min-height, onTouchStart/End handlers)
 - [x] Add word-spacing and improved letter-spacing for better readability
 - [x] Create vitest tests for mobile optimization (18 tests passing)
+- [x] Remove raw sources sections from all blog posts (11 posts cleaned)
+- [x] Regenerate blog-posts.json without duplicate source URLs

@@ -286,14 +286,4 @@ DoTheThing uses AI to break any task into micro-steps with realistic, time-buffe
 
 Micro-steps are small, specific, action-oriented tasks that take 2 to 15 minutes each. They work for ADHD brains because they eliminate ambiguity. Your brain knows exactly what to do next without having to generate a plan first. Each completed step provides a dopamine reward that builds momentum for the next one. The research is consistent: smaller steps reduce cognitive load and improve task initiation in people with executive dysfunction.
 
----
 
-## Sources
-
-https://pmc.ncbi.nlm.nih.gov/articles/PMC2894421/
-https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
-https://chadd.org/about-adhd/general-prevalence/
-https://add.org/adhd-paralysis/
-https://pmc.ncbi.nlm.nih.gov/articles/PMC7916320/
-https://sachscenter.com/adhd-strategies-for-adults/
-https://www.helloklarity.com/post/breaking-the-first-step-barrier-how-micro-steps-can-help-adhd-brains-overcome-task-initiation-problems/

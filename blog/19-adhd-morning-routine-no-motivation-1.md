@@ -258,8 +258,6 @@ On a bad day, under 10 minutes is the target for the Minimum Viable Morning. On 
 
 ---
 
-## Sources
-
 https://pmc.ncbi.nlm.nih.gov/articles/PMC3010326/
 https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2025.1697900/full
 https://pmc.ncbi.nlm.nih.gov/articles/PMC9475894/

@@ -255,8 +255,6 @@ Yes. You don't need to organise your thoughts first. Type everything on your pla
 
 ---
 
-## Sources
-
 https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
 https://chadd.org/adhd-in-the-news/6-ways-to-combat-procrastination-for-adults-with-adhd/
 https://add.org/impact-of-adhd-at-work/

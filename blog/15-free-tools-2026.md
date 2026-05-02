@@ -304,8 +304,6 @@ Learn more about [how DoTheThing breaks down tasks](/www.dothething.tech/about),
 
 ---
 
-## Sources
-
 https://todoist.com/
 https://www.notion.so/
 https://focusmate.com/

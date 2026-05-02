@@ -232,8 +232,6 @@ Time blindness responds well to external compensation strategies rather than int
 
 ---
 
-## Sources
-
 https://add.org/adhd-time-blindness/
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9962130/
 https://pmc.ncbi.nlm.nih.gov/articles/PMC8293837/

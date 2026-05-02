@@ -233,8 +233,6 @@ Most task apps require you to do the breakdown yourself — they're organisers, 
 
 ---
 
-## Sources
-
 https://add.org/adhd-tools-for-adults/
 https://www.getinflow.io/post/best-apps-for-adhd
 https://www.healthline.com/health/adhd/body-double-adhd
