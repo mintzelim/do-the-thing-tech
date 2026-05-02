@@ -127,6 +127,7 @@ function generateBreadcrumbSchema(post: BlogPost, baseUrl: string): string {
 
 /**
  * Inject blog post metadata and schema markup into HTML template
+ * Replaces default site-wide metadata with post-specific metadata
  */
 export function injectBlogMetadata(
   htmlTemplate: string,
@@ -135,16 +136,12 @@ export function injectBlogMetadata(
 ): string {
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const keywords = post.seoKeywords.join(", ");
+  const ogImage = `${baseUrl}/og-image.png`;
   
   // Generate schema markup
   const blogPostSchema = generateBlogPostSchema(post, baseUrl);
   const breadcrumbSchema = generateBreadcrumbSchema(post, baseUrl);
-  const schemaMarkup = `
-    <script type="application/ld+json">${blogPostSchema}</script>
-    <script type="application/ld+json">${breadcrumbSchema}</script>
-  `;
 
-  // Replace the default title and meta tags
   let result = htmlTemplate;
   
   // Replace title tag
@@ -165,7 +162,69 @@ export function injectBlogMetadata(
     `<meta name="keywords" content="${escapeHtml(keywords)}" />`
   );
 
+  // Replace canonical URL (remove site-wide, add post-specific)
+  result = result.replace(
+    /<link rel="canonical" href="[^"]*" \/>/,
+    `<link rel="canonical" href="${postUrl}" />`
+  );
+
+  // Replace Open Graph tags (remove site-wide, add post-specific)
+  result = result.replace(
+    /<meta property="og:type" content="[^"]*" \/>/,
+    `<meta property="og:type" content="article" />`
+  );
+  result = result.replace(
+    /<meta property="og:url" content="[^"]*" \/>/,
+    `<meta property="og:url" content="${postUrl}" />`
+  );
+  result = result.replace(
+    /<meta property="og:title" content="[^"]*" \/>/,
+    `<meta property="og:title" content="${escapeHtml(post.title)}" />`
+  );
+  result = result.replace(
+    /<meta property="og:description" content="[^"]*" \/>/,
+    `<meta property="og:description" content="${escapeHtml(post.excerpt)}" />`
+  );
+  result = result.replace(
+    /<meta property="og:image" content="[^"]*" \/>/,
+    `<meta property="og:image" content="${ogImage}" />`
+  );
+
+  // Add article-specific Open Graph tags if not present
+  if (!result.includes('property="article:published_time"')) {
+    const articleOgTags = `    <meta property="article:published_time" content="${new Date(post.date).toISOString()}" />
+    <meta property="article:section" content="${escapeHtml(post.category)}" />
+    `;
+    result = result.replace(/<meta property="og:image"[^>]*\/>/, `$&\n${articleOgTags}`);
+  }
+
+  // Replace Twitter Card tags (remove site-wide, add post-specific)
+  result = result.replace(
+    /<meta name="twitter:card" content="[^"]*" \/>/,
+    `<meta name="twitter:card" content="summary_large_image" />`
+  );
+  result = result.replace(
+    /<meta name="twitter:url" content="[^"]*" \/>/,
+    `<meta name="twitter:url" content="${postUrl}" />`
+  );
+  result = result.replace(
+    /<meta name="twitter:title" content="[^"]*" \/>/,
+    `<meta name="twitter:title" content="${escapeHtml(post.title)}" />`
+  );
+  result = result.replace(
+    /<meta name="twitter:description" content="[^"]*" \/>/,
+    `<meta name="twitter:description" content="${escapeHtml(post.excerpt)}" />`
+  );
+  result = result.replace(
+    /<meta name="twitter:image" content="[^"]*" \/>/,
+    `<meta name="twitter:image" content="${ogImage}" />`
+  );
+
   // Inject schema markup before closing </head>
+  const schemaMarkup = `
+    <script type="application/ld+json">${blogPostSchema}</script>
+    <script type="application/ld+json">${breadcrumbSchema}</script>
+  `;
   result = result.replace(
     /<\/head>/,
     `${schemaMarkup}</head>`

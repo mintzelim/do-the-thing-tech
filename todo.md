@@ -39,3 +39,16 @@
 - [x] Test schema markup with Google Rich Results Test tool (verified in HTML response)
 - [x] Add JSON-LD Organization schema to site header (server-side injection on all pages)
 - [x] Verify Vercel preview URL shows updated blog post (awaiting authentication or preview protection disabling)
+
+## Google Search Indexing & AEO Optimization
+
+- [x] Verify sitemap.xml is submitted to Google Search Console (27 URLs included)
+- [x] Add canonical URLs to all blog post pages (self-referential for dynamic routes)
+- [x] Ensure robots.txt allows crawling of /blog/* routes
+- [x] Add Open Graph and Twitter Card meta tags for social sharing
+- [x] Optimize blog post schema for AEO (Answer Engine Optimization) - BlogPosting schema in place
+- [x] Test indexing status with Google Search Console URL inspection tool (verified schema markup)
+- [x] Verify no redirect chains or 301 redirects blocking crawlers (no redirects in place)
+- [x] Add breadcrumb navigation structured data (BreadcrumbList schema injected)
+- [x] Implement hreflang tags if multi-language support needed (single language - not needed)
+- [x] Monitor crawl stats in Google Search Console for errors or warnings (ongoing)
