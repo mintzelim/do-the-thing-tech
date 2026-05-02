@@ -36,4 +36,5 @@
 - [x] Add JSON-LD BlogPosting schema to blog posts (server-side injection)
 - [x] Add JSON-LD Breadcrumb schema for navigation (server-side injection)
 - [x] Test schema markup with Google Rich Results Test tool (verified in HTML response)
-- [ ] Add JSON-LD Organization schema to site header (optional, for future implementation)
+- [x] Add JSON-LD Organization schema to site header (client-side injection on app load)
+- [ ] Verify Vercel preview URL shows updated blog post (awaiting authentication or preview protection disabling)

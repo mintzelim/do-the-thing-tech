@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -33,6 +34,33 @@ function Router() {
 }
 
 function App() {
+  // Inject Organization schema on app load
+  useEffect(() => {
+    const organizationSchema = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "DoTheThing",
+      url: "https://dothething.tech",
+      logo: "https://dothething.tech/favicon.ico",
+      description: "Break down overwhelming tasks into manageable steps with AI-powered task management for ADHD",
+      contactPoint: {
+        "@type": "ContactPoint",
+        contactType: "Customer Support",
+        url: "https://dothething.tech/contact",
+      },
+    };
+
+    // Check if schema already exists
+    const existingSchema = document.querySelector('script[id="org-schema"]');
+    if (!existingSchema) {
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.id = "org-schema";
+      script.textContent = JSON.stringify(organizationSchema);
+      document.head.appendChild(script);
+    }
+  }, []);
+
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
