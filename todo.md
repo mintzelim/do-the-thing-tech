@@ -30,3 +30,10 @@
 - [x] Remove all leave-page warnings and native dialogs (no pop-up when clicking blog posts)
 - [x] Increase Pro Tip font size by 4px for better visibility
 - [x] Fix blank page on first load (should show immediately without refresh needed)
+
+## Schema Markup & SEO
+
+- [x] Add JSON-LD BlogPosting schema to blog posts (server-side injection)
+- [x] Add JSON-LD Breadcrumb schema for navigation (server-side injection)
+- [x] Test schema markup with Google Rich Results Test tool (verified in HTML response)
+- [ ] Add JSON-LD Organization schema to site header (optional, for future implementation)

@@ -54,7 +54,79 @@ export function findBlogPostBySlug(slug: string): BlogPost | undefined {
 }
 
 /**
- * Inject blog post metadata into HTML template
+ * Generate JSON-LD BlogPosting schema for a blog post
+ */
+function generateBlogPostSchema(post: BlogPost, baseUrl: string): string {
+  const postUrl = `${baseUrl}/blog/${post.slug}`;
+  const dateObj = new Date(post.date);
+  const isoDate = dateObj.toISOString();
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.excerpt,
+    image: `${baseUrl}/og-image.png`,
+    datePublished: isoDate,
+    dateModified: isoDate,
+    author: {
+      "@type": "Organization",
+      name: "DoTheThing",
+      url: baseUrl,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "DoTheThing",
+      logo: {
+        "@type": "ImageObject",
+        url: `${baseUrl}/favicon.ico`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": postUrl,
+    },
+    keywords: post.seoKeywords.join(", "),
+    articleSection: post.category,
+  };
+
+  return JSON.stringify(schema);
+}
+
+/**
+ * Generate JSON-LD BreadcrumbList schema for navigation
+ */
+function generateBreadcrumbSchema(post: BlogPost, baseUrl: string): string {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: baseUrl,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Blog",
+        item: `${baseUrl}/blog`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: post.title,
+        item: `${baseUrl}/blog/${post.slug}`,
+      },
+    ],
+  };
+
+  return JSON.stringify(schema);
+}
+
+/**
+ * Inject blog post metadata and schema markup into HTML template
  */
 export function injectBlogMetadata(
   htmlTemplate: string,
@@ -64,20 +136,12 @@ export function injectBlogMetadata(
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const keywords = post.seoKeywords.join(", ");
   
-  // Create metadata tags
-  const metaTags = `
-    <title>${post.title} | DoTheThing Blog</title>
-    <meta name="description" content="${escapeHtml(post.excerpt)}" />
-    <meta name="keywords" content="${escapeHtml(keywords)}" />
-    <meta name="og:title" content="${escapeHtml(post.title)}" />
-    <meta name="og:description" content="${escapeHtml(post.excerpt)}" />
-    <meta name="og:type" content="article" />
-    <meta name="og:url" content="${postUrl}" />
-    <meta name="article:published_time" content="${post.date}" />
-    <meta name="article:section" content="${escapeHtml(post.category)}" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="${escapeHtml(post.title)}" />
-    <meta name="twitter:description" content="${escapeHtml(post.excerpt)}" />
+  // Generate schema markup
+  const blogPostSchema = generateBlogPostSchema(post, baseUrl);
+  const breadcrumbSchema = generateBreadcrumbSchema(post, baseUrl);
+  const schemaMarkup = `
+    <script type="application/ld+json">${blogPostSchema}</script>
+    <script type="application/ld+json">${breadcrumbSchema}</script>
   `;
 
   // Replace the default title and meta tags
@@ -99,6 +163,12 @@ export function injectBlogMetadata(
   result = result.replace(
     /<meta name="keywords" content="[^"]*" \/>/,
     `<meta name="keywords" content="${escapeHtml(keywords)}" />`
+  );
+
+  // Inject schema markup before closing </head>
+  result = result.replace(
+    /<\/head>/,
+    `${schemaMarkup}</head>`
   );
 
   return result;

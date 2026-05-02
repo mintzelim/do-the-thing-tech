@@ -3,6 +3,7 @@ import { useRoute, useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BlogContentRenderer from "@/components/BlogContentRenderer";
+import { generateBlogPostingSchema, generateArticleSchema, generateBreadcrumbSchema, injectSchemaMarkup } from "@/lib/schemaMarkup";
 import "../pixel-art-refined.css";
 
 type BlogPost = {
@@ -64,6 +65,15 @@ export default function BlogPost() {
         if (metaDescription) {
           metaDescription.setAttribute('content', foundPost.excerpt);
         }
+
+        // Inject JSON-LD schema markup for SEO and rich snippets
+        const siteUrl = window.location.origin;
+        const schemas = [
+          generateBlogPostingSchema(foundPost, siteUrl),
+          generateArticleSchema(foundPost, siteUrl),
+          generateBreadcrumbSchema(foundPost, siteUrl),
+        ];
+        injectSchemaMarkup(schemas);
       } else {
         setError('Blog post not found.');
       }
