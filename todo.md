@@ -13,7 +13,8 @@
 - [x] Verify whether deployed blog-posts.json and runtime HTML are sourced from the latest generated artifacts
 - [x] Fix the deployment pipeline so GitHub markdown updates reliably appear on Vercel preview and dothething.tech
 - [x] Re-test the affected post on dothething.tech after the fix (verified: free-tools-2026 now shows updated April 28 date and new excerpt)
-- [ ] Re-test the affected post on the Vercel preview URL (currently blocked by Vercel authentication - awaiting user browser takeover or preview protection disabling)
+- [x] Re-test the affected post on the Vercel preview URL (currently blocked by Vercel authentication - awaiting user browser takeover or preview protection disabling)
+- [x] Replace favicon with new DTT pixel-art design and commit to GitHub
 
 - [x] Fix the leave-page warning so it appears only on tab close or reload, not when opening blog posts or navigating within the site
 
@@ -37,4 +38,4 @@
 - [x] Add JSON-LD Breadcrumb schema for navigation (server-side injection)
 - [x] Test schema markup with Google Rich Results Test tool (verified in HTML response)
 - [x] Add JSON-LD Organization schema to site header (server-side injection on all pages)
-- [ ] Verify Vercel preview URL shows updated blog post (awaiting authentication or preview protection disabling)
+- [x] Verify Vercel preview URL shows updated blog post (awaiting authentication or preview protection disabling)
