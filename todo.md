@@ -64,3 +64,14 @@
 - [x] Verify all 8 FAQ-enabled posts have correct schema (32 total Q&A pairs across all posts)
 - [x] Add internal links to remaining 12 blog posts (30 total internal links across 20 posts)
 - [x] Verify internal links render correctly in all posts (9 posts with 30 total contextual links)
+
+
+## Mobile Optimization
+
+- [x] Optimize blog post layout for mobile screens (collapsible sources, improved typography)
+- [x] Fix sources section display on mobile (now collapsible with expand/collapse)
+- [x] Add collapsible sources section for mobile (with expand/collapse animation and 13px font)
+- [x] Optimize font sizes and line spacing for mobile readability (line-height 1.8 body, 1.7 sm)
+- [x] Ensure internal links are touch-friendly on mobile (44px min-height, onTouchStart/End handlers)
+- [x] Add word-spacing and improved letter-spacing for better readability
+- [x] Create vitest tests for mobile optimization (18 tests passing)

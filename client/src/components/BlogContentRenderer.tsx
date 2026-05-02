@@ -81,15 +81,26 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
                 cursor: 'pointer',
                 fontFamily: "'Roboto Mono', monospace",
                 fontSize: 'inherit',
-                padding: '0',
-                margin: '0',
-                transition: 'all 0.2s'
+                padding: '2px 4px',
+                margin: '0 -2px',
+                transition: 'all 0.2s',
+                minHeight: '44px',
+                display: 'inline-flex',
+                alignItems: 'center'
               }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.fontWeight = 'bold';
               }}
               onMouseLeave={(e) => {
                 (e.currentTarget as HTMLElement).style.fontWeight = 'normal';
+              }}
+              onTouchStart={(e) => {
+                (e.currentTarget as HTMLElement).style.fontWeight = 'bold';
+                (e.currentTarget as HTMLElement).style.opacity = '0.8';
+              }}
+              onTouchEnd={(e) => {
+                (e.currentTarget as HTMLElement).style.fontWeight = 'normal';
+                (e.currentTarget as HTMLElement).style.opacity = '1';
               }}
             >
               {linkText}

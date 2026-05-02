@@ -6,6 +6,89 @@ import BlogContentRenderer from "@/components/BlogContentRenderer";
 import { generateBlogPostingSchema, generateArticleSchema, generateBreadcrumbSchema, injectSchemaMarkup } from "@/lib/schemaMarkup";
 import "../pixel-art-refined.css";
 
+// Mobile-optimized sources section component
+function SourcesSection({ sources }: { sources: Array<{ title: string; url: string }> }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  return (
+    <div className="mobile-card" style={{ marginBottom: "24px", padding: "16px" }}>
+      <button
+        onClick={() => setIsExpanded(!isExpanded)}
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          background: "transparent",
+          border: "none",
+          cursor: "pointer",
+          padding: "0",
+          color: "var(--pixel-text)",
+          fontSize: "16px",
+          fontWeight: "bold",
+          fontFamily: "'Roboto Mono', monospace",
+          transition: "all 0.2s"
+        }}
+        onMouseEnter={(e) => {
+          (e.currentTarget as HTMLElement).style.opacity = "0.8";
+        }}
+        onMouseLeave={(e) => {
+          (e.currentTarget as HTMLElement).style.opacity = "1";
+        }}
+      >
+        <span>SOURCES ({sources.length})</span>
+        <span style={{ transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}>▼</span>
+      </button>
+      
+      {isExpanded && (
+        <ul style={{
+          paddingLeft: "16px",
+          margin: "12px 0 0 0",
+          fontFamily: "'Roboto Mono', monospace",
+          fontSize: "13px",
+          fontWeight: 500,
+          listStyle: "none"
+        }}>
+          {sources.map((source, idx) => (
+            <li key={idx} style={{ marginBottom: "10px", wordBreak: "break-word" }}>
+              <a
+                href={source.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "var(--pixel-accent)",
+                  textDecoration: "none",
+                  fontFamily: "'Roboto Mono', monospace",
+                  fontSize: "13px",
+                  transition: "all 0.2s",
+                  display: "inline-block",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis"
+                }}
+                onTouchStart={(e) => {
+                  (e.currentTarget as HTMLElement).style.textDecoration = "underline";
+                }}
+                onTouchEnd={(e) => {
+                  (e.currentTarget as HTMLElement).style.textDecoration = "none";
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.textDecoration = "underline";
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.textDecoration = "none";
+                }}
+              >
+                {source.title} ↗
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+}
+
 type BlogPost = {
   id: string;
   title: string;
@@ -209,43 +292,7 @@ export default function BlogPost() {
             </div>
 
             {post.sources && post.sources.length > 0 && (
-              <div className="mobile-card" style={{ marginBottom: "24px", padding: "20px" }}>
-                <h3 className="mobile-heading-3" style={{ marginBottom: "16px", marginTop: "0" }}>
-                  SOURCES & REFERENCES
-                </h3>
-                <ul style={{ 
-                  paddingLeft: "20px", 
-                  margin: "0",
-                  fontFamily: "'Roboto Mono', monospace",
-                  fontSize: "14px",
-                  fontWeight: 500
-                }}>
-                  {post.sources.map((source, idx) => (
-                    <li key={idx} style={{ marginBottom: "12px" }}>
-                      <a
-                        href={source.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{
-                          color: "var(--pixel-accent)",
-                          textDecoration: "none",
-                          fontFamily: "'Roboto Mono', monospace",
-                          fontSize: "14px",
-                          transition: "all 0.2s"
-                        }}
-                        onMouseEnter={(e) => {
-                          (e.currentTarget as HTMLElement).style.textDecoration = "underline";
-                        }}
-                        onMouseLeave={(e) => {
-                          (e.currentTarget as HTMLElement).style.textDecoration = "none";
-                        }}
-                      >
-                        {source.title} ↗
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <SourcesSection sources={post.sources} />
             )}
 
             {relatedPostsList.length > 0 && (
