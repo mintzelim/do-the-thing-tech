@@ -57,7 +57,7 @@ ADHD medication and productivity have a more complicated relationship than most 
 
 This post covers what ADHD medication actually does to brain chemistry, what that means for your focus window, and how to build a task strategy that makes the most of it.
 
-**Related:** To understand the executive dysfunction medication is trying to address, read [how ADHD affects task management](post:1). To structure your medication window effectively, [breaking down big tasks](post:3) ensures you have a clear action plan before the window opens.
+**Related:** To understand the executive dysfunction medication is trying to address, read [how ADHD affects task management](post:1). To structure your medication window effectively, [breaking down big tasks](post:3) ensures you have a clear action plan before the window opens. Also explore how [sleep quality affects ADHD medication effectiveness](post:12) and how [financial management tasks respond to medication windows](post:13).
 
 ---
 

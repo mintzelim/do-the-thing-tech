@@ -205,6 +205,10 @@ Understanding the neuroscience is step one. Building the system around it is ste
 - **Add a time buffer to your next estimate** — whatever you think it'll take, add 25%. Track what actually happens. Most ADHD brains find reality lands close to the buffered estimate.
 - **Explore [free tools](https://dothething.tech/blog/free-tools-2026) built for ADHD task management** — some are designed specifically around the initiation and working memory challenges covered in this post.
 - **Create a [minimum viable morning](https://dothething.tech/blog/adhd-morning-routine-no-motivation-1) routine** — If mornings are where the system collapses first, the Minimum Viable Morning post covers that specifically.
+- **Understand how [perfectionism blocks task completion](post:9)** — perfectionism is often a symptom of executive dysfunction, not a character flaw.
+- **Explore the [sleep-ADHD connection](post:12)** — poor sleep amplifies executive dysfunction and makes all of this harder.
+- **Learn how [financial management ties into ADHD](post:13)** — many ADHD brains struggle with money tasks for the same neurochemical reasons.
+- **Discover how [creativity and hyperfocus can be channeled](post:14)** — ADHD brains aren't broken at focus; they're selective about what captures it.
 
 The architecture change is cumulative. Each external support you add reduces the load on the internal systems that ADHD makes unreliable.
 

@@ -38,7 +38,7 @@ relatedPosts:
 
 Discover why common productivity advice fails neurodivergent brains and what to do instead. This field guide offers quick task execution tactics designed for executive dysfunction and decision paralysis.
 
-**Related:** To understand the underlying executive dysfunction, read [how ADHD affects task management](post:1). For a deeper dive into the emotional barriers, [executive dysfunction vs task paralysis](post:4) explains the distinction. To apply these tactics immediately, [breaking down big tasks](post:3) shows you how to shrink the entry point.
+**Related:** To understand the underlying executive dysfunction, read [how ADHD affects task management](post:1). For a deeper dive into the emotional barriers, [executive dysfunction vs task paralysis](post:4) explains the distinction. To apply these tactics immediately, [breaking down big tasks](post:3) shows you how to shrink the entry point. Also explore how [creativity and hyperfocus can be channeled](post:14) as strengths rather than obstacles.
 
 ## TL;DR
 

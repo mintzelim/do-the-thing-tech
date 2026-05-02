@@ -175,6 +175,8 @@ The order matters. Solving the structural problem while the emotional charge is 
 
 Neither problem is a reflection of ability, intelligence, or effort. Both are predictable outputs of an ADHD brain dealing with tasks that weren't designed for how that brain works. Understanding which one is operating at any given moment is the difference between a strategy that fits and one that doesn't.
 
+**Related:** If perfectionism is a major trigger for your task paralysis, read [how perfectionism blocks task completion](post:9).
+
 ---
 
 ## Frequently Asked Questions

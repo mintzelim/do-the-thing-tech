@@ -51,7 +51,7 @@ If you've searched for the top free ADHD tools, you've probably landed on lists 
 
 Most productivity apps assume you can already plan, prioritise, and estimate time. For ADHD brains, those are exactly the capabilities that are hardest to access. These five free tools earn their place because they work with the grain of ADHD — not against it.
 
-**Related:** If you want to understand why traditional task management fails ADHD brains, read [how ADHD affects task management](post:1). If you're choosing between tools, [why simpler ADHD-friendly apps work better](post:17) explains the design principles that matter.
+**Related:** If you want to understand why traditional task management fails ADHD brains, read [how ADHD affects task management](post:1). If you're choosing between tools, [why simpler ADHD-friendly apps work better](post:17) explains the design principles that matter. These tools also help with [financial management tasks](post:13) where ADHD executive dysfunction often shows up.
 
 This isn't a list of every tool that might help someone with ADHD. It's a short, honest guide to five that are free, actually useful, and designed for different moments in the ADHD workday.
 

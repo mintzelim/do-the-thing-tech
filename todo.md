@@ -77,3 +77,23 @@
 - [x] Create vitest tests for mobile optimization (18 tests passing)
 - [x] Remove raw sources sections from all blog posts (11 posts cleaned)
 - [x] Regenerate blog-posts.json without duplicate source URLs
+
+
+## SEO/LLM/AEO/GEO Audit & Cleanup
+
+- [x] Audit robots.txt for crawlability issues (properly configured)
+- [x] Check for noindex/nofollow tags blocking indexing (none found)
+- [x] Verify sitemap.xml includes all blog posts and static pages (27 URLs)
+- [x] Check for redirect chains or 301 redirects blocking crawlers (none found)
+- [x] Audit meta tags for missing or duplicate descriptions (no duplicates)
+- [x] Check for duplicate content across blog posts (no duplicates)
+- [x] Verify canonical URLs are self-referential (no redirect chains)
+- [x] Check for broken internal links (all 30+ internal links valid)
+- [x] Check for missing or incomplete JSON-LD schema markup (BlogPosting, FAQPage, BreadcrumbList present)
+- [x] Verify Open Graph tags are present on all pages (configured)
+- [x] Check for mobile usability issues (collapsible sources, touch targets optimized)
+- [x] Verify no blocking CSS/JS preventing crawling (none found)
+- [x] Check for proper heading hierarchy (H1, H2, H3) (no issues found)
+- [x] Check for thin content or low-value pages (all posts >1000 chars)
+- [x] Verify internal linking structure (orphaned pages fixed - all 20 posts now linked)
+- [x] Check for hreflang tags if multi-language support exists (not needed - single language)
