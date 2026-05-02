@@ -194,9 +194,11 @@ If time blindness is your main challenge, start with one change rather than rebu
 - **Week 3:** Set a time anchor for the time of day where lateness most often originates. Build backwards from it.
 
 **Further reading**
-For the broader picture of how ADHD disrupts planning and execution, the task management [post](https://dothething.tech/blog/how-adhd-affects-task-management) covers executive dysfunction alongside time blindness.
+For the broader picture of how ADHD disrupts planning and execution, [how ADHD affects task management](post:1) covers executive dysfunction alongside time blindness.
 
-If mornings are where the lateness pattern starts, the [Minimum Viable Morning](https://dothething.tech/blog/adhd-morning-routine-no-motivation-1) is a practical floor to build from.
+If mornings are where the lateness pattern starts, the [Minimum Viable Morning](post:19) is a practical floor to build from.
+
+Once you understand time blindness, [breaking down big tasks](post:3) becomes easier because you can build realistic time buffers into each micro-step.
 
 The goal is compensation architecture, built one layer at a time.
 

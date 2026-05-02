@@ -222,9 +222,9 @@ The key design principle across all three steps is low activation cost. Each ste
 
 The MVR is your foundation — not your destination. Once it's running consistently for two to three weeks, you have a stable base to build from.
 
-- **Add a bedtime anchor** — the night before is where the MVR is actually won. Setting out your on-ramp, silencing your phone, and naming tomorrow's one task the evening before removes every decision your morning self would have to make. [INTERNAL LINK: anchor → /adhd-evening-routine]
+- **Name one task for the day** — use [one task is enough](post:18) as your framework. Naming a single task the night before removes every decision your morning self would have to make.
 - **Extend the dopamine on-ramp** — when you have capacity, let the enjoyable activity run a little longer before Step 3. Build the morning you want to get up for, not the one that feels like a test.
-- **Use DoTheThing to plan the week** — once single-task naming feels automatic, experiment with using DoTheThing on Sunday evening to name one key task per day for the week ahead. Monday morning becomes frictionless because the naming is already done.
+- **Use DoTheThing to break down your task** — once you have named your one task, use [breaking down big tasks](post:3) to generate micro-steps with realistic time estimates. Your morning becomes frictionless because the planning is already done.
 
 The goal is not a perfect morning. It's a morning that happens — reliably, sustainably, on the hard days as well as the easy ones. The MVR gives you that. Everything else is optional upgrade.
 

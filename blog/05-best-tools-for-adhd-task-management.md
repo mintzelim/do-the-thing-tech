@@ -51,6 +51,8 @@ If you've searched for the top free ADHD tools, you've probably landed on lists 
 
 Most productivity apps assume you can already plan, prioritise, and estimate time. For ADHD brains, those are exactly the capabilities that are hardest to access. These five free tools earn their place because they work with the grain of ADHD — not against it.
 
+**Related:** If you want to understand why traditional task management fails ADHD brains, read [how ADHD affects task management](post:1). If you're choosing between tools, [why simpler ADHD-friendly apps work better](post:17) explains the design principles that matter.
+
 This isn't a list of every tool that might help someone with ADHD. It's a short, honest guide to five that are free, actually useful, and designed for different moments in the ADHD workday.
 
 ---
@@ -72,7 +74,7 @@ Most productivity apps are organisers — they hold your tasks and display them.
 
 A standard task app is an organiser. It holds your tasks and shows them to you. But showing an ADHD brain a list of tasks doesn't solve the core problem — which is that the brain can't generate the plan, sequence, and initiation signal needed to begin.
 
-[CHADD identifies two of the most important functions](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) in ADHD task management as breaking tasks into single, completable actions and keeping the list visible. Most apps do the second but not the first. They expect you to arrive with tasks already broken down and sequenced. That's the part ADHD makes hard.
+[CHADD identifies two of the most important functions](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) in ADHD task management as breaking tasks into single, completable actions and keeping the list visible. Most apps do the second but not the first. They expect you to arrive with tasks already broken down and sequenced. That's the part ADHD makes hard. This is why [breaking down big tasks](post:3) is the foundation of everything else.
 
 The tools below are chosen specifically because they address the stages where ADHD brains get stuck: initiating tasks, staying focused once started, managing time perception, and maintaining accountability. Each one targets a different failure point.
 

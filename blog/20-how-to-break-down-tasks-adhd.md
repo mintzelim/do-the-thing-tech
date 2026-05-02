@@ -53,6 +53,8 @@ If you've searched for how to break down tasks with ADHD, you've probably landed
 
 Features don't build habits. Results do. Here's what actually happened when three people with ADHD stopped staring at their to-do lists and let the AI do the breakdown instead.
 
+**Related:** To understand the executive dysfunction behind task paralysis, read [how ADHD affects task management](post:1). For the underlying neuroscience, [executive dysfunction vs task paralysis](post:4) explains the distinction. For strategies to use after breakdown, [neurodivergent productivity tactics](post:16) shows you how to execute the micro-steps.
+
 ---
 
 ## TL;DR
@@ -70,6 +72,8 @@ Features don't build habits. Results do. Here's what actually happened when thre
 Task breakdown works for ADHD brains because it solves the hardest part of any task: figuring out where to start.
 
 Executive dysfunction is what clinicians call the ADHD brain's difficulty with planning, initiating, and following through — not a lack of intelligence or effort, but a specific fault in the brain's management system. [Research published in *Frontiers in Psychiatry* (2024)](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full) pinpoints dysregulated dopamine signalling in the prefrontal cortex as the core mechanism. The prefrontal cortex runs planning, sequencing, and task initiation — everything you need to look at a complex task and know what to do first. When those circuits are underpowered, the brain doesn't produce a plan. It produces a wall.
+
+This is exactly what [breaking down big tasks](post:3) is designed to solve.
 
 That's why task paralysis isn't a motivation problem. [According to ADDA](https://add.org/adhd-paralysis/), ADHD paralysis hits when a person is overloaded with information, tasks, or instructions — and the shutdown is typically outside their conscious control. [CHADD identifies procrastination as one of the most commonly impairing symptoms in adults with ADHD](https://chadd.org/adhd-in-the-news/6-ways-to-combat-procrastination-for-adults-with-adhd/), a finding that holds across both hyperfocused and low-focus states. The problem isn't willingness. It's the missing automatic starter that neurotypical brains run on without noticing.
 

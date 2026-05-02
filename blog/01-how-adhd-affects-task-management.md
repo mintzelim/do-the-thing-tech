@@ -57,6 +57,8 @@ A 2024 [systematic review published in PMC](https://www.ncbi.nlm.nih.gov/pmc/art
 
 This post explains exactly what's happening neurologically when tasks feel impossible, and what approaches actually work instead.
 
+**Related:** If you're struggling with time blindness, read [why you're always late](post:2). If executive dysfunction is your main barrier, [learn how to break down big tasks](post:3).
+
 ---
 
 ## TL;DR
@@ -81,6 +83,8 @@ One of the most accepted hypotheses of ADHD's underlying physiology is the defic
 
 This matters because every mainstream productivity system — GTD, time blocking, Pomodoro, the Ivy Lee method — assumes your executive function fires consistently on demand. It doesn't. And that's not something you can willpower your way out of.
 
+**The fix:** External structure replaces willpower. [Neurodivergent productivity tactics](post:16) show you how to work with your brain's wiring instead of against it.
+
 ---
 
 ## The 4 Ways ADHD Disrupts Task Management
@@ -95,7 +99,7 @@ Starting a task requires a dopamine signal strong enough to overcome inertia. In
 
 The result: a 2-minute email can sit for three hours because your brain never generated the chemical push to begin.
 
-Standard task management treats initiation as assumed. According to the [National Institute of Mental Health](https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd), difficulty sustaining attention and completing tasks is one of the core diagnostic markers of ADHD — a signal that initiation problems are structural, not situational. You need a different approach — which is exactly what micro-steps address (more on that below).
+Standard task management treats initiation as assumed. According to the [National Institute of Mental Health](https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd), difficulty sustaining attention and completing tasks is one of the core diagnostic markers of ADHD — a signal that initiation problems are structural, not situational. You need a different approach — which is exactly what [breaking tasks into micro-steps](post:3) addresses.
 
 ---
 

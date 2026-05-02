@@ -37,6 +37,8 @@ relatedPosts:
 
 Discover how self-acceptance techniques can transform your productivity from guilt-driven to guilt-free. This piece reframes the one-task day as a valid, compassionate system for real brains.
 
+**Related:** To understand the executive dysfunction behind decision paralysis, read [how ADHD affects task management](post:1). For practical strategies to reduce decision fatigue, [neurodivergent productivity tactics](post:16) shows you how to work with your brain's limits. For tools that support single-task focus, [why simpler ADHD-friendly apps work better](post:17) explains the design principles that matter.
+
 ## TL;DR
 
 * **Long task lists cause paralysis, not productivity** - For people with executive dysfunction or decision fatigue, every item on a list is a decision that drains the energy needed to actually start.
@@ -57,6 +59,8 @@ The dominant productivity philosophy goes something like this: plan your day in 
 For the rest of us, particularly those navigating ADHD, executive dysfunction, or chronic decision fatigue, this approach isn't just unhelpful. It's actively harmful. It sets up a game you can't win, then tells you the loss is a character flaw.
 
 The entire self-improvement industry has spent decades treating productivity as a discipline problem. And because that framing became gospel, millions of people internalized the belief that their inability to "just do the thing" means something is fundamentally wrong with them. That belief is more damaging than any missed deadline. In fact, [80% of full-time U.S. employees](https://www.stress.org/news/80-of-employees-report-productivity-anxiety-and-lower-well-being-in-new-study/) feel like they should always be doing more — so at least you're not alone in this.
+
+The good news: [breaking down big tasks](post:3) into micro-steps transforms that one-task day from vague intention into concrete action.
 
 ## Here's What Actually Changed My Mind
 

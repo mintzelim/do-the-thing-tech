@@ -57,6 +57,8 @@ ADHD medication and productivity have a more complicated relationship than most 
 
 This post covers what ADHD medication actually does to brain chemistry, what that means for your focus window, and how to build a task strategy that makes the most of it.
 
+**Related:** To understand the executive dysfunction medication is trying to address, read [how ADHD affects task management](post:1). To structure your medication window effectively, [breaking down big tasks](post:3) ensures you have a clear action plan before the window opens.
+
 ---
 
 ## TL;DR
@@ -66,6 +68,7 @@ This post covers what ADHD medication actually does to brain chemistry, what tha
 - **Medication doesn't generate a plan.** It makes it easier to use one you already have. Without structure, the window closes with little to show for it.
 - **Research confirms: medication plus strategy outperforms medication alone.** A 2024 meta-analysis found combining medication with task management training produced better work outcomes than either approach in isolation.
 - **The medication window is your highest-value time.** Protect it. Use [DoTheThing](https://www.dothething.tech) to plan before the window opens so you're executing, not still deciding, when it does.
+- **Medication alone isn't enough.** Combine it with [neurodivergent productivity strategies](post:16) to make the most of your focus time.
 
 ---
 

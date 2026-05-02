@@ -62,3 +62,5 @@
 - [x] Test FAQ schema with Google Rich Results Test tool (verified 4 Q&A pairs per post)
 - [x] Add FAQ schema to 5 additional high-traffic posts (ADHD Morning Routine, Time Blindness, Neurodivergent Productivity, Top 5 Tools, Real User Stories)
 - [x] Verify all 8 FAQ-enabled posts have correct schema (32 total Q&A pairs across all posts)
+- [x] Add internal links to remaining 12 blog posts (30 total internal links across 20 posts)
+- [x] Verify internal links render correctly in all posts (9 posts with 30 total contextual links)

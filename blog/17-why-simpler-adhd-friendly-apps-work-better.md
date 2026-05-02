@@ -28,6 +28,8 @@ relatedPosts:
 
 Discover why complex productivity tools fail ADHD users and how simpler task breakdown features lead to better outcomes. This piece challenges the feature arms race and argues that the best app is the one you'll actually open.
 
+**Related:** To understand why task breakdown is the foundation, read [how ADHD affects task management](post:1). For specific tool recommendations, see [top 5 free ADHD tools](post:5). For strategies that work with simple tools, [neurodivergent productivity tactics](post:16) shows you how to make the most of minimal features.
+
 ## TL;DR
 
 * **Feature-rich apps fail ADHD users** - Complex setup and maintenance become additional executive function tasks, leading to the "app graveyard" most neurodivergent people know too well.
@@ -54,6 +56,8 @@ But complexity also abandons. And the people it abandons fastest are the ones it
 Here's what I actually believe: **for ADHD brains, the simplest tool you'll actually use will always outperform the powerful tool you won't.**
 
 This isn't anti-technology sentiment. It's simply an observation about executive function. The moment a tool requires significant setup, configuration, or ongoing maintenance, it becomes another task on the pile. And if you have ADHD, that pile gets heavier fast — [research shows task initiation impairments in ADHD are significant, with effect sizes up to d=1.34 in temporal reordering tasks](https://positivereseteatontown.com/task-initiation-adhd-understanding-the-science-behind-why-starting-feels-impossible/). And for someone already struggling with task initiation, that's not a solution. That's a trap.
+
+This is why [breaking down big tasks](post:3) into micro-steps works: it removes the setup cost and delivers value immediately.
 
 ## Why Task Breakdown Features Beat Scheduling Engines
 
