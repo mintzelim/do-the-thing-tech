@@ -60,3 +60,5 @@
 - [x] Create related posts section at bottom of each blog post (already exists in BlogPost.tsx)
 - [x] Update blog post templates to include FAQ schema markup
 - [x] Test FAQ schema with Google Rich Results Test tool (verified 4 Q&A pairs per post)
+- [x] Add FAQ schema to 5 additional high-traffic posts (ADHD Morning Routine, Time Blindness, Neurodivergent Productivity, Top 5 Tools, Real User Stories)
+- [x] Verify all 8 FAQ-enabled posts have correct schema (32 total Q&A pairs across all posts)

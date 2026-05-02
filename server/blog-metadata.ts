@@ -183,6 +183,96 @@ function generateFAQSchema(slug: string): string | null {
         question: "Can task breakdown tools help with executive dysfunction?",
         answer: "Yes. Tools like DoTheThing externalize the planning process, removing the executive function burden. By breaking down tasks for you, they eliminate the hardest part—deciding where to start."
       }
+    ],
+    "adhd-morning-routine-no-motivation-1": [
+      {
+        question: "Why do I have no motivation in the morning with ADHD?",
+        answer: "Low morning motivation in ADHD is neurological, not laziness. ADHD brains have disrupted dopamine signalling in the reward pathway, combined with a delayed circadian rhythm affecting up to 78% of adults with ADHD. Mornings hit when your brain's executive systems are at their lowest point."
+      },
+      {
+        question: "What is the Minimum Viable Morning for ADHD?",
+        answer: "The Minimum Viable Morning is a three-step floor routine you can complete in under 10 minutes on your worst days: one physical cue to break body inertia, one dopamine on-ramp to start your reward system, and one task named for the day. It is not your full routine—it is the minimum that still counts as a win."
+      },
+      {
+        question: "How do I get out of bed with ADHD when I have no energy?",
+        answer: "Skip willpower entirely. Reduce the activation cost: put your first dopamine on-ramp (a playlist, podcast, or coffee) within arm's reach of the bed before you sleep. The goal is not to feel ready—it is to do one physical action before your brain has time to negotiate. Sitting up counts. Feet on the floor counts."
+      },
+      {
+        question: "Does motivation come before or after action with ADHD?",
+        answer: "After. Motivation in neurotypical models is treated as a prerequisite for action. For ADHD brains, dopamine is released in response to movement and task initiation, not before it. Action is the on-ramp, not the destination."
+      }
+    ],
+    "time-blindness-in-adhd": [
+      {
+        question: "What is time blindness in ADHD?",
+        answer: "Time blindness is the ADHD brain's impaired ability to sense how much time has passed and estimate how long tasks will take. It stems from reduced activity in the prefrontal cortex and cerebellum. Around 75% of people with ADHD experience it daily."
+      },
+      {
+        question: "Why does ADHD cause time blindness?",
+        answer: "ADHD reduces activity in the prefrontal cortex, cerebellum, and left inferior parietal lobes, all of which handle time perception and planning. Dopamine irregularities also impair the brain's internal timestamping system, making time estimation structurally unreliable."
+      },
+      {
+        question: "What is the now/not now model of ADHD time perception?",
+        answer: "Developed by Dr. Russell Barkley, the now/not now model describes how ADHD brains experience time in only two categories: events happening right now, and everything else. Future deadlines stay in the 'not now' category until they become immediate, regardless of importance."
+      },
+      {
+        question: "How does the multiply-by-2 rule help with time blindness?",
+        answer: "Whatever time you estimate a task will take, double it before scheduling. Because ADHD brains structurally underestimate duration, the doubled estimate tends to land closer to reality. Pair it with a 10-minute buffer at the end of any task that precedes an appointment."
+      }
+    ],
+    "neurodivergent-productivity-7-tactics": [
+      {
+        question: "What is the difference between executive dysfunction and laziness?",
+        answer: "Executive dysfunction is a neurological bottleneck affecting planning, sequencing, and task initiation. Laziness is a choice to avoid effort. Executive dysfunction is involuntary—your brain literally cannot generate the signal to start, regardless of motivation or desire."
+      },
+      {
+        question: "Why does shrinking tasks help with neurodivergent productivity?",
+        answer: "Task initiation is the bottleneck, not task completion. A neurodivergent brain staring at a large task sees an invisible 47-step process. When you shrink the entry point to under 90 seconds, your brain's threat-detection system does not activate, making it possible to begin."
+      },
+      {
+        question: "What is rejection sensitive dysphoria (RSD) in ADHD?",
+        answer: "RSD is an intense emotional sensitivity to perceived or actual rejection, criticism, or failure. For neurodivergent adults, the shame spiral after freezing is often worse than the freeze itself. Naming what is happening interrupts the shame loop and creates a reset moment."
+      },
+      {
+        question: "How do I choose which neurodivergent productivity strategy to use?",
+        answer: "Start with one or two strategies based on where you get stuck most: task initiation, emotional weight, or decision paralysis. Rotate strategies when they stop working. Sustainability beats intensity—a strategy you use consistently beats a perfect system you abandon."
+      }
+    ],
+    "best-tools-for-adhd-task-management": [
+      {
+        question: "What are the top 5 free tools for ADHD task management in 2026?",
+        answer: "The top 5 are Todoist (frictionless quick capture), Microsoft To Do (My Day commitment list), Google Tasks (zero context switch), Forest (visual dopamine reward), and Focusmate (body doubling accountability). Choose 2-3 that match your workflow."
+      },
+      {
+        question: "How do I avoid tool overload with ADHD task management?",
+        answer: "Pick 2-3 tools maximum. Research shows people switch between apps over 1000 times per day. For ADHD brains, each switch is a potential exit from focus. A simple system you use consistently beats a complex system you abandon."
+      },
+      {
+        question: "What should I look for in an ADHD task management tool?",
+        answer: "Look for frictionless capture (quick entry without setup), visual progress (dopamine rewards), external structure (removes decision-making), and low context-switching (integrates with tools you already use). Avoid tools requiring extensive customization before use."
+      },
+      {
+        question: "Can I use the same tool for task breakdown and task management?",
+        answer: "Not ideally. Task breakdown tools (like DoTheThing) excel at planning. Task management tools (like Todoist) excel at tracking and execution. Breaking down in one tool, then moving to a management tool, creates a workflow that matches how ADHD brains actually work."
+      }
+    ],
+    "how-to-break-down-tasks-adhd": [
+      {
+        question: "What are real user stories for ADHD task breakdown?",
+        answer: "Real examples include a project manager who breaks a campaign launch into 47 micro-steps and completes it on time, a student who breaks an essay into research, outline, draft, and edit phases with time buffers, and a parent who breaks vacation planning into separate tasks for flights, hotels, and activities."
+      },
+      {
+        question: "How does DoTheThing break down tasks differently than manual methods?",
+        answer: "DoTheThing uses AI to instantly generate micro-steps with realistic time estimates based on your focus level (hyperfocused, normal, or distracted). Manual breakdown requires executive function you may not have available. Automation removes the hardest part—planning itself."
+      },
+      {
+        question: "What is the difference between task breakdown sizes in DoTheThing?",
+        answer: "Tiny Steps (2-5 minute tasks) for executive dysfunction or low motivation days. Balanced (5-15 minute tasks) for typical days. Big Milestones (15-60 minute phases) for hyperfocus sessions or when you need a higher-level view. Choose based on your current brain state."
+      },
+      {
+        question: "How accurate are DoTheThing's time estimates for ADHD brains?",
+        answer: "DoTheThing's estimates include a buffer for ADHD time blindness and executive dysfunction. They are calibrated to be realistic for neurodivergent brains, not neurotypical ones. The multiply-by-2 rule still applies if you want additional safety margin."
+      }
     ]
   };
 
