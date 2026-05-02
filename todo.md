@@ -52,3 +52,11 @@
 - [x] Add breadcrumb navigation structured data (BreadcrumbList schema injected)
 - [x] Implement hreflang tags if multi-language support needed (single language - not needed)
 - [x] Monitor crawl stats in Google Search Console for errors or warnings (ongoing)
+
+## AEO Enhancement - FAQ Schema & Internal Linking
+
+- [x] Add FAQPage schema to high-intent blog posts (Free Tools 2026, Breaking Down Big Tasks, Executive Dysfunction)
+- [x] Implement internal linking between related blog posts (contextual links in post content)
+- [x] Create related posts section at bottom of each blog post (already exists in BlogPost.tsx)
+- [x] Update blog post templates to include FAQ schema markup
+- [x] Test FAQ schema with Google Rich Results Test tool (verified 4 Q&A pairs per post)

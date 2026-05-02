@@ -79,6 +79,8 @@ A task like "write the report" feels impossible because it isn't a task. It's a 
 
 This is why task paralysis hits before you even start. Executive dysfunction is the umbrella term for ADHD's impact on the brain's management system: the ability to plan, prioritise, sequence, and initiate. [ADDA describes ADHD paralysis](https://add.org/adhd-paralysis/) as an overload response — too much information, too many open questions, too few clear next steps — and notes that the shutdown is often outside the person's conscious control.
 
+**Related:** Learn the difference between [task paralysis and executive dysfunction](post:4) to understand which strategies will work best for your brain.
+
 The fix isn't more motivation. It's removing the planning requirement from the start of each action. When your first step is specific enough that you don't need to think about how to do it, your brain can begin.
 
 According to [CHADD](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/), the most effective ADHD to-do systems work exactly this way: each item is a single, concrete, completable action, not a project or category. That principle is the foundation of everything below.
@@ -90,6 +92,8 @@ According to [CHADD](https://chadd.org/for-adults/time-management-and-adhd-to-do
 By the end of this post you'll have three distinct breakdown methods you can apply to different types of tasks, a clear rule for choosing between them, and a faster alternative when manual breakdown isn't realistic.
 
 These methods work for any task. The examples use work and study tasks because that's where ADHD paralysis tends to hit hardest, but the same process applies to household tasks, creative projects, personal admin, and anything else that feels too big to start.
+
+**After breakdown:** Once your tasks are broken down, you need a system to manage them. Check out [free tools for ADHD task management](post:15) to find the right fit for your workflow.
 
 ---
 

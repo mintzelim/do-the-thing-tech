@@ -75,7 +75,11 @@ That's a lot of people who need workable systems. And the productivity industry 
 
 The result: a generation of genuinely capable free tools that rival paid alternatives. The challenge for ADHD brains isn't finding tools — it's avoiding the trap of collecting them. Research on knowledge worker behaviour shows that people switch between apps over a thousand times per day. For an ADHD brain, each switch is a potential exit from focus entirely.
 
+**Related:** If you struggle with [task paralysis and executive dysfunction](post:4), understanding the root cause helps you choose the right tools. Many ADHD brains benefit from [breaking down big tasks](post:3) before adding management tools to the workflow.
+
 The system that works is the one you actually use. And simpler systems get used more consistently.
+
+**Pro tip:** Tool overload is a real risk. See our guide on [why simpler ADHD-friendly apps work better](post:17) — the principle applies to your entire productivity stack, not just individual apps.
 
 What ADHD-friendly tools need to do, based on the neuroscience:
 - **Reduce friction** at the point of starting a task

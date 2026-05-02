@@ -126,6 +126,87 @@ function generateBreadcrumbSchema(post: BlogPost, baseUrl: string): string {
 }
 
 /**
+ * Generate FAQ schema for specific high-intent blog posts
+ */
+function generateFAQSchema(slug: string): string | null {
+  const faqData: { [key: string]: Array<{ question: string; answer: string }> } = {
+    "free-tools-2026": [
+      {
+        question: "What are the best free ADHD task management tools in 2026?",
+        answer: "The best free ADHD tools include Todoist (task management), Microsoft To Do (daily commitment lists), Forest (focus timer), and Focusmate (body doubling accountability). Choose 2-3 tools that work together rather than collecting many."
+      },
+      {
+        question: "Can I use free tools instead of paid ADHD apps?",
+        answer: "Yes, free tools are enough. A two or three-tool system beats a paid stack of twelve. Free tools like Todoist, Google Calendar, and Forest have all the features an ADHD brain needs without the cost or complexity."
+      },
+      {
+        question: "How do I avoid tool overload with ADHD?",
+        answer: "Pick 2-3 tools maximum. Research shows people switch between apps over 1000 times per day. For ADHD brains, each switch is a potential exit from focus. Simpler systems get used more consistently."
+      },
+      {
+        question: "What should I use after DoTheThing breaks down my task?",
+        answer: "After DoTheThing breaks down a task, use Todoist or Microsoft To Do to store the sub-steps. Then add a focus timer (Forest, Be Focused) for work sessions and an accountability tool (Focusmate) if needed."
+      }
+    ],
+    "breaking-down-big-tasks": [
+      {
+        question: "Why is task paralysis so common with ADHD?",
+        answer: "Task paralysis happens because the brain sees the entire project as one overwhelming thing. ADHD brains struggle with executive function, making it hard to break down big tasks into manageable steps. This is not a willpower problem—it is a brain problem."
+      },
+      {
+        question: "How do I break down a big task into smaller steps?",
+        answer: "Break tasks into micro-steps small enough that you can start without thinking. Use the two-minute rule: if a step takes longer than 2 minutes to explain, it is still too big. Each step should be specific and actionable."
+      },
+      {
+        question: "What is the best way to estimate time for ADHD tasks?",
+        answer: "ADHD brains are notoriously bad at time estimation. Use realistic time estimates and add a buffer (usually 1.5x your initial guess). Track actual time spent to improve future estimates. Tools like DoTheThing help by breaking down tasks and allowing focus-level adjustments."
+      },
+      {
+        question: "How does AI help with task breakdown for ADHD?",
+        answer: "AI can instantly break down overwhelming tasks into micro-steps, removing the executive function burden. It also suggests realistic time estimates based on complexity and helps you identify which steps can be done in focused work sessions."
+      }
+    ],
+    "executive-dysfunction-vs-task-paralysis": [
+      {
+        question: "What is the difference between executive dysfunction and task paralysis?",
+        answer: "Executive dysfunction is a broader ADHD symptom affecting planning, organization, and decision-making. Task paralysis is when you cannot start a task even though you want to. Executive dysfunction causes task paralysis, but not all task paralysis comes from executive dysfunction."
+      },
+      {
+        question: "How do I know if I have executive dysfunction?",
+        answer: "Signs include difficulty starting tasks, trouble organizing thoughts, poor time management, decision paralysis, and struggling to prioritize. If these are chronic patterns, you may have executive dysfunction related to ADHD."
+      },
+      {
+        question: "What is the best way to overcome task paralysis?",
+        answer: "Remove the need to decide by breaking tasks into micro-steps. Use external accountability (body doubling, Focusmate). Start with the smallest possible first step. Set a timer for just 5 minutes. These strategies bypass the executive function bottleneck."
+      },
+      {
+        question: "Can task breakdown tools help with executive dysfunction?",
+        answer: "Yes. Tools like DoTheThing externalize the planning process, removing the executive function burden. By breaking down tasks for you, they eliminate the hardest part—deciding where to start."
+      }
+    ]
+  };
+
+  if (!faqData[slug]) {
+    return null;
+  }
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqData[slug].map(item => ({
+      "@type": "Question",
+      "name": item.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.answer
+      }
+    }))
+  };
+
+  return JSON.stringify(schema);
+}
+
+/**
  * Inject blog post metadata and schema markup into HTML template
  * Replaces default site-wide metadata with post-specific metadata
  */
@@ -141,6 +222,7 @@ export function injectBlogMetadata(
   // Generate schema markup
   const blogPostSchema = generateBlogPostSchema(post, baseUrl);
   const breadcrumbSchema = generateBreadcrumbSchema(post, baseUrl);
+  const faqSchema = generateFAQSchema(post.slug);
 
   let result = htmlTemplate;
   
@@ -221,10 +303,18 @@ export function injectBlogMetadata(
   );
 
   // Inject schema markup before closing </head>
-  const schemaMarkup = `
+  let schemaMarkup = `
     <script type="application/ld+json">${blogPostSchema}</script>
     <script type="application/ld+json">${breadcrumbSchema}</script>
   `;
+  
+  // Add FAQ schema if available for this post
+  if (faqSchema) {
+    schemaMarkup += `
+    <script type="application/ld+json">${faqSchema}</script>
+  `;
+  }
+  
   result = result.replace(
     /<\/head>/,
     `${schemaMarkup}</head>`

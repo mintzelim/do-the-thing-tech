@@ -55,6 +55,8 @@ The difference between executive dysfunction and task paralysis in ADHD is one o
 
 Understanding the distinction is one of the most useful things you can do for your ADHD productivity. Once you know which one you're dealing with, you can address it directly rather than throwing generic strategies at a problem you haven't diagnosed.
 
+**Related:** If you're struggling with executive dysfunction, [breaking down big tasks](post:3) is the most direct fix. For task paralysis, you'll need emotional strategies alongside the structural ones.
+
 ---
 
 ## TL;DR
@@ -64,6 +66,7 @@ Understanding the distinction is one of the most useful things you can do for yo
 - **The practical difference:** Executive dysfunction is "I don't know how to start." Task paralysis is "I'm too overwhelmed to start."
 - **Most people with ADHD experience both at the same time** — and addressing only one is why strategies often work inconsistently.
 - **DoTheThing targets executive dysfunction** by doing the breakdown for you. The emotional layer is yours to address first — but the structural layer is handled the moment you [open the app](https://www.dothething.tech).
+- **Once tasks are broken down**, you need a management system. [Free tools for ADHD task management](post:15) integrate with your breakdown workflow.
 
 ---
 
@@ -85,6 +88,8 @@ Executive dysfunction isn't about intelligence. It isn't about effort. It's a ha
 - You consistently underestimate how long things take
 - You struggle to switch to a new task once interrupted
 - Your working memory drops things mid-task
+
+**The fix:** [Break the task into micro-steps](post:3) small enough that you don't need to plan each one. Each completed step delivers a dopamine hit that makes the next one easier to start.
 
 ---
 
