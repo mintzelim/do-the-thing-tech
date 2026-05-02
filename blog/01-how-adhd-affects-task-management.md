@@ -171,7 +171,7 @@ Don't write "write the report." Write "open the document." Then write "type the 
 
 Micro-steps lower the activation threshold for task initiation. Instead of requiring a strong dopamine signal to start a large, undefined task, you're asking for a small signal to start one specific, concrete action. The brain can often generate the smaller signal even when the larger one stalls.
 
-This is the core mechanism behind [DoTheThing](https://dothethingg.com) — it breaks your task down into the smallest executable unit before you start, so when you sit down to work, the initiation barrier is already dismantled.
+This is the core mechanism behind [DoTheThing](https://dothething.tech) — it breaks your task down into the smallest executable unit before you start, so when you sit down to work, the initiation barrier is already dismantled.
 
 ### Add 20–30% Time Buffers
 
@@ -199,8 +199,8 @@ Understanding the neuroscience is step one. Building the system around it is ste
 
 - **Start with one micro-step** — pick your most avoided task today and break it down to the single smallest physical action. Write that. Ignore the rest of the task for now.
 - **Add a time buffer to your next estimate** — whatever you think it'll take, add 25%. Track what actually happens. Most ADHD brains find reality lands close to the buffered estimate.
-- **[INTERNAL LINK: anchor → /free-adhd-task-management-tools]** Explore the free tools built for ADHD task management — some are designed specifically around the initiation and working memory challenges covered in this post.
-- **[INTERNAL LINK: anchor → /adhd-morning-routine-no-motivation]** If mornings are where the system collapses first, the Minimum Viable Morning post covers that specifically.
+- **Explore [free tools](https://dothething.tech/blog/free-tools-2026) built for ADHD task management** — some are designed specifically around the initiation and working memory challenges covered in this post.
+- **Create a [minimum viable morning](https://dothething.tech/blog/adhd-morning-routine-no-motivation-1) routine** — If mornings are where the system collapses first, the Minimum Viable Morning post covers that specifically.
 
 The architecture change is cumulative. Each external support you add reduces the load on the internal systems that ADHD makes unreliable.
 
