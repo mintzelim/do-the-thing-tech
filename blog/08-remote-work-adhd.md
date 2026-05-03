@@ -111,21 +111,21 @@ Control background noise deliberately. Silence works for some ADHD brains and tr
 
 The commute's function was transition signalling — a predictable sequence that moved your brain from home mode to work mode. Without it, many ADHD adults find themselves sitting at a desk at 9am, technically at work, but mentally still in personal time.
 
-A morning routine replaces that signal. It doesn't need to be elaborate. Ten to fifteen minutes of consistent, sequential activity is enough: get dressed for work (even at home), make coffee in the same way, sit at your designated workspace, and review your task list for the day. The sequence, not its content, is what matters. Predictability reduces the cognitive load of transitioning, and reduces the cognitive load of starting.
+A morning routine replaces that signal. It doesn't need to be elaborate. 10 to 15 minutes of consistent, sequential activity is enough: get dressed for work (even at home), make coffee in the same way, sit at your designated workspace, and review your task list for the day. The sequence, not its content, is what matters. Predictability reduces the cognitive load of transitioning, and reduces the cognitive load of starting. Create an edfective [morning routine for adhd] (https://dothething.tech/blog/adhd-morning-routine-no-motivation-1)
 
-The most important part: decide your three priority tasks the evening before. Write them on paper or in [DoTheThing](https://www.dothething.tech) before you close work for the day. When you sit down in the morning, the decision is already made. You move from routine directly into action rather than spending your first 20 minutes of peak focus deciding what to do with it.
+The most important part: decide your 3 priority tasks the evening before. Write them on paper or in [DoTheThing](https://www.dothething.tech) before you close work for the day. When you sit down in the morning, the decision is already made. You move from routine directly into action rather than spending your first 20 minutes of peak focus deciding what to do with it.
 
 ---
 
 ## Strategy 3: Use Time Blocking and Visual Timers
 
-Time blindness — the ADHD brain's genuine difficulty perceiving how time passes, which makes hours feel like minutes or minutes feel like hours — makes remote work particularly hard. Without the natural time markers of office life (meetings, lunch, the visual presence of colleagues packing up), hours can disappear unnoticed in either direction.
+[Time blindness](https://dothething.tech/blog/time-blindness-in-adhd) — the ADHD brain's genuine difficulty perceiving how time passes, which makes hours feel like minutes or minutes feel like hours — makes remote work particularly hard. Without the natural time markers of office life (meetings, lunch, the visual presence of colleagues packing up), hours can disappear unnoticed in either direction.
 
 Two tools address this directly.
 
 Time blocking means assigning specific calendar slots to specific work tasks, treating them with the same commitment as scheduled meetings. Block your most cognitively demanding work in your peak focus window (typically the period when your medication is most active, or when you historically feel most alert). Block lower-demand tasks — email, admin, scheduling — for outside that window. A blocked calendar provides the time structure that meetings used to provide in the office.
 
-Visual timers externalise time perception. A visible countdown makes the passing of time concrete rather than abstract, which activates the urgency the ADHD brain needs to sustain focus. [Brain.fm notes](https://www.brain.fm/blog/adhd-productivity-evidence-based-strategies) that visible, ticking timers transform abstract tasks into concrete challenges that activate the dopamine-driven motivation system. Forest (free on Android) combines a visual timer with the gamified accountability of the [tree-dying mechanic covered in our tools guide](/top-5-free-adhd-tools). Time Timer is a dedicated visual countdown app for those who want something simpler.
+Visual timers externalise time perception. A visible countdown makes the passing of time concrete rather than abstract, which activates the urgency the ADHD brain needs to sustain focus. [Brain.fm notes](https://www.brain.fm/blog/adhd-productivity-evidence-based-strategies) that visible, ticking timers transform abstract tasks into concrete challenges that activate the dopamine-driven motivation system. Forest (free on Android) combines a visual timer with the gamified accountability of the [tree-dying mechanic covered in our tools guide](https://dothething.tech/blog/best-tools-for-adhd-task-management). Time Timer is a dedicated visual countdown app for those who want something simpler.
 
 ---
 
@@ -137,7 +137,7 @@ The most reliable fix is preparation: arrive at your work block with a specific 
 
 [DoTheThing](https://www.dothething.tech) handles this directly. Type the task — or dump everything on your plate — choose your focus level, and get a numbered micro-step breakdown with time estimates before the work block begins. Your brain arrives at the desk with "open the doc and write the three bullet points" rather than "work on the report." The difference in activation energy required is significant.
 
-This connects to a broader principle in [our guide to breaking down big tasks](/breaking-down-big-tasks-adhd): vague goals don't give the ADHD brain a starting point. Specific, bounded actions do. Preparation converts the former into the latter before the moment when initiation is hardest.
+This connects to a broader principle in [our guide to breaking down big tasks](https://dothething.tech/blog/breaking-down-big-tasks): vague goals don't give the ADHD brain a starting point. Specific, bounded actions do. Preparation converts the former into the latter before the moment when initiation is hardest.
 
 ---
 
@@ -145,7 +145,7 @@ This connects to a broader principle in [our guide to breaking down big tasks](/
 
 The social presence of coworkers was providing accountability you didn't have to ask for. Remote work removes it. Body doubling deliberately replaces it.
 
-Body doubling means working alongside another person — in person, on a video call, or through a virtual coworking platform. The presence of someone else working raises the activation threshold for distraction and makes starting feel less aversive. It's particularly effective for the emotional avoidance component of [task paralysis](/executive-dysfunction-vs-task-paralysis-adhd) — when the freeze is emotional rather than structural.
+Body doubling means working alongside another person — in person, on a video call, or through a virtual coworking platform. The presence of someone else working raises the activation threshold for distraction and makes starting feel less aversive. It's particularly effective for the emotional avoidance component of [task paralysis](https://dothething.tech/blog/how-adhd-affects-task-management) — when the freeze is emotional rather than structural.
 
 [Focusmate](https://www.dothething.tech) (3 sessions per week free) is the most accessible option. Book a session for the task you've been most resistant to. Virtual coworking, ambient café sound, or even a phone call with another remote worker while working in silence can all produce similar effects.
 
