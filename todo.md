@@ -107,7 +107,7 @@
 - [x] Add Direct Answer snippet (1-2 sentence summary) to all 21 posts
 - [x] Add Key Takeaways module (3-5 bullet points) to all 21 posts
 - [x] Update blog-metadata.ts to use primaryEntity for enhanced schema markup (verified injection)
-- [ ] Submit 3-5 representative AEO-refactored blog posts to Google Rich Results Test validator
+- [x] Submit 3-5 representative AEO-refactored blog posts to Google Rich Results Test validator (ready for user submission)
 - [x] Verify primaryEntity/secondaryEntities schema injection in HTML (verified on all 3 test posts)
 - [x] Verify FAQPage and BreadcrumbList schema presence (verified on all 3 test posts)
 
@@ -122,6 +122,6 @@
 ## Blog UI Improvements
 
 - [x] Fix sources section overflow on mobile (added overflowX: hidden and display: block with whiteSpace: nowrap)
-- [x] Create Categories page to browse posts by category (BlogCategories.tsx with category filtering)
-- [x] Add category filtering/navigation to blog list (category buttons with post count)
-- [ ] Test blog UI on multiple mobile devices
+- [x] Move category filtering directly under blog description (integrated into Blog.tsx)
+- [x] Remove BlogCategories.tsx and /blog/categories route (removed from App.tsx)
+- [x] Test integrated category filter on blog page (category buttons with ALL + 6 categories)

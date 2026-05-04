@@ -21,6 +21,7 @@ export default function Blog() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   // Load blog posts from generated JSON
   useEffect(() => {
@@ -44,6 +45,14 @@ export default function Blog() {
 
     loadPosts();
   }, []);
+
+  // Get unique categories sorted alphabetically
+  const categories = Array.from(new Set(posts.map(p => p.category))).sort();
+
+  // Filter posts based on selected category
+  const filteredPosts = selectedCategory
+    ? posts.filter(post => post.category === selectedCategory)
+    : posts;
 
   if (isLoading) {
     return (
@@ -86,46 +95,79 @@ export default function Blog() {
       <div className="mobile-content">
         <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
           <div style={{ marginBottom: "32px" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "16px" }}>
-              <div>
-                <h1 className="mobile-heading-1" style={{ marginBottom: "12px" }}>BLOG</h1>
-                <p className="mobile-body" style={{ marginBottom: "0", color: "var(--pixel-text-light)" }}>
-                  Explore articles about ADHD, task management, productivity, and neurodiversity.
-                </p>
-              </div>
-              <a
-                href="/blog/categories"
+            <h1 className="mobile-heading-1" style={{ marginBottom: "12px" }}>BLOG</h1>
+            <p className="mobile-body" style={{ marginBottom: "16px", color: "var(--pixel-text-light)" }}>
+              Explore articles about ADHD, task management, productivity, and neurodiversity.
+            </p>
+
+            {/* Category Filter */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "24px" }}>
+              <button
+                onClick={() => setSelectedCategory(null)}
                 style={{
-                  backgroundColor: "transparent",
+                  backgroundColor: selectedCategory === null ? "var(--pixel-accent)" : "transparent",
+                  color: selectedCategory === null ? "white" : "var(--pixel-text)",
                   border: "2px solid var(--pixel-border)",
-                  padding: "8px 16px",
+                  padding: "6px 12px",
                   fontFamily: "'VT323', monospace",
-                  fontSize: "14px",
+                  fontSize: "12px",
                   cursor: "pointer",
                   transition: "all 0.2s",
-                  textDecoration: "none",
-                  color: "var(--pixel-text)",
-                  whiteSpace: "nowrap",
-                  marginTop: "4px"
                 }}
                 onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.backgroundColor = "var(--pixel-accent)";
-                  el.style.color = "white";
+                  if (selectedCategory !== null) {
+                    const el = e.currentTarget as HTMLElement;
+                    el.style.backgroundColor = "var(--pixel-accent)";
+                    el.style.color = "white";
+                  }
                 }}
                 onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.backgroundColor = "transparent";
-                  el.style.color = "var(--pixel-text)";
+                  if (selectedCategory !== null) {
+                    const el = e.currentTarget as HTMLElement;
+                    el.style.backgroundColor = "transparent";
+                    el.style.color = "var(--pixel-text)";
+                  }
                 }}
               >
-                CATEGORIES
-              </a>
+                ALL
+              </button>
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  onClick={() => setSelectedCategory(category)}
+                  style={{
+                    backgroundColor: selectedCategory === category ? "var(--pixel-accent)" : "transparent",
+                    color: selectedCategory === category ? "white" : "var(--pixel-text)",
+                    border: "2px solid var(--pixel-border)",
+                    padding: "6px 12px",
+                    fontFamily: "'VT323', monospace",
+                    fontSize: "12px",
+                    cursor: "pointer",
+                    transition: "all 0.2s",
+                  }}
+                  onMouseEnter={(e) => {
+                    if (selectedCategory !== category) {
+                      const el = e.currentTarget as HTMLElement;
+                      el.style.backgroundColor = "var(--pixel-accent)";
+                      el.style.color = "white";
+                    }
+                  }}
+                  onMouseLeave={(e) => {
+                    if (selectedCategory !== category) {
+                      const el = e.currentTarget as HTMLElement;
+                      el.style.backgroundColor = "transparent";
+                      el.style.color = "var(--pixel-text)";
+                    }
+                  }}
+                >
+                  {category}
+                </button>
+              ))}
             </div>
           </div>
 
           <div style={{ display: "grid", gap: "16px", marginBottom: "32px" }}>
-            {posts.map((post) => (
+            {filteredPosts.map((post) => (
               <a
                 key={post.id}
                 href={`/blog/${post.slug}`}
@@ -189,9 +231,17 @@ export default function Blog() {
               </a>
             ))}
           </div>
+
+          {filteredPosts.length === 0 && (
+            <div className="mobile-card" style={{ padding: "24px", textAlign: "center" }}>
+              <p className="mobile-body" style={{ color: "var(--pixel-text-light)" }}>
+                No posts found in this category.
+              </p>
+            </div>
+          )}
         </div>
       </div>
-      
+
       <Footer />
     </div>
   );
