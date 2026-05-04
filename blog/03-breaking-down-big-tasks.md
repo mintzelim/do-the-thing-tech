@@ -1,12 +1,18 @@
 ---
 id: '3'
-title: "Breaking Down Big Tasks: A Guide for ADHD Brains"
-description: "Learn how to break big tasks into ADHD-friendly micro-steps that actually get done. Three science-backed methods, step-by-step examples, and how DoTheThing automates the whole process."
-slug: "/breaking-down-big-tasks-adhd"
-excerpt: "Task paralysis is a brain problem, not a willpower problem. Here's how to fix it with micro-steps, realistic time estimates, and AI that does the breakdown for you."
-date: "April 05, 2026"
-readTime: "8 min read"
-category: "Productivity"
+title: 'Breaking Down Big Tasks: A Guide for ADHD Brains'
+description: >-
+  Learn how to break big tasks into ADHD-friendly micro-steps that actually get
+  done. Three science-backed methods, step-by-step examples, and how DoTheThing
+  automates the whole process.
+slug: /breaking-down-big-tasks-adhd
+excerpt: >-
+  Task paralysis is a brain problem, not a willpower problem. Here's how to fix
+  it with micro-steps, realistic time estimates, and AI that does the breakdown
+  for you.
+date: April 05, 2026
+readTime: 8 min read
+category: Productivity
 primaryEntity: Task Breakdown ADHD
 secondaryEntities:
   - Task Decomposition
@@ -21,39 +27,97 @@ seoKeywords:
   - ADHD executive dysfunction
   - task paralysis ADHD
 sources:
-  - title: "PMC — Emerging Neurobiology of ADHD: Key Role of the Prefrontal Cortex"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2894421/"
-  - title: "CHADD — Time Management and ADHD: To-Do Lists"
-    url: "https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/"
-  - title: "CHADD — General Prevalence of ADHD"
-    url: "https://chadd.org/about-adhd/general-prevalence/"
-  - title: "ADDA — ADHD Paralysis"
-    url: "https://add.org/adhd-paralysis/"
-  - title: "Journal of Global Health — Global Prevalence of Adult ADHD: Song et al. (2021)"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7916320/"
-  - title: "Klarity Health — Breaking the First-Step Barrier: Micro-Steps and ADHD Task Initiation"
-    url: "https://www.helloklarity.com/post/breaking-the-first-step-barrier-how-micro-steps-can-help-adhd-brains-overcome-task-initiation-problems/"
-  - title: "Sachs Center — ADHD Strategies for Adults"
-    url: "https://sachscenter.com/adhd-strategies-for-adults/"
-  - title: "DoTheThing"
-    url: "https://www.dothething.tech"
+  - title: 'PMC — Emerging Neurobiology of ADHD: Key Role of the Prefrontal Cortex'
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2894421/
+  - title: 'CHADD — Time Management and ADHD: To-Do Lists'
+    url: https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
+  - title: CHADD — General Prevalence of ADHD
+    url: https://chadd.org/about-adhd/general-prevalence/
+  - title: ADDA — ADHD Paralysis
+    url: https://add.org/adhd-paralysis/
+  - title: >-
+      Journal of Global Health — Global Prevalence of Adult ADHD: Song et al.
+      (2021)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7916320/
+  - title: >-
+      Klarity Health — Breaking the First-Step Barrier: Micro-Steps and ADHD
+      Task Initiation
+    url: >-
+      https://www.helloklarity.com/post/breaking-the-first-step-barrier-how-micro-steps-can-help-adhd-brains-overcome-task-initiation-problems/
+  - title: Sachs Center — ADHD Strategies for Adults
+    url: https://sachscenter.com/adhd-strategies-for-adults/
+  - title: DoTheThing
+    url: https://www.dothething.tech
 relatedPosts:
   - '1'
   - '4'
   - '5'
 faq:
-  - q: "Why is breaking down tasks so hard for ADHD brains?"
-    a: "Breaking tasks down requires planning, sequencing, and prioritising — exactly the executive functions that ADHD disrupts. The prefrontal cortex, which handles these jobs, operates with reduced dopamine signalling in ADHD brains. So the difficulty isn't laziness. It's a specific neurological gap in the brain's management system. Removing the breakdown step entirely — by using AI to do it for you — is one of the most direct ways around this."
-  - q: "What is the 2-minute rule for ADHD task breakdown?"
-    a: "The 2-minute rule means breaking a task into steps that each take 2 to 5 minutes to complete. Smaller steps reduce the cognitive load of starting. Each completed step delivers a small dopamine hit, which makes it easier to move to the next one. If a step takes longer than 5 minutes, break it down further until you get to something your brain can start without friction."
-  - q: "What is the reverse breakdown method for ADHD?"
-    a: "The reverse breakdown starts at the finished outcome and works backward to the first action. You ask: what needs to exist for this to be done? Then: what needs to exist for that? You keep asking until you reach a step so small it requires no planning to begin. This method is useful for complex, multi-stage projects where the path forward isn't obvious."
-  - q: "What is a dependency map and how does it help with ADHD?"
-    a: "A dependency map identifies which steps must happen before others can start, and which steps can run in parallel. It prevents a common ADHD trap: starting a step that turns out to be blocked by something else, stalling momentum and triggering overwhelm. Mapping dependencies first gives your brain a clear, unambiguous sequence to follow."
-  - q: "How does DoTheThing help ADHD brains break down tasks?"
-    a: "DoTheThing uses AI to break any task into micro-steps with realistic, time-buffered estimates. You type in the task, select your focus level (hyperfocused, normal, or distracted), and choose a breakdown size (Tiny Steps, Balanced, or Big Milestones). The AI handles the planning entirely, removing the hardest part of task management for ADHD brains. No login required — start at www.DoTheThing.tech."
-  - q: "What are micro-steps and why do they work for ADHD?"
-    a: "Micro-steps are small, specific, action-oriented tasks that take 2 to 15 minutes each. They work for ADHD brains because they eliminate ambiguity. Your brain knows exactly what to do next without having to generate a plan first. Each completed step provides a dopamine reward that builds momentum for the next one. The research is consistent: smaller steps reduce cognitive load and improve task initiation in people with executive dysfunction."
+  - q: Why is breaking down tasks so hard for ADHD brains?
+    a: >-
+      Breaking tasks down requires planning, sequencing, and prioritising —
+      exactly the executive functions that ADHD disrupts. The prefrontal cortex,
+      which handles these jobs, operates with reduced dopamine signalling in
+      ADHD brains. So the difficulty isn't laziness. It's a specific
+      neurological gap in the brain's management system. Removing the breakdown
+      step entirely — by using AI to do it for you — is one of the most direct
+      ways around this.
+  - q: What is the 2-minute rule for ADHD task breakdown?
+    a: >-
+      The 2-minute rule means breaking a task into steps that each take 2 to 5
+      minutes to complete. Smaller steps reduce the cognitive load of starting.
+      Each completed step delivers a small dopamine hit, which makes it easier
+      to move to the next one. If a step takes longer than 5 minutes, break it
+      down further until you get to something your brain can start without
+      friction.
+  - q: What is the reverse breakdown method for ADHD?
+    a: >-
+      The reverse breakdown starts at the finished outcome and works backward to
+      the first action. You ask: what needs to exist for this to be done? Then:
+      what needs to exist for that? You keep asking until you reach a step so
+      small it requires no planning to begin. This method is useful for complex,
+      multi-stage projects where the path forward isn't obvious.
+  - q: What is a dependency map and how does it help with ADHD?
+    a: >-
+      A dependency map identifies which steps must happen before others can
+      start, and which steps can run in parallel. It prevents a common ADHD
+      trap: starting a step that turns out to be blocked by something else,
+      stalling momentum and triggering overwhelm. Mapping dependencies first
+      gives your brain a clear, unambiguous sequence to follow.
+  - q: How does DoTheThing help ADHD brains break down tasks?
+    a: >-
+      DoTheThing uses AI to break any task into micro-steps with realistic,
+      time-buffered estimates. You type in the task, select your focus level
+      (hyperfocused, normal, or distracted), and choose a breakdown size (Tiny
+      Steps, Balanced, or Big Milestones). The AI handles the planning entirely,
+      removing the hardest part of task management for ADHD brains. No login
+      required — start at www.DoTheThing.tech.
+  - q: What are micro-steps and why do they work for ADHD?
+    a: >-
+      Micro-steps are small, specific, action-oriented tasks that take 2 to 15
+      minutes each. They work for ADHD brains because they eliminate ambiguity.
+      Your brain knows exactly what to do next without having to generate a plan
+      first. Each completed step provides a dopamine reward that builds momentum
+      for the next one. The research is consistent: smaller steps reduce
+      cognitive load and improve task initiation in people with executive
+      dysfunction.
+faqItems:
+  - question: Why is breaking down tasks important for ADHD?
+    answer: >-
+      Breaking tasks into smaller steps reduces overwhelm and makes it easier to
+      start. ADHD brains work better with clear, specific next steps.
+  - question: How small should I break down tasks?
+    answer: >-
+      Break tasks into steps that take 5-30 minutes. If a step feels
+      overwhelming, break it down further.
+  - question: What if I still can't start after breaking down a task?
+    answer: >-
+      Try the "two-minute rule" - commit to just 2 minutes. Often, starting is
+      the hardest part, and momentum builds from there.
+  - question: How do I remember all the broken-down steps?
+    answer: >-
+      Write them down in a tool like Todoist or Notion. Visual reminders help
+      ADHD brains stay on track.
 ---
 
 # Breaking Down Big Tasks: A Guide for ADHD Brains

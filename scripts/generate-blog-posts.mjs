@@ -85,6 +85,13 @@ function generateBlogPosts() {
         ? frontmatter.secondaryEntities
         : [];
 
+      const faqItems = Array.isArray(frontmatter.faqItems)
+        ? frontmatter.faqItems.map((item) => ({
+            question: item.question || '',
+            answer: item.answer || '',
+          }))
+        : [];
+
       const post = {
         id: String(frontmatter.id),
         title: frontmatter.title || '',
@@ -94,6 +101,7 @@ function generateBlogPosts() {
         category: frontmatter.category || '',
         primaryEntity: frontmatter.primaryEntity || '',
         secondaryEntities,
+        faqItems,
         seoKeywords,
         sources,
         relatedPosts,

@@ -1,7 +1,9 @@
 ---
 id: '16'
 title: Neurodivergent Productivity - 7 Tactics That Actually Work
-excerpt: Move past the freeze — practical strategies for task initiation when your brain won't cooperate
+excerpt: >-
+  Move past the freeze — practical strategies for task initiation when your
+  brain won't cooperate
 date: April 27, 2026
 readTime: 12 min read
 category: Productivity
@@ -21,21 +23,45 @@ sources:
   - title: AI in Workplace Statistics
     url: https://www.aiprm.com/ai-in-workplace-statistics/
   - title: National Neurodiversity Assessments - Hyperfocus Statistics
-    url: https://www.nationalneurodiversityassessments.co.uk/post/10-eye-opening-statistics-about-neurodiversity-in-the-workplace
+    url: >-
+      https://www.nationalneurodiversityassessments.co.uk/post/10-eye-opening-statistics-about-neurodiversity-in-the-workplace
   - title: Cognitive Fit - ADHD Strengths Study
-    url: https://blog.cognifit.com/what-a-new-study-reveals-about-strengths-in-adults-with-adhd/
+    url: >-
+      https://blog.cognifit.com/what-a-new-study-reveals-about-strengths-in-adults-with-adhd/
   - title: ADHD Evidence - Time Blindness Meta-Analysis
-    url: https://www.adhdevidence.org/blog/time-blindness-found-to-be-a-consistent-feature-of-adhd
+    url: >-
+      https://www.adhdevidence.org/blog/time-blindness-found-to-be-a-consistent-feature-of-adhd
   - title: Productive with Chris - ADHD Timeboxing Guide
     url: https://productivewithchris.com/guides/adhd-timeboxing-guide/
   - title: Therapists in Baltimore - Rejection Sensitive Dysphoria
-    url: https://www.therapistsinbaltimore.com/therapy-insights-blog/2025/12/20/rejection-sensitive-dysphoria-rsd-what-research-actually-shows
+    url: >-
+      https://www.therapistsinbaltimore.com/therapy-insights-blog/2025/12/20/rejection-sensitive-dysphoria-rsd-what-research-actually-shows
   - title: Exceptional Individuals - JPMorgan Autism at Work
-    url: https://exceptionalindividuals.com/about-us/blog/why-neurodiverse-teams-can-be-30-more-productive/
+    url: >-
+      https://exceptionalindividuals.com/about-us/blog/why-neurodiverse-teams-can-be-30-more-productive/
 relatedPosts:
   - '1'
   - '17'
   - '18'
+  - '14'
+faqItems:
+  - question: What productivity tactics work best for neurodivergent brains?
+    answer: >-
+      Body doubling, time-blocking, external accountability, and breaking tasks
+      into tiny steps are most effective for ADHD and autism.
+  - question: Why do traditional productivity methods fail for neurodivergent people?
+    answer: >-
+      Traditional methods assume neurotypical executive function. Neurodivergent
+      brains need different strategies that work with, not against, how they're
+      wired.
+  - question: How do I find my personal productivity style?
+    answer: >-
+      Experiment with different tactics and track what works. Your productivity
+      style is unique - don't force yourself into neurotypical boxes.
+  - question: Can I combine multiple productivity tactics?
+    answer: >-
+      Yes, most effective systems combine 2-3 tactics. Find what works and layer
+      them together for maximum impact.
 ---
 
 
@@ -215,3 +241,6 @@ Absolutely. Strategies like shrinking the task, naming the freeze, and using ext
 ​[https://www.therapistsinbaltimore.com/therapy-insights-blog/2025/12/20/rejection-sensitive-dysphoria-rsd-what-research-actually-shows](https://www.therapistsinbaltimore.com/therapy-insights-blog/2025/12/20/rejection-sensitive-dysphoria-rsd-what-research-actually-shows)​
 
 ​[https://neurodiversity.directory/neurodiversity-statistics/](https://neurodiversity.directory/neurodiversity-statistics/)​
+
+
+**Related:** Discover how [ADHD and Creativity](post:14) can be channeled into your work.

@@ -1,31 +1,49 @@
 ---
 id: '12'
 title: 'ADHD and Sleep: How Poor Sleep Makes Executive Dysfunction Worse'
-excerpt: Understanding the bidirectional relationship between ADHD and sleep, and
+excerpt: >-
+  Understanding the bidirectional relationship between ADHD and sleep, and
   strategies for better rest.
 date: February 10, 2024
 readTime: 6 min read
 category: Health
 primaryEntity: ADHD Sleep
 secondaryEntities:
-- Sleep Quality
-- ADHD
-- Rest
+  - Sleep Quality
+  - ADHD
+  - Rest
 seoKeywords:
-- ADHD
-- Sleep
-- Executive Function
+  - ADHD
+  - Sleep
+  - Executive Function
 sources:
-- title: National Sleep Foundation - ADHD and Sleep
-  url: https://www.sleepfoundation.org/
-- title: Mayo Clinic - Sleep and ADHD
-  url: https://www.mayoclinic.org/
-- title: Sleep Research Society - ADHD Studies
-  url: https://www.sleepresearchsociety.org/
+  - title: National Sleep Foundation - ADHD and Sleep
+    url: https://www.sleepfoundation.org/
+  - title: Mayo Clinic - Sleep and ADHD
+    url: https://www.mayoclinic.org/
+  - title: Sleep Research Society - ADHD Studies
+    url: https://www.sleepresearchsociety.org/
 relatedPosts:
-- '1'
-- '6'
-- '4'
+  - '1'
+  - '6'
+  - '4'
+faqItems:
+  - question: How does poor sleep make ADHD worse?
+    answer: >-
+      Sleep deprivation worsens executive function, impulse control, and
+      emotional regulation - all areas already challenging for ADHD brains.
+  - question: What sleep strategies work best for ADHD?
+    answer: >-
+      Consistent bedtime, no screens 1 hour before bed, physical exercise, and
+      managing caffeine intake are most effective.
+  - question: Should I take melatonin for ADHD sleep issues?
+    answer: >-
+      Melatonin can help, but consult your doctor first. It works better for
+      some people than others, and timing matters.
+  - question: How much sleep do ADHD brains need?
+    answer: >-
+      Most adults need 7-9 hours. ADHD brains may need slightly more due to the
+      extra effort required for executive function.
 ---
 
 ## Direct Answer

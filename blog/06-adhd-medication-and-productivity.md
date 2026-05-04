@@ -1,12 +1,17 @@
 ---
 id: '6'
-title: "ADHD Medication and Productivity: How to Work With Your Brain Chemistry"
-description: "How ADHD medication affects executive function and productivity — what it does, what it doesn't do, and how to build a task strategy that works with your medication window."
-slug: "/adhd-medication-productivity"
-excerpt: "ADHD medication gives you a window of improved executive function. Whether you make the most of that window depends entirely on what you do with it."
-date: "March 15, 2026"
-readTime: "8 min read"
-category: "ADHD Management"
+title: 'ADHD Medication and Productivity: How to Work With Your Brain Chemistry'
+description: >-
+  How ADHD medication affects executive function and productivity — what it
+  does, what it doesn't do, and how to build a task strategy that works with
+  your medication window.
+slug: /adhd-medication-productivity
+excerpt: >-
+  ADHD medication gives you a window of improved executive function. Whether you
+  make the most of that window depends entirely on what you do with it.
+date: March 15, 2026
+readTime: 8 min read
+category: ADHD Management
 primaryEntity: ADHD Medication Productivity
 secondaryEntities:
   - ADHD Medication
@@ -21,37 +26,86 @@ seoKeywords:
   - medication window ADHD
   - ADHD medication strategies
 sources:
-  - title: "PMC — The Dopamine Hypothesis for ADHD: MacDonald et al. (Frontiers in Psychiatry, 2024)"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11604610/"
-  - title: "NCBI Bookshelf — ADHD Medications for Adults"
-    url: "https://www.ncbi.nlm.nih.gov/books/NBK610422/"
-  - title: "PMC — Using Stimulants for ADHD: Clinical Approaches"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3733520/"
-  - title: "Sagepub — Combining Pharmacological and Psychosocial Interventions for Adult ADHD Work Outcomes (2024)"
-    url: "https://journals.sagepub.com/doi/10.1177/27546330241292984"
-  - title: "Bloom & Build Integrative Psychiatry — Executive Function and ADHD Medications (2026)"
-    url: "https://www.bloomandbuild.com/blog/understanding-executive-function-and-adhd-medications-what-works-and-what-doesnt"
-  - title: "Refresh Psychiatry — Why Do Stimulants Help ADHD?"
-    url: "https://www.refreshpsychiatry.com/post/why-do-stimulants-help-adhd"
-  - title: "DoTheThing"
-    url: "https://www.dothething.tech"
+  - title: >-
+      PMC — The Dopamine Hypothesis for ADHD: MacDonald et al. (Frontiers in
+      Psychiatry, 2024)
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11604610/
+  - title: NCBI Bookshelf — ADHD Medications for Adults
+    url: https://www.ncbi.nlm.nih.gov/books/NBK610422/
+  - title: 'PMC — Using Stimulants for ADHD: Clinical Approaches'
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3733520/
+  - title: >-
+      Sagepub — Combining Pharmacological and Psychosocial Interventions for
+      Adult ADHD Work Outcomes (2024)
+    url: https://journals.sagepub.com/doi/10.1177/27546330241292984
+  - title: >-
+      Bloom & Build Integrative Psychiatry — Executive Function and ADHD
+      Medications (2026)
+    url: >-
+      https://www.bloomandbuild.com/blog/understanding-executive-function-and-adhd-medications-what-works-and-what-doesnt
+  - title: Refresh Psychiatry — Why Do Stimulants Help ADHD?
+    url: https://www.refreshpsychiatry.com/post/why-do-stimulants-help-adhd
+  - title: DoTheThing
+    url: https://www.dothething.tech
 relatedPosts:
   - '1'
   - '4'
   - '5'
+  - '12'
 faq:
-  - q: "How does ADHD medication improve productivity?"
-    a: "ADHD stimulant medications increase the availability of dopamine and norepinephrine in the brain, which supports executive function — planning, task initiation, working memory, and sustained attention. Research shows stimulants have robust effect sizes (0.72–1.02) on planning and organisational skills. The practical result is that tasks feel less cognitively expensive to start and sustain. Medication doesn't generate a plan for you, but it makes it easier to use one you already have."
-  - q: "When is ADHD medication most effective for productivity?"
-    a: "Short-acting stimulants typically become effective 30–45 minutes after taking and last 3–6 hours. Immediate-release methylphenidate reaches peak concentration around 1.5–2.5 hours after dosing. Extended-release formulations spread effects over 8–16 hours with a more gradual peak. Scheduling your most demanding cognitive work — tasks that require planning, writing, or focused problem-solving — during this window makes use of the period when executive function support is highest."
-  - q: "Does ADHD medication work without other strategies?"
-    a: "Medication improves the brain's capacity to initiate, focus, and sustain attention — but it doesn't structure your day or break tasks down. A 2024 meta-analysis published in Sage found that combining medication with psychosocial strategies (including time management training and task organisation) produced better work-related outcomes than medication alone. Medication is most effective as one layer of a larger system."
-  - q: "What is a medication crash and how do you plan around it?"
-    a: "A medication crash is the period when stimulant effects wear off, often accompanied by fatigue, irritability, or reduced focus. For short-acting stimulants, this typically occurs 4–6 hours after dosing. Planning lower-demand tasks — routine admin, emails, scheduling — for after-crash periods lets you stay productive without relying on the cognitive load your medication was supporting. Breaking tasks into micro-steps in advance (using DoTheThing or a written list) means you don't need to plan during the crash — you just execute."
-  - q: "Can I use ADHD tools like DoTheThing on medication?"
-    a: "Yes, and the combination is particularly effective. Medication lowers the executive function cost of starting and focusing. DoTheThing handles the planning layer — breaking tasks into micro-steps with time estimates — so when your medication window opens, you already have a clear action to begin. The two work on different parts of the initiation problem: one neurological, one structural."
-  - q: "Does ADHD medication make you more productive automatically?"
-    a: "No — and this is one of the most important things to understand about ADHD medication. Stimulants improve the brain's capacity to focus and initiate, but they don't generate goals, structure, or plans. A person on medication who opens their laptop and faces an unstructured task can still freeze. The medication helps you use a plan you already have. Building that plan — breaking the task into steps, setting a timer, knowing what you're doing during the window — is what the medication amplifies."
+  - q: How does ADHD medication improve productivity?
+    a: >-
+      ADHD stimulant medications increase the availability of dopamine and
+      norepinephrine in the brain, which supports executive function — planning,
+      task initiation, working memory, and sustained attention. Research shows
+      stimulants have robust effect sizes (0.72–1.02) on planning and
+      organisational skills. The practical result is that tasks feel less
+      cognitively expensive to start and sustain. Medication doesn't generate a
+      plan for you, but it makes it easier to use one you already have.
+  - q: When is ADHD medication most effective for productivity?
+    a: >-
+      Short-acting stimulants typically become effective 30–45 minutes after
+      taking and last 3–6 hours. Immediate-release methylphenidate reaches peak
+      concentration around 1.5–2.5 hours after dosing. Extended-release
+      formulations spread effects over 8–16 hours with a more gradual peak.
+      Scheduling your most demanding cognitive work — tasks that require
+      planning, writing, or focused problem-solving — during this window makes
+      use of the period when executive function support is highest.
+  - q: Does ADHD medication work without other strategies?
+    a: >-
+      Medication improves the brain's capacity to initiate, focus, and sustain
+      attention — but it doesn't structure your day or break tasks down. A 2024
+      meta-analysis published in Sage found that combining medication with
+      psychosocial strategies (including time management training and task
+      organisation) produced better work-related outcomes than medication alone.
+      Medication is most effective as one layer of a larger system.
+  - q: What is a medication crash and how do you plan around it?
+    a: >-
+      A medication crash is the period when stimulant effects wear off, often
+      accompanied by fatigue, irritability, or reduced focus. For short-acting
+      stimulants, this typically occurs 4–6 hours after dosing. Planning
+      lower-demand tasks — routine admin, emails, scheduling — for after-crash
+      periods lets you stay productive without relying on the cognitive load
+      your medication was supporting. Breaking tasks into micro-steps in advance
+      (using DoTheThing or a written list) means you don't need to plan during
+      the crash — you just execute.
+  - q: Can I use ADHD tools like DoTheThing on medication?
+    a: >-
+      Yes, and the combination is particularly effective. Medication lowers the
+      executive function cost of starting and focusing. DoTheThing handles the
+      planning layer — breaking tasks into micro-steps with time estimates — so
+      when your medication window opens, you already have a clear action to
+      begin. The two work on different parts of the initiation problem: one
+      neurological, one structural.
+  - q: Does ADHD medication make you more productive automatically?
+    a: >-
+      No — and this is one of the most important things to understand about ADHD
+      medication. Stimulants improve the brain's capacity to focus and initiate,
+      but they don't generate goals, structure, or plans. A person on medication
+      who opens their laptop and faces an unstructured task can still freeze.
+      The medication helps you use a plan you already have. Building that plan —
+      breaking the task into steps, setting a timer, knowing what you're doing
+      during the window — is what the medication amplifies.
 ---
 
 # ADHD Medication and Productivity: How to Work With Your Brain Chemistry
@@ -223,3 +277,6 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC3733520/
 https://journals.sagepub.com/doi/10.1177/27546330241292984
 https://www.bloomandbuild.com/blog/understanding-executive-function-and-adhd-medications-what-works-and-what-doesnt
 https://www.refreshpsychiatry.com/post/why-do-stimulants-help-adhd
+
+
+**Related:** Discover how [ADHD and Sleep](post:12) impacts your executive function and productivity.

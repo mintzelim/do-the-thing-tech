@@ -1,12 +1,18 @@
 ---
 id: 20
-title: "How DoTheThing Breaks Down Tasks: 3 Real User Stories"
-description: "See how DoTheThing's AI task breakdown actually works for ADHD brains. Three composite user stories — freelancer, student, remote worker — showing real input and output."
-slug: "/how-to-break-down-tasks-adhd"
-excerpt: "Features don't build habits. Results do. Here's what task breakdown with DoTheThing actually looks like — three real situations, three before-and-afters."
-date: "May 01, 2026"
-readTime: "10 min read"
-category: "Tools & Resources"
+title: 'How DoTheThing Breaks Down Tasks: 3 Real User Stories'
+description: >-
+  See how DoTheThing's AI task breakdown actually works for ADHD brains. Three
+  composite user stories — freelancer, student, remote worker — showing real
+  input and output.
+slug: /how-to-break-down-tasks-adhd
+excerpt: >-
+  Features don't build habits. Results do. Here's what task breakdown with
+  DoTheThing actually looks like — three real situations, three
+  before-and-afters.
+date: May 01, 2026
+readTime: 10 min read
+category: Tools & Resources
 primaryEntity: Task Breakdown DoTheThing
 secondaryEntities:
   - Task Decomposition
@@ -21,35 +27,88 @@ seoKeywords:
   - micro-steps ADHD productivity
   - task breakdown tool
 sources:
-  - title: "CHADD — Time Management and ADHD: To-Do Lists"
-    url: "https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/"
-  - title: "ADDA — Impact of ADHD at Work"
-    url: "https://add.org/impact-of-adhd-at-work/"
-  - title: "ADDA — ADHD Paralysis"
-    url: "https://add.org/adhd-paralysis/"
-  - title: "PMC — WHO World Mental Health Survey: ADHD and Lost Productivity"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2665789/"
-  - title: "Frontiers in Psychiatry — Arousal Dysregulation and Executive Dysfunction in ADHD (2024)"
-    url: "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full"
-  - title: "Harvard Business School — Navigating the Jagged Technological Frontier"
-    url: "https://www.hbs.edu/faculty/Pages/item.aspx?num=64700"
-  - title: "CHADD — 6 Ways to Combat Procrastination for Adults With ADHD"
-    url: "https://chadd.org/adhd-in-the-news/6-ways-to-combat-procrastination-for-adults-with-adhd/"
+  - title: 'CHADD — Time Management and ADHD: To-Do Lists'
+    url: https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
+  - title: ADDA — Impact of ADHD at Work
+    url: https://add.org/impact-of-adhd-at-work/
+  - title: ADDA — ADHD Paralysis
+    url: https://add.org/adhd-paralysis/
+  - title: 'PMC — WHO World Mental Health Survey: ADHD and Lost Productivity'
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2665789/
+  - title: >-
+      Frontiers in Psychiatry — Arousal Dysregulation and Executive Dysfunction
+      in ADHD (2024)
+    url: >-
+      https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full
+  - title: Harvard Business School — Navigating the Jagged Technological Frontier
+    url: https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
+  - title: CHADD — 6 Ways to Combat Procrastination for Adults With ADHD
+    url: >-
+      https://chadd.org/adhd-in-the-news/6-ways-to-combat-procrastination-for-adults-with-adhd/
 relatedPosts:
   - 0
 faq:
-  - q: "How does DoTheThing break down tasks for ADHD?"
-    a: "You type in a task — or dump everything on your mind — and tell DoTheThing your current focus level (hyperfocused, normal, or distracted). The AI then breaks the task into micro-steps with realistic, ADHD-buffered time estimates. You can edit, reorder, or delete any step, then use the countdown timer to start working through them one at a time."
-  - q: "Is DoTheThing free to use?"
-    a: "Yes. DoTheThing requires no login and no complex setup. You can start immediately as a guest at www.DoTheThing.tech. Just enter your task and get a breakdown — there's nothing to install or configure before you begin."
-  - q: "How is DoTheThing different from other ADHD apps?"
-    a: "Most task apps assume you can already break tasks down and estimate time accurately. DoTheThing does both of those things for you. It also adjusts estimates based on your focus level today, adds a 20–30% time buffer to account for time blindness, and offers Tiny Steps, Balanced, or Big Milestones breakdown modes to match how your brain is functioning right now."
-  - q: "What is task paralysis in ADHD?"
-    a: "Task paralysis is when an ADHD brain becomes so overwhelmed by a task — especially a complex or multi-step one — that it freezes and can't initiate. It's not laziness or avoidance. It's a neurological response to ambiguity and cognitive overload. Breaking the task into the smallest possible first step is one of the most evidence-backed ways to move past it."
-  - q: "What is time blindness and how does DoTheThing help?"
-    a: "Time blindness is the ADHD brain's tendency to perceive time as either 'now' or 'not now,' making it genuinely difficult to estimate how long tasks will take. DoTheThing addresses this by adding a 20–30% buffer to every AI-generated time estimate and providing a visual countdown timer — two features that work together to close the gap between perceived and actual time."
-  - q: "Can I use DoTheThing for a brain dump?"
-    a: "Yes. You don't need to organise your thoughts before using DoTheThing. Just type everything that's on your plate into the task input — the app is designed to handle unstructured brain dumps and identify what needs to be broken down. No structure required before you start."
+  - q: How does DoTheThing break down tasks for ADHD?
+    a: >-
+      You type in a task — or dump everything on your mind — and tell DoTheThing
+      your current focus level (hyperfocused, normal, or distracted). The AI
+      then breaks the task into micro-steps with realistic, ADHD-buffered time
+      estimates. You can edit, reorder, or delete any step, then use the
+      countdown timer to start working through them one at a time.
+  - q: Is DoTheThing free to use?
+    a: >-
+      Yes. DoTheThing requires no login and no complex setup. You can start
+      immediately as a guest at www.DoTheThing.tech. Just enter your task and
+      get a breakdown — there's nothing to install or configure before you
+      begin.
+  - q: How is DoTheThing different from other ADHD apps?
+    a: >-
+      Most task apps assume you can already break tasks down and estimate time
+      accurately. DoTheThing does both of those things for you. It also adjusts
+      estimates based on your focus level today, adds a 20–30% time buffer to
+      account for time blindness, and offers Tiny Steps, Balanced, or Big
+      Milestones breakdown modes to match how your brain is functioning right
+      now.
+  - q: What is task paralysis in ADHD?
+    a: >-
+      Task paralysis is when an ADHD brain becomes so overwhelmed by a task —
+      especially a complex or multi-step one — that it freezes and can't
+      initiate. It's not laziness or avoidance. It's a neurological response to
+      ambiguity and cognitive overload. Breaking the task into the smallest
+      possible first step is one of the most evidence-backed ways to move past
+      it.
+  - q: What is time blindness and how does DoTheThing help?
+    a: >-
+      Time blindness is the ADHD brain's tendency to perceive time as either
+      'now' or 'not now,' making it genuinely difficult to estimate how long
+      tasks will take. DoTheThing addresses this by adding a 20–30% buffer to
+      every AI-generated time estimate and providing a visual countdown timer —
+      two features that work together to close the gap between perceived and
+      actual time.
+  - q: Can I use DoTheThing for a brain dump?
+    a: >-
+      Yes. You don't need to organise your thoughts before using DoTheThing.
+      Just type everything that's on your plate into the task input — the app is
+      designed to handle unstructured brain dumps and identify what needs to be
+      broken down. No structure required before you start.
+faqItems:
+  - question: How does DoTheThing help with task breakdown?
+    answer: >-
+      DoTheThing breaks large tasks into smaller, manageable steps
+      automatically, reducing overwhelm and making it easier to start.
+  - question: Can DoTheThing work for different types of tasks?
+    answer: >-
+      Yes, from work projects to personal goals to household chores. The task
+      breakdown framework applies to any goal.
+  - question: How do real users benefit from DoTheThing?
+    answer: >-
+      Users report better task completion, reduced procrastination, and less
+      overwhelm. The visual breakdown helps ADHD brains understand what's
+      needed.
+  - question: Is DoTheThing only for people with ADHD?
+    answer: >-
+      No, anyone can benefit from better task management. But it's specifically
+      designed with ADHD brains in mind.
 ---
 
 # How DoTheThing Breaks Down Tasks: 3 Real User Stories

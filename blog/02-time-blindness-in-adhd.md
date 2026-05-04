@@ -1,12 +1,17 @@
 ---
 id: 2
-title: "Time Blindness in ADHD: Why You're Always Late"
-description: "Time blindness in ADHD is a neurological wiring difference, not a character flaw. Here's what's happening in your brain, and the strategies that actually compensate for it."
-slug: "/time-blindness-adhd-why-youre-always-late"
-excerpt: "Exploring time blindness, how it affects ADHD individuals, and practical strategies to manage it."
-date: "April 10, 2026"
-readTime: "9 min read"
-category: "Time Management"
+title: 'Time Blindness in ADHD: Why You''re Always Late'
+description: >-
+  Time blindness in ADHD is a neurological wiring difference, not a character
+  flaw. Here's what's happening in your brain, and the strategies that actually
+  compensate for it.
+slug: /time-blindness-adhd-why-youre-always-late
+excerpt: >-
+  Exploring time blindness, how it affects ADHD individuals, and practical
+  strategies to manage it.
+date: April 10, 2026
+readTime: 9 min read
+category: Time Management
 primaryEntity: Time Blindness ADHD
 secondaryEntities:
   - Time Management
@@ -19,35 +24,88 @@ seoKeywords:
   - ADHD deadline problems
   - time blindness strategies
 sources:
-  - title: "Time Blindness in ADHD — ADDA"
-    url: "https://add.org/adhd-time-blindness/"
-  - title: "Time Perception in Adult ADHD: A Decade Review — PMC"
-    url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9962130/"
-  - title: "Time Perception as Focal Symptom of ADHD — PMC"
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8293837/"
-  - title: "Meta-analysis: Altered Perceptual Timing in ADHD — ADHD Evidence"
-    url: "https://www.adhdevidence.org/blog/time-blindness-found-to-be-a-consistent-feature-of-adhd"
-  - title: "Time Blindness Overview — Psychology Today"
-    url: "https://www.psychologytoday.com/us/basics/time-blindness"
-  - title: "Coping with Time Blindness and ADHD — UCI Health"
-    url: "https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd"
+  - title: Time Blindness in ADHD — ADDA
+    url: https://add.org/adhd-time-blindness/
+  - title: 'Time Perception in Adult ADHD: A Decade Review — PMC'
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9962130/
+  - title: Time Perception as Focal Symptom of ADHD — PMC
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8293837/
+  - title: 'Meta-analysis: Altered Perceptual Timing in ADHD — ADHD Evidence'
+    url: >-
+      https://www.adhdevidence.org/blog/time-blindness-found-to-be-a-consistent-feature-of-adhd
+  - title: Time Blindness Overview — Psychology Today
+    url: https://www.psychologytoday.com/us/basics/time-blindness
+  - title: Coping with Time Blindness and ADHD — UCI Health
+    url: https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd
 relatedPosts:
   - 1
   - 3
   - 5
+  - '21'
 faq:
-  - q: "What is time blindness in ADHD?"
-    a: "Time blindness is the ADHD brain's impaired ability to sense how much time has passed and estimate how long tasks will take. Defined by ADDA as the inability to sense time passing or estimate task duration, it stems from reduced activity in the prefrontal cortex and cerebellum, which handle time perception and planning. Around 75% of people with ADHD experience it daily."
-  - q: "Why does ADHD cause time blindness?"
-    a: "ADHD reduces activity in the prefrontal cortex, cerebellum, and left inferior parietal lobes, all of which handle time perception and planning. Dopamine irregularities also impair the brain's internal timestamping system. The result is an internal clock that runs inconsistently, making time estimation structurally unreliable rather than a skill gap."
-  - q: "Is time blindness the same as being disorganised?"
-    a: "They overlap but differ. Disorganisation refers to difficulty managing tasks, materials, and systems. Time blindness specifically targets the perception of time itself, including how long tasks take and how quickly deadlines approach. Many ADHD adults with strong organisational systems still struggle with time blindness because the two involve different cognitive processes."
-  - q: "What is the now/not now model of ADHD time perception?"
-    a: "Developed by Dr. Russell Barkley, the now/not now model describes how ADHD brains experience time in only two categories: events that are happening right now, and everything else. Future deadlines stay in the 'not now' category until they become immediate, which is why urgency only activates at the last moment regardless of how important the deadline is."
-  - q: "How does the multiply-by-2 rule help with time blindness?"
-    a: "The multiply-by-2 rule compensates for the consistent underestimation that time blindness produces. Whatever time you estimate a task will take, you double it before scheduling. Because ADHD brains structurally underestimate duration, the doubled estimate tends to land closer to reality. Pair it with a 10-minute buffer at the end of any task that precedes an appointment."
-  - q: "Can time blindness be treated?"
-    a: "Time blindness responds well to external compensation strategies rather than internal discipline. Visual timers, time anchors, the multiply-by-2 rule, and external structure tools like DoTheThing reduce its impact significantly. Some research also suggests ADHD stimulant medication improves time perception by increasing prefrontal cortex activity, though strategies are effective independently."
+  - q: What is time blindness in ADHD?
+    a: >-
+      Time blindness is the ADHD brain's impaired ability to sense how much time
+      has passed and estimate how long tasks will take. Defined by ADDA as the
+      inability to sense time passing or estimate task duration, it stems from
+      reduced activity in the prefrontal cortex and cerebellum, which handle
+      time perception and planning. Around 75% of people with ADHD experience it
+      daily.
+  - q: Why does ADHD cause time blindness?
+    a: >-
+      ADHD reduces activity in the prefrontal cortex, cerebellum, and left
+      inferior parietal lobes, all of which handle time perception and planning.
+      Dopamine irregularities also impair the brain's internal timestamping
+      system. The result is an internal clock that runs inconsistently, making
+      time estimation structurally unreliable rather than a skill gap.
+  - q: Is time blindness the same as being disorganised?
+    a: >-
+      They overlap but differ. Disorganisation refers to difficulty managing
+      tasks, materials, and systems. Time blindness specifically targets the
+      perception of time itself, including how long tasks take and how quickly
+      deadlines approach. Many ADHD adults with strong organisational systems
+      still struggle with time blindness because the two involve different
+      cognitive processes.
+  - q: What is the now/not now model of ADHD time perception?
+    a: >-
+      Developed by Dr. Russell Barkley, the now/not now model describes how ADHD
+      brains experience time in only two categories: events that are happening
+      right now, and everything else. Future deadlines stay in the 'not now'
+      category until they become immediate, which is why urgency only activates
+      at the last moment regardless of how important the deadline is.
+  - q: How does the multiply-by-2 rule help with time blindness?
+    a: >-
+      The multiply-by-2 rule compensates for the consistent underestimation that
+      time blindness produces. Whatever time you estimate a task will take, you
+      double it before scheduling. Because ADHD brains structurally
+      underestimate duration, the doubled estimate tends to land closer to
+      reality. Pair it with a 10-minute buffer at the end of any task that
+      precedes an appointment.
+  - q: Can time blindness be treated?
+    a: >-
+      Time blindness responds well to external compensation strategies rather
+      than internal discipline. Visual timers, time anchors, the multiply-by-2
+      rule, and external structure tools like DoTheThing reduce its impact
+      significantly. Some research also suggests ADHD stimulant medication
+      improves time perception by increasing prefrontal cortex activity, though
+      strategies are effective independently.
+faqItems:
+  - question: What is time blindness in ADHD?
+    answer: >-
+      Time blindness is difficulty perceiving time passage. People with ADHD
+      often lose track of time and struggle to estimate how long tasks take.
+  - question: How can I manage time blindness?
+    answer: >-
+      Use external cues: timers, alarms, visual clocks, and time-blocking. These
+      tools replace the internal time sense that doesn't work.
+  - question: Why do I always underestimate how long tasks take?
+    answer: >-
+      ADHD brains often focus intensely on the present moment, making it hard to
+      estimate duration. Hyperfocus can distort time perception.
+  - question: Is time blindness the same as being late?
+    answer: >-
+      Time blindness contributes to lateness, but they're not identical. Time
+      blindness is about perceiving time; lateness is about managing it.
 ---
 
 # Time Blindness in ADHD: Why You're Always Late
@@ -257,3 +315,6 @@ https://www.adhdevidence.org/blog/time-blindness-found-to-be-a-consistent-featur
 https://www.psychologytoday.com/us/basics/time-blindness
 https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd
 https://www.timetimer.com/
+
+
+**Related:** Explore [Does ADHD Go Away?](post:21) to understand ADHD across the lifespan.

@@ -1,12 +1,18 @@
 ---
 id: '5'
-title: "Top 5 Free Tools for ADHD Task Management (2026)"
-description: "The best free ADHD tools in 2026 — DoTheThing, Todoist, Forest, Focusmate, and Google Calendar — reviewed for how they actually help with task paralysis, time blindness, and focus."
-slug: "/top-5-free-adhd-tools"
-excerpt: "Most productivity apps weren't built for ADHD brains. These five free tools were — or work well enough that the difference doesn't matter. Here's what each one does and when to use it."
-date: "March 20, 2026"
-readTime: "8 min read"
-category: "Tools & Reviews"
+title: Top 5 Free Tools for ADHD Task Management (2026)
+description: >-
+  The best free ADHD tools in 2026 — DoTheThing, Todoist, Forest, Focusmate, and
+  Google Calendar — reviewed for how they actually help with task paralysis,
+  time blindness, and focus.
+slug: /top-5-free-adhd-tools
+excerpt: >-
+  Most productivity apps weren't built for ADHD brains. These five free tools
+  were — or work well enough that the difference doesn't matter. Here's what
+  each one does and when to use it.
+date: March 20, 2026
+readTime: 8 min read
+category: Tools & Reviews
 primaryEntity: ADHD Productivity Tools
 secondaryEntities:
   - Task Management Apps
@@ -21,33 +27,85 @@ seoKeywords:
   - ADHD time management apps
   - best apps for ADHD adults
 sources:
-  - title: "ADDA — ADHD Tools for Adults"
-    url: "https://add.org/adhd-tools-for-adults/"
-  - title: "Inflow — Best Apps for ADHD"
-    url: "https://www.getinflow.io/post/best-apps-for-adhd"
-  - title: "Healthline — Body Doubling for ADHD"
-    url: "https://www.healthline.com/health/adhd/body-double-adhd"
-  - title: "CHADD — Time Management and ADHD"
-    url: "https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/"
-  - title: "DoTheThing"
-    url: "https://www.dothething.tech"
+  - title: ADDA — ADHD Tools for Adults
+    url: https://add.org/adhd-tools-for-adults/
+  - title: Inflow — Best Apps for ADHD
+    url: https://www.getinflow.io/post/best-apps-for-adhd
+  - title: Healthline — Body Doubling for ADHD
+    url: https://www.healthline.com/health/adhd/body-double-adhd
+  - title: CHADD — Time Management and ADHD
+    url: https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
+  - title: DoTheThing
+    url: https://www.dothething.tech
 relatedPosts:
   - '1'
   - '3'
   - '6'
+  - '13'
 faq:
-  - q: "What is the best free app for ADHD task management in 2026?"
-    a: "DoTheThing is the strongest free option for the hardest ADHD problem: getting started. It uses AI to break any task into micro-steps with time estimates buffered for ADHD time blindness. No login required. For ongoing task management after the breakdown, Todoist's free tier handles recurring tasks and project organisation well. The two tools work best in combination."
-  - q: "Is Focusmate free for ADHD users?"
-    a: "Focusmate offers a free tier with three 25-minute or 50-minute body doubling sessions per week. For many ADHD users that's enough to handle the most stuck tasks of the week. Paid plans remove the session limit. The free tier is a legitimate starting point to test whether virtual body doubling works for your brain before committing."
-  - q: "Does Forest actually help with ADHD focus?"
-    a: "For many ADHD users, yes — specifically because it gamifies staying off your phone, which is one of the biggest focus disruptors. The visual tree-growing mechanic creates an immediate consequence for checking your phone (your tree dies) that works better than a standard timer for brains that need tangible feedback. The free tier on Android is fully functional; iOS requires a one-time purchase."
-  - q: "What ADHD problems does Google Calendar help with?"
-    a: "Google Calendar primarily helps with time blindness and future planning. Blocking specific time slots for tasks makes time feel concrete rather than abstract, which reduces the 'I'll do it later' problem. It works best when used for time-blocking, not just scheduling appointments — assigning your tasks to specific time windows so they have the same weight as meetings."
-  - q: "Should I use multiple ADHD tools at once?"
-    a: "Start with one. The biggest risk with ADHD tools is spending more time managing the tools than doing the work. Pick the tool that addresses your biggest current blocker — task initiation, focus during work, or scheduling — and use it consistently for two weeks before adding another. A simple system you actually use beats a complex system you abandon."
-  - q: "How does DoTheThing differ from other ADHD task apps?"
-    a: "Most task apps require you to do the breakdown yourself — they're organisers, not problem-solvers. DoTheThing automates the hardest step: deciding what to do first. You type the task, choose your focus level (hyperfocused, normal, or distracted), and get a numbered list of micro-steps back with ADHD-buffered time estimates. It removes the executive function demand that sits at the start of every task."
+  - q: What is the best free app for ADHD task management in 2026?
+    a: >-
+      DoTheThing is the strongest free option for the hardest ADHD problem:
+      getting started. It uses AI to break any task into micro-steps with time
+      estimates buffered for ADHD time blindness. No login required. For ongoing
+      task management after the breakdown, Todoist's free tier handles recurring
+      tasks and project organisation well. The two tools work best in
+      combination.
+  - q: Is Focusmate free for ADHD users?
+    a: >-
+      Focusmate offers a free tier with three 25-minute or 50-minute body
+      doubling sessions per week. For many ADHD users that's enough to handle
+      the most stuck tasks of the week. Paid plans remove the session limit. The
+      free tier is a legitimate starting point to test whether virtual body
+      doubling works for your brain before committing.
+  - q: Does Forest actually help with ADHD focus?
+    a: >-
+      For many ADHD users, yes — specifically because it gamifies staying off
+      your phone, which is one of the biggest focus disruptors. The visual
+      tree-growing mechanic creates an immediate consequence for checking your
+      phone (your tree dies) that works better than a standard timer for brains
+      that need tangible feedback. The free tier on Android is fully functional;
+      iOS requires a one-time purchase.
+  - q: What ADHD problems does Google Calendar help with?
+    a: >-
+      Google Calendar primarily helps with time blindness and future planning.
+      Blocking specific time slots for tasks makes time feel concrete rather
+      than abstract, which reduces the 'I'll do it later' problem. It works best
+      when used for time-blocking, not just scheduling appointments — assigning
+      your tasks to specific time windows so they have the same weight as
+      meetings.
+  - q: Should I use multiple ADHD tools at once?
+    a: >-
+      Start with one. The biggest risk with ADHD tools is spending more time
+      managing the tools than doing the work. Pick the tool that addresses your
+      biggest current blocker — task initiation, focus during work, or
+      scheduling — and use it consistently for two weeks before adding another.
+      A simple system you actually use beats a complex system you abandon.
+  - q: How does DoTheThing differ from other ADHD task apps?
+    a: >-
+      Most task apps require you to do the breakdown yourself — they're
+      organisers, not problem-solvers. DoTheThing automates the hardest step:
+      deciding what to do first. You type the task, choose your focus level
+      (hyperfocused, normal, or distracted), and get a numbered list of
+      micro-steps back with ADHD-buffered time estimates. It removes the
+      executive function demand that sits at the start of every task.
+faqItems:
+  - question: What are the top 5 ADHD productivity tools?
+    answer: >-
+      Todoist, Notion, Asana, Forest, and Toggl Track are popular. Choose based
+      on your specific needs: task management, note-taking, or time tracking.
+  - question: Which tool is best for beginners with ADHD?
+    answer: >-
+      Todoist is often best for beginners - simple interface, powerful features,
+      and great for building habits.
+  - question: Can I use these tools on mobile?
+    answer: >-
+      Yes, all major tools have mobile apps. Mobile access is crucial for ADHD
+      brains that need reminders throughout the day.
+  - question: How do I avoid tool-switching paralysis?
+    answer: >-
+      Pick one tool and commit to it for 30 days. Tool-switching often stems
+      from perfectionism, not actual tool inadequacy.
 ---
 
 # Top 5 Free Tools for ADHD Task Management (2026)
@@ -255,3 +313,6 @@ https://add.org/adhd-tools-for-adults/
 https://www.getinflow.io/post/best-apps-for-adhd
 https://www.healthline.com/health/adhd/body-double-adhd
 https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
+
+
+**Related:** Explore [ADHD and Financial Management](post:13) for managing money with ADHD.

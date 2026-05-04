@@ -1,30 +1,51 @@
 ---
 id: '15'
 title: 'Free Tools for ADHD Task Management in 2026: Beyond DoTheThing'
-excerpt: Every tool you need for a complete ADHD productivity system is free. This guide covers the best free ADHD task management tools in 2026 — organized by what they do and paired with where they fit in the DoTheThing workflow.
+excerpt: >-
+  Every tool you need for a complete ADHD productivity system is free. This
+  guide covers the best free ADHD task management tools in 2026 — organized by
+  what they do and paired with where they fit in the DoTheThing workflow.
 date: April 28, 2026
 readTime: 12 min read
 category: Tools & Resources
 primaryEntity: Free ADHD Tools
 secondaryEntities:
-- Productivity Tools
-- Free Software
-- ADHD
+  - Productivity Tools
+  - Free Software
+  - ADHD
 seoKeywords:
-- Free Tools
-- ADHD
-- Task Management
+  - Free Tools
+  - ADHD
+  - Task Management
 sources:
-- title: Todoist Official Site
-  url: https://todoist.com/
-- title: Notion Templates and Resources
-  url: https://www.notion.so/
-- title: ADHD Tools and Apps Directory
-  url: https://www.adhdtools.com/
+  - title: Todoist Official Site
+    url: https://todoist.com/
+  - title: Notion Templates and Resources
+    url: https://www.notion.so/
+  - title: ADHD Tools and Apps Directory
+    url: https://www.adhdtools.com/
 relatedPosts:
-- '3'
-- '5'
-- '8'
+  - '3'
+  - '5'
+  - '8'
+faqItems:
+  - question: What are the best free tools for ADHD task management?
+    answer: >-
+      Tools like Todoist, Notion, and Asana offer free plans with features
+      specifically useful for ADHD brains: visual organization, reminders, and
+      simple interfaces.
+  - question: How do I choose between different ADHD productivity tools?
+    answer: >-
+      Look for tools with simple interfaces, visual organization, and reminder
+      systems. Test free versions first to see what works with your brain.
+  - question: Can I use multiple tools together for ADHD task management?
+    answer: >-
+      Yes, many people use a combination of tools. The key is keeping it simple
+      and not over-complicating your system.
+  - question: Are paid ADHD tools worth the cost?
+    answer: >-
+      Paid tools often offer more features, but free versions usually cover the
+      basics. Start free and upgrade only if you need advanced features.
 ---
 
 # Free Tools for ADHD Task Management in 2026: Beyond DoTheThing
