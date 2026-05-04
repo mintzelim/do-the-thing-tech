@@ -1,9 +1,21 @@
 ---
+id: '10'
 title: "ADHD and Relationships: How Task Management Affects Your Connections"
 description: "ADHD doesn't just affect your productivity. It shapes your relationships too. Here's what the research shows — and what actually helps."
 slug: "/adhd-relationships-task-management"
 date: "2026-05-03"
-keywords: "ADHD relationships, ADHD and relationships, ADHD partner communication, ADHD executive dysfunction relationships, ADHD household tasks"
+readTime: "8 min read"
+category: "Relationships"
+seoKeywords:
+- ADHD relationships
+- ADHD and relationships
+- ADHD partner communication
+- ADHD executive dysfunction relationships
+- ADHD household tasks
+relatedPosts:
+  - '1'
+  - '4'
+  - '5'
 faq:
   - q: "How do I explain my ADHD to my partner without it sounding like an excuse?"
     a: "Lead with the neuroscience, then the impact. Explain that the planning and memory parts of your brain work differently — so forgetting a commitment or missing a chore is a wiring issue, not a measure of how much you care. Then show what you're doing about it. Systems, reminders, therapy, or task tools all signal effort. That combination of explanation plus action tends to land better than explanation alone."
