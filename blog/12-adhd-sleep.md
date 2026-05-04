@@ -32,13 +32,13 @@ relatedPosts:
 
 ADHD and sleep have a bidirectional relationship: ADHD makes sleep initiation and quality harder, while poor sleep worsens executive function, emotional regulation, and all ADHD symptoms.
 
-## Key Takeaways
+## ADHD & Sleep Connection
 
-- ADHD brains have trouble with sleep initiation, maintenance, and quality
-- Poor sleep makes ADHD symptoms worse—executive function, impulse control, time blindness all decline
-- Consistent sleep schedule and wind-down routine are foundational
-- External cues (timers, alarms) help ADHD brains recognize bedtime
-- Sleep is the foundation—when you sleep well, everything else gets easier
+- ADHD brains struggle with sleep initiation (racing thoughts, hyperfocus)
+- Poor sleep worsens executive function, impulse control, and time blindness
+- Consistent sleep schedule trains the brain to recognize bedtime
+- External cues (timers, alarms) help ADHD brains recognize sleep time
+- Sleep is foundational—when you sleep well, everything else gets easier
 
 Sleep and ADHD have a bidirectional relationship. ADHD makes sleep harder. Poor sleep makes ADHD worse.
 

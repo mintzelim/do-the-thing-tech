@@ -70,13 +70,13 @@ Breaking down big tasks with ADHD is harder than it sounds — because the break
 
 Breaking tasks into micro-steps removes the initiation barrier by making the first action so small (under 90 seconds) that your brain's threat-detection system doesn't activate.
 
-## Key Takeaways
+## How to Break Down Any Task
 
-- Micro-steps must be under 90 seconds to bypass executive dysfunction
-- Each step should have a single, concrete action and a time estimate
-- ADHD-buffered time estimates add 20-30% to neurotypical estimates
-- Breaking tasks down is the foundation—all other strategies build on this
-- Tools like DoTheThing automate the breakdown so you don't have to
+- Identify the actual first step (not the project overview)
+- Make each step small enough to complete in under 90 seconds
+- Write each step as a specific action, not a vague goal
+- Add realistic time estimates with 20-30% ADHD buffer
+- Number the steps so execution requires zero decision-making
 
 
 ## TL;DR

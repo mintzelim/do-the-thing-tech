@@ -43,13 +43,13 @@ faq:
 
 ADHD in the workplace creates challenges (task initiation, time management, organization) but also strengths (hyperfocus, creativity, pattern recognition)—success requires role fit and workplace accommodations.
 
-## Key Takeaways
+## ADHD Strengths in the Workplace
 
-- ADHD strengths (hyperfocus, creativity, rapid problem-solving) are underutilized in traditional roles
-- Task initiation and time management are the biggest workplace challenges
-- Accommodations like flexible schedules, task breakdown support, and reduced open-office distractions help significantly
-- Finding roles that match ADHD strengths (crisis management, creative work) improves performance
-- Disclosure and self-advocacy are critical for workplace success
+- Hyperfocus enables deep work on interesting projects
+- Creativity and pattern recognition solve novel problems quickly
+- High energy and enthusiasm drive innovation and rapid iteration
+- Crisis management and rapid problem-solving are ADHD superpowers
+- Role fit matters more than accommodations for workplace success
 
 
 ## ADHD at work is a systems problem. Here's what the right systems look like.

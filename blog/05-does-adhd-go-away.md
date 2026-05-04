@@ -68,13 +68,13 @@ Does ADHD go away with age? Three words fuelled the wrong answer to that questio
 
 ADHD symptoms persist across the lifespan but change significantly at each life stage—childhood hyperactivity often becomes adult inattention, and executive function challenges evolve with age and life demands.
 
-## Key Takeaways
+## ADHD Across the Lifespan
 
-- ADHD doesn't go away with age—it changes form
-- Childhood hyperactivity often becomes adult inattention and executive dysfunction
-- Life stage changes (school, work, relationships, parenting) change how ADHD shows up
-- Strategies that worked in one life stage may need adjustment in the next
-- Understanding ADHD across the lifespan helps you adapt strategies proactively
+- Childhood: Hyperactivity and impulsivity are most visible
+- Adolescence: Executive dysfunction and emotional dysregulation emerge
+- Young adulthood: Task management and relationship challenges peak
+- Middle age: Strategies that worked stop working; adaptation is key
+- Older age: Some symptoms improve; others persist or shift
 
 
 ## TL;DR

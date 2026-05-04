@@ -68,13 +68,13 @@ Understanding the distinction is one of the most useful things you can do for yo
 
 Executive dysfunction is a neurological impairment in planning and initiation (prefrontal cortex issue), while task paralysis is an emotional freeze response triggered by overwhelm, anxiety, or perfectionism—they require different strategies.
 
-## Key Takeaways
+## Executive Dysfunction vs Task Paralysis
 
-- Executive dysfunction = "I don't know how to start" (structural problem)
-- Task paralysis = "I feel too overwhelmed to start" (emotional problem)
+- Executive dysfunction = structural brain issue (can't plan or start)
+- Task paralysis = emotional freeze response (too overwhelmed to try)
 - Most ADHD brains experience both simultaneously
-- Address emotion first (lower the bar, do one tiny thing), then structure (use micro-steps)
-- Neither is a reflection of ability, intelligence, or effort
+- Executive dysfunction needs structure; task paralysis needs emotional support
+- Neither is a character flaw or sign of laziness
 
 
 ## TL;DR

@@ -56,13 +56,13 @@ faq:
 
 ADHD morning routines without motivation require external structure (alarms, timers, visual checklists) and low-energy first steps—motivation follows action, not the other way around.
 
-## Key Takeaways
+## Morning Routine Without Motivation
 
-- Motivation doesn't come first in ADHD—action does, then motivation follows
-- External structure (alarms, timers, visual checklists) replaces willpower
+- Motivation doesn't come first—action does, then motivation follows
+- External structure (alarms, timers, checklists) replaces willpower
 - First step must be under 2 minutes and require zero decisions
-- Consistent routine trains the brain to reduce decision fatigue
-- Celebrate small morning wins (got out of bed, took a shower) to build momentum
+- Put dopamine on-ramps within arm's reach (music, coffee, podcast)
+- Celebrate small morning wins to build momentum for the day
 
 
 ## For the days when even the easy version feels impossible

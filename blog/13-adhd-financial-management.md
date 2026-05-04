@@ -32,13 +32,13 @@ relatedPosts:
 
 Financial management with ADHD is hard because it requires sustained attention, time estimation, and emotional regulation—but systems like automatic payments, visual tracking, and task breakdown make it manageable.
 
-## Key Takeaways
+## Financial Management Strategies
 
-- ADHD financial struggles stem from executive dysfunction, not poor money sense
-- Time blindness causes bills to be forgotten; emotional dysregulation causes avoidance
-- Automate payments and use visual tracking (apps, spreadsheets) to reduce cognitive load
-- Break financial tasks into micro-steps (check balance, pay one bill, etc.)
-- Shame about money mistakes often prevents seeking help—get support early
+- Automate everything: bill pay, savings transfers, recurring expenses
+- Use visual tracking (apps, spreadsheets) to make money concrete
+- Break financial tasks into micro-steps (check balance, pay one bill)
+- Simplify finances: fewer accounts, fewer credit cards, less to track
+- Find accountability partners for monthly financial check-ins
 
 ADHD makes financial management harder. It's not about intelligence or responsibility—it's about executive function.
 

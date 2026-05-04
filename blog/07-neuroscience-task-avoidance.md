@@ -68,13 +68,13 @@ This post covers the brain circuits behind procrastination, why ADHD amplifies t
 
 Task avoidance in ADHD stems from the brain's threat-detection system activating when facing tasks with unclear steps, delayed rewards, or high emotional weight—the avoidance is neurological, not character-based.
 
-## Key Takeaways
+## Why You Procrastinate (It's Not Laziness)
 
-- Procrastination in ADHD is emotion regulation, not time management
+- Task avoidance is emotion regulation, not time management
 - Unclear tasks trigger more avoidance than hard tasks
-- Delayed rewards don't activate dopamine—immediate consequences do
-- Shame and guilt after avoidance create a cycle that makes next attempts harder
-- Breaking tasks into micro-steps and using external accountability interrupt the cycle
+- Delayed rewards don't activate dopamine in ADHD brains
+- Shame after avoidance creates a cycle that makes next attempts harder
+- Breaking tasks into micro-steps interrupts the avoidance-shame cycle
 
 
 ## TL;DR

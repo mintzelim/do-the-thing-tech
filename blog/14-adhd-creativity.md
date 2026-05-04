@@ -32,13 +32,13 @@ relatedPosts:
 
 Hyperfocus in ADHD is a strength when channeled into passion projects, but it can also cause neglect of other responsibilities—the key is intentional scheduling and boundaries.
 
-## Key Takeaways
+## Channeling Hyperfocus Into Creativity
 
-- Hyperfocus is a genuine ADHD strength, not a character flaw
-- Hyperfocus happens on tasks that are interesting, urgent, or high-reward
-- Hyperfocus can cause neglect of sleep, food, and other responsibilities
-- Intentional scheduling (time-blocking hyperfocus sessions) protects other areas
-- Creativity and pattern recognition are ADHD superpowers when given the right environment
+- Identify what triggers your hyperfocus (specific projects, conditions, people)
+- Create those conditions intentionally and protect hyperfocus time
+- Schedule hyperfocus sessions strategically for important creative work
+- Break projects into hyperfocus-friendly chunks with clear milestones
+- Use systems (templates, checklists) for the boring parts you avoid
 
 ADHD and creativity go together. Many creative professionals have ADHD. The key is channeling hyperfocus into your passion.
 

@@ -56,13 +56,13 @@ faq:
 
 Time blindness in ADHD is the brain's impaired ability to sense time passing and estimate task duration accurately, causing hours to feel like minutes and making deadlines consistently sneak up.
 
-## Key Takeaways
+## Time Blindness Symptoms & Solutions
 
-- Time blindness is a neurological difference in time-processing ability, not carelessness
-- ADHD brains underestimate task duration by 20-40% on average
-- External timers, alarms, and time-blocking make time concrete and visible
-- Deadline anxiety often masks time blindness—you feel the pressure but can't sense the time
-- Adding 20-30% time buffers to estimates compensates for time blindness
+- Hours feel like minutes; you lose track of time during hyperfocus
+- Deadlines sneak up because your brain doesn't sense time passing
+- Time estimates are consistently wrong (usually 50% too optimistic)
+- External timers and alarms make time concrete and visible
+- Time-blocking and calendar blocking create artificial time awareness
 
 
 ## And why trying harder has never fixed it

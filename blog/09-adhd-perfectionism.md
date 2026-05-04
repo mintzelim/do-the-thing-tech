@@ -70,13 +70,13 @@ Understanding why they go together, and why standard "just ship it" advice doesn
 
 Perfectionism in ADHD is often a fear-based response to past failures and shame, causing tasks to feel all-or-nothing—lowering the bar and accepting "good enough" unblocks completion.
 
-## Key Takeaways
+## Breaking the Perfectionism Cycle
 
 - ADHD perfectionism is shame-driven, not excellence-driven
 - All-or-nothing thinking makes tasks feel impossible if they can't be perfect
-- Lowering the bar (aiming for 70% instead of 100%) increases completion rates
+- Lowering the bar to 70% increases completion rates dramatically
 - Shame after incomplete tasks reinforces perfectionism and avoidance
-- Self-compassion and micro-steps break the perfectionism-paralysis cycle
+- Self-compassion is a productivity strategy, not self-indulgence
 
 
 ## TL;DR

@@ -33,13 +33,13 @@ relatedPosts:
 
 ADHD-friendly apps work because they reduce cognitive load (fewer features), provide immediate feedback (gamification), and support external structure (reminders, time-blocking) rather than relying on willpower.
 
-## Key Takeaways
+## What Makes Apps ADHD-Friendly
 
-- Simpler apps work better for ADHD brains than feature-rich ones
-- ADHD-friendly design means fewer decisions, clearer actions, and immediate feedback
-- Gamification (points, streaks, visual progress) activates dopamine better than abstract goals
-- External structure (reminders, time-blocking, body doubling) replaces internal willpower
-- The best app is one you'll actually use consistently
+- Fewer features and simpler interfaces reduce cognitive load
+- Immediate feedback (gamification, progress bars) activates dopamine
+- Clear, single actions per screen eliminate decision paralysis
+- Reminders and notifications provide external structure
+- Visual progress tracking makes abstract goals concrete
 
 
 ## The productivity industry keeps adding features. ADHD brains keep abandoning complex tools. It's time to break the cycle.

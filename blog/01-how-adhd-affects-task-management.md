@@ -52,13 +52,13 @@ faq:
 
 ADHD disrupts executive function through lower dopamine and norepinephrine levels, making task initiation, time estimation, working memory, and emotional regulation significantly harder than traditional task management systems assume.
 
-## Key Takeaways
+## Why ADHD Makes Task Management Hard
 
-- ADHD is a dopamine and norepinephrine regulation disorder, not a discipline problem
-- Traditional task management fails ADHD brains because it assumes consistent dopamine signals
-- Time blindness is a biological wiring difference, not poor time management
-- Working memory in ADHD is a leaky bucket—steps disappear due to architecture, not effort
-- External structure (micro-steps, time buffers, tools) replaces willpower entirely
+- ADHD disrupts dopamine regulation, affecting task initiation and motivation
+- Traditional task management assumes consistent willpower—ADHD brains need external structure
+- Executive function issues make planning and time estimation significantly harder
+- Working memory limitations mean steps disappear mid-task without external tracking
+- Emotional dysregulation makes task avoidance a biological response, not laziness
 
 
 ## A dopamine problem, wearing the mask of a discipline problem.

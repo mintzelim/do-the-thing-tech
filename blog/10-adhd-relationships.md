@@ -42,13 +42,13 @@ faq:
 
 ADHD affects relationships through emotional dysregulation, time blindness (forgotten plans), task-sharing friction, and communication challenges—awareness and explicit systems help both partners.
 
-## Key Takeaways
+## ADHD Impact on Relationships
 
-- ADHD emotional intensity can feel personal to partners but is neurological
+- Emotional intensity can feel personal but is neurological dysregulation
 - Time blindness causes forgotten plans and deadlines, not indifference
-- Task-sharing requires explicit systems (shared calendars, written lists) not just verbal agreements
-- Rejection sensitive dysphoria makes ADHD brains interpret criticism as rejection
-- Explicit communication and shared tools (DoTheThing, Todoist) reduce relationship friction
+- Task-sharing requires explicit systems, not just verbal agreements
+- Rejection sensitivity makes ADHD brains interpret criticism as rejection
+- Explicit communication and shared tools reduce relationship friction
 
 
 ## The arguments aren't really about the dishes. Here's what's actually happening.

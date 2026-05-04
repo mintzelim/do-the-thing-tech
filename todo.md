@@ -107,5 +107,13 @@
 - [x] Add Direct Answer snippet (1-2 sentence summary) to all 21 posts
 - [x] Add Key Takeaways module (3-5 bullet points) to all 21 posts
 - [x] Update blog-metadata.ts to use primaryEntity for enhanced schema markup (verified injection)
-- [ ] Test 3-5 representative AEO-refactored blog posts in Google Rich Results Test validator
-- [x] Verify primaryEntity/secondaryEntities schema injection in HTML (verified on free-tools-2026)
+- [ ] Submit 3-5 representative AEO-refactored blog posts to Google Rich Results Test validator
+- [x] Verify primaryEntity/secondaryEntities schema injection in HTML (verified on all 3 test posts)
+- [x] Verify FAQPage and BreadcrumbList schema presence (verified on all 3 test posts)
+
+
+## Post-Specific AEO Modules
+
+- [x] Replace Key Takeaways with post-specific AEO modules (21 posts updated with unique, relevant modules)
+- [x] Verify each post has a unique, relevant secondary module (Why ADHD Makes Task Management Hard, Time Blindness Symptoms, etc.)
+- [x] Regenerate blog-posts.json with updated modules (21/21 posts)

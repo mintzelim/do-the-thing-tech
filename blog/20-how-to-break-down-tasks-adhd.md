@@ -66,13 +66,13 @@ Features don't build habits. Results do. Here's what actually happened when thre
 
 DoTheThing breaks tasks by identifying the actual first micro-step, estimating time with ADHD buffers, and creating a numbered list you can execute without further planning.
 
-## Key Takeaways
+## How DoTheThing Works
 
-- Task breakdown removes the initiation barrier—the hardest part of ADHD
-- Micro-steps must be concrete and under 90 seconds
-- ADHD time estimates need 20-30% buffers for accuracy
-- A numbered list removes decision-making during execution
-- Real examples show how breakdown works for different task types
+- Identifies the actual first micro-step (not the project overview)
+- Estimates time with ADHD buffers (20-30% more than neurotypical)
+- Creates a numbered list for execution without further planning
+- Removes the executive function burden of task breakdown
+- Lets you start immediately without decision paralysis
 
 
 ## TL;DR
