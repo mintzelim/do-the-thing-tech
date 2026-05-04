@@ -117,3 +117,11 @@
 - [x] Replace Key Takeaways with post-specific AEO modules (21 posts updated with unique, relevant modules)
 - [x] Verify each post has a unique, relevant secondary module (Why ADHD Makes Task Management Hard, Time Blindness Symptoms, etc.)
 - [x] Regenerate blog-posts.json with updated modules (21/21 posts)
+
+
+## Blog UI Improvements
+
+- [x] Fix sources section overflow on mobile (added overflowX: hidden and display: block with whiteSpace: nowrap)
+- [x] Create Categories page to browse posts by category (BlogCategories.tsx with category filtering)
+- [x] Add category filtering/navigation to blog list (category buttons with post count)
+- [ ] Test blog UI on multiple mobile devices

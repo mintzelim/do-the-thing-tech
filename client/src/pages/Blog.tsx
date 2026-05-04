@@ -86,10 +86,42 @@ export default function Blog() {
       <div className="mobile-content">
         <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
           <div style={{ marginBottom: "32px" }}>
-            <h1 className="mobile-heading-1" style={{ marginBottom: "12px" }}>BLOG</h1>
-            <p className="mobile-body" style={{ marginBottom: "0", color: "var(--pixel-text-light)" }}>
-              Explore articles about ADHD, task management, productivity, and neurodiversity.
-            </p>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: "16px" }}>
+              <div>
+                <h1 className="mobile-heading-1" style={{ marginBottom: "12px" }}>BLOG</h1>
+                <p className="mobile-body" style={{ marginBottom: "0", color: "var(--pixel-text-light)" }}>
+                  Explore articles about ADHD, task management, productivity, and neurodiversity.
+                </p>
+              </div>
+              <a
+                href="/blog/categories"
+                style={{
+                  backgroundColor: "transparent",
+                  border: "2px solid var(--pixel-border)",
+                  padding: "8px 16px",
+                  fontFamily: "'VT323', monospace",
+                  fontSize: "14px",
+                  cursor: "pointer",
+                  transition: "all 0.2s",
+                  textDecoration: "none",
+                  color: "var(--pixel-text)",
+                  whiteSpace: "nowrap",
+                  marginTop: "4px"
+                }}
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.backgroundColor = "var(--pixel-accent)";
+                  el.style.color = "white";
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.backgroundColor = "transparent";
+                  el.style.color = "var(--pixel-text)";
+                }}
+              >
+                CATEGORIES
+              </a>
+            </div>
           </div>
 
           <div style={{ display: "grid", gap: "16px", marginBottom: "32px" }}>

@@ -11,7 +11,7 @@ function SourcesSection({ sources }: { sources: Array<{ title: string; url: stri
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="mobile-card" style={{ marginBottom: "24px", padding: "16px" }}>
+    <div className="mobile-card" style={{ marginBottom: "24px", padding: "16px", overflowX: "hidden" }}>
       <button
         onClick={() => setIsExpanded(!isExpanded)}
         style={{
@@ -61,10 +61,11 @@ function SourcesSection({ sources }: { sources: Array<{ title: string; url: stri
                   fontFamily: "'Roboto Mono', monospace",
                   fontSize: "13px",
                   transition: "all 0.2s",
-                  display: "inline-block",
-                  maxWidth: "100%",
+                  display: "block",
+                  width: "100%",
                   overflow: "hidden",
-                  textOverflow: "ellipsis"
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap"
                 }}
                 onTouchStart={(e) => {
                   (e.currentTarget as HTMLElement).style.textDecoration = "underline";
