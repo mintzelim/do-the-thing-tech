@@ -4,7 +4,7 @@ title: "ADHD and Financial Management: Why You Struggle With Money"
 description: "ADHD makes financial management genuinely harder not because of intelligence or willpower, but because of how the ADHD brain handles planning, memory, and impulse control. Here's what the research shows and what actually helps."
 slug: "/adhd-financial-management"
 excerpt: "Money management requires sustained attention, time estimation, and impulse control. These are exactly the functions ADHD disrupts most. Here's why it's hard and how to fix the system."
-date: "May 04, 2024"
+date: "May 04, 2026"
 readTime: "12 min read"
 category: "Finance"
 primaryEntity: ADHD Financial Management
