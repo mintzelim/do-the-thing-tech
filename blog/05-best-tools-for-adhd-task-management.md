@@ -62,6 +62,19 @@ This isn't a list of every tool that might help someone with ADHD. It's a short,
 
 ---
 
+## Direct Answer
+
+The best free ADHD tools in 2026 are DoTheThing (AI task breakdown), Todoist (recurring tasks), Forest (gamified focus), Focusmate (body doubling), and Google Calendar (time-blocking)—each addresses a different failure point.
+
+## Key Takeaways
+
+- DoTheThing solves the hardest ADHD problem: getting started
+- Most productivity apps are organizers, not problem-solvers
+- Start with one tool and use it consistently for two weeks before adding another
+- The best tool is the one you actually use—simplicity beats features
+- Combine tools strategically: DoTheThing for breakdown, Todoist for maintenance, Forest for focus
+
+
 ## TL;DR
 
 - **[DoTheThing](https://www.dothething.tech)** — AI task breakdown with ADHD time buffers. Start here. Free, no login.

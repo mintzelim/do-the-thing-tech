@@ -64,6 +64,19 @@ This guide covers why remote work hits ADHD brains differently, what office envi
 
 ---
 
+## Direct Answer
+
+Remote work amplifies ADHD challenges (no external structure, isolation, constant distractions) but also creates opportunities (flexible breaks, control over environment, reduced commute stress)—success requires intentional structure.
+
+## Key Takeaways
+
+- Remote work removes external structure that many ADHD brains rely on
+- Home environment distractions (notifications, household tasks) are harder to manage
+- Time-blocking and body doubling become more critical when working from home
+- Create a dedicated workspace and consistent work rituals to replace office structure
+- Use tools like Focusmate and DoTheThing to maintain accountability
+
+
 ## TL;DR
 
 - **Remote work removes accidental structure.** Commutes, coworkers, and meeting schedules were scaffolding your ADHD brain was using without knowing it.

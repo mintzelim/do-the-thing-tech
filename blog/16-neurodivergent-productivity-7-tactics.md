@@ -39,6 +39,19 @@ relatedPosts:
 ---
 
 
+## Direct Answer
+
+Neurodivergent productivity requires strategies that work with ADHD brain architecture (shrinking tasks, matching energy levels, addressing guilt, using external structure) rather than forcing neurotypical approaches.
+
+## Key Takeaways
+
+- The freeze is real and neurological, not laziness or lack of motivation
+- Shrink tasks until they're almost insulting—under 90 seconds is ideal
+- Match task difficulty to current energy, not importance
+- Address guilt and shame before attempting the task again
+- Start with one or two strategies and rotate when they stop working
+
+
 ## Move past the freeze — practical strategies for task initiation when your brain won't cooperate
 
 Discover why common productivity advice fails neurodivergent brains and what to do instead. This field guide offers quick task execution tactics designed for executive dysfunction and decision paralysis.

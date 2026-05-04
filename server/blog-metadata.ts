@@ -11,6 +11,8 @@ type BlogPost = {
   date: string;
   readTime: string;
   category: string;
+  primaryEntity?: string;
+  secondaryEntities?: string[];
   seoKeywords: string[];
   sources: Array<{ title: string; url: string }>;
   relatedPosts: string[];
@@ -61,7 +63,7 @@ function generateBlogPostSchema(post: BlogPost, baseUrl: string): string {
   const dateObj = new Date(post.date);
   const isoDate = dateObj.toISOString();
 
-  const schema = {
+  const schema: any = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
@@ -89,6 +91,22 @@ function generateBlogPostSchema(post: BlogPost, baseUrl: string): string {
     keywords: post.seoKeywords.join(", "),
     articleSection: post.category,
   };
+
+  // Add primaryEntity if available
+  if (post.primaryEntity) {
+    schema.about = {
+      "@type": "Thing",
+      name: post.primaryEntity,
+    };
+  }
+
+  // Add secondaryEntities if available
+  if (post.secondaryEntities && post.secondaryEntities.length > 0) {
+    schema.mentions = post.secondaryEntities.map((entity: string) => ({
+      "@type": "Thing",
+      name: entity,
+    }));
+  }
 
   return JSON.stringify(schema);
 }

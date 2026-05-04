@@ -48,6 +48,19 @@ faq:
 
 # How ADHD Affects Task Management
 
+## Direct Answer
+
+ADHD disrupts executive function through lower dopamine and norepinephrine levels, making task initiation, time estimation, working memory, and emotional regulation significantly harder than traditional task management systems assume.
+
+## Key Takeaways
+
+- ADHD is a dopamine and norepinephrine regulation disorder, not a discipline problem
+- Traditional task management fails ADHD brains because it assumes consistent dopamine signals
+- Time blindness is a biological wiring difference, not poor time management
+- Working memory in ADHD is a leaky bucket—steps disappear due to architecture, not effort
+- External structure (micro-steps, time buffers, tools) replaces willpower entirely
+
+
 ## A dopamine problem, wearing the mask of a discipline problem.
 
 Traditional task management tells you to write a list, prioritise it, and start at the top. Simple. Clean. Logical.

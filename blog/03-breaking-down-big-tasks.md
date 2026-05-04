@@ -66,6 +66,19 @@ Breaking down big tasks with ADHD is harder than it sounds — because the break
 
 ---
 
+## Direct Answer
+
+Breaking tasks into micro-steps removes the initiation barrier by making the first action so small (under 90 seconds) that your brain's threat-detection system doesn't activate.
+
+## Key Takeaways
+
+- Micro-steps must be under 90 seconds to bypass executive dysfunction
+- Each step should have a single, concrete action and a time estimate
+- ADHD-buffered time estimates add 20-30% to neurotypical estimates
+- Breaking tasks down is the foundation—all other strategies build on this
+- Tools like DoTheThing automate the breakdown so you don't have to
+
+
 ## TL;DR
 
 - **Task paralysis is a brain problem, not a character flaw.** The ADHD prefrontal cortex struggles specifically with planning, sequencing, and initiation — the exact skills task breakdown requires.

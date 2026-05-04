@@ -66,6 +66,19 @@ Understanding why they go together, and why standard "just ship it" advice doesn
 
 ---
 
+## Direct Answer
+
+Perfectionism in ADHD is often a fear-based response to past failures and shame, causing tasks to feel all-or-nothing—lowering the bar and accepting "good enough" unblocks completion.
+
+## Key Takeaways
+
+- ADHD perfectionism is shame-driven, not excellence-driven
+- All-or-nothing thinking makes tasks feel impossible if they can't be perfect
+- Lowering the bar (aiming for 70% instead of 100%) increases completion rates
+- Shame after incomplete tasks reinforces perfectionism and avoidance
+- Self-compassion and micro-steps break the perfectionism-paralysis cycle
+
+
 ## TL;DR
 
 - **ADHD perfectionism is a fear response, not a quality standard.** It develops from years of criticism, failure, and the accumulated shame of an ADHD brain in a neurotypical world.

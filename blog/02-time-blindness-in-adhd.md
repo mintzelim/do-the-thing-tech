@@ -52,6 +52,19 @@ faq:
 
 # Time Blindness in ADHD: Why You're Always Late
 
+## Direct Answer
+
+Time blindness in ADHD is the brain's impaired ability to sense time passing and estimate task duration accurately, causing hours to feel like minutes and making deadlines consistently sneak up.
+
+## Key Takeaways
+
+- Time blindness is a neurological difference in time-processing ability, not carelessness
+- ADHD brains underestimate task duration by 20-40% on average
+- External timers, alarms, and time-blocking make time concrete and visible
+- Deadline anxiety often masks time blindness—you feel the pressure but can't sense the time
+- Adding 20-30% time buffers to estimates compensates for time blindness
+
+
 ## And why trying harder has never fixed it
 
 You set three alarms. You left yourself a note. You told yourself this time would be different.

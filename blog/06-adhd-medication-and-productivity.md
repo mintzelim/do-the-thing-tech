@@ -66,6 +66,19 @@ This post covers what ADHD medication actually does to brain chemistry, what tha
 
 ---
 
+## Direct Answer
+
+ADHD medication increases dopamine and norepinephrine availability, supporting executive function—but it doesn't generate plans or structure. Medication works best combined with task management strategies.
+
+## Key Takeaways
+
+- Stimulants improve the brain's capacity to initiate and focus, not motivation itself
+- Short-acting stimulants create a 3-6 hour window of improved executive function
+- Medication doesn't structure your day—you still need to break tasks into micro-steps
+- Combining medication with task management produces better outcomes than either alone
+- Plan during the medication window, don't waste it deciding what to do
+
+
 ## TL;DR
 
 - **ADHD stimulants increase dopamine and norepinephrine availability**, supporting executive function — task initiation, working memory, planning, and sustained attention.

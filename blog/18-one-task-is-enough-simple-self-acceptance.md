@@ -38,6 +38,19 @@ relatedPosts:
 ---
 
 
+## Direct Answer
+
+Self-acceptance in ADHD means recognizing that one completed task is enough—lowering expectations and celebrating small wins breaks the perfectionism-shame cycle.
+
+## Key Takeaways
+
+- One task is enough—completion is the win, not perfection
+- ADHD brains need external celebration and acknowledgment of progress
+- Shame after incomplete tasks is the biggest barrier to next attempts
+- Lowering the bar (aiming for 70%) increases completion and reduces shame
+- Self-compassion is a productivity strategy, not self-indulgence
+
+
 ## Self-Acceptance Techniques That Actually Work — Why Doing Less Isn't Failure and How Single-Task Focus Rebuilds Your Relationship with Productivity
 
 Discover how self-acceptance techniques can transform your productivity from guilt-driven to guilt-free. This piece reframes the one-task day as a valid, compassionate system for real brains.

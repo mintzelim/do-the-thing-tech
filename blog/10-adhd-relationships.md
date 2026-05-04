@@ -38,6 +38,19 @@ faq:
 
 # ADHD and Relationships: How Task Management Affects Your Connections
 
+## Direct Answer
+
+ADHD affects relationships through emotional dysregulation, time blindness (forgotten plans), task-sharing friction, and communication challenges—awareness and explicit systems help both partners.
+
+## Key Takeaways
+
+- ADHD emotional intensity can feel personal to partners but is neurological
+- Time blindness causes forgotten plans and deadlines, not indifference
+- Task-sharing requires explicit systems (shared calendars, written lists) not just verbal agreements
+- Rejection sensitive dysphoria makes ADHD brains interpret criticism as rejection
+- Explicit communication and shared tools (DoTheThing, Todoist) reduce relationship friction
+
+
 ## The arguments aren't really about the dishes. Here's what's actually happening.
 
 You forgot again. The thing you promised to do. The appointment you were supposed to remember. The chore you agreed to handle.

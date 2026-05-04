@@ -104,8 +104,8 @@
 - [x] Add primaryEntity and secondaryEntities to all 21 blog posts
 - [x] Update blog generation script to extract and include new fields
 - [x] Regenerate blog-posts.json with new AEO fields (21/21 posts with primaryEntity)
-- [ ] Add Direct Answer snippet (1-2 sentence summary) to all posts
-- [ ] Add Key Takeaways module (3-5 bullet points) to all posts
-- [ ] Implement Module A-D structure with comparison tables where applicable
-- [ ] Update blog-metadata.ts to use primaryEntity for enhanced schema markup
-- [ ] Test AEO structure on Google Rich Results Test tool
+- [x] Add Direct Answer snippet (1-2 sentence summary) to all 21 posts
+- [x] Add Key Takeaways module (3-5 bullet points) to all 21 posts
+- [x] Update blog-metadata.ts to use primaryEntity for enhanced schema markup (verified injection)
+- [ ] Test 3-5 representative AEO-refactored blog posts in Google Rich Results Test validator
+- [x] Verify primaryEntity/secondaryEntities schema injection in HTML (verified on free-tools-2026)

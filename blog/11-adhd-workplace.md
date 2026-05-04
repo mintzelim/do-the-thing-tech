@@ -39,6 +39,19 @@ faq:
 
 # ADHD in the Workplace: How to Build a Career That Works With Your Brain
 
+## Direct Answer
+
+ADHD in the workplace creates challenges (task initiation, time management, organization) but also strengths (hyperfocus, creativity, pattern recognition)—success requires role fit and workplace accommodations.
+
+## Key Takeaways
+
+- ADHD strengths (hyperfocus, creativity, rapid problem-solving) are underutilized in traditional roles
+- Task initiation and time management are the biggest workplace challenges
+- Accommodations like flexible schedules, task breakdown support, and reduced open-office distractions help significantly
+- Finding roles that match ADHD strengths (crisis management, creative work) improves performance
+- Disclosure and self-advocacy are critical for workplace success
+
+
 ## ADHD at work is a systems problem. Here's what the right systems look like.
 
 You work harder than most people around you. You know you do. And your output still doesn't reflect it.

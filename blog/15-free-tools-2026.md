@@ -29,6 +29,19 @@ relatedPosts:
 
 # Free Tools for ADHD Task Management in 2026: Beyond DoTheThing
 
+## Direct Answer
+
+Beyond DoTheThing, the best free ADHD tools are Todoist (recurring tasks), Forest (focus gamification), Focusmate (body doubling), and Google Calendar (time-blocking)—each solves a different ADHD problem.
+
+## Key Takeaways
+
+- DoTheThing handles task breakdown; Todoist handles task maintenance
+- Forest gamifies focus by making phone-checking have immediate consequences
+- Focusmate provides body doubling (virtual co-working) for emotional support
+- Google Calendar makes time concrete through time-blocking
+- The best tool combination depends on your specific ADHD challenges
+
+
 ## You've got DoTheThing. Now you need the rest of the system.
 
 [DoTheThing](www.dothething.tech) is built for one thing: taking a task that feels impossible and breaking it into steps your brain can actually start. It does that brilliantly. But once a task is broken down, you still need somewhere to *put* it, a way to stay *focused* while doing it, and people to keep you *accountable* when motivation vanishes.

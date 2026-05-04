@@ -62,6 +62,19 @@ Features don't build habits. Results do. Here's what actually happened when thre
 
 ---
 
+## Direct Answer
+
+DoTheThing breaks tasks by identifying the actual first micro-step, estimating time with ADHD buffers, and creating a numbered list you can execute without further planning.
+
+## Key Takeaways
+
+- Task breakdown removes the initiation barrier—the hardest part of ADHD
+- Micro-steps must be concrete and under 90 seconds
+- ADHD time estimates need 20-30% buffers for accuracy
+- A numbered list removes decision-making during execution
+- Real examples show how breakdown works for different task types
+
+
 ## TL;DR
 
 - **ADHD task paralysis is neurological, not personal** — it happens because the brain's executive function circuits are genuinely underpowered for planning and initiating complex tasks.
