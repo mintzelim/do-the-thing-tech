@@ -1,9 +1,22 @@
 ---
+id: '11'
 title: "ADHD in the Workplace: How to Build a Career That Works With Your Brain"
 description: "ADHD at work is a systems problem — not a willpower problem. Here's the research, your legal rights, and the daily structures that actually change outcomes."
 slug: "/adhd-workplace-career-strategies"
+excerpt: "How to build a career that works with your brain and use your ADHD as a superpower."
 date: "2026-05-03"
-keywords: "ADHD in the workplace, ADHD at work, ADHD career strategies, ADHD workplace accommodations, ADHD job performance"
+readTime: "9 min read"
+category: "Career"
+seoKeywords:
+- ADHD in the workplace
+- ADHD at work
+- ADHD career strategies
+- ADHD workplace accommodations
+- ADHD job performance
+relatedPosts:
+  - '2'
+  - '8'
+  - '10'
 faq:
   - q: "Do I have to tell my employer I have ADHD?"
     a: "No. Disclosure under the ADA is voluntary — there's no point in your employment where you're required to reveal a diagnosis. The trade-off is that without disclosure, you can't request formal accommodations. If your ADHD symptoms are affecting your performance and accommodations would help, disclosure is worth considering. You control the timing and the level of detail you share."
