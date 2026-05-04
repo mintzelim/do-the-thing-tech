@@ -5,6 +5,11 @@ excerpt: Discover how self-acceptance techniques can transform your productivity
 date: April 27, 2026
 readTime: 11 min read
 category: Productivity
+primaryEntity: ADHD Self-Acceptance
+secondaryEntities:
+  - Self-Compassion
+  - Task Management
+  - ADHD Mindset
 seoKeywords:
   - self-acceptance
   - single task focus

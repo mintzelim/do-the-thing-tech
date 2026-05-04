@@ -7,6 +7,11 @@ excerpt: "Forget the 12-step plan. This is your floor — the minimum your ADHD 
 date: "May 01, 2026"
 readTime: "11 min read"
 category: "Productivity"
+primaryEntity: ADHD Morning Routine
+secondaryEntities:
+  - Morning Routine
+  - ADHD Motivation
+  - Daily Structure
 seoKeywords:
   - ADHD morning routine no motivation
   - ADHD morning routine adults

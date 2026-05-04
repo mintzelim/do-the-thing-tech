@@ -5,6 +5,11 @@ excerpt: Move past the freeze — practical strategies for task initiation when 
 date: April 27, 2026
 readTime: 12 min read
 category: Productivity
+primaryEntity: Neurodivergent Productivity
+secondaryEntities:
+  - Productivity Tactics
+  - Executive Dysfunction
+  - Task Initiation
 seoKeywords:
   - neurodivergent productivity
   - executive dysfunction

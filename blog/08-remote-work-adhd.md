@@ -7,6 +7,11 @@ excerpt: "The office provided structure your ADHD brain used without knowing it.
 date: "March 05, 2026"
 readTime: "8 min read"
 category: "Work Environment"
+primaryEntity: Remote Work ADHD
+secondaryEntities:
+  - Work From Home
+  - ADHD Focus
+  - Remote Productivity
 seoKeywords:
   - remote work ADHD strategies
   - working from home ADHD focus

@@ -7,6 +7,11 @@ excerpt: "Perfectionism in ADHD isn't about caring too much about quality. It's 
 date: "February 28, 2026"
 readTime: "8 min read"
 category: "Psychology"
+primaryEntity: ADHD Perfectionism
+secondaryEntities:
+  - Perfectionism
+  - Task Completion
+  - ADHD Anxiety
 seoKeywords:
   - ADHD perfectionism
   - ADHD can't finish tasks

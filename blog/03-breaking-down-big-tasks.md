@@ -7,6 +7,11 @@ excerpt: "Task paralysis is a brain problem, not a willpower problem. Here's how
 date: "April 05, 2026"
 readTime: "8 min read"
 category: "Productivity"
+primaryEntity: Task Breakdown ADHD
+secondaryEntities:
+  - Task Decomposition
+  - Micro-steps
+  - ADHD Planning
 seoKeywords:
   - breaking down big tasks ADHD
   - how to break down tasks ADHD

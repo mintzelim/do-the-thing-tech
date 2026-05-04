@@ -1,18 +1,21 @@
 ---
-id: 1
-title: "How ADHD Affects Task Management"
-description: "ADHD brains run on different neurochemistry. Traditional task management was built for a different brain. Here's the science — and what actually works instead."
-slug: "/how-adhd-affects-task-management"
-excerpt: "Understanding the neuroscience behind executive dysfunction and why traditional task management fails for ADHD brains."
-date: "April 15, 2026"
-readTime: "8 min read"
-category: "ADHD Education"
+id: '1'
+title: 'How ADHD Affects Task Management'
+excerpt: 'Understanding the neuroscience behind executive dysfunction and why traditional task management fails for ADHD brains.'
+date: April 15, 2026
+readTime: 8 min read
+category: ADHD Education
+primaryEntity: ADHD Executive Dysfunction
+secondaryEntities:
+  - Task Management
+  - ADHD Neuroscience
+  - Task Initiation
 seoKeywords:
-  - how ADHD affects task management
   - ADHD executive dysfunction
+  - task management ADHD
   - ADHD task initiation
   - ADHD working memory
-  - ADHD time blindness task management
+  - ADHD dopamine task management
 sources:
   - title: "Arousal Dysregulation and Executive Dysfunction in ADHD — Frontiers in Psychiatry"
     url: "https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full"

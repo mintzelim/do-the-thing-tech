@@ -7,6 +7,11 @@ excerpt: "Your brain procrastinates to protect you from negative emotions. Under
 date: "March 10, 2026"
 readTime: "8 min read"
 category: "Psychology"
+primaryEntity: Task Avoidance Neuroscience
+secondaryEntities:
+  - Procrastination
+  - ADHD Brain
+  - Avoidance
 seoKeywords:
   - neuroscience procrastination ADHD
   - why do I procrastinate ADHD

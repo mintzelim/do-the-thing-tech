@@ -7,6 +7,11 @@ excerpt: "Most productivity apps weren't built for ADHD brains. These five free 
 date: "March 20, 2026"
 readTime: "8 min read"
 category: "Tools & Reviews"
+primaryEntity: ADHD Productivity Tools
+secondaryEntities:
+  - Task Management Apps
+  - ADHD Tools
+  - Productivity
 seoKeywords:
   - top free ADHD tools
   - best free ADHD apps 2026

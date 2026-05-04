@@ -7,6 +7,11 @@ excerpt: "Exploring time blindness, how it affects ADHD individuals, and practic
 date: "April 10, 2026"
 readTime: "9 min read"
 category: "Time Management"
+primaryEntity: Time Blindness ADHD
+secondaryEntities:
+  - Time Management
+  - ADHD Perception
+  - Time Estimation
 seoKeywords:
   - time blindness ADHD
   - ADHD time management

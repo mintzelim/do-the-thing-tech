@@ -7,6 +7,11 @@ excerpt: "They look the same from the outside — you're stuck, nothing's gettin
 date: "March 28, 2026"
 readTime: "7 min read"
 category: "ADHD Education"
+primaryEntity: Executive Dysfunction vs Task Paralysis
+secondaryEntities:
+  - Executive Dysfunction
+  - Task Paralysis
+  - ADHD Emotions
 seoKeywords:
   - executive dysfunction vs task paralysis ADHD
   - executive dysfunction ADHD

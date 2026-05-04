@@ -81,6 +81,10 @@ function generateBlogPosts() {
         ? frontmatter.relatedPosts.map(String)
         : [];
 
+      const secondaryEntities = Array.isArray(frontmatter.secondaryEntities)
+        ? frontmatter.secondaryEntities
+        : [];
+
       const post = {
         id: String(frontmatter.id),
         title: frontmatter.title || '',
@@ -88,6 +92,8 @@ function generateBlogPosts() {
         date: frontmatter.date || '',
         readTime: frontmatter.readTime || '',
         category: frontmatter.category || '',
+        primaryEntity: frontmatter.primaryEntity || '',
+        secondaryEntities,
         seoKeywords,
         sources,
         relatedPosts,

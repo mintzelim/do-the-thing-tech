@@ -5,6 +5,11 @@ excerpt: Discover why complex productivity tools fail ADHD users and how simpler
 date: April 27, 2026
 readTime: 10 min read
 category: Productivity
+primaryEntity: ADHD-Friendly App Design
+secondaryEntities:
+  - App Simplicity
+  - ADHD UX
+  - Productivity Design
 seoKeywords:
   - ADHD apps
   - simple task management

@@ -7,6 +7,11 @@ excerpt: "ADHD medication gives you a window of improved executive function. Whe
 date: "March 15, 2026"
 readTime: "8 min read"
 category: "ADHD Management"
+primaryEntity: ADHD Medication Productivity
+secondaryEntities:
+  - ADHD Medication
+  - Dopamine
+  - Focus
 seoKeywords:
   - ADHD medication productivity
   - ADHD medication executive function

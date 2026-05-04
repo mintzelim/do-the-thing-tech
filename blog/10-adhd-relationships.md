@@ -6,6 +6,11 @@ slug: "/adhd-relationships-task-management"
 date: "2026-05-03"
 readTime: "8 min read"
 category: "Relationships"
+primaryEntity: ADHD Relationships
+secondaryEntities:
+  - Relationships
+  - ADHD Communication
+  - Task Sharing
 seoKeywords:
 - ADHD relationships
 - ADHD and relationships

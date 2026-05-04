@@ -7,6 +7,11 @@ excerpt: "Features don't build habits. Results do. Here's what task breakdown wi
 date: "May 01, 2026"
 readTime: "10 min read"
 category: "Tools & Resources"
+primaryEntity: Task Breakdown DoTheThing
+secondaryEntities:
+  - Task Decomposition
+  - Real Examples
+  - ADHD Tools
 seoKeywords:
   - how to break down tasks ADHD
   - AI task breakdown ADHD

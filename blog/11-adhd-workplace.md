@@ -7,6 +7,11 @@ excerpt: "How to build a career that works with your brain and use your ADHD as 
 date: "2026-05-03"
 readTime: "9 min read"
 category: "Career"
+primaryEntity: ADHD Workplace
+secondaryEntities:
+  - Workplace ADHD
+  - Career Management
+  - Work Performance
 seoKeywords:
 - ADHD in the workplace
 - ADHD at work

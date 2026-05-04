@@ -97,3 +97,15 @@
 - [x] Check for thin content or low-value pages (all posts >1000 chars)
 - [x] Verify internal linking structure (orphaned pages fixed - all 20 posts now linked)
 - [x] Check for hreflang tags if multi-language support exists (not needed - single language)
+
+
+## AEO Template Refactor
+
+- [x] Add primaryEntity and secondaryEntities to all 21 blog posts
+- [x] Update blog generation script to extract and include new fields
+- [x] Regenerate blog-posts.json with new AEO fields (21/21 posts with primaryEntity)
+- [ ] Add Direct Answer snippet (1-2 sentence summary) to all posts
+- [ ] Add Key Takeaways module (3-5 bullet points) to all posts
+- [ ] Implement Module A-D structure with comparison tables where applicable
+- [ ] Update blog-metadata.ts to use primaryEntity for enhanced schema markup
+- [ ] Test AEO structure on Google Rich Results Test tool
