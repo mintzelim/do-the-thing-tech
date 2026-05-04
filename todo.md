@@ -125,3 +125,12 @@
 - [x] Move category filtering directly under blog description (integrated into Blog.tsx)
 - [x] Remove BlogCategories.tsx and /blog/categories route (removed from App.tsx)
 - [x] Test integrated category filter on blog page (category buttons with ALL + 6 categories)
+
+
+## Breadcrumb Navigation
+
+- [x] Create Breadcrumb component (Home > Blog > Post Title)
+- [x] Add breadcrumb to BlogPost.tsx (replaced back button)
+- [x] Style breadcrumbs to match pixel-art theme (VT323 font, pixel-accent color)
+- [x] Ensure breadcrumbs are mobile-responsive (flex layout with wrap)
+- [x] Verify breadcrumb links work correctly (Home, Blog, current post)

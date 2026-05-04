@@ -3,6 +3,7 @@ import { useRoute, useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BlogContentRenderer from "@/components/BlogContentRenderer";
+import Breadcrumb from "@/components/Breadcrumb";
 import { generateBlogPostingSchema, generateArticleSchema, generateBreadcrumbSchema, injectSchemaMarkup } from "@/lib/schemaMarkup";
 import "../pixel-art-refined.css";
 
@@ -214,34 +215,13 @@ export default function BlogPost() {
 
       <div className="mobile-content">
         <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
-          <a
-            href="/blog"
-            style={{
-              backgroundColor: "transparent",
-              border: "2px solid var(--pixel-border)",
-              padding: "8px 16px",
-              marginBottom: "24px",
-              fontFamily: "'VT323', monospace",
-              fontSize: "14px",
-              cursor: "pointer",
-              transition: "all 0.2s",
-              display: "inline-block",
-              textDecoration: "none",
-              color: "var(--pixel-text)",
-            }}
-            onMouseEnter={(e) => {
-              const el = e.currentTarget as HTMLElement;
-              el.style.backgroundColor = "var(--pixel-accent)";
-              el.style.color = "white";
-            }}
-            onMouseLeave={(e) => {
-              const el = e.currentTarget as HTMLElement;
-              el.style.backgroundColor = "transparent";
-              el.style.color = "var(--pixel-text)";
-            }}
-          >
-            ← BACK TO ALL POSTS
-          </a>
+          <Breadcrumb
+            items={[
+              { label: "Home", href: "/" },
+              { label: "Blog", href: "/blog" },
+              { label: post.title },
+            ]}
+          />
 
           <article style={{ marginBottom: "32px" }}>
             <div style={{ marginBottom: "24px" }}>
