@@ -233,8 +233,6 @@ Shared or visible task systems remove the guessing and the chasing. When your pa
 
 If you're in a relationship affected by ADHD, you're carrying something real. So is your partner. This is about both people understanding what they're dealing with — and building systems that make it manageable together.
 
-> **Publisher note:** Replace `/time-blindness-adhd`, `/why-cant-i-start-tasks-adhd-task-paralysis`, `/free-adhd-task-management-tools-2026`, and `/how-dothethinig-breaks-down-tasks` with live URLs before publishing.
-
 ---
 
 ## Sources
