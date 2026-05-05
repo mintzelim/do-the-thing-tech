@@ -152,3 +152,14 @@
 - [x] Fix orphaned posts by adding internal links (0 orphaned posts)
 - [x] Verify mobile responsiveness on all pages (breadcrumbs, sources, categories)
 - [x] Check for accessibility issues (ARIA labels, heading hierarchy verified)
+
+
+## AdSense Configuration
+
+- [x] Create ads.txt file with AdSense publisher ID (pub-1282191245289713)
+- [x] Place ads.txt in client/public/ and public/ directories
+- [x] Verify ads.txt is accessible at both /ads.txt and /.well-known/ads.txt (verified)
+- [x] AdSense meta tag already in index.html (line 31)
+- [x] AdSense script already dynamically loaded (line 75)
+- [x] Google Funding Choices configured for GDPR compliance (line 78)
+- [x] Committed ads.txt to GitHub
