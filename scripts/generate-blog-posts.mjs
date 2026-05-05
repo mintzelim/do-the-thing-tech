@@ -85,10 +85,10 @@ function generateBlogPosts() {
         ? frontmatter.secondaryEntities
         : [];
 
-      const faqItems = Array.isArray(frontmatter.faqItems)
-        ? frontmatter.faqItems.map((item) => ({
-            question: item.question || '',
-            answer: item.answer || '',
+      const faqItems = Array.isArray(frontmatter.faq)
+        ? frontmatter.faq.map((item) => ({
+            q: item.q || '',
+            a: item.a || '',
           }))
         : [];
 
@@ -101,7 +101,7 @@ function generateBlogPosts() {
         category: frontmatter.category || '',
         primaryEntity: frontmatter.primaryEntity || '',
         secondaryEntities,
-        faqItems,
+        faq: faqItems,
         seoKeywords,
         sources,
         relatedPosts,

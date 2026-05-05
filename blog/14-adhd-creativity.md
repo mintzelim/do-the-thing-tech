@@ -129,83 +129,40 @@ Hyperfocus fires more reliably when you understand what conditions produce it.
 
 Spend 1 week noticing the specific circumstances when you enter a focused creative state. What time of day was it? What were you working on? Were you alone or with others? What had you done beforehand? Was the task new, or a specific stage of something longer?
 
-The answers are different for every person. Some ADHD creatives enter hyperfocus most reliably in the early morning, before other demands have competed for attention. Others need a specific sensory environment: a particular playlist, a coffee shop's ambient noise, a particular light level. Some need an audience or an accountability partner present. Some need a deadline close enough to feel real.
+The answers are different for every person. Some ADHD creatives enter hyperfocus most reliably in the early morning, before other demands have competed for attention. Others need a specific sensory environment: a particular playlist, a coffee shop's ambient noise, a particular light level. Some need an audience or an accountability partner. Others need solitude. Some need novelty (a new project, a new location). Others need a deadline.
 
-Once you identify your pattern, you can create those conditions deliberately rather than waiting for them to arrive accidentally.
+Once you identify your conditions, protect them. Block the time. Create the environment. Remove the competing demands. You're not being difficult or high-maintenance. You're using the neurology you have.
 
-### Strategy 2: Schedule Hyperfocus Time and Protect It
+### Strategy 2: Break the Project Into Hyperfocus-Friendly Chunks
 
-Hyperfocus fired by accident produces feast-or-famine creative output. Hyperfocus scheduled intentionally produces something closer to a sustainable creative practice.
+Hyperfocus works best on tasks that are specific, novel, and bounded. A 6-month project doesn't fit those criteria. A 2-hour sprint on a specific component does.
 
-Block specific time in your calendar for creative work. Position it during the part of your day when your identified triggers are most accessible. Treat the block like a meeting with your most important client, because for your creative output, it is. Turn notifications off. Tell people you're unavailable. Remove the competing stimuli that would pull attention away before the session builds depth.
+Take your creative project and break it into phases that can be completed in 1–3 hour sessions. Each phase should have a clear deliverable: "finish the first draft of the chorus," "edit the opening scene," "design the color palette," "record the voiceover." Not "work on the song" or "work on the script."
 
-Use a visual timer during the session. [Covered in the tools guide](https://dothething.tech/blog/best-tools-for-adhd-task-management), Forest gamifies staying on task: your tree dies if you pick up your phone. Time Timer provides a visible countdown that activates the ADHD brain's urgency system. Both create an external pressure that deepens rather than interrupts creative engagement.
+For each phase, estimate how long it will take you to complete it. Use [DoTheThing](https://www.dothething.tech) to break it down further if you need to. The goal is to create a series of achievable targets that your hyperfocus can lock onto.
 
-### Strategy 3: Build Systems for the Boring Parts
+### Strategy 3: Create Systems for the Low-Stimulation Phases
 
-Every creative project has high-stimulation phases and low-stimulation phases. Ideation, early drafting, and early production are typically high-stimulation. Editing, refinement, administrative tasks, and submission processes are typically low-stimulation.
+The phases where novelty is lowest—editing, revising, administrative tasks—are where ADHD creatives most often stall. These phases don't trigger hyperfocus. They require sustained attention on something that's already familiar.
 
-ADHD creative systems fail when they rely on the same intrinsic motivation for both phases. The low-stimulation phases need external structure, not willpower.
+For these phases, create external structure: a checklist, a template, a deadline, an accountability partner, or a time-bounded session. You're not relying on internal motivation. You're creating external scaffolding.
 
-Templates reduce the cognitive cost of the boring parts. If every project uses the same invoice template, email structure, or submission checklist, the decision-making is removed and only the execution remains. Checklists convert ambiguous tasks ("prepare the submission") into specific actions ("fill in the submission form," "attach the final file," "copy the bio from the template"). Automation handles recurring tasks without requiring memory or motivation.
+Example: If editing is your stall point, create an editing checklist and commit to 30-minute editing sessions with a timer. The timer creates a bounded task. The checklist gives you a specific target. The structure replaces the missing dopamine signal.
 
-For the editing phase specifically, time-boxing works better than open-ended sessions. "Edit for 25 minutes" is more completable for an ADHD brain than "edit until it's done." The bounded session has an endpoint the brain can see.
+### Strategy 4: Use Novelty Strategically
 
-### Strategy 4: Use Micro-Steps to Restart Stalled Projects
+If new ideas are your distraction, don't fight it. Channel it. Keep a running list of new project ideas, but don't start them immediately. When you feel the pull toward a new idea, write it down, set a specific date to explore it (after the current project reaches a milestone), and return to your current work.
 
-Returning to a stalled project is one of the hardest things for an ADHD creative brain to do. The project has lost novelty, the context has been lost, and the gap between "where it is" and "where it needs to be" is unclear.
-
-[DoTheThing](https://www.dothething.tech) solves this directly. Type "resume [project name]" and the current state, choose your focus level for today, and the AI returns a numbered list of specific first steps to re-enter the project. The steps are small enough that the brain can't justify not starting. The first one almost always takes under 5 minutes.
-
-This is the same principle in [our guide to breaking down big tasks](https://dothething.tech/blog/breaking-down-big-tasks): ambiguous goals paralyse ADHD brains; specific, bounded actions give them a starting point. For creative work, the specific action is especially important because creative tasks are inherently open-ended. "Work on the story" is not startable. "Open the document and write the next scene's first line" is.
+This isn't suppressing the creative impulse. It's directing it. You're acknowledging that new ideas are valuable and will get attention—just not right now.
 
 ---
 
-## How to Build a Sustainable ADHD Creative Practice
+## The Bottom Line
 
-A sustainable creative practice for an ADHD brain looks different from the consistent, scheduled routine typically recommended in productivity advice.
+ADHD creativity is real, measurable, and powerful. The challenge isn't generating ideas. It's channeling the ideas you generate into finished work.
 
-It includes predictable high-engagement windows, built around your hyperfocus triggers, where creative output can happen at depth. It includes external systems for the phases between those windows: templates, checklists, and tools that keep projects moving when intrinsic motivation is low. It includes [an accountability structure](https://dothething.tech/blog/remote-work-adhd), whether a body-doubling session, a creative partner, or a public commitment, that compensates for the ADHD brain's difficulty sustaining engagement through low-novelty phases alone.
+The strategies that work aren't about fighting your neurology. They're about understanding it and building systems that work with it, not against it. Map your hyperfocus triggers. Break projects into hyperfocus-friendly chunks. Create systems for the low-stimulation phases. Use novelty strategically.
 
-And it includes honest calibration about what a productive creative session looks like for your brain. An ADHD creative's output often comes in concentrated bursts rather than steady daily accumulation. A single 3-hour hyperfocus session can produce more than 5 days of 30-minute attempts. Building a practice around your actual pattern, rather than an idealised version of consistent daily output, is what makes it sustainable rather than something that collapses under its own expectations.
+And when you're stuck on the first step of a creative project, [DoTheThing](https://www.dothething.tech) is built for exactly that moment: the moment when you know what you want to create but the path from intention to action isn't clear.
 
-The research supports this reframing. [ADDA notes](https://add.org/new-evidence-that-adhd-may-enhance-creativity/) that creative activity may be a better match for ADHD brains than work requiring adherence to a predetermined plan. Designing your creative practice around this reality isn't a compromise. It's the most accurate approach to how your brain actually generates its best work.
-
----
-
-## Frequently Asked Questions
-
-### Is ADHD actually linked to creativity?
-
-Yes, and the evidence is growing. A review of 31 behavioral studies by Hoogman et al. (2020) found high rates of creative achievement across both clinical and subclinical ADHD groups. Scientific American research by White and Shah found ADHD adults scored higher than non-ADHD peers on divergent thinking, conceptual expansion, and the ability to overcome knowledge constraints. A 2025 study of 750 participants found that deliberate mind wandering, common in ADHD, predicts heightened creativity.
-
-### What is divergent thinking and why does ADHD enhance it?
-
-Divergent thinking is the ability to generate many different ideas from a single starting point, finding unexpected connections and novel solutions rather than converging on one correct answer. ADHD brains produce more divergent thinking because the default mode network, the part of the brain active during mind wandering and idea association, is more active and less suppressed during tasks. This produces more idea generation, more unusual connections, and more conceptual flexibility than typical task-focused thinking allows.
-
-### How does hyperfocus work in creative projects?
-
-Hyperfocus is a state of intensely focused attention that ADHD brains enter when a task is sufficiently interesting, novel, or challenging. A 2024 PMC study found 68% of ADHD adults report frequent hyperfocus, with creative activities as the 2nd most common trigger at 25%. In creative work, hyperfocus produces deep, sustained engagement that generates more output in a few hours than days of regular focus would. The challenge is that it fires inconsistently and is hard to switch off once engaged.
-
-### Why do ADHD creatives struggle to finish projects?
-
-ADHD project abandonment usually follows 1 of 2 patterns. In the first, the initial hyperfocus fades as novelty decreases and the work moves into less stimulating phases: editing, refinement, administrative tasks. Without the dopamine drive of novelty, the brain loses engagement. In the second, a new idea generates more excitement than the current project, pulling attention away before completion. Both patterns respond to the same fix: breaking the project into hyperfocus-friendly chunks and building systems for the low-stimulation phases.
-
-### Can ADHD medication affect creativity?
-
-Research suggests ADHD stimulant medication doesn't suppress creativity. Hoogman et al. (2020) found no overall negative effect of psychostimulants on creativity across the 31 studies reviewed. Some ADHD adults report that medication reduces creative output by narrowing focus, while others report it improves creative productivity by enabling them to stay with a project through the boring phases. The effect varies significantly by person. Talking to your prescriber about timing and dose is worth doing if you notice an impact on creative work.
-
-### How does DoTheThing help ADHD creatives?
-
-DoTheThing addresses the 2 biggest creative productivity problems for ADHD brains: task initiation and managing the boring parts. For initiation, it breaks any creative task into micro-steps specific enough to start immediately. For low-stimulation phases, it converts "edit the draft" into bounded, time-estimated steps that feel completable. You enter the task, choose your focus level, and get a numbered action list back in under a minute. The first step is small enough that it takes less energy to start than to avoid.
-
----
-
-## Sources
-
-https://www.scientificamerican.com/article/the-creativity-of-adhd/
-https://www.sciencedirect.com/science/article/abs/pii/S0149763420305935
-https://pmc.ncbi.nlm.nih.gov/articles/PMC9283685/
-https://www.additudemag.com/divergent-thinking-creativity-mind-wandering/
-https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12437476/
-https://add.org/new-evidence-that-adhd-may-enhance-creativity/
+Your ADHD brain isn't broken. It's just wired differently. And that difference is an asset when you know how to use it.
