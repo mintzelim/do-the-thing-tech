@@ -95,7 +95,12 @@ export default function Blog() {
       <div className="mobile-content">
         <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
           <div style={{ marginBottom: "32px" }}>
-            <h1 className="mobile-heading-1" style={{ marginBottom: "12px" }}>BLOG</h1>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
+              <h1 className="mobile-heading-1">BLOG</h1>
+              <a href="/faq" style={{ fontSize: "12px", color: "var(--pixel-accent)", textDecoration: "underline", fontFamily: "'VT323', monospace" }}>
+                📋 FAQ HUB
+              </a>
+            </div>
             <p className="mobile-body" style={{ marginBottom: "16px", color: "var(--pixel-text-light)" }}>
               Explore articles about ADHD, task management, productivity, and neurodiversity.
             </p>
