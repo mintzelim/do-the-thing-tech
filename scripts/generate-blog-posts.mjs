@@ -42,9 +42,12 @@ function parseFrontmatter(content) {
 
 /**
  * Preserve markdown content (keep markdown formatting for rendering)
+ * Strip the Sources section since it will be rendered via the collapsible SourcesSection component
  */
 function preserveMarkdown(markdown) {
-  return markdown.trim();
+  // Remove the ## Sources section and everything after it
+  const content = markdown.split(/\n##\s+Sources\b/i)[0];
+  return content.trim();
 }
 
 /**
