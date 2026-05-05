@@ -25,9 +25,23 @@ sources:
 relatedPosts:
   - '16'
   - '1'
+  - '3'
+  - '5'
   - '18'
+faq:
+  - q: "Why do complex productivity apps fail ADHD users?"
+    a: "Complex apps require significant setup, configuration, and ongoing maintenance before delivering value. For ADHD brains, this setup becomes another executive function task on an already-overwhelming pile. Research shows task initiation impairments in ADHD are significant (effect sizes up to d=1.34). When an app demands 45 minutes of configuration before you can use it, most ADHD users abandon it before getting started. The result: the app graveyard that every neurodivergent person knows—Notion databases with three entries, Todoist projects frozen in time, Asana boards that became monuments to ambition."
+  - q: "What makes an app ADHD-friendly?"
+    a: "ADHD-friendly apps share three qualities: (1) Instant start—no configuration required, open and use immediately. (2) Visual progress—something you can see and feel, not a percentage buried in a dashboard. (3) No punishment for absence—the app doesn't guilt you with streaks or overdue badges. The entire value proposition should fit in one sentence. Forest works because you press start, a tree grows, and if you leave, the tree dies. That's it. No setup. No decision-making. No maintenance. The measure of a productivity tool for ADHD brains isn't what it can do. It's what you can do in the first thirty seconds."
+  - q: "Is simplicity the same as having fewer features?"
+    a: "Not exactly. Simplicity means reducing friction, not reducing capability. A simple app might have powerful features, but they're organized so you never need to think about them. The best ADHD-friendly apps (like DoTheThing) strip the experience down to what actually matters: breaking a task into something small enough to start. They're not trying to be your second brain or manage your entire life. They're trying to help you do one thing. Compare that with tools like Motion, which require you to 'surrender schedule control to an AI autopilot.' For ADHD brains, that often means watching an algorithm rearrange your day in ways that don't match your energy, then feeling like a failure when you can't follow the plan."
+  - q: "How many apps should I use for ADHD task management?"
+    a: "Start with one app. Master it for 2-3 weeks. Only then consider adding a second if you hit a specific limitation. Most ADHD users fail because they try to consolidate everything into one 'perfect' app, then abandon it when setup becomes overwhelming. A simple 2-3 app stack works better: one for task breakdown (DoTheThing), one for ongoing management (Todoist), one for focus (Forest). Each app does one thing well, with zero configuration. More than 3 apps typically leads to system abandonment. The rule: pick the simplest thing you can find and use it for one task. Just one."
+  - q: "Why is researching productivity tools itself a problem for ADHD brains?"
+    a: "Researching and evaluating productivity tools requires the exact cognitive resources that ADHD brains are already depleted on: sustained attention, decision-making, comparison analysis, and commitment. It's a brutal paradox: the person who most needs a simple system is the person least equipped to survive the evaluation process required to find one. The solution isn't to research better. It's to stop researching and pick the simplest option available. Don't compare forty features across six apps. Ask one question: can I use this right now, in the state I'm in right now, without setting anything up? If yes, try it for one task."
+  - q: "What's the difference between a productivity tool and a productivity ramp?"
+    a: "A system tries to manage your entire life. A ramp just reduces the effort required to get from where you are to where you're going. It doesn't add steps or require you to understand its architecture. It just makes the incline gentler. The best ADHD-friendly apps are ramps, not systems. They make starting feel possible. They respect the fact that on your worst ADHD day, you might have exactly enough executive function to open one app and type three words. And that has to be enough. The measure of a productivity tool isn't what it can do. It's what it lets you do in the first thirty seconds."
 ---
-
 
 ## Direct Answer
 

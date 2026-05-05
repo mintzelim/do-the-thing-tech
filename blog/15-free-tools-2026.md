@@ -28,24 +28,20 @@ relatedPosts:
   - '3'
   - '5'
   - '8'
-faqItems:
-  - question: What are the best free tools for ADHD task management?
-    answer: >-
-      Tools like Todoist, Notion, and Asana offer free plans with features
-      specifically useful for ADHD brains: visual organization, reminders, and
-      simple interfaces.
-  - question: How do I choose between different ADHD productivity tools?
-    answer: >-
-      Look for tools with simple interfaces, visual organization, and reminder
-      systems. Test free versions first to see what works with your brain.
-  - question: Can I use multiple tools together for ADHD task management?
-    answer: >-
-      Yes, many people use a combination of tools. The key is keeping it simple
-      and not over-complicating your system.
-  - question: Are paid ADHD tools worth the cost?
-    answer: >-
-      Paid tools often offer more features, but free versions usually cover the
-      basics. Start free and upgrade only if you need advanced features.
+  - '17'
+faq:
+  - q: "What are the best free tools for ADHD task management?"
+    a: "The best free tools depend on your specific ADHD challenges. Todoist excels at task capture and recurring tasks, Forest gamifies focus sessions, Focusmate provides body doubling accountability, and Google Calendar enables time-blocking. Most ADHD brains benefit from a 2-3 tool stack: one for task management (Todoist/Microsoft To Do), one for focus (Forest/Be Focused), and optionally one for accountability (Focusmate). The key is avoiding tool overload—simplicity beats feature-richness for ADHD productivity."
+  - q: "How do I choose between different ADHD productivity tools?"
+    a: "Evaluate tools against four ADHD-specific criteria: (1) Does it reduce friction at task initiation? (2) Does it provide dopamine rewards through visible progress or gamification? (3) Does it externalize your working memory so tasks don't rely on you remembering them? (4) Does it surface what's next without requiring decision-making? Test free versions first. Most people discover their ideal tool within 2-3 weeks of consistent use. Start with one tool, master it, then add a second if needed."
+  - q: "Can I use multiple tools together for ADHD task management?"
+    a: "Yes, but with caution. Research shows knowledge workers switch between apps over 1,000 times per day—each switch is a potential exit from focus for ADHD brains. A 2-3 tool system (e.g., DoTheThing → Todoist → Forest) works well. More than 3 tools typically leads to system abandonment. The ideal pairing is: breakdown tool (DoTheThing) + management tool (Todoist) + focus/accountability tool (Forest or Focusmate). Integrate tools where possible to reduce context switching."
+  - q: "Are paid ADHD tools worth the cost?"
+    a: "Rarely. A 2024-2025 analysis of free vs. paid productivity tools found that free tier limitations rarely prevent effective ADHD task management. Paid tools offer more features, but ADHD brains benefit more from simplicity than feature-richness. Start with free versions of Todoist, Forest, and Focusmate. Only upgrade if you hit a specific limitation after 2-3 months of consistent use. Most people never need to upgrade."
+  - q: "How do I avoid tool overload and the 'beautiful system I never use' trap?"
+    a: "Tool overload is the #1 reason ADHD productivity systems fail. The pattern: you discover a new tool, spend 3 hours customizing it, feel productive from the setup work, then abandon it because it's too complex. Prevention: (1) Commit to 2-3 tools for 30 days before adding any new ones. (2) Use templates instead of building custom systems. (3) If a tool feels like it requires more setup than actual task work, it's too complex. (4) Notion is particularly risky—use pre-built ADHD templates, never build from scratch."
+  - q: "What's the difference between free tools and DoTheThing?"
+    a: "DoTheThing solves one specific problem: converting an overwhelming task into a broken-down action list. It's the entry point. Free tools handle everything after that: task storage (Todoist), focus sessions (Forest), accountability (Focusmate), and time-blocking (Google Calendar). DoTheThing + Todoist + Forest is a complete system. DoTheThing alone leaves you with a list but no place to put it or way to stay focused while executing it. The ideal workflow: use DoTheThing for breakdown, Todoist for storage, Forest for focus, and Google Calendar for scheduling."
 ---
 
 # Free Tools for ADHD Task Management in 2026: Beyond DoTheThing

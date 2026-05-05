@@ -41,27 +41,24 @@ sources:
       https://exceptionalindividuals.com/about-us/blog/why-neurodiverse-teams-can-be-30-more-productive/
 relatedPosts:
   - '1'
+  - '3'
+  - '4'
+  - '14'
   - '17'
   - '18'
-  - '14'
-faqItems:
-  - question: What productivity tactics work best for neurodivergent brains?
-    answer: >-
-      Body doubling, time-blocking, external accountability, and breaking tasks
-      into tiny steps are most effective for ADHD and autism.
-  - question: Why do traditional productivity methods fail for neurodivergent people?
-    answer: >-
-      Traditional methods assume neurotypical executive function. Neurodivergent
-      brains need different strategies that work with, not against, how they're
-      wired.
-  - question: How do I find my personal productivity style?
-    answer: >-
-      Experiment with different tactics and track what works. Your productivity
-      style is unique - don't force yourself into neurotypical boxes.
-  - question: Can I combine multiple productivity tactics?
-    answer: >-
-      Yes, most effective systems combine 2-3 tactics. Find what works and layer
-      them together for maximum impact.
+faq:
+  - q: "What productivity tactics work best for neurodivergent brains?"
+    a: "The most effective tactics address both the practical and emotional barriers to task initiation. Shrinking tasks until they're almost insulting (under 90 seconds) removes the threat-detection activation. Body doubling provides external executive function when internal systems are offline. Energy calibration matches task difficulty to current capacity rather than importance. Time-boxing with hard stops creates containers that make initiation safer. Addressing guilt before attempting a task prevents shame spirals from blocking future attempts. These tactics work because they reduce friction rather than demanding more effort."
+  - q: "Why do traditional productivity methods fail for neurodivergent people?"
+    a: "Traditional productivity frameworks (urgency-importance matrices, prioritization lists, motivational hacks) assume neurotypical executive function is working. They fail for neurodivergent brains because: (1) decision paralysis makes ranking tasks impossible, (2) shame spirals after past failures block new attempts, (3) time blindness makes open-ended work feel terrifying, (4) motivation doesn't exist when executive function is offline. Neurodivergent productivity requires strategies that externalize cognitive processes, reduce decisions, and address emotional barriers—not strategies that demand more willpower."
+  - q: "How do I find my personal productivity style?"
+    a: "Your productivity style depends on where you get stuck most often. Do you freeze at task initiation? Try shrinking tasks and setting hard stops. Do you struggle with emotional weight from past failures? Start with guilt-addressing and building a 'did' list instead of a to-do list. Do you need external activation? Body doubling and accountability partners work. Experiment with 1-2 tactics for 2 weeks, track what works, then rotate when they stop working. Your style will evolve as your circumstances change. The goal is sustainability, not peak output."
+  - q: "Can I combine multiple productivity tactics?"
+    a: "Yes, but strategically. Most effective systems combine 2-3 tactics that address different bottlenecks. For example: (1) Shrink the task (initiation) + Set a hard stop (time blindness) + Build a did list (emotional weight). Or: (1) Energy calibration (matching capacity) + Body doubling (external activation) + Address guilt (emotional barrier). Don't try all nine at once. Pick based on where you get stuck, master those 2-3, then rotate when they stop working. Sustainability beats intensity."
+  - q: "What's the difference between executive dysfunction and laziness?"
+    a: "Executive dysfunction is a neurological bottleneck in planning, sequencing, and initiation—not a character flaw. Laziness is a choice to avoid effort. With executive dysfunction, you want to do the task but your brain won't generate the initiation signal. You might spend 45 minutes deciding which task to start, only to do none of them. That's not laziness. That's decision paralysis. Naming the difference interrupts the shame spiral and makes it possible to apply the right strategy (external prompts, shrinking the task) instead of just trying harder."
+  - q: "How do I prevent these tactics from becoming another to-do list I abandon?"
+    a: "Start with one tactic. Pick the one that addresses your biggest bottleneck. Use it for 2 weeks until it becomes automatic. Only then add a second tactic. Most people fail because they try all nine at once, which is the exact opposite of what neurodivergent brains need. Also, rotate tactics when they stop working. Your brain adapts, so the tactic that worked in January might not work in March. That's not failure—that's normal. Keep a simple log of what's working and rotate when it stops. The goal is sustainable consistency, not perfect execution."
 ---
 
 

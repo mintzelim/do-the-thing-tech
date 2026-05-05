@@ -35,8 +35,21 @@ relatedPosts:
   - '16'
   - '17'
   - '1'
+  - '3'
+faq:
+  - q: "Why does focusing on one task per day actually increase productivity?"
+    a: "Long task lists cause decision paralysis, not productivity. The average person makes 35,000 decisions per day, so by the time you've scanned 12 tasks and tried to rank them, you've burned the cognitive fuel you needed to actually do one. When one task is the whole system, productivity shifts from guilt-driven to guilt-free. Research in Acceptance and Commitment Therapy shows that shifting from achievement-focused identity to values-based action reduces psychological distress and builds resilience. A completed 'small' task builds more confidence than an ambitious list you abandoned. Completing one task consistently compounds into trust in yourself."
+  - q: "Isn't focusing on just one task per day going to make me less productive overall?"
+    a: "Counterintuitively, no. Most people who attempt long lists complete fewer meaningful tasks than those who commit to one and actually follow through. The math of self-worth matters: tracking one completed task daily is infinitely more sustainable than tracking 12 tasks where you finished four and felt bad about eight. Research by Bandura & Schunk found that repeated small victories significantly strengthen self-belief, making it easier to push through when things get hard. A productive day is not a day where you did the most things. It's a day where you did one thing and didn't hate yourself after."
+  - q: "How is this different from regular self-compassion or mindfulness advice?"
+    a: "Most self-compassion content treats it as a mental health practice separate from your actual workflow. This approach embeds compassion directly into your task system, so the structure itself prevents shame rather than asking you to meditate the shame away after the fact. Instead of asking 'What are all the things I need to do?' you ask: 'What is the one thing that, if I did it, would let me end this day without shame?' That reframe strips away the noise and gives your brain exactly one target. No ranking. No prioritizing. No agonizing over sequence. The system prevents failure before it happens."
+  - q: "What if my one task feels too small to matter?"
+    a: "That feeling is the old system talking. A completed 'small' task builds more confidence and resilience than an ambitious list you abandoned. Research shows regular achievement tracking, even of small wins, increases self-efficacy by 35%. The best system is the one you use. The best task list is the one with one item on it. Think of it as the difference between a gym routine with 12 exercises (which you skip entirely) and one that says 'do five pushups' (which you actually do, and then maybe do ten). Completion is the win, not perfection."
+  - q: "How do I choose which one task to focus on?"
+    a: "Ask yourself: 'What is the one thing that, if I did it, would let me end this day without shame?' That question cuts through decision paralysis and gives you precision. It's not about importance or urgency. It's about what would reduce the emotional weight you're carrying. For some people, it's finishing a work project. For others, it's doing the dishes. For a caregiver with ADHD, it might be taking a shower. The point is that you're choosing based on values, not on what you 'should' do. Tools like DoTheThing build around this insight: instead of giving you another place to store 30 tasks, it asks you to commit to one."
+  - q: "Can I do more than one task if I'm feeling energized?"
+    a: "Absolutely. The one-task system is a floor, not a ceiling. It's the minimum viable productivity: the amount of work that prevents shame spirals and builds consistency. On days when you have more energy or momentum, do more. But the system doesn't require it. The psychological safety comes from knowing that one task is enough. That permission to do less removes the pressure that often paralyzes people with executive dysfunction. When you're not fighting yourself about 'should,' you often find you can do more. But if you can't, one task was always enough."
 ---
-
 
 ## Direct Answer
 
