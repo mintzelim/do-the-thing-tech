@@ -124,6 +124,58 @@ export default function Footer() {
           TERMS
         </button>
       </div>
+      <div style={{ display: "flex", gap: "12px", justifyContent: "center", marginTop: "12px", marginBottom: "8px" }}>
+        <a
+          href="https://www.instagram.com/dothething.tech?igsh=MWxhM2xqMzM0ZHE1OQ=="
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "var(--pixel-text-light)",
+            textDecoration: "none",
+            fontFamily: "'VT323', monospace",
+            fontSize: "12px",
+            padding: "4px 8px",
+            border: "1px solid var(--pixel-border)",
+            backgroundColor: "transparent",
+            cursor: "pointer",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = "var(--pixel-border)";
+            e.currentTarget.style.textDecoration = "underline";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "transparent";
+            e.currentTarget.style.textDecoration = "none";
+          }}
+        >
+          INSTAGRAM
+        </a>
+        <a
+          href="https://www.tiktok.com/@dothething.tech?_r=1&_t=ZS-967yRO88m9c"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            color: "var(--pixel-text-light)",
+            textDecoration: "none",
+            fontFamily: "'VT323', monospace",
+            fontSize: "12px",
+            padding: "4px 8px",
+            border: "1px solid var(--pixel-border)",
+            backgroundColor: "transparent",
+            cursor: "pointer",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = "var(--pixel-border)";
+            e.currentTarget.style.textDecoration = "underline";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "transparent";
+            e.currentTarget.style.textDecoration = "none";
+          }}
+        >
+          TIKTOK
+        </a>
+      </div>
       <p style={{ margin: 0, fontSize: "11px", color: "var(--pixel-text-light)" }}>
         DoTheThing - Task Management for ADHD Brains
       </p>
