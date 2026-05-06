@@ -6,6 +6,7 @@ import BlogContentRenderer from "@/components/BlogContentRenderer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateBlogPostingSchema, generateArticleSchema, generateBreadcrumbSchema, injectSchemaMarkup } from "@/lib/schemaMarkup";
 import { updateMetaTags } from "@/lib/metaTags";
+import { generateBlogPostingSchemaEnhanced, generateFAQPageSchema, generateOrganizationSchema } from "@/lib/schemaMarkupEnhanced";
 import "../pixel-art-refined.css";
 
 // Mobile-optimized sources section component
@@ -104,6 +105,7 @@ type BlogPost = {
   relatedPosts: string[];
   content: string;
   slug: string;
+  faq?: Array<{ q: string; a: string }>;
 };
 
 export default function BlogPost() {
@@ -145,22 +147,29 @@ export default function BlogPost() {
       const foundPost = allPosts.find(p => p.slug === slug);
       if (foundPost) {
         setPost(foundPost);
+        const blogPostUrl = `https://dothething.tech/blog/${foundPost.slug}`;
         // Update all meta tags for SEO
         updateMetaTags({
           title: `${foundPost.title} | DoTheThing Blog`,
           description: foundPost.excerpt,
-          canonicalUrl: `https://dothething.tech/blog/${foundPost.slug}`,
-          ogUrl: `https://dothething.tech/blog/${foundPost.slug}`,
+          canonicalUrl: blogPostUrl,
+          ogUrl: blogPostUrl,
+          ogId: `${blogPostUrl}#blogpost`,
           keywords: foundPost.seoKeywords?.join(', '),
         });
 
         // Inject JSON-LD schema markup for SEO and rich snippets
         const siteUrl = window.location.origin;
         const schemas = [
+          generateOrganizationSchema(),
+          generateBlogPostingSchemaEnhanced(foundPost, siteUrl),
           generateBlogPostingSchema(foundPost, siteUrl),
           generateArticleSchema(foundPost, siteUrl),
           generateBreadcrumbSchema(foundPost, siteUrl),
         ];
+        if (foundPost.faq && foundPost.faq.length > 0) {
+          schemas.push(generateFAQPageSchema(foundPost.faq, blogPostUrl) as any);
+        }
         injectSchemaMarkup(schemas);
       } else {
         setError('Blog post not found.');

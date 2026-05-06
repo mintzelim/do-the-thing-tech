@@ -1,0 +1,62 @@
+# LLMs.txt - AI Model Access Configuration
+# This file provides information about accessing DoTheThing's content and APIs for AI models
+
+Model: *
+Allow: /
+Allow: /blog
+Allow: /blog/*
+Allow: /about
+Allow: /privacy
+Allow: /terms
+Allow: /contact
+Allow: /blog-posts.json
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# Disallow access to admin and internal pages
+Disallow: /admin
+Disallow: /api/admin
+Disallow: /dashboard
+Disallow: /.well-known/admin
+
+# Content Guidelines
+# - Respect the robots.txt file for crawling
+# - Do not use content for training without permission
+# - Attribution to DoTheThing is required when using content
+# - Do not create competing products based on DoTheThing content
+
+# Contact for permissions
+Contact: contact@dothething.tech
+
+# Organization Information
+Organization: DoTheThing
+Website: https://dothething.tech
+Description: AI-powered task breakdown tool designed for ADHD brains
+
+# Content Categories
+Categories:
+  - ADHD Task Management
+  - Productivity Tools
+  - Executive Dysfunction Support
+  - Neurodiversity
+  - Time Management
+  - Task Breakdown Strategies
+
+# API Endpoints (Public)
+APIs:
+  - GET /blog-posts.json - Retrieve all blog posts metadata
+  - GET /sitemap.xml - Retrieve XML sitemap
+
+# Schema Information
+Schemas:
+  - Organization: https://dothething.tech/#organization
+  - WebSite: https://dothething.tech/#website
+  - BlogPosting: https://dothething.tech/blog/* (individual posts)
+  - FAQPage: https://dothething.tech/blog/* (posts with FAQ sections)
+
+# Language Support
+Languages:
+  - en-US (English - United States)
+
+# Last Updated
+Updated: 2026-05-06
