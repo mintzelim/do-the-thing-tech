@@ -19,7 +19,7 @@ export const enhancedSchema = {
           "@type": "EntryPoint",
           "urlTemplate": "https://www.dothething.tech/blog?q={search_term_string}"
         },
-        "query-input": "required name=search_term_string"
+        "queryInput": "required name=search_term_string"
       }
     },
 
@@ -53,7 +53,7 @@ export const enhancedSchema = {
           "url": "https://www.dothething.tech/about"
         }
       ],
-      "contact": {
+      "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
         "email": "contact@dothething.tech",
@@ -63,26 +63,10 @@ export const enhancedSchema = {
         "https://www.instagram.com/dothething.tech",
         "https://www.tiktok.com/@dothething.tech"
       ],
-      "knowsAbout": [
-        "ADHD",
-        "Neurodivergence",
-        "Executive Dysfunction",
-        "AI Task Management",
-        "Time Blindness",
-        "Productivity Tools",
-        "Mental Health Technology",
-        "Hyperfocus",
-        "Task Initiation",
-        "Time Estimation"
-      ],
       "areaServed": {
         "@type": "Country",
         "name": "MY"
-      },
-      "award": [
-        "ADHD-Friendly Design",
-        "Neurodiversity-Affirming Technology"
-      ]
+      }
     },
 
     // Product Schema - Enhanced with detailed information
@@ -123,10 +107,7 @@ export const enhancedSchema = {
           },
           "reviewBody": "Finally, a tool that understands how ADHD brains work. DoTheThing breaks down tasks in a way that actually helps me get started."
         }
-      ],
-      "applicationCategory": "Productivity",
-      "operatingSystem": "Web, iOS, Android",
-      "softwareVersion": "1.0"
+      ]
     },
 
     // SoftwareApplication Schema - For app-specific features
@@ -135,8 +116,6 @@ export const enhancedSchema = {
       "@id": "https://www.dothething.tech/#software",
       "name": "DoTheThing",
       "description": "AI-powered task breakdown app for ADHD brains with focus-level detection and time estimation",
-      "applicationCategory": "Productivity",
-      "operatingSystem": "Web",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -146,17 +125,7 @@ export const enhancedSchema = {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
         "ratingCount": 156
-      },
-      "featureList": [
-        "AI-powered task breakdown",
-        "Focus-level detection (Hyperfocus, Normal, Distracted)",
-        "Task size selection (Tiny, Balanced, Big)",
-        "Smart time estimation",
-        "Countdown timer",
-        "No login required",
-        "Mobile-optimized interface",
-        "ADHD-friendly design"
-      ]
+      }
     },
 
     // WebPage Schema - Homepage
@@ -286,7 +255,7 @@ export const enhancedSchema = {
         "addressLocality": "Kuala Lumpur",
         "addressCountry": "MY"
       },
-      "contact": {
+      "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
         "email": "contact@dothething.tech"
