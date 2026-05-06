@@ -8,6 +8,7 @@ import PinTabTutorial from "@/components/PinTabTutorial";
 import { useTimer } from "@/contexts/TimerContext";
 import { ErrorModal } from "@/components/ErrorModal";
 import PocketsFullModal from "@/components/PocketsFullModal";
+import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import "../pixel-art-refined.css";
 
 type Step = {
@@ -25,13 +26,9 @@ export default function Home() {
   const [, navigate] = useLocation();
   const [flowState, setFlowState] = useState<FlowState>("input");
 
-  // Reset document title when returning to home page
+  // Update meta tags when component mounts
   useEffect(() => {
-    document.title = "DoTheThing - Task Breakdown for ADHD Brains";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Break down tasks into micro-steps with ADHD-friendly time estimates. Focus on what matters, one step at a time.');
-    }
+    updateMetaTags(pageMetaTags.home);
   }, []);
   const [brainDump, setBrainDump] = useState("");
   const [focusLevel, setFocusLevel] = useState<"hyperfocus" | "normal" | "distracted">("normal");

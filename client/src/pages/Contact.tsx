@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
 import { trpc } from "@/lib/trpc";
+import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import "../pixel-art-refined.css";
 
 type ContactType = "question" | "partnership" | "bug";
@@ -11,13 +12,9 @@ type ContactType = "question" | "partnership" | "bug";
 export default function Contact() {
   const [, navigate] = useLocation();
 
-  // Reset document title when visiting Contact page
+  // Update meta tags when component mounts
   useEffect(() => {
-    document.title = "Contact | DoTheThing";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Get in touch with DoTheThing. Send us your questions, feedback, or partnership inquiries.');
-    }
+    updateMetaTags(pageMetaTags.contact);
   }, []);
 
   const [formData, setFormData] = useState({

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import "../pixel-art-refined.css";
 
 type BlogPost = {
@@ -23,13 +24,9 @@ export default function Blog() {
   const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Reset document title when visiting Blog page
+  // Update meta tags when component mounts
   useEffect(() => {
-    document.title = "Blog | DoTheThing - ADHD Task Management";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Read articles about ADHD, task management, productivity, and neurodiversity.');
-    }
+    updateMetaTags(pageMetaTags.blog);
   }, []);
 
   // Load blog posts from generated JSON

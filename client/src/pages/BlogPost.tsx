@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import BlogContentRenderer from "@/components/BlogContentRenderer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { generateBlogPostingSchema, generateArticleSchema, generateBreadcrumbSchema, injectSchemaMarkup } from "@/lib/schemaMarkup";
+import { updateMetaTags } from "@/lib/metaTags";
 import "../pixel-art-refined.css";
 
 // Mobile-optimized sources section component
@@ -144,12 +145,14 @@ export default function BlogPost() {
       const foundPost = allPosts.find(p => p.slug === slug);
       if (foundPost) {
         setPost(foundPost);
-        // Update document title and meta tags for SEO
-        document.title = `${foundPost.title} | DoTheThing Blog`;
-        const metaDescription = document.querySelector('meta[name="description"]');
-        if (metaDescription) {
-          metaDescription.setAttribute('content', foundPost.excerpt);
-        }
+        // Update all meta tags for SEO
+        updateMetaTags({
+          title: `${foundPost.title} | DoTheThing Blog`,
+          description: foundPost.excerpt,
+          canonicalUrl: `https://dothething.tech/blog/${foundPost.slug}`,
+          ogUrl: `https://dothething.tech/blog/${foundPost.slug}`,
+          keywords: foundPost.seoKeywords?.join(', '),
+        });
 
         // Inject JSON-LD schema markup for SEO and rich snippets
         const siteUrl = window.location.origin;
