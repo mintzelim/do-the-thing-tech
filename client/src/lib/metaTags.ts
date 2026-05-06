@@ -3,14 +3,6 @@
  * Updates title, description, canonical URL, Open Graph, and Twitter Card tags
  */
 
-import {
-  generateOrganizationSchema,
-  generateWebSiteSchema,
-  generateWebPageSchema,
-  generateBlogPostingSchemaEnhanced,
-  generateFAQPageSchema,
-} from "./schemaMarkupEnhanced";
-
 export interface MetaTagConfig {
   title: string;
   description: string;
@@ -24,7 +16,6 @@ export interface MetaTagConfig {
   twitterDescription?: string;
   twitterImage?: string;
   keywords?: string;
-  schemas?: any[];
 }
 
 export function updateMetaTags(config: MetaTagConfig) {
@@ -63,28 +54,7 @@ export function updateMetaTags(config: MetaTagConfig) {
     updateMetaTag('name', 'twitter:image', config.twitterImage);
   }
 
-  // Inject schema markup if provided
-  if (config.schemas && config.schemas.length > 0) {
-    injectSchemaMarkup(config.schemas);
-  }
-}
-
-function injectSchemaMarkup(schemas: any[]) {
-  schemas.forEach((schema) => {
-    const schemaId = schema["@id"] || schema["@type"];
-    const existingScript = document.querySelector(
-      `script[data-schema-id="${schemaId}"]`
-    ) as HTMLScriptElement;
-    if (existingScript) {
-      existingScript.remove();
-    }
-
-    const script = document.createElement("script");
-    script.type = "application/ld+json";
-    script.setAttribute("data-schema-id", schemaId);
-    script.textContent = JSON.stringify(schema);
-    document.head.appendChild(script);
-  });
+  // Schema markup is now handled globally by enhancedSchema in App.tsx
 }
 
 function updateMetaTag(attribute: 'name' | 'property', attributeValue: string, content: string) {
@@ -111,15 +81,7 @@ function updateCanonicalLink(url: string) {
   link.href = url;
 }
 
-// Helper to get schemas for a page
-function getPageSchemas(title: string, description: string, url: string) {
-  return [
-    generateOrganizationSchema(),
-    generateWebPageSchema(title, description, url),
-  ];
-}
-
-// Page-specific meta tag configurations
+// Page-specific meta tag configurations (schemas now handled by enhancedSchema in App.tsx)
 export const pageMetaTags = {
   home: {
     title: 'DoTheThing - Task Breakdown for ADHD Brains',
@@ -128,17 +90,6 @@ export const pageMetaTags = {
     ogUrl: 'https://dothething.tech',
     ogId: 'https://dothething.tech/#homepage',
     keywords: 'ADHD task management, task breakdown, productivity tool, time estimation, executive dysfunction, task organization',
-    get schemas() {
-      return [
-        generateOrganizationSchema(),
-        generateWebSiteSchema(),
-        generateWebPageSchema(
-          'DoTheThing - Task Breakdown for ADHD Brains',
-          'Break down overwhelming tasks into manageable micro-steps with AI. Smart time estimation, ADHD-friendly design, and instant task organization.',
-          'https://dothething.tech'
-        ),
-      ];
-    },
   },
   about: {
     title: 'About DoTheThing | Task Breakdown for ADHD',
@@ -147,13 +98,6 @@ export const pageMetaTags = {
     ogUrl: 'https://dothething.tech/about',
     ogId: 'https://dothething.tech/about#page',
     keywords: 'about DoTheThing, ADHD task management, executive dysfunction support',
-    get schemas() {
-      return getPageSchemas(
-        'About DoTheThing | Task Breakdown for ADHD',
-        'Learn about DoTheThing, the AI-powered task breakdown tool designed specifically for ADHD brains.',
-        'https://dothething.tech/about'
-      );
-    },
   },
   blog: {
     title: 'Blog | DoTheThing - ADHD Task Management & Productivity',
@@ -162,13 +106,6 @@ export const pageMetaTags = {
     ogUrl: 'https://dothething.tech/blog',
     ogId: 'https://dothething.tech/blog#page',
     keywords: 'ADHD blog, task management articles, productivity tips, executive dysfunction, neurodiversity',
-    get schemas() {
-      return getPageSchemas(
-        'Blog | DoTheThing - ADHD Task Management & Productivity',
-        'Read articles about ADHD, task management, productivity strategies, and neurodiversity.',
-        'https://dothething.tech/blog'
-      );
-    },
   },
   contact: {
     title: 'Contact DoTheThing | Get in Touch',
@@ -177,13 +114,6 @@ export const pageMetaTags = {
     ogUrl: 'https://dothething.tech/contact',
     ogId: 'https://dothething.tech/contact#page',
     keywords: 'contact DoTheThing, feedback, partnership, support',
-    get schemas() {
-      return getPageSchemas(
-        'Contact DoTheThing | Get in Touch',
-        'Have questions, feedback, or partnership inquiries? Get in touch with the DoTheThing team.',
-        'https://dothething.tech/contact'
-      );
-    },
   },
   privacy: {
     title: 'Privacy Policy | DoTheThing',
@@ -192,13 +122,6 @@ export const pageMetaTags = {
     ogUrl: 'https://dothething.tech/privacy',
     ogId: 'https://dothething.tech/privacy#page',
     keywords: 'privacy policy, data protection, GDPR',
-    get schemas() {
-      return getPageSchemas(
-        'Privacy Policy | DoTheThing',
-        'Read DoTheThing\'s privacy policy. Learn how we collect, use, and protect your personal data.',
-        'https://dothething.tech/privacy'
-      );
-    },
   },
   terms: {
     title: 'Terms of Service | DoTheThing',
@@ -207,12 +130,5 @@ export const pageMetaTags = {
     ogUrl: 'https://dothething.tech/terms',
     ogId: 'https://dothething.tech/terms#page',
     keywords: 'terms of service, terms and conditions, legal',
-    get schemas() {
-      return getPageSchemas(
-        'Terms of Service | DoTheThing',
-        'Read DoTheThing\'s terms of service. Understand the terms and conditions for using our platform.',
-        'https://dothething.tech/terms'
-      );
-    },
   },
 };
