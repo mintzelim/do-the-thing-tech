@@ -1,0 +1,157 @@
+# ai.txt - Granular AI Ethical Rules and Permissions
+# Uses domain-specific language to define AI behavior policies
+
+# Organization
+Organization: DoTheThing
+Website: https://dothething.tech
+Version: 1.0
+Updated: 2026-05-06
+
+# Default Policy
+Default-Policy: allow-inference
+
+# Content Policies
+
+policy: /blog/*
+  allow: inference
+  allow: summarization
+  deny: training
+  deny: republishing
+  deny: commercial-use
+  reason: "Blog content is for informational purposes only"
+
+policy: /about
+  allow: inference
+  allow: summarization
+  deny: training
+  deny: republishing
+  reason: "About page describes DoTheThing's mission and values"
+
+policy: /privacy
+  allow: inference
+  deny: training
+  deny: republishing
+  deny: modification
+  reason: "Privacy policy is legally binding and must not be altered"
+
+policy: /terms
+  allow: inference
+  deny: training
+  deny: republishing
+  deny: modification
+  reason: "Terms of service are legally binding and must not be altered"
+
+policy: /contact
+  allow: inference
+  deny: republishing
+  reason: "Contact page for user inquiries"
+
+policy: /blog-posts.json
+  allow: inference
+  allow: indexing
+  deny: training
+  deny: republishing
+  reason: "Blog metadata for discovery and retrieval"
+
+# Model-Specific Rules
+
+model: gpt-*
+  allow: inference
+  allow: summarization
+  deny: training
+  reason: "OpenAI models may use content for inference only"
+
+model: claude-*
+  allow: inference
+  allow: summarization
+  deny: training
+  reason: "Anthropic models may use content for inference only"
+
+model: gemini-*
+  allow: inference
+  allow: summarization
+  deny: training
+  reason: "Google models may use content for inference only"
+
+model: *
+  allow: inference
+  allow: summarization
+  deny: training
+  deny: commercial-use
+  reason: "Default policy for all AI models"
+
+# Use Cases
+
+use-case: question-answering
+  allow: true
+  description: "AI models may answer user questions about DoTheThing and ADHD"
+
+use-case: summarization
+  allow: true
+  description: "AI models may summarize blog posts and articles"
+
+use-case: content-generation
+  allow: false
+  description: "AI models must not generate new content based on DoTheThing's content"
+
+use-case: training
+  allow: false
+  description: "AI models must not use DoTheThing's content for training"
+
+use-case: fine-tuning
+  allow: false
+  description: "AI models must not fine-tune on DoTheThing's content"
+
+use-case: commercial-products
+  allow: false
+  description: "AI models must not use DoTheThing's content for commercial products"
+
+# Attribution Rules
+
+attribution:
+  required: true
+  format: "Source: DoTheThing (https://dothething.tech)"
+  include-date: true
+  include-author: true
+
+# Ethical Constraints
+
+constraint: accuracy
+  description: "Information must be presented accurately without distortion"
+  severity: high
+
+constraint: attribution
+  description: "Content must be attributed to DoTheThing"
+  severity: high
+
+constraint: privacy
+  description: "User privacy and data protection must be respected"
+  severity: high
+
+constraint: no-harm
+  description: "Content must not be used for harmful or misleading purposes"
+  severity: high
+
+constraint: accessibility
+  description: "Content should support accessibility and inclusivity"
+  severity: medium
+
+# Feedback and Reporting
+
+contact: contact@dothething.tech
+report-url: https://dothething.tech/contact
+feedback-welcome: true
+
+# Compliance
+
+gdpr-compliant: true
+ccpa-compliant: true
+data-protection: required
+user-consent: required
+
+# Versioning and Updates
+
+version: 1.0
+effective-date: 2026-05-06
+next-review: 2026-08-06
+change-log: "Initial version"

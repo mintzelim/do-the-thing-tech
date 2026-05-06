@@ -1,9 +1,138 @@
+# robots.txt - Crawler and AI Model Access Control
+# Baseline control for all bots and crawlers
+
+# Default rules for all user agents
 User-agent: *
 Allow: /
 Allow: /blog/
 Allow: /blog/*
+Allow: /blog-posts.json
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /llms.txt
+Allow: /AI.txt
+Allow: /ai.txt
+Allow: /llms-full.txt
+Allow: /.well-known/security.txt
+
+# Disallow private/admin areas
 Disallow: /api/
 Disallow: /_next/
 Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /.env
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /scripts/
 
+# Crawl delay and request rate
+Crawl-delay: 1
+Request-rate: 10/1m
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+Crawl-delay: 0
+Request-rate: 30/1m
+
+User-agent: Bingbot
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+Crawl-delay: 1
+Request-rate: 10/1m
+
+User-agent: Slurp
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+Crawl-delay: 1
+Request-rate: 10/1m
+
+# AI Model Crawlers - See llms.txt and AI.txt for detailed policies
+User-agent: GPTBot
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+Allow: /llms.txt
+Allow: /AI.txt
+Allow: /ai.txt
+Allow: /llms-full.txt
+Crawl-delay: 5
+Request-rate: 5/1m
+
+User-agent: CCBot
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+Allow: /llms.txt
+Allow: /AI.txt
+Allow: /ai.txt
+Allow: /llms-full.txt
+Crawl-delay: 5
+Request-rate: 5/1m
+
+User-agent: Claude-Web
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+Allow: /llms.txt
+Allow: /AI.txt
+Allow: /ai.txt
+Allow: /llms-full.txt
+Crawl-delay: 5
+Request-rate: 5/1m
+
+User-agent: Googlebot-Extended
+Allow: /
+Allow: /blog/
+Allow: /blog/*
+Allow: /llms.txt
+Allow: /AI.txt
+Allow: /ai.txt
+Allow: /llms-full.txt
+Crawl-delay: 5
+Request-rate: 5/1m
+
+# Aggressive crawlers - limited access
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 10
+Request-rate: 2/1m
+
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 10
+Request-rate: 2/1m
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 10
+Request-rate: 2/1m
+
+# Block bad bots
+User-agent: BadBot
+Disallow: /
+
+User-agent: EvilBot
+Disallow: /
+
+# Sitemap location
 Sitemap: https://dothething.tech/sitemap.xml
+Sitemap: https://dothething.tech/sitemap-blog.xml
+
+# Additional resources
+# For AI model access policies, see:
+# - llms.txt: General AI access guidelines
+# - AI.txt: Detailed usage control policies
+# - ai.txt: Granular ethical rules
+# - llms-full.txt: Complete site content for single-request ingestion
+# - .well-known/security.txt: Vulnerability reporting
+
+# For more information about this site:
+# - Privacy Policy: https://dothething.tech/privacy
+# - Terms of Service: https://dothething.tech/terms
+# - Contact: https://dothething.tech/contact

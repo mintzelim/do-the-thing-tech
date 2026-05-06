@@ -1,0 +1,46 @@
+Contact: security@dothething.tech
+Expires: 2027-05-06T00:00:00Z
+Preferred-Languages: en
+Canonical: https://dothething.tech/.well-known/security.txt
+Policy: https://dothething.tech/security-policy
+Acknowledgments: https://dothething.tech/security-acknowledgments
+Hiring: https://dothething.tech/careers
+
+# Security Policy
+# DoTheThing takes security seriously and welcomes responsible vulnerability disclosure.
+# Please report security vulnerabilities to security@dothething.tech
+
+# Guidelines for Reporting
+# 1. Do not publicly disclose the vulnerability until we have had time to fix it
+# 2. Provide detailed information about the vulnerability
+# 3. Include steps to reproduce the issue
+# 4. Allow us 90 days to fix the vulnerability before public disclosure
+# 5. We will acknowledge receipt of your report within 24 hours
+
+# Bug Bounty Program
+# We currently do not have a formal bug bounty program, but we appreciate responsible disclosure.
+# Security researchers who report vulnerabilities will be acknowledged on our security page.
+
+# Security Practices
+# - Regular security audits and penetration testing
+# - Secure coding practices and code reviews
+# - Dependency scanning and vulnerability management
+# - Data encryption in transit and at rest
+# - Regular security training for team members
+# - Incident response procedures
+
+# Compliance
+# DoTheThing complies with:
+# - GDPR (General Data Protection Regulation)
+# - CCPA (California Consumer Privacy Act)
+# - SOC 2 Type II standards
+# - OWASP Top 10 security guidelines
+
+# Contact Information
+# Security Issues: security@dothething.tech
+# General Inquiries: contact@dothething.tech
+# Privacy Concerns: privacy@dothething.tech
+
+# Response Time
+# We aim to respond to security reports within 24 hours.
+# Critical vulnerabilities will be prioritized and fixed immediately.
