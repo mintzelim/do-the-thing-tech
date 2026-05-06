@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -5,6 +6,15 @@ import "../pixel-art-refined.css";
 
 export default function Terms() {
   const [, navigate] = useLocation();
+
+  // Reset document title when visiting Terms page
+  useEffect(() => {
+    document.title = "Terms of Service | DoTheThing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'DoTheThing Terms of Service - Read our terms and conditions for using our service.');
+    }
+  }, []);
 
   return (
     <div className="mobile-frame">

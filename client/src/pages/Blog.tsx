@@ -23,6 +23,15 @@ export default function Blog() {
   const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
+  // Reset document title when visiting Blog page
+  useEffect(() => {
+    document.title = "Blog | DoTheThing - ADHD Task Management";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Read articles about ADHD, task management, productivity, and neurodiversity.');
+    }
+  }, []);
+
   // Load blog posts from generated JSON
   useEffect(() => {
     const loadPosts = async () => {

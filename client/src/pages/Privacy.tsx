@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -5,6 +6,15 @@ import "../pixel-art-refined.css";
 
 export default function Privacy() {
   const [, navigate] = useLocation();
+
+  // Reset document title when visiting Privacy page
+  useEffect(() => {
+    document.title = "Privacy Policy | DoTheThing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'DoTheThing Privacy Policy - Learn how we collect, use, and protect your data.');
+    }
+  }, []);
 
   return (
     <div className="mobile-frame">

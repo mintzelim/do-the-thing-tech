@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -10,6 +10,16 @@ type ContactType = "question" | "partnership" | "bug";
 
 export default function Contact() {
   const [, navigate] = useLocation();
+
+  // Reset document title when visiting Contact page
+  useEffect(() => {
+    document.title = "Contact | DoTheThing";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Get in touch with DoTheThing. Send us your questions, feedback, or partnership inquiries.');
+    }
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",

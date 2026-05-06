@@ -1,9 +1,19 @@
+import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { useLocation } from 'wouter';
 
 export default function About() {
   const [, navigate] = useLocation();
+
+  // Reset document title when visiting About page
+  useEffect(() => {
+    document.title = "About DoTheThing | Task Breakdown for ADHD";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Learn about DoTheThing, the task breakdown tool designed for ADHD brains.');
+    }
+  }, []);
 
   return (
     <div className="mobile-frame">

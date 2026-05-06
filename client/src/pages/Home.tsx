@@ -24,6 +24,15 @@ type GranularityPreset = "tiny" | "balanced" | "big";
 export default function Home() {
   const [, navigate] = useLocation();
   const [flowState, setFlowState] = useState<FlowState>("input");
+
+  // Reset document title when returning to home page
+  useEffect(() => {
+    document.title = "DoTheThing - Task Breakdown for ADHD Brains";
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Break down tasks into micro-steps with ADHD-friendly time estimates. Focus on what matters, one step at a time.');
+    }
+  }, []);
   const [brainDump, setBrainDump] = useState("");
   const [focusLevel, setFocusLevel] = useState<"hyperfocus" | "normal" | "distracted">("normal");
   const [granularity, setGranularity] = useState(50);
