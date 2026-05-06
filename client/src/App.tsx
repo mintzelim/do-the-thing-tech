@@ -1,4 +1,5 @@
 import { ThemeProvider } from "./contexts/ThemeContext";
+import { useEffect } from "react";
 import { TimerProvider } from "./contexts/TimerContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,6 +11,7 @@ import Contact from "./pages/Contact";
 import CurrentTasks from "./pages/CurrentTasks";
 import NotFound from "./pages/NotFound";
 import { Switch, Route } from "wouter";
+import { enhancedSchema, injectSchema } from "./lib/enhancedSchema";
 
 function Router() {
   return (
@@ -29,6 +31,11 @@ function Router() {
 }
 
 function App() {
+  useEffect(() => {
+    // Inject enhanced schema on mount
+    injectSchema(enhancedSchema);
+  }, []);
+
   return (
     <ThemeProvider>
       <TimerProvider>
