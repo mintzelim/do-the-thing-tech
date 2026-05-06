@@ -59,7 +59,7 @@ export interface WebSiteSchema {
       "@type": string;
       urlTemplate: string;
     };
-    query_input: string;
+    queryInput: string;
   };
   publisher: {
     "@id": string;
@@ -79,7 +79,7 @@ export function generateWebSiteSchema(): WebSiteSchema {
         "@type": "EntryPoint",
         urlTemplate: "https://dothething.tech/search?q={search_term_string}",
       },
-      query_input: "required name=search_term_string",
+      queryInput: "required name=search_term_string",
     },
     publisher: {
       "@id": "https://dothething.tech/#organization",
