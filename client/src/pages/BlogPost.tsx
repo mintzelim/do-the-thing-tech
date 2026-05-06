@@ -7,6 +7,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import { generateBlogPostingSchema, generateArticleSchema, generateBreadcrumbSchema, injectSchemaMarkup } from "@/lib/schemaMarkup";
 import { updateMetaTags } from "@/lib/metaTags";
 import { generateBlogPostingSchemaEnhanced, generateFAQPageSchema, generateOrganizationSchema } from "@/lib/schemaMarkupEnhanced";
+import { generateBlogPostingSchemaWithBreadcrumb, injectBlogPostingSchema, type BlogPostData } from "@/lib/blogPostingSchema";
 import "../pixel-art-refined.css";
 
 // Mobile-optimized sources section component
@@ -171,6 +172,23 @@ export default function BlogPost() {
           schemas.push(generateFAQPageSchema(foundPost.faq, blogPostUrl) as any);
         }
         injectSchemaMarkup(schemas);
+
+        // Inject new BlogPosting schema with breadcrumb
+        const blogPostData: BlogPostData = {
+          slug: foundPost.slug,
+          title: foundPost.title,
+          description: foundPost.excerpt,
+          content: foundPost.content,
+          author: "DoTheThing",
+          datePublished: foundPost.date,
+          dateModified: foundPost.date,
+          category: [foundPost.category],
+          keywords: foundPost.seoKeywords,
+          faq: foundPost.faq,
+          sources: foundPost.sources
+        };
+        const blogPostingSchema = generateBlogPostingSchemaWithBreadcrumb(blogPostData);
+        injectBlogPostingSchema(blogPostingSchema);
       } else {
         setError('Blog post not found.');
       }
