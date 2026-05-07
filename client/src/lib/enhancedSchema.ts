@@ -65,7 +65,7 @@ export const enhancedSchema = {
           "@type": "EntryPoint",
           "urlTemplate": "https://www.dothething.tech/blog?q={search_term_string}"
         },
-        "queryInput": "required name=search_term_string"
+        "query-input": "required name=search_term_string"
       }
     },
 
