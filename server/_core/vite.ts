@@ -44,23 +44,6 @@ export async function setupVite(app: Express, server: Server) {
         `src="/src/main.tsx?v=${nanoid()}"`
       );
       
-      // Inject Organization schema on all pages
-      const organizationSchema = {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "DoTheThing",
-        "url": "https://dothething.tech",
-        "logo": "https://dothething.tech/favicon.ico",
-        "description": "Break down overwhelming tasks into manageable steps with AI-powered task management for ADHD",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Support",
-          "url": "https://dothething.tech/contact"
-        }
-      };
-      const orgSchemaScript = `<script type="application/ld+json">${JSON.stringify(organizationSchema)}</script>`;
-      template = template.replace(/<\/head>/, `${orgSchemaScript}</head>`);
-      
       // Inject blog metadata for blog post routes
       const blogSlugMatch = url.match(/^\/blog\/([^/?]+)/);
       if (blogSlugMatch) {
