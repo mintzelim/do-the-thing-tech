@@ -75,8 +75,6 @@ export const enhancedSchema = {
       "@id": "https://www.dothething.tech/#software",
       "name": "DoTheThing",
       "description": "AI-powered task breakdown and time estimation tool designed for ADHD brains. Instantly breaks down overwhelming tasks into micro-steps with realistic time estimates based on focus level.",
-      "applicationCategory": "Productivity",
-      "operatingSystem": "Web-based (accessible globally)",
       "url": "https://www.dothething.tech/",
       "offers": {
         "@type": "Offer",
@@ -86,10 +84,10 @@ export const enhancedSchema = {
       },
       "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
+        "ratingValue": 4.8,
         "ratingCount": 156,
-        "bestRating": "5",
-        "worstRating": "1"
+        "bestRating": 5,
+        "worstRating": 1
       },
       "author": {
         "@id": "https://www.dothething.tech/#organization"
