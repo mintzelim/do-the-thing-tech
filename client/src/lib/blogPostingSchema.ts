@@ -189,18 +189,19 @@ export function generateBlogPostingSchemaWithBreadcrumb(post: BlogPostData) {
  * Inject BlogPosting schema into document head
  */
 export function injectBlogPostingSchema(schema: any) {
-  // Remove any existing BlogPosting schemas
+  // Remove any existing blog post-specific schemas (identified by @graph with blog post URLs)
   const existingSchemas = document.querySelectorAll(
     'script[type="application/ld+json"]'
   );
   existingSchemas.forEach((el) => {
     const content = el.textContent;
-    if (content && (content.includes("BlogPosting") || content.includes("BreadcrumbList"))) {
+    // Only remove blog post schemas (those with blog post slug in URL)
+    if (content && content.includes('/blog/') && content.includes("#blogposting")) {
       el.remove();
     }
   });
 
-  // Inject new schema
+  // Inject new blog post schema
   const scriptTag = document.createElement("script");
   scriptTag.type = "application/ld+json";
   scriptTag.textContent = JSON.stringify(schema);

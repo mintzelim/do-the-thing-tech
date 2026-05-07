@@ -4,9 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import BlogContentRenderer from "@/components/BlogContentRenderer";
 import Breadcrumb from "@/components/Breadcrumb";
-import { generateBlogPostingSchema, generateArticleSchema, generateBreadcrumbSchema, injectSchemaMarkup } from "@/lib/schemaMarkup";
 import { updateMetaTags } from "@/lib/metaTags";
-import { generateBlogPostingSchemaEnhanced, generateFAQPageSchema, generateOrganizationSchema } from "@/lib/schemaMarkupEnhanced";
 import { generateBlogPostingSchemaWithBreadcrumb, injectBlogPostingSchema, type BlogPostData } from "@/lib/blogPostingSchema";
 import "../pixel-art-refined.css";
 
@@ -159,21 +157,7 @@ export default function BlogPost() {
           keywords: foundPost.seoKeywords?.join(', '),
         });
 
-        // Inject JSON-LD schema markup for SEO and rich snippets
-        const siteUrl = window.location.origin;
-        const schemas = [
-          generateOrganizationSchema(),
-          generateBlogPostingSchemaEnhanced(foundPost, siteUrl),
-          generateBlogPostingSchema(foundPost, siteUrl),
-          generateArticleSchema(foundPost, siteUrl),
-          generateBreadcrumbSchema(foundPost, siteUrl),
-        ];
-        if (foundPost.faq && foundPost.faq.length > 0) {
-          schemas.push(generateFAQPageSchema(foundPost.faq, blogPostUrl) as any);
-        }
-        injectSchemaMarkup(schemas);
-
-        // Inject new BlogPosting schema with breadcrumb
+        // Inject BlogPosting schema with FAQPage and BreadcrumbList in @graph structure
         const blogPostData: BlogPostData = {
           slug: foundPost.slug,
           title: foundPost.title,
