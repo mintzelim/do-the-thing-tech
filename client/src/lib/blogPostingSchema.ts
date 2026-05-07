@@ -41,7 +41,7 @@ function calculateReadingTime(wordCount: number): number {
 }
 
 /**
- * Generate BlogPosting schema
+ * Generate BlogPosting schema (without nested FAQPage)
  */
 export function generateBlogPostingSchema(post: BlogPostData) {
   const wordCount = calculateWordCount(post.content);
@@ -92,21 +92,6 @@ export function generateBlogPostingSchema(post: BlogPostData) {
     schema.keywords = post.keywords.join(", ");
   }
 
-  // Add FAQPage schema if FAQ items exist
-  if (post.faq && post.faq.length > 0) {
-    schema.faqPage = {
-      "@type": "FAQPage",
-      "mainEntity": post.faq.map((item) => ({
-        "@type": "Question",
-        "name": item.q,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.a
-        }
-      }))
-    };
-  }
-
   // Add citation/sources if provided
   if (post.sources && post.sources.length > 0) {
     schema.citation = post.sources.map((source) => ({
@@ -127,43 +112,77 @@ export function generateBlogPostingSchema(post: BlogPostData) {
 }
 
 /**
- * Generate BlogPosting schema with breadcrumb
+ * Generate FAQPage schema for blog post
  */
-export function generateBlogPostingSchemaWithBreadcrumb(post: BlogPostData) {
-  const blogPostingSchema = generateBlogPostingSchema(post);
+export function generateBlogFAQPageSchema(post: BlogPostData) {
+  if (!post.faq || post.faq.length === 0) {
+    return null;
+  }
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@graph": [
-      blogPostingSchema,
+  return {
+    "@type": "FAQPage",
+    "@id": `https://www.dothething.tech/blog/${post.slug}#faqpage`,
+    "url": `https://www.dothething.tech/blog/${post.slug}`,
+    "mainEntity": post.faq.map((item) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a
+      }
+    }))
+  };
+}
+
+/**
+ * Generate BreadcrumbList schema for blog post
+ */
+export function generateBlogBreadcrumbSchema(post: BlogPostData) {
+  return {
+    "@type": "BreadcrumbList",
+    "@id": `https://www.dothething.tech/blog/${post.slug}#breadcrumb`,
+    "itemListElement": [
       {
-        "@type": "BreadcrumbList",
-        "@id": `https://www.dothething.tech/blog/${post.slug}#breadcrumb`,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://www.dothething.tech/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Blog",
-            "item": "https://www.dothething.tech/blog"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": post.title,
-            "item": `https://www.dothething.tech/blog/${post.slug}`
-          }
-        ]
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.dothething.tech/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.dothething.tech/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": `https://www.dothething.tech/blog/${post.slug}`
       }
     ]
   };
+}
 
-  return breadcrumbSchema;
+/**
+ * Generate complete schema with @graph for blog post
+ */
+export function generateBlogPostingSchemaWithBreadcrumb(post: BlogPostData) {
+  const blogPostingSchema = generateBlogPostingSchema(post);
+  const breadcrumbSchema = generateBlogBreadcrumbSchema(post);
+  const faqPageSchema = generateBlogFAQPageSchema(post);
+
+  const graphArray = [blogPostingSchema, breadcrumbSchema];
+  
+  // Only add FAQPage if FAQ items exist
+  if (faqPageSchema) {
+    graphArray.push(faqPageSchema);
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": graphArray
+  };
 }
 
 /**
