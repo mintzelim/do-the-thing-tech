@@ -46,6 +46,23 @@ export const enhancedSchema = {
       "sameAs": [
         "https://www.instagram.com/dothething.tech",
         "https://www.tiktok.com/@dothething.tech"
+      ],
+      "knowsAbout": [
+        "ADHD",
+        "Neurodivergence",
+        "Executive Dysfunction",
+        "Task Management",
+        "Productivity",
+        "Time Blindness",
+        "Task Breakdown",
+        "AI Task Estimation",
+        "Focus Management",
+        "Neurodivergent Productivity",
+        "ADHD-Friendly Design",
+        "Micro-step Planning",
+        "Time Estimation",
+        "Mental Health Technology",
+        "Accessibility"
       ]
     },
 
