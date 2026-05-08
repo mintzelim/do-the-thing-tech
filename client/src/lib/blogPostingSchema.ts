@@ -120,6 +120,7 @@ export function generateBlogFAQPageSchema(post: BlogPostData) {
   }
 
   return {
+    "@context": "https://schema.org",
     "@type": "FAQPage",
     "@id": `https://www.dothething.tech/blog/${post.slug}#faqpage`,
     "url": `https://www.dothething.tech/blog/${post.slug}`,
@@ -139,6 +140,7 @@ export function generateBlogFAQPageSchema(post: BlogPostData) {
  */
 export function generateBlogBreadcrumbSchema(post: BlogPostData) {
   return {
+    "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "@id": `https://www.dothething.tech/blog/${post.slug}#breadcrumb`,
     "itemListElement": [
@@ -166,18 +168,15 @@ export function generateBlogBreadcrumbSchema(post: BlogPostData) {
 
 /**
  * Generate complete schema with @graph for blog post
+ * Note: FAQPage is removed to avoid conflicts with homepage FAQPage schema
  */
 export function generateBlogPostingSchemaWithBreadcrumb(post: BlogPostData) {
   const blogPostingSchema = generateBlogPostingSchema(post);
   const breadcrumbSchema = generateBlogBreadcrumbSchema(post);
-  const faqPageSchema = generateBlogFAQPageSchema(post);
+  // FAQPage is intentionally NOT included in blog post schemas
+  // to avoid duplicate FAQPage entries on the page
 
   const graphArray = [blogPostingSchema, breadcrumbSchema];
-  
-  // Only add FAQPage if FAQ items exist
-  if (faqPageSchema) {
-    graphArray.push(faqPageSchema);
-  }
 
   return {
     "@context": "https://schema.org",
@@ -187,23 +186,39 @@ export function generateBlogPostingSchemaWithBreadcrumb(post: BlogPostData) {
 
 /**
  * Inject BlogPosting schema into document head
+ * Injects individual schemas separately to avoid conflicts with main site schema
  */
 export function injectBlogPostingSchema(schema: any) {
-  // Remove any existing blog post-specific schemas (identified by @graph with blog post URLs)
+  // Remove any existing blog post-specific schemas
   const existingSchemas = document.querySelectorAll(
     'script[type="application/ld+json"]'
   );
   existingSchemas.forEach((el) => {
     const content = el.textContent;
     // Only remove blog post schemas (those with blog post slug in URL)
-    if (content && content.includes('/blog/') && content.includes("#blogposting")) {
+    if (content && content.includes('/blog/') && (content.includes("#blogposting") || content.includes("#faqpage") || content.includes("#breadcrumb"))) {
       el.remove();
     }
   });
 
-  // Inject new blog post schema
-  const scriptTag = document.createElement("script");
-  scriptTag.type = "application/ld+json";
-  scriptTag.textContent = JSON.stringify(schema);
-  document.head.appendChild(scriptTag);
+  // Inject schemas individually to avoid conflicts with main site schema
+  if (schema['@graph']) {
+    // Inject each schema in the graph separately
+    schema['@graph'].forEach((item: any) => {
+      const scriptTag = document.createElement("script");
+      scriptTag.type = "application/ld+json";
+      const itemSchema = {
+        "@context": "https://schema.org",
+        ...item
+      };
+      scriptTag.textContent = JSON.stringify(itemSchema);
+      document.head.appendChild(scriptTag);
+    });
+  } else {
+    // Inject single schema
+    const scriptTag = document.createElement("script");
+    scriptTag.type = "application/ld+json";
+    scriptTag.textContent = JSON.stringify(schema);
+    document.head.appendChild(scriptTag);
+  }
 }
