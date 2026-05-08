@@ -101,12 +101,7 @@ export function generateBlogPostingSchema(post: BlogPostData) {
     }));
   }
 
-  // Add aggregate rating if available (can be enhanced with real data)
-  schema.aggregateRating = {
-    "@type": "AggregateRating",
-    "ratingValue": "4.5",
-    "ratingCount": 1
-  };
+  // Aggregate rating removed - only add if actual ratings are available
 
   return schema;
 }
