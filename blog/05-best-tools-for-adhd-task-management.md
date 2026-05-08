@@ -10,7 +10,7 @@ excerpt: >-
   Most productivity apps weren't built for ADHD brains. These five free tools
   were — or work well enough that the difference doesn't matter. Here's what
   each one does and when to use it.
-date: March 20, 2026
+date: "March 20, 2026"
 readTime: 8 min read
 category: Tools & Reviews
 primaryEntity: ADHD Productivity Tools

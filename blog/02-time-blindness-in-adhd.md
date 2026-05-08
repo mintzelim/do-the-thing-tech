@@ -9,7 +9,7 @@ slug: /time-blindness-adhd-why-youre-always-late
 excerpt: >-
   Exploring time blindness, how it affects ADHD individuals, and practical
   strategies to manage it.
-date: April 10, 2026
+date: "April 10, 2026"
 readTime: 9 min read
 category: Time Management
 primaryEntity: Time Blindness ADHD

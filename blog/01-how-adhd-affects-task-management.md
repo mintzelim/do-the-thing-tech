@@ -4,7 +4,7 @@ title: How ADHD Affects Task Management
 excerpt: >-
   Understanding the neuroscience behind executive dysfunction and why
   traditional task management fails for ADHD brains.
-date: April 15, 2026
+date: "April 15, 2026"
 readTime: 8 min read
 category: ADHD Education
 primaryEntity: ADHD Executive Dysfunction

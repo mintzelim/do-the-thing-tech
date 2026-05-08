@@ -2,7 +2,7 @@
 id: '18'
 title: One Task Is Enough - Simple Self-Acceptance Techniques That Actually Work
 excerpt: Discover how self-acceptance techniques can transform your productivity from guilt-driven to guilt-free
-date: April 27, 2026
+date: "April 27, 2026"
 readTime: 11 min read
 category: Productivity
 primaryEntity: ADHD Self-Acceptance

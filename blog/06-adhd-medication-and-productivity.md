@@ -9,7 +9,7 @@ slug: /adhd-medication-productivity
 excerpt: >-
   ADHD medication gives you a window of improved executive function. Whether you
   make the most of that window depends entirely on what you do with it.
-date: March 15, 2026
+date: "March 15, 2026"
 readTime: 8 min read
 category: ADHD Management
 primaryEntity: ADHD Medication Productivity

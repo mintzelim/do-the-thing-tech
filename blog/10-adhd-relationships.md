@@ -4,7 +4,7 @@ title: "ADHD and Relationships: How Task Management Affects Your Connections"
 description: "ADHD doesn't just affect your productivity. It shapes your relationships too. Here's what the research shows — and what actually helps."
 slug: "/adhd-relationships-task-management"
 excerpt: "Understanding how ADHD executive dysfunction impacts relationships and how to communicate about it."
-date: "2026-05-03"
+date: "May 03, 2026"
 readTime: "8 min read"
 category: "Relationships"
 primaryEntity: ADHD Relationships

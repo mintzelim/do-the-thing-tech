@@ -5,7 +5,7 @@ excerpt: >-
   Understanding the bidirectional relationship between ADHD and sleep, and
   strategies for better rest — including new research suggesting ADHD may be a
   circadian rhythm disorder.
-date: May 4, 2026
+date: "May 04, 2026"
 readTime: 11 min read
 category: Health
 primaryEntity: ADHD Sleep

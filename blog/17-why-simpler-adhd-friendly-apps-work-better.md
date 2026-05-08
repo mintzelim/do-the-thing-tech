@@ -2,7 +2,7 @@
 id: '17'
 title: Why Simpler ADHD-Friendly Apps Actually Work Better
 excerpt: Discover why complex productivity tools fail ADHD users and how simpler task breakdown features lead to better outcomes
-date: April 27, 2026
+date: "April 27, 2026"
 readTime: 10 min read
 category: Productivity
 primaryEntity: ADHD-Friendly App Design

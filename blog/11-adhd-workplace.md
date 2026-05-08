@@ -4,7 +4,7 @@ title: "ADHD in the Workplace: How to Build a Career That Works With Your Brain"
 description: "ADHD at work is a systems problem — not a willpower problem. Here's the research, your legal rights, and the daily structures that actually change outcomes."
 slug: "/adhd-workplace-career-strategies"
 excerpt: "How to build a career that works with your brain and use your ADHD as a superpower."
-date: "2026-05-03"
+date: "May 03, 2026"
 readTime: "9 min read"
 category: "Career"
 primaryEntity: ADHD Workplace

@@ -4,7 +4,7 @@ title: Neurodivergent Productivity - 7 Tactics That Actually Work
 excerpt: >-
   Move past the freeze — practical strategies for task initiation when your
   brain won't cooperate
-date: April 27, 2026
+date: "April 27, 2026"
 readTime: 12 min read
 category: Productivity
 primaryEntity: Neurodivergent Productivity

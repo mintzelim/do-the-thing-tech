@@ -10,7 +10,7 @@ excerpt: >-
   They look the same from the outside — you're stuck, nothing's getting done.
   But executive dysfunction and task paralysis have different causes and need
   different fixes.
-date: March 28, 2026
+date: "March 28, 2026"
 readTime: 7 min read
 category: ADHD Education
 primaryEntity: Executive Dysfunction vs Task Paralysis

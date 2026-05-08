@@ -10,7 +10,7 @@ excerpt: >-
   Features don't build habits. Results do. Here's what task breakdown with
   DoTheThing actually looks like — three real situations, three
   before-and-afters.
-date: May 01, 2026
+date: "May 01, 2026"
 readTime: 10 min read
 category: Tools & Resources
 primaryEntity: Task Breakdown DoTheThing
