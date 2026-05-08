@@ -73,7 +73,7 @@ This is not a character flaw. It's the predictable result of asking a brain that
 - **The ADHD tax is real and quantified.** 60% of adults with ADHD estimate their impulse spending and forgetfulness costs them more than $2,000 per year. The cumulative ADHD tax in the UK is estimated at over £1,600 annually per person.
 - **Adults with ADHD face a projected lifetime earnings gap of $543,000–$616,000** compared to non-ADHD peers, according to PMC research.
 - **Automation is the highest-leverage fix.** Systems that run without requiring active memory or decision-making compensate for ADHD's working memory deficit more reliably than any willpower-based strategy.
-- [DoTheThing](https://www.dothething.tech) breaks financial tasks into steps small enough to start,** replacing "manage my finances" with a specific, bounded first action.
+- **[DoTheThing](https://www.dothething.tech) breaks financial tasks into steps small enough to start,** replacing "manage my finances" with a specific, bounded first action.
 
 ---
 

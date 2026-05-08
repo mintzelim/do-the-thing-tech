@@ -174,28 +174,6 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
-    // Performance optimizations
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
-    rollupOptions: {
-      output: {
-        // Code splitting for better caching
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'wouter'],
-          ui: ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu', '@radix-ui/react-tabs'],
-          trpc: ['@trpc/client', '@trpc/react-query'],
-        },
-      },
-    },
-    // Optimize CSS
-    cssCodeSplit: true,
-    // Chunk size warnings
-    chunkSizeWarningLimit: 500,
   },
   server: {
     host: true,
