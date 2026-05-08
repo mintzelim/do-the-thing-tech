@@ -75,7 +75,7 @@ This post is for anyone with ADHD who's still looking for the room their brain w
 - **The right job is the one that turns your traits into assets.** Variety, autonomy, genuine interest, and flexible output expectations: these aren't nice-to-haves for ADHD creatives. They're the conditions under which the brain actually functions.
 - **Hyperfocus is your most powerful professional tool** when you understand how to call on it deliberately, not just wait for it.
 - **8 careers** are covered below, each matched to the specific ADHD strengths they activate.
-- **[DoTheThing](https://www.dothething.tech) handles the parts you avoid:** the admin, the follow-through, the task you keep putting off, so your creative energy goes where it actually counts.
+- [DoTheThing](https://www.dothething.tech) handles the parts you avoid:** the admin, the follow-through, the task you keep putting off, so your creative energy goes where it actually counts.
 
 ---
 
