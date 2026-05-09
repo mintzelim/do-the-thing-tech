@@ -3,14 +3,6 @@ import { Link } from "wouter";
 export default function HomeContent() {
   return (
     <div className="home-content-sections">
-      {/* SECTION 1: HERO */}
-      <section className="content-section hero-section">
-        <h1 className="section-title">Your Brain Knows What to Do. Getting It to Start Is the Hard Part.</h1>
-        <p className="section-subtitle">
-          Type any task or brain dump the whole pile. DoTheThing breaks it into steps you can actually start. Free. No login. Works in under a minute.
-        </p>
-      </section>
-
       {/* SECTION 2: THE PROBLEM & SOLUTION */}
       <section className="content-section">
         <h2 className="section-heading">The AI Does the Planning. You Do the Thing.</h2>
