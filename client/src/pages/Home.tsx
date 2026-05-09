@@ -341,6 +341,7 @@ export default function Home() {
         {flowState === "input" && (
           <>
             <h1 className="mobile-heading-1" style={{ fontSize: "38px" }}>ADHD Task Management That Works With Your Brain</h1>
+            <p className="mobile-body" style={{ fontSize: "20px", marginBottom: "24px", maxWidth: "600px" }}>Type any task or brain dump the whole pile. DoTheThing breaks it into steps you can actually start. Free. No login. Works in under a minute.</p>
 
             <div className="mobile-card">
               <h2 className="mobile-heading-2">TODAY, I NEED TO...</h2>
