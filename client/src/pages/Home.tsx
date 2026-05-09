@@ -340,8 +340,6 @@ export default function Home() {
         {/* Flow: Input */}
         {flowState === "input" && (
           <>
-            <HomeContent />
-            
             <h1 className="mobile-heading-1">DO THE THING</h1>
 
             <div className="mobile-card">
@@ -502,6 +500,9 @@ export default function Home() {
               {/* Pro Tip Tutorial - always shows below BREAK IT DOWN */}
               <PinTabTutorial showAfterBreakdown={true} />
             </div>
+            
+            {/* Content Sections Below Widget */}
+            <HomeContent />
           </>
         )}
 
