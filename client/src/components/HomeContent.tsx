@@ -97,7 +97,7 @@ export default function HomeContent() {
         <p className="section-subtitle">We built this specifically for the ADHD community and anyone struggling with task paralysis.</p>
         <p className="section-subtitle">Our AI task breakdown tool is designed for:</p>
         <div className="section-content">
-          <p><strong>Students:</strong> Bypassing academic overwhelm and the "blank page" syndrome.</p>
+          <p style={{ paddingTop: '15px' }}><strong>Students:</strong> Bypassing academic overwhelm and the "blank page" syndrome.</p>
           <p><strong>Remote Workers & Freelancers:</strong> For when you're your own boss and your initiation system is jamming.</p>
           <p><strong>Employees & Corporate Teams:</strong> Stop losing hours to "prep work." Use DTT to generate accurate time estimates and concrete first steps.</p>
           <p><strong>Project Managers:</strong> Use it to convert a vague "milestone" into a numbered micro-step list for your team in seconds.</p>
