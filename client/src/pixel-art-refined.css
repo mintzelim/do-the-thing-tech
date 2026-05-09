@@ -717,23 +717,24 @@ body {
 
 .section-title {
   font-family: 'VT323', monospace;
-  font-size: 28px;
+  font-size: 46px;
   font-weight: 400;
   line-height: 1.3;
   margin: 0 0 16px 0;
   color: var(--pixel-text);
 }
 
-.secti.mobile-body {
+.section-subtitle {
   font-family: 'VT323', monospace;
   font-size: 20px;
-  line-height: 1.6;  color: var(--pixel-text-light);
+  line-height: 1.6;
+  color: var(--pixel-text-light);
   margin: 0;
 }
 
 .section-heading {
   font-family: 'VT323', monospace;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
   margin: 0 0 16px 0;
   color: var(--pixel-text);
@@ -749,7 +750,7 @@ body {
 
 .section-content p {
   font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.6;
   margin: 0;
   color: var(--pixel-text);
@@ -794,7 +795,7 @@ body {
 
 .step-card h3 {
   font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-size: 26px;
   font-weight: 600;
   margin: 12px 0 8px 0;
   color: var(--pixel-text);
@@ -802,7 +803,7 @@ body {
 
 .step-card p {
   font-family: 'VT323', monospace;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 0;
   color: var(--pixel-text-light);
@@ -821,7 +822,7 @@ body {
 
 .feature-item {
   font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
   color: var(--pixel-text);
   padding-left: 16px;
@@ -853,7 +854,7 @@ body {
 
 .faq-item h3 {
   font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-size: 26px;
   font-weight: 600;
   margin: 0 0 8px 0;
   color: var(--pixel-text);
@@ -861,7 +862,7 @@ body {
 
 .faq-item p {
   font-family: 'VT323', monospace;
-  font-size: 13px;
+  font-size: 20px;
   line-height: 1.6;
   margin: 0;
   color: var(--pixel-text-light);
@@ -897,7 +898,7 @@ body {
 
 .blog-link-card h3 {
   font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-size: 26px;
   font-weight: 600;
   margin: 0;
   color: var(--pixel-accent);
@@ -906,7 +907,7 @@ body {
 
 .blog-link-card p {
   font-family: 'VT323', monospace;
-  font-size: 12px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 0;
   color: var(--pixel-text-light);
