@@ -33,7 +33,7 @@ sources:
     url: https://add.org/impact-of-adhd-at-work/
   - title: ADDA — ADHD Paralysis
     url: https://add.org/adhd-paralysis/
-  - title: 'PMC — WHO World Mental Health Survey: ADHD and Lost Productivity'
+  - title: 'PMC — [WHO World Mental Health Survey](https://www.who.int/teams/mental-health-and-substance-use/data-research/world-mental-health-survey): ADHD and Lost Productivity'
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2665789/
   - title: >-
       Frontiers in Psychiatry — Arousal Dysregulation and Executive Dysfunction
@@ -71,7 +71,7 @@ faq:
       now.
   - q: What is task paralysis in ADHD?
     a: >-
-      Task paralysis is when an ADHD brain becomes so overwhelmed by a task —
+      [Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) is when an ADHD brain becomes so overwhelmed by a task —
       especially a complex or multi-step one — that it freezes and can't
       initiate. It's not laziness or avoidance. It's a neurological response to
       ambiguity and cognitive overload. Breaking the task into the smallest
@@ -79,7 +79,7 @@ faq:
       it.
   - q: What is time blindness and how does DoTheThing help?
     a: >-
-      Time blindness is the ADHD brain's tendency to perceive time as either
+      [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) is the ADHD brain's tendency to perceive time as either
       'now' or 'not now,' making it genuinely difficult to estimate how long
       tasks will take. DoTheThing addresses this by adding a 20–30% buffer to
       every AI-generated time estimate and providing a visual countdown timer —
@@ -148,7 +148,7 @@ DoTheThing breaks tasks by identifying the actual first micro-step, estimating t
 
 Task breakdown works for ADHD brains because it solves the hardest part of any task: figuring out where to start.
 
-Executive dysfunction is what clinicians call the ADHD brain's difficulty with planning, initiating, and following through — not a lack of intelligence or effort, but a specific fault in the brain's management system. [Research published in *Frontiers in Psychiatry* (2024)](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full) pinpoints dysregulated dopamine signalling in the prefrontal cortex as the core mechanism. The prefrontal cortex runs planning, sequencing, and task initiation — everything you need to look at a complex task and know what to do first. When those circuits are underpowered, the brain doesn't produce a plan. It produces a wall.
+[Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) is what clinicians call the ADHD brain's difficulty with planning, initiating, and following through — not a lack of intelligence or effort, but a specific fault in the brain's management system. [Research published in *Frontiers in Psychiatry* (2024)](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full) pinpoints dysregulated dopamine signalling in the prefrontal cortex as the core mechanism. The prefrontal cortex runs planning, sequencing, and task initiation — everything you need to look at a complex task and know what to do first. When those circuits are underpowered, the brain doesn't produce a plan. It produces a wall.
 
 This is exactly what [breaking down big tasks](post:3) is designed to solve.
 
@@ -320,11 +320,11 @@ Most task apps assume you can already break tasks down and estimate time accurat
 
 ### What is task paralysis in ADHD?
 
-Task paralysis is when an ADHD brain gets so overwhelmed by a task — especially a complex or multi-step one — that it freezes and can't initiate. It's not laziness or avoidance. It's a neurological response to ambiguity and overload. Getting to the smallest possible first step is one of the most evidence-backed ways through it.
+[Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) is when an ADHD brain gets so overwhelmed by a task — especially a complex or multi-step one — that it freezes and can't initiate. It's not laziness or avoidance. It's a neurological response to ambiguity and overload. Getting to the smallest possible first step is one of the most evidence-backed ways through it.
 
 ### What is time blindness and how does DoTheThing help?
 
-Time blindness is the ADHD brain's tendency to experience time as either "now" or "not now" — making it genuinely hard to feel how long tasks will take. DoTheThing adds a 20–30% buffer to every AI-generated time estimate and gives you a visual countdown timer, so perceived time and actual time start to line up.
+[Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) is the ADHD brain's tendency to experience time as either "now" or "not now" — making it genuinely hard to feel how long tasks will take. DoTheThing adds a 20–30% buffer to every AI-generated time estimate and gives you a visual countdown timer, so perceived time and actual time start to line up.
 
 ### Can I use DoTheThing for a brain dump?
 

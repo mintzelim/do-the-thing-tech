@@ -2,7 +2,7 @@
 id: 2
 title: 'Time Blindness in ADHD: Why You''re Always Late'
 description: >-
-  Time blindness in ADHD is a neurological wiring difference, not a character
+  [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) in ADHD is a neurological wiring difference, not a character
   flaw. Here's what's happening in your brain, and the strategies that actually
   compensate for it.
 slug: /time-blindness-adhd-why-youre-always-late
@@ -45,7 +45,7 @@ relatedPosts:
 faq:
   - q: What is time blindness in ADHD?
     a: >-
-      Time blindness is the ADHD brain's impaired ability to sense how much time
+      [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) is the ADHD brain's impaired ability to sense how much time
       has passed and estimate how long tasks will take. Defined by ADDA as the
       inability to sense time passing or estimate task duration, it stems from
       reduced activity in the prefrontal cortex and cerebellum, which handle

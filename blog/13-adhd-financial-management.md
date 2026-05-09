@@ -52,7 +52,7 @@ faq:
   - q: "What is the best budgeting strategy for ADHD?"
     a: "Automation first. Automatic bill payments eliminate the working memory requirement for remembering due dates. Automatic transfers to savings move money before it can be spent impulsively. Visual tracking apps like YNAB make abstract numbers concrete and immediate, which the ADHD brain responds to better than spreadsheets. Simplifying finances fewer accounts, fewer cards reduces the number of things to track. The system should require as little active management as possible."
   - q: "How does time blindness affect financial management with ADHD?"
-    a: "Time blindness makes future financial consequences feel unreal. A bill due in two weeks doesn't register with the same urgency as something happening right now, which is why intention to pay often doesn't translate into action until after the due date. Automation eliminates this entirely for recurring bills. For non-recurring financial tasks, calendar reminders with advance notice three days before a due date, not the day of compensate for the ADHD brain's difficulty feeling future time as real."
+    a: "[Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) makes future financial consequences feel unreal. A bill due in two weeks doesn't register with the same urgency as something happening right now, which is why intention to pay often doesn't translate into action until after the due date. Automation eliminates this entirely for recurring bills. For non-recurring financial tasks, calendar reminders with advance notice three days before a due date, not the day of compensate for the ADHD brain's difficulty feeling future time as real."
   - q: "Can DoTheThing help with financial tasks?"
     a: "Yes. Financial tasks like 'sort out my finances' are too vague for the ADHD brain to initiate. DoTheThing breaks any financial task into specific, bounded micro-steps: check account balance, identify bills due this week, set up one automatic payment. Each step has a defined done state and a time estimate. The task stops being an overwhelming abstraction and becomes a sequence of small, completable actions. Starting the first one takes under a minute."
 ---
@@ -87,7 +87,7 @@ These aren't gaps in financial education. They're gaps in the executive function
 
 There are five specific ADHD mechanisms that drive financial difficulty.
 
-**Time blindness makes bills feel abstract.** A bill due in 14 days doesn't register as urgent. The ADHD brain experiences time as "now" or "not now," which means future deadlines have almost no motivational pull until they become imminent. By the time a bill feels real, it's often already late.
+**[Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) makes bills feel abstract.** A bill due in 14 days doesn't register as urgent. The ADHD brain experiences time as "now" or "not now," which means future deadlines have almost no motivational pull until they become imminent. By the time a bill feels real, it's often already late.
 
 **Working memory makes tracking spending impossible without external systems.** Keeping a running mental total of what has been spent requires holding information in mind across many different contexts and time points. ADHD significantly impairs this capacity. Without a visual, external record, the information simply isn't there when it's needed.
 

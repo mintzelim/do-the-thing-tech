@@ -71,7 +71,7 @@ ADHD symptoms persist across the lifespan but change significantly at each life 
 ## ADHD Across the Lifespan
 
 - Childhood: Hyperactivity and impulsivity are most visible
-- Adolescence: Executive dysfunction and emotional dysregulation emerge
+- Adolescence: [Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) and emotional dysregulation emerge
 - Young adulthood: Task management and relationship challenges peak
 - Middle age: Strategies that worked stop working; adaptation is key
 - Older age: Some symptoms improve; others persist or shift
@@ -109,7 +109,7 @@ The transition from structured education to independent adult life is where undi
 
 School — for all its difficulties — provides external scaffolding that ADHD brains rely on heavily: timetables, teachers, deadlines, routine, physical attendance requirements. When that structure disappears at 18, the ADHD brain is suddenly expected to generate all of it internally. For many people, this is the first point where things fall apart in ways that can't be explained away.
 
-Hyperactivity has typically softened by this stage. The fidgeting child becomes an adult with racing thoughts, difficulty relaxing, and a persistent need to be doing something. Inattention, however, tends to remain intact. Time blindness — the difficulty perceiving how long tasks take or how quickly time passes — becomes more costly when rent, invoices, and professional deadlines are at stake.
+Hyperactivity has typically softened by this stage. The fidgeting child becomes an adult with racing thoughts, difficulty relaxing, and a persistent need to be doing something. Inattention, however, tends to remain intact. [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) — the difficulty perceiving how long tasks take or how quickly time passes — becomes more costly when rent, invoices, and professional deadlines are at stake.
 
 **What helps at this stage:** External structure to replace the scaffolding. Written task breakdowns, timers, and simple systems. [DoTheThing](https://www.dothething.tech) handles the planning layer — breaking any task into specific, immediate micro-steps so the absence of external structure doesn't mean the absence of a starting point.
 
@@ -162,9 +162,9 @@ Distinguishing ADHD from early-stage cognitive decline also becomes important at
 | Hyperactivity | Reduces significantly from childhood through adulthood |
 | Impulsivity | Tends to reduce, though emotional impulsivity often persists |
 | Inattention | Largely stable across the lifespan — often most persistent symptom |
-| Executive dysfunction | May worsen functionally as life demands increase |
+| [Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) | May worsen functionally as life demands increase |
 | Compensatory strategies | Develop over decades — then fail when demands increase or routine is disrupted |
-| Time blindness | Persists, often becomes more costly as adult responsibilities increase |
+| [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) | Persists, often becomes more costly as adult responsibilities increase |
 | Emotional dysregulation | Often underrecognised; can intensify with hormonal changes in women |
 
 ---

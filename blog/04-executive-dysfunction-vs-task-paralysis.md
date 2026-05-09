@@ -2,7 +2,7 @@
 id: '4'
 title: 'Executive Dysfunction and Task Paralysis: What''s the Difference?'
 description: >-
-  Executive dysfunction and task paralysis both make ADHD tasks feel impossible
+  [Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) and task paralysis both make ADHD tasks feel impossible
   — but for different reasons. Here's how to tell them apart and what to do
   about each.
 slug: /executive-dysfunction-vs-task-paralysis-adhd
@@ -54,9 +54,9 @@ faq:
       What is the difference between executive dysfunction and task paralysis in
       ADHD?
     a: >-
-      Executive dysfunction is a neurological impairment in the brain's
+      [Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) is a neurological impairment in the brain's
       planning, organising, and initiation systems — the prefrontal cortex isn't
-      generating the structure needed to start. Task paralysis is a freeze
+      generating the structure needed to start. [Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) is a freeze
       response triggered by emotional overload: overwhelm, anxiety,
       perfectionism, or fear of failure. The key distinction is that executive
       dysfunction is about not knowing how to start, while task paralysis is
@@ -142,7 +142,7 @@ Executive dysfunction is a neurological impairment in planning and initiation (p
 ## Executive Dysfunction vs Task Paralysis
 
 - Executive dysfunction = structural brain issue (can't plan or start)
-- Task paralysis = emotional freeze response (too overwhelmed to try)
+- [Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) = emotional freeze response (too overwhelmed to try)
 - Most ADHD brains experience both simultaneously
 - Executive dysfunction needs structure; task paralysis needs emotional support
 - Neither is a character flaw or sign of laziness

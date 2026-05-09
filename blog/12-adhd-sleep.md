@@ -188,7 +188,7 @@ Sleep deprivation directly impairs the [prefrontal cortex](https://chadd.org/abo
 
 **Executive function.** Planning, initiating, sequencing, and deciding all degrade with sleep debt. Tasks that are hard on a good day become nearly impossible after a 5-hour night. This connects directly to [task paralysis](https://dothething.tech/blog/how-adhd-affects-task-management) — the initiation failure that costs ADHD brains most of their productive hours.
 
-**Time blindness.** [Time blindness](https://dothething.tech/blog/time-blindness-in-adhd) — the ADHD brain's difficulty perceiving how much time is passing — intensifies with fatigue. The already-unreliable internal clock becomes even less reliable.
+**[Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/).** [Time blindness](https://dothething.tech/blog/time-blindness-in-adhd) — the ADHD brain's difficulty perceiving how much time is passing — intensifies with fatigue. The already-unreliable internal clock becomes even less reliable.
 
 **Emotional regulation.** The amygdala becomes hyperactive when fatigue reduces prefrontal control. Poor sleep makes ADHD emotional responses faster, stronger, and harder to step back from — which shows up in [relationships](https://dothething.tech/blog/adhd-relationships) and at [work](https://dothething.tech/blog/adhd-workplace).
 

@@ -51,7 +51,7 @@ faq:
       tasks.
   - q: What is executive dysfunction in ADHD?
     a: >-
-      Executive dysfunction describes the difficulty ADHD brains have with
+      [Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) describes the difficulty ADHD brains have with
       planning, organising, initiating, and completing tasks. It stems from
       disrupted dopamine signalling in the prefrontal cortex and frontostriatal
       circuits. Think of executive function as the brain's project manager — in
@@ -66,7 +66,7 @@ faq:
       literally doesn't fire the same way it does in a neurotypical brain.
   - q: What is time blindness in ADHD?
     a: >-
-      Time blindness is the ADHD brain's impaired ability to sense time passing
+      [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) is the ADHD brain's impaired ability to sense time passing
       and estimate how long tasks take. Research shows children with ADHD have
       lower time-processing ability compared to neurotypical peers. In practice,
       this means an hour can feel like ten minutes, deadlines sneak up
@@ -122,7 +122,7 @@ This post explains exactly what's happening neurologically when tasks feel impos
 ## TL;DR
 
 - **Traditional task management assumes consistent dopamine** — ADHD brains can't produce it on demand, which is why initiation feels like pushing through concrete.
-- **Time blindness is a biological wiring difference** — your brain genuinely processes time differently to neurotypical brains.
+- **[Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) is a biological wiring difference** — your brain genuinely processes time differently to neurotypical brains.
 - **Working memory in ADHD is a leaky bucket** — the steps disappear because the storage system works differently — that's the architecture, not the effort.
 - **Emotional dysregulation makes tasks feel personal** — ADHD brains experience task frustration at a higher intensity, which is why "just start" advice lands like an insult.
 - **External structure replaces willpower entirely** — micro-steps, time buffers, and tools like DoTheThing supply the signals your brain doesn't fire consistently.
@@ -280,7 +280,7 @@ ADHD disrupts the prefrontal cortex's ability to plan, initiate, and sustain tas
 
 ### What is executive dysfunction in ADHD?
 
-Executive dysfunction describes the difficulty ADHD brains have with planning, organising, initiating, and completing tasks. It stems from disrupted dopamine signalling in the prefrontal cortex and frontostriatal circuits. Think of executive function as the brain's project manager — in ADHD, that manager gets inconsistent signals and frequently drops the thread.
+[Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) describes the difficulty ADHD brains have with planning, organising, initiating, and completing tasks. It stems from disrupted dopamine signalling in the prefrontal cortex and frontostriatal circuits. Think of executive function as the brain's project manager — in ADHD, that manager gets inconsistent signals and frequently drops the thread.
 
 ### Why does starting tasks feel impossible with ADHD?
 

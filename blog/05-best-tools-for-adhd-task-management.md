@@ -213,7 +213,7 @@ Forest pairs well with the Pomodoro Technique — a time management method that 
 
 ## Tool 4: Focusmate — Virtual Body Doubling
 
-**Best for:** Task paralysis rooted in emotional avoidance, not structural confusion.
+**Best for:** [Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) rooted in emotional avoidance, not structural confusion.
 **Free tier:** 3 sessions per week (25 or 50 minutes each).
 **Where:** focusmate.com
 
@@ -225,14 +225,14 @@ This is body doubling — the practice of working in the presence of another per
 
 The free tier of three sessions per week is often enough for the most stuck tasks. Save your sessions for the tasks you've been avoiding longest.
 
-**What it handles well:** Task paralysis with an emotional component, accountability, motivation for non-urgent tasks, remote workers who lack ambient social presence.
+**What it handles well:** [Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) with an emotional component, accountability, motivation for non-urgent tasks, remote workers who lack ambient social presence.
 **What it doesn't replace:** Task breakdown (use DoTheThing first so you know exactly what you're working on during the session), ongoing scheduling (use Google Calendar), focus timers when you don't need a human partner (use Forest).
 
 ---
 
 ## Tool 5: Google Calendar — Time Blocking and Scheduling
 
-**Best for:** Time blindness and the "I'll do it later" problem.
+**Best for:** [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) and the "I'll do it later" problem.
 **Free?** Completely. Works on any device.
 **Where:** calendar.google.com / iOS / Android
 
