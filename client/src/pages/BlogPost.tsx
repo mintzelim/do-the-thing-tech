@@ -290,6 +290,44 @@ export default function BlogPost() {
               <SourcesSection sources={post.sources} />
             )}
 
+            {/* CTA: Back to DoTheThing */}
+            <div className="mobile-card" style={{ padding: "20px", backgroundColor: "var(--pixel-accent)", marginBottom: "20px" }}>
+              <h3 className="mobile-heading-3" style={{ marginBottom: "12px", marginTop: "0", color: "white" }}>
+                READY TO BREAK DOWN YOUR TASKS?
+              </h3>
+              <p style={{ color: "white", fontSize: "14px", marginBottom: "16px", fontFamily: "'Roboto Mono', monospace" }}>
+                Use DoTheThing to turn your brain dump into actionable steps. Free. No login. Works in under a minute.
+              </p>
+              <a
+                href="/"
+                style={{
+                  display: "inline-block",
+                  backgroundColor: "white",
+                  color: "var(--pixel-accent)",
+                  padding: "12px 20px",
+                  border: "2px solid white",
+                  fontFamily: "'VT323', monospace",
+                  fontSize: "14px",
+                  fontWeight: "bold",
+                  cursor: "pointer",
+                  textDecoration: "none",
+                  transition: "all 0.2s"
+                }}
+                onMouseEnter={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.transform = "translate(-2px, -2px)";
+                  el.style.boxShadow = "2px 2px 0 rgba(0,0,0,0.2)";
+                }}
+                onMouseLeave={(e) => {
+                  const el = e.currentTarget as HTMLElement;
+                  el.style.transform = "translate(0, 0)";
+                  el.style.boxShadow = "none";
+                }}
+              >
+                → OPEN DOTHETHING
+              </a>
+            </div>
+
             {relatedPostsList.length > 0 && (
               <div className="mobile-card" style={{ padding: "20px" }}>
                 <h3 className="mobile-heading-3" style={{ marginBottom: "16px", marginTop: "0" }}>

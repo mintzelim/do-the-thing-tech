@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'wouter';
 
 interface BlogContentRendererProps {
   content: string;
@@ -107,28 +108,53 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
             </button>
           );
         } else {
-          parts.push(
-            <a
-              key={`link-${match.index}`}
-              href={linkUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                color: 'var(--pixel-accent)',
-                textDecoration: 'underline',
-                cursor: 'pointer',
-                transition: 'all 0.2s'
-              }}
-              onMouseEnter={(e) => {
-                (e.currentTarget as HTMLElement).style.fontWeight = 'bold';
-              }}
-              onMouseLeave={(e) => {
-                (e.currentTarget as HTMLElement).style.fontWeight = 'normal';
-              }}
-            >
-              {linkText}
-            </a>
-          );
+          // Check if link is to the homepage or internal site
+          const isHomepageLink = linkUrl === '/' || linkUrl === 'https://www.dothething.tech' || linkUrl === 'https://www.dothething.tech/';
+          const isInternalLink = isHomepageLink || linkUrl.startsWith('/');
+          
+          if (isInternalLink) {
+            // Internal link - use wouter Link for client-side navigation
+            const internalHref = isHomepageLink ? '/' : linkUrl;
+            parts.push(
+              <Link
+                key={`link-${match.index}`}
+                href={internalHref}
+                style={{
+                  color: 'var(--pixel-accent)',
+                  textDecoration: 'underline',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s',
+                  display: 'inline'
+                }}
+              >
+                {linkText}
+              </Link>
+            );
+          } else {
+            // External link
+            parts.push(
+              <a
+                key={`link-${match.index}`}
+                href={linkUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: 'var(--pixel-accent)',
+                  textDecoration: 'underline',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s'
+                }}
+                onMouseEnter={(e) => {
+                  (e.currentTarget as HTMLElement).style.fontWeight = 'bold';
+                }}
+                onMouseLeave={(e) => {
+                  (e.currentTarget as HTMLElement).style.fontWeight = 'normal';
+                }}
+              >
+                {linkText}
+              </a>
+            );
+          }
         }
       }
 
