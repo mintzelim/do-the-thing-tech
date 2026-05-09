@@ -4,6 +4,7 @@ import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import HomeContent from "@/components/HomeContent";
 import PinTabTutorial from "@/components/PinTabTutorial";
 import { useTimer } from "@/contexts/TimerContext";
 import { ErrorModal } from "@/components/ErrorModal";
@@ -339,6 +340,8 @@ export default function Home() {
         {/* Flow: Input */}
         {flowState === "input" && (
           <>
+            <HomeContent />
+            
             <h1 className="mobile-heading-1">DO THE THING</h1>
 
             <div className="mobile-card">
