@@ -101,20 +101,16 @@ export default function HomeContent() {
 
       {/* SECTION 5: WHO IT'S FOR */}
       <section className="content-section">
-        <h2 className="section-heading">For Anyone Whose Brain Works This Way</h2>
+        <h2 className="section-heading">A Productivity Tool for Anyone Whose Brain Works Differently</h2>
+        <p className="section-subtitle">We built this specifically for the ADHD community and anyone struggling with task paralysis.</p>
+        <p className="section-subtitle">Our AI task breakdown tool is designed for:</p>
         <div className="section-content">
-          <p>
-            You've stared at a task for an hour and known, logically, you could do it. You just couldn't start.
-          </p>
-          <p>
-            That's who DoTheThing is for.
-          </p>
-          <p>
-            People with ADHD where "just get on with it" lands like a joke. Anyone with executive dysfunction who's abandoned a dozen apps because they were built for someone else. Students, remote workers, freelancers, parents — anyone who loses hours to the freeze.
-          </p>
-          <p>
-            The WHO World Mental Health Survey found adults with ADHD lose an average of 22 working days a year to this. DoTheThing won't fix everything. But it gives you a specific first step when your brain can't generate one on its own. That's enough to get moving.
-          </p>
+          <p><strong>Students:</strong> Bypassing academic overwhelm and the "blank page" syndrome.</p>
+          <p><strong>Remote Workers & Freelancers:</strong> For when you're your own boss and your initiation system is jamming.</p>
+          <p><strong>Employees & Corporate Teams:</strong> Stop losing hours to "prep work." Use DTT to generate accurate time estimates and concrete first steps.</p>
+          <p><strong>Project Managers:</strong> Use it to convert a vague "milestone" into a numbered micro-step list for your team in seconds.</p>
+          <p><strong>Parents:</strong> Managing the invisible mental load of household admin and family logistics.</p>
+          <p>The WHO World Mental Health Survey found that adults lose an average of 22 working days a year to executive dysfunction. DoTheThing won't fix your biology or your boss, but it acts as an external executive function—giving you a specific first step when your brain (or your team) can't generate one on its own.</p>
         </div>
       </section>
 
