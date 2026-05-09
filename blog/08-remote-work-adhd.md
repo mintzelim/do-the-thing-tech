@@ -200,7 +200,7 @@ Remote work for ADHD is a design problem, not a willpower problem. The office pr
 
 None of these require perfect execution every day. The goal is a system that makes follow-through more likely than the absence of a system would — not a system that demands perfect adherence to function.
 
-Start with whichever gap is costing you the most right now. Task initiation? Begin with [DoTheThing](https://www.dothething.tech) and the pre-blocking habit. [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/)? Add a visual timer. Accountability? Book a Focusmate session. Build from there.
+Start with whichever gap is costing you the most right now. Task initiation? Begin with [DoTheThing](https://www.dothething.tech) and the pre-blocking habit. [Time blindness](https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd)? Add a visual timer. Accountability? Book a Focusmate session. Build from there.
 
 ---
 

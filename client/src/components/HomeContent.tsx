@@ -14,7 +14,7 @@ export default function HomeContent() {
             You want to do it. You can picture doing it. And yet — nothing.
           </p>
           <p>
-            That gap between wanting and starting has a name: <strong><a href="https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>Executive dysfunction</a></strong>. It's the planning circuit that should fire and doesn't, the initiation signal that arrives late or not at all. It's how ADHD works. And every app that hands you a blank list and says "prioritise this" is asking the wrong brain to do the wrong job.
+            That gap between wanting and starting has a name: <strong><a href="https://my.clevelandclinic.org/health/symptoms/23224-executive-dysfunction" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>Executive dysfunction</a></strong>. It's the planning circuit that should fire and doesn't, the initiation signal that arrives late or not at all. It's how ADHD works. And every app that hands you a blank list and says "prioritise this" is asking the wrong brain to do the wrong job.
           </p>
           <p>
             We built DoTheThing because we believe executive dysfunction isn't a personal failure. It's a neurological difference that deserves a tool designed around it. So we kept it to one job: get you to the first step. Everything else follows from there.
@@ -102,7 +102,7 @@ export default function HomeContent() {
           <p><strong>Employees & Corporate Teams:</strong> Stop losing hours to "prep work." Use DTT to generate accurate time estimates and concrete first steps.</p>
           <p><strong>Project Managers:</strong> Use it to convert a vague "milestone" into a numbered micro-step list for your team in seconds.</p>
           <p><strong>Parents:</strong> Managing the invisible mental load of household admin and family logistics.</p>
-          <p>The <a href="https://www.who.int/teams/mental-health-and-substance-use/data-research/world-mental-health-survey" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>WHO World Mental Health Survey</a> found that adults lose an average of 22 working days a year to executive dysfunction. DoTheThing won't fix your biology or your boss, but it acts as an external executive function—giving you a specific first step when your brain (or your team) can't generate one on its own.</p>
+          <p>The <a href="https://www.researchgate.net/publication/5344712_The_prevalence_and_effects_of_Adult_Attention-Deficithyperactivity_Disorder_ADHD_on_the_performance_of_workers_Results_from_the_WHO_World_Mental_Health_Survey_Initiative" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>WHO World Mental Health Survey</a> found that adults lose an average of 22 working days a year to executive dysfunction. DoTheThing won't fix your biology or your boss, but it acts as an external executive function—giving you a specific first step when your brain (or your team) can't generate one on its own.</p>
         </div>
       </section>
 
@@ -116,11 +116,11 @@ export default function HomeContent() {
           </div>
           <div className="faq-item">
             <h3>What is task paralysis?</h3>
-            <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>Task paralysis</a> is when an ADHD brain freezes in front of a task it understands. It's a neurological response to ambiguity — the brain can't generate a first step, so it generates nothing. DoTheThing removes the ambiguity by handing you a step small enough that starting stops feeling like a risk.</p>
+            <p><a href="https://add.org/adhd-paralysis/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>Task paralysis</a> is when an ADHD brain freezes in front of a task it understands. It's a neurological response to ambiguity — the brain can't generate a first step, so it generates nothing. DoTheThing removes the ambiguity by handing you a step small enough that starting stops feeling like a risk.</p>
           </div>
           <div className="faq-item">
             <h3>What is time blindness?</h3>
-            <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>Time blindness</a> is the ADHD brain's genuine difficulty sensing how long things take and how fast time passes. Estimates end up too optimistic, schedules collapse. DoTheThing adds a 20–30% buffer to every estimate and gives you a visual countdown timer so time stays concrete.</p>
+            <p><a href="https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>Time blindness</a> is the ADHD brain's genuine difficulty sensing how long things take and how fast time passes. Estimates end up too optimistic, schedules collapse. DoTheThing adds a 20–30% buffer to every estimate and gives you a visual countdown timer so time stays concrete.</p>
           </div>
           <div className="faq-item">
             <h3>What does the focus level setting do?</h3>

@@ -2,7 +2,7 @@
 id: 2
 title: 'Time Blindness in ADHD: Why You''re Always Late'
 description: >-
-  [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) in ADHD is a neurological wiring difference, not a character
+  [Time blindness](https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd) in ADHD is a neurological wiring difference, not a character
   flaw. Here's what's happening in your brain, and the strategies that actually
   compensate for it.
 slug: /time-blindness-adhd-why-youre-always-late
@@ -45,7 +45,7 @@ relatedPosts:
 faq:
   - q: What is time blindness in ADHD?
     a: >-
-      [Time blindness](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6988696/) is the ADHD brain's impaired ability to sense how much time
+      [Time blindness](https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd) is the ADHD brain's impaired ability to sense how much time
       has passed and estimate how long tasks will take. Defined by ADDA as the
       inability to sense time passing or estimate task duration, it stems from
       reduced activity in the prefrontal cortex and cerebellum, which handle
@@ -61,7 +61,7 @@ faq:
   - q: Is time blindness the same as being disorganised?
     a: >-
       They overlap but differ. Disorganisation refers to difficulty managing
-      tasks, materials, and systems. Time blindness specifically targets the
+      tasks, materials, and systems. [Time blindness](https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd) specifically targets the
       perception of time itself, including how long tasks take and how quickly
       deadlines approach. Many ADHD adults with strong organisational systems
       still struggle with time blindness because the two involve different
@@ -83,7 +83,7 @@ faq:
       precedes an appointment.
   - q: Can time blindness be treated?
     a: >-
-      Time blindness responds well to external compensation strategies rather
+      [Time blindness](https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd) responds well to external compensation strategies rather
       than internal discipline. Visual timers, time anchors, the multiply-by-2
       rule, and external structure tools like DoTheThing reduce its impact
       significantly. Some research also suggests ADHD stimulant medication

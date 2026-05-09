@@ -7,7 +7,7 @@ description: >-
   automates the whole process.
 slug: /breaking-down-big-tasks-adhd
 excerpt: >-
-  [Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) is a brain problem, not a willpower problem. Here's how to fix
+  [Task paralysis](https://add.org/adhd-paralysis/) is a brain problem, not a willpower problem. Here's how to fix
   it with micro-steps, realistic time estimates, and AI that does the breakdown
   for you.
 date: "April 05, 2026"
@@ -145,7 +145,7 @@ Breaking tasks into micro-steps removes the initiation barrier by making the fir
 
 ## TL;DR
 
-- **[Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) is a brain problem, not a character flaw.** The ADHD prefrontal cortex struggles specifically with planning, sequencing, and initiation — the exact skills task breakdown requires.
+- **[Task paralysis](https://add.org/adhd-paralysis/) is a brain problem, not a character flaw.** The ADHD prefrontal cortex struggles specifically with planning, sequencing, and initiation — the exact skills task breakdown requires.
 - **Micro-steps work because they remove ambiguity.** A step small enough to be obvious needs no planning to start.
 - **Three methods cover most situations:** The 2-Minute Rule for getting unstuck, the Reverse Breakdown for complex projects, and the Dependency Map for multi-stage work.
 - **Each completed step delivers a dopamine hit** that makes it easier to start the next one.
@@ -159,7 +159,7 @@ A task like "write the report" feels impossible because it isn't a task. It's a 
 
 [Research from PMC on the neurobiology of ADHD](https://pmc.ncbi.nlm.nih.gov/articles/PMC2894421/) identifies the prefrontal cortex as the region most responsible for ADHD's core difficulties. It handles planning, attention regulation, and task initiation, and it runs on dopamine. In ADHD brains, that dopamine supply is reduced, which means the prefrontal cortex has less fuel for exactly the jobs that task management requires.
 
-This is why task paralysis hits before you even start. [Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) is the umbrella term for ADHD's impact on the brain's management system: the ability to plan, prioritise, sequence, and initiate. [ADDA describes ADHD paralysis](https://add.org/adhd-paralysis/) as an overload response — too much information, too many open questions, too few clear next steps — and notes that the shutdown is often outside the person's conscious control.
+This is why task paralysis hits before you even start. [Executive dysfunction](https://my.clevelandclinic.org/health/symptoms/23224-executive-dysfunction) is the umbrella term for ADHD's impact on the brain's management system: the ability to plan, prioritise, sequence, and initiate. [ADDA describes ADHD paralysis](https://add.org/adhd-paralysis/) as an overload response — too much information, too many open questions, too few clear next steps — and notes that the shutdown is often outside the person's conscious control.
 
 **Related:** Learn the difference between [task paralysis and executive dysfunction](post:4) to understand which strategies will work best for your brain.
 

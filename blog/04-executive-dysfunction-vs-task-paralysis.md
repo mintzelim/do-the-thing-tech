@@ -2,7 +2,7 @@
 id: '4'
 title: 'Executive Dysfunction and Task Paralysis: What''s the Difference?'
 description: >-
-  [Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) and task paralysis both make ADHD tasks feel impossible
+  [Executive dysfunction](https://my.clevelandclinic.org/health/symptoms/23224-executive-dysfunction) and task paralysis both make ADHD tasks feel impossible
   — but for different reasons. Here's how to tell them apart and what to do
   about each.
 slug: /executive-dysfunction-vs-task-paralysis-adhd
@@ -54,9 +54,9 @@ faq:
       What is the difference between executive dysfunction and task paralysis in
       ADHD?
     a: >-
-      [Executive dysfunction](https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2024.1416500) is a neurological impairment in the brain's
+      [Executive dysfunction](https://my.clevelandclinic.org/health/symptoms/23224-executive-dysfunction) is a neurological impairment in the brain's
       planning, organising, and initiation systems — the prefrontal cortex isn't
-      generating the structure needed to start. [Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) is a freeze
+      generating the structure needed to start. [Task paralysis](https://add.org/adhd-paralysis/) is a freeze
       response triggered by emotional overload: overwhelm, anxiety,
       perfectionism, or fear of failure. The key distinction is that executive
       dysfunction is about not knowing how to start, while task paralysis is
@@ -66,7 +66,7 @@ faq:
       Can you have both executive dysfunction and task paralysis at the same
       time?
     a: >-
-      Yes, and most people with ADHD do. Executive dysfunction makes the task
+      Yes, and most people with ADHD do. [Executive dysfunction](https://my.clevelandclinic.org/health/symptoms/23224-executive-dysfunction) makes the task
       feel structurally unclear, which creates the conditions for task paralysis
       to take hold. The ambiguity triggers emotional overload, which deepens the
       freeze. Addressing only one without the other is why many ADHD strategies
@@ -108,7 +108,7 @@ faq:
 faqItems:
   - question: What's the difference between executive dysfunction and task paralysis?
     answer: >-
-      Executive dysfunction is difficulty with planning and organizing. Task
+      [Executive dysfunction](https://my.clevelandclinic.org/health/symptoms/23224-executive-dysfunction) is difficulty with planning and organizing. Task
       paralysis is being unable to start even simple tasks. They're related but
       distinct.
   - question: Can I have both executive dysfunction and task paralysis?
@@ -142,7 +142,7 @@ Executive dysfunction is a neurological impairment in planning and initiation (p
 ## Executive Dysfunction vs Task Paralysis
 
 - Executive dysfunction = structural brain issue (can't plan or start)
-- [Task paralysis](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8929029/) = emotional freeze response (too overwhelmed to try)
+- [Task paralysis](https://add.org/adhd-paralysis/) = emotional freeze response (too overwhelmed to try)
 - Most ADHD brains experience both simultaneously
 - Executive dysfunction needs structure; task paralysis needs emotional support
 - Neither is a character flaw or sign of laziness
@@ -151,8 +151,8 @@ Executive dysfunction is a neurological impairment in planning and initiation (p
 ## TL;DR
 
 - **Executive dysfunction is neurological.** The brain's planning and initiation systems aren't generating the structure needed to start.
-- **Task paralysis is emotional.** You could technically start, but overwhelm, anxiety, or perfectionism is blocking the way.
-- **The practical difference:** Executive dysfunction is "I don't know how to start." Task paralysis is "I'm too overwhelmed to start."
+- **[Task paralysis](https://add.org/adhd-paralysis/) is emotional.** You could technically start, but overwhelm, anxiety, or perfectionism is blocking the way.
+- **The practical difference:** Executive dysfunction is "I don't know how to start." [Task paralysis](https://add.org/adhd-paralysis/) is "I'm too overwhelmed to start."
 - **Most people with ADHD experience both at the same time** — and addressing only one is why strategies often work inconsistently.
 - **DoTheThing targets executive dysfunction** by doing the breakdown for you. The emotional layer is yours to address first — but the structural layer is handled the moment you [open the app](https://www.dothething.tech).
 - **Once tasks are broken down**, you need a management system. [Free tools for ADHD task management](post:15) integrate with your breakdown workflow.
