@@ -340,7 +340,7 @@ export default function Home() {
         {/* Flow: Input */}
         {flowState === "input" && (
           <>
-            <h1 className="mobile-heading-1">DO THE THING</h1>
+            <h1 className="mobile-heading-1" style={{ fontSize: "38px" }}>ADHD Task Management That Works With Your Brain</h1>
 
             <div className="mobile-card">
               <h2 className="mobile-heading-2">TODAY, I NEED TO...</h2>
