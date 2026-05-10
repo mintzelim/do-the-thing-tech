@@ -160,9 +160,7 @@ body {
   border-radius: 0;
   padding: 16px;
   margin-bottom: 12px;
-  box-shadow: 
-    4px 4px 0 var(--pixel-shadow),
-    8px 8px 0 rgba(0, 0, 0, 0.05);
+
   position: relative;
 }
 
@@ -317,9 +315,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  box-shadow: 
-    2px 2px 0 var(--pixel-shadow),
-    4px 4px 0 rgba(0, 0, 0, 0.05);
+
 }
 
 .mobile-preset-button.active {
@@ -333,9 +329,7 @@ body {
 
 .mobile-preset-button:active {
   transform: translate(2px, 2px);
-  box-shadow: 
-    0 0 0 var(--pixel-shadow),
-    2px 2px 0 rgba(0, 0, 0, 0.05);
+
 }
 
 /* Pixel Art Slider */
@@ -349,7 +343,7 @@ body {
   appearance: none;
   margin: 16px 0;
   border: 2px solid var(--pixel-border);
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .mobile-slider::-webkit-slider-thumb {
@@ -361,7 +355,7 @@ body {
   background: var(--pixel-accent);
   cursor: pointer;
   border: var(--pixel-border-width) solid var(--pixel-border);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .mobile-slider::-moz-range-thumb {
@@ -371,7 +365,7 @@ body {
   background: var(--pixel-accent);
   cursor: pointer;
   border: var(--pixel-border-width) solid var(--pixel-border);
-  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 /* Pixel Art Checkbox */
@@ -394,9 +388,7 @@ body {
   margin-bottom: 12px;
   background: var(--pixel-card-bg);
   align-items: flex-start;
-  box-shadow: 
-    2px 2px 0 var(--pixel-shadow),
-    4px 4px 0 rgba(0, 0, 0, 0.05);
+
 }
 
 .mobile-task-item.completed {
@@ -445,7 +437,7 @@ body {
   border-radius: 0;
   background: var(--pixel-card-bg);
   color: var(--pixel-text);
-  box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .mobile-task-delete {
@@ -461,12 +453,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition: all 0.05s ease;
-  box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 .mobile-task-delete:active {
   transform: translate(1px, 1px);
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+
 }
 
 /* Pixel Art Summary Card */
@@ -477,9 +469,7 @@ body {
   padding: 16px;
   margin-bottom: 16px;
   color: var(--pixel-text);
-  box-shadow: 
-    3px 3px 0 var(--pixel-shadow),
-    6px 6px 0 rgba(0, 0, 0, 0.05);
+
 }
 
 .mobile-summary-label {
@@ -899,7 +889,7 @@ body {
 .blog-link-card:hover {
   background: #f0f0ff;
   transform: translate(-2px, -2px);
-  box-shadow: 6px 6px 0 var(--pixel-shadow);
+
   border-color: var(--pixel-accent);
 }
 
@@ -958,7 +948,7 @@ body {
 
   .content-section {
     padding: 16px;
-    box-shadow: 2px 2px 0 var(--pixel-shadow);
+
   }
 
   .section-title {
