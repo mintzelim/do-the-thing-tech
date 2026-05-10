@@ -167,6 +167,24 @@ export default function HomeContent() {
           </Link>
         </div>
       </section>
+
+      {/* CTA SECTION 1: After FAQ */}
+      <section className="content-section cta-section">
+        <h2 className="section-heading">Ready to Break Down Your First Task?</h2>
+        <p className="section-content" style={{ fontSize: '20px', textAlign: 'center', marginBottom: '24px' }}>Stop overthinking. Start with one small step.</p>
+        <div style={{ textAlign: 'center' }}>
+          <a href="#widget" className="cta-button" style={{ display: 'inline-block', padding: '12px 32px', backgroundColor: 'var(--pixel-accent)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>↑ SCROLL UP TO START</a>
+        </div>
+      </section>
+
+      {/* CTA SECTION 2: After Blog Links */}
+      <section className="content-section cta-section">
+        <h2 className="section-heading">Try DoTheThing Now</h2>
+        <p className="section-content" style={{ fontSize: '20px', textAlign: 'center', marginBottom: '24px' }}>Free. No login. No email. Just type your task and get your breakdown in under a minute.</p>
+        <div style={{ textAlign: 'center' }}>
+          <a href="#widget" className="cta-button" style={{ display: 'inline-block', padding: '12px 32px', backgroundColor: 'var(--pixel-success)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>→ OPEN THE TOOL</a>
+        </div>
+      </section>
     </div>
   );
 }
