@@ -941,6 +941,16 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .mobile-preset-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .mobile-preset-button {
+    flex: 1;
+    min-width: 100%;
+    width: 100%;
+  }
   .home-content-sections {
     gap: 24px;
     margin-bottom: 24px;
