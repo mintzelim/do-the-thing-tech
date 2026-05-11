@@ -103,8 +103,8 @@ export default function HomeContent() {
       {/* SECTION 5: WHO IT'S FOR */}
       <section className="content-section">
         <h2 className="section-heading" style={{ textAlign: 'center' }}>A Productivity Tool for Anyone Whose Brain Works Differently</h2>
-        <p className="section-subtitle" style={{ textAlign: 'center' }}>We built this specifically for the ADHD community and anyone struggling with task paralysis.</p>
-        <p className="section-subtitle" style={{ textAlign: 'center' }}>Our AI task breakdown tool is designed for:</p>
+        <p className="section-subtitle" style={{ textAlign: 'center' }}>We built this for the ADHD community and anyone struggling with task paralysis.</p>
+        <p className="section-subtitle" style={{ textAlign: 'center' }}>Our AI task breakdown tool is for:</p>
         <div className="section-content">
           <p style={{ paddingTop: '15px' }}><strong>Students:</strong> Bypassing academic overwhelm and the "blank page" syndrome.</p>
           <p><strong>Remote Workers & Freelancers:</strong> For when you're your own boss and your initiation system is jamming.</p>

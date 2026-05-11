@@ -197,3 +197,4 @@
 
 - [x] Center all H2 section headings throughout the page
 - [x] Center section subtitle paragraphs for visual hierarchy
+- [x] Simplify "Who It's For" section copy - remove "specifically" and "designed"
