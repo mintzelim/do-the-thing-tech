@@ -340,8 +340,18 @@ export default function Home() {
         {/* Flow: Input */}
         {flowState === "input" && (
           <>
-            <h1 className="mobile-heading-1" style={{ fontSize: "38px" }}>ADHD Task Management That Works With Your Brain</h1>
-            <p className="mobile-body" style={{ fontSize: "20px", marginBottom: "24px" }}>Type any task or brain dump the whole pile. DoTheThing breaks it into steps you can actually start. Free. No login. The #1 way to get things done.</p>
+            <h1 className="mobile-heading-1" style={{ fontSize: "38px" }}>Task Management Built for ADHD Brains</h1>
+            <p className="mobile-body" style={{ fontSize: "18px", marginBottom: "24px", lineHeight: "1.6" }}>
+              Type any task or brain dump the whole pile.
+              <br />
+              DoTheThing breaks it into steps you can actually start.
+              <br />
+              <br />
+              Free. No login. Under a minute.
+            </p>
+            <div style={{ textAlign: "center", marginBottom: "32px" }}>
+              <a href="#widget" className="cta-button" style={{ display: "inline-block", padding: "12px 40px", backgroundColor: "var(--pixel-accent)", color: "white", textDecoration: "none", fontWeight: "bold", fontSize: "18px", border: "2px solid var(--pixel-border)", cursor: "pointer", fontFamily: "'VT323', monospace" }}>START NOW</a>
+            </div>
 
             <div className="mobile-card" id="widget">
               <h2 className="mobile-heading-2">TODAY, I NEED TO...</h2>

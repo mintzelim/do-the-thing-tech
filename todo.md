@@ -173,3 +173,9 @@
 - [x] Make section background colors span full viewport width (not constrained to content box)
 - [x] Reduce color saturation to be less colorful and more subtle
 - [x] Fix responsive mobile layout for section backgrounds (full-width backgrounds with proper padding)
+
+## Hero Section Copy Update
+
+- [x] Update H1 to "Task Management Built for ADHD Brains"
+- [x] Update subheadline with multi-line copy and "Free. No login. Under a minute."
+- [x] Replace CTA button text to "START NOW" with anchor link to #widget
