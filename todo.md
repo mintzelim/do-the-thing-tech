@@ -192,3 +192,8 @@
 ## Critical Layout Bug Fix
 
 - [x] Fix text being cut off on left side of sections - refactored to use pseudo-element for full-width backgrounds
+
+## Typography & Alignment Refinements
+
+- [x] Center all H2 section headings throughout the page
+- [x] Center section subtitle paragraphs for visual hierarchy

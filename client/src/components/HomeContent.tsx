@@ -5,7 +5,7 @@ export default function HomeContent() {
     <div className="home-content-sections">
       {/* SECTION 2: THE PROBLEM & SOLUTION */}
       <section className="content-section">
-        <h2 className="section-heading">The AI Does the Planning. You Do the Thing.</h2>
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>The AI Does the Planning. You Do the Thing.</h2>
         <div className="section-content">
           <p>
             You know the feeling. Task open. Brain closed.
@@ -24,8 +24,8 @@ export default function HomeContent() {
 
       {/* SECTION 3: HOW IT WORKS */}
       <section className="content-section">
-        <h2 className="section-heading">How It Works</h2>
-        <p className="section-subtitle">Five steps. Under a minute.</p>
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>How It Works</h2>
+        <p className="section-subtitle" style={{ textAlign: 'center' }}>Five steps. Under a minute.</p>
         <div className="steps-grid">
           <div className="step-card">
             <div className="step-number">1</div>
@@ -57,7 +57,7 @@ export default function HomeContent() {
 
       {/* CTA SECTION 1: After How It Works */}
       <section className="content-section cta-section">
-        <h2 className="section-heading">Ready to Break Down Your First Task?</h2>
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>Ready to Break Down Your First Task?</h2>
         <p className="section-content" style={{ fontSize: '20px', textAlign: 'center', marginBottom: '24px' }}>Stop overthinking. Start with one small step.</p>
         <div style={{ textAlign: 'center' }}>
           <a href="#widget" className="cta-button" style={{ display: 'inline-block', padding: '12px 32px', backgroundColor: 'var(--pixel-accent)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>↑ SCROLL UP TO START</a>
@@ -66,7 +66,7 @@ export default function HomeContent() {
 
       {/* SECTION 4: WHY IT'S DIFFERENT */}
       <section className="content-section">
-        <h2 className="section-heading">Built for the Initiation Problem</h2>
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>Built for the Initiation Problem</h2>
         <div className="section-content">
           <p>
             Most productivity apps organise your tasks. DoTheThing initiates them.
@@ -102,9 +102,9 @@ export default function HomeContent() {
 
       {/* SECTION 5: WHO IT'S FOR */}
       <section className="content-section">
-        <h2 className="section-heading">A Productivity Tool for Anyone Whose Brain Works Differently</h2>
-        <p className="section-subtitle">We built this specifically for the ADHD community and anyone struggling with task paralysis.</p>
-        <p className="section-subtitle">Our AI task breakdown tool is designed for:</p>
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>A Productivity Tool for Anyone Whose Brain Works Differently</h2>
+        <p className="section-subtitle" style={{ textAlign: 'center' }}>We built this specifically for the ADHD community and anyone struggling with task paralysis.</p>
+        <p className="section-subtitle" style={{ textAlign: 'center' }}>Our AI task breakdown tool is designed for:</p>
         <div className="section-content">
           <p style={{ paddingTop: '15px' }}><strong>Students:</strong> Bypassing academic overwhelm and the "blank page" syndrome.</p>
           <p><strong>Remote Workers & Freelancers:</strong> For when you're your own boss and your initiation system is jamming.</p>
@@ -117,7 +117,7 @@ export default function HomeContent() {
 
       {/* SECTION 6: FAQ */}
       <section className="content-section">
-        <h2 className="section-heading">Frequently Asked Questions</h2>
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>Frequently Asked Questions</h2>
         <div className="faq-list">
           <div className="faq-item">
             <h3>Is DoTheThing free?</h3>
@@ -179,7 +179,7 @@ export default function HomeContent() {
 
       {/* CTA SECTION 2: After Blog Links */}
       <section className="content-section cta-section">
-        <h2 className="section-heading">Try DoTheThing Now</h2>
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>Try DoTheThing Now</h2>
         <p className="section-content" style={{ fontSize: '20px', textAlign: 'center', marginBottom: '24px' }}>Free. No login. No email. Just type your task and get your breakdown in under a minute.</p>
         <div style={{ textAlign: 'center' }}>
           <a href="#widget" className="cta-button" style={{ display: 'inline-block', padding: '12px 32px', backgroundColor: 'var(--pixel-accent)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>↑ SCROLL UP TO START</a>
