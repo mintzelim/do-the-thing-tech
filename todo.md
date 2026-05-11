@@ -179,3 +179,4 @@
 - [x] Update H1 to "Task Management Built for ADHD Brains"
 - [x] Update subheadline with multi-line copy and "Free. No login. Under a minute."
 - [x] Replace CTA button text to "START NOW" with anchor link to #widget
+- [x] Add down arrow (↓) to START NOW button to indicate scrolling

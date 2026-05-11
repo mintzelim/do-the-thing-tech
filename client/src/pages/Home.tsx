@@ -350,7 +350,7 @@ export default function Home() {
               Free. No login. Under a minute.
             </p>
             <div style={{ textAlign: "center", marginBottom: "32px" }}>
-              <a href="#widget" className="cta-button" style={{ display: "inline-block", padding: "12px 40px", backgroundColor: "var(--pixel-accent)", color: "white", textDecoration: "none", fontWeight: "bold", fontSize: "18px", border: "2px solid var(--pixel-border)", cursor: "pointer", fontFamily: "'VT323', monospace" }}>START NOW</a>
+              <a href="#widget" className="cta-button" style={{ display: "inline-block", padding: "12px 40px", backgroundColor: "var(--pixel-accent)", color: "white", textDecoration: "none", fontWeight: "bold", fontSize: "18px", border: "2px solid var(--pixel-border)", cursor: "pointer", fontFamily: "'VT323', monospace" }}>START NOW ↓</a>
             </div>
 
             <div className="mobile-card" id="widget">
