@@ -163,3 +163,9 @@
 - [x] AdSense script already dynamically loaded (line 75)
 - [x] Google Funding Choices configured for GDPR compliance (line 78)
 - [x] Committed ads.txt to GitHub
+
+
+## Visual Design Refinements
+
+- [x] Add differentiated background colors to homepage sections (pixel-art compatible palette)
+- [x] Increase mobile section heading font sizes for better visual hierarchy vs body copy

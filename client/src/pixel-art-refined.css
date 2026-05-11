@@ -20,6 +20,13 @@
   /* Pixel sizes for consistent grid */
   --pixel-unit: 4px;
   --pixel-border-width: 3px;
+  
+  /* Section background colors - pixel art palette */
+  --section-bg-1: #f5f0e8;
+  --section-bg-2: #e8f0f5;
+  --section-bg-3: #f0e8f5;
+  --section-bg-4: #e8f5e8;
+  --section-bg-5: #f5e8e8;
 }
 
 * {
@@ -617,12 +624,12 @@ body {
   }
   
   .mobile-heading-1 {
-    font-size: 28px;
+    font-size: 32px;
     margin-bottom: 12px;
   }
   
   .mobile-heading-2 {
-    font-size: 26px;
+    font-size: 30px;
     margin-bottom: 10px;
   }
   
@@ -702,10 +709,56 @@ body {
 }
 
 .content-section {
-  padding: 0;
+  padding: 24px;
   background: transparent;
   box-shadow: none;
   border: none;
+}
+
+/* Section-specific background colors */
+.content-section:nth-child(1) {
+  background-color: var(--section-bg-1);
+  padding: 24px;
+}
+
+.content-section:nth-child(2) {
+  background-color: var(--section-bg-2);
+  padding: 24px;
+}
+
+.content-section:nth-child(3) {
+  background-color: transparent;
+  padding: 0;
+}
+
+.content-section:nth-child(4) {
+  background-color: var(--section-bg-3);
+  padding: 24px;
+}
+
+.content-section:nth-child(5) {
+  background-color: var(--section-bg-4);
+  padding: 24px;
+}
+
+.content-section:nth-child(6) {
+  background-color: var(--section-bg-5);
+  padding: 24px;
+}
+
+.content-section:nth-child(7) {
+  background-color: var(--section-bg-1);
+  padding: 24px;
+}
+
+.content-section:nth-child(8) {
+  background-color: transparent;
+  padding: 0;
+}
+
+.cta-section {
+  background-color: transparent !important;
+  padding: 0 !important;
 }
 
 .section-title {
@@ -956,7 +1009,7 @@ body {
   }
 
   .section-heading {
-    font-size: 26px;
+    font-size: 32px;
   }
 
   .steps-grid {
