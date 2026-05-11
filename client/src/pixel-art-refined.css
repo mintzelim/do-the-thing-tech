@@ -89,6 +89,7 @@ body {
   flex: 1;
   padding: 24px 16px 16px;
   overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   background: linear-gradient(
@@ -709,16 +710,13 @@ body {
 }
 
 .content-section {
-  padding: 0;
+  padding: 24px 40px;
   background: transparent;
   box-shadow: none;
   border: none;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  width: calc(100vw - 0px);
 }
 
 /* Section-specific background colors - full width */

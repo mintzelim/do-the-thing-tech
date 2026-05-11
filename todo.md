@@ -180,3 +180,10 @@
 - [x] Update subheadline with multi-line copy and "Free. No login. Under a minute."
 - [x] Replace CTA button text to "START NOW" with anchor link to #widget
 - [x] Add down arrow (↓) to START NOW button to indicate scrolling
+
+## Hero Layout & Overflow Fixes
+
+- [x] Remove box styling from hero content (H1, subheadline, CTA) - should be open layout
+- [x] Center H1 and subheadline text alignment
+- [x] Fix horizontal scrollbar issue - refactored full-width section CSS with calc(100vw - 0px) and overflow-x hidden
+- [x] Test responsive design on mobile, tablet, and desktop without overflow

@@ -340,8 +340,8 @@ export default function Home() {
         {/* Flow: Input */}
         {flowState === "input" && (
           <>
-            <h1 className="mobile-heading-1" style={{ fontSize: "38px" }}>Task Management Built for ADHD Brains</h1>
-            <p className="mobile-body" style={{ fontSize: "18px", marginBottom: "24px", lineHeight: "1.6" }}>
+            <h1 className="mobile-heading-1" style={{ fontSize: "38px", textAlign: "center" }}>Task Management Built for ADHD Brains</h1>
+            <p className="mobile-body" style={{ fontSize: "18px", marginBottom: "24px", lineHeight: "1.6", textAlign: "center" }}>
               Type any task or brain dump the whole pile.
               <br />
               DoTheThing breaks it into steps you can actually start.
