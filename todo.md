@@ -169,3 +169,5 @@
 
 - [x] Add differentiated background colors to homepage sections (pixel-art compatible palette)
 - [x] Increase mobile section heading font sizes for better visual hierarchy vs body copy
+- [x] Fix CTA "Scroll Up to Start" buttons to scroll to widget using anchor links
+- [x] Make section background colors span full viewport width (not constrained to content box)

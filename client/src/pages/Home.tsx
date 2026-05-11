@@ -343,7 +343,7 @@ export default function Home() {
             <h1 className="mobile-heading-1" style={{ fontSize: "38px" }}>ADHD Task Management That Works With Your Brain</h1>
             <p className="mobile-body" style={{ fontSize: "20px", marginBottom: "24px" }}>Type any task or brain dump the whole pile. DoTheThing breaks it into steps you can actually start. Free. No login. The #1 way to get things done.</p>
 
-            <div className="mobile-card">
+            <div className="mobile-card" id="widget">
               <h2 className="mobile-heading-2">TODAY, I NEED TO...</h2>
               <p className="mobile-body" style={{ marginBottom: "16px" }}>
                 Enter a single task or brain dump everything you need to do.
