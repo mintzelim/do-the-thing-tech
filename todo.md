@@ -187,3 +187,8 @@
 - [x] Center H1 and subheadline text alignment
 - [x] Fix horizontal scrollbar issue - refactored full-width section CSS with calc(100vw - 0px) and overflow-x hidden
 - [x] Test responsive design on mobile, tablet, and desktop without overflow
+
+
+## Critical Layout Bug Fix
+
+- [x] Fix text being cut off on left side of sections - refactored to use pseudo-element for full-width backgrounds

@@ -714,62 +714,63 @@ body {
   background: transparent;
   box-shadow: none;
   border: none;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  width: calc(100vw - 0px);
+  position: relative;
 }
 
-/* Section-specific background colors - full width */
-.content-section:nth-child(1) {
+.content-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(-50vw + 50%);
+  right: calc(-50vw + 50%);
+  bottom: 0;
+  z-index: -1;
+  width: 100vw;
+}
+
+/* Section-specific background colors - apply to pseudo-element */
+.content-section:nth-child(1)::before {
   background-color: var(--section-bg-1);
 }
 
-.content-section:nth-child(2) {
+.content-section:nth-child(2)::before {
   background-color: var(--section-bg-2);
 }
 
 .content-section:nth-child(3) {
-  background-color: transparent;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
-.content-section:nth-child(4) {
+.content-section:nth-child(3)::before {
+  display: none;
+}
+
+.content-section:nth-child(4)::before {
   background-color: var(--section-bg-3);
 }
 
-.content-section:nth-child(5) {
+.content-section:nth-child(5)::before {
   background-color: var(--section-bg-4);
 }
 
-.content-section:nth-child(6) {
+.content-section:nth-child(6)::before {
   background-color: var(--section-bg-5);
 }
 
-.content-section:nth-child(7) {
+.content-section:nth-child(7)::before {
   background-color: var(--section-bg-1);
 }
 
 .content-section:nth-child(8) {
-  background-color: transparent;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
-.cta-section {
-  background-color: transparent !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+.content-section:nth-child(8)::before {
+  display: none;
+}
+
+.cta-section::before {
+  display: none !important;
 }
 
 .section-title {
