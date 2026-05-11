@@ -171,3 +171,5 @@
 - [x] Increase mobile section heading font sizes for better visual hierarchy vs body copy
 - [x] Fix CTA "Scroll Up to Start" buttons to scroll to widget using anchor links
 - [x] Make section background colors span full viewport width (not constrained to content box)
+- [x] Reduce color saturation to be less colorful and more subtle
+- [x] Fix responsive mobile layout for section backgrounds (full-width backgrounds with proper padding)
