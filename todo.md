@@ -198,3 +198,14 @@
 - [x] Center all H2 section headings throughout the page
 - [x] Center section subtitle paragraphs for visual hierarchy
 - [x] Simplify "Who It's For" section copy - remove "specifically" and "designed"
+
+
+## Blog Post Integration
+
+- [x] Create blog post component structure (BlogPost.tsx) - Already exists
+- [x] Add blog post data file with metadata (best-adhd-tools-2026) - Added to blog-posts.json
+- [x] Create blog listing page (BlogPage.tsx) - Already exists
+- [x] Add blog navigation to homepage - Already exists
+- [x] Implement breadcrumb navigation for blog posts - Working correctly
+- [x] Add "Related Posts" section to blog posts - Already implemented
+- [x] Test blog post rendering and links - Post renders correctly with all content
