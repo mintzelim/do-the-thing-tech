@@ -1,0 +1,118 @@
+[
+  {
+    "id": "23",
+    "title": "Best ADHD Tools in 2026: What Actually Works (And the Stack That Gets Things Done)",
+    "excerpt": "Most ADHD tool lists give you 15 apps and no guidance on which ones to use together. This one gives you the 3-tool stack that works, matched to your specific ADHD failure point.",
+    "date": "May 12, 2026",
+    "readTime": "10 min read",
+    "category": "Tools & Resources",
+    "primaryEntity": "ADHD Productivity Tools",
+    "secondaryEntities": [
+      "Task Management Apps",
+      "ADHD Apps",
+      "Focus Tools",
+      "Time Blindness",
+      "Body Doubling"
+    ],
+    "seoKeywords": [
+      "best ADHD tools 2026",
+      "best ADHD apps 2026",
+      "ADHD task management tools",
+      "free ADHD productivity apps",
+      "ADHD apps for adults",
+      "best ADHD apps for focus",
+      "ADHD tools that actually work"
+    ],
+    "sources": [
+      {
+        "title": "CHADD, Time Management and ADHD: To-Do Lists",
+        "url": "https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/",
+        "author": "CHADD Editorial Team",
+        "year": "2024",
+        "type": "Non-profit / Clinical organisation",
+        "tier": "1"
+      },
+      {
+        "title": "ADDA, ADHD Tools for Adults (2024)",
+        "url": "https://add.org/adhd-tools-for-adults/",
+        "author": "ADDA Editorial Team",
+        "year": "2024",
+        "type": "Non-profit / Clinical organisation",
+        "tier": "1"
+      },
+      {
+        "title": "Healthline, Body Doubling for ADHD (2024)",
+        "url": "https://www.healthline.com/health/adhd/body-double-adhd",
+        "author": "Rachael Zimlich, BSN, RN",
+        "year": "2024",
+        "type": "Health media",
+        "tier": "2"
+      },
+      {
+        "title": "Inflow, Best Apps for ADHD (2026)",
+        "url": "https://www.getinflow.io/post/best-apps-for-adhd",
+        "author": "Inflow Editorial Team",
+        "year": "2026",
+        "type": "ADHD-specialist brand",
+        "tier": "2"
+      },
+      {
+        "title": "AJMC, Mental Health App Abandonment Study (2024)",
+        "url": "https://www.ajmc.com/view/addressing-uptake-adherence-and-attrition-in-mental-health-apps",
+        "author": "American Journal of Managed Care",
+        "year": "2024",
+        "type": "Peer-reviewed journal",
+        "tier": "1"
+      },
+      {
+        "title": "Market Reports World, ADHD Apps Market Forecast (2024)",
+        "url": "https://www.marketreportsworld.com/market-reports/adhd-apps-market-14713447",
+        "author": "Market Reports World",
+        "year": "2024",
+        "type": "Industry report",
+        "tier": "2"
+      },
+      {
+        "title": "DoTheThing",
+        "url": "https://www.dothething.tech",
+        "author": "DoTheThing",
+        "year": "2026",
+        "type": "Product",
+        "tier": "1"
+      }
+    ],
+    "faq": [
+      {
+        "q": "What is the best ADHD tool for task management in 2026?",
+        "a": "DoTheThing is the strongest free option for the hardest ADHD problem: getting started. It uses AI to break any task into micro-steps with time estimates buffered for time blindness. No login required. For ongoing task management after the breakdown, Todoist's free tier handles recurring tasks and project organisation well. The two tools work best in combination, DoTheThing for breakdown, Todoist for storage."
+      },
+      {
+        "q": "What are the best free ADHD apps in 2026?",
+        "a": "The strongest free ADHD app stack in 2026 is: DoTheThing (AI task breakdown, no login required), Todoist free tier (recurring task management), Forest free on Android (gamified focus timer), Focusmate free tier (3 body doubling sessions per week), and Google Calendar (time blocking). Each solves a different ADHD failure point. Start with DoTheThing and add tools only when you consistently use the one before it."
+      },
+      {
+        "q": "Why do ADHD apps stop working after a few weeks?",
+        "a": "ADHD apps stop working because of novelty depletion, the same dopamine spike that made the app exciting when you downloaded it fades within 1-3 weeks. A 2024 review found mental health apps see up to 92% abandonment within the first 100 days. The fix is to choose the simplest tool that solves your specific problem, not the most feature-rich one. Complex apps require more setup, which means more novelty-driven procrastination and faster abandonment."
+      },
+      {
+        "q": "How many ADHD tools should I use?",
+        "a": "Start with 2-3 tools with clearly non-overlapping jobs. One for task breakdown (DoTheThing), one for ongoing management (Todoist or Microsoft To Do), and one for focus or accountability (Forest or Focusmate). More than 3 tools typically leads to system abandonment, managing the tools becomes a task in itself, which is one of the highest-appeal forms of productive procrastination for ADHD brains."
+      },
+      {
+        "q": "Is DoTheThing better than Goblin Tools for ADHD?",
+        "a": "They solve a similar problem from different angles. Goblin Tools' Magic ToDo breaks any task into steps using AI, strong and free. DoTheThing goes further: it adjusts time estimates based on your focus level today (hyperfocused, normal, or distracted), adds a 20-30% ADHD time buffer to every estimate, and includes a built-in countdown timer. For adults with ADHD who consistently underestimate how long tasks take, the focus level calibration is the key differentiator."
+      },
+      {
+        "q": "What ADHD tool is best for time blindness?",
+        "a": "2 tools specifically target ADHD time blindness: Google Calendar for time blocking (making tasks as concrete as meetings with a fixed start and end time), and visual timers like Time Timer or Forest that show time passing as a shrinking visual rather than an abstract number. DoTheThing also addresses time blindness by adding a 20-30% time buffer to every AI-generated estimate, so planned durations land closer to actual durations."
+      }
+    ],
+    "relatedPosts": [
+      "3",
+      "4",
+      "5"
+    ],
+    "slug": "best-adhd-tools-2026",
+    "content": "# Best ADHD Tools in 2026: What Actually Works (And the Stack That Gets Things Done)\n\nYou've been here before. You download a new productivity app on a Sunday night, spend 45 minutes setting up projects, feel genuinely productive for about 6 days, and then never open it again.\n\nThis is not a discipline problem. It's a design problem, and most ADHD tool guides make it worse by listing 15 apps with no guidance on which ones to use together, when, or why.\n\nThis guide is different. It starts with the specific ADHD failure point you need to solve, matches the best tool to that failure point, and gives you a 3-tool stack that gets used rather than abandoned."
+  }
+]
