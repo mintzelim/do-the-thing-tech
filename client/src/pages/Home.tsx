@@ -27,9 +27,86 @@ export default function Home() {
   const [, navigate] = useLocation();
   const [flowState, setFlowState] = useState<FlowState>("input");
 
-  // Update meta tags when component mounts
+  // Update meta tags and inject FAQ schema when component mounts
   useEffect(() => {
     updateMetaTags(pageMetaTags.home);
+    
+    // Inject FAQ schema for homepage
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is DoTheThing free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. No login, no account, nothing to install. Open the app, type your task, get your breakdown."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is task paralysis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Task paralysis is when an ADHD brain freezes in front of a task it understands. It's a neurological response to ambiguity — the brain can't generate a first step, so it generates nothing. DoTheThing removes the ambiguity by handing you a step small enough that starting stops feeling like a risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is time blindness?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Time blindness is the ADHD brain's genuine difficulty sensing how long things take and how fast time passes. Estimates end up too optimistic, schedules collapse. DoTheThing adds a 20-30% buffer to every estimate and gives you a visual countdown timer so time stays concrete."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the focus level setting do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pick Hyperfocused, Normal, or Distracted and the AI recalibrates every time estimate in your breakdown. A distracted day gets a distracted-day plan. Your schedule has a real shot at surviving contact with reality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between Tiny Steps, Balanced, and Big Milestones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tiny Steps gives you the smallest possible first action — for days when beginning feels impossible. Balanced is the everyday default. Big Milestones shows the major stages of a project without granular detail. Pick based on how your brain is running today."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it for a brain dump?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Type everything on your plate — no sorting, no organising required. The AI handles the mess and identifies what needs breaking down."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work for tasks outside of work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Household tasks, personal admin, creative projects, study, financial admin — anywhere the gap between intention and action opens up."
+          }
+        }
+      ]
+    };
+    
+    // Remove any existing FAQ schema
+    const existingFAQ = document.querySelector('script[data-schema="homepage-faq"]');
+    if (existingFAQ) {
+      existingFAQ.remove();
+    }
+    
+    // Inject new FAQ schema
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.setAttribute('data-schema', 'homepage-faq');
+    script.textContent = JSON.stringify(faqSchema);
+    document.head.appendChild(script);
   }, []);
   const [brainDump, setBrainDump] = useState("");
   const [focusLevel, setFocusLevel] = useState<"hyperfocus" | "normal" | "distracted">("normal");

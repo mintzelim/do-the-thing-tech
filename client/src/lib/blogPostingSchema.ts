@@ -186,6 +186,12 @@ export function generateBlogPostingSchemaWithBreadcrumb(post: BlogPostData) {
  * Injects individual schemas separately to avoid conflicts with main site schema
  */
 export function injectBlogPostingSchema(schema: any) {
+  // Remove homepage FAQ schema to avoid conflicts
+  const existingHomepageFAQ = document.querySelector('script[data-schema="homepage-faq"]');
+  if (existingHomepageFAQ) {
+    existingHomepageFAQ.remove();
+  }
+  
   // Remove any existing blog post-specific schemas
   const existingSchemas = document.querySelectorAll(
     'script[type="application/ld+json"]'
@@ -197,13 +203,14 @@ export function injectBlogPostingSchema(schema: any) {
       el.remove();
     }
   });
-
+  
   // Inject schemas individually to avoid conflicts with main site schema
   if (schema['@graph']) {
     // Inject each schema in the graph separately
     schema['@graph'].forEach((item: any) => {
       const scriptTag = document.createElement("script");
       scriptTag.type = "application/ld+json";
+      scriptTag.setAttribute('data-schema', 'blog-post');
       const itemSchema = {
         "@context": "https://schema.org",
         ...item
@@ -215,6 +222,7 @@ export function injectBlogPostingSchema(schema: any) {
     // Inject single schema
     const scriptTag = document.createElement("script");
     scriptTag.type = "application/ld+json";
+    scriptTag.setAttribute('data-schema', 'blog-post');
     scriptTag.textContent = JSON.stringify(schema);
     document.head.appendChild(scriptTag);
   }

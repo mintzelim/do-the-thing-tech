@@ -235,3 +235,11 @@
 ## Contact Page Updates
 
 - [x] Update contact page email to support@dothething.tech
+
+
+## Homepage FAQ Schema Implementation
+
+- [x] Add 7-item FAQ schema to homepage (separate from blog post FAQs) - Added to Home.tsx useEffect
+- [x] Ensure blog posts only include their own FAQ schema (not homepage FAQ) - Updated injectBlogPostingSchema to remove homepage FAQ
+- [x] Test homepage renders with correct FAQ schema - Homepage renders with 7-item FAQ
+- [x] Verify no FAQ schema conflicts between homepage and blog posts - Blog posts remove homepage FAQ before injecting their own
