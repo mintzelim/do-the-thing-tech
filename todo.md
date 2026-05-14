@@ -221,3 +221,17 @@
 - [x] Verify BlogPosting schema with FAQPage and BreadcrumbList
 - [x] Verify no duplicate FAQ content across posts
 - [x] Test blog post rendering with complete SEO data
+
+
+## Google Indexing Requirements for New Blog Post
+
+- [x] Verify HTTPS certificate is active on dothething.tech (required for Google indexing) - ✅ Active
+- [x] Verify FAQ schema markup is present in new blog post (Best ADHD Tools 2026) - ✅ Fixed: Re-enabled FAQPage schema injection in blogPostingSchema.ts
+- [x] Verify breadcrumb schema is properly implemented on new post - ✅ Present
+- [x] Check for review/rating schema implementation - Not needed (no user reviews yet)
+- [ ] Test new blog post with Google Rich Results Test tool
+
+
+## Contact Page Updates
+
+- [x] Update contact page email to support@dothething.tech

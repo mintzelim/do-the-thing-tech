@@ -175,7 +175,7 @@ export default function Contact() {
 
         <div className="mobile-card" style={{ marginTop: "24px", background: "#f0f0f0" }}>
           <p className="mobile-body-sm" style={{ marginBottom: "8px", color: "var(--pixel-text-light)" }}>
-            📧 Email: support@dothething.my
+            📧 Email: support@dothething.tech
           </p>
           <p className="mobile-body-sm" style={{ color: "var(--pixel-text-light)" }}>
             We typically respond within 24 hours.

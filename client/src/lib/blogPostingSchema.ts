@@ -163,15 +163,17 @@ export function generateBlogBreadcrumbSchema(post: BlogPostData) {
 
 /**
  * Generate complete schema with @graph for blog post
- * Note: FAQPage is removed to avoid conflicts with homepage FAQPage schema
+ * Includes FAQPage schema if FAQ items are available
  */
 export function generateBlogPostingSchemaWithBreadcrumb(post: BlogPostData) {
   const blogPostingSchema = generateBlogPostingSchema(post);
   const breadcrumbSchema = generateBlogBreadcrumbSchema(post);
-  // FAQPage is intentionally NOT included in blog post schemas
-  // to avoid duplicate FAQPage entries on the page
+  const faqSchema = generateBlogFAQPageSchema(post);
 
   const graphArray = [blogPostingSchema, breadcrumbSchema];
+  if (faqSchema) {
+    graphArray.push(faqSchema);
+  }
 
   return {
     "@context": "https://schema.org",
