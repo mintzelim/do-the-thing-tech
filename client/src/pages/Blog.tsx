@@ -16,6 +16,8 @@ type BlogPost = {
   relatedPosts: string[];
   content: string;
   slug: string;
+  featuredImage?: string;
+  featuredImageAlt?: string;
 };
 
 export default function Blog() {
@@ -180,7 +182,7 @@ export default function Blog() {
                 style={{
                   backgroundColor: "var(--pixel-card-bg)",
                   border: "3px solid var(--pixel-border)",
-                  padding: "20px",
+                  padding: "0",
                   textAlign: "left",
                   cursor: "pointer",
                   fontFamily: "'VT323', monospace",
@@ -191,6 +193,7 @@ export default function Blog() {
                   width: "100%",
                   textDecoration: "none",
                   color: "var(--pixel-text)",
+                  overflow: "hidden",
                 }}
                 onMouseEnter={(e) => {
                   const el = e.currentTarget as HTMLElement;
@@ -214,25 +217,40 @@ export default function Blog() {
                   el.style.boxShadow = "4px 4px 0 rgba(0, 0, 0, 0.1)";
                 }}
               >
-                <h3 className="mobile-heading-3" style={{ marginBottom: "8px", marginTop: "0" }}>
-                  {post.title}
-                </h3>
-                <p className="mobile-body-sm" style={{ marginBottom: "12px", color: "var(--pixel-text-light)" }}>
-                  {post.excerpt}
-                </p>
-                <div style={{ display: "flex", gap: "12px", fontSize: "12px", color: "var(--pixel-text-light)" }}>
-                  <span>{post.date}</span>
-                  <span>•</span>
-                  <span>{post.readTime}</span>
-                  <span>•</span>
-                  <span style={{ 
-                    backgroundColor: "var(--pixel-accent)", 
-                    color: "white", 
-                    padding: "2px 8px",
-                    fontFamily: "'VT323', monospace"
-                  }}>
-                    {post.category}
-                  </span>
+                {post.featuredImage && (
+                  <img
+                    src={post.featuredImage}
+                    alt={post.featuredImageAlt || post.title}
+                    style={{
+                      width: "100%",
+                      height: "200px",
+                      objectFit: "cover",
+                      display: "block",
+                      marginBottom: "0"
+                    }}
+                  />
+                )}
+                <div style={{ padding: "20px" }}>
+                  <h3 className="mobile-heading-3" style={{ marginBottom: "8px", marginTop: "0" }}>
+                    {post.title}
+                  </h3>
+                  <p className="mobile-body-sm" style={{ marginBottom: "12px", color: "var(--pixel-text-light)" }}>
+                    {post.excerpt}
+                  </p>
+                  <div style={{ display: "flex", gap: "12px", fontSize: "12px", color: "var(--pixel-text-light)", flexWrap: "wrap" }}>
+                    <span>{post.date}</span>
+                    <span>•</span>
+                    <span>{post.readTime}</span>
+                    <span>•</span>
+                    <span style={{ 
+                      backgroundColor: "var(--pixel-accent)", 
+                      color: "white", 
+                      padding: "2px 8px",
+                      fontFamily: "'VT323', monospace"
+                    }}>
+                      {post.category}
+                    </span>
+                  </div>
                 </div>
               </a>
             ))}

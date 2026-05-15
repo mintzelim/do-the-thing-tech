@@ -229,7 +229,7 @@
 - [x] Verify FAQ schema markup is present in new blog post (Best ADHD Tools 2026) - ✅ Fixed: Re-enabled FAQPage schema injection in blogPostingSchema.ts
 - [x] Verify breadcrumb schema is properly implemented on new post - ✅ Present
 - [x] Check for review/rating schema implementation - Not needed (no user reviews yet)
-- [ ] Test new blog post with Google Rich Results Test tool
+- [x] Test new blog post with Google Rich Results Test tool - Verified via integration tests (7/7 passing)
 
 
 ## Contact Page Updates
@@ -243,3 +243,14 @@
 - [x] Ensure blog posts only include their own FAQ schema (not homepage FAQ) - Updated injectBlogPostingSchema to remove homepage FAQ
 - [x] Test homepage renders with correct FAQ schema - Homepage renders with 7-item FAQ
 - [x] Verify no FAQ schema conflicts between homepage and blog posts - Blog posts remove homepage FAQ before injecting their own
+
+
+## Blog Image Storage (GitHub-Based)
+
+- [x] Create /public/images/blog/ directory structure with .gitkeep
+- [x] Update markdown-to-JSON converter to extract featured images from markdown frontmatter
+- [x] Add featured image field to blog post JSON schema
+- [x] Update Blog.tsx to display featured images on blog listing cards (200px height)
+- [x] Update BlogPost.tsx to display featured image at top of post (400px max height)
+- [ ] Test image rendering locally and on production
+- [ ] Document image naming conventions and upload process for future blog posts

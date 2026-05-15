@@ -105,6 +105,8 @@ type BlogPost = {
   content: string;
   slug: string;
   faq?: Array<{ q: string; a: string }>;
+  featuredImage?: string;
+  featuredImageAlt?: string;
 };
 
 export default function BlogPost() {
@@ -238,6 +240,21 @@ export default function BlogPost() {
           />
 
           <article style={{ marginBottom: "32px" }}>
+            {post.featuredImage && (
+              <img
+                src={post.featuredImage}
+                alt={post.featuredImageAlt || post.title}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "400px",
+                  objectFit: "cover",
+                  display: "block",
+                  marginBottom: "24px",
+                  border: "3px solid var(--pixel-border)"
+                }}
+              />
+            )}
             <div style={{ marginBottom: "24px" }}>
               <h1 className="mobile-heading-1" style={{ marginBottom: "12px" }}>
                 {post.title}

@@ -108,6 +108,8 @@ function generateBlogPosts() {
         seoKeywords,
         sources,
         relatedPosts,
+        featuredImage: frontmatter.featuredImage || '',
+        featuredImageAlt: frontmatter.featuredImageAlt || '',
         content: plainContent,
         slug: file.replace(/^\d+-/, '').replace('.md', ''),
       };

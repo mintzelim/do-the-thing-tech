@@ -7,6 +7,8 @@ excerpt: "Most ADHD tool lists give you 15 apps and no guidance on which ones to
 date: "May 12, 2026"
 readTime: "10 min read"
 category: "Tools & Resources"
+featuredImage: "/manus-storage/best-adhd-tools-featured_16393d40.png"
+featuredImageAlt: "Pixel art landscape with mountains and river showing Best ADHD Tools in 2026: What Actually Works"
 primaryEntity: ADHD Productivity Tools
 secondaryEntities:
   - Task Management Apps
