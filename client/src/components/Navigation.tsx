@@ -34,6 +34,9 @@ export default function Navigation() {
       // Blog is active for both /blog and /blog/:slug routes
       return location === "/blog" || location.startsWith("/blog/");
     }
+    if (path === "/quiz") {
+      return location === "/quiz" || location.startsWith("/quiz/");
+    }
     return location === path;
   };
 
@@ -41,6 +44,7 @@ export default function Navigation() {
     { path: "/", label: "HOME" },
     { path: "/about", label: "ABOUT" },
     { path: "/blog", label: "BLOG" },
+    { path: "/quiz", label: "QUIZ" },
     { path: "/contact", label: "CONTACT" },
     { path: "/privacy", label: "PRIVACY" },
     { path: "/terms", label: "TERMS" },

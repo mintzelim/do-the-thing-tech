@@ -258,3 +258,16 @@
 - [x] Update blog post frontmatter to reference S3 URL instead of local path
 - [x] Verify featured image displays on dev server (confirmed working)
 - [x] Note: Production domain will display featured image after next publish (S3 URLs are deployment-safe)
+
+## ADHD Type Quiz Feature
+
+- [x] Create Quiz.tsx page component with hero section and CTA button
+- [x] Implement the 7 ADHD types character cards display section (7 cards with titles, characters, descriptions)
+- [x] Create quiz question flow (10 questions for 7 ADHD types with weighted scoring)
+- [x] Add quiz results page with character card generation (displays type, character, description, score)
+- [x] Integrate quiz page into App.tsx routing (/quiz route added)
+- [x] Add navigation link to quiz from main navigation (QUIZ button visible in navbar)
+- [x] Test quiz flow end-to-end (verified: hero → questions → results → back to hero)
+- [x] Verify scoring includes all 7 ADHD types including combination type
+- [x] Fix scoring logic to include final answer in calculation
+- [x] Test with multiple answer combinations to verify correct result calculation

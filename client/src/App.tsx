@@ -8,6 +8,7 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
 import CurrentTasks from "./pages/CurrentTasks";
+import Quiz from "./pages/Quiz";
 import NotFound from "./pages/NotFound";
 import { Switch, Route } from "wouter";
 
@@ -20,6 +21,7 @@ function Router() {
       <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/blog"} component={Blog} />
       <Route path={"/contact"} component={Contact} />
+      <Route path={"/quiz"} component={Quiz} />
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/terms"} component={Terms} />
       <Route path={"/404"} component={NotFound} />
