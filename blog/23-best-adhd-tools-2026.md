@@ -1,5 +1,5 @@
 ---
-id: '16'
+id: '23'
 title: "Best ADHD Tools in 2026: What Actually Works (And the Stack That Gets Things Done)"
 description: "The best ADHD tools in 2026, reviewed for how they solve the specific problems ADHD creates: task initiation, time blindness, focus, and accountability. Plus the 3-tool stack that actually gets used."
 slug: "/best-adhd-tools-2026"
