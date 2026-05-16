@@ -6,10 +6,17 @@ interface QuizHeroProps {
 
 export default function QuizHero({ onStartQuiz }: QuizHeroProps) {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-b from-[#4a5a8a] to-[#2d3a5c]">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect fill=%22%23000%22 width=%22100%22 height=%22100%22/><rect fill=%22%23222%22 x=%221%22 y=%221%22 width=%2298%22 height=%2298%22/></svg>')] bg-repeat"></div>
-      </div>
+    <section 
+      className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20"
+      style={{
+        backgroundImage: 'url(https://raw.githubusercontent.com/dothething/assets/main/quiz-sky-background.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}
+    >
+      {/* Overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/5"></div>
 
       <div className="relative z-10 text-center space-y-8 sm:space-y-12 max-w-4xl mx-auto">
         <h1 className="font-['Press_Start_2P'] text-[#edeeee] text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-relaxed uppercase px-4 drop-shadow-lg">

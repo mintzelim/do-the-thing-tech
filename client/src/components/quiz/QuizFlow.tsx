@@ -199,46 +199,81 @@ export default function QuizFlow({ onComplete }: QuizFlowProps) {
   const progress = ((currentQuestion + 1) / QUIZ_QUESTIONS.length) * 100;
 
   return (
-    <div className="min-h-screen bg-[#edeeee] py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-2xl mx-auto">
+    <div
+      className="relative w-full min-h-screen overflow-hidden"
+      style={{
+        backgroundImage: 'url(/figma-quiz-assets/205-9867.webp)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+      {/* Blackout overlay */}
+      <div className="absolute inset-0 opacity-25" style={{ backgroundColor: 'rgba(0,0,0,0.25)' }}></div>
+
+      <div className="relative z-10 w-full h-screen flex flex-col items-center justify-center px-4 py-8">
+        {/* Header */}
+        <div className="text-center mb-8 sm:mb-12">
+          <h1 className="font-['Press_Start_2P'] text-white text-2xl sm:text-3xl md:text-4xl mb-2 drop-shadow-lg">
+            ADHD TYPE QUIZ
+          </h1>
+          <p className="font-['Press_Start_2P'] text-white text-xs sm:text-sm drop-shadow">
+            FIND YOUR BRAIN TYPE IN 10 QUESTIONS
+          </p>
+        </div>
+
         {/* Progress Bar */}
-        <div className="mb-8">
-          <div className="flex justify-between items-center mb-2">
-            <p className="font-['Press_Start_2P'] text-[#585be9] text-sm">
-              Question {currentQuestion + 1} of {QUIZ_QUESTIONS.length}
-            </p>
-            <p className="font-['Press_Start_2P'] text-[#585be9] text-sm">
-              {Math.round(progress)}%
-            </p>
-          </div>
-          <div className="w-full bg-[#21201e] border-2 border-black h-6">
+        <div className="w-full max-w-md mb-8 px-4">
+          <div className="w-full h-4 bg-white border-2 border-black overflow-hidden">
             <div
-              className="bg-[#585be9] h-full transition-all duration-300"
+              className="h-full bg-green-500 transition-all duration-300"
               style={{ width: `${progress}%` }}
-            />
+            ></div>
           </div>
         </div>
 
-        {/* Question */}
-        <div className="bg-white border-4 border-black p-8 sm:p-12 mb-8">
-          <h2 className="font-['Press_Start_2P'] text-[#21201e] text-lg sm:text-2xl mb-8 leading-relaxed">
-            {question.text}
-          </h2>
+        {/* Question Card */}
+        <div className="w-full max-w-2xl bg-[#eeeeee]/75 border-4 border-black p-6 sm:p-8 mb-8">
+          {/* Question Number */}
+          <p className="font-['Press_Start_2P'] text-black text-xs sm:text-sm text-center mb-4">
+            QUESTION {currentQuestion + 1} / 10
+          </p>
 
-          {/* Answers */}
-          <div className="space-y-4">
-            {question.answers.map((answer, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleAnswer(answer.type, answer.weight)}
-                className="w-full bg-[#f4eba7] border-3 border-black p-6 text-left hover:bg-[#585be9] hover:text-white transition-all active:scale-95"
-              >
-                <p className="font-['Press_Start_2P'] text-sm sm:text-base leading-relaxed">
-                  {answer.text}
-                </p>
-              </button>
-            ))}
-          </div>
+          {/* Question Text */}
+          <p className="font-['Press_Start_2P'] text-black text-sm sm:text-base text-center leading-relaxed">
+            {question.text}
+          </p>
+        </div>
+
+        {/* Answer Options Grid */}
+        <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8 px-4">
+          {question.answers.map((answer, idx) => (
+            <button
+              key={idx}
+              onClick={() => handleAnswer(answer.type, answer.weight)}
+              className="bg-[#fbf5f5] border-4 border-[#585be9] p-4 sm:p-6 text-center hover:bg-[#f0e8e8] transition-colors shadow-[4px_4px_4px_0px_rgba(0,0,0,1)]"
+            >
+              <p className="font-['Press_Start_2P'] text-black text-xs sm:text-sm leading-relaxed">
+                {answer.text}
+              </p>
+            </button>
+          ))}
+        </div>
+
+        {/* Navigation Buttons */}
+        <div className="flex gap-4 sm:gap-6 w-full max-w-2xl justify-center px-4">
+          <button
+            onClick={() => setCurrentQuestion(Math.max(0, currentQuestion - 1))}
+            disabled={currentQuestion === 0}
+            className="bg-[#585be9] hover:bg-[#4a4dd4] disabled:opacity-50 disabled:cursor-not-allowed text-white font-['Press_Start_2P'] text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4 border-2 border-black transition-colors"
+          >
+            Previous
+          </button>
+          <button
+            onClick={() => handleAnswer(question.answers[0].type, question.answers[0].weight)}
+            className="bg-[#585be9] hover:bg-[#4a4dd4] text-white font-['Press_Start_2P'] text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4 border-2 border-black transition-colors"
+          >
+            Next
+          </button>
         </div>
       </div>
     </div>

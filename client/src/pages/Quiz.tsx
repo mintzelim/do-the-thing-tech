@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import QuizHero from '@/components/quiz/QuizHero';
 import ADHDTypesDisplay from '@/components/quiz/ADHDTypesDisplay';
+import WhyTakeQuiz from '@/components/quiz/WhyTakeQuiz';
+import FinalCTA from '@/components/quiz/FinalCTA';
 import QuizFlow from '@/components/quiz/QuizFlow';
 import QuizResults from '@/components/quiz/QuizResults';
 
@@ -43,6 +45,8 @@ export default function Quiz() {
         <>
           <QuizHero onStartQuiz={handleStartQuiz} />
           <ADHDTypesDisplay />
+          <WhyTakeQuiz />
+          <FinalCTA onStartQuiz={handleStartQuiz} />
         </>
       )}
       {step === 'quiz' && <QuizFlow onComplete={handleQuizComplete} />}
