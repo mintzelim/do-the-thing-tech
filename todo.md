@@ -301,16 +301,16 @@
 
 ## Quiz Page Responsiveness & UIUX Optimization
 
-- [ ] Audit current quiz page responsive issues
-- [ ] Refactor QuizFlow for mobile-first design
-- [ ] Add persistent navigation and footer to quiz pages
-- [ ] Optimize button sizing for touch interactions (min 44x44px)
-- [ ] Implement responsive typography scaling
+- [x] Audit current quiz page responsive issues (nav/footer now persistent)
+- [x] Refactor QuizFlow for mobile-first design (responsive typography, spacing)
+- [x] Add persistent navigation and footer to quiz pages (visible on all screens)
+- [x] Optimize button sizing for touch interactions (min 44x44px)
+- [x] Implement responsive typography scaling (sm/md/lg breakpoints)
 - [ ] Test on mobile (375px), tablet (768px), and desktop (1920px) viewports
 - [ ] Verify accessibility (WCAG 2.1 AA compliance)
-- [ ] Optimize spacing and padding for mobile screens
+- [x] Optimize spacing and padding for mobile screens
 - [ ] Test touch interactions and swipe gestures
-- [ ] Verify footer and navigation visibility on all screen sizes
+- [x] Verify footer and navigation visibility on all screen sizes
 
 
 ## New Blog Post Formatting (ID 24 - AI That Breaks Down Tasks)
@@ -323,3 +323,13 @@
 - [x] Regenerate blog-posts.json with new post (24 posts total)
 - [x] Verify post displays correctly on blog listing page (appears at top with correct metadata)
 - [x] Verify post displays correctly on individual post page (full content renders with schema)
+
+## Quiz Character Images & Types Update
+
+- [x] Upload 7 character images to GitHub (figma-quiz-assets directory)
+- [x] Update ADHD type names (Classic, Inattentive, Over-Focused, Temporal Lobe, Limbic, Ring of Fire, Anxious)
+- [x] Update character descriptions and names
+- [x] Update image URLs to reference local GitHub assets
+- [x] Verify all character images display correctly on quiz page
+- [x] Test quiz flow with updated character types
+- [x] Verify character images load from GitHub repository

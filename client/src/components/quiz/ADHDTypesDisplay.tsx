@@ -12,49 +12,49 @@ const ADHD_TYPES: ADHDType[] = [
     title: '★ CLASSIC ★',
     character: 'The "Quest-Chaser" Raccoon',
     description: 'Hyperactive, impulsive, and always on a mission',
-    image: 'https://raw.githubusercontent.com/dothething/assets/main/adhd-raccoon-character.png'
+    image: '/figma-quiz-assets/01-classic-adhd-raccoon.jpg'
   },
   {
     id: 2,
     title: '★ INATTENTIVE ★',
     character: 'The "High Ping" Capybara',
     description: 'Daydreamy, forgetful, but deeply thoughtful',
-    image: 'https://raw.githubusercontent.com/dothething/assets/main/adhd-capybara-character.png'
+    image: '/figma-quiz-assets/02-inattentive-adhd-capybara.png.jpg'
   },
   {
     id: 3,
-    title: '★ HYPERACTIVE ★',
-    character: 'The "Bouncy" Squirrel',
-    description: 'Always moving, always thinking, always going',
-    image: 'https://raw.githubusercontent.com/dothething/assets/main/adhd-beaver-character.png'
+    title: '★ OVER-FOCUSED ★',
+    character: 'The Deep-Dive Beaver',
+    description: 'Hyperfocus mode activated, time ceases to exist',
+    image: '/figma-quiz-assets/03-overfocused-adhd-beaver.png.jpg'
   },
   {
     id: 4,
-    title: '★ IMPULSIVE ★',
-    character: 'The "Spontaneous" Fox',
-    description: 'Act first, think later (sometimes)',
-    image: 'https://raw.githubusercontent.com/dothething/assets/main/adhd-porcupine-character.png'
+    title: '★ TEMPORAL LOBE ★',
+    character: 'The "Grump-Lord" Porcupine',
+    description: 'Emotional intensity and reactive responses',
+    image: '/figma-quiz-assets/04-impulsive-adhd-porcupine.jpg'
   },
   {
     id: 5,
-    title: '★ ANXIOUS ★',
-    character: 'The "Worried" Deer',
-    description: 'Perfectionist with a side of anxiety',
-    image: 'https://raw.githubusercontent.com/dothething/assets/main/adhd-cat-character.png'
+    title: '★ LIMBIC ★',
+    character: 'The "Side-Eye" Cat',
+    description: 'Mood-driven, emotionally expressive',
+    image: '/figma-quiz-assets/05-anxious-adhd-cat.jpg'
   },
   {
     id: 6,
-    title: '★ TEMPORAL ★',
-    character: 'The "Time-Blind" Owl',
-    description: 'Time? What time? Where\'s the time?',
-    image: 'https://raw.githubusercontent.com/dothething/assets/main/adhd-hummingbird-character.png'
+    title: '★ RING OF FIRE ★',
+    character: 'The "2.0x" Hummingbird',
+    description: 'Hyperactive, restless, always in motion',
+    image: '/figma-quiz-assets/06-restless-adhd-hummingbird.jpg'
   },
   {
     id: 7,
-    title: '★ COMBINATION ★',
-    character: 'The "Multi-Tasking" Octopus',
-    description: 'A little bit of everything, all at once',
-    image: 'https://raw.githubusercontent.com/dothething/assets/main/adhd-meerkat-character.png'
+    title: '★ ANXIOUS ★',
+    character: 'The "What If?" Meerkat',
+    description: 'Anxious, vigilant, always scanning for danger',
+    image: '/figma-quiz-assets/07-combination-adhd-meerkat.jpg'
   }
 ];
 
