@@ -297,3 +297,29 @@
 - [x] Add Previous/Next navigation buttons
 - [x] Test quiz flow with new design (verified: questions advance correctly, progress bar updates)
 - [x] Verify responsive design on desktop viewport
+
+
+## Quiz Page Responsiveness & UIUX Optimization
+
+- [ ] Audit current quiz page responsive issues
+- [ ] Refactor QuizFlow for mobile-first design
+- [ ] Add persistent navigation and footer to quiz pages
+- [ ] Optimize button sizing for touch interactions (min 44x44px)
+- [ ] Implement responsive typography scaling
+- [ ] Test on mobile (375px), tablet (768px), and desktop (1920px) viewports
+- [ ] Verify accessibility (WCAG 2.1 AA compliance)
+- [ ] Optimize spacing and padding for mobile screens
+- [ ] Test touch interactions and swipe gestures
+- [ ] Verify footer and navigation visibility on all screen sizes
+
+
+## New Blog Post Formatting (ID 24 - AI That Breaks Down Tasks)
+
+- [x] Format blog post with ID 24 and correct filename (24-ai-that-breaks-down-tasks-adhd.md)
+- [x] Add complete SEO schema (title, description, keywords, entities)
+- [x] Add GEO/AEO discoverability (sources with tier levels, FAQ schema with 6 Q&A pairs)
+- [x] Add related posts linking for internal SEO (links to posts 3, 4, 5)
+- [x] Ensure frontmatter matches existing posts structure (all required fields present)
+- [x] Regenerate blog-posts.json with new post (24 posts total)
+- [x] Verify post displays correctly on blog listing page (appears at top with correct metadata)
+- [x] Verify post displays correctly on individual post page (full content renders with schema)

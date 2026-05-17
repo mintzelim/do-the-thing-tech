@@ -200,30 +200,32 @@ export default function QuizFlow({ onComplete }: QuizFlowProps) {
 
   return (
     <div
-      className="relative w-full min-h-screen overflow-hidden"
+      className="relative w-full min-h-screen flex flex-col overflow-hidden"
       style={{
         backgroundImage: 'url(/figma-quiz-assets/205-9867.webp)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
       }}
     >
       {/* Blackout overlay */}
       <div className="absolute inset-0 opacity-25" style={{ backgroundColor: 'rgba(0,0,0,0.25)' }}></div>
 
-      <div className="relative z-10 w-full h-screen flex flex-col items-center justify-center px-4 py-8">
+      {/* Main Content - Scrollable */}
+      <div className="relative z-10 flex-1 w-full flex flex-col items-center justify-center px-3 sm:px-4 md:px-6 py-6 sm:py-8 md:py-12 overflow-y-auto">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12">
-          <h1 className="font-['Press_Start_2P'] text-white text-2xl sm:text-3xl md:text-4xl mb-2 drop-shadow-lg">
+        <div className="text-center mb-6 sm:mb-8 md:mb-10 w-full">
+          <h1 className="font-['Press_Start_2P'] text-white text-lg sm:text-2xl md:text-3xl lg:text-4xl mb-1 sm:mb-2 drop-shadow-lg leading-tight">
             ADHD TYPE QUIZ
           </h1>
-          <p className="font-['Press_Start_2P'] text-white text-xs sm:text-sm drop-shadow">
+          <p className="font-['Press_Start_2P'] text-white text-xs sm:text-xs md:text-sm drop-shadow leading-tight">
             FIND YOUR BRAIN TYPE IN 10 QUESTIONS
           </p>
         </div>
 
         {/* Progress Bar */}
-        <div className="w-full max-w-md mb-8 px-4">
-          <div className="w-full h-4 bg-white border-2 border-black overflow-hidden">
+        <div className="w-full max-w-xs sm:max-w-sm md:max-w-md mb-6 sm:mb-8 md:mb-10 px-3 sm:px-4">
+          <div className="w-full h-3 sm:h-4 bg-white border-2 border-black overflow-hidden">
             <div
               className="h-full bg-green-500 transition-all duration-300"
               style={{ width: `${progress}%` }}
@@ -232,27 +234,27 @@ export default function QuizFlow({ onComplete }: QuizFlowProps) {
         </div>
 
         {/* Question Card */}
-        <div className="w-full max-w-2xl bg-[#eeeeee]/75 border-4 border-black p-6 sm:p-8 mb-8">
+        <div className="w-full max-w-xs sm:max-w-sm md:max-w-2xl bg-[#eeeeee]/75 border-4 border-black p-4 sm:p-6 md:p-8 mb-6 sm:mb-8 md:mb-10">
           {/* Question Number */}
-          <p className="font-['Press_Start_2P'] text-black text-xs sm:text-sm text-center mb-4">
+          <p className="font-['Press_Start_2P'] text-black text-xs sm:text-xs md:text-sm text-center mb-3 sm:mb-4">
             QUESTION {currentQuestion + 1} / 10
           </p>
 
           {/* Question Text */}
-          <p className="font-['Press_Start_2P'] text-black text-sm sm:text-base text-center leading-relaxed">
+          <p className="font-['Press_Start_2P'] text-black text-xs sm:text-sm md:text-base text-center leading-relaxed">
             {question.text}
           </p>
         </div>
 
         {/* Answer Options Grid */}
-        <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-8 px-4">
+        <div className="w-full max-w-xs sm:max-w-sm md:max-w-4xl grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 mb-6 sm:mb-8 md:mb-10 px-3 sm:px-4">
           {question.answers.map((answer, idx) => (
             <button
               key={idx}
               onClick={() => handleAnswer(answer.type, answer.weight)}
-              className="bg-[#fbf5f5] border-4 border-[#585be9] p-4 sm:p-6 text-center hover:bg-[#f0e8e8] transition-colors shadow-[4px_4px_4px_0px_rgba(0,0,0,1)]"
+              className="bg-[#fbf5f5] border-4 border-[#585be9] p-3 sm:p-4 md:p-6 text-center hover:bg-[#f0e8e8] active:bg-[#e8dfe8] transition-colors shadow-[4px_4px_4px_0px_rgba(0,0,0,1)] min-h-[80px] sm:min-h-[100px] md:min-h-[120px] flex items-center justify-center"
             >
-              <p className="font-['Press_Start_2P'] text-black text-xs sm:text-sm leading-relaxed">
+              <p className="font-['Press_Start_2P'] text-black text-xs sm:text-xs md:text-sm leading-relaxed">
                 {answer.text}
               </p>
             </button>
@@ -260,17 +262,17 @@ export default function QuizFlow({ onComplete }: QuizFlowProps) {
         </div>
 
         {/* Navigation Buttons */}
-        <div className="flex gap-4 sm:gap-6 w-full max-w-2xl justify-center px-4">
+        <div className="flex gap-2 sm:gap-3 md:gap-6 w-full max-w-xs sm:max-w-sm md:max-w-2xl justify-center px-3 sm:px-4 pb-4 sm:pb-6">
           <button
             onClick={() => setCurrentQuestion(Math.max(0, currentQuestion - 1))}
             disabled={currentQuestion === 0}
-            className="bg-[#585be9] hover:bg-[#4a4dd4] disabled:opacity-50 disabled:cursor-not-allowed text-white font-['Press_Start_2P'] text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4 border-2 border-black transition-colors"
+            className="flex-1 bg-[#585be9] hover:bg-[#4a4dd4] active:bg-[#3d3fc4] disabled:opacity-50 disabled:cursor-not-allowed text-white font-['Press_Start_2P'] text-xs sm:text-sm md:text-base px-3 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 border-2 border-black transition-colors min-h-[44px] sm:min-h-[48px]"
           >
             Previous
           </button>
           <button
             onClick={() => handleAnswer(question.answers[0].type, question.answers[0].weight)}
-            className="bg-[#585be9] hover:bg-[#4a4dd4] text-white font-['Press_Start_2P'] text-sm sm:text-base px-6 sm:px-8 py-3 sm:py-4 border-2 border-black transition-colors"
+            className="flex-1 bg-[#585be9] hover:bg-[#4a4dd4] active:bg-[#3d3fc4] text-white font-['Press_Start_2P'] text-xs sm:text-sm md:text-base px-3 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 border-2 border-black transition-colors min-h-[44px] sm:min-h-[48px]"
           >
             Next
           </button>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Button } from '@/components/ui/button';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import QuizHero from '@/components/quiz/QuizHero';
 import ADHDTypesDisplay from '@/components/quiz/ADHDTypesDisplay';
 import WhyTakeQuiz from '@/components/quiz/WhyTakeQuiz';
@@ -40,23 +41,32 @@ export default function Quiz() {
   };
 
   return (
-    <div className="min-h-screen bg-[#edeeee] w-full overflow-x-hidden">
-      {step === 'hero' && (
-        <>
-          <QuizHero onStartQuiz={handleStartQuiz} />
-          <ADHDTypesDisplay />
-          <WhyTakeQuiz />
-          <FinalCTA onStartQuiz={handleStartQuiz} />
-        </>
-      )}
-      {step === 'quiz' && <QuizFlow onComplete={handleQuizComplete} />}
-      {step === 'results' && result && (
-        <QuizResults
-          result={result}
-          onRetakeQuiz={handleRetakeQuiz}
-          onBackToHome={handleBackToHome}
-        />
-      )}
+    <div className="flex flex-col min-h-screen w-full overflow-x-hidden bg-[#edeeee]">
+      {/* Navigation - Always visible */}
+      <Navigation />
+
+      {/* Main Content - Flex grow to push footer down */}
+      <main className="flex-grow w-full">
+        {step === 'hero' && (
+          <>
+            <QuizHero onStartQuiz={handleStartQuiz} />
+            <ADHDTypesDisplay />
+            <WhyTakeQuiz />
+            <FinalCTA onStartQuiz={handleStartQuiz} />
+          </>
+        )}
+        {step === 'quiz' && <QuizFlow onComplete={handleQuizComplete} />}
+        {step === 'results' && result && (
+          <QuizResults
+            result={result}
+            onRetakeQuiz={handleRetakeQuiz}
+            onBackToHome={handleBackToHome}
+          />
+        )}
+      </main>
+
+      {/* Footer - Always visible */}
+      <Footer />
     </div>
   );
 }
