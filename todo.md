@@ -343,3 +343,14 @@
 - [x] Update WhyTakeQuiz component to reference /figma-quiz-assets/why-take-quiz-bg.jpg
 - [x] Verify hero sky background displays correctly (verified: beautiful pixel-art sky with clouds)
 - [x] Verify features section landscape background displays correctly (verified: epic landscape with mountains, forest, river)
+
+
+## New Blog Post Integration (ID 25 - Why People with ADHD Never Finish Anything)
+
+- [x] Pull blog post from GitHub (25-adhd-never-finish-anything.md)
+- [x] Verify complete SEO schema (title, description, keywords, entities)
+- [x] Verify GEO/AEO discoverability (6 sources with tier levels, 6 FAQ Q&A pairs)
+- [x] Verify related posts linking (posts 3, 4, 9)
+- [x] Regenerate blog-posts.json with new post (25 posts total)
+- [x] Verify post displays correctly on blog listing page (appears at top with correct metadata)
+- [x] Verify post displays correctly on individual post page (full content renders with schema)
