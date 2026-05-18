@@ -25,7 +25,7 @@ export default function WhyTakeQuiz() {
       className="relative w-full py-24 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundImage:
-          'url(https://raw.githubusercontent.com/dothething/assets/main/quiz-landscape-background.png)',
+          'url(/figma-quiz-assets/why-take-quiz-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'

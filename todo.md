@@ -333,3 +333,13 @@
 - [x] Verify all character images display correctly on quiz page
 - [x] Test quiz flow with updated character types
 - [x] Verify character images load from GitHub repository
+
+
+## Quiz Page Background Images
+
+- [x] Upload quiz-hero-bg.jpg to client/public/figma-quiz-assets/
+- [x] Upload why-take-quiz-bg.jpg to client/public/figma-quiz-assets/
+- [x] Update QuizHero component to reference /figma-quiz-assets/quiz-hero-bg.jpg
+- [x] Update WhyTakeQuiz component to reference /figma-quiz-assets/why-take-quiz-bg.jpg
+- [x] Verify hero sky background displays correctly (verified: beautiful pixel-art sky with clouds)
+- [x] Verify features section landscape background displays correctly (verified: epic landscape with mountains, forest, river)

@@ -9,7 +9,7 @@ export default function QuizHero({ onStartQuiz }: QuizHeroProps) {
     <section 
       className="relative min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20"
       style={{
-        backgroundImage: 'url(https://raw.githubusercontent.com/dothething/assets/main/quiz-sky-background.png)',
+        backgroundImage: 'url(/figma-quiz-assets/quiz-hero-bg.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
