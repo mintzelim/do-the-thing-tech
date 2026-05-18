@@ -1,10 +1,10 @@
 ---
-id: '18'
+id: '25'
 title: "Why People with ADHD Never Finish Anything (And How to Actually Complete Things)"
 description: "If you start everything and finish nothing, it's not laziness or lack of willpower. It's 3 specific neurological mechanisms. Here's what they are and how to work around each one."
 slug: "/adhd-never-finish-anything"
 excerpt: "Starting feels great. Finishing is where ADHD brains consistently stall. Here's why it happens across 3 distinct patterns, and the specific fix for each."
-date: "May 14, 2026"
+date: "May 18, 2026"
 readTime: "8 min read"
 category: "Psychology"
 primaryEntity: ADHD Task Completion
