@@ -1,5 +1,7 @@
 ---
 id: '25'
+featuredImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-title-featured-dTXxYj5ZgYCmRgnDPqoqHw.webp"
+featuredImageAlt: "ADHD project completion struggle: character at 70% with fading dopamine, new idea, and boring tasks"
 title: "Why People with ADHD Never Finish Anything (And How to Actually Complete Things)"
 description: "If you start everything and finish nothing, it's not laziness or lack of willpower. It's 3 specific neurological mechanisms. Here's what they are and how to work around each one."
 slug: "/adhd-never-finish-anything"
@@ -83,6 +85,8 @@ You start with genuine energy. The idea is good, the plan makes sense, and for a
 
 This is one of the most consistent and frustrating patterns in adult ADHD. And it's not about discipline or follow-through in the general sense. It's about 3 specific neurological mechanisms, each with a different cause and a different fix.
 
+![Why People with ADHD Never Finish Anything](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-featured-adhd-never-finish-8zwkCa9o3aqmPENvsBh2AW.webp)
+
 ---
 
 ## TL;DR
@@ -110,6 +114,8 @@ The ADHD brain is optimised for starting. The architecture that makes starting e
 
 ## Pattern 1: Novelty Depletion
 
+![The Project Lifecycle: Novelty Depletion Over Time](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-novelty-depletion-P556DP8Az7qx9NwiMjN2mB.webp)
+
 Every project starts with high novelty. As you work through it, the novel parts get resolved and what remains is increasingly familiar: refinement, editing, admin, presentation. The dopamine signal that was driving engagement fades in proportion to the novelty.
 
 [A 2024 PMC study on hyperfocus in ADHD](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12437476/) found that 68% of ADHD adults report frequent hyperfocus episodes, with the most common triggers being novelty and personal interest. As both decline in a maturing project, hyperfocus becomes inaccessible and engagement drops sharply.
@@ -125,6 +131,8 @@ Concrete example: "finish the deck" becomes "write the 3 key findings slides" (s
 ---
 
 ## Pattern 2: Competing Interest Pull
+
+![Competing Interest Pull: New Idea Shines, Old Project Fades](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-competing-interests-fG5AJfodtYsvbSWBqGkxDG.webp)
 
 A new idea arrives mid-project. It's fresh, unresolved, and immediately more interesting than the current work. The ADHD brain responds more strongly to the new stimulus. The existing project gets backgrounded, often permanently.
 
@@ -142,6 +150,8 @@ The key is specificity. "I'll think about this later" doesn't work because "late
 
 ## Pattern 3: Low-Stimulation Phase Avoidance
 
+![The Low-Stimulation Trap: 90% Done, 10% Feels Impossible](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-low-stimulation-avoidance-JPmmp9D38iFQjEaeZvNkG2.webp)
+
 Every creative or knowledge project contains phases that carry low stimulation: editing a draft, writing the admin around a finished piece, sending invoices, filing, formatting. These phases trigger [ADHD task paralysis](/executive-dysfunction-vs-task-paralysis-adhd), the freeze response that activates when a task carries emotional weight or low interest.
 
 [ADDA describes ADHD paralysis (2024)](https://add.org/adhd-paralysis/) as an overload response, often outside the person's conscious control. The brain registers the low-stimulation phase as aversive and shuts down initiation. The project sits at 90% complete because the final 10% is the part nobody wants to do.
@@ -156,9 +166,9 @@ Use [DoTheThing](https://www.dothething.tech) to break the low-stimulation task 
 
 Use a time limit. "I'm doing this for 20 minutes, then I stop." The brain can agree to 20 minutes of boring work. It can't agree to "edit until it's done."
 
-Use [body doubling](/best-adhd-tools-2026). Working alongside another person, even on a video call, raises the activation threshold enough to start on work that would otherwise be deferred.
+Use [body doubling](/best-adhd-tools-2026) – working alongside another person, even on a video call, raises the activation threshold enough to start on work that would otherwise be deferred.
 
----
+![Dopamine Level Over Project Timeline](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-dopamine-curve-FxMRJsWqGDMJQLHaGaLhfq.webp)
 
 ## The Combined Picture
 

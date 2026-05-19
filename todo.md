@@ -354,3 +354,17 @@
 - [x] Regenerate blog-posts.json with new post (25 posts total)
 - [x] Verify post displays correctly on blog listing page (appears at top with correct metadata)
 - [x] Verify post displays correctly on individual post page (full content renders with schema)
+
+## Blog Post 25 Images (Why People with ADHD Never Finish Anything)
+
+- [x] Create featured title image for blog post 25 (pixel-art ADHD character at 70% project completion)
+- [x] Create section image for Pattern 1: Novelty Depletion (project lifecycle with dopamine decline)
+- [x] Create section image for Pattern 2: Competing Interest Pull (new idea vs old project)
+- [x] Create section image for Pattern 3: Low-Stimulation Phase Avoidance (90% done / 10% impossible)
+- [x] Create section image for Dopamine Curve (dopamine levels over project timeline)
+- [x] Upload all 5 images to S3 using manus-upload-file --webdev
+- [x] Update blog post 25 frontmatter with featuredImage URL
+- [x] Embed all section images in blog post markdown with alt text
+- [x] Regenerate blog-posts.json with updated post metadata
+- [x] Verify all images display correctly on blog listing page (featured image visible)
+- [x] Verify all section images display correctly on individual post page (all 5 images rendering)
