@@ -1,6 +1,6 @@
 ---
 id: '25'
-featuredImage: "/blog/images/25-adhd-never-finish-anything/featured.png"
+featuredImage: "/blog/images/25-adhd-never-finish-anything/post25-featured-adhd-never-finish.png"
 featuredImageAlt: "Epic pixel-art landscape showing ADHD project completion: character at 70% with fading dopamine, competing ideas, and boring tasks"
 title: "Why People with ADHD Never Finish Anything (And How to Actually Complete Things)"
 description: "If you start everything and finish nothing, it's not laziness or lack of willpower. It's 3 specific neurological mechanisms. Here's what they are and how to work around each one."
@@ -85,7 +85,7 @@ You start with genuine energy. The idea is good, the plan makes sense, and for a
 
 This is one of the most consistent and frustrating patterns in adult ADHD. And it's not about discipline or follow-through in the general sense. It's about 3 specific neurological mechanisms, each with a different cause and a different fix.
 
-![Why People with ADHD Never Finish Anything](/blog/images/25-adhd-never-finish-anything/featured.png)
+![Why People with ADHD Never Finish Anything](/blog/images/25-adhd-never-finish-anything/post25-featured-adhd-never-finish.png)
 
 ---
 
@@ -114,7 +114,7 @@ The ADHD brain is optimised for starting. The architecture that makes starting e
 
 ## Pattern 1: Novelty Depletion
 
-![The Project Lifecycle: Novelty Depletion Over Time](/blog/images/25-adhd-never-finish-anything/novelty-depletion.png)
+![The Project Lifecycle: Novelty Depletion Over Time](/blog/images/25-adhd-never-finish-anything/post25-novelty-depletion.png)
 
 Every project starts with high novelty. As you work through it, the novel parts get resolved and what remains is increasingly familiar: refinement, editing, admin, presentation. The dopamine signal that was driving engagement fades in proportion to the novelty.
 
@@ -132,7 +132,7 @@ Concrete example: "finish the deck" becomes "write the 3 key findings slides" (s
 
 ## Pattern 2: Competing Interest Pull
 
-![Competing Interest Pull: New Idea Shines, Old Project Fades](/blog/images/25-adhd-never-finish-anything/competing-interests.png)
+![Competing Interest Pull: New Idea Shines, Old Project Fades](/blog/images/25-adhd-never-finish-anything/post25-competing-interests.png)
 
 A new idea arrives mid-project. It's fresh, unresolved, and immediately more interesting than the current work. The ADHD brain responds more strongly to the new stimulus. The existing project gets backgrounded, often permanently.
 
@@ -150,7 +150,7 @@ The key is specificity. "I'll think about this later" doesn't work because "late
 
 ## Pattern 3: Low-Stimulation Phase Avoidance
 
-![The Low-Stimulation Trap: 90% Done, 10% Feels Impossible](/blog/images/25-adhd-never-finish-anything/low-stimulation-trap.png)
+![The Low-Stimulation Trap: 90% Done, 10% Feels Impossible](/blog/images/25-adhd-never-finish-anything/post25-low-stimulation-avoidance.png)
 
 Every creative or knowledge project contains phases that carry low stimulation: editing a draft, writing the admin around a finished piece, sending invoices, filing, formatting. These phases trigger [ADHD task paralysis](/executive-dysfunction-vs-task-paralysis-adhd), the freeze response that activates when a task carries emotional weight or low interest.
 
@@ -168,7 +168,7 @@ Use a time limit. "I'm doing this for 20 minutes, then I stop." The brain can ag
 
 Use [body doubling](/best-adhd-tools-2026) – working alongside another person, even on a video call, raises the activation threshold enough to start on work that would otherwise be deferred.
 
-![Dopamine Level Over Project Timeline](/blog/images/25-adhd-never-finish-anything/dopamine-curve.png)
+![Dopamine Level Over Project Timeline](/blog/images/25-adhd-never-finish-anything/post25-dopamine-curve.png)
 
 ## The Combined Picture
 

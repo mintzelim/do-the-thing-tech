@@ -362,9 +362,9 @@
 - [x] Create section image for Pattern 2: Competing Interest Pull (new idea vs old project)
 - [x] Create section image for Pattern 3: Low-Stimulation Phase Avoidance (90% done / 10% impossible)
 - [x] Create section image for Dopamine Curve (dopamine levels over project timeline)
-- [x] Upload all 5 images to S3 using manus-upload-file --webdev
-- [x] Update blog post 25 frontmatter with featuredImage URL
-- [x] Embed all section images in blog post markdown with alt text
+- [x] Upload all 5 images to GitHub in blog/blog/images/25-adhd-never-finish-anything/ directory
+- [x] Update blog post 25 markdown with correct image filenames (post25-featured-adhd-never-finish.png, etc.)
+- [x] Embed all section images in blog post markdown with alt text and correct paths
 - [x] Regenerate blog-posts.json with updated post metadata
 - [x] Verify all images display correctly on blog listing page (featured image visible)
 - [x] Verify all section images display correctly on individual post page (all 5 images rendering)
