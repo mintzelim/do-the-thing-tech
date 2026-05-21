@@ -22,7 +22,7 @@ export default function WhyTakeQuiz() {
 
   return (
     <section
-      className="relative w-full py-24 px-4 sm:px-6 lg:px-8"
+      className="relative w-full py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundImage:
           'url(/figma-quiz-assets/why-take-quiz-bg.png)',
@@ -37,14 +37,14 @@ export default function WhyTakeQuiz() {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Title */}
         <h2
-          className="font-['Press_Start_2P'] text-white text-3xl sm:text-4xl md:text-5xl text-center mb-16 drop-shadow-lg"
+          className="font-['Press_Start_2P'] text-white text-4xl sm:text-5xl md:text-6xl text-center mb-20 drop-shadow-lg"
           style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}
         >
           WHY TAKE THIS QUIZ?
         </h2>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
           {features.map((feature, index) => (
             <div
               key={index}
