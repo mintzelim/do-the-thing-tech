@@ -402,3 +402,17 @@
 - [x] Reduce heading sizes to be more proportional - Reduced all h1/h2 sizes by 1-2 tiers for better balance
 - [x] Reduce body text font sizes - Reduced QuizHero paragraphs from text-lg/xl/2xl/3xl to text-base/lg/xl/2xl, ADHDTypesDisplay description from text-base/lg/xl/2xl to text-sm/base/lg/xl, FinalCTA description from text-lg/xl to text-base/lg
 - [x] Replace emoji icons with pixel-art images in Why Take Quiz section - Uploaded 3 pixel-art icons (brain, card, network) to S3 and replaced 🧠🎴🕸️ emojis with image elements
+
+
+## Google Tag Manager Data Transmission Fix
+
+- [x] Verify GTM container ID is correct - GTM-576H3JGG confirmed in client/index.html
+- [x] Check if GTM script is properly installed - Verified in HTML head
+- [x] Verify GTM script is loading without errors - Script loads correctly
+- [x] Create gtm-events.ts utility with event tracking - Created with page_view, button_click, quiz events, blog_post_view, task_created
+- [x] Initialize dataLayer in main.tsx - Added dataLayer initialization and initial page view tracking
+- [x] Test GTM data layer and event tracking - dataLayer confirmed initialized
+- [ ] Configure GTM tags for page_view, button_click, quiz, blog, task events in GTM container
+- [ ] Create triggers in GTM for each event type
+- [ ] Verify GTM is sending data to GA4 container
+- [ ] Confirm GTM tags are firing and data flowing to Google Analytics
