@@ -371,6 +371,44 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
       continue;
     }
 
+    // Images
+    if (line.startsWith('![')) {
+      const imageRegex = /!\[([^\]]*)\]\(([^)]+)\)/;
+      const imageMatch = line.match(imageRegex);
+      if (imageMatch) {
+        const altText = imageMatch[1];
+        const imageSrc = imageMatch[2];
+        elements.push(
+          <div key={`image-${i}`} style={{ marginBottom: '24px', marginTop: '16px', textAlign: 'center' }}>
+            <img
+              src={imageSrc}
+              alt={altText}
+              style={{
+                maxWidth: '100%',
+                height: 'auto',
+                borderRadius: '2px',
+                boxShadow: '2px 2px 0 rgba(0, 0, 0, 0.1)',
+                border: '2px solid var(--pixel-border)'
+              }}
+            />
+            {altText && (
+              <p style={{
+                marginTop: '8px',
+                fontSize: '13px',
+                fontStyle: 'italic',
+                color: 'var(--pixel-text-muted)',
+                fontFamily: "'Roboto Mono', monospace"
+              }}>
+                {altText}
+              </p>
+            )}
+          </div>
+        );
+        i++;
+        continue;
+      }
+    }
+
     // Horizontal rule
     if (line === '---' || line === '***' || line === '___') {
       elements.push(
