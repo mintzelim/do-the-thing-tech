@@ -1,19 +1,19 @@
 export default function WhyTakeQuiz() {
   const features = [
     {
-      icon: '🧠',
+      icon: '/manus-storage/pasted_file_9U5iTE_image_54e01f5e.png',
       title: 'UNDERSTAND YOUR BRAIN',
       description:
         'Learn which of the 7 ADHD types matches your brain pattern and discover your unique strengths.'
     },
     {
-      icon: '🎴',
+      icon: '/manus-storage/pasted_file_viVLgO_image_17dbb277.png',
       title: 'GET YOUR ADHD TYPE CARD',
       description:
         'Receive a beautiful trading card with your ADHD type, character, and personalized stats.'
     },
     {
-      icon: '🕸️',
+      icon: '/manus-storage/pasted_file_tuYWfH_image_eec41347.png',
       title: 'SHARE & CONNECT',
       description:
         'Download your card and share it on TikTok, Instagram, Facebook, and Twitter to connect with others.'
@@ -51,7 +51,7 @@ export default function WhyTakeQuiz() {
               className="bg-purple-600 border-4 border-purple-800 p-6 sm:p-8 flex flex-col items-center text-center hover:bg-purple-700 transition-colors"
             >
               {/* Icon */}
-              <div className="text-5xl sm:text-6xl mb-4">{feature.icon}</div>
+              <img src={feature.icon} alt={feature.title} className="w-16 h-16 sm:w-20 sm:h-20 mb-4 mx-auto" />
 
               {/* Title */}
               <h3
