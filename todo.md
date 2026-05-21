@@ -396,3 +396,4 @@
 - [x] Test responsive design on mobile and desktop - Verified on dev server
 - [x] Verify styling consistency across all pages - Quiz page now matches Home page spacing
 - [x] Reduce heading sizes to be more proportional - Reduced all h1/h2 sizes by 1-2 tiers for better balance
+- [x] Reduce body text font sizes - Reduced QuizHero paragraphs from text-lg/xl/2xl/3xl to text-base/lg/xl/2xl, ADHDTypesDisplay description from text-base/lg/xl/2xl to text-sm/base/lg/xl, FinalCTA description from text-lg/xl to text-base/lg

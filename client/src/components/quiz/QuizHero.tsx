@@ -24,13 +24,13 @@ export default function QuizHero({ onStartQuiz }: QuizHeroProps) {
         </h1>
 
         <div className="space-y-8 px-4">
-          <p className="font-['Press_Start_2P'] text-white text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-3xl mx-auto drop-shadow">
+          <p className="font-['Press_Start_2P'] text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto drop-shadow">
             Nope, your brain isn't broken!
           </p>
-          <p className="font-['Press_Start_2P'] text-white text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-3xl mx-auto drop-shadow">
+          <p className="font-['Press_Start_2P'] text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto drop-shadow">
             It's just wired a 'lil differently.
           </p>
-          <p className="font-['Press_Start_2P'] text-white text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto drop-shadow">            Take this 10-question quiz to discover which of the 7 ADHD types matches your brain pattern.
+          <p className="font-['Press_Start_2P'] text-white text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto drop-shadow">            Take this 10-question quiz to discover which of the 7 ADHD types matches your brain pattern.
           </p>
         </div>
 

@@ -20,7 +20,7 @@ export default function FinalCTA({ onStartQuiz }: FinalCTAProps) {
         </h2>
 
         {/* Description */}
-        <p className="text-gray-800 text-lg sm:text-xl mb-16 leading-relaxed">
+        <p className="text-gray-800 text-base sm:text-lg mb-16 leading-relaxed">
           It only takes 10 questions. No judgment. Just honest insights about your brain.
         </p>
 

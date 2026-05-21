@@ -103,7 +103,7 @@ export default function ADHDTypesDisplay() {
         The 7 Types
       </h2>
 
-      <p className="font-['Press_Start_2P'] text-[#585be9] text-base sm:text-lg md:text-xl lg:text-2xl text-center mb-16 sm:mb-20 lg:mb-24 max-w-4xl mx-auto leading-relaxed px-4">
+      <p className="font-['Press_Start_2P'] text-[#585be9] text-sm sm:text-base md:text-lg lg:text-xl text-center mb-16 sm:mb-20 lg:mb-24 max-w-4xl mx-auto leading-relaxed px-4">
         According to research, there are seven unique ADHD types, each with its own perks and challenges.
       </p>
 
