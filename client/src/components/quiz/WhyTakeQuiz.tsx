@@ -37,7 +37,7 @@ export default function WhyTakeQuiz() {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Title */}
         <h2
-          className="font-['Press_Start_2P'] text-white text-4xl sm:text-5xl md:text-6xl text-center mb-20 drop-shadow-lg"
+          className="font-['Press_Start_2P'] text-white text-2xl sm:text-3xl md:text-4xl text-center mb-20 drop-shadow-lg"
           style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}
         >
           WHY TAKE THIS QUIZ?

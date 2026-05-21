@@ -99,7 +99,7 @@ function CharacterCard({
 export default function ADHDTypesDisplay() {
   return (
     <section className="bg-[#eeeeee] py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
-      <h2 className="font-['Press_Start_2P'] text-[#585be9] text-3xl sm:text-4xl md:text-5xl text-center mb-12 sm:mb-16 lg:mb-20 leading-relaxed uppercase">
+      <h2 className="font-['Press_Start_2P'] text-[#585be9] text-2xl sm:text-3xl md:text-4xl text-center mb-12 sm:mb-16 lg:mb-20 leading-relaxed uppercase">
         The 7 Types
       </h2>
 

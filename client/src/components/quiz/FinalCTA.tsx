@@ -13,7 +13,7 @@ export default function FinalCTA({ onStartQuiz }: FinalCTAProps) {
       <div className="relative z-10 max-w-3xl mx-auto text-center">
         {/* Title */}
         <h2
-          className="font-['Press_Start_2P'] text-purple-600 text-3xl sm:text-4xl md:text-5xl mb-8 leading-tight"
+          className="font-['Press_Start_2P'] text-purple-600 text-2xl sm:text-3xl md:text-4xl mb-8 leading-tight"
           style={{ minHeight: '5rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
         >
           READY TO DISCOVER YOUR ADHD TYPE?

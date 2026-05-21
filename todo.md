@@ -395,3 +395,4 @@
 - [x] Verify all sections have consistent padding and margins - All sections now use py-24 sm:py-32 lg:py-40
 - [x] Test responsive design on mobile and desktop - Verified on dev server
 - [x] Verify styling consistency across all pages - Quiz page now matches Home page spacing
+- [x] Reduce heading sizes to be more proportional - Reduced all h1/h2 sizes by 1-2 tiers for better balance

@@ -19,7 +19,7 @@ export default function QuizHero({ onStartQuiz }: QuizHeroProps) {
       <div className="absolute inset-0 bg-black/5"></div>
 
       <div className="relative z-10 text-center space-y-8 sm:space-y-12 max-w-5xl mx-auto">
-        <h1 className="font-['Press_Start_2P'] text-[#edeeee] text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-relaxed uppercase px-4 drop-shadow-lg">
+        <h1 className="font-['Press_Start_2P'] text-[#edeeee] text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-relaxed uppercase px-4 drop-shadow-lg">
           What's Your ADHD Type?
         </h1>
 
