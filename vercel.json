@@ -7,5 +7,29 @@
       "memory": 1024,
       "maxDuration": 60
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/:path((?!api).*)*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.dothething.tech"
+        }
+      ],
+      "destination": "https://dothething.tech/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path((?!api).*)*",
+      "has": [
+        {
+          "type": "protocol",
+          "value": "http"
+        }
+      ],
+      "destination": "https://dothething.tech/:path*",
+      "permanent": true
+    }
+  ]
 }

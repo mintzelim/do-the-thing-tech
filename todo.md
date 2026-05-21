@@ -368,3 +368,17 @@
 - [x] Regenerate blog-posts.json with updated post metadata
 - [x] Verify all images display correctly on blog listing page (featured image visible)
 - [x] Verify all section images display correctly on individual post page (all 5 images rendering)
+
+
+## Google Search Console Redirect Issue Fix
+
+- [x] Diagnose redirect chains on homepage (http/https, www/non-www variants) - Found 2-hop redirect chain
+- [x] Verify canonical URLs are set on all pages (homepage, blog posts, static pages) - All properly configured
+- [x] Configure server-side redirects to consolidate all variants to https://dothething.tech - Updated vercel.json
+- [x] Ensure www.dothething.tech redirects to dothething.tech (301 permanent redirect) - Added to vercel.json
+- [x] Ensure http variants redirect to https variants (301 permanent redirect) - Added to vercel.json
+- [x] Test redirect chains with curl to verify no multiple redirects - Verified current behavior
+- [x] Verify canonical tag points to https://dothething.tech on homepage - Confirmed in client/index.html
+- [ ] Deploy vercel.json changes to production
+- [ ] Resubmit homepage URL to Google Search Console
+- [ ] Monitor Google Search Console for indexing status improvement
