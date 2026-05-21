@@ -368,6 +368,8 @@
 - [x] Regenerate blog-posts.json with updated post metadata
 - [x] Verify all images display correctly on blog listing page (featured image visible)
 - [x] Verify all section images display correctly on individual post page (all 5 images rendering)
+- [x] Fix blog post 25 image paths - Moved images from blog/blog/images/ to client/public/blog/images/ for correct serving
+- [x] Verify all blog post 25 images display correctly after path fix - Featured image and all 4 section images now rendering
 
 
 ## Google Search Console Redirect Issue Fix
