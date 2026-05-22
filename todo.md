@@ -448,6 +448,7 @@
 
 - [x] Move task input box into hero section (above fold, immediately visible)
 - [x] Reduce hero section height to make tool visible without scrolling
+- [x] Update font to JetBrains Mono (remove Courier fallback)
 - [ ] Add decorative pixel-art icons around hero (dopamine, focus, time concepts)
 - [ ] Add social proof section (user count or testimonials)
 - [ ] Consider making input box sticky or floating for persistent access
