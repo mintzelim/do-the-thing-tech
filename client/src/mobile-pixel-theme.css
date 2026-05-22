@@ -17,6 +17,8 @@
   --mobile-error-light: #fee2e2;
   --mobile-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   --mobile-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --mobile-orange: #FF7A45;
+  --mobile-orange-light: #FFE5D9;
 }
 
 * {
@@ -141,26 +143,30 @@ body {
   width: 100%;
   padding: 14px 16px;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
-  border: 2px solid var(--mobile-border);
+  font-family: 'JetBrains Mono', monospace;
+  border: 3px solid var(--mobile-border);
   border-radius: 8px;
   background: var(--mobile-card-bg);
   color: var(--mobile-text-primary);
   transition: all 0.2s ease;
   margin-bottom: 12px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.08);
 }
 
 .mobile-input:focus,
 .mobile-textarea:focus {
   outline: none;
-  border-color: var(--mobile-accent);
-  box-shadow: 0 0 0 3px var(--mobile-accent-light);
+  border-color: var(--mobile-orange);
+  box-shadow: 0 6px 0 rgba(255, 122, 69, 0.2);
+  transform: translateY(-2px);
 }
 
 .mobile-textarea {
   resize: vertical;
-  min-height: 120px;
-  font-size: 14px;
+  min-height: 140px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 /* Pixel Art Button - LARGE AND CLEAR */
@@ -169,20 +175,27 @@ body {
   padding: 16px 20px;
   font-size: 16px;
   font-weight: 700;
-  border: 2px solid var(--mobile-border);
+  border: 3px solid var(--mobile-border);
   border-radius: 8px;
-  background: var(--mobile-accent);
+  background: var(--mobile-orange);
   color: white;
   cursor: pointer;
   transition: all 0.2s ease;
   margin-bottom: 12px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.mobile-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.15);
 }
 
 .mobile-button:active {
   transform: translateY(2px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .mobile-button:disabled {
@@ -222,23 +235,32 @@ body {
   padding: 12px 16px;
   font-size: 13px;
   font-weight: 600;
-  border: 2px solid var(--mobile-border);
+  border: 3px solid var(--mobile-border);
   border-radius: 8px;
   background: var(--mobile-card-bg);
   color: var(--mobile-text-primary);
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: center;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.08);
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .mobile-preset-button.active {
-  background: var(--mobile-accent);
+  background: var(--mobile-orange);
   color: white;
-  border-color: var(--mobile-accent);
+  border-color: var(--mobile-orange);
+  box-shadow: 0 3px 0 rgba(255, 122, 69, 0.3);
+}
+
+.mobile-preset-button:hover:not(.active) {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.12);
 }
 
 .mobile-preset-button:active {
   transform: translateY(1px);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
 }
 
 /* Pixel Art Slider */
