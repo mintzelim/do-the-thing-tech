@@ -437,7 +437,7 @@ export default function Home() {
 
               <textarea
                 className="mobile-textarea"
-                placeholder="Write project proposal, update documentation, respond to emails, plan team meeting..."
+                placeholder="Clean room, reply to emails, organize desk, make coffee..."
                 value={brainDump}
                 onChange={(e) => setBrainDump(e.target.value)}
               />
