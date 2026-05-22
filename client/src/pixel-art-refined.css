@@ -11,8 +11,10 @@
   --pixel-border: #000000;
   --pixel-text: #1a1a1a;
   --pixel-text-light: #666666;
-  --pixel-accent: #FF7A45;
-  --pixel-accent-dark: #E85C2A;
+  --pixel-accent: #6366f1;
+  --pixel-accent-dark: #4f46e5;
+  --pixel-button-color: #FF7A45;
+  --pixel-button-color-dark: #E85C2A;
   --pixel-success: #10b981;
   --pixel-error: #ef4444;
   --pixel-shadow: #00000033;
@@ -40,10 +42,11 @@ html, body {
 }
 
 body {
-  font-family: 'VT323', 'Courier New', monospace;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
   background-color: var(--pixel-bg);
   color: var(--pixel-text);
   line-height: 1.6;
+  font-weight: 500;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   -webkit-font-smoothing: none;
@@ -236,7 +239,7 @@ body {
   font-weight: 600;
   border: 3px solid var(--pixel-border);
   border-radius: 0;
-  background: var(--pixel-accent);
+  background: var(--pixel-button-color);
   color: white;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -256,7 +259,7 @@ body {
 }
 
 .mobile-button:hover:not(:disabled) {
-  background: var(--pixel-accent-dark);
+  background: var(--pixel-button-color-dark);
 }
 
 .mobile-button:disabled {

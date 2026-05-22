@@ -417,22 +417,21 @@ export default function Home() {
         {/* Flow: Input */}
         {flowState === "input" && (
           <>
-            <h1 className="mobile-heading-1" style={{ fontSize: "38px", textAlign: "center", marginBottom: "12px" }}>Task Management Built for ADHD Brains</h1>
-            <p className="mobile-body" style={{ fontSize: "16px", marginBottom: "16px", lineHeight: "1.5", textAlign: "center" }}>
-              Type any task or brain dump the whole pile.
-              <br />
-              DoTheThing breaks it into steps you can actually start.
-              <br />
-              <br />
-              Free. No login. Under a minute.
-            </p>
-            <div style={{ textAlign: "center", marginBottom: "20px" }}>
-              <a href="#widget" className="cta-button" style={{ display: "inline-block", padding: "10px 32px", backgroundColor: "var(--pixel-accent)", color: "white", textDecoration: "none", fontWeight: "bold", fontSize: "16px", border: "2px solid var(--pixel-border)", cursor: "pointer", fontFamily: "'VT323', monospace" }}>START NOW ↓</a>
-            </div>
+            {/* Hero Section with Integrated Task Input */}
+            <div className="mobile-card" id="widget" style={{ marginBottom: "24px" }}>
+              <h1 className="mobile-heading-1" style={{ fontSize: "38px", textAlign: "center", marginBottom: "12px" }}>Task Management Built for ADHD Brains</h1>
+              <p className="mobile-body" style={{ fontSize: "16px", marginBottom: "20px", lineHeight: "1.5", textAlign: "center" }}>
+                Type any task or brain dump the whole pile.
+                <br />
+                DoTheThing breaks it into steps you can actually start.
+                <br />
+                <br />
+                Free. No login. Under a minute.
+              </p>
 
-            <div className="mobile-card" id="widget">
-              <h2 className="mobile-heading-2">TODAY, I NEED TO...</h2>
-              <p className="mobile-body" style={{ marginBottom: "16px" }}>
+              {/* Task Input Section */}
+              <h2 className="mobile-heading-2" style={{ marginBottom: "8px" }}>TODAY, I NEED TO...</h2>
+              <p className="mobile-body" style={{ marginBottom: "12px", fontSize: "14px" }}>
                 Enter a single task or brain dump everything you need to do.
               </p>
 
@@ -443,8 +442,8 @@ export default function Home() {
                 onChange={(e) => setBrainDump(e.target.value)}
               />
 
-              <div style={{ marginBottom: "20px" }}>
-                <p className="mobile-body-lg" style={{ marginBottom: "12px", fontWeight: 600 }}>
+              <div style={{ marginBottom: "16px" }}>
+                <p className="mobile-body-lg" style={{ marginBottom: "10px", fontWeight: 600, fontSize: "20px" }}>
                   HOW FOCUSED ARE YOU TODAY?
                 </p>
 
@@ -470,8 +469,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div style={{ marginBottom: "20px" }}>
-                <p className="mobile-body-lg" style={{ marginBottom: "12px", fontWeight: 600 }}>
+              <div style={{ marginBottom: "16px" }}>
+                <p className="mobile-body-lg" style={{ marginBottom: "10px", fontWeight: 600, fontSize: "20px" }}>
                   TASK BREAKDOWN SIZE
                 </p>
 
@@ -506,7 +505,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="mobile-body-sm" style={{ marginBottom: "16px", color: "var(--pixel-text-light)", fontStyle: "italic" }}>
+              <p className="mobile-body-sm" style={{ marginBottom: "12px", color: "var(--pixel-text-light)", fontStyle: "italic", fontSize: "14px" }}>
                 Time estimates adjust based on your focus level
               </p>
 
@@ -565,6 +564,7 @@ export default function Home() {
                 style={{
                   opacity: isLoading ? 0.6 : 1,
                   cursor: isLoading ? "not-allowed" : "pointer",
+                  marginBottom: "8px",
                 }}
               >
                 {isLoading ? (
@@ -585,11 +585,10 @@ export default function Home() {
                 )}
               </button>
 
-              {/* Pro Tip Tutorial - always shows below BREAK IT DOWN */}
+              {/* Pro Tip Tutorial - shows inside hero card */}
               <PinTabTutorial showAfterBreakdown={true} />
             </div>
-            
-            {/* Content Sections Below Widget */}
+            {/* Content Sections Below Hero */}
             <HomeContent />
           </>
         )}

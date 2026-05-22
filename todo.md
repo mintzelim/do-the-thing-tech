@@ -442,3 +442,14 @@
 - [x] Test UI/UX improvements on dev server - Verified all improvements render correctly
 - [x] Verify tool looks clearly interactive - Buttons now orange and unmistakably clickable
 - [x] Verify font changes applied - JetBrains Mono now displaying on buttons and text
+
+
+## Homepage Hero Section Redesign (Twin.so Pattern)
+
+- [x] Move task input box into hero section (above fold, immediately visible)
+- [x] Reduce hero section height to make tool visible without scrolling
+- [ ] Add decorative pixel-art icons around hero (dopamine, focus, time concepts)
+- [ ] Add social proof section (user count or testimonials)
+- [ ] Consider making input box sticky or floating for persistent access
+- [x] Test responsive design on mobile and desktop
+- [x] Verify conversion flow with new hero layout
