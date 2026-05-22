@@ -49,8 +49,9 @@ body {
   font-weight: 500;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-  -webkit-font-smoothing: none;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 #root {
@@ -424,8 +425,8 @@ body {
 }
 
 .mobile-task-desc {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 16px !important;
   color: var(--pixel-text-light);
   margin-bottom: 8px;
   letter-spacing: 0.5px;
@@ -440,8 +441,8 @@ body {
 .mobile-task-time-input {
   width: 60px;
   padding: 8px 10px;
-  font-family: 'VT323', monospace;
-  font-size: 18px;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 14px !important;
   border: 2px solid var(--pixel-border);
   border-radius: 0;
   background: var(--pixel-card-bg);
@@ -451,8 +452,8 @@ body {
 
 .mobile-task-delete {
   padding: 6px 10px;
-  font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12px !important;
   background: #ffebee;
   color: var(--pixel-error);
   border: 2px solid var(--pixel-error);
@@ -482,8 +483,8 @@ body {
 }
 
 .mobile-summary-label {
-  font-family: 'VT323', monospace;
-  font-size: 14px;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 12px !important;
   font-weight: 400;
   color: var(--pixel-text-light);
   margin-bottom: 4px;
@@ -521,8 +522,8 @@ body {
 }
 
 .mobile-success-text {
-  font-family: 'VT323', monospace;
-  font-size: 16px;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 16px !important;
   color: var(--pixel-text);
   letter-spacing: 0.5px;
 }
@@ -812,9 +813,9 @@ body {
 }
 
 .section-content p {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  line-height: 1.6;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
   margin: 0;
   color: var(--pixel-text);
 }
@@ -865,9 +866,9 @@ body {
 }
 
 .step-card p {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  line-height: 1.5;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
   margin: 0;
   color: var(--pixel-text-light);
 }
@@ -885,9 +886,9 @@ body {
 }
 
 .feature-item {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  line-height: 1.5;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
   color: var(--pixel-text);
   padding-left: 16px;
   position: relative;
@@ -924,9 +925,9 @@ body {
 }
 
 .faq-item p {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  line-height: 1.6;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
   margin: 0;
   color: var(--pixel-text-light);
 }
@@ -969,9 +970,9 @@ body {
 }
 
 .blog-link-card p {
-  font-family: 'VT323', monospace;
-  font-size: 20px;
-  line-height: 1.5;
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 16px !important;
+  line-height: 1.5 !important;
   margin: 0;
   color: var(--pixel-text-light);
 }
