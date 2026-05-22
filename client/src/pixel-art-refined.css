@@ -59,6 +59,21 @@ body {
   min-height: 100vh;
 }
 
+/* Custom Pixel-Art Cursor */
+@font-face {
+  font-family: 'pixel-cursor';
+  src: url('data:application/octet-stream;base64,AAACIAAAAhgAAAH4AAAA') format('woff');
+}
+
+/* Pixel-art pointer cursor (8x8 white arrow with black outline) */
+.hero-card,
+.mobile-textarea,
+.mobile-preset-button,
+.mobile-button,
+button {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect x="1" y="1" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="2" y="2" width="2" height="2" fill="black"/><rect x="6" y="1" width="2" height="2" fill="white" stroke="black" stroke-width="1"/><rect x="1" y="6" width="2" height="2" fill="white" stroke="black" stroke-width="1"/></svg>') 0 0, auto;
+}
+
 /* Loading Spinner Animation */
 @keyframes spin {
   from {

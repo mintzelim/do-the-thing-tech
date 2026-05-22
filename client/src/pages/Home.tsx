@@ -418,7 +418,7 @@ export default function Home() {
         {flowState === "input" && (
           <>
             {/* Hero Section with Integrated Task Input */}
-            <div className="mobile-card" id="widget" style={{ marginBottom: "24px" }}>
+            <div className="mobile-card hero-card" id="widget" style={{ marginBottom: "24px" }}>
               <h1 className="mobile-heading-1" style={{ fontSize: "38px", textAlign: "center", marginBottom: "12px" }}>Task Management Built for ADHD Brains</h1>
               <p className="mobile-body" style={{ fontSize: "16px", marginBottom: "20px", lineHeight: "1.5", textAlign: "center" }}>
                 Type any task or brain dump the whole pile.
