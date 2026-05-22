@@ -65,13 +65,13 @@ body {
   src: url('data:application/octet-stream;base64,AAACIAAAAhgAAAH4AAAA') format('woff');
 }
 
-/* Pixel-art pointer cursor (stepped retro arrow) */
+/* Pixel-art pointer cursor */
 .hero-card,
 .mobile-textarea,
 .mobile-preset-button,
 .mobile-button,
 button {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><rect x="4" y="4" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="8" y="8" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="12" y="12" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="16" y="16" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="20" y="20" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="24" y="24" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="4" y="8" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="8" y="12" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="12" y="16" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="16" y="20" width="4" height="4" fill="white" stroke="black" stroke-width="1"/><rect x="20" y="24" width="4" height="4" fill="white" stroke="black" stroke-width="1"/></svg>') 0 0, auto;
+  cursor: url('/manus-storage/vecteezy_cursor-icon-arrow-flat-style-isolated_56419284_a126370a.jpg') 0 0, auto;
 }
 
 /* Loading Spinner Animation */
