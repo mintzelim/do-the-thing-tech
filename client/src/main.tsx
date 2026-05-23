@@ -16,9 +16,19 @@ if (typeof window !== "undefined" && !window.dataLayer) {
   window.dataLayer = [];
 }
 
-// Track initial page view
+// Track initial page view and set dynamic canonical URL
 if (typeof window !== "undefined") {
   trackPageView(window.location.pathname, document.title);
+  
+  // Set dynamic canonical URL to prevent redirect issues with www
+  const canonicalUrl = `https://dothething.tech${window.location.pathname}${window.location.search}`;
+  let canonicalLink = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+  if (!canonicalLink) {
+    canonicalLink = document.createElement('link') as HTMLLinkElement;
+    canonicalLink.rel = 'canonical';
+    document.head.appendChild(canonicalLink);
+  }
+  canonicalLink.href = canonicalUrl;
 }
 
 // Add cache-busting headers to prevent stale assets
