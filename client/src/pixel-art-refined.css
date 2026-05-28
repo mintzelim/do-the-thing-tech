@@ -65,14 +65,7 @@ body {
   src: url('data:application/octet-stream;base64,AAACIAAAAhgAAAH4AAAA') format('woff');
 }
 
-/* Pixel-art pointer cursor */
-.hero-card,
-.mobile-textarea,
-.mobile-preset-button,
-.mobile-button,
-button {
-  cursor: url('/manus-storage/vecteezy_cursor-icon-arrow-flat-style-isolated_56419284_a126370a.jpg') 0 0, auto;
-}
+/* Pixel-art pointer cursor - disabled due to loading issues */
 
 /* Loading Spinner Animation */
 @keyframes spin {
