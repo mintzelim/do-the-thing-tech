@@ -6,6 +6,7 @@ import superjson from "superjson";
 import { initializeStorageVersion } from "@/lib/storageVersion";
 import { trackPageView } from "@/lib/gtm-events";
 import App from "./App";
+import "./styles/theme-variables.css";
 import "./index.css";
 
 // Initialize storage versioning to clear stale state on deployments

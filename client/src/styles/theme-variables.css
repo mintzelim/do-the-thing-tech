@@ -1,0 +1,122 @@
+/* Theme Variables - Pixel vs Professional (Official Clay Design System) */
+/* Based on https://github.com/VoltAgent/awesome-design-md/tree/main/design-md/clay */
+
+/* Default: Pixel Mode */
+:root {
+  /* Pixel Colors */
+  --theme-bg-primary: #f0f0f0;
+  --theme-bg-secondary: #ffffff;
+  --theme-text-primary: #1a1a1a;
+  --theme-text-secondary: #666666;
+  --theme-border: #000000;
+  --theme-border-width: 3px;
+  --theme-border-radius: 0px;
+  --theme-button-primary: #FF7A45;
+  --theme-button-primary-dark: #E85C2A;
+  --theme-button-secondary: #ffffff;
+  --theme-button-secondary-text: #6366f1;
+  --theme-accent: #6366f1;
+  --theme-accent-dark: #4f46e5;
+  --theme-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
+  --theme-shadow-hover: 0 6px 12px rgba(99, 102, 241, 0.15);
+  --theme-font-heading: 'VT323', monospace;
+  --theme-font-body: 'JetBrains Mono', monospace;
+  --theme-spacing-unit: 4px;
+  --theme-spacing-section: 24px;
+  --theme-card-border: 3px solid var(--theme-border);
+  --theme-input-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.1), inset -2px -2px 0 rgba(255, 255, 255, 0.5);
+  --theme-transition: all 0.15s ease;
+}
+
+/* Professional Mode (Official Clay Design System) */
+:root[data-theme="professional"] {
+  /* Clay Colors - Primary */
+  --theme-primary: #0a0a0a;
+  --theme-primary-active: #1f1f1f;
+  --theme-primary-disabled: #e5e5e5;
+  
+  /* Clay Colors - Ink & Text */
+  --theme-ink: #0a0a0a;
+  --theme-body: #3a3a3a;
+  --theme-body-strong: #1a1a1a;
+  --theme-muted: #6a6a6a;
+  --theme-muted-soft: #9a9a9a;
+  
+  /* Clay Colors - Surface */
+  --theme-canvas: #fffaf0;
+  --theme-surface-soft: #faf5e8;
+  --theme-surface-card: #f5f0e0;
+  --theme-surface-strong: #ebe6d6;
+  --theme-surface-dark: #0a1a1a;
+  --theme-surface-dark-elevated: #1a2a2a;
+  
+  /* Clay Colors - Borders */
+  --theme-hairline: #e5e5e5;
+  --theme-hairline-soft: #f0f0f0;
+  
+  /* Clay Colors - Brand Palette (6-color rotation) */
+  --theme-brand-pink: #ff4d8b;
+  --theme-brand-teal: #1a3a3a;
+  --theme-brand-lavender: #b8a4ed;
+  --theme-brand-peach: #ffb084;
+  --theme-brand-ochre: #e8b94a;
+  --theme-brand-mint: #a4d4c5;
+  --theme-brand-coral: #ff6b5a;
+  
+  /* Clay Colors - Semantic */
+  --theme-success: #22c55e;
+  --theme-warning: #f59e0b;
+  --theme-error: #ef4444;
+  --theme-on-primary: #ffffff;
+  --theme-on-dark: #ffffff;
+  --theme-on-dark-soft: #a0a0a0;
+  
+  /* Clay Theme Mappings */
+  --theme-bg-primary: var(--theme-canvas);
+  --theme-bg-secondary: var(--theme-surface-card);
+  --theme-text-primary: var(--theme-ink);
+  --theme-text-secondary: var(--theme-body);
+  --theme-border: var(--theme-hairline);
+  --theme-border-width: 1px;
+  --theme-border-radius: 12px;
+  --theme-button-primary: var(--theme-primary);
+  --theme-button-primary-dark: var(--theme-primary-active);
+  --theme-button-secondary: var(--theme-canvas);
+  --theme-button-secondary-text: var(--theme-ink);
+  --theme-accent: var(--theme-brand-pink);
+  --theme-accent-dark: var(--theme-brand-teal);
+  --theme-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --theme-shadow-hover: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --theme-font-heading: 'Inter', sans-serif;
+  --theme-font-body: 'Inter', sans-serif;
+  --theme-spacing-unit: 8px;
+  --theme-spacing-section: 96px;
+  --theme-card-border: 1px solid var(--theme-border);
+  --theme-input-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  --theme-transition: all 0.2s ease;
+}
+
+/* Apply theme variables to key elements */
+body {
+  background-color: var(--theme-bg-primary);
+  color: var(--theme-text-primary);
+  font-family: var(--theme-font-body);
+  transition: var(--theme-transition);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--theme-font-heading);
+  color: var(--theme-text-primary);
+}
+
+button, [role="button"] {
+  transition: var(--theme-transition);
+}
+
+/* Smooth theme transitions */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Professional Mode: Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');

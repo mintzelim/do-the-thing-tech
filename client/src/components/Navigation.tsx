@@ -1,5 +1,6 @@
 import { useLocation } from "wouter";
 import { useState, useEffect } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export default function Navigation() {
   const [location, navigate] = useLocation();
@@ -72,7 +73,7 @@ export default function Navigation() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-4">
+          <div className="hidden md:flex gap-4 items-center">
             {navItems.map((item) => (
               <button
                 key={item.path}
@@ -98,6 +99,7 @@ export default function Navigation() {
                 CURRENT TASKS
               </button>
             )}
+            <ThemeToggle />
           </div>
 
           {/* Mobile: CURRENT TASKS button (only if running tasks) + Hamburger */}
