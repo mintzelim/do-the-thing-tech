@@ -1,35 +1,7 @@
-/* Theme Variables - Pixel vs Professional (Apple Design System) */
+/* Apple Professional Theme - Complete Implementation from DESIGN.md */
 
-/* Default: Pixel Mode */
-:root {
-  /* Pixel Colors */
-  --theme-bg-primary: #f0f0f0;
-  --theme-bg-secondary: #ffffff;
-  --theme-text-primary: #1a1a1a;
-  --theme-text-secondary: #666666;
-  --theme-border: #000000;
-  --theme-border-width: 3px;
-  --theme-border-radius: 0px;
-  --theme-button-primary: #FF7A45;
-  --theme-button-primary-dark: #E85C2A;
-  --theme-button-secondary: #ffffff;
-  --theme-button-secondary-text: #6366f1;
-  --theme-accent: #6366f1;
-  --theme-accent-dark: #4f46e5;
-  --theme-shadow: 0 4px 0 rgba(0, 0, 0, 0.1);
-  --theme-shadow-hover: 0 6px 12px rgba(99, 102, 241, 0.15);
-  --theme-font-heading: 'VT323', monospace;
-  --theme-font-body: 'JetBrains Mono', monospace;
-  --theme-spacing-unit: 4px;
-  --theme-spacing-section: 24px;
-  --theme-card-border: 3px solid var(--theme-border);
-  --theme-input-shadow: inset 2px 2px 0 rgba(0, 0, 0, 0.1), inset -2px -2px 0 rgba(255, 255, 255, 0.5);
-  --theme-transition: all 0.15s ease;
-}
-
-/* Professional Mode (Apple Design System) */
 :root[data-theme="professional"] {
-  /* ===== APPLE COLORS ===== */
+  /* ===== COLORS ===== */
   --apple-primary: #0066cc;
   --apple-primary-focus: #0071e3;
   --apple-primary-on-dark: #2997ff;
@@ -52,7 +24,7 @@
   --apple-on-primary: #ffffff;
   --apple-on-dark: #ffffff;
 
-  /* ===== APPLE ROUNDED CORNERS ===== */
+  /* ===== ROUNDED CORNERS ===== */
   --apple-rounded-none: 0px;
   --apple-rounded-xs: 5px;
   --apple-rounded-sm: 8px;
@@ -61,7 +33,7 @@
   --apple-rounded-pill: 9999px;
   --apple-rounded-full: 9999px;
 
-  /* ===== APPLE SPACING ===== */
+  /* ===== SPACING ===== */
   --apple-spacing-xxs: 4px;
   --apple-spacing-xs: 8px;
   --apple-spacing-sm: 12px;
@@ -71,61 +43,23 @@
   --apple-spacing-xxl: 48px;
   --apple-spacing-section: 80px;
 
-  /* ===== THEME VARIABLE MAPPINGS (for compatibility with existing CSS) ===== */
+  /* ===== THEME VARIABLES FOR SWITCHING ===== */
   --theme-bg-primary: var(--apple-canvas);
   --theme-bg-secondary: var(--apple-canvas-parchment);
   --theme-text-primary: var(--apple-ink);
   --theme-text-secondary: var(--apple-ink-muted-48);
   --theme-text-muted: var(--apple-body-muted);
   --theme-border: var(--apple-hairline);
-  --theme-border-width: 1px;
-  --theme-border-radius: 11px;
+  --theme-accent: var(--apple-primary);
   --theme-button-primary: var(--apple-primary);
-  --theme-button-primary-dark: var(--apple-primary-focus);
+  --theme-button-primary-text: var(--apple-on-primary);
   --theme-button-secondary: var(--apple-canvas);
   --theme-button-secondary-text: var(--apple-primary);
-  --theme-accent: var(--apple-primary);
-  --theme-accent-dark: var(--apple-primary-focus);
-  --theme-shadow: rgba(0, 0, 0, 0.22) 3px 5px 30px;
-  --theme-shadow-hover: rgba(0, 0, 0, 0.22) 3px 5px 30px;
-  --theme-font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  --theme-font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-  --theme-spacing-unit: 8px;
-  --theme-spacing-section: 80px;
-  --theme-card-border: 1px solid var(--apple-hairline);
-  --theme-input-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-  --theme-transition: all 0.2s ease;
 }
 
-/* Apply theme variables to key elements */
-body {
-  background-color: var(--theme-bg-primary);
-  color: var(--theme-text-primary);
-  font-family: var(--theme-font-body);
-  transition: var(--theme-transition);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--theme-font-heading);
-  color: var(--theme-text-primary);
-}
-
-button, [role="button"] {
-  transition: var(--theme-transition);
-}
-
-/* Smooth theme transitions */
-* {
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
-}
-
-/* Professional Mode: Import Apple system fonts and Inter as fallback */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-/* ===== APPLE TYPOGRAPHY STYLES (Professional Mode Only) ===== */
-
+/* ===== TYPOGRAPHY STYLES ===== */
 :root[data-theme="professional"] .apple-hero-display {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 56px;
   font-weight: 600;
   line-height: 1.07;
@@ -133,7 +67,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-display-lg {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.1;
@@ -141,7 +75,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-display-md {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 34px;
   font-weight: 600;
   line-height: 1.47;
@@ -149,7 +83,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-lead {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 28px;
   font-weight: 400;
   line-height: 1.14;
@@ -157,7 +91,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-lead-airy {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-weight: 300;
   line-height: 1.5;
@@ -165,7 +99,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-tagline {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 21px;
   font-weight: 600;
   line-height: 1.19;
@@ -173,7 +107,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-body-strong {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 600;
   line-height: 1.24;
@@ -181,7 +115,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-body {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.47;
@@ -189,7 +123,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-dense-link {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 2.41;
@@ -197,7 +131,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-caption {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
@@ -205,7 +139,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-caption-strong {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.29;
@@ -213,7 +147,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-button-large {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.0;
@@ -221,7 +155,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-button-utility {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
@@ -229,7 +163,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-fine-print {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.0;
@@ -237,7 +171,7 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-micro-legal {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 1.3;
@@ -245,20 +179,20 @@ button, [role="button"] {
 }
 
 :root[data-theme="professional"] .apple-nav-link {
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.0;
   letter-spacing: -0.12px;
 }
 
-/* ===== APPLE BUTTON COMPONENTS ===== */
+/* ===== BUTTON COMPONENTS ===== */
 
 /* Primary Button: pill shape, blue background, white text */
 :root[data-theme="professional"] .apple-button-primary {
   background-color: var(--apple-primary);
   color: var(--apple-on-primary);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.47;
@@ -282,7 +216,7 @@ button, [role="button"] {
 :root[data-theme="professional"] .apple-button-secondary {
   background-color: var(--apple-canvas);
   color: var(--apple-primary);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.47;
@@ -302,7 +236,7 @@ button, [role="button"] {
 :root[data-theme="professional"] .apple-button-dark-utility {
   background-color: var(--apple-ink);
   color: var(--apple-on-dark);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.29;
@@ -317,7 +251,7 @@ button, [role="button"] {
 :root[data-theme="professional"] .apple-button-pearl-capsule {
   background-color: var(--apple-surface-pearl);
   color: var(--apple-ink-muted-80);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
@@ -332,7 +266,7 @@ button, [role="button"] {
 :root[data-theme="professional"] .apple-button-store-hero {
   background-color: var(--apple-primary);
   color: var(--apple-on-primary);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.0;
@@ -362,7 +296,7 @@ button, [role="button"] {
   justify-content: center;
 }
 
-/* ===== APPLE CARD COMPONENTS ===== */
+/* ===== CARD COMPONENTS ===== */
 
 /* Store Utility Card: lg radius, white background */
 :root[data-theme="professional"] .apple-store-utility-card {
@@ -371,7 +305,7 @@ button, [role="button"] {
   border-radius: var(--apple-rounded-lg);
   padding: 24px;
   border: 1px solid var(--apple-hairline);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 600;
   line-height: 1.24;
@@ -385,7 +319,7 @@ button, [role="button"] {
   border-radius: var(--apple-rounded-pill);
   padding: 12px 16px;
   border: 1px solid var(--apple-hairline);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.43;
@@ -399,7 +333,7 @@ button, [role="button"] {
   border: 1px solid var(--apple-primary);
 }
 
-/* ===== APPLE INPUT COMPONENTS ===== */
+/* ===== INPUT COMPONENTS ===== */
 
 /* Search Input: pill shape */
 :root[data-theme="professional"] .apple-search-input {
@@ -409,7 +343,7 @@ button, [role="button"] {
   padding: 12px 20px;
   height: 44px;
   border: 1px solid var(--apple-hairline);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 1.47;
@@ -422,7 +356,7 @@ button, [role="button"] {
   box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
 
-/* ===== APPLE SECTION TILES ===== */
+/* ===== SECTION TILES ===== */
 
 /* Product Tile Light: full-width, no radius */
 :root[data-theme="professional"] .apple-product-tile-light {
@@ -430,7 +364,7 @@ button, [role="button"] {
   color: var(--apple-ink);
   border-radius: var(--apple-rounded-none);
   padding: var(--apple-spacing-section);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.1;
@@ -442,7 +376,7 @@ button, [role="button"] {
   color: var(--apple-ink);
   border-radius: var(--apple-rounded-none);
   padding: var(--apple-spacing-section);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.1;
@@ -454,13 +388,117 @@ button, [role="button"] {
   color: var(--apple-on-dark);
   border-radius: var(--apple-rounded-none);
   padding: var(--apple-spacing-section);
-  font-family: var(--theme-font-heading);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 40px;
   font-weight: 600;
   line-height: 1.1;
 }
 
-/* ===== APPLE UTILITY CLASSES ===== */
+/* Product Tile Dark 2 */
+:root[data-theme="professional"] .apple-product-tile-dark-2 {
+  background-color: var(--apple-surface-tile-2);
+  color: var(--apple-on-dark);
+  border-radius: var(--apple-rounded-none);
+}
+
+/* Product Tile Dark 3 */
+:root[data-theme="professional"] .apple-product-tile-dark-3 {
+  background-color: var(--apple-surface-tile-3);
+  color: var(--apple-on-dark);
+  border-radius: var(--apple-rounded-none);
+}
+
+/* ===== NAVIGATION ===== */
+
+/* Global Nav */
+:root[data-theme="professional"] .apple-global-nav {
+  background-color: var(--apple-surface-black);
+  color: var(--apple-on-dark);
+  height: 44px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.12px;
+}
+
+/* Sub Nav Frosted */
+:root[data-theme="professional"] .apple-sub-nav-frosted {
+  background-color: var(--apple-canvas-parchment);
+  color: var(--apple-ink);
+  height: 52px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.19;
+  letter-spacing: 0.231px;
+}
+
+/* ===== FLOATING STICKY BAR ===== */
+
+:root[data-theme="professional"] .apple-floating-sticky-bar {
+  background-color: var(--apple-canvas-parchment);
+  color: var(--apple-ink);
+  height: 64px;
+  padding: 12px 32px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.374px;
+}
+
+/* ===== FOOTER ===== */
+
+:root[data-theme="professional"] .apple-footer {
+  background-color: var(--apple-canvas-parchment);
+  color: var(--apple-ink-muted-80);
+  padding: 64px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.12px;
+}
+
+/* ===== LINKS ===== */
+
+:root[data-theme="professional"] .apple-text-link {
+  background-color: transparent;
+  color: var(--apple-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.374px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+:root[data-theme="professional"] .apple-text-link:hover {
+  text-decoration: underline;
+}
+
+:root[data-theme="professional"] .apple-text-link-on-dark {
+  background-color: transparent;
+  color: var(--apple-primary-on-dark);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.47;
+  letter-spacing: -0.374px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* ===== ELEVATION & SHADOWS ===== */
+
+/* Product Image Shadow: the ONE shadow in the system */
+:root[data-theme="professional"] .apple-product-shadow {
+  box-shadow: rgba(0, 0, 0, 0.22) 3px 5px 30px;
+}
+
+/* ===== UTILITY CLASSES ===== */
 
 :root[data-theme="professional"] .apple-text-primary {
   color: var(--apple-ink) !important;
