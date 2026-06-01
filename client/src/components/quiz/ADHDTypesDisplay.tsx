@@ -84,11 +84,11 @@ function CharacterCard({
         />
       </div>
       {/* Text Container - 25% of card height */}
-      <div className="w-full p-6 sm:p-8 space-y-3">
-        <p className="font-['Press_Start_2P'] text-[#585be9] text-sm sm:text-base leading-tight">
+      <div className="w-full p-4 sm:p-6 space-y-2">
+        <p className="font-['Press_Start_2P'] text-[#585be9] text-xs sm:text-sm leading-tight">
           {title}
         </p>
-        <p className="font-['Press_Start_2P'] text-[#21201e] text-sm sm:text-base leading-tight font-bold">
+        <p className="font-['Press_Start_2P'] text-[#21201e] text-xs sm:text-sm leading-tight font-bold">
           {character}
         </p>
       </div>
@@ -98,19 +98,19 @@ function CharacterCard({
 
 export default function ADHDTypesDisplay() {
   return (
-    <section className="bg-[#eeeeee] py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8">
-      <h2 className="font-['Press_Start_2P'] text-[#585be9] text-2xl sm:text-3xl md:text-4xl text-center mb-12 sm:mb-16 lg:mb-20 leading-relaxed uppercase">
+    <section className="bg-[#eeeeee] py-16 sm:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
+      <h2 className="font-['Press_Start_2P'] text-[#585be9] text-2xl sm:text-3xl md:text-4xl text-center mb-8 sm:mb-12 leading-relaxed uppercase">
         The 7 Types
       </h2>
 
-      <p className="font-['Press_Start_2P'] text-[#585be9] text-sm sm:text-base md:text-lg lg:text-xl text-center mb-16 sm:mb-20 lg:mb-24 max-w-4xl mx-auto leading-relaxed px-4">
+      <p className="font-['Press_Start_2P'] text-[#585be9] text-sm sm:text-base md:text-lg lg:text-xl text-center mb-12 sm:mb-16 lg:mb-20 max-w-4xl mx-auto leading-relaxed px-4">
         According to research, there are seven unique ADHD types, each with its own perks and challenges.
       </p>
 
       {/* Grid: 4 cards on top row, 3 cards on bottom row centered */}
       <div className="max-w-7xl mx-auto">
         {/* Top row - 4 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-8 sm:mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {ADHD_TYPES.slice(0, 4).map((type) => (
             <CharacterCard
               key={type.id}
@@ -122,7 +122,7 @@ export default function ADHDTypesDisplay() {
           ))}
         </div>
         {/* Bottom row - 3 cards centered */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
           {ADHD_TYPES.slice(4).map((type) => (
             <CharacterCard
               key={type.id}

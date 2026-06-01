@@ -1,19 +1,19 @@
 export default function WhyTakeQuiz() {
   const features = [
     {
-      icon: '/manus-storage/pasted_file_9U5iTE_image_54e01f5e.png',
+      icon: '🧠',
       title: 'UNDERSTAND YOUR BRAIN',
       description:
         'Learn which of the 7 ADHD types matches your brain pattern and discover your unique strengths.'
     },
     {
-      icon: '/manus-storage/pasted_file_viVLgO_image_17dbb277.png',
+      icon: '🎴',
       title: 'GET YOUR ADHD TYPE CARD',
       description:
         'Receive a beautiful trading card with your ADHD type, character, and personalized stats.'
     },
     {
-      icon: '/manus-storage/pasted_file_tuYWfH_image_eec41347.png',
+      icon: '🕸️',
       title: 'SHARE & CONNECT',
       description:
         'Download your card and share it on TikTok, Instagram, Facebook, and Twitter to connect with others.'
@@ -22,7 +22,7 @@ export default function WhyTakeQuiz() {
 
   return (
     <section
-      className="relative w-full py-24 sm:py-32 lg:py-40 px-4 sm:px-6 lg:px-8"
+      className="relative w-full py-24 px-4 sm:px-6 lg:px-8"
       style={{
         backgroundImage:
           'url(/figma-quiz-assets/why-take-quiz-bg.png)',
@@ -37,21 +37,21 @@ export default function WhyTakeQuiz() {
       <div className="relative z-10 max-w-6xl mx-auto">
         {/* Section Title */}
         <h2
-          className="font-['Press_Start_2P'] text-white text-2xl sm:text-3xl md:text-4xl text-center mb-20 drop-shadow-lg"
+          className="font-['Press_Start_2P'] text-white text-3xl sm:text-4xl md:text-5xl text-center mb-16 drop-shadow-lg"
           style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}
         >
           WHY TAKE THIS QUIZ?
         </h2>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
               className="bg-purple-600 border-4 border-purple-800 p-6 sm:p-8 flex flex-col items-center text-center hover:bg-purple-700 transition-colors"
             >
               {/* Icon */}
-              <img src={feature.icon} alt={feature.title} className="w-16 h-16 sm:w-20 sm:h-20 mb-4 mx-auto" />
+              <div className="text-5xl sm:text-6xl mb-4">{feature.icon}</div>
 
               {/* Title */}
               <h3

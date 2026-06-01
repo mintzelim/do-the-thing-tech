@@ -75,20 +75,7 @@ export default function PinTabTutorial({ showAfterBreakdown = false, alwaysShowO
             {!alwaysShowOnCurrentTasks && (
               <button
                 onClick={handleClose}
-                className="font-vt323 text-sm font-bold transition-all active:translate-x-0.5 active:translate-y-0.5"
-                style={{
-                  background: "var(--pixel-card-bg)",
-                  border: "3px solid",
-                  borderRadius: "0",
-                  borderTopColor: "#ffffff",
-                  borderLeftColor: "#ffffff",
-                  borderRightColor: "#333333",
-                  borderBottomColor: "#333333",
-                  boxShadow: "3px 3px 0 rgba(0, 0, 0, 0.2), inset 1px 1px 0 rgba(255, 255, 255, 0.5), inset -1px -1px 0 rgba(0, 0, 0, 0.1)",
-                  cursor: "pointer",
-                  padding: "8px 16px",
-                  color: "var(--pixel-text)",
-                }}
+                className="px-3 py-1 border-2 border-border bg-background text-foreground hover:bg-accent hover:text-white font-vt323 text-xs transition-colors"
               >
                 GOT IT
               </button>
