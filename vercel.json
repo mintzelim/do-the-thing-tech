@@ -19,17 +19,6 @@
       ],
       "destination": "https://dothething.tech/:path*",
       "permanent": true
-    },
-    {
-      "source": "/:path((?!api).*)*",
-      "has": [
-        {
-          "type": "protocol",
-          "value": "http"
-        }
-      ],
-      "destination": "https://dothething.tech/:path*",
-      "permanent": true
     }
   ]
 }
