@@ -200,6 +200,16 @@
 - [x] Simplify "Who It's For" section copy - remove "specifically" and "designed"
 
 
+## Blog Post #26: ADHD Symptoms in Adults
+
+- [x] Create blog post markdown with proper ID (#26) and schema
+- [x] Generate 5 pixel-art images in consistent style with existing posts
+- [x] Integrate images with CDN URLs in markdown
+- [x] Update blog-posts.json with post #26 metadata
+- [x] Verify blog post displays correctly on blog page
+- [x] Verify blog post displays correctly on individual post page
+- [x] Test all internal links and related posts
+
 ## Blog Post Integration
 
 - [x] Create blog post component structure (BlogPost.tsx) - Already exists
