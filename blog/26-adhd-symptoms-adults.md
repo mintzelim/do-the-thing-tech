@@ -140,7 +140,7 @@ The inattention symptoms listed by [NIMH (2024)](https://www.nimh.nih.gov/health
 
 In practice, inattention in adults looks less like a wandering mind and more like an inability to bridge intention and action. The email gets read and stays unread for days. The person reads the same paragraph 3 times. The item bought specifically to put away somewhere is still on the counter 3 weeks later.
 
-For a deeper look at what these patterns mean for daily function, [how ADHD affects task management](/how-adhd-affects-task-management) connects these symptoms to their neurological roots.
+For a deeper look at what these patterns mean for daily function, [how ADHD affects task management](https://dothething.tech/blog/how-adhd-affects-task-management) connects these symptoms to their neurological roots.
 
 ### Hyperactivity
 
@@ -179,7 +179,7 @@ These are the features that consistently come up in adult lived experience but s
 
 The ADHD brain processes time differently. Rather than experiencing time as a continuous resource, many adults with ADHD describe it as binary: now, and everything else. Deadlines feel abstract until they become imminent.
 
-This is called time blindness, and it's one of the most impairing features of adult ADHD in daily life. [The full guide to time blindness in ADHD](/does-adhd-go-away-with-age) covers both the mechanism and the strategies that actually compensate for it.
+This is called time blindness, and it's one of the most impairing features of adult ADHD in daily life. [The full guide to time blindness in ADHD](https://dothething.tech/blog/does-adhd-go-away) covers both the mechanism and the strategies that actually compensate for it.
 
 ![Time Blindness: The ADHD Brain and Time Perception](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/time-blindness-kxhZKyiLBv7chZ5WjiFA6g.webp)
 
@@ -193,7 +193,7 @@ This includes low frustration tolerance, rapid mood shifts, emotional impulsivit
 
 RSD is an intense, almost immediate emotional response to perceived criticism, rejection, or failure. Adults with ADHD describe it as a full-body mood shift, not a gradual emotional response but an immediate, overwhelming feeling triggered by a look, a tone, a word, or the sense that someone is disappointed.
 
-RSD is not a formal DSM-5 criterion. It is one of the most consistently reported features of adult ADHD in qualitative research and contributes significantly to relationship difficulties, [perfectionism](/adhd-perfectionism-cant-finish-tasks), and avoidance of feedback or evaluation. [The relationship between ADHD and relationships](/adhd-relationships-task-management) covers how RSD shapes connection and conflict at home.
+RSD is not a formal DSM-5 criterion. It is one of the most consistently reported features of adult ADHD in qualitative research and contributes significantly to relationship difficulties, [perfectionism](https://dothething.tech/blog/adhd-perfectionism), and avoidance of feedback or evaluation. [The relationship between ADHD and relationships](https://dothething.tech/blog/adhd-relationships) covers how RSD shapes connection and conflict at home.
 
 ![Rejection Sensitive Dysphoria: The Emotional Spike](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/rejection-sensitivity-2T8weL2kYzSzKrG8CYfyir.webp)
 
@@ -235,7 +235,7 @@ Recognition is the starting point. A clinical assessment is the next step.
 
 The WHO Adult ADHD Self-Report Scale (ASRS), available through [ADDA (2024)](https://add.org/adhd-dsm-5-criteria/), is an 18-item validated self-report tool designed to help you assess whether your symptoms warrant professional evaluation. It doesn't diagnose ADHD, but it gives structured language for a conversation with your doctor.
 
-If you're already diagnosed and looking for practical tools, the evidence-based starting point is [breaking tasks into micro-steps](/breaking-down-big-tasks-adhd), which addresses the executive dysfunction that makes task initiation so consistently difficult. For time blindness specifically, external structure through timers and time-blocking compensates for the absent internal time signal. [DoTheThing](https://www.dothething.tech) does the planning work that executive dysfunction makes hard, with no setup and no login required.
+If you're already diagnosed and looking for practical tools, the evidence-based starting point is [breaking tasks into micro-steps](https://dothething.tech/blog/breaking-down-big-tasks), which addresses the executive dysfunction that makes task initiation so consistently difficult. For time blindness specifically, external structure through timers and time-blocking compensates for the absent internal time signal. [DoTheThing](https://www.dothething.tech) does the planning work that executive dysfunction makes hard, with no setup and no login required.
 
 ---
 
