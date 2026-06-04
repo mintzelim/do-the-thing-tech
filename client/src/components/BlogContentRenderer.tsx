@@ -387,6 +387,33 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
       continue;
     }
 
+    // Images - markdown syntax: ![alt](url)
+    if (line.startsWith('![')) {
+      const imageMatch = line.match(/!\[([^\]]+)\]\(([^)]+)\)/);
+      if (imageMatch) {
+        const [, altText, imageUrl] = imageMatch;
+        elements.push(
+          <img
+            key={`img-${i}`}
+            src={imageUrl}
+            alt={altText}
+            style={{
+              width: '100%',
+              height: 'auto',
+              maxHeight: '500px',
+              objectFit: 'contain',
+              display: 'block',
+              margin: '24px 0',
+              border: '2px solid var(--pixel-border)',
+              borderRadius: '2px'
+            }}
+          />
+        );
+        i++;
+        continue;
+      }
+    }
+
     // Regular paragraph
     elements.push(
       <p key={`p-${i}`} style={{ marginBottom: '16px', lineHeight: '1.8', fontFamily: "'Roboto Mono', monospace", fontSize: '16px', fontWeight: 500, color: 'var(--pixel-text)' }}>

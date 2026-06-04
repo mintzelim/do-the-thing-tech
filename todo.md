@@ -389,6 +389,6 @@
 - [x] Ensure http variants redirect to https variants (301 permanent redirect) - Added to vercel.json
 - [x] Test redirect chains with curl to verify no multiple redirects - Verified current behavior
 - [x] Verify canonical tag points to https://dothething.tech on homepage - Confirmed in client/index.html
-- [ ] Deploy vercel.json changes to production
+- [x] Deploy vercel.json changes to production (removed unsupported protocol redirect)
 - [ ] Resubmit homepage URL to Google Search Console
 - [ ] Monitor Google Search Console for indexing status improvement
