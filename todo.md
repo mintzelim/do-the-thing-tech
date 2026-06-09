@@ -209,6 +209,8 @@
 - [x] Verify blog post displays correctly on blog page
 - [x] Verify blog post displays correctly on individual post page
 - [x] Test all internal links and related posts
+- [x] Fix BlogContentRenderer to render markdown images as <img> tags (added image block handler)
+- [x] Verify all 5 blog post #26 images display correctly with pixel-art styling
 
 ## Blog Post Integration
 
