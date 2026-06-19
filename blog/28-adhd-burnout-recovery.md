@@ -183,7 +183,7 @@ A 2024 study by Porto et al. in *Paidéia* examined 751 university students and 
 
 ![ADHD Burnout vs Regular Burnout Brain Mechanism Comparison](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-burnout-comparison-brain-Leu2GDQRhcNpWZ2oCiekYz.webp)
 
-| | Regular Burnout | ADHD Burnout |
+| Aspect | Regular Burnout | ADHD Burnout |
 |---|---|---|
 | **Primary driver** | Workload, chronic stress | Dopamine dysregulation + EF overload |
 | **Onset** | Gradual, after sustained pressure | Can be sudden after hyperfocus crash |

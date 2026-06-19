@@ -320,8 +320,11 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
     if (line.includes('|')) {
       const tableRows: string[][] = [];
       while (i < lines.length && lines[i].includes('|')) {
-        const cells = lines[i].split('|').map(cell => cell.trim()).filter(cell => cell);
-        tableRows.push(cells);
+        const cells = lines[i].split('|').map(cell => cell.trim()).filter(cell => cell.length > 0);
+        // Skip separator rows (rows with only dashes)
+        if (cells.length > 0 && !cells.every(cell => /^-+$/.test(cell))) {
+          tableRows.push(cells);
+        }
         i++;
       }
       
