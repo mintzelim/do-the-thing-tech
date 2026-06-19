@@ -159,7 +159,7 @@ Both happen in seconds. Neither is rational.
 
 **What helps:** Naming it helps. Just knowing RSD exists reframes the experience from "I'm broken" to "this is a known ADHD trait." Some clinicians prescribe alpha-2 agonists like guanfacine. Dodson describes them as putting on "emotional armor." Triggers still happen, but they bounce off instead of piercing.
 
-RSD is closely tied to perfectionism — [read more about ADHD and perfectionism here](https://dothething.tech/blog/adhd-perfectionism).
+RSD is closely tied to perfectionism — [read more about ADHD and perfectionism here](/blog/adhd-perfectionism).
 
 ---
 
@@ -181,7 +181,7 @@ A 2022 meta-analysis published in *Research on Child and Adolescent Psychopathol
 
 **What helps:** External clocks everywhere. Analogue clocks (seeing the hands move helps). Transparent timers like Time Timer. And counterintuitively, reducing shame around lateness. Shame makes time blindness worse because it floods your system, which amplifies the executive dysfunction.
 
-For a deeper dive, read our full guide on [time blindness in ADHD and why you're always late](https://dothething.tech/blog/time-blindness-in-adhd).
+For a deeper dive, read our full guide on [time blindness in ADHD and why you're always late](/blog/time-blindness-in-adhd).
 
 ---
 
@@ -206,7 +206,7 @@ The strongest difference was in **auditory processing**. Soft, repetitive sounds
 
 **What helps:** Noise-cancelling headphones. Loops earbuds (they reduce volume without blocking it entirely). Permission to leave loud spaces. White noise or brown noise. You're not being dramatic. Your brain genuinely processes sound differently.
 
-Here's [how sensory sensitivity affects your daily environment and task management](https://dothething.tech/blog/how-adhd-affects-task-management).
+Here's [how sensory sensitivity affects your daily environment and task management](/blog/how-adhd-affects-task-management).
 
 ---
 
@@ -227,9 +227,9 @@ This happens because ADHD brains struggle with **initiation**. That's the execut
 - External accountability. Body doubling, a friend on speaker, a public deadline.
 - Breaking the task down until the first step is laughably small. "Open the document" is a step. "Open the document" isn't silly. It's surgical.
 
-Learning the difference is crucial: [executive dysfunction vs. task paralysis](https://dothething.tech/blog/executive-dysfunction-vs-task-paralysis).
+Learning the difference is crucial: [executive dysfunction vs. task paralysis](/blog/executive-dysfunction-vs-task-paralysis).
 
-> Breaking down tasks is the single most effective non-medication strategy for task paralysis. See how [AI can break down tasks for ADHD brains](https://dothething.tech/blog/ai-that-breaks-down-tasks-adhd).
+> Breaking down tasks is the single most effective non-medication strategy for task paralysis. See how [AI can break down tasks for ADHD brains](/blog/ai-that-breaks-down-tasks-adhd).
 
 ---
 
@@ -298,7 +298,7 @@ Your body produces melatonin later than it should. You can't fall asleep at 11 P
 
 **What helps:** Melatonin taken 1-2 hours before your goal bedtime (not at bedtime). Morning light exposure: 10-15 minutes of sunlight within 30 minutes of waking. Consistent wake time (even weekends). And knowing that your sleep schedule isn't laziness—it's a biological reality that needs structural accommodation.
 
-Here's more on [how poor sleep makes executive dysfunction worse](https://dothething.tech/blog/adhd-sleep).
+Here's more on [how poor sleep makes executive dysfunction worse](/blog/adhd-sleep).
 
 ---
 
@@ -317,7 +317,7 @@ The ADHD brain takes in more information than it can filter and generates more i
 
 > Understanding this reframes everything. You don't have seven broken things. You have one brain that processes the world differently. That's not a consolation. It's the truth.
 
-For a deeper look at why your brain works this way, read [the neuroscience behind task avoidance](https://dothething.tech/blog/neuroscience-task-avoidance).
+For a deeper look at why your brain works this way, read [the neuroscience behind task avoidance](/blog/neuroscience-task-avoidance).
 
 ---
 
@@ -343,7 +343,7 @@ Once that's locked in, here's what research supports:
 - Coaching focused on executive function, not motivation
 - Building a life that works with your brain instead of against it
 
-For a curated list, here's [the ADHD tools stack that actually works in 2026](https://dothething.tech/blog/best-adhd-tools-2026).
+For a curated list, here's [the ADHD tools stack that actually works in 2026](/blog/best-adhd-tools-2026).
 
 ---
 

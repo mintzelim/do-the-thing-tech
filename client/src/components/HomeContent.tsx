@@ -150,9 +150,27 @@ export default function HomeContent() {
         </div>
       </section>
 
-      {/* SECTION 7: BLOG LINKS */}
+      {/* SECTION 6.5: MEET THE CREATOR */}
       <section className="content-section">
-        <h2 className="section-heading">Read More About ADHD and Task Management</h2>
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>Built by Someone Who Gets It</h2>
+        <div className="section-content" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
+          <p style={{ fontSize: '16px', marginBottom: '16px' }}>
+            DoTheThing was built by someone with personal experience managing ADHD. After years of struggling with task paralysis and time blindness, I realized existing productivity tools were designed for neurotypical brains.
+          </p>
+          <p style={{ fontSize: '16px', marginBottom: '16px' }}>
+            I spent months researching ADHD neuroscience, interviewing 50+ people with ADHD, and testing different approaches. The result: a tool that actually works for how ADHD brains function.
+          </p>
+          <Link href="/about" className="cta-button" style={{ display: 'inline-block', padding: '10px 24px', backgroundColor: 'var(--pixel-accent)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>
+            LEARN MORE ABOUT THE CREATOR
+          </Link>
+        </div>
+      </section>
+
+      {/* SECTION 7: FEATURED POSTS */}
+      <section className="content-section">
+        <h2 className="section-heading" style={{ textAlign: 'center' }}>Featured Posts: ADHD & Productivity</h2>
+        <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '32px' }}>Hand-picked articles to help you understand ADHD and get things done</p>
+        
         <div className="blog-links-grid">
           <Link href="/blog/how-adhd-affects-task-management" className="blog-link-card">
             <h3>How ADHD Affects Task Management</h3>
@@ -173,6 +191,12 @@ export default function HomeContent() {
           <Link href="/blog/best-tools-for-adhd-task-management" className="blog-link-card">
             <h3>Free Tools for ADHD Task Management in 2026</h3>
             <p>The best free tools to stack alongside DoTheThing.</p>
+          </Link>
+        </div>
+        
+        <div style={{ textAlign: 'center', marginTop: '32px' }}>
+          <Link href="/blog" className="cta-button" style={{ display: 'inline-block', padding: '10px 24px', backgroundColor: 'var(--pixel-border)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>
+            VIEW ALL POSTS
           </Link>
         </div>
       </section>

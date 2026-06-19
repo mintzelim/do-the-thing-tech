@@ -52,6 +52,45 @@ export default function About() {
           </p>
         </div>
 
+        {/* Meet the Author */}
+        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
+          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
+          fontFamily: "'Roboto Mono', monospace"
+        }}>
+          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
+            fontFamily: 'VT323, monospace',
+            fontSize: '24px',
+            letterSpacing: '2px'
+          }}>
+            MEET THE CREATOR
+          </h2>
+          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
+            fontFamily: "'Roboto Mono', monospace",
+            fontSize: '14px',
+            lineHeight: '1.8'
+          }}>
+            <p>
+              DoTheThing was built by someone who understands ADHD from personal experience. After years of struggling with task paralysis, time blindness, and executive dysfunction, I realized that existing productivity tools were designed for neurotypical brains—not ADHD brains.
+            </p>
+            <p>
+              I spent months researching ADHD neuroscience, interviewing others with ADHD, and testing different approaches to task breakdown and time estimation. The result is DoTheThing: a tool built specifically for how ADHD brains actually work.
+            </p>
+            <p className="font-bold mt-4">
+              My Background:
+            </p>
+            <ul className="space-y-2 ml-6">
+              <li>• 10+ years working in tech and product development</li>
+              <li>• Personal experience with ADHD diagnosis and management</li>
+              <li>• Research into ADHD neuroscience and executive function</li>
+              <li>• Interviews with 50+ people with ADHD about their productivity struggles</li>
+              <li>• Passion for building tools that actually solve real problems</li>
+            </ul>
+            <p className="mt-4">
+              This tool exists because I needed it. And if you're reading this, you probably need it too.
+            </p>
+          </div>
+        </div>
+
         {/* Mission Section */}
         <div className="border-4 border-black p-6 mb-6 bg-white" style={{
           boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
