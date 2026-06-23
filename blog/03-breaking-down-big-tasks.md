@@ -1,17 +1,13 @@
 ---
 id: '3'
 title: 'Breaking Down Big Tasks: A Guide for ADHD Brains'
-description: >-
-  Learn how to break big tasks into ADHD-friendly micro-steps that actually get
-  done. Three science-backed methods, step-by-step examples, and how DoTheThing
-  automates the whole process.
 slug: /breaking-down-big-tasks-adhd
 excerpt: >-
   [Task paralysis](https://add.org/adhd-paralysis/) is a brain problem, not a willpower problem. Here's how to fix
   it with micro-steps, realistic time estimates, and AI that does the breakdown
   for you.
 date: "April 05, 2026"
-readTime: 8 min read
+readTime: 6 min read
 category: Productivity
 primaryEntity: Task Breakdown ADHD
 secondaryEntities:
@@ -55,101 +51,67 @@ relatedPosts:
 faq:
   - q: Why is breaking down tasks so hard for ADHD brains?
     a: >-
-      Breaking tasks down requires planning, sequencing, and prioritising —
-      exactly the executive functions that ADHD disrupts. The prefrontal cortex,
-      which handles these jobs, operates with reduced dopamine signalling in
-      ADHD brains. So the difficulty isn't laziness. It's a specific
-      neurological gap in the brain's management system. Removing the breakdown
-      step entirely — by using AI to do it for you — is one of the most direct
-      ways around this.
+      It requires planning, sequencing, and prioritising, exactly the executive
+      functions that ADHD disrupts. The prefrontal cortex operates with reduced
+      dopamine signalling in ADHD brains. The difficulty isn't laziness; it's a
+      specific neurological gap. Removing the breakdown step entirely (using AI
+      to do it) is one of the most direct ways around this.
   - q: What is the 2-minute rule for ADHD task breakdown?
     a: >-
-      The 2-minute rule means breaking a task into steps that each take 2 to 5
-      minutes to complete. Smaller steps reduce the cognitive load of starting.
-      Each completed step delivers a small dopamine hit, which makes it easier
-      to move to the next one. If a step takes longer than 5 minutes, break it
-      down further until you get to something your brain can start without
+      Break a task into steps that each take 2 to 5 minutes. Smaller steps
+      reduce the cognitive load of starting. Each completed step delivers a
+      small dopamine hit, making the next one easier. If a step takes longer
+      than 5 minutes, break it down further until your brain can start without
       friction.
   - q: What is the reverse breakdown method for ADHD?
     a: >-
-      The reverse breakdown starts at the finished outcome and works backward to
-      the first action. You ask: what needs to exist for this to be done? Then:
-      what needs to exist for that? You keep asking until you reach a step so
-      small it requires no planning to begin. This method is useful for complex,
-      multi-stage projects where the path forward isn't obvious.
+      Start at the finished outcome and work backward to the first action. Ask:
+      "What needs to exist for this to be done? What needs to exist before
+      that?" Keep asking until you reach a step so small it requires no planning
+      to begin. Useful for complex, multi-stage projects.
   - q: What is a dependency map and how does it help with ADHD?
     a: >-
       A dependency map identifies which steps must happen before others can
-      start, and which steps can run in parallel. It prevents a common ADHD
-      trap: starting a step that turns out to be blocked by something else,
-      stalling momentum and triggering overwhelm. Mapping dependencies first
-      gives your brain a clear, unambiguous sequence to follow.
+      start, and which can run in parallel. It prevents the common ADHD trap of
+      starting a blocked step, stalling momentum and triggering overwhelm.
   - q: How does DoTheThing help ADHD brains break down tasks?
     a: >-
       DoTheThing uses AI to break any task into micro-steps with realistic,
-      time-buffered estimates. You type in the task, select your focus level
+      time-buffered estimates. Type the task, select your focus level
       (hyperfocused, normal, or distracted), and choose a breakdown size (Tiny
-      Steps, Balanced, or Big Milestones). The AI handles the planning entirely,
-      removing the hardest part of task management for ADHD brains. No login
-      required — start at www.DoTheThing.tech.
+      Steps, Balanced, or Big Milestones). The AI handles the planning entirely.
+      Free at www.DoTheThing.tech.
   - q: What are micro-steps and why do they work for ADHD?
     a: >-
-      Micro-steps are small, specific, action-oriented tasks that take 2 to 15
-      minutes each. They work for ADHD brains because they eliminate ambiguity.
-      Your brain knows exactly what to do next without having to generate a plan
-      first. Each completed step provides a dopamine reward that builds momentum
-      for the next one. The research is consistent: smaller steps reduce
-      cognitive load and improve task initiation in people with executive
-      dysfunction.
-faqItems:
-  - question: Why is breaking down tasks important for ADHD?
-    answer: >-
-      Breaking tasks into smaller steps reduces overwhelm and makes it easier to
-      start. ADHD brains work better with clear, specific next steps.
-  - question: How small should I break down tasks?
-    answer: >-
-      Break tasks into steps that take 5-30 minutes. If a step feels
-      overwhelming, break it down further.
-  - question: What if I still can't start after breaking down a task?
-    answer: >-
-      Try the "two-minute rule" - commit to just 2 minutes. Often, starting is
-      the hardest part, and momentum builds from there.
-  - question: How do I remember all the broken-down steps?
-    answer: >-
-      Write them down in a tool like Todoist or Notion. Visual reminders help
-      ADHD brains stay on track.
+      Micro-steps are small, specific, action-oriented tasks taking 2 to 15
+      minutes each. They work because they eliminate ambiguity. Your brain knows
+      exactly what to do next without generating a plan first. Each completed
+      step provides a dopamine reward that builds momentum. Research is
+      consistent: smaller steps reduce cognitive load and improve task
+      initiation in people with executive dysfunction.
 ---
 
 # Breaking Down Big Tasks: A Guide for ADHD Brains
 
-Three methods for breaking tasks into micro-steps your ADHD brain can actually start — and how to skip the breakdown entirely on days your brain won't cooperate.
+## Direct Answer
+
+Micro-steps remove the initiation barrier. The first action is so small (under 90 seconds) that your brain's threat-detection system doesn't activate. Three methods: the 2-Minute Rule for getting unstuck, the Reverse Breakdown for complex projects, and the Dependency Map for multi-stage work.
 
 For most people, "just get started" is irritating advice. For ADHD brains, it's useless. Getting started is exactly the part that doesn't work.
 
-Breaking down big tasks with ADHD is harder than it sounds — because the breakdown itself requires planning, sequencing, and prioritising, which are precisely the executive functions ADHD disrupts. This guide covers three methods that remove that barrier, plus how to skip the breakdown entirely when your brain isn't up for it.
+Breaking down big tasks with ADHD is harder than it sounds because the breakdown itself requires planning, sequencing, and prioritising, which are precisely the executive functions ADHD disrupts. This guide covers three methods that remove that barrier, plus how to skip the breakdown entirely when your brain isn't up for it.
+
+**Related:** Understand [why breaking down tasks is so hard](post:1) from the neuroscience perspective. Learn the difference between [task paralysis and executive dysfunction](post:4) to pick the right strategy. For tools, see [top free ADHD apps](post:5). Also explore [ADHD medication strategies](post:6) for planning around your peak focus window.
 
 ---
 
-## Direct Answer
-
-Micro-steps remove the initiation barrier. The first action is so small (under 90 seconds) that your brain's threat-detection system doesn't activate.
-
-## How to Break Down Any Task
-
-- Identify the actual first step (not the project overview)
-- Make each step small enough to complete in under 90 seconds
-- Write each step as a specific action, not a vague goal
-- Add realistic time estimates with 20-30% ADHD buffer
-- Number the steps so execution requires zero decision-making
-
-
 ## TL;DR
 
-- **[Task paralysis](https://add.org/adhd-paralysis/) is a brain problem, not a character flaw.** The ADHD prefrontal cortex struggles specifically with planning, sequencing, and initiation — the exact skills task breakdown requires.
+- **[Task paralysis](https://add.org/adhd-paralysis/) is a brain problem, not a character flaw.** The ADHD prefrontal cortex struggles specifically with planning, sequencing, and initiation.
 - **Micro-steps work because they remove ambiguity.** A step small enough to be obvious needs no planning to start.
-- **Three methods cover most situations:** The 2-Minute Rule for getting unstuck, the Reverse Breakdown for complex projects, and the Dependency Map for multi-stage work.
+- **Three methods cover most situations:** The 2-Minute Rule, the Reverse Breakdown, and the Dependency Map.
 - **Each completed step delivers a dopamine hit** that makes starting the next one easier.
-- **DoTheThing automates the breakdown entirely** — type your task, pick your focus level, and the AI returns ready-to-go micro-steps with time estimates. Free, no login. [www.DoTheThing.tech](https://www.dothething.tech)
+- **DoTheThing automates the breakdown entirely** -- type your task, pick your focus level, and the AI returns ready-to-go micro-steps with time estimates. Free, no login.
 
 ---
 
@@ -157,25 +119,11 @@ Micro-steps remove the initiation barrier. The first action is so small (under 9
 
 A task like "write the report" feels impossible because it isn't a task. It's a category. Your brain needs a specific action to begin.
 
-[Research from PMC on the neurobiology of ADHD](https://pmc.ncbi.nlm.nih.gov/articles/PMC2894421/) identifies the prefrontal cortex as the region most responsible for ADHD's core difficulties. It handles planning, attention regulation, and task initiation — and it runs on dopamine. In ADHD brains, that dopamine supply is reduced, which means the prefrontal cortex has less fuel for exactly the jobs task management requires.
+[Research from PMC on the neurobiology of ADHD](https://pmc.ncbi.nlm.nih.gov/articles/PMC2894421/) identifies the prefrontal cortex as the region most responsible for ADHD's core difficulties. It handles planning, attention regulation, and task initiation, and it runs on dopamine. In ADHD brains, that dopamine supply is reduced.
 
-This is why task paralysis hits before you even start. [Executive dysfunction](https://my.clevelandclinic.org/health/symptoms/23224-executive-dysfunction) is the umbrella term for ADHD's impact on the brain's management system. [ADDA describes ADHD paralysis](https://add.org/adhd-paralysis/) as an overload response — too much information, too many open questions, too few clear next steps — and notes the shutdown is often outside conscious control.
+The fix isn't more motivation. It's removing the planning requirement from the start of each action.
 
-**Related:** Learn the difference between [task paralysis and executive dysfunction](post:4) to understand which strategies work best for your brain.
-
-The fix isn't more motivation. It's removing the planning requirement from the start of each action. When your first step is specific enough that you don't need to think about how to do it, your brain can begin.
-
-[CHADD](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) confirms the most effective ADHD to-do systems work this way: each item is a single, concrete, completable action, not a project or category. That principle is the foundation of everything below.
-
----
-
-## What You'll Get From This Guide
-
-By the end of this post you'll have three distinct breakdown methods, a clear rule for choosing between them, and a faster alternative when manual breakdown isn't realistic.
-
-These methods work for any task. The examples use work and study tasks because that's where ADHD paralysis tends to hit hardest, but the same process applies to household tasks, creative projects, personal admin, and anything else that feels too big to start.
-
-**After breakdown:** Once your tasks are broken down, you need a system to manage them. Check out [free tools for ADHD task management](post:15) to find the right fit.
+[CHADD](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) confirms the most effective ADHD to-do systems work this way: each item is a single, concrete, completable action, not a project or category. This aligns with [how the ADHD brain processes tasks](post:1) at a neurological level.
 
 ---
 
@@ -183,15 +131,9 @@ These methods work for any task. The examples use work and study tasks because t
 
 Micro-steps solve two things at once: cognitive load and dopamine.
 
-Cognitive load is the mental effort required to figure out what to do before you can do anything. A vague task like "revamp the website" forces your brain to plan, organise, prioritise, and sequence before a single action happens. For an ADHD brain with reduced prefrontal resources, that upfront cost is often enough to trigger a freeze.
+Cognitive load is the mental effort required to figure out what to do before you can do anything. Micro-steps move the planning to setup time. "Open the homepage and screenshot the current version" requires no planning.
 
-Micro-steps move the planning to setup time, so each action during execution is self-explanatory. "Open the homepage and screenshot the current version" requires no planning. You start immediately.
-
-The dopamine side matters too. [Research cited by the Sachs Center](https://sachscenter.com/adhd-strategies-for-adults/) confirms that checking off completed micro-steps provides a small dopamine reward that sustains momentum. Each tick is a tiny win. [Klarity Health notes](https://www.helloklarity.com/post/breaking-the-first-step-barrier-how-micro-steps-can-help-adhd-brains-overcome-task-initiation-problems/) that once a person with ADHD begins a task, momentum carries them forward — the hard part is always the first step.
-
-Micro-steps also reduce the drain on working memory — the brain's short-term holding space for active information. ADHD reduces working memory capacity. Keeping a complex, multi-step plan in your head while executing is genuinely harder because the plan competes with the doing. When steps are written down and broken small enough to be self-explanatory, you free working memory to focus entirely on what's in front of you.
-
-A global meta-analysis in the Journal of Global Health found [an estimated 366 million adults worldwide live with ADHD symptoms](https://pmc.ncbi.nlm.nih.gov/articles/PMC7916320/). Most manage work, study, and daily life with executive function systems that weren't built for how productivity is typically taught. Micro-steps are one of the few approaches designed to work with that reality.
+The dopamine side matters too. [Research cited by the Sachs Center](https://sachscenter.com/adhd-strategies-for-adults/) confirms that checking off completed micro-steps provides a small dopamine reward that sustains momentum. [Klarity Health notes](https://www.helloklarity.com/post/breaking-the-first-step-barrier-how-micro-steps-can-help-adhd-brains-overcome-task-initiation-problems/) that once a person with ADHD begins a task, momentum carries them forward. This is why tools like [DoTheThing](https://www.dothething.tech) and [other ADHD apps](post:5) focus on removing the initiation barrier entirely.
 
 ---
 
@@ -199,146 +141,70 @@ A global meta-analysis in the Journal of Global Health found [an estimated 366 m
 
 ### Method 1: The 2-Minute Rule
 
-**Best for:** Getting unstuck on a single task. Overcoming initiation resistance.
+Break a task into steps that each take 2 to 5 minutes. A 2-minute step feels embarrassingly easy to begin. That's the point. The ADHD brain isn't avoiding the task because it's hard. It's freezing because the first action isn't clear.
 
-The 2-Minute Rule means breaking a task into the smallest possible steps until each one takes 2 to 5 minutes. Not 20. Not "about half an hour." Two to five.
-
-The target step size matters. A 2-minute step feels almost embarrassingly easy to begin. That's the point. The ADHD brain isn't avoiding the task because it's hard. It's freezing because the first action isn't clear enough to initiate.
-
-**How to apply it:**
-
-Write your stuck task at the top of a blank page. List every action you can think of — don't worry about order yet. Then look at each action and ask: "Could I start this in the next 2 minutes without preparing anything?" If the answer is no, break it down further.
-
-A worked example:
-
-| Original task | After 2-Minute Rule |
+| Original | After 2-Minute Rule |
 |---|---|
-| Write project proposal | Open a new doc and type the project name as the title (2 min) |
-| | Write one sentence: what problem does this project solve? (4 min) |
-| | List 3 things the finished project will deliver (5 min) |
-| | Write a rough timeline: start, midpoint, end (3 min) |
-| | Paste in any relevant notes or emails from the last week (5 min) |
-
-**Checkpoint:** You've started Step 1. That's the whole job.
-
-**Common failure:** Steps that still feel vague after the breakdown. Fix: check whether the step starts with a verb. "Draft the introduction" is vague. "Open the doc and type one sentence about why this matters" is actionable.
+| Write project proposal | Open doc, type project name (2 min) |
+| | Write one sentence: what problem does this solve? (4 min) |
+| | List 3 deliverables (5 min) |
+| | Write rough timeline (3 min) |
+| | Paste relevant notes (5 min) |
 
 ---
 
 ### Method 2: The Reverse Breakdown
 
-**Best for:** Complex multi-step tasks where the path forward isn't obvious.
-
-The Reverse Breakdown starts at the end and works backward. Instead of "what do I do first?", ask "what does done look like?" Then: "what needs to exist before that can happen?" Repeat until you reach the first possible action.
-
-This method bypasses the most cognitively demanding part of planning: choosing a starting point without clear structure. When you work backward, each step reveals the one before it. The sequence builds itself.
-
-**How to apply it:**
-
-1. Write the finished outcome in one sentence. "Email the report to the client" is better than "finish the report."
-2. Ask: what needs to be done before that can happen? Write those steps.
-3. For each of those steps, ask the same question.
-4. Stop when you reach a step you can start immediately without doing anything else first.
-
-A worked example for a university essay:
+Start at the end and work backward. Ask "what needs to exist before this can happen?" until you reach a step you can start immediately.
 
 | Step | Working backward |
 |---|---|
-| Final outcome | Submit 2,500-word essay on urban water systems via the portal |
-| One step before | Proofread and format the final draft |
-| One step before | Write the conclusion |
-| One step before | Write body sections (one per source) |
-| One step before | Create a simple table mapping each source to a body section |
-| One step before | Read each paper: abstract and conclusion only, write one bullet point |
-| One step before | Search database, save 5 relevant papers |
-| One step before | List 3 search keywords from the essay question |
+| Final outcome | Submit 2,500-word essay |
+| One step before | Proofread and format |
+| One step before | Write conclusion |
+| ... | ... |
 | First possible action | Read the essay question and write your argument in one sentence |
-
-That last line is where you start. Not "research the topic." Not "read about urban water systems." One sentence about your argument. Your brain can do that right now.
-
-**Checkpoint:** You have a first step that starts with a verb and requires no preparation.
-
-**Common failure:** Starting from a vague outcome. "Finish the project" produces a vague chain. "Send the client the completed design files via email" produces a specific one. Be precise about the end state.
 
 ---
 
 ### Method 3: The Dependency Map
 
-**Best for:** Multi-stage projects with parallel workstreams, or tasks that keep stalling because a step turns out to be blocked.
-
-A Dependency Map identifies which steps must happen before others can start, and which can happen simultaneously. This prevents a common ADHD trap: starting with momentum, then discovering mid-step it's blocked by something else, triggering frustration and derailing the session.
-
-**How to apply it:**
-
-1. List all the steps without worrying about order.
-2. For each step, ask: "Can I do this right now, or does something else need to happen first?"
-3. Mark each step as: **Ready** (can start immediately), **Blocked** (needs something else first), or **Parallel** (can run alongside other steps).
-4. Start all Ready steps. Line up the Parallel steps. Identify what's blocking the Blocked steps and turn those blockers into new Ready steps.
-
-A worked example for a project launch:
+Identify which steps must happen before others can start. Mark each as **Ready**, **Blocked**, or **Parallel**. Start Ready steps. Find what blocks the Blocked steps.
 
 | Step | Status | Depends on |
 |---|---|---|
-| Write the launch email | Blocked | Final product copy confirmed |
+| Write launch email | Blocked | Product copy confirmed |
 | Confirm product copy | Ready | Nothing |
-| Build the landing page | Parallel | Can run alongside copy confirmation |
-| Set up email list segment | Ready | Nothing |
+| Build landing page | Parallel | Can run alongside |
 | Schedule social posts | Blocked | Landing page URL |
-| Draft social post copy | Parallel | Can run alongside page build |
-
-Two Ready steps and two Parallel workstreams emerge immediately. The Blocked steps now have specific triggers. Nothing is vague.
-
-**Checkpoint:** Every step has a clear status. All Ready steps have been started or scheduled.
-
-**Common failure:** Trying to build the full dependency map before starting anything. If you have more than 10 steps, map the first 5, start the Ready ones, then map the next 5. Don't let the planning session replace the doing.
 
 ---
 
-## Traditional vs. DoTheThing: What Changes
+## Traditional vs. DoTheThing
 
-| Aspect | Traditional approach | DoTheThing |
+| Aspect | Traditional | DoTheThing |
 |:---|:---|:---|
-| Task size | Large steps that still require planning to begin | Micro-steps sized for immediate action |
-| Time estimates | Underestimated, no buffer for ADHD time blindness | Realistic estimates with a 20-30% ADHD buffer built in |
-| Breakdown process | Manual, cognitively expensive, often where the freeze happens | AI generates the full breakdown from a single input |
-| Focus level adjustment | Static plan that doesn't account for your state today | Estimates adjust based on whether you're hyperfocused, normal, or distracted |
-| Setup time | Significant, often enough to trigger avoidance | None. No login. Start immediately. |
+| Task size | Large steps | Micro-steps for immediate action |
+| Time estimates | No ADHD buffer | 20-30% buffer built in |
+| Breakdown | Manual, cognitively expensive | AI from one input |
+| Setup time | Significant | None, no login, free |
 
 ---
 
 ## Common Errors and Fixes
 
-### "My breakdown still feels overwhelming."
-
-**Cause:** Steps are still too large. A step that takes 20+ minutes is too big for task initiation.
-**Fix:** Apply the 2-Minute Rule. Break each step down until each takes 5 minutes or less.
-
-### "I don't know where to begin even after breaking it down."
-
-**Cause:** The first step still requires a decision before you can act.
-**Fix:** Check that your first step starts with a verb and names a specific object. "Research the topic" still needs a decision. "Search Google for 'urban water systems WHO report 2023'" doesn't.
-
-### "I started but lost track of where I was."
-
-**Cause:** Steps weren't written down. You're tracking them mentally, which adds cognitive load.
-**Fix:** Write the breakdown down. A text file, a notes app, a piece of paper — externalise it. Your brain's job is to do the steps, not remember them.
-
-### "I broke it down but still can't start."
-
-**Cause:** Often this is time blindness — the genuine difficulty perceiving how long tasks will take. An unknown duration feels enormous.
-**Fix:** Write a time estimate next to each step. Add them up. Seeing that the total is 45 minutes rather than "all day" often breaks the paralysis. Add a 20-30% buffer for realistic ADHD pacing.
+| Problem | Cause | Fix |
+|---|---|---|
+| Breakdown feels overwhelming | Steps too large | 5 min or less per step |
+| Can't find first step | Needs a decision | Start with verb + specific object |
+| Lost track mid-task | Steps not written down | Externalise. Paper, notes app. |
+| Broke down but still stuck | Unknown duration | Write time estimates. Add them up. |
 
 ---
 
-## Next Steps: Using DoTheThing to Skip the Manual Breakdown
+## Next Steps: Using DoTheThing
 
-Breaking tasks down manually takes cognitive effort. On a good focus day, these methods work. On a distracted day, the breakdown itself becomes a barrier.
-
-[DoTheThing](https://www.dothething.tech) removes that barrier. Type the task, pick your focus level, choose a breakdown size, and the AI returns numbered micro-steps with ADHD-buffered time estimates. The whole process takes under a minute.
-
-The three breakdown sizes map to the methods above. Tiny Steps gives you the smallest possible first action — the same outcome as the 2-Minute Rule. Balanced is the everyday default. Big Milestones works like a Dependency Map overview.
-
-No login. No setup. Free. Go to [www.DoTheThing.tech](https://www.dothething.tech) and type the task that's been sitting on your list the longest.
+[DoTheThing](https://www.dothething.tech) removes the barrier. Type the task, pick your focus level, choose a breakdown size, and get numbered micro-steps with ADHD-buffered time estimates. Under a minute. Free.
 
 ---
 
@@ -346,24 +212,28 @@ No login. No setup. Free. Go to [www.DoTheThing.tech](https://www.dothething.tec
 
 ### Why is breaking down tasks so hard for ADHD brains?
 
-Breaking tasks down requires planning, sequencing, and prioritising — exactly the executive functions that ADHD disrupts. The prefrontal cortex, which handles these jobs, operates with reduced dopamine signalling in ADHD brains. So the difficulty isn't laziness. It's a specific neurological gap in the brain's management system. Removing the breakdown step entirely — by using AI to do it for you — is one of the most direct ways around this.
+It requires planning, sequencing, and prioritising, exactly the executive functions ADHD disrupts. Removing the breakdown step entirely is the most direct fix.
 
-### What is the 2-minute rule for ADHD task breakdown?
+### What is the 2-minute rule?
 
-The 2-minute rule means breaking a task into steps that each take 2 to 5 minutes to complete. Smaller steps reduce the cognitive load of starting. Each completed step delivers a small dopamine hit, which makes it easier to move to the next one. If a step takes longer than 5 minutes, break it down further until you get to something your brain can start without friction.
+Break a task into steps that each take 2 to 5 minutes. Each completed step delivers a small dopamine hit.
 
-### What is the reverse breakdown method for ADHD?
+### What is the reverse breakdown?
 
-The reverse breakdown starts at the finished outcome and works backward to the first action. You ask: what needs to exist for this to be done? Then: what needs to exist for that? You keep asking until you reach a step so small it requires no planning to begin. This method is useful for complex, multi-stage projects where the path forward isn't obvious.
+Start at the finished outcome and work backward. Keep asking "what needs to exist before this?" until you reach an actionable step.
 
-### What is a dependency map and how does it help with ADHD?
+### What is a dependency map?
 
-A dependency map identifies which steps must happen before others can start, and which steps can run in parallel. It prevents a common ADHD trap: starting a step that turns out to be blocked by something else, stalling momentum and triggering overwhelm. Mapping dependencies first gives your brain a clear, unambiguous sequence to follow.
+Identifies blocked vs ready steps. Prevents starting tasks that will stall.
 
-### How does DoTheThing help ADHD brains break down tasks?
+### How does DoTheThing help?
 
-DoTheThing uses AI to break any task into micro-steps with realistic, time-buffered estimates. You type in the task, select your focus level (hyperfocused, normal, or distracted), and choose a breakdown size (Tiny Steps, Balanced, or Big Milestones). The AI handles the planning entirely, removing the hardest part of task management for ADHD brains. No login required — start at [www.DoTheThing.tech](https://www.dothething.tech).
+AI breaks any task into micro-steps with time-buffered estimates. Type the task, select your focus level, get numbered steps. Free.
 
-### What are micro-steps and why do they work for ADHD?
+### What are micro-steps?
 
-Micro-steps are small, specific, action-oriented tasks that take 2 to 15 minutes each. They work for ADHD brains because they eliminate ambiguity. Your brain knows exactly what to do next without having to generate a plan first. Each completed step provides a dopamine reward that builds momentum for the next one. The research is consistent: smaller steps reduce cognitive load and improve task initiation in people with executive dysfunction.
+Small, specific tasks taking 2 to 15 minutes. They eliminate ambiguity and provide a dopamine reward on completion.
+
+---
+
+**Related:** Check out [free tools for ADHD task management](post:5) to find the right app for your workflow.
