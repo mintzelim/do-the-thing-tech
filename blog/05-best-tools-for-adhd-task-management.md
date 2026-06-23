@@ -110,19 +110,19 @@ faqItems:
 
 # Top 5 Free Tools for ADHD Task Management (2026)
 
-If you've searched for the top free ADHD tools, you've probably landed on lists of 15 apps with no guidance on which ones to use together, when, or why. This is shorter and more direct than that.
+If you've searched for the top free ADHD tools, you've probably landed on lists of 15 apps with no guidance on which ones to use together. This is shorter and more direct.
 
-Most productivity apps assume you can already plan, prioritise, and estimate time. For ADHD brains, those are exactly the capabilities that are hardest to access. These five free tools earn their place because they work with the grain of ADHD — not against it.
+Most productivity apps assume you can already plan, prioritise, and estimate time. For ADHD brains, those are exactly the hardest capabilities to access. These five free tools earn their place because they work with the grain of ADHD — not against it.
 
-**Related:** If you want to understand why traditional task management fails ADHD brains, read [how ADHD affects task management](post:1). If you're choosing between tools, [why simpler ADHD-friendly apps work better](post:17) explains the design principles that matter. These tools also help with [financial management tasks](post:13) where ADHD executive dysfunction often shows up.
+**Related:** If you want to understand why traditional task management fails ADHD brains, read [how ADHD affects task management](post:1). If you're choosing between tools, [why simpler ADHD-friendly apps work better](post:17) explains the design principles. These tools also help with [financial management tasks](post:13) where ADHD executive dysfunction often shows up.
 
-This isn't a list of every tool that might help someone with ADHD. It's a short, honest guide to five that are free, actually useful, and designed for different moments in the ADHD workday.
+This isn't every tool that might help someone with ADHD. It's a short guide to five that are free, actually useful, and designed for different moments in the ADHD workday.
 
 ---
 
 ## Direct Answer
 
-The best free ADHD tools in 2026 are DoTheThing (AI task breakdown), Todoist (recurring tasks), Forest (gamified focus), Focusmate (body doubling), and Google Calendar (time-blocking)—each addresses a different failure point.
+The best free ADHD tools in 2026 are DoTheThing (AI task breakdown), Todoist (recurring tasks), Forest (gamified focus), Focusmate (body doubling), and Google Calendar (time-blocking) — each addresses a different failure point.
 
 ## Best Free ADHD Tools 2026
 
@@ -136,23 +136,23 @@ The best free ADHD tools in 2026 are DoTheThing (AI task breakdown), Todoist (re
 ## TL;DR
 
 - **[DoTheThing](https://www.dothething.tech)** — AI task breakdown with ADHD time buffers. Start here. Free, no login.
-- **Todoist (free tier)** — Recurring tasks and project organisation. Use this to maintain structure after DoTheThing breaks things down.
-- **Forest (free on Android)** — Gamified focus timer that kills your tree if you pick up your phone. Use this during work sessions.
-- **Focusmate (free tier — 3 sessions/week)** — Virtual body doubling. Use this when the emotional freeze is the problem, not the structure.
-- **Google Calendar (free)** — Time-blocking and scheduling. Use this to make tasks feel as real as meetings.
+- **Todoist (free tier)** — Recurring tasks and project organisation. Maintain structure after DoTheThing breaks things down.
+- **Forest (free on Android)** — Gamified focus timer that kills your tree if you pick up your phone. Use during work sessions.
+- **Focusmate (free tier — 3 sessions/week)** — Virtual body doubling. Use when emotional freeze is the problem, not structure.
+- **Google Calendar (free)** — Time-blocking. Makes tasks feel as real as meetings.
 - **The rule:** Start with one tool. Use it for two weeks. Add a second only if you've built a habit with the first.
 
 ---
 
 ## Why Most Productivity Apps Fail ADHD Brains
 
-Most productivity apps are organisers — they hold your tasks and display them. They don't solve the harder problem of how to start.
+Most productivity apps are organisers. They hold your tasks and display them. They don't solve the harder problem of how to start.
 
-A standard task app is an organiser. It holds your tasks and shows them to you. But showing an ADHD brain a list of tasks doesn't solve the core problem — which is that the brain can't generate the plan, sequence, and initiation signal needed to begin.
+Showing an ADHD brain a list of tasks doesn't solve the core problem — the brain can't generate the plan, sequence, and initiation signal needed to begin.
 
-[CHADD identifies two of the most important functions](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) in ADHD task management as breaking tasks into single, completable actions and keeping the list visible. Most apps do the second but not the first. They expect you to arrive with tasks already broken down and sequenced. That's the part ADHD makes hard. This is why [breaking down big tasks](post:3) is the foundation of everything else.
+[CHADD identifies](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) the most important functions in ADHD task management as breaking tasks into single, completable actions and keeping the list visible. Most apps do the second but not the first. They expect you to arrive with tasks already broken down. That's the part ADHD makes hard. This is why [breaking down big tasks](post:3) is the foundation of everything else.
 
-The tools below are chosen specifically because they address the stages where ADHD brains get stuck: initiating tasks, staying focused once started, managing time perception, and maintaining accountability. Each one targets a different failure point.
+The tools below address the stages where ADHD brains get stuck: initiating tasks, staying focused, managing time perception, and maintaining accountability.
 
 ---
 
@@ -162,16 +162,16 @@ The tools below are chosen specifically because they address the stages where AD
 **Free?** Completely. No login required.
 **Where:** [www.DoTheThing.tech](https://www.dothething.tech)
 
-DoTheThing solves the most expensive ADHD problem: the cost of figuring out what to do first.
+DoTheThing solves the most expensive ADHD problem: figuring out what to do first.
 
-You type a task — or dump everything on your plate into the input — and tell the app your focus level for today: hyperfocused, normal, or distracted. That focus level directly changes the time estimates the AI generates. A distracted-day plan is calibrated to a distracted day, not an idealised one.
+Type a task — or dump everything on your plate — and tell the app your focus level: hyperfocused, normal, or distracted. That directly changes the time estimates. A distracted-day plan is calibrated to a distracted day.
 
-The AI returns a numbered list of micro-steps, each specific enough to start without making any further decisions. Each estimate includes a 20–30% ADHD buffer for time blindness. You can edit, reorder, or delete any step. A built-in countdown timer keeps each step anchored to its estimate.
+The AI returns numbered micro-steps, each specific enough to start without decisions. Each estimate includes a 20-30% ADHD buffer for time blindness. You can edit, reorder, or delete any step. A built-in countdown timer keeps each step anchored to its estimate.
 
-The core difference between DoTheThing and every other tool on this list: it removes the planning requirement from the start of each task. That's the executive function demand that traditional apps leave entirely on you.
+The core difference: it removes the planning requirement from the start of each task. That's the executive function demand that traditional apps leave entirely on you.
 
 **What it handles well:** Task initiation, time estimation, brain dumps, focus-level adjustment.
-**What it doesn't replace:** Ongoing task management across multiple projects (use Todoist for that), calendar scheduling (use Google Calendar), or focus sessions once you've already started (use Forest).
+**What it doesn't replace:** Ongoing project management (use Todoist), calendar scheduling (use Google Calendar), focus sessions (use Forest).
 
 ---
 
@@ -181,14 +181,14 @@ The core difference between DoTheThing and every other tool on this list: it rem
 **Free tier:** Tasks, projects, labels, and recurring tasks. 5 active projects maximum.
 **Where:** todoist.com / iOS / Android
 
-Todoist is the task manager that comes closest to being built for how ADHD brains actually work — not because it has ADHD-specific features, but because it strips away friction everywhere.
+Todoist strips away friction everywhere.
 
-You can add a task by typing it in natural language: "Email client by Friday" creates a task with a Friday due date. Recurring tasks — medication reminders, weekly check-ins, monthly reviews — set up in seconds. The interface is clean enough that it doesn't add cognitive load just to navigate it.
+Add a task in natural language: "Email client by Friday" creates a task with a Friday due date. Recurring tasks — medication reminders, weekly check-ins, monthly reviews — set up in seconds. The interface is clean enough it doesn't add cognitive load.
 
-The most useful Todoist habit for ADHD users is a simple one: at the end of each day, open Todoist and schedule tomorrow's three most important tasks. That's it. Three tasks with due dates. The act of making that decision the night before means you don't have to make it in the morning, when executive function is often at its lowest.
+The most useful Todoist habit for ADHD: at the end of each day, schedule tomorrow's three most important tasks. Making that decision the night before means you don't face it in the morning, when executive function is often at its lowest.
 
-**What it handles well:** Recurring tasks, multi-project organisation, capturing tasks quickly, daily planning routines.
-**What it doesn't replace:** Breaking tasks down (use DoTheThing first), focus sessions (use Forest), time-blocking on a calendar (use Google Calendar).
+**What it handles well:** Recurring tasks, multi-project organisation, capturing tasks quickly, daily planning.
+**What it doesn't replace:** Breaking tasks down (use DoTheThing), focus sessions (use Forest), time-blocking (use Google Calendar).
 
 ---
 
@@ -198,16 +198,16 @@ The most useful Todoist habit for ADHD users is a simple one: at the end of each
 **Free tier:** Fully functional on Android. iOS requires a small one-time purchase (around $2).
 **Where:** forestapp.cc / iOS / Android
 
-Forest is a focus timer built on a single compelling mechanic: when you start a session, a virtual tree begins to grow. If you leave the app to check something else on your phone, the tree dies.
+Forest builds on one compelling mechanic: start a session, a virtual tree grows. Leave the app, the tree dies.
 
-For ADHD brains, this works better than a standard timer because it creates an immediate, visible consequence for the most common ADHD focus disruptor — phone distraction. The dopamine hit from completing a session and watching the tree survive is a small but real reward that standard timers don't offer.
+For ADHD brains, this beats a standard timer because it creates an immediate, visible consequence for phone distraction. The dopamine hit from watching a tree survive is a real reward standard timers don't offer.
 
-[Inflow's review of ADHD apps](https://www.getinflow.io/post/best-apps-for-adhd) notes that Forest "externalises the motivation to stay on task" by making the desire to build a forest more immediate than the pull of distraction — which is exactly how ADHD motivation mechanics work. The brain needs a closer, more tangible reward to compete with the novelty of the phone.
+[Inflow's review](https://www.getinflow.io/post/best-apps-for-adhd) notes that Forest "externalises the motivation to stay on task" by making the desire to build a forest more immediate than distraction. The brain needs a closer, more tangible reward.
 
-Forest pairs well with the Pomodoro Technique — a time management method that alternates 25-minute focused work sessions with 5-minute breaks. The sessions are adjustable in Forest, so you can set them to whatever length your focus window allows on a given day. Shorter intervals (15 minutes) work well on distracted days; longer ones (45 minutes) suit hyperfocus windows.
+Forest pairs well with the Pomodoro Technique — adjustable sessions let you match your focus window. Shorter intervals (15 minutes) work on distracted days; longer ones (45 minutes) suit hyperfocus.
 
-**What it handles well:** Phone distraction, focus session structure, visual progress tracking, session momentum.
-**What it doesn't replace:** Task breakdown (use DoTheThing), accountability with another person (use Focusmate), scheduling and planning (use Google Calendar or Todoist).
+**What it handles well:** Phone distraction, focus structure, visual progress, session momentum.
+**What it doesn't replace:** Task breakdown (use DoTheThing), accountability (use Focusmate), scheduling (use Google Calendar or Todoist).
 
 ---
 
@@ -217,55 +217,55 @@ Forest pairs well with the Pomodoro Technique — a time management method that 
 **Free tier:** 3 sessions per week (25 or 50 minutes each).
 **Where:** focusmate.com
 
-Focusmate is a virtual coworking platform. You book a session, get matched with someone else who also needs to work, turn your camera on, state your goal for the session, and work in silence. At the end, you check in on what you accomplished.
+Focusmate is virtual coworking. Book a session, get matched, state your goal, work in silence. At the end, check in on what you accomplished.
 
-This is body doubling — the practice of working in the presence of another person to lower the activation threshold for starting. [A 2024 study found body doubling effective for initiating and completing tasks in people with ADHD](https://www.healthline.com/health/adhd/body-double-adhd). The social presence creates enough accountability to overcome the emotional freeze that stops you from beginning.
+This is body doubling — working alongside another person to lower the activation threshold. [A 2024 study found it effective for initiating and completing tasks in people with ADHD](https://www.healthline.com/health/adhd/body-double-adhd). Social presence creates enough accountability to overcome the emotional freeze.
 
-[ADDA describes](https://add.org/adhd-tools-for-adults/) Focusmate as the most accessible structured body doubling tool available: you get three free sessions a week, they run on-demand (sessions available around the clock), and the format is low-friction — no small talk required, just presence.
+[ADDA describes](https://add.org/adhd-tools-for-adults/) Focusmate as the most accessible structured body doubling tool: three free sessions a week, on-demand around the clock, no small talk required.
 
-The free tier of three sessions per week is often enough for the most stuck tasks. Save your sessions for the tasks you've been avoiding longest.
+Save your sessions for the tasks you've been avoiding longest.
 
-**What it handles well:** [Task paralysis](https://add.org/adhd-paralysis/) with an emotional component, accountability, motivation for non-urgent tasks, remote workers who lack ambient social presence.
-**What it doesn't replace:** Task breakdown (use DoTheThing first so you know exactly what you're working on during the session), ongoing scheduling (use Google Calendar), focus timers when you don't need a human partner (use Forest).
+**What it handles well:** Task paralysis with emotional component, accountability, motivation for non-urgent tasks, remote workers.
+**What it doesn't replace:** Task breakdown (use DoTheThing first), scheduling (use Google Calendar), solo focus timers (use Forest).
 
 ---
 
 ## Tool 5: Google Calendar — Time Blocking and Scheduling
 
 **Best for:** [Time blindness](https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd) and the "I'll do it later" problem.
-**Free?** Completely. Works on any device.
+**Free?** Completely.
 **Where:** calendar.google.com / iOS / Android
 
-Google Calendar earns its place on this list for one specific use case: time blocking.
+Google Calendar earns its place for one specific use case: time blocking.
 
-Time blocking means assigning specific calendar slots to specific tasks, treating them with the same commitment as scheduled meetings. For ADHD brains, this matters because tasks without a designated time exist in an abstract future — easy to defer, easy to forget. [CHADD recommends externalising time commitments](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) as one of the most effective ADHD time management strategies, specifically because the ADHD brain struggles to hold future intentions reliably in working memory.
+Time blocking assigns calendar slots to tasks, treating them with the same commitment as meetings. Tasks without a designated time exist in an abstract future — easy to defer. [CHADD recommends externalising time commitments](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) as one of the most effective ADHD strategies.
 
-ADHD time blindness makes tasks feel abstract and distant until they're urgent. Scheduling is how you make them concrete. When a task has a specific time slot — "write client report: Tuesday 10am–12pm" — it carries the same psychological weight as a meeting. It has a start time. It has an end time. It becomes real.
+When a task has a specific slot — "write client report: Tuesday 10am-12pm" — it carries the same psychological weight as a meeting. A start time. An end time. It becomes real.
 
-The critical habit is not just scheduling appointments, but scheduling your tasks the same way. Every task that matters gets a calendar block with a name and a time estimate. That block is not negotiable unless something more urgent takes its place.
+The critical habit: schedule your tasks like appointments. Every task that matters gets a calendar block. That block is non-negotiable unless something more urgent takes its place.
 
-Google Calendar also handles the practical: reminders, shared calendars for accountability, and cross-device sync so the plan is always visible. For ADHD brains, visibility is accountability — out of sight genuinely does mean out of mind.
+Google Calendar also handles reminders, shared calendars, and cross-device sync. For ADHD brains, visibility is accountability.
 
 **What it handles well:** Time blocking, scheduling tasks alongside appointments, time perception, deadline management, shared accountability.
-**What it doesn't replace:** Breaking tasks down before you schedule them (use DoTheThing first), focus sessions during the block (use Forest), ongoing task list management (use Todoist).
+**What it doesn't replace:** Breaking tasks down before scheduling (use DoTheThing), focus sessions (use Forest), task list management (use Todoist).
 
 ---
 
 ## How to Stack These Tools Without Overcomplicating It
 
-The biggest mistake ADHD users make with productivity tools is using too many at once. Managing the tools becomes a task in itself — and that task, for many ADHD brains, is more appealing than the actual work. It has all the hallmarks of productive behaviour without requiring the difficult thing.
+The biggest mistake ADHD users make is using too many tools at once. Managing the tools becomes a task in itself — and for many ADHD brains, that task is more appealing than the actual work.
 
 Here's the simplest stack:
 
-**Start with DoTheThing.** For any task that's been sitting untouched, use [DoTheThing](https://www.dothething.tech) to generate the breakdown. This handles the initiation problem.
+**Start with DoTheThing.** For any task that's been sitting untouched, use [DoTheThing](https://www.dothething.tech) to generate the breakdown.
 
-**Add Todoist for ongoing management.** Once tasks are broken down and you have recurring commitments to track, Todoist holds everything between sessions.
+**Add Todoist for ongoing management.** Todoist holds everything between sessions.
 
-**Layer in one focus tool.** If phone distraction is your main problem during work: Forest. If emotional avoidance and accountability is the issue: Focusmate. Pick one, not both.
+**Layer in one focus tool.** Phone distraction? Forest. Emotional avoidance? Focusmate. Pick one.
 
 **Use Google Calendar for your week.** Block time for your most important tasks. Treat those blocks like meetings.
 
-That's four tools with clear, non-overlapping jobs. Most people need fewer than that. If you're starting from scratch, begin with DoTheThing and Todoist, use them for a month, and only add a focus tool if you're consistently getting stuck during work sessions rather than before them.
+That's four tools with clear, non-overlapping jobs. Most people need fewer. Start with DoTheThing and Todoist for a month, then add a focus tool only if you're consistently getting stuck during work sessions.
 
 ---
 
