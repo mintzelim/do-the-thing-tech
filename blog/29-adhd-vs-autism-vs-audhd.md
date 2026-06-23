@@ -102,13 +102,13 @@ featuredImageAlt: "ADHD vs Autism vs AuDHD comparison diagram showing overlappin
 
 # ADHD vs Autism vs AuDHD: Key Differences Explained
 
-You've read about ADHD. You've read about autism. You've seen the Venn diagrams and the long lists of overlapping traits. And somewhere in that overlap, you found yourself asking a question that feels surprisingly hard to answer: *Wait — do I have one? The other? Both?*
+You've seen the Venn diagrams and the long lists of overlapping traits. And somewhere in that overlap, you found yourself asking a question that feels surprisingly hard to answer: *Wait — do I have one? The other? Both?*
 
-This is one of the most common questions in neurodivergent communities right now. Reddit threads on r/AuDHDWomen with titles like "What's the difference between normal autism and AuDHD?" routinely pull hundreds of comments from people who relate to both sets of traits and can't separate them.
+Reddit threads on r/AuDHDWomen with titles like "What's the difference between normal autism and AuDHD?" pull hundreds of comments from people who relate to both sets of traits and can't separate them.
 
-The confusion makes sense. ADHD and autism share many surface-level traits: executive dysfunction, sensory sensitivity, hyperfocus, social difficulty. But they operate through different neurological mechanisms. And when both are present — a combination informally called **AuDHD** — the experience isn't just "having both." It's a distinct neurotype with its own internal contradictions.
+The confusion is understandable. ADHD and autism share a lot of surface-level traits: executive dysfunction, sensory sensitivity, hyperfocus, social difficulty. But they run on different neurological mechanisms. And when both are present — a combination informally called **AuDHD** — the experience isn't "having both." It's a distinct neurotype. With its own contradictions.
 
-> **AuDHD** is the informal term for the co-occurrence of ADHD and autism. It's not a separate diagnosis in the DSM-5-TR, but research shows approximately 21-28% of people with one condition also meet criteria for the other. The lived experience of AuDHD is distinct from having ADHD or autism alone — characterized by internal contradictions where the two neurotypes pull in opposite directions.
+> **AuDHD** is the informal term for co-occurring ADHD and autism. It's not a separate diagnosis in the DSM-5-TR, but research shows approximately 21-28% of people with one condition also meet criteria for the other. The lived experience of AuDHD is distinct from having either alone — the two neurotypes pull in opposite directions, and you live in the middle.
 
 ## TL;DR
 
@@ -121,11 +121,11 @@ The confusion makes sense. ADHD and autism share many surface-level traits: exec
 
 ## What Is ADHD?
 
-Attention-Deficit/Hyperactivity Disorder (ADHD) is a neurodevelopmental condition characterized by persistent patterns of inattention, hyperactivity, and impulsivity that interfere with daily functioning.
+ADHD is a neurodevelopmental condition that affects attention, impulse control, and activity levels. The core mechanism is **dopamine dysregulation** — fewer dopamine receptors and reduced signalling in key regions, especially the prefrontal cortex that handles planning, impulse control, and working memory.
 
-The core mechanism is **dopamine dysregulation**. The ADHD brain has fewer dopamine receptors and reduced dopamine signalling in key regions — particularly the prefrontal cortex, which handles executive functions like planning, impulse control, and working memory. This means tasks that don't provide immediate interest, novelty, or urgency require significantly more conscious effort to initiate and sustain.
+What this means practically: tasks that don't provide immediate interest, novelty, or urgency require significantly more conscious effort to start and sustain.
 
-Approximately 3% of adults worldwide have ADHD (Ayano et al., 2023), though rates vary by diagnostic criteria and geography. The heritability is estimated at 74-88%, making it one of the most heritable psychiatric conditions.
+About 3% of adults worldwide have ADHD (Ayano et al., 2023). It's one of the most heritable psychiatric conditions, with estimates ranging from 74-88%.
 
 **Core features:**
 
@@ -140,11 +140,11 @@ Approximately 3% of adults worldwide have ADHD (Ayano et al., 2023), though rate
 
 ## What Is Autism?
 
-Autism Spectrum Disorder (ASD) is a neurodevelopmental condition characterized by differences in social communication, restricted or repetitive patterns of behaviour, and sensory processing differences.
+Autism is a neurodevelopmental condition that affects how you communicate, process sensory input, and relate to routine and predictability. The mechanism is more complex than ADHD's dopamine model — it involves differences in neural connectivity and information processing that affect how the brain filters and responds to the world.
 
-The mechanism is more complex than ADHD's dopamine model. Autism involves differences in neural connectivity, synaptic pruning, and information processing that affect how the brain filters, integrates, and responds to information. The autistic brain tends toward higher local connectivity and altered long-range connectivity — which may explain both the intense detail focus and the difficulty with integrating broader contextual information.
+The autistic brain tends toward higher local connectivity and altered long-range connections. That may explain both the intense detail focus and the difficulty with integrating broader context.
 
-Approximately 1-2% of the global population meets diagnostic criteria for autism, with diagnosis rates increasing as awareness of diverse presentations (including in women and adults) improves.
+About 1-2% of the global population meets diagnostic criteria for autism. Diagnosis rates are rising as awareness of diverse presentations — including in women and adults — improves.
 
 **Core features:**
 
@@ -178,13 +178,13 @@ Where the confusion happens is in the overlap. Both conditions affect how you pr
 
 ## What Is AuDHD?
 
-AuDHD isn't a clinical diagnosis. It's the informal term for the co-occurrence of ADHD and autism. The research on how common this is has evolved significantly in the last decade.
+AuDHD isn't a clinical diagnosis. It's the informal term for having ADHD and autism together. And it's more common than most people realize.
 
-A 2019 systematic review by Hollingdale et al., published in *Neuroscience & Biobehavioral Reviews*, found that approximately 21% of children diagnosed with ADHD also meet diagnostic criteria for autism. Looking from the other direction, a 2019 Lancet Psychiatry review by Lai et al. found that approximately 28% of autistic children also meet criteria for ADHD.
+A 2019 systematic review by Hollingdale et al. found that about 21% of children diagnosed with ADHD also meet diagnostic criteria for autism. From the other direction, a 2019 Lancet Psychiatry review by Lai et al. found that about 28% of autistic children also meet criteria for ADHD.
 
-Before 2013, under the DSM-IV, these two conditions could **not** be officially co-diagnosed. The diagnostic criteria explicitly stated that autism excluded an ADHD diagnosis, and vice versa. Clinicians had to choose one. The DSM-5 removed that rule when research made it clear that co-occurrence was the norm, not the exception.
+Before 2013, under the DSM-IV, these two conditions could **not** be co-diagnosed. The rules said autism excluded ADHD, and ADHD excluded autism. Clinicians had to pick one. The DSM-5 removed that rule when the research became clear: co-occurrence is the norm, not the exception.
 
-This history explains why so many adults are now discovering they have both. If you were diagnosed with one condition before 2013, the other was likely never assessed. You were forced into a box that the science has since outgrown.
+That's why so many adults are discovering they have both. If you were diagnosed with one before 2013, the other was likely never assessed. The science has outgrown the boxes you were put in.
 
 ---
 
@@ -194,11 +194,11 @@ This is where the lived experience gets distinct. Having both ADHD and autism is
 
 ### The Internal War Over Routine
 
-This is the hallmark of AuDHD. The autistic brain needs routine, predictability, and structure to feel safe and regulated. The ADHD brain gets bored with routine, craves novelty, and struggles to maintain any system for more than a few days.
+This is the hallmark of AuDHD. The autistic brain needs routine, predictability, and structure to feel safe. The ADHD brain gets bored with routine, craves novelty, and can't maintain any system for more than a few days.
 
-The result is a cycle that many people with AuDHD describe as exhausting: you build a system, you abandon the system, you feel guilt about abandoning the system, you build a better system, you abandon it again. As one r/AuDHDWomen user described it, "Chaos (ADHD) clashes with order (ASD). Or sometimes it's combined into organized chaos — old batteries and new batteries neatly put away and separated, but then a basket with unorganized piles of paperwork next to it."
+The result is an exhausting loop: you build a system, you abandon it, you feel guilty, you build a better one, you abandon it again. As one r/AuDHDWomen user put it: "Chaos (ADHD) clashes with order (ASD). Organized chaos — old batteries and new batteries neatly separated, next to a basket of unorganized paperwork."
 
-This internal war over routine is a key differentiator. Someone with ADHD alone struggles to maintain routines but may not feel an emotional need for them. Someone with autism alone may find routine deeply regulating. Someone with AuDHD experiences both drives simultaneously — and neither one wins.
+This internal war is a key differentiator. Someone with ADHD alone struggles with routines but doesn't need them emotionally. Someone with autism alone finds routine regulating. Someone with AuDHD experiences both drives at once — and neither one wins.
 
 ### Social Push-Pull
 
