@@ -29,18 +29,18 @@ seoKeywords:
 sources:
   - title: 'CHADD — Time Management and ADHD'
     url: https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
-  - title: ADDA — Impact of ADHD at Work
+  - title: 'ADDA — Impact of ADHD at Work'
     url: https://add.org/impact-of-adhd-at-work/
-  - title: ADDA — ADHD Paralysis
+  - title: 'ADDA — ADHD Paralysis'
     url: https://add.org/adhd-paralysis/
-  - title: PMC — WHO World Mental Health: ADHD and Lost Productivity
+  - title: 'PMC — WHO World Mental Health: ADHD and Lost Productivity'
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2665789/
   - title: >-
       Frontiers in Psychiatry — Arousal Dysregulation and Executive Dysfunction
       in ADHD
     url: >-
       https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full
-  - title: Harvard Business School — Navigating the Jagged Technological Frontier
+  - title: 'Harvard Business School — Navigating the Jagged Technological Frontier'
     url: https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
   - title: 'CHADD — 6 Ways to Combat Procrastination for Adults With ADHD'
     url: >-
@@ -207,10 +207,4 @@ Yes. Type everything on your plate. The app handles unstructured input.
 
 ---
 
-https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
-https://chadd.org/adhd-in-the-news/6-ways-to-combat-procrastination-for-adults-with-adhd/
-https://add.org/impact-of-adhd-at-work/
-https://add.org/adhd-paralysis/
-https://pmc.ncbi.nlm.nih.gov/articles/PMC2665789/
-https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1336040/full
-https://www.hbs.edu/faculty/Pages/item.aspx?num=64700
+**Related:** Check out our [guide to breaking down big tasks](/blog/breaking-down-big-tasks-adhd) for more strategies.
