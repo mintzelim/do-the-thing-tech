@@ -131,7 +131,7 @@ The way you feel criticism like a punch to the chest. The way three hours vanish
 
 These aren't secondary issues. They're core features of how the ADHD brain works. They just don't fit neatly into a checkbox.
 
-> According to research from the *Journal of Attention Disorders*, time perception deficits are neurologically measurable in ADHD brains. This isn't a matter of trying harder. (Zheng et al., 2022)
+> According to research from the *Journal of Attention Disorders*, [time perception deficits are neurologically measurable in ADHD brains](https://pmc.ncbi.nlm.nih.gov/articles/PMC9187895/). This isn't a matter of trying harder.
 
 Let's walk through each one.
 
@@ -175,7 +175,7 @@ You sit down to send one email. You look up. An hour passed. You swear you left 
 
 **Why it happens:** Time perception relies on dopamine-regulated networks in the basal ganglia and prefrontal cortex. ADHD brains have inconsistent dopamine signaling. When those networks don't fire reliably, planning becomes guesswork.
 
-> The "dual pathway" model identifies three dissociable components in ADHD: executive dysfunction, delay aversion, and time perception deficits. Time perception accounts for symptoms that the other two don't explain. (Sonuga-Barke, 2003; Zheng et al., 2022)
+> The "dual pathway" model identifies [three dissociable components in ADHD](https://pmc.ncbi.nlm.nih.gov/articles/PMC9187895/): executive dysfunction, delay aversion, and time perception deficits. Time perception accounts for symptoms that the other two don't explain.
 
 ![Time Blindness: Hours Disappear, Deadlines Appear](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-time-blindness-C8P7uE6u7iD4pxefZq6pZ4.webp)
 
@@ -239,7 +239,7 @@ Learning the difference is crucial: [executive dysfunction vs. task paralysis](/
 
 [Dr. Russell Barkley](https://www.simplypsychology.org/adhd-emotional-dysregulation.html), one of the leading researchers in ADHD, describes it plainly:
 
-> "The emotion that an individual experiences comes up very quickly, much more strongly than in others, because they are not suppressing and inhibiting and moderating it." (Cited in Simply Psychology)
+> "The emotion that an individual experiences comes up very quickly, much more strongly than in others, because they are not suppressing and inhibiting and moderating it."
 
 Research estimates that **30% to 70% of adults with ADHD** experience significant emotional dysregulation. It shows up in two forms:
 
@@ -268,7 +268,7 @@ A 2023 EEG study found that adults with ADHD show **enhanced P200 amplitudes at 
 - Feeling like everyone else caught what was said and you didn't
 - Needing captions on everything, even in your native language
 
-> A 2025 meta-analysis found auditory processing showed the strongest difference between ADHD and neurotypical groups of any sensory domain. Larger than touch, vision, or movement. (Jurek et al., 2025)
+> A 2025 meta-analysis found [auditory processing showed the strongest difference](https://www.jaacap.org/article/S0890-8567(25)00152-0/fulltext) between ADHD and neurotypical groups of any sensory domain. Larger than touch, vision, or movement.
 
 ![Auditory Processing: The Brain Hears But Doesn't Decode](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-auditory-processing-6Vyy9fy9wttQ4d77pnaqqx.webp)
 
@@ -292,7 +292,7 @@ Your body produces melatonin later than it should. You can't fall asleep at 11 P
 
 **The trap:** You stay up late because you can't sleep. You sleep in because you went to bed late. Society expects you to be functional at 9 AM. Your brain expects you to be functional at midnight. The mismatch causes chronic sleep deprivation, which makes every other ADHD symptom worse.
 
-> Sleep problems in ADHD appear to be bidirectional. ADHD severity makes sleep worse, and poor sleep makes ADHD symptoms more severe. (van der Ham et al., 2024)
+> Sleep problems in ADHD appear to be bidirectional. ADHD severity makes sleep worse, and poor sleep makes ADHD symptoms more severe.
 
 ![Delayed Sleep Phase: Your Clock Runs Late](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-delayed-sleep-phase-NeTXK7Pb9ExeZCSvRLnwDn.webp)
 
