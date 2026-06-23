@@ -1,6 +1,6 @@
 ---
 id: '9'
-title: 'ADHD and Perfectionism: Why You Can't Finish Tasks'
+title: "ADHD and Perfectionism: Why You Can't Finish Tasks"
 description: >-
   ADHD perfectionism isn't about high standards. It's a fear response built from
   years of criticism and failure. Here's why it happens and how to actually
@@ -280,16 +280,5 @@ Defining done means writing down specific completion criteria before you start. 
 DoTheThing breaks the task into small, completable steps with clear done states. Finishing a micro-step is a completion event that builds momentum. Time estimates create an implicit finish line — when the time is up, the step is done.
 
 ---
-
-https://www.healthline.com/health/adhd/adhd-and-perfectionism
-https://www.additudemag.com/fear-of-failure-shame-perfectionism-adhd-interventions/
-https://www.additudemag.com/perfectionism-adhd-not-good-enough-anxiety/
-https://chadd.org/adhd-weekly/rejection-can-more-painful-with-adhd/
-https://chadd.org/attention-article/adhd-and-self-compassion/
-https://www.psychologytoday.com/us/blog/if-i-be-waspish/202604/rejection-sensitivity-dysphoria-the-actual-research
-https://www.theaddvocacyproject.com/blog/adhd-perfectionism-high-achievers-pressure
-https://pmc.ncbi.nlm.nih.gov/articles/PMC9790285/
-https://link.springer.com/article/10.1007/s12671-020-01464-w
-
 
 **Related:** Explore [The Neuroscience Behind Task Avoidance](post:7) for how perfectionism and procrastination connect.
