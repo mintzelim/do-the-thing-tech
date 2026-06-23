@@ -112,28 +112,28 @@ faqItems:
 
 ## Direct Answer
 
-Time blindness in ADHD is the brain's impaired ability to sense time passing and estimate task duration accurately, causing hours to feel like minutes and making deadlines consistently sneak up.
+Time blindness in ADHD is your brain's impaired ability to sense time passing and estimate duration accurately. Hours feel like minutes. Deadlines sneak up. Every time.
 
 ## Time Blindness Symptoms & Solutions
 
-- Hours feel like minutes; you lose track of time during hyperfocus
+- Hours feel like minutes — you lose time during hyperfocus
 - Deadlines sneak up because your brain doesn't sense time passing
-- Time estimates are consistently wrong (usually 50% too optimistic)
-- External timers and alarms make time concrete and visible
-- Time-blocking and calendar blocking create artificial time awareness
+- Time estimates run 50% too optimistic, consistently
+- External timers make time concrete and visible
+- Time-blocking creates artificial time awareness
 
 
 ## And why trying harder has never fixed it
 
-You set three alarms. You left yourself a note. You told yourself this time would be different.
+You set three alarms. Left yourself a note. Told yourself this time would be different.
 
 And somehow you're still rushing out the door ten minutes late, apologising again to someone who's started to expect it.
 
-Chronic lateness with ADHD carries a specific kind of shame. The kind that sticks because you genuinely tried. Because you know how important this was. Because you can't explain why your effort and your outcome keep ending up in different places.
+Chronic lateness with ADHD carries a specific shame. The kind that sticks because you genuinely tried. Because you know how important this was. Because you can't explain why effort and outcome keep landing in different places.
 
-According to the [Attention Deficit Disorder Association](https://add.org/adhd-time-blindness/), time blindness in ADHD is the inability to sense how much time has passed and estimate how long tasks require. Around 75% of people with ADHD experience it daily. That's the overwhelming majority. And yet most of the advice offered treats it as a planning problem, a discipline problem, a motivation problem.
+According to the [Attention Deficit Disorder Association](https://add.org/adhd-time-blindness/), time blindness in ADHD is the inability to sense time passing and estimate task duration. Around 75% of people with ADHD experience it daily. And yet most advice treats it as a planning problem, a discipline problem, a motivation problem.
 
-It's a neurology problem. And that changes everything about how you fix it.
+It's a neurology problem. That changes everything about how you fix it.
 
 ---
 
@@ -142,24 +142,24 @@ It's a neurology problem. And that changes everything about how you fix it.
 - **Time blindness is structural, not situational.** The ADHD brain processes time differently at a neurological level, driven by reduced activity in the prefrontal cortex and cerebellum.
 - **Dr. Russell Barkley's framing says it plainly.** Time blindness is to ADHD what nearsightedness is to vision. You fix nearsightedness with glasses, not willpower.
 - **ADHD brains operate in two time zones.** Now, and not now. Deadlines stay in "not now" until they're almost here, regardless of importance.
-- **Duration underestimation is consistent and predictable.** Most ADHD adults underestimate task time by 50% or more. The multiply-by-2 rule compensates for this structurally.
+- **Duration underestimation is consistent and predictable.** Most ADHD adults underestimate task time by 50% or more. The multiply-by-2 rule compensates structurally.
 - **External tools replace the internal clock your brain fires inconsistently.** Visual timers, time anchors, and DoTheThing supply the time awareness your brain doesn't generate reliably on its own.
 
 ---
 
 ## What Time Blindness Actually Is
 
-Dr. Russell Barkley, one of the world's leading ADHD researchers, puts it plainly. Time blindness is to ADHD what nearsightedness is to vision problems. Nearsightedness is a structural difference in how the eye focuses light. Willpower does nothing to correct it. Glasses do.
+Dr. Russell Barkley puts it plainly. Time blindness is to ADHD what nearsightedness is to vision. Nearsightedness is a structural difference in how the eye focuses light. Willpower does nothing. Glasses do.
 
 Time blindness works the same way. ADHD brains perceive time through a fundamentally different architecture than neurotypical brains. Telling yourself to "be more aware of time" hits the same wall as telling a short-sighted person to "try harder to see the board."
 
-Barkley also introduced the now/not now model of ADHD time perception. Where neurotypical brains experience time on a continuous spectrum, ADHD brains tend to sort events into two categories: happening now, and everything else. A deadline six days away sits in "not now" alongside a deadline six months away. Both feel equally distant. Both generate the same level of urgency.
+Barkley also introduced the now/not now model. Where neurotypical brains experience time on a continuous spectrum, ADHD brains sort events into two categories: happening now and everything else. A deadline six days away sits in "not now" alongside a deadline six months away. Both feel equally distant. Both generate the same lack of urgency.
 
 Until the deadline becomes now.
 
 Then urgency arrives. Hard. At the last possible moment.
 
-The [ADDA's research overview](https://add.org/adhd-time-blindness/) identifies four components of time that ADHD disrupts: time horizon (how far ahead you can "see" approaching events), time management, time sequencing, and time reproduction. All four feed directly into the chronic lateness pattern. And all four trace back to how the ADHD brain is wired, rather than how carefully you're paying attention.
+The [ADDA's research overview](https://add.org/adhd-time-blindness/) identifies four components of time that ADHD disrupts: time horizon (how far ahead you can "see" approaching events), time management, time sequencing, and time reproduction. All four feed directly into chronic lateness. And all four trace back to wiring, not attention.
 
 ---
 
@@ -167,13 +167,13 @@ The [ADDA's research overview](https://add.org/adhd-time-blindness/) identifies 
 
 Time perception requires a network of brain regions working in coordination. In ADHD brains, that coordination is structurally impaired.
 
-A 2023 review published in the [International Journal of Environmental Research and Public Health via PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9962130/) analysed a decade of time perception research in adult ADHD. fMRI studies showed consistent and replicable deficits in the cerebellum, left inferior prefrontal cortex, and left inferior parietal lobes. These are the regions responsible for interval timing, time estimation, and temporal planning respectively.
+A 2023 review in the [International Journal of Environmental Research and Public Health via PMC](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9962130/) analysed a decade of time perception research in adult ADHD. fMRI studies showed consistent deficits in the cerebellum, left inferior prefrontal cortex, and left inferior parietal lobes — the regions responsible for interval timing, time estimation, and temporal planning.
 
-[Research published in PMC (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8293837/) confirmed that time perception problems are a focal symptom of ADHD in adults, driven by reduced prefrontal cortex activity and disrupted dopaminergic pathways. The same study found that ADHD medication increased activity in the prefrontal cortex and anterior cingulate, improving time perception scores post-dose.
+[Research in PMC (2021)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8293837/) confirmed that time perception problems are a focal symptom of ADHD in adults, driven by reduced prefrontal cortex activity and disrupted dopaminergic pathways. The same study found that ADHD medication increased activity in the prefrontal cortex and anterior cingulate, improving time perception scores post-dose.
 
-[UCI Health's developmental behavioural specialists](https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd) describe the prefrontal cortex as the brain's conductor. When the conductor gives inconsistent cues, the rest of the orchestra plays out of sync. That's time blindness in practice: the orchestra is capable, but the timing signals keep arriving late or at the wrong tempo.
+[UCI Health's developmental behavioural specialists](https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd) describe the prefrontal cortex as the brain's conductor. When the conductor gives inconsistent cues, the orchestra plays out of sync. That's time blindness in practice: the orchestra is capable, but the timing signals keep arriving late or at the wrong tempo.
 
-Importantly, this architecture is stable. It doesn't worsen when you're stressed, and it doesn't improve when stakes are high. High-stakes events can temporarily sharpen compensation strategies, but the underlying wiring stays consistent.
+Importantly, this architecture is stable. It doesn't worsen under stress, and it doesn't improve when stakes are high. High-stakes events can sharpen compensation strategies temporarily, but the underlying wiring stays consistent.
 
 ---
 
@@ -183,23 +183,23 @@ Importantly, this architecture is stable. It doesn't worsen when you're stressed
 
 You genuinely believe it'll take ten minutes to get ready. An hour later, you're locking the front door.
 
-Duration underestimation is the most quantifiable symptom of time blindness. A [2021 meta-analysis by Marx et al., published in the Journal of the American Academy of Child and Adolescent Psychiatry](https://www.adhdevidence.org/blog/time-blindness-found-to-be-a-consistent-feature-of-adhd), confirmed consistent and replicable impairments in perceptual timing across ADHD studies. The internal clock doesn't just run slow occasionally. It runs slow structurally, producing estimates that feel accurate but land consistently short.
+Duration underestimation is the most quantifiable symptom of time blindness. A [2021 meta-analysis by Marx et al. in the Journal of the American Academy of Child and Adolescent Psychiatry](https://www.adhdevidence.org/blog/time-blindness-found-to-be-a-consistent-feature-of-adhd) confirmed consistent impairments in perceptual timing across ADHD studies. The internal clock doesn't just run slow occasionally — it runs slow structurally, producing estimates that feel accurate but land consistently short.
 
-The failure mode: you build a schedule based on your estimates. The estimates are wrong by 40-60%. The schedule collapses. You interpret this as a planning failure, when the estimates were the problem all along.
+The failure mode: you build a schedule on your estimates. The estimates are wrong by 40-60%. The schedule collapses. You interpret this as a planning failure when the estimates were the problem all along.
 
-**Checkpoint:** If your actual task times consistently run 1.5 to 2 times longer than your estimates, you have duration underestimation. This is measurable. Track three tasks this week and compare estimate to actual.
+**Checkpoint:** If your actual task times consistently run 1.5 to 2 times longer than your estimates, you have duration underestimation. Track three tasks this week and compare estimate to actual.
 
 ---
 
 ### Time Passage Unawareness: Where Did the Morning Go?
 
-You sit down to check one email at 9am. You glance up and it's 11:40.
+You sit down to check one email at 9am. You glance up. It's 11:40.
 
-Time passage unawareness describes the ADHD brain's reduced sensitivity to time moving while you're engaged in an activity. The default mode network, which contributes to background time awareness during mind-wandering, shows altered connectivity patterns in ADHD. When you're focused on something, the background signal that tracks passing time runs quieter than it does in neurotypical brains.
+Time passage unawareness describes the ADHD brain's reduced sensitivity to time moving while you're engaged. The default mode network, which contributes to background time awareness during mind-wandering, shows altered connectivity patterns in ADHD. When you focus, the background signal tracking passing time runs quieter than it does in neurotypical brains.
 
-Hyperfocus makes this dramatically worse. The same neurological features that allow ADHD brains to enter deep focus states also suppress time awareness almost entirely during those states. The focus itself feels like evidence you're being productive. Time passing unnoticed doesn't announce itself.
+Hyperfocus makes this dramatically worse. The same features that allow ADHD brains to enter deep focus also suppress time awareness almost entirely during those states. The focus itself feels like evidence of productivity. The missing time doesn't announce itself.
 
-The result: whole mornings, afternoons, or evenings can disappear into a single task or activity while feeling like a short interval.
+The result: whole mornings, afternoons, or evenings can disappear into a single activity while feeling like a short interval.
 
 ---
 
@@ -207,11 +207,11 @@ The result: whole mornings, afternoons, or evenings can disappear into a single 
 
 The presentation is on Thursday. You know this. You've known it for two weeks.
 
-But Thursday doesn't feel real. Thursday feels like "not now." So Monday passes, Tuesday passes, Wednesday afternoon arrives, and suddenly Thursday is now. Urgency detonates. Panic executes the work the calm version of you could have done across ten easier sessions.
+But Thursday doesn't feel real. Thursday feels like "not now." Monday passes. Tuesday passes. Wednesday afternoon arrives, and suddenly Thursday is now. Urgency detonates. Panic executes the work the calm version of you could have done across ten easier sessions.
 
-[Psychology Today's overview of time blindness](https://www.psychologytoday.com/us/basics/time-blindness) notes that the ADHD brain's shorter time horizon means deadlines enter the mental radar late, often only when they've become immediately urgent. This operates regardless of how important the deadline is. A job interview and a grocery run can both sit in "not now" until they're imminent.
+[Psychology Today's overview of time blindness](https://www.psychologytoday.com/us/basics/time-blindness) notes that the ADHD brain's shorter time horizon means deadlines enter the mental radar late, often only when they're immediately urgent. This operates regardless of importance. A job interview and a grocery run both sit in "not now" until they're imminent.
 
-Future time blindness produces the pattern of last-minute execution that many ADHD adults recognise as their baseline: "I work best under pressure." Often, that's an adaptation. The pressure is what converts the deadline from not now to now. Without pressure, urgency never arrives.
+Future time blindness produces the last-minute execution pattern many ADHD adults recognise as baseline: "I work best under pressure." Often, that's adaptation. The pressure converts the deadline from not now to now. Without pressure, urgency never arrives.
 
 ---
 
@@ -219,11 +219,11 @@ Future time blindness produces the pattern of last-minute execution that many AD
 
 Chronic lateness produces a specific relational pattern.
 
-People start expecting you to be late. They account for it, sometimes telling you events start earlier than they do. You notice. The dynamic shifts: you become the person with the asterisk, the one your friends manage around rather than rely on.
+People start expecting you to be late. They plan around it, sometimes telling you events start earlier than they do. You notice. The dynamic shifts: you become the person with the asterisk, the one friends manage around rather than rely on.
 
-The shame this produces is compounded by the genuine effort you keep making. You tried. You really did. And you were still late. The shame runs deeper than the lateness itself. It lives in the gap between intention and outcome, repeated often enough to feel like identity.
+The shame compounds with the genuine effort you keep making. You tried. You really did. And you were still late. The shame runs deeper than the lateness itself. It lives in the gap between intention and outcome, repeated often enough to feel like identity.
 
-What the research makes clear: the gap exists because of neurology, not effort. Duration underestimation, future time blindness, and time passage unawareness are all structural. You can't effort your way out of a structural difference. You can build systems that compensate for it.
+What the research makes clear: the gap exists because of neurology, not effort. Duration underestimation, future time blindness, and time passage unawareness are all structural. You can't effort your way out of a structural difference. You build systems that compensate.
 
 ---
 
@@ -231,48 +231,48 @@ What the research makes clear: the gap exists because of neurology, not effort. 
 
 ### 1. The Multiply-by-2 Rule
 
-Whatever time you estimate a task will take, double it before you schedule it.
+Whatever time you estimate, double it before scheduling.
 
-Duration underestimation in ADHD is consistent and predictable. If your estimates run short by 50% on average, a doubling correction brings you close to reality. Apply it to everything: getting ready, commuting, writing, cooking. Track the results for two weeks and adjust the multiplier if needed. Some ADHD adults find 1.5x is sufficient; others need 2.5x for certain task types. 
+Duration underestimation in ADHD is consistent and predictable. If your estimates run short by 50% on average, doubling brings you close to reality. Apply it to everything: getting ready, commuting, writing, cooking. Track results for two weeks and adjust. Some ADHD adults find 1.5x sufficient; others need 2.5x for certain task types.
 
 ### 2. Visual Timers
 
 Digital countdowns on screens are easy to ignore. A [Time Timer](https://www.timetimer.com) or similar visual timer shows a shrinking arc of colour that makes time passing physically visible.
 
-ADHD brains respond to visual and concrete cues far more reliably than abstract number changes. Place the timer where you'll see it peripherally while working. Set it for the actual time available, subtract 10 minutes, and treat that 10-minute buffer as reserved. When the visual arc hits the buffer zone, you stop and transition regardless of task completion status.
+ADHD brains respond to visual and concrete cues far more reliably than number changes. Place the timer where you'll see it peripherally while working. Set it for the actual time available, subtract 10 minutes, and treat that buffer as reserved. When the arc hits the buffer zone, you stop and transition regardless of task completion.
 
 ### 3. Time Anchors
 
-A time anchor is a fixed, non-negotiable event that your morning or afternoon organises around.
+A time anchor is a fixed, non-negotiable event your morning or afternoon organises around.
 
-Pick one. A call at 10am. A school pickup at 3pm. A standing alarm at 8:30am labelled "leave for office." Everything before it gets scheduled backwards from that anchor point rather than forward from whenever you woke up. Backwards scheduling forces you to account for how long preparation actually takes, rather than how long you hope it takes.
+Pick one. A call at 10am. A school pickup at 3pm. A standing alarm at 8:30am labelled "leave for office." Everything before it gets scheduled backwards from that anchor rather than forward from whenever you woke. Backwards scheduling forces you to account for how long preparation actually takes, not how long you hope it takes.
 
 ### 4. External Structure via DoTheThing
 
-[DoTheThing](https://dothething.tech) addresses time blindness at the task level. Before you start a task, it breaks the work into micro-steps and attaches realistic time estimates to each one. The estimates are calibrated rather than optimistic, which means your actual duration lands closer to the planned duration.
+[DoTheThing](https://dothething.tech) addresses time blindness at the task level. Before you start a task, it breaks the work into micro-steps with realistic time estimates on each one. The estimates are calibrated rather than optimistic, so actual duration lands closer to planned duration.
 
-This matters for time blindness specifically because the underestimation problem compounds across a day. One task running 20 minutes over schedule cascades into a late afternoon and a missed evening commitment. Accurate micro-step estimates prevent the cascade from starting.
+This matters because underestimation compounds across a day. One task running 20 minutes over cascades into a late afternoon and a missed evening commitment. Accurate micro-step estimates prevent the cascade.
 
 ### 5. Body Doubling
 
 Working alongside another person, physically or virtually, activates external time awareness.
 
-Another person's presence creates a social time signal your brain can use as a reference point. Focusmate and similar virtual coworking platforms pair you with someone for 25 or 50 minute sessions. The session structure does what your internal clock often can't: it makes time feel bounded, visible, and real.
+Another person's presence creates a social time signal your brain can use as a reference. Focusmate and similar platforms pair you with someone for 25- or 50-minute sessions. The session structure does what your internal clock often can't: it makes time feel bounded, visible, and real.
 
 ---
 
 ## Next Steps
 
-If time blindness is your main challenge, start with one change rather than rebuilding your entire system.
+If time blindness is your main challenge, start with one change.
 
-- **Week 1:** Apply the multiply-by-2 rule to your three most common tasks. Track actual vs. estimated time. Recalibrate.
+- **Week 1:** Apply the multiply-by-2 rule to your three most common tasks. Track actual vs. estimated time.
 - **Week 2:** Add one visual timer to your morning routine. Use it for the task most likely to swallow time unnoticed.
 - **Week 3:** Set a time anchor for the time of day where lateness most often originates. Build backwards from it.
 
 **Further reading**
 For the broader picture of how ADHD disrupts planning and execution, [how ADHD affects task management](post:1) covers executive dysfunction alongside time blindness.
 
-If mornings are where the lateness pattern starts, the [Minimum Viable Morning](post:19) is a practical floor to build from.
+If mornings are where lateness starts, the [Minimum Viable Morning](post:19) is a practical floor.
 
 Once you understand time blindness, [breaking down big tasks](post:3) becomes easier because you can build realistic time buffers into each micro-step.
 
