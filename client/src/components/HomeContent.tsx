@@ -75,7 +75,7 @@ export default function HomeContent() {
             There's a difference. Organising assumes you can already break a task down, estimate how long it'll take, and generate the signal to begin. For ADHD brains, those are the exact steps executive dysfunction blocks.
           </p>
           <p>
-            DoTheThing converts vague tasks into specific, numbered micro-steps before you begin. Every estimate includes a 20–30% buffer — because <a href="https://pubmed.ncbi.nlm.nih.gov/32035555/" target="_blank" rel="noopener noreferrer" style="color: var(--pixel-accent); text-decoration: underline; cursor: pointer;">research on ADHD time perception</a> shows the ADHD brain structurally underestimates task duration by 30-60% compared to neurotypical estimates. The 20-30% buffer is calibrated to correct this known estimation bias. The focus level setting means a day where you're running on fumes gets a different plan than a sharp morning.
+            DoTheThing converts vague tasks into specific, numbered micro-steps before you begin. Every estimate includes a 20–30% buffer — because <a href="https://pubmed.ncbi.nlm.nih.gov/32035555/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>research on ADHD time perception</a> shows the ADHD brain structurally underestimates task duration by 30-60% compared to neurotypical estimates. The 20-30% buffer is calibrated to correct this known estimation bias. The focus level setting means a day where you're running on fumes gets a different plan than a sharp morning.
           </p>
         </div>
         <div className="features-list">
