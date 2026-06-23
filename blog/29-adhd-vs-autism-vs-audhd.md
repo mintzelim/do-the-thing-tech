@@ -2,7 +2,7 @@
 id: '29'
 title: "ADHD vs Autism vs AuDHD: Key Differences Explained"
 description: "ADHD and autism share many overlapping traits — but AuDHD (having both) is its own distinct experience. Here's how to tell them apart."
-slug: "adhd-vs-autism-vs-audhd"
+slug: "/adhd-vs-autism-vs-audhd-differences"
 excerpt: "ADHD and autism share many overlapping traits — sensory issues, executive dysfunction, hyperfocus. Here's how to tell them apart and what AuDHD actually feels like."
 date: "June 23, 2026"
 readTime: "9 min read"
@@ -79,11 +79,9 @@ relatedPosts:
   - "7"
   - "4"
   - "26"
-  - "27"
-  - "12"
 faq:
   - q: "Can you have both ADHD and autism?"
-    a: "Yes. Research shows that approximately 21% of children with ADHD also meet criteria for autism, and about 28% of autistic children also meet criteria for ADHD. Since the DSM-5 was updated in 2013, the two conditions can be officially co-diagnosed. The informal term for having both is AuDHD."
+    a: "Yes. Research shows that approximately 21% of children with ADHD also meet criteria for autism, and about 28% of autistic children also meet criteria for ADHD (Hollingdale et al., 2019; Lai et al., 2019). Since the DSM-5 was updated in 2013, the two conditions can be officially co-diagnosed. The informal term for having both is AuDHD."
   - q: "Is AuDHD the same as having both ADHD and autism separately?"
     a: "Clinically, yes — AuDHD refers to the co-occurrence of both conditions. But many people with AuDHD describe the experience as distinct from having ADHD or autism alone. The two neurotypes interact in ways that create their own patterns: internal contradictions like craving routine but being unable to stick to it, or intense social desire paired with social exhaustion."
   - q: "What are the key differences between ADHD and autism?"
@@ -108,14 +106,14 @@ Reddit threads on r/AuDHDWomen with titles like "What's the difference between n
 
 The confusion is understandable. ADHD and autism share a lot of surface-level traits: executive dysfunction, sensory sensitivity, hyperfocus, social difficulty. But they run on different neurological mechanisms. And when both are present — a combination informally called **AuDHD** — the experience isn't "having both." It's a distinct neurotype. With its own contradictions.
 
-> **AuDHD** is the informal term for co-occurring ADHD and autism. It's not a separate diagnosis in the DSM-5-TR, but research shows approximately 21-28% of people with one condition also meet criteria for the other. The lived experience of AuDHD is distinct from having either alone — the two neurotypes pull in opposite directions, and you live in the middle.
+> **AuDHD** is the informal term for co-occurring ADHD and autism. It's not a separate diagnosis in the DSM-5-TR, but research shows approximately 21-28% of people with one condition also meet criteria for the other[^hollingdale][^lai]. The lived experience of AuDHD is distinct from having either alone — the two neurotypes pull in opposite directions, and you live in the middle.
 
 ## TL;DR
 
-- **ADHD and autism can co-occur.** About 21% of children with ADHD also meet criteria for autism; about 28% of autistic children also meet criteria for ADHD. The DSM-5 has allowed co-diagnosis since 2013.
+- **ADHD and autism can co-occur.** About 21% of children with ADHD also meet criteria for autism[^hollingdale]; about 28% of autistic children also meet criteria for ADHD[^lai]. The DSM-5 has allowed co-diagnosis since 2013[^dsm5].
 - **AuDHD is the informal term for having both.** It's not a separate clinical diagnosis, but the combined experience has its own patterns and internal contradictions.
 - **The core difference:** ADHD is primarily a dopamine-driven difference in attention and impulse regulation. Autism is primarily a difference in social communication, sensory processing, and preference for routine. When both are present, these drives conflict.
-- **Many adults with AuDHD are diagnosed later in life** because before 2013, the two conditions couldn't be officially co-diagnosed. Sophisticated masking can also hide both conditions well into adulthood.
+- **Many adults with AuDHD are diagnosed later in life** because before 2013, the two conditions couldn't be officially co-diagnosed[^dsm5]. Sophisticated masking can also hide both conditions well into adulthood.
 
 ---
 
@@ -125,7 +123,7 @@ ADHD is a neurodevelopmental condition that affects attention, impulse control, 
 
 What this means practically: tasks that don't provide immediate interest, novelty, or urgency require significantly more conscious effort to start and sustain.
 
-About 3% of adults worldwide have ADHD (Ayano et al., 2023). It's one of the most heritable psychiatric conditions, with estimates ranging from 74-88%.
+About 3% of adults worldwide have ADHD ([Ayano et al., 2023](https://www.sciencedirect.com/science/article/pii/S0165178123003992)). It's one of the most heritable psychiatric conditions, with estimates ranging from 74-88%.
 
 **Core features:**
 
@@ -144,7 +142,7 @@ Autism is a neurodevelopmental condition that affects how you communicate, proce
 
 The autistic brain tends toward higher local connectivity and altered long-range connections. That may explain both the intense detail focus and the difficulty with integrating broader context.
 
-About 1-2% of the global population meets diagnostic criteria for autism. Diagnosis rates are rising as awareness of diverse presentations — including in women and adults — improves.
+About 1-2% of the global population meets diagnostic criteria for autism[^lai]. Diagnosis rates are rising as awareness of diverse presentations — including in women and adults — improves.
 
 **Core features:**
 
@@ -180,9 +178,9 @@ Where the confusion happens is in the overlap. Both conditions affect how you pr
 
 AuDHD isn't a clinical diagnosis. It's the informal term for having ADHD and autism together. And it's more common than most people realize.
 
-A 2019 systematic review by Hollingdale et al. found that about 21% of children diagnosed with ADHD also meet diagnostic criteria for autism. From the other direction, a 2019 Lancet Psychiatry review by Lai et al. found that about 28% of autistic children also meet criteria for ADHD.
+A 2019 systematic review by [Hollingdale et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC6376165/) found that about 21% of children diagnosed with ADHD also meet diagnostic criteria for autism. From the other direction, a 2019 Lancet Psychiatry review by [Lai et al.](https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(19)30289-5/fulltext) found that about 28% of autistic children also meet criteria for ADHD.
 
-Before 2013, under the DSM-IV, these two conditions could **not** be co-diagnosed. The rules said autism excluded ADHD, and ADHD excluded autism. Clinicians had to pick one. The DSM-5 removed that rule when the research became clear: co-occurrence is the norm, not the exception.
+Before 2013, under the DSM-IV, these two conditions could **not** be co-diagnosed. The rules said autism excluded ADHD, and ADHD excluded autism. Clinicians had to pick one. The [DSM-5](https://www.psychiatry.org/psychiatrists/practice/dsm) removed that rule when the research became clear: co-occurrence is the norm, not the exception.
 
 That's why so many adults are discovering they have both. If you were diagnosed with one before 2013, the other was likely never assessed. The science has outgrown the boxes you were put in.
 
@@ -226,7 +224,8 @@ The ADHD brain's pattern recognition and social intuition can compensate for aut
 
 This combination produces exceptionally effective masking — the ability to appear neurotypical in social and professional settings. The ADHD part reads the room and adapts quickly. The autistic part memorizes the rules and follows them rigidly. Together, they can simulate neurotypical functioning so well that even the person doing the masking doesn't realize the effort they're expending.
 
-The cost, however, is severe. This level of sustained masking is a direct contributor to [ADHD burnout](/blog/adhd-burnout-recovery), which affects 93% of ADHD adults.
+The cost, however, is severe. This level of sustained masking is a direct contributor to [ADHD burnout](/blog/adhd-burnout-recovery), which affects an estimated 93% of ADHD adults (based on [
+2021 ADDitude survey on ADHD burnout](https://www.additudemag.com/adhd-burnout-symptoms-causes/)).
 
 ---
 
@@ -244,7 +243,7 @@ Some traits are genuinely shared between both conditions. In these areas, the pr
 
 **Rejection sensitivity** is heavily associated with ADHD but also present in many autistic people. The underlying mechanism may differ — ADHD rejection sensitivity is linked to emotional regulation deficits, while autistic rejection sensitivity may stem from a lifetime of social exclusion and negative feedback.
 
-**Sleep disruption** affects up to 78% of ADHD adults and a similar proportion of autistic people. Both groups have higher rates of Delayed Sleep Phase Syndrome, insomnia, and circadian rhythm disorders. Our guide on [ADHD and sleep](/blog/adhd-sleep) covers this in more detail.
+**Sleep disruption** affects up to 78% of ADHD adults and a similar proportion of autistic people[^hollingdale]. Both groups have higher rates of Delayed Sleep Phase Syndrome, insomnia, and circadian rhythm disorders. Our guide on [ADHD and sleep](/blog/time-blindness-in-adhd) covers this in more detail.
 
 ---
 
@@ -258,7 +257,7 @@ If you have autism alone, your most effective strategies revolve around structur
 
 If you have AuDHD, you need both — and the tension between them is your biggest challenge. A rigid routine feels suffocating to the ADHD side. A flexible, novelty-driven system feels unsafe to the autistic side. The solution often involves building **flexible systems with clear boundaries** — structure that has built-in novelty, routines that include variation as a planned feature.
 
-The [DoTheThing app](https://www.dothething.tech) works well for AuDHD because it provides external structure without requiring you to maintain it. You input a task, and the AI generates a numbered micro-step list that breaks the task into manageable pieces. The structure exists externally — you don't have to build or maintain it yourself. The novelty comes from generating different breakdowns for different tasks. The predictability comes from the same interface every time.
+The [DoTheThing app](https://www.dothething.tech) works well for AuDHD because it provides external structure without requiring you to maintain it. You input a task, and the AI generates a numbered micro-step list that breaks the task into manageable pieces. The structure exists externally — you don't have to build or maintain it yourself. The novelty comes from generating new breakdowns for different tasks. The predictability comes from the same interface every time.
 
 This is the practical takeaway: **understand your neurotype so you can build systems that work with it, not against it.**
 
@@ -268,7 +267,7 @@ This is the practical takeaway: **understand your neurotype so you can build sys
 
 ### Can you have both ADHD and autism?
 
-Yes. Research shows that approximately 21% of children with ADHD also meet criteria for autism, and about 28% of autistic children also meet criteria for ADHD. Since the DSM-5 was updated in 2013, the two conditions can be officially co-diagnosed. The informal term for having both is AuDHD.
+Yes. Research shows that approximately 21% of children with ADHD also meet criteria for autism[^hollingdale], and about 28% of autistic children also meet criteria for ADHD[^lai]. Since the DSM-5 was updated in 2013[^dsm5], the two conditions can be officially co-diagnosed. The informal term for having both is AuDHD.
 
 ### Is AuDHD the same as having both ADHD and autism separately?
 
@@ -292,12 +291,18 @@ Yes, often very effectively. The ADHD brain's social intuition and pattern recog
 
 ### Why was I diagnosed with both ADHD and autism later in life?
 
-Before the DSM-5 was published in 2013, the diagnostic criteria explicitly stated that ADHD and autism could not be co-diagnosed. Clinicians were forced to choose one. The rule was removed when research showed co-occurrence is common. Many adults who were diagnosed with one condition as children actually meet criteria for both.
+Before the DSM-5 was published in 2013[^dsm5], the diagnostic criteria explicitly stated that ADHD and autism could not be co-diagnosed. Clinicians were forced to choose one. The rule was removed when research showed co-occurrence is common[^hollingdale][^lai]. Many adults who were diagnosed with one condition as children actually meet criteria for both.
 
 ---
 
 ## Key Takeaways
 
-- **ADHD and autism can (and often do) co-occur.** Approximately 21-28% of people with one condition also meet criteria for the other. The DSM-5 has allowed co-diagnosis since 2013.
+- **ADHD and autism can (and often do) co-occur.** Approximately 21-28% of people with one condition also meet criteria for the other[^hollingdale][^lai]. The DSM-5 has allowed co-diagnosis since 2013[^dsm5].
 - **AuDHD isn't just "having both" — it's a distinct lived experience** characterized by internal contradictions: craving routine but unable to maintain it, wanting social contact but finding it exhausting, deep special interests that flicker with ADHD variability.
 - **Understanding your neurotype is practical, not just academic.** Different neurotypes need different task management strategies. Tools that provide external structure (like [DoTheThing](https://www.dothething.tech)) help AuDHD brains work with both sides of the contradiction.
+
+[^hollingdale]: Hollingdale et al. (2019), "Autism spectrum disorder and attention deficit/hyperactivity disorder — A systematic review of comorbidity and treatment." *Neuroscience & Biobehavioral Reviews*. [PMC6376165](https://pmc.ncbi.nlm.nih.gov/articles/PMC6376165/) — Reports ~21% of children with ADHD also meet criteria for autism.
+
+[^lai]: Lai et al. (2019), "Prevalence of co-occurring attention deficit hyperactivity disorder in autism spectrum disorder: A systematic review and meta-analysis." *The Lancet Psychiatry*. [View article](https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366(19)30289-5/fulltext) — Reports ~28% of autistic children also meet criteria for ADHD.
+
+[^dsm5]: American Psychiatric Association (2022), *Diagnostic and Statistical Manual of Mental Disorders* (5th ed., text revision). [APA DSM-5-TR](https://www.psychiatry.org/psychiatrists/practice/dsm) — Removed the prohibition on co-diagnosing ADHD and autism, allowing formal AuDHD diagnoses.
