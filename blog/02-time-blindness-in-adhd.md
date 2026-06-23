@@ -221,4 +221,100 @@ Chronic lateness produces a specific relational pattern.
 
 People start expecting you to be late. They account for it, sometimes telling you events start earlier than they do. You notice. The dynamic shifts: you become the person with the asterisk, the one your friends manage around rather than rely on.
 
-The shame this produces is compounded by the genuine effort you keep making. You tried. You really did. And you were still late. The shame runs deeper
+The shame this produces is compounded by the genuine effort you keep making. You tried. You really did. And you were still late. The shame runs deeper than the lateness itself. It lives in the gap between intention and outcome, repeated often enough to feel like identity.
+
+What the research makes clear: the gap exists because of neurology, not effort. Duration underestimation, future time blindness, and time passage unawareness are all structural. You can't effort your way out of a structural difference. You can build systems that compensate for it.
+
+---
+
+## 5 Strategies That Actually Work
+
+### 1. The Multiply-by-2 Rule
+
+Whatever time you estimate a task will take, double it before you schedule it.
+
+Duration underestimation in ADHD is consistent and predictable. If your estimates run short by 50% on average, a doubling correction brings you close to reality. Apply it to everything: getting ready, commuting, writing, cooking. Track the results for two weeks and adjust the multiplier if needed. Some ADHD adults find 1.5x is sufficient; others need 2.5x for certain task types.
+
+### 2. Visual Timers
+
+Digital countdowns on screens are easy to ignore. A [Time Timer](https://www.timetimer.com) or similar visual timer shows a shrinking arc of colour that makes time passing physically visible.
+
+ADHD brains respond to visual and concrete cues far more reliably than abstract number changes. Place the timer where you'll see it peripherally while working. Set it for the actual time available, subtract 10 minutes, and treat that 10-minute buffer as reserved. When the visual arc hits the buffer zone, you stop and transition regardless of task completion status.
+
+### 3. Time Anchors
+
+A time anchor is a fixed, non-negotiable event that your morning or afternoon organises around.
+
+Pick one. A call at 10am. A school pickup at 3pm. A standing alarm at 8:30am labelled "leave for office." Everything before it gets scheduled backwards from that anchor point rather than forward from whenever you woke up. Backwards scheduling forces you to account for how long preparation actually takes, rather than how long you hope it takes.
+
+### 4. External Structure via DoTheThing
+
+[DoTheThing](https://dothething.tech) addresses time blindness at the task level. Before you start a task, it breaks the work into micro-steps and attaches realistic time estimates to each one. The estimates are calibrated rather than optimistic, which means your actual duration lands closer to the planned duration.
+
+This matters for time blindness specifically because the underestimation problem compounds across a day. One task running 20 minutes over schedule cascades into a late afternoon and a missed evening commitment. Accurate micro-step estimates prevent the cascade from starting.
+
+### 5. Body Doubling
+
+Working alongside another person, physically or virtually, activates external time awareness.
+
+Another person's presence creates a social time signal your brain can use as a reference point. Focusmate and similar virtual coworking platforms pair you with someone for 25 or 50 minute sessions. The session structure does what your internal clock often can't: it makes time feel bounded, visible, and real.
+
+---
+
+## Next Steps
+
+If time blindness is your main challenge, start with one change rather than rebuilding your entire system.
+
+- **Week 1:** Apply the multiply-by-2 rule to your three most common tasks. Track actual vs. estimated time. Recalibrate.
+- **Week 2:** Add one visual timer to your morning routine. Use it for the task most likely to swallow time unnoticed.
+- **Week 3:** Set a time anchor for the time of day where lateness most often originates. Build backwards from it.
+
+**Further reading**
+For the broader picture of how ADHD disrupts planning and execution, [how ADHD affects task management](post:1) covers executive dysfunction alongside time blindness.
+
+If mornings are where the lateness pattern starts, the [Minimum Viable Morning](post:19) is a practical floor to build from.
+
+Once you understand time blindness, [breaking down big tasks](post:3) becomes easier because you can build realistic time buffers into each micro-step.
+
+The goal is compensation architecture, built one layer at a time.
+
+---
+
+## Frequently Asked Questions
+
+### What is time blindness in ADHD?
+
+Time blindness is the ADHD brain's impaired ability to sense how much time has passed and estimate how long tasks will take. Defined by ADDA as the inability to sense time passing or estimate task duration, it stems from reduced activity in the prefrontal cortex and cerebellum, which handle time perception and planning. Around 75% of people with ADHD experience it daily.
+
+### Why does ADHD cause time blindness?
+
+ADHD reduces activity in the prefrontal cortex, cerebellum, and left inferior parietal lobes, all of which handle time perception and planning. Dopamine irregularities also impair the brain's internal timestamping system. The result is an internal clock that runs inconsistently, making time estimation structurally unreliable rather than a skill gap.
+
+### Is time blindness the same as being disorganised?
+
+They overlap but differ. Disorganisation refers to difficulty managing tasks, materials, and systems. Time blindness specifically targets the perception of time itself, including how long tasks take and how quickly deadlines approach. Many ADHD adults with strong organisational systems still struggle with time blindness because the two involve different cognitive processes.
+
+### What is the now/not now model of ADHD time perception?
+
+Developed by Dr. Russell Barkley, the now/not now model describes how ADHD brains experience time in only two categories: events that are happening right now, and everything else. Future deadlines stay in the "not now" category until they become immediate, which is why urgency only activates at the last moment regardless of how important the deadline is.
+
+### How does the multiply-by-2 rule help with time blindness?
+
+The multiply-by-2 rule compensates for the consistent underestimation that time blindness produces. Whatever time you estimate a task will take, you double it before scheduling. Because ADHD brains structurally underestimate duration, the doubled estimate tends to land closer to reality. Pair it with a 10-minute buffer at the end of any task that precedes an appointment.
+
+### Can time blindness be treated?
+
+Time blindness responds well to external compensation strategies rather than internal discipline. Visual timers, time anchors, the multiply-by-2 rule, and external structure tools like DoTheThing reduce its impact significantly. Some research also suggests ADHD stimulant medication improves time perception by increasing prefrontal cortex activity, though strategies are effective independently.
+
+---
+
+https://add.org/adhd-time-blindness/
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9962130/
+https://pmc.ncbi.nlm.nih.gov/articles/PMC8293837/
+https://www.adhdevidence.org/blog/time-blindness-found-to-be-a-consistent-feature-of-adhd
+https://www.psychologytoday.com/us/basics/time-blindness
+https://www.ucihealth.org/blog/2024/05/time-blindness-and-adhd
+https://www.timetimer.com/
+
+
+**Related:** Explore [Does ADHD Go Away?](post:21) to understand ADHD across the lifespan.
