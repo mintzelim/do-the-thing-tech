@@ -2,7 +2,7 @@
 id: '29'
 title: "ADHD vs Autism vs AuDHD: Key Differences Explained"
 description: "ADHD and autism share many overlapping traits — but AuDHD (having both) is its own distinct experience. Here's how to tell them apart."
-slug: "/adhd-vs-autism-vs-audhd-differences"
+slug: "adhd-vs-autism-vs-audhd"
 excerpt: "ADHD and autism share many overlapping traits — sensory issues, executive dysfunction, hyperfocus. Here's how to tell them apart and what AuDHD actually feels like."
 date: "June 23, 2026"
 readTime: "9 min read"
@@ -244,7 +244,7 @@ Some traits are genuinely shared between both conditions. In these areas, the pr
 
 **Rejection sensitivity** is heavily associated with ADHD but also present in many autistic people. The underlying mechanism may differ — ADHD rejection sensitivity is linked to emotional regulation deficits, while autistic rejection sensitivity may stem from a lifetime of social exclusion and negative feedback.
 
-**Sleep disruption** affects up to 78% of ADHD adults and a similar proportion of autistic people. Both groups have higher rates of Delayed Sleep Phase Syndrome, insomnia, and circadian rhythm disorders. Our guide on [ADHD and sleep](/blog/time-blindness-in-adhd) covers this in more detail.
+**Sleep disruption** affects up to 78% of ADHD adults and a similar proportion of autistic people. Both groups have higher rates of Delayed Sleep Phase Syndrome, insomnia, and circadian rhythm disorders. Our guide on [ADHD and sleep](/blog/adhd-sleep) covers this in more detail.
 
 ---
 
