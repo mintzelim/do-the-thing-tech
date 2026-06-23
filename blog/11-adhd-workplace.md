@@ -1,6 +1,6 @@
 ---
 id: '11'
-title: ADHD in the Workplace: How to Build a Career That Works With Your Brain
+title: "ADHD in the Workplace: How to Build a Career That Works With Your Brain"
 description: >-
   ADHD at work is a systems problem, not a willpower problem. Here's the
   research, your legal rights, and the daily structures that actually change
@@ -273,24 +273,5 @@ Firing someone solely for ADHD is illegal. But an employer can end employment if
 Roles with variety, autonomy, and short-term feedback — creative fields, entrepreneurship, emergency services, sales, journalism, teaching, design. Environment and management style often matter more than job title.
 
 ---
-
-https://huntingtonpsych.com/blog/adult-adhd-statistics
-https://wifitalents.com/adhd-employment-statistics/
-https://www.adhdadvisor.org/learn/adhd-statistics-and-facts
-https://add.org/impact-of-adhd-at-work/
-https://add.org/adhd-workplace-accommodations/
-https://www.ada.gov/
-https://chadd.org/about-adhd/adhd-related-conditions/
-https://chadd.org/adhd-weekly/asking-for-workplace-accommodations/
-https://www.additudemag.com/adhd-law-americans-with-disabilities-act/
-https://www.healthline.com/health/adhd/workplace-accommodations-for-adhd
-https://doi.org/10.1177/27546330241287655
-https://pmc.ncbi.nlm.nih.gov/articles/PMC1781280/
-https://mydisabilityjobs.com/statistics/adhd-employment/
-https://scholars.unh.edu/urc/616/
-https://journals.sagepub.com/doi/10.1177/27546330241292984
-https://www.ncda.org/aws/NCDA/pt/sd/news_article/603220/_PARENT/CC_layout_details/false
-https://doi.org/10.1186/s12888-022-04409-w
-
 
 **Related:** Explore ADHD in the Workplace in depth and pair with our guide on [ADHD and Relationships](post:10) for the full picture.
