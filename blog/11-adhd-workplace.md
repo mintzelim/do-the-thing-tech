@@ -84,23 +84,23 @@ sources:
     url: https://add.org/impact-of-adhd-at-work/
   - title: 'ADD.org — ADHD Workplace Accommodations'
     url: https://add.org/adhd-workplace-accommodations/
-  - title: ADA.gov
+  - title: 'ADA.gov'
     url: https://www.ada.gov/
-  - title: CHADD — ADHD Related Conditions (Prefrontal Cortex)
+  - title: 'CHADD — ADHD Related Conditions (Prefrontal Cortex)'
     url: https://chadd.org/about-adhd/adhd-related-conditions/
-  - title: CHADD — Asking for Workplace Accommodations
+  - title: 'CHADD — Asking for Workplace Accommodations'
     url: https://chadd.org/adhd-weekly/asking-for-workplace-accommodations/
   - title: 'ADDitude Magazine — ADHD and the ADA'
     url: https://www.additudemag.com/adhd-law-americans-with-disabilities-act/
   - title: 'Healthline — Workplace Accommodations for ADHD'
     url: https://www.healthline.com/health/adhd/workplace-accommodations-for-adhd
-  - title: PMC — ADHD Employment Meta-Analysis: Lauder et al. (2024)
+  - title: 'PMC — ADHD Employment Meta-Analysis: Lauder et al. (2024)'
     url: https://journals.sagepub.com/doi/10.1177/27546330241292984
-  - title: PMC — Turjeman-Levi et al. (2024), ADHD Burnout Pathways
+  - title: 'PMC — Turjeman-Levi et al. (2024), ADHD Burnout Pathways'
     url: https://doi.org/10.1186/s12888-022-04409-w
   - title: 'University of New Hampshire — McNamara, Workplace Accommodations Study'
     url: https://scholars.unh.edu/urc/616/
-  - title: NCDA — Pinho & Coutinho (2024), ADHD Career Patterns
+  - title: 'NCDA — Pinho & Coutinho (2024), ADHD Career Patterns'
     url: >-
       https://www.ncda.org/aws/NCDA/pt/sd/news_article/603220/_PARENT/CC_layout_details/false
   - title: 'DoTheThing — Free Tools for ADHD'
