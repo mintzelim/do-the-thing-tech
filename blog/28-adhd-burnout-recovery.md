@@ -124,7 +124,7 @@ They might be right about the rest part. But they're wrong about the cause.
 
 Think of it like this. A neurotypical brain runs daily tasks on autopilot. Your brain runs them manually. Every task initiation, every transition, every filter against distraction, every emotional regulation moment requires conscious effort. That effort has a cost. When the cost exceeds your brain's capacity, you crash.
 
-Research published in *AIMS Public Health* (Turjeman-Levi et al., 2024) found that executive function deficits directly mediate the relationship between ADHD and burnout. In plain language: the harder your brain has to work to do basic executive tasks, the faster you burn out.
+Research published in [*AIMS Public Health* (Turjeman-Levi et al., 2024)](https://www.aimspress.com/article/doi/10.3934/publichealth.2024015) found that executive function deficits directly mediate the relationship between ADHD and burnout. In plain language: the harder your brain has to work to do basic executive tasks, the faster you burn out.
 
 This is why ADHD burnout hits differently. A neurotypical person burns out from overwork. You burn out from overwork *plus* the hidden work of managing a brain that wasn't designed for this operating system.
 
@@ -138,7 +138,7 @@ Regular burnout and ADHD burnout look similar on the surface. Under the hood, th
 
 **ADHD burnout** is driven by dopamine dysregulation. Your brain's reward system doesn't activate normally for tasks that aren't interesting, novel, or urgent. Every low-stimulation task costs more neural energy because your brain has to recruit additional regions to compensate. A 2024 SAGE meta-analysis confirmed that sustained effort on low-interest tasks is significantly more depleting for ADHD brains because the dopamine reward system doesn't engage.
 
-> ADHD burnout often persists despite rest because the underlying mechanism (dopamine dysregulation and executive function overload) isn't addressed by a vacation. (NICE NG87, 2025)
+> ADHD burnout often persists despite rest because the underlying mechanism (dopamine dysregulation and executive function overload) isn't addressed by a vacation. ([NICE NG87, 2025](https://www.nice.org.uk/guidance/ng87))
 
 A 2024 diffusion tensor imaging study found that ADHD brains show altered structural connectivity in networks handling task switching and sustained attention. The wiring itself is different. You're not running the same software and getting tired. You're running different hardware and wondering why your battery drains faster.
 
@@ -158,7 +158,7 @@ This is the engine of ADHD burnout. It works like this.
 
 **Phase 4: Repeat.** The urgency of the guilt creates a new dopamine spike. You crash again. Each cycle gets tighter. Recovery takes longer.
 
-The NICE guideline NG87 (2025) explicitly identifies this pattern (sustained attention overload leading to "mental fatigue or a temporary shutdown") as a distinct risk in ADHD. This isn't a theory. It's a clinically recognized pattern.
+The NICE guideline [NG87 (2025)](https://www.nice.org.uk/guidance/ng87) explicitly identifies this pattern (sustained attention overload leading to "mental fatigue or a temporary shutdown") as a distinct risk in ADHD. This isn't a theory. It's a clinically recognized pattern.
 
 ---
 
@@ -175,7 +175,7 @@ Regular tiredness lifts after a good night's sleep or a weekend off. ADHD burnou
 | **Loss of interest** | Things you usually enjoy feel empty. Hobbies gather dust. | Burnout flattens the reward response. Even dopamine activities stop working. |
 | **Shutdown mode** | You stop responding to messages. You cancel plans. You sit and stare. | This isn't laziness. It's your nervous system forcing a reset. |
 
-A 2024 study by Porto et al. in *Paidéia* examined 751 university students and found that the inattention dimension of ADHD was specifically and significantly correlated with emotional exhaustion and depersonalization. The relationship wasn't general. It was specific to the parts of ADHD that affect sustained attention and executive function.
+A 2024 study by [Porto et al. in *Paidéia*](https://www.scielo.br/j/paideia/a/QDChkNWLTCCxf7tzthD38hr/) examined 751 university students and found that the inattention dimension of ADHD was specifically and significantly correlated with emotional exhaustion and depersonalization. The relationship wasn't general. It was specific to the parts of ADHD that affect sustained attention and executive function.
 
 ---
 
@@ -245,7 +245,7 @@ This is where you build systems that prevent the next crash.
 ### Tier 2: Targeted (Symptom-Specific)
 - **For executive dysfunction:** [Use external systems, not willpower.](/blog/how-adhd-affects-task-management) Timers, lists, body doubling, visual planners.
 - **For the hyperfocus cycle:** [Set external alarms before starting](/blog/time-blindness-in-adhd). Hard stops. Transition rituals between tasks.
-- **For emotional crashes:** Name the RSD. Talk to someone who gets it. Barkley's micro-pause — hand over mouth, breathe, ask "does this make sense or is this the burnout?"
+- **For emotional crashes:** Name the RSD. Talk to someone who gets it. Barkley's micro-pause — hand over mouth, breathe, ask "does this make sense or is this the burnout?" ([source](https://www.simplypsychology.org/adhd-emotional-dysregulation.html))
 - **For sensory overload:** [Reduce input aggressively.](/blog/adhd-medication-and-productivity) Noise management. Permission to leave overwhelming environments.
 
 ### Tier 3: Structural (Long-Term Prevention)
