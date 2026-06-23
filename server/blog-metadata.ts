@@ -270,8 +270,9 @@ export function injectBlogMetadata(
     /<meta property="og:description" content="[^"]*" \/>/,
     `<meta property="og:description" content="${escapeHtml(post.excerpt)}" />`
   );
+  var ogImageRegex = /<meta property="og:image" content="[^"]*" \/>/;
   result = result.replace(
-    <meta property="og:image" content="[^"]*" \/>,
+    ogImageRegex,
     `<meta property="og:image" content="${ogImage}" />`
   );
 
@@ -280,7 +281,8 @@ export function injectBlogMetadata(
     const articleOgTags = `    <meta property="article:published_time" content="${new Date(post.date).toISOString()}" />
     <meta property="article:section" content="${escapeHtml(post.category)}" />
     `;
-    result = result.replace(/<meta property="og:image"[^>]*\/>/, `$&\n${articleOgTags}`);
+    var ogImageTagRegex = /<meta property="og:image"[^>]*\/>/;
+    result = result.replace(ogImageTagRegex, `$&\n${articleOgTags}`);
   }
 
   // Replace Twitter Card tags (remove site-wide, add post-specific)
