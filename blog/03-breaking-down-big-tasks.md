@@ -7,8 +7,8 @@ description: >-
   automates the whole process.
 slug: /breaking-down-big-tasks-adhd
 excerpt: >-
-  [Task paralysis](https://add.org/adhd-paralysis/) is a brain problem, not a willpower problem.
-  Here's how to handle it.
+  [Task paralysis](https://add.org/adhd-paralysis/) is a brain problem, not a willpower problem. Here's how to fix
+  it.
 date: "March 01, 2026"
 readTime: 10 min read
 category: Task Management
