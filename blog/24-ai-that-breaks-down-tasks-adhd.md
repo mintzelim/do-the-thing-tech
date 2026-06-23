@@ -3,7 +3,7 @@ id: '24'
 title: "AI That Breaks Down Tasks: How It Actually Helps ADHD Brains Start"
 description: "AI task breakdown tools remove the planning requirement that stops ADHD brains from starting. Here's how the technology works, why it helps, and which tool does it best for ADHD adults."
 slug: /ai-that-breaks-down-tasks-adhd
-excerpt: "The planning step before a task is often harder than the task itself for ADHD brains. AI task breakdown tools remove that step entirely. Here's what to look for and which ones actually work."
+excerpt: "The planning step before a task is often harder than the task itself for ADHD brains. AI task breakdown tools remove that planning requirement entirely. Here's what to look for and which ones actually work."
 date: "May 14, 2026"
 readTime: 7 min read
 category: Tools & Resources
@@ -99,7 +99,7 @@ AI task breakdown tools close that gap. Here's what they do, why they help, and 
 
 ## Why ADHD Brains Struggle to Start Tasks
 
-Dr. Russell Barkley, PhD, puts it plainly: "It is not that the individual does not know what to do. It is that somehow it does not get done."
+Dr. Russell Barkley, PhD, puts it plainly: "It is not that the individual does not know what to do. It is that somehow it does not get done." ([ADDitude, 2025](https://www.additudemag.com/7-executive-function-deficits-linked-to-adhd/))
 
 [A 2024 review in Nature Reviews Psychology by Kofler et al.](https://pmc.ncbi.nlm.nih.gov/articles/PMC11485171/) confirms that executive function deficits, particularly in working memory, inhibitory control, and planning, are among the most consistently documented cognitive features of ADHD. The prefrontal cortex handles planning, sequencing, and task initiation, and it runs on dopamine, as confirmed by [Isaac, Lopez, and Escobar (2024) in Frontiers in Psychiatry](https://pmc.ncbi.nlm.nih.gov/articles/PMC10827919/). In ADHD brains, that dopamine supply is reduced.
 
