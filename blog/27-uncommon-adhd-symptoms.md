@@ -143,7 +143,7 @@ Let's walk through each one.
 
 It doesn't feel like "being sensitive." It feels like your chest caving in. Like you've been physically wounded. The word "dysphoria" comes from Greek. It means "unbearable."
 
-Dr. William Dodson, who spent decades studying RSD, found that nearly all ADHD individuals experience some form of it. He estimates **up to 99% of teens and adults with ADHD deal with rejection sensitivity**. About a third say it's the single hardest part of living with ADHD.
+[Dr. William Dodson](https://add.org/wp-content/uploads/2023/10/SLIDES-Dodson-Oct-12-2023-pdf.pdf), who spent decades studying RSD, found that nearly all ADHD individuals experience some form of it. He estimates **up to 99% of teens and adults with ADHD deal with rejection sensitivity**. About a third say it's the single hardest part of living with ADHD.
 
 > "The average ADHD child hears 20,000 additional negative or corrective messages by age 10 compared to neurotypical peers." (Jellinek, cited in ADDA)
 
@@ -171,7 +171,7 @@ People with ADHD don't experience time as a steady flow. They experience "now" a
 
 You sit down to send one email. You look up. An hour passed. You swear you left the house 20 minutes early. You're 15 minutes late anyway.
 
-A 2022 meta-analysis published in *Research on Child and Adolescent Psychopathology* confirmed that children with ADHD show measurable deficits in time estimation compared to typically developing peers. The authors identified time perception as a distinct neuropsychological factor, separate from general executive dysfunction.
+[A 2022 meta-analysis](https://pmc.ncbi.nlm.nih.gov/articles/PMC9187895/) published in *Research on Child and Adolescent Psychopathology* confirmed that children with ADHD show measurable deficits in time estimation compared to typically developing peers. The authors identified time perception as a distinct neuropsychological factor, separate from general executive dysfunction.
 
 **Why it happens:** Time perception relies on dopamine-regulated networks in the basal ganglia and prefrontal cortex. ADHD brains have inconsistent dopamine signaling. When those networks don't fire reliably, planning becomes guesswork.
 
@@ -191,7 +191,7 @@ For a deeper dive, read our full guide on [time blindness in ADHD and why you're
 
 A dripping faucet. The hum of a fluorescent light. The tag on your shirt. Other people filter these out. You can't.
 
-A 2025 meta-analysis by Jurek et al. in the *Journal of the American Academy of Child & Adolescent Psychiatry* found that people with ADHD are **9 times more likely to be hypersensitive** compared to controls. Across 30 studies with over 5,000 participants, every single sensory domain showed elevated responses. Auditory, visual, tactile, movement. All of them.
+[A 2025 meta-analysis by Jurek et al.](https://www.jaacap.org/article/S0890-8567(25)00152-0/fulltext) in the *Journal of the American Academy of Child & Adolescent Psychiatry* found that people with ADHD are **9 times more likely to be hypersensitive** compared to controls. Across 30 studies with over 5,000 participants, every single sensory domain showed elevated responses. Auditory, visual, tactile, movement. All of them.
 
 The strongest difference was in **auditory processing**. Soft, repetitive sounds like ticking, chewing, or humming caused disproportionate distress.
 
@@ -237,7 +237,7 @@ Learning the difference is crucial: [executive dysfunction vs. task paralysis](/
 
 **Emotional dysregulation means feeling emotions more intensely, more suddenly, and for longer than neurotypical people.**
 
-Dr. Russell Barkley, one of the leading researchers in ADHD, describes it plainly:
+[Dr. Russell Barkley](https://www.simplypsychology.org/adhd-emotional-dysregulation.html), one of the leading researchers in ADHD, describes it plainly:
 
 > "The emotion that an individual experiences comes up very quickly, much more strongly than in others, because they are not suppressing and inhibiting and moderating it." (Cited in Simply Psychology)
 
@@ -280,7 +280,7 @@ A 2023 EEG study found that adults with ADHD show **enhanced P200 amplitudes at 
 
 **Delayed Sleep Phase Syndrome (DSPS) is the most common sleep disorder in ADHD. Your brain's clock literally runs late.**
 
-A 2024 study by van der Ham et al. published in the *Journal of Attention Disorders* screened 3,691 adults with ADHD and found:
+[A 2024 study by van der Ham et al.](https://pubmed.ncbi.nlm.nih.gov/39354860/) published in the *Journal of Attention Disorders* screened 3,691 adults with ADHD and found:
 
 | Sleep Condition | Prevalence |
 |----------------|------------|
