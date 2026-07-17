@@ -102,6 +102,8 @@ function generateBlogPosts() {
         date: frontmatter.date || '',
         readTime: frontmatter.readTime || '',
         category: frontmatter.category || '',
+        wordCount: frontmatter.wordCount || null,
+        updatedDate: frontmatter.updatedDate || frontmatter.date || '',
         primaryEntity: frontmatter.primaryEntity || '',
         secondaryEntities,
         faq: faqItems,

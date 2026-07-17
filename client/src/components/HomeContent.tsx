@@ -172,25 +172,25 @@ export default function HomeContent() {
         <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '32px' }}>Hand-picked articles to help you understand ADHD and get things done</p>
         
         <div className="blog-links-grid">
+          <Link href="/blog/rejection-sensitive-dysphoria-rsd" className="blog-link-card">
+            <h3>ADHD Rejection Sensitive Dysphoria (RSD): What It Is and How to Cope</h3>
+            <p>RSD causes overwhelming emotional pain from real or perceived rejection. Learn what's happening in the ADHD brain and evidence-based strategies that help.</p>
+          </Link>
+          <Link href="/blog/adhd-burnout-recovery" className="blog-link-card">
+            <h3>ADHD Burnout: Why It's Different and How to Actually Recover</h3>
+            <p>93% of ADHD adults experience burnout. Here's the neuroscience, the 3-stage recovery plan, and what actually helps.</p>
+          </Link>
+          <Link href="/blog/uncommon-adhd-symptoms" className="blog-link-card">
+            <h3>7 Uncommon ADHD Symptoms That Aren't in the Brochure</h3>
+            <p>The official ADHD checklist misses the symptoms that actually destroy your life. Here are 7 backed by research but rarely mentioned.</p>
+          </Link>
+          <Link href="/blog/adhd-symptoms-adults" className="blog-link-card">
+            <h3>ADHD Symptoms in Adults: What the Checklists Miss</h3>
+            <p>Most ADHD symptom guides describe a restless boy in a classroom. Here's the fuller picture of what adult ADHD actually looks like.</p>
+          </Link>
           <Link href="/blog/how-adhd-affects-task-management" className="blog-link-card">
             <h3>How ADHD Affects Task Management</h3>
             <p>The neuroscience behind executive dysfunction and why traditional systems fall flat.</p>
-          </Link>
-          <Link href="/blog/time-blindness-in-adhd" className="blog-link-card">
-            <h3>Time Blindness in ADHD: Why You're Always Late</h3>
-            <p>What's actually happening neurologically, and strategies that genuinely compensate.</p>
-          </Link>
-          <Link href="/blog/breaking-down-big-tasks" className="blog-link-card">
-            <h3>Breaking Down Big Tasks: A Guide for ADHD Brains</h3>
-            <p>Three science-backed methods for turning paralysing tasks into steps you can start.</p>
-          </Link>
-          <Link href="/blog/executive-dysfunction-vs-task-paralysis" className="blog-link-card">
-            <h3>Executive Dysfunction vs Task Paralysis</h3>
-            <p>They look identical from the outside. The fixes are different.</p>
-          </Link>
-          <Link href="/blog/best-tools-for-adhd-task-management" className="blog-link-card">
-            <h3>Free Tools for ADHD Task Management in 2026</h3>
-            <p>The best free tools to stack alongside DoTheThing.</p>
           </Link>
         </div>
         
