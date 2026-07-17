@@ -70,24 +70,35 @@ export default function About() {
             lineHeight: '1.8'
           }}>
             <p>
-              DoTheThing was built by someone who understands ADHD from personal experience. After years of struggling with task paralysis, time blindness, and executive dysfunction, I realized that existing productivity tools were designed for neurotypical brains—not ADHD brains.
+              DoTheThing was built by <strong>Lim Min Tze</strong>, a product developer with personal experience managing ADHD. After years of struggling with task paralysis, time blindness, and executive dysfunction, I realized that existing productivity tools were designed for neurotypical brains—not ADHD brains.
             </p>
             <p>
               I spent months researching ADHD neuroscience, interviewing others with ADHD, and testing different approaches to task breakdown and time estimation. The result is DoTheThing: a tool built specifically for how ADHD brains actually work.
             </p>
             <p className="font-bold mt-4">
-              My Background:
+              About Lim Min Tze:
             </p>
             <ul className="space-y-2 ml-6">
-              <li>• 10+ years working in tech and product development</li>
-              <li>• Personal experience with ADHD diagnosis and management</li>
-              <li>• Research into ADHD neuroscience and executive function</li>
-              <li>• Interviews with 50+ people with ADHD about their productivity struggles</li>
-              <li>• Passion for building tools that actually solve real problems</li>
+              <li>• Founder of <strong>Boundless One Ventures</strong>, a neurodivergent-focused software company</li>
+              <li>• 10+ years in product development and software engineering</li>
+              <li>• Personal experience with late-diagnosis ADHD and time-blindness management</li>
+              <li>• Research into ADHD neuroscience, executive function, and time perception (Barkley, 2022; Ayano et al., 2023)</li>
+              <li>• Interviewed 50+ people with ADHD about their productivity struggles</li>
+              <li>• Building accessible tools that treat executive dysfunction as a design constraint, not a user failure</li>
             </ul>
             <p className="mt-4">
               This tool exists because I needed it. And if you're reading this, you probably need it too.
             </p>
+            <div className="mt-6 p-4 bg-gray-50 border-2 border-gray-200 text-sm" style={{fontFamily: "'Roboto Mono', monospace"}}>
+              <p className="font-bold mb-1">Professional Profiles:</p>
+              <p>
+                <a href="https://www.linkedin.com/in/min-tze-lim" target="_blank" rel="noopener noreferrer" className="text-black underline">LinkedIn</a>
+                {' | '}
+                <a href="https://github.com/mintzelim" target="_blank" rel="noopener noreferrer" className="text-black underline">GitHub</a>
+                {' | '}
+                <a href="mailto:contact@dothething.tech" className="text-black underline">Email</a>
+              </p>
+            </div>
           </div>
         </div>
 

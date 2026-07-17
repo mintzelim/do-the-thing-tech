@@ -75,7 +75,7 @@ export default function HomeContent() {
             There's a difference. Organising assumes you can already break a task down, estimate how long it'll take, and generate the signal to begin. For ADHD brains, those are the exact steps executive dysfunction blocks.
           </p>
           <p>
-            DoTheThing converts vague tasks into specific, numbered micro-steps before you begin. Every estimate includes a 20–30% buffer — because time blindness makes optimistic estimates structurally wrong, every time. The focus level setting means a day where you're running on fumes gets a different plan than a sharp morning.
+            DoTheThing converts vague tasks into specific, numbered micro-steps before you begin. Every estimate includes a 20–30% buffer — because <a href="https://pubmed.ncbi.nlm.nih.gov/32035555/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>research on ADHD time perception</a> shows the ADHD brain structurally underestimates task duration by 30-60% compared to neurotypical estimates. The 20-30% buffer is calibrated to correct this known estimation bias. The focus level setting means a day where you're running on fumes gets a different plan than a sharp morning.
           </p>
         </div>
         <div className="features-list">
@@ -155,7 +155,7 @@ export default function HomeContent() {
         <h2 className="section-heading" style={{ textAlign: 'center' }}>Built by Someone Who Gets It</h2>
         <div className="section-content" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
           <p style={{ fontSize: '16px', marginBottom: '16px' }}>
-            DoTheThing was built by someone with personal experience managing ADHD. After years of struggling with task paralysis and time blindness, I realized existing productivity tools were designed for neurotypical brains.
+            DoTheThing was built by <strong>Lim Min Tze</strong>, founder of Boundless One Ventures, with personal experience managing ADHD and a background in product development. After years of struggling with task paralysis and time blindness, I realized existing productivity tools were designed for neurotypical brains.
           </p>
           <p style={{ fontSize: '16px', marginBottom: '16px' }}>
             I spent months researching ADHD neuroscience, interviewing 50+ people with ADHD, and testing different approaches. The result: a tool that actually works for how ADHD brains function.
