@@ -172,6 +172,14 @@ export default function HomeContent() {
         <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '32px' }}>Hand-picked articles to help you understand ADHD and get things done</p>
         
         <div className="blog-links-grid">
+          <Link href="/blog/adhd-in-women" className="blog-link-card">
+            <h3>ADHD in Women: The Symptoms Nobody Told You About</h3>
+            <p>ADHD in women looks internal, not hyperactive — and hormones make it worse. Here's what it actually feels like and why it's missed.</p>
+          </Link>
+          <Link href="/blog/adhd-burnout-recovery" className="blog-link-card">
+            <h3>ADHD Burnout: Why It's Different and How to Actually Recover</h3>
+            <p>93% of ADHD adults experience burnout. But it's not like regular burnout. Here's the neuroscience and the 3-stage recovery plan.</p>
+          </Link>
           <Link href="/blog/how-adhd-affects-task-management" className="blog-link-card">
             <h3>How ADHD Affects Task Management</h3>
             <p>The neuroscience behind executive dysfunction and why traditional systems fall flat.</p>
@@ -180,17 +188,9 @@ export default function HomeContent() {
             <h3>Time Blindness in ADHD: Why You're Always Late</h3>
             <p>What's actually happening neurologically, and strategies that genuinely compensate.</p>
           </Link>
-          <Link href="/blog/breaking-down-big-tasks" className="blog-link-card">
-            <h3>Breaking Down Big Tasks: A Guide for ADHD Brains</h3>
-            <p>Three science-backed methods for turning paralysing tasks into steps you can start.</p>
-          </Link>
-          <Link href="/blog/executive-dysfunction-vs-task-paralysis" className="blog-link-card">
-            <h3>Executive Dysfunction vs Task Paralysis</h3>
-            <p>They look identical from the outside. The fixes are different.</p>
-          </Link>
-          <Link href="/blog/best-tools-for-adhd-task-management" className="blog-link-card">
-            <h3>Free Tools for ADHD Task Management in 2026</h3>
-            <p>The best free tools to stack alongside DoTheThing.</p>
+          <Link href="/blog/adhd-perfectionism" className="blog-link-card">
+            <h3>ADHD and Perfectionism: Why You Can't Finish Tasks</h3>
+            <p>Perfectionism in ADHD isn't about caring too much. It's about protecting yourself from shame. Here's how to break the cycle.</p>
           </Link>
         </div>
         
