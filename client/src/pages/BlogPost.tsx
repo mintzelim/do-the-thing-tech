@@ -99,6 +99,8 @@ type BlogPost = {
   date: string;
   readTime: string;
   category: string;
+  wordCount?: number;
+  updatedDate?: string;
   seoKeywords: string[];
   sources: Array<{ title: string; url: string }>;
   relatedPosts: string[];
@@ -271,6 +273,12 @@ export default function BlogPost() {
                 <span>{post.date}</span>
                 <span>•</span>
                 <span>{post.readTime}</span>
+                {post.wordCount && (
+                  <>
+                    <span>•</span>
+                    <span>{post.wordCount.toLocaleString()} words</span>
+                  </>
+                )}
                 <span>•</span>
                 <span style={{ 
                   backgroundColor: "var(--pixel-accent)", 
