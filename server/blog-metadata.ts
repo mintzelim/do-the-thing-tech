@@ -9,6 +9,7 @@ type BlogPost = {
   title: string;
   excerpt: string;
   date: string;
+  updatedDate?: string;
   readTime: string;
   category: string;
   primaryEntity?: string;
@@ -71,6 +72,7 @@ function generateBlogPostSchema(post: BlogPost, baseUrl: string): string {
   const postUrl = `${baseUrl}/blog/${post.slug}`;
   const dateObj = new Date(post.date);
   const isoDate = dateObj.toISOString();
+  const modifiedDate = new Date(post.updatedDate || post.date).toISOString();
   const wordCount = calculateWordCount(post.content);
   const readingTimeMinutes = Math.ceil(wordCount / 200);
 
@@ -89,7 +91,7 @@ function generateBlogPostSchema(post: BlogPost, baseUrl: string): string {
         }
       : `${baseUrl}/og-image.png`,
     datePublished: isoDate,
-    dateModified: isoDate,
+    dateModified: modifiedDate,
     author: [
       {
         "@type": "Organization",
@@ -281,6 +283,7 @@ export function injectBlogMetadata(
   // Add article-specific Open Graph tags if not present
   if (!result.includes('property="article:published_time"')) {
     const articleOgTags = `    <meta property="article:published_time" content="${new Date(post.date).toISOString()}" />
+    <meta property="article:modified_time" content="${new Date(post.updatedDate || post.date).toISOString()}" />
     <meta property="article:section" content="${escapeHtml(post.category)}" />
     `;
     var ogImageTagRegex = /<meta property="og:image"[^>]*\/>/;

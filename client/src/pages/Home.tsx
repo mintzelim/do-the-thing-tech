@@ -425,6 +425,10 @@ export default function Home() {
               <br />
               <br />
               Free. No login. Under a minute.
+              <br />
+              <span style={{ fontSize: "14px", color: "var(--pixel-text-light)" }}>
+                A practical ADHD resource built from lived experience, research, and real-world task planning.
+              </span>
             </p>
             <div style={{ textAlign: "center", marginBottom: "32px" }}>
               <a href="#widget" className="cta-button" style={{ display: "inline-block", padding: "12px 40px", backgroundColor: "var(--pixel-accent)", color: "white", textDecoration: "none", fontWeight: "bold", fontSize: "18px", border: "2px solid var(--pixel-border)", cursor: "pointer", fontFamily: "'VT323', monospace" }}>START NOW ↓</a>

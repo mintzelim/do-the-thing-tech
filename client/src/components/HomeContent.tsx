@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { LEARNING_PATHS } from "@/lib/learningPaths";
 
 export default function HomeContent() {
   return (
@@ -155,14 +156,39 @@ export default function HomeContent() {
         <h2 className="section-heading" style={{ textAlign: 'center' }}>Built by Someone Who Gets It</h2>
         <div className="section-content" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
           <p style={{ fontSize: '16px', marginBottom: '16px' }}>
-            DoTheThing was built by someone with personal experience managing ADHD. After years of struggling with task paralysis and time blindness, I realized existing productivity tools were designed for neurotypical brains.
+            DoTheThing was built by Lim Min Tze, a product developer with personal experience managing ADHD. After years of struggling with task paralysis and time blindness, I realized existing productivity tools were designed for neurotypical brains.
           </p>
           <p style={{ fontSize: '16px', marginBottom: '16px' }}>
-            I spent months researching ADHD neuroscience, interviewing 50+ people with ADHD, and testing different approaches. The result: a tool that actually works for how ADHD brains function.
+            The site separates lived experience from research: articles cite their sources, while the tool focuses on one practical question—what is the smallest next step you can take right now?
           </p>
           <Link href="/about" className="cta-button" style={{ display: 'inline-block', padding: '10px 24px', backgroundColor: 'var(--pixel-accent)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>
             LEARN MORE ABOUT THE CREATOR
           </Link>
+        </div>
+      </section>
+
+      {/* SECTION 6.75: START HERE LEARNING PATHS */}
+      <section className="content-section" aria-labelledby="learning-paths-heading">
+        <h2 id="learning-paths-heading" className="section-heading" style={{ textAlign: 'center' }}>Start Here: Choose Your Learning Path</h2>
+        <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '32px' }}>
+          Pick the problem that is loudest today. Each path begins with two practical, source-backed articles.
+        </p>
+        <div className="blog-links-grid">
+          {LEARNING_PATHS.map((path) => (
+            <section key={path.title} className="blog-link-card" aria-label={path.title}>
+              <h3>{path.title}</h3>
+              <p>{path.description}</p>
+              <ul style={{ paddingLeft: '18px', margin: '16px 0 0', display: 'grid', gap: '8px' }}>
+                {path.posts.map((post) => (
+                  <li key={post.href}>
+                    <Link href={post.href} style={{ color: 'var(--pixel-accent)', textDecoration: 'underline' }}>
+                      {post.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
         </div>
       </section>
 

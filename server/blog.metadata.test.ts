@@ -70,12 +70,19 @@ describe('Blog Post Metadata', () => {
 
   describe('Blog Structure Consistency', () => {
     it('all posts have required fields', () => {
-      const requiredFields = ['id', 'title', 'excerpt', 'content', 'date', 'readTime', 'category', 'seoKeywords', 'sources', 'relatedPosts'];
+      const requiredFields = ['id', 'title', 'excerpt', 'content', 'date', 'updatedDate', 'readTime', 'category', 'seoKeywords', 'sources', 'relatedPosts'];
       
       blogPosts.forEach(post => {
         requiredFields.forEach(field => {
           expect(post).toHaveProperty(field);
         });
+      });
+    });
+
+    it('all posts have a valid maintenance timestamp', () => {
+      blogPosts.forEach(post => {
+        expect(typeof post.updatedDate).toBe('string');
+        expect(Number.isNaN(Date.parse(post.updatedDate))).toBe(false);
       });
     });
   });

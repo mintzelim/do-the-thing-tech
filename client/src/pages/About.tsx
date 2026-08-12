@@ -64,6 +64,42 @@ export default function About() {
           }}>
             MEET THE CREATOR
           </h2>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '20px',
+            flexWrap: 'wrap',
+            marginBottom: '20px',
+          }}>
+            <figure style={{ margin: 0, width: '148px', flex: '0 0 148px' }}>
+              <img
+                src="/manus-storage/dothething-creator-avatar_65ec01fa.png"
+                alt="Illustrative pixel-art avatar for DoTheThing’s creator section"
+                width={148}
+                height={148}
+                style={{
+                  display: 'block',
+                  width: '148px',
+                  height: '148px',
+                  objectFit: 'cover',
+                  border: '3px solid #000',
+                  imageRendering: 'pixelated',
+                  backgroundColor: '#f4f4f4',
+                }}
+              />
+              <figcaption style={{ fontSize: '11px', lineHeight: '1.35', marginTop: '8px', color: '#4b5563' }}>
+                Illustrative avatar for this site; not a photographic portrait.
+              </figcaption>
+            </figure>
+            <div style={{ flex: '1 1 340px', minWidth: '0' }}>
+              <p style={{ marginTop: 0, marginBottom: '10px', fontWeight: 700 }}>
+                Lim Min Tze — founder, product developer, and the person behind DoTheThing.
+              </p>
+              <p style={{ margin: 0 }}>
+                This site combines lived experience with clearly sourced educational material. It is a practical productivity resource, not a substitute for diagnosis or medical care.
+              </p>
+            </div>
+          </div>
           <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
             fontFamily: "'Roboto Mono', monospace",
             fontSize: '14px',
@@ -96,7 +132,7 @@ export default function About() {
                 {' | '}
                 <a href="https://github.com/mintzelim" target="_blank" rel="noopener noreferrer" className="text-black underline">GitHub</a>
                 {' | '}
-                <a href="mailto:contact@dothething.tech" className="text-black underline">Email</a>
+                <a href="mailto:support@dothething.tech" className="text-black underline">Email</a>
               </p>
             </div>
           </div>

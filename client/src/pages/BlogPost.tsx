@@ -171,7 +171,7 @@ export default function BlogPost() {
           content: foundPost.content,
           author: "DoTheThing",
           datePublished: foundPost.date,
-          dateModified: foundPost.date,
+          dateModified: foundPost.updatedDate || foundPost.date,
           category: [foundPost.category],
           keywords: foundPost.seoKeywords,
           faq: foundPost.faq,
@@ -272,7 +272,13 @@ export default function BlogPost() {
                 flexWrap: "wrap",
                 alignItems: "center"
               }}>
-                <span>{post.date}</span>
+                <span>Published {post.date}</span>
+                {post.updatedDate && (
+                  <>
+                    <span>•</span>
+                    <span>Updated {post.updatedDate}</span>
+                  </>
+                )}
                 <span>•</span>
                 <span>{post.readTime}</span>
                 {post.wordCount && (
