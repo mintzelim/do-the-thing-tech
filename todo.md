@@ -446,4 +446,4 @@
 - [x] Fix blank category tag shown in the live blog category filters
 - [x] Resolve the deployment build failure caused by ignored pnpm esbuild build scripts
 - [x] Verify affected blog images, category filters, and published deployment
-- [ ] Synchronize the tested GitHub revision with the live production site and verify the public URLs
+- [x] Synchronize the tested GitHub revision with the live production site and verify the public URLs
