@@ -30,26 +30,31 @@ export default function HomeContent() {
         <div className="steps-grid">
           <div className="step-card">
             <div className="step-number">1</div>
+            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png" alt="Purple mascot considering a pile of thoughts" />
             <h3>Brain Dump</h3>
             <p>Type a task. Or type everything. No sorting needed — the AI reads the pile and finds the work inside it.</p>
           </div>
           <div className="step-card">
             <div className="step-number">2</div>
+            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png" alt="Purple mascot with a focus checklist" />
             <h3>Pick Your Focus Level</h3>
             <p>Hyperfocused. Normal. Distracted. Your time estimates shift to match your actual brain today, not the version you wish showed up.</p>
           </div>
           <div className="step-card">
             <div className="step-number">3</div>
+            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-works-breakdown-size-transparent_631cd19e.png" alt="Purple mascot choosing between three step sizes" />
             <h3>Choose Your Breakdown Size</h3>
             <p>Tiny Steps for the days when even starting feels huge. Balanced for normal days. Big Milestones when you want the shape of a project without every detail.</p>
           </div>
           <div className="step-card">
             <div className="step-number">4</div>
+            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png" alt="Purple mascot beside a generated step list" />
             <h3>Get Your Breakdown</h3>
             <p>A numbered list of specific steps lands in seconds. Each one small enough to start without deciding anything first.</p>
           </div>
           <div className="step-card">
             <div className="step-number">5</div>
+            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png" alt="Purple mascot with a countdown timer and completion checkmark" />
             <h3>Use the Timer</h3>
             <p>Check steps off as you go. The countdown timer keeps time visible — because ADHD time blindness is real, and watching an hour disappear is not a character flaw.</p>
           </div>
@@ -58,45 +63,56 @@ export default function HomeContent() {
 
       {/* CTA SECTION 1: After How It Works */}
       <section className="content-section cta-section">
-        <h2 className="section-heading" style={{ textAlign: 'center' }}>Ready to Break Down Your First Task?</h2>
-        <p className="section-content" style={{ fontSize: '20px', textAlign: 'center', marginBottom: '24px' }}>Stop overthinking. Start with one small step.</p>
-        <div style={{ textAlign: 'center' }}>
-          <a href="#widget" className="cta-button" style={{ display: 'inline-block', padding: '12px 32px', backgroundColor: 'var(--pixel-accent)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>↑ SCROLL UP TO START</a>
+        <div className="cta-reference-card">
+          <div className="cta-reference-art" aria-hidden="true">
+            <img src="/manus-storage/dothething-abstract-hero-final_f2a98e80.png" alt="" />
+          </div>
+          <div className="cta-reference-copy">
+            <p className="reference-eyebrow cta-eyebrow"><span>✦</span> A SMALLER NEXT STEP</p>
+            <h2 className="section-heading cta-reference-title">Ready to Break Down Your First Task?</h2>
+            <p className="section-content cta-reference-description">Stop overthinking. Start with one small step.</p>
+            <a href="#widget" className="cta-button cta-reference-button">↑ SCROLL UP TO START</a>
+          </div>
         </div>
       </section>
 
       {/* SECTION 4: WHY IT'S DIFFERENT */}
-      <section className="content-section">
-        <h2 className="section-heading" style={{ textAlign: 'center' }}>Built for the Initiation Problem</h2>
-        <div className="section-content">
-          <p>
-            Most productivity apps organise your tasks. DoTheThing initiates them.
-          </p>
-          <p>
-            There's a difference. Organising assumes you can already break a task down, estimate how long it'll take, and generate the signal to begin. For ADHD brains, those are the exact steps executive dysfunction blocks.
-          </p>
-          <p>
-            DoTheThing converts vague tasks into specific, numbered micro-steps before you begin. Every estimate includes a 20–30% buffer — because time blindness makes optimistic estimates structurally wrong, every time. The focus level setting means a day where you're running on fumes gets a different plan than a sharp morning.
-          </p>
-        </div>
-        <div className="features-list">
-          <div className="feature-item">
-            <strong>AI task breakdown.</strong> Vague becomes specific in seconds.
+      <section className="content-section initiation-section">
+        <div className="initiation-feature-panel">
+          <div className="initiation-panel-copy">
+            <p className="reference-eyebrow initiation-eyebrow"><span>✦</span> A DIFFERENT KIND OF PRODUCTIVITY TOOL</p>
+            <h2 className="section-heading initiation-panel-title">Built for the Initiation Problem</h2>
+            <div className="section-content">
+              <p>
+                Most productivity apps organise your tasks. DoTheThing initiates them.
+              </p>
+              <p>
+                There's a difference. Organising assumes you can already break a task down, estimate how long it'll take, and generate the signal to begin. For ADHD brains, those are the exact steps executive dysfunction blocks.
+              </p>
+              <p>
+                DoTheThing converts vague tasks into specific, numbered micro-steps before you begin. Every estimate includes a 20–30% buffer — because time blindness makes optimistic estimates structurally wrong, every time. The focus level setting means a day where you're running on fumes gets a different plan than a sharp morning.
+              </p>
+            </div>
           </div>
-          <div className="feature-item">
-            <strong>Focus-level adjustment.</strong> Estimates match today's capacity, whatever that looks like.
-          </div>
-          <div className="feature-item">
-            <strong>ADHD time buffers.</strong> 20–30% built into every estimate.
-          </div>
-          <div className="feature-item">
-            <strong>Visual countdown timer.</strong> Time becomes something you can see.
-          </div>
-          <div className="feature-item">
-            <strong>Brain dump mode.</strong> Type the whole pile. The AI finds the work.
-          </div>
-          <div className="feature-item">
-            <strong>Free. No login.</strong> Open the tab. Start.
+          <div className="initiation-panel-features features-list">
+            <div className="feature-item">
+              <strong>AI task breakdown.</strong> Vague becomes specific in seconds.
+            </div>
+            <div className="feature-item">
+              <strong>Focus-level adjustment.</strong> Estimates match today's capacity, whatever that looks like.
+            </div>
+            <div className="feature-item">
+              <strong>ADHD time buffers.</strong> 20–30% built into every estimate.
+            </div>
+            <div className="feature-item">
+              <strong>Visual countdown timer.</strong> Time becomes something you can see.
+            </div>
+            <div className="feature-item">
+              <strong>Brain dump mode.</strong> Type the whole pile. The AI finds the work.
+            </div>
+            <div className="feature-item">
+              <strong>Free. No login.</strong> Open the tab. Start.
+            </div>
           </div>
         </div>
       </section>

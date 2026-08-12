@@ -488,3 +488,37 @@
 ## Strict Post-Hero Copy Preservation
 - [ ] Preserve every existing post-hero word, section order, link label, FAQ answer, creator statement, learning-path description, featured-post excerpt, CTA, and footer text exactly while changing presentation only
 - [ ] Add automated copy-preservation coverage for the lower landing content before checkpointing
+
+## How It Works Mascot Illustrations
+- [x] Add mascot-only pixel-art illustrations to all five existing How It Works cards without changing their copy, order, or behavior
+- [x] Validate the mascot illustrations render with the hero typography and card design system
+
+## Transparent How It Works Illustrations
+- [x] Replace the beige-background mascot art with transparent-background assets while preserving the exact five-step copy and card behavior
+- [x] Validate transparent assets on the warm-gray card surface and rerun the visual regression suite
+
+## Initiation Problem Feature Panel
+- [x] Implement the approved wide brain-art feature panel using the exact existing headline, body copy, and benefit list
+- [x] Validate the feature panel on desktop and mobile without changing any other landing-page content or behavior
+
+## Clean Initiation Panel Border
+- [x] Remove the inner feature-list border so the Initiation Problem section has one clean outer border
+- [x] Re-run visual and automated validation after the border cleanup
+
+## Simplified Initiation Panel
+- [x] Remove the decorative brain icon while preserving the existing Initiation Problem copy, benefits, and layout behavior
+
+## Transparent How It Works Art
+- [x] Ensure all five How It Works mascot illustrations use transparent PNG backgrounds with no beige rectangles
+
+## Wide CTA Reference Treatment
+- [x] Restyle the existing Ready to Break Down Your First Task section as one clean wide card matching the supplied reference
+- [x] Preserve the exact CTA copy and existing #widget scroll behavior
+
+## Hero-Matched Headlines Across All Sections
+- [x] Ensure every major landing section headline matches the hero's visual styling, spacing, and eyebrow rhythm
+- [x] Implement the supplied wide CTA card while preserving exact copy and #widget anchor behavior
+
+## No Nested Card Surfaces
+- [x] Remove nested white/lavender card wrappers and inner borders from the landing-page visual treatment
+- [x] Validate that every affected section has one clean surface and one border only

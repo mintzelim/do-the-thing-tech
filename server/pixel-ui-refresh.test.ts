@@ -62,3 +62,52 @@ describe("post-hero copy preservation", () => {
     }
   });
 });
+
+
+describe("mascot-only How It Works cards", () => {
+  it("keeps the five step labels and uses the approved mascot illustrations", () => {
+    const homeContent = readFileSync(
+      resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
+      "utf8",
+    );
+
+    expect((homeContent.match(/className="how-it-works-mascot"/g) ?? []).length).toBe(5);
+    expect(homeContent).toContain("Brain Dump");
+    expect(homeContent).toContain("Pick Your Focus Level");
+    expect(homeContent).toContain("Choose Your Breakdown Size");
+    expect(homeContent).toContain("Get Your Breakdown");
+    expect(homeContent).toContain("Use the Timer");
+    expect(stylesheet).toContain(".how-it-works-mascot");
+  });
+});
+
+
+describe("single-surface landing panels", () => {
+  it("keeps the Initiation Problem and CTA wrappers transparent so each section has one visible card", () => {
+    const homeContent = readFileSync(
+      resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
+      "utf8",
+    );
+
+    expect(homeContent).toContain('className="initiation-feature-panel"');
+    expect(homeContent).toContain('className="cta-reference-card"');
+    expect(stylesheet).toContain(".content-section.initiation-section,.content-section.cta-section{background:transparent");
+    expect(stylesheet).toContain("border-left:0");
+  });
+});
+
+
+describe("hero-matched CTA and headlines", () => {
+  it("preserves the CTA copy, widget anchor, and unified headline styling", () => {
+    const homeContent = readFileSync(
+      resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
+      "utf8",
+    );
+
+    expect(homeContent).toContain("Ready to Break Down Your First Task?");
+    expect(homeContent).toContain("Stop overthinking. Start with one small step.");
+    expect(homeContent).toContain('href="#widget"');
+    expect(stylesheet).toContain(".content-section > .section-heading");
+    expect(stylesheet).toContain(".cta-reference-card");
+  });
+});
