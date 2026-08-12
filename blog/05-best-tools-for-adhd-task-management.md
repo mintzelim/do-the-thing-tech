@@ -2,6 +2,8 @@
 title: "The Best Tools for ADHD Task Management"
 excerpt: "Reviews and analysis of the best task management tools for ADHD brains, from simple apps to comprehensive systems."
 date: "2026-03-30"
+updatedDate: "2026-08-12"
+category: "Tools & Resources"
 tags:
   - ADHD
   - tools
@@ -32,6 +34,12 @@ sources:
 Finding the right tool for ADHD task management is not about finding the most powerful app. It is about finding the tool you will actually use.
 
 Here is the honest truth: there is no perfect ADHD app. Every tool has strengths and weaknesses. The key is understanding what you need and choosing accordingly.
+
+## Editorial Note: What We Would Actually Choose
+
+**DoTheThing is our product**, so this is an editorial opinion rather than an independent product test. We built it for the moment before task management: when a task is still too vague or overwhelming to put on a list. That is why we would choose it first for task initiation, then pair it with a simpler storage tool such as Microsoft To Do or Todoist only if recurring commitments are the next problem.
+
+We would not recommend starting with an all-in-one system merely because it has the most features. Feature density can be useful after a habit exists, but it is a poor first remedy when setup is the thing you are avoiding. Pricing, free-tier limits, privacy terms, and platform support change, so confirm current details on the provider's site before you commit.
 
 ## What Makes a Tool ADHD-Friendly?
 
@@ -162,6 +170,20 @@ The best tool is the one you will actually use. Start with one tool and use it c
 - **If you want gamification:** Todoist (with karma) or Habitica
 - **If you need body doubling:** Focusmate
 - **If you need focus assistance:** Forest
+
+## Three Ways Tool Choice Goes Wrong
+
+### You pick the most impressive app, not the easiest next action
+
+An app can be well designed and still be the wrong answer today. If it takes multiple projects, tags, and views before you can enter a task, start with a lower-friction option.
+
+### You ask one tool to solve unrelated problems
+
+Task capture, task initiation, time awareness, focus, and accountability are different jobs. A small stack with clear boundaries is easier to maintain than a single app forced to do everything.
+
+### You treat a tool as treatment
+
+Productivity tools can support routines and task management; they do not diagnose or treat ADHD. If symptoms are affecting your work, relationships, sleep, or wellbeing, seek qualified healthcare guidance alongside practical systems.
 
 ## Key Takeaways
 
