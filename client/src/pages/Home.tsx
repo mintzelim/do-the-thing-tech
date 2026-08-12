@@ -417,28 +417,37 @@ export default function Home() {
         {/* Flow: Input */}
         {flowState === "input" && (
           <>
-            <h1 className="mobile-heading-1" style={{ fontSize: "38px", textAlign: "center" }}>Task Management Built for ADHD Brains</h1>
-            <p className="mobile-body" style={{ fontSize: "18px", marginBottom: "24px", lineHeight: "1.6", textAlign: "center" }}>
-              Type any task or brain dump the whole pile.
-              <br />
-              DoTheThing breaks it into steps you can actually start.
-              <br />
-              <br />
-              Free. No login. Under a minute.
-              <br />
-              <span style={{ fontSize: "14px", color: "var(--pixel-text-light)" }}>
-                A practical ADHD resource built from lived experience, research, and real-world task planning.
-              </span>
-            </p>
-            <div style={{ textAlign: "center", marginBottom: "32px" }}>
-              <a href="#widget" className="cta-button" style={{ display: "inline-block", padding: "12px 40px", backgroundColor: "var(--pixel-accent)", color: "white", textDecoration: "none", fontWeight: "bold", fontSize: "18px", border: "2px solid var(--pixel-border)", cursor: "pointer", fontFamily: "'VT323', monospace" }}>START NOW ↓</a>
-            </div>
+            <section className="reference-hero-layout" aria-labelledby="homepage-hero-title">
+              <div className="reference-hero-copy">
+                <div className="reference-eyebrow"><span aria-hidden="true">✦</span> A SMALLER NEXT STEP</div>
+                <h1 id="homepage-hero-title" className="reference-hero-title">Make the next thing doable.</h1>
+                <p className="reference-hero-description">
+                  Break tasks into smaller steps, build momentum,<br className="reference-desktop-break" />
+                  and get more of the important stuff done.
+                </p>
+                <p className="reference-hero-supporting-copy">
+                  Type any task or brain dump the whole pile. DoTheThing breaks it into steps you can actually start. Free. No login. Under a minute.
+                </p>
+                <div className="reference-hero-actions">
+                  <a href="#widget" className="reference-primary-action">START A TASK <span aria-hidden="true">→</span></a>
+                  <a href="/blog" className="reference-secondary-action">EXPLORE GUIDES <span aria-hidden="true">▱</span></a>
+                </div>
+              </div>
+              <div className="reference-hero-visual" aria-label="A small pixel character taking a manageable next step">
+                <img src="/manus-storage/dothething-abstract-hero-final_f2a98e80.png" alt="Pixel character standing on a grassy step beside a flag" />
+              </div>
+            </section>
 
-            <div className="mobile-card" id="widget">
-              <h2 className="mobile-heading-2">TODAY, I NEED TO...</h2>
-              <p className="mobile-body" style={{ marginBottom: "16px" }}>
-                Enter a single task or brain dump everything you need to do.
-              </p>
+            <div className="reference-task-layout">
+              <div className="mobile-card reference-task-card" id="widget">
+                <div className="reference-task-heading">
+                  <span className="reference-task-icon" aria-hidden="true">▣</span>
+                  <div>
+                    <h2 className="reference-task-title">What needs doing?</h2>
+                    <p className="reference-task-helper">Be specific or fuzzy—either way works. We’ll help you start.</p>
+                  </div>
+                </div>
+
 
               <textarea
                 className="mobile-textarea"
@@ -591,8 +600,24 @@ export default function Home() {
 
               {/* Pro Tip Tutorial - always shows below BREAK IT DOWN */}
               <PinTabTutorial showAfterBreakdown={true} />
+              </div>
+              <aside className="reference-plan-card" aria-label="Preview of today's plan">
+                <div className="reference-plan-header">
+                  <span className="reference-plan-icon" aria-hidden="true">★</span>
+                  <div>
+                    <h2>Today’s plan</h2>
+                    <p>You’ve got this.</p>
+                  </div>
+                </div>
+                <div className="reference-plan-items">
+                  <div><span className="reference-plan-check" aria-hidden="true" /> <span>Reply to client email<small>10:00 AM</small></span></div>
+                  <div><span className="reference-plan-check" aria-hidden="true" /> <span>Draft project outline<small>1:00 PM</small></span></div>
+                  <div><span className="reference-plan-check" aria-hidden="true" /> <span>30-min walk<small>5:30 PM</small></span></div>
+                </div>
+                <a href="#widget" className="reference-plan-link">VIEW FULL PLAN <span aria-hidden="true">→</span></a>
+              </aside>
             </div>
-            
+
             {/* Content Sections Below Widget */}
             <HomeContent />
           </>

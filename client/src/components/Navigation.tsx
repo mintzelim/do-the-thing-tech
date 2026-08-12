@@ -8,35 +8,28 @@ export default function Navigation() {
 
   useEffect(() => {
     const checkTasks = () => {
-      const savedState = localStorage.getItem('doTheThing_state');
-      if (savedState) {
-        try {
-          const parsed = JSON.parse(savedState);
-          const steps = parsed.steps || [];
-          setHasRunningTasks(steps.length > 0);
-        } catch (error) {
-          setHasRunningTasks(false);
-        }
-      } else {
+      const savedState = localStorage.getItem("doTheThing_state");
+      if (!savedState) {
+        setHasRunningTasks(false);
+        return;
+      }
+
+      try {
+        const parsed = JSON.parse(savedState);
+        setHasRunningTasks(Array.isArray(parsed.steps) && parsed.steps.length > 0);
+      } catch {
         setHasRunningTasks(false);
       }
     };
 
     checkTasks();
-
-    // Listen for storage changes
-    window.addEventListener('storage', checkTasks);
-    return () => window.removeEventListener('storage', checkTasks);
+    window.addEventListener("storage", checkTasks);
+    return () => window.removeEventListener("storage", checkTasks);
   }, [location]);
 
   const isActive = (path: string) => {
-    if (path === "/blog") {
-      // Blog is active for both /blog and /blog/:slug routes
-      return location === "/blog" || location.startsWith("/blog/");
-    }
-    if (path === "/quiz") {
-      return location === "/quiz" || location.startsWith("/quiz/");
-    }
+    if (path === "/blog") return location === "/blog" || location.startsWith("/blog/");
+    if (path === "/quiz") return location === "/quiz" || location.startsWith("/quiz/");
     return location === path;
   };
 
@@ -56,32 +49,28 @@ export default function Navigation() {
   };
 
   return (
-    <>
-      <nav className="border-b-2 border-border bg-card px-6 py-4">
-        <div className="flex items-center justify-between gap-4">
-          <button
-            onClick={() => navigate("/")}
-            className=""
-            title="DoTheThing"
-          >
-            <img
-              src="/manus-storage/logo_dabca0e9.png"
-              alt="DoTheThing Logo"
-              className="h-12 w-auto"
-            />
-          </button>
+    <header className="reference-header-shell">
+      <nav className="reference-header" aria-label="Main navigation">
+        <button
+          onClick={() => handleNavClick("/")}
+          className="reference-brand"
+          title="DoTheThing"
+          aria-label="DoTheThing home"
+        >
+          <img
+            src="/manus-storage/logo_dabca0e9.png"
+            alt="DoTheThing Logo"
+            className="reference-brand-logo"
+          />
+        </button>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-4">
+        <div className="reference-desktop-nav">
+          <div className="reference-nav-links">
             {navItems.map((item) => (
               <button
                 key={item.path}
                 onClick={() => handleNavClick(item.path)}
-                className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
-                  isActive(item.path)
-                    ? "border-accent bg-accent text-white"
-                    : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
-                }`}
+                className={`reference-nav-link ${isActive(item.path) ? "is-active" : ""}`}
               >
                 {item.label}
               </button>
@@ -89,62 +78,60 @@ export default function Navigation() {
             {hasRunningTasks && (
               <button
                 onClick={() => handleNavClick("/current-tasks")}
-                className={`px-6 py-3 border-2 font-vt323 text-base transition-colors ${
-                  isActive("/current-tasks")
-                    ? "border-accent bg-accent text-white"
-                    : "border-border bg-background text-foreground hover:bg-accent hover:text-white"
-                }`}
+                className={`reference-nav-link ${isActive("/current-tasks") ? "is-active" : ""}`}
               >
                 CURRENT TASKS
               </button>
             )}
           </div>
-
-          {/* Mobile: CURRENT TASKS button (only if running tasks) + Hamburger */}
-          <div className="md:hidden flex items-center gap-2">
-            {hasRunningTasks && (
-              <button
-                onClick={() => handleNavClick("/current-tasks")}
-                className={`px-4 py-2 border-2 font-vt323 text-sm transition-colors ${
-                  isActive("/current-tasks")
-                    ? "border-accent bg-accent text-white"
-                    : "border-border bg-background text-foreground"
-                }`}
-              >
-                TASKS
-              </button>
-            )}
-            <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="flex flex-col gap-1 p-2"
-              aria-label="Toggle menu"
-            >
-              <div className="w-6 h-0.5 bg-foreground transition-all" />
-              <div className="w-6 h-0.5 bg-foreground transition-all" />
-              <div className="w-6 h-0.5 bg-foreground transition-all" />
-            </button>
-          </div>
+          <button onClick={() => handleNavClick("/")} className="reference-header-cta">
+            START A TASK <span aria-hidden="true">→</span>
+          </button>
         </div>
 
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <div className="md:hidden mt-4 flex flex-col gap-2 border-t-2 border-border pt-4">
-            {navItems.map((item) => (
-              <button
-                key={item.path}
-                onClick={() => handleNavClick(item.path)}
-                className={`w-full px-4 py-3 border-2 font-vt323 text-base transition-colors text-left ${
-                  isActive(item.path)
-                    ? "border-accent bg-accent text-white"
-                    : "border-border bg-background text-foreground"
-                }`}
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-        )}
+        <div className="reference-mobile-actions">
+          {hasRunningTasks && (
+            <button onClick={() => handleNavClick("/current-tasks")} className="reference-mobile-task-link">
+              TASKS
+            </button>
+          )}
+          <button
+            onClick={() => setMobileMenuOpen((open) => !open)}
+            className="reference-menu-button"
+            aria-label="Toggle menu"
+            aria-expanded={mobileMenuOpen}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
       </nav>
-    </>
+
+      {mobileMenuOpen && (
+        <div className="reference-mobile-menu">
+          {navItems.map((item) => (
+            <button
+              key={item.path}
+              onClick={() => handleNavClick(item.path)}
+              className={`reference-mobile-link ${isActive(item.path) ? "is-active" : ""}`}
+            >
+              {item.label}
+            </button>
+          ))}
+          {hasRunningTasks && (
+            <button
+              onClick={() => handleNavClick("/current-tasks")}
+              className={`reference-mobile-link ${isActive("/current-tasks") ? "is-active" : ""}`}
+            >
+              CURRENT TASKS
+            </button>
+          )}
+          <button onClick={() => handleNavClick("/")} className="reference-mobile-cta">
+            START A TASK <span aria-hidden="true">→</span>
+          </button>
+        </div>
+      )}
+    </header>
   );
 }

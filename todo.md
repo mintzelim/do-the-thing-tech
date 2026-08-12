@@ -463,3 +463,28 @@
 - [x] Apply the refined public-facing visual system to the homepage, blog, article, and authority pages
 - [x] Add regression coverage for the new design tokens and visible usability safeguards
 - [x] Validate the redesign at mobile and desktop breakpoints, then checkpoint the published revision
+
+## Approved Reference Mockup Implementation
+- [ ] Rebuild the homepage header and hero composition to match the approved reference mockup without changing existing copy or routes
+- [ ] Add the approved pixel-art hero illustration and retain an accessible fallback treatment
+- [ ] Restyle the existing task widget to match the approved input card, energy selector, and primary action layout without changing behavior
+- [ ] Add a visual-only Today's Plan side card that does not replace or remove existing task functionality
+- [ ] Preserve all existing homepage sections, blog content, navigation, and backend features
+- [ ] Add regression coverage for the approved reference-layout safeguards
+- [ ] Validate desktop and mobile layouts, then checkpoint the approved implementation
+
+## Unified Reference Design System
+- [ ] Apply the approved first-fold design system consistently to all lower landing sections, FAQ, and footer without changing content or feature behavior
+- [ ] Validate visual consistency across desktop and mobile breakpoints and checkpoint the unified implementation
+
+## Final Reference Character and Unified Landing System
+- [ ] Replace human pixel-art direction with the preferred abstract pixel character across the approved hero and visual assets
+- [ ] Add the existing Breakdown Size selector to the reference task card without changing its behavior
+- [ ] Apply the same warm-gray, rounded-card, ink-outline, indigo-accent design system to all lower landing sections and footer
+- [ ] Preserve all current navigation pages, article content, FAQ content, task behavior, and backend features
+- [ ] Add regression coverage for the final reference design constraints
+- [ ] Validate desktop and mobile layouts, then checkpoint the final implementation
+
+## Strict Post-Hero Copy Preservation
+- [ ] Preserve every existing post-hero word, section order, link label, FAQ answer, creator statement, learning-path description, featured-post excerpt, CTA, and footer text exactly while changing presentation only
+- [ ] Add automated copy-preservation coverage for the lower landing content before checkpointing

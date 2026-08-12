@@ -34,3 +34,31 @@ describe("approved hybrid pixel-art UI refresh", () => {
     expect(stylesheet).toContain("Visual-only scope: existing routes, content, and feature classes remain unchanged.");
   });
 });
+
+
+describe("post-hero copy preservation", () => {
+  it("keeps the approved lower landing section copy in the source", () => {
+    const homeContent = readFileSync(
+      resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
+      "utf8",
+    );
+
+    const preservedCopy = [
+      "The AI Does the Planning. You Do the Thing.",
+      "You know the feeling. Task open. Brain closed.",
+      "How It Works",
+      "Five steps. Under a minute.",
+      "Built for the Initiation Problem",
+      "A Productivity Tool for Anyone Whose Brain Works Differently",
+      "Frequently Asked Questions",
+      "Built by Someone Who Gets It",
+      "Start Here: Choose Your Learning Path",
+      "Featured Posts: ADHD & Productivity",
+      "Try DoTheThing Now",
+    ];
+
+    for (const copy of preservedCopy) {
+      expect(homeContent).toContain(copy);
+    }
+  });
+});
