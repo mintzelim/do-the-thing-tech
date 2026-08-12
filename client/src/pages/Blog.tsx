@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
+import { displayBlogCategory, getBlogCategories } from "@/lib/blogCategoryUtils";
 import "../pixel-art-refined.css";
 
 type BlogPost = {
@@ -36,7 +37,9 @@ export default function Blog() {
     const loadPosts = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch('/blog-posts.json');
+        const response = await fetch(`/blog-posts.json?v=${Date.now()}`, {
+          cache: 'no-store',
+        });
         if (!response.ok) {
           throw new Error(`Failed to load blog posts: ${response.statusText}`);
         }
@@ -54,8 +57,7 @@ export default function Blog() {
     loadPosts();
   }, []);
 
-  // Get unique categories sorted alphabetically
-  const categories = Array.from(new Set(posts.map(p => p.category))).sort();
+  const categories = getBlogCategories(posts);
 
   // Filter posts based on selected category
   const filteredPosts = selectedCategory
@@ -248,7 +250,7 @@ export default function Blog() {
                       padding: "2px 8px",
                       fontFamily: "'VT323', monospace"
                     }}>
-                      {post.category}
+                      {displayBlogCategory(post.category)}
                     </span>
                   </div>
                 </div>

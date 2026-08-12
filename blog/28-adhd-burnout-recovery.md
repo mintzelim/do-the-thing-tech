@@ -84,7 +84,7 @@ faq:
       No. Symptoms return to baseline after recovery. Repeated cycles reinforce
       shame patterns. Prevention becomes more important with each cycle.
 featuredImage: >-
-  https://d2xsxph8kpxj0f.cloudfront.net/3105196635383557597/ZkgYTewAXq838NxcziNS3bD/post28-adhd-burnout-featured-ZvTkw9i65EatzgVSy8aA4S.webp
+  https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-adhd-burnout-featured-ZvTkw9i65EatzgVSy8aA4S.webp
 featuredImageAlt: ADHD burnout illustration showing neural fatigue
 ---
 
@@ -108,6 +108,9 @@ ADHD burnout is a state of physical, mental, and emotional exhaustion from the c
 
 ---
 
+
+![The ADHD Hyperfocus-Collapse Burnout Cycle](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-hyperfocus-collapse-cycle-AXvipsJi2xf9Qx9tpNhXng.webp)
+
 ## What Is ADHD Burnout?
 
 A neurotypical brain runs daily tasks on autopilot. Your brain runs them manually. Every task initiation, transition, filter, and emotional regulation moment requires conscious effort. That effort has a cost. When it exceeds capacity, you crash.
@@ -115,6 +118,9 @@ A neurotypical brain runs daily tasks on autopilot. Your brain runs them manuall
 Turjeman-Levi et al. (2024) found executive function deficits directly mediate the relationship between ADHD and burnout. The harder your brain works to do basic executive tasks, the faster you burn out.
 
 ---
+
+
+![ADHD Burnout vs Regular Burnout Brain Mechanism Comparison](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-burnout-comparison-brain-Leu2GDQRhcNpWZ2oCiekYz.webp)
 
 ## Why It's Neurologically Different
 
@@ -125,6 +131,9 @@ Turjeman-Levi et al. (2024) found executive function deficits directly mediate t
 NICE NG87 (2025) identifies sustained attention overload leading to "mental fatigue or a temporary shutdown" as a distinct ADHD risk.
 
 ---
+
+
+![ADHD Burnout Recovery Timeline: Acute Rest, Stabilization, and Rebuilding Phases](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-recovery-timeline-aTB7dpFqNLZe6azb7Fq6cj.webp)
 
 ## The Hyperfocus-Collapse Cycle
 

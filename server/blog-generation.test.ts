@@ -27,10 +27,10 @@ describe('Blog Generation', () => {
       expect(Array.isArray(data)).toBe(true);
     });
 
-    it('should have 16 blog posts', () => {
+    it('should include the current blog catalog', () => {
       const content = fs.readFileSync(blogPostsPath, 'utf-8');
       const data = JSON.parse(content);
-      expect(data.length).toBe(16);
+      expect(data.length).toBeGreaterThanOrEqual(31);
     });
   });
 
@@ -58,7 +58,7 @@ describe('Blog Generation', () => {
         const id = parseInt(post.id);
         if (!isNaN(id)) {
           expect(id).toBeGreaterThanOrEqual(1);
-          expect(id).toBeLessThanOrEqual(16);
+          expect(id).toBeLessThanOrEqual(blogPosts.length);
         }
       });
     });
@@ -128,6 +128,15 @@ describe('Blog Generation', () => {
         expect(post.slug).toBeTruthy();
         expect(typeof post.slug).toBe('string');
       });
+    });
+
+    it('uses public HTTPS URLs for every configured featured image', () => {
+      blogPosts
+        .filter((post) => post.featuredImage)
+        .forEach((post) => {
+          expect(post.featuredImage).toMatch(/^https:\/\//);
+          expect(post.featuredImage).not.toContain('/manus-storage/');
+        });
     });
   });
 

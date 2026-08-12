@@ -16,6 +16,8 @@ type BlogPost = {
   seoKeywords: string[];
   sources: Array<{ title: string; url: string }>;
   relatedPosts: string[];
+  featuredImage?: string;
+  faq?: Array<{ q: string; a: string }>;
   content: string;
   slug: string;
 };

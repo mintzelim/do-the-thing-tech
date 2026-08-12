@@ -145,22 +145,24 @@ export function getMockEstimate(taskTitle: string, description?: string): number
 
   // For subtasks, use smaller time estimates
   const keywordRules = [
-    // Quick prep tasks (5 minutes)
-    { minutes: 5, keywords: ["gather", "collect", "find", "locate", "prepare"] },
+    // Quick prep tasks (10 minutes)
+    { minutes: 10, keywords: ["gather", "collect", "find", "locate", "prepare"] },
     // Setup tasks (5-10 minutes)
     { minutes: 10, keywords: ["set up", "setup", "open", "arrange", "organize"] },
-    // Quick communication (10 minutes)
-    { minutes: 10, keywords: ["email", "reply", "message", "call", "confirm", "schedule", "book"] },
+    // Quick communication (15 minutes)
+    { minutes: 15, keywords: ["email", "reply", "message", "call", "confirm", "schedule", "book"] },
     // Review/check tasks (10-15 minutes)
     { minutes: 15, keywords: ["review", "proofread", "test", "check", "verify", "update", "edit", "refine"] },
     // Execution tasks (15-20 minutes)
     { minutes: 20, keywords: ["execute", "do", "perform", "complete", "finish"] },
-    // Writing/documentation (20-30 minutes)
-    { minutes: 25, keywords: ["write", "draft", "outline", "research", "plan", "document", "summarize"] },
-    // Complex tasks (30-45 minutes)
-    { minutes: 35, keywords: ["build", "implement", "design", "analyze", "debug", "fix", "code"] },
-    // Meetings/presentations (45-60 minutes)
-    { minutes: 45, keywords: ["meeting", "presentation", "report", "migration", "deploy", "integration"] },
+    // Writing/documentation (30 minutes)
+    { minutes: 30, keywords: ["write", "draft", "outline", "research", "plan", "document", "summarize"] },
+    // Complex technical tasks (45 minutes)
+    { minutes: 45, keywords: ["build", "implement", "design", "analyze", "code"] },
+    // High-complexity debugging and delivery work (60 minutes)
+    { minutes: 60, keywords: ["debug", "fix", "migration", "deploy", "integration"] },
+    // Meetings/presentations (60 minutes)
+    { minutes: 60, keywords: ["meeting", "presentation", "report"] },
   ] as const;
 
   const matchedMinutes = keywordRules

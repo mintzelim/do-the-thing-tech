@@ -126,7 +126,9 @@ export default function BlogPost() {
     const loadPosts = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch('/blog-posts.json');
+        const response = await fetch(`/blog-posts.json?v=${Date.now()}`, {
+          cache: 'no-store',
+        });
         if (!response.ok) {
           throw new Error(`Failed to load blog posts: ${response.statusText}`);
         }

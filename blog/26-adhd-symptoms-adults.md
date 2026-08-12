@@ -105,6 +105,9 @@ The official ADHD symptom checklist was developed from research on hyperactive 8
 
 ---
 
+
+![Childhood vs Adult ADHD: The Invisible Struggle](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/childhood-vs-adult-adhd-4JD5B5hy6YHrLCx7SvdHaN.webp)
+
 ## The Core Symptoms
 
 ### Inattention — Gets Worse With Age
@@ -123,6 +126,9 @@ Emotional impulsivity (snapping, angry emails), financial impulsivity (derailing
 
 ---
 
+
+![Internal Restlessness: The Adult Hyperactivity](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/internal-restlessness-FpESRKTFBZsgK9WuHqEwhH.webp)
+
 ## The Symptoms the Checklist Misses
 
 **Executive dysfunction:** Task initiation (brain won't send the signal), planning/prioritisation, working memory (walking into a room forgetting why), time blindness, emotional regulation.
@@ -132,6 +138,9 @@ Emotional impulsivity (snapping, angry emails), financial impulsivity (derailing
 **Task paralysis:** Brain refuses to initiate a task you genuinely want. Not procrastination — a freeze response. One of the most commonly reported but least discussed adult ADHD experiences.
 
 ---
+
+
+![Time Blindness: The ADHD Brain and Time Perception](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/time-blindness-kxhZKyiLBv7chZ5WjiFA6g.webp)
 
 ## Women vs Men
 
@@ -146,6 +155,9 @@ Masking is the most significant factor in missed female diagnosis — perfection
 
 ---
 
+
+![Rejection Sensitive Dysphoria: The Emotional Spike](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/rejection-sensitivity-2T8weL2kYzSzKrG8CYfyir.webp)
+
 ## Late Diagnosis
 
 More adults now receive new ADHD diagnoses than children. Reasons: DSM-5 criteria from children's research, compensation strategies masking impairment for decades, systematic underdiagnosis of women and other groups, comorbid conditions treated without identifying ADHD.
@@ -153,6 +165,9 @@ More adults now receive new ADHD diagnoses than children. Reasons: DSM-5 criteri
 The good news: late diagnosis reframes "I'm not trying hard enough" into "my brain works differently."
 
 ---
+
+
+![The Potential-Output Gap: Chronic Underachievement](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post26-featured-adhd-symptoms-TfPkHKRCuoxaY7Q6fUQngE.webp)
 
 ## What Helps
 

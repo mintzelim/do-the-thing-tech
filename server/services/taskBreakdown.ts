@@ -9,6 +9,27 @@ export type TaskStep = {
 
 type FocusLevel = "hyperfocus" | "normal" | "distracted";
 
+export function isBrainDump(input: string): boolean {
+  return input.split(/[.!?]+/).filter((part) => part.trim().length > 0).length >= 3;
+}
+
+export function getMockBreakdown(input: string): TaskStep[] {
+  if (isBrainDump(input)) {
+    return [
+      { id: "1", title: "Review all items", description: "Read through the full brain dump and identify each task.", estimatedTime: 5 },
+      { id: "2", title: "Prioritize tasks", description: "Choose the most useful next task and note any urgent items.", estimatedTime: 5 },
+      { id: "3", title: "Start the first task", description: "Begin with one small, clearly defined action.", estimatedTime: 10 },
+    ];
+  }
+
+  return [
+    { id: "1", title: "Prepare and gather resources", description: "Collect the information and materials needed to begin.", estimatedTime: 10 },
+    { id: "2", title: "Set up your workspace", description: "Open the relevant tools and remove obvious distractions.", estimatedTime: 5 },
+    { id: "3", title: "Execute the main task", description: "Work through the task in one manageable focused block.", estimatedTime: 25 },
+    { id: "4", title: "Review and wrap up", description: "Check the result and record the next step if anything remains.", estimatedTime: 10 },
+  ];
+}
+
 /**
  * Breaks down a task into actionable steps with time estimates
  * Gemini handles both breakdown AND time estimation in one call

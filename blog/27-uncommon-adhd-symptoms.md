@@ -107,6 +107,9 @@ Except everyone doesn't feel this way. Here are seven symptoms backed by the lat
 
 ---
 
+
+![Rejection Sensitive Dysphoria: The Physical Pain of Criticism](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-rsd-physical-pain-FedyzrVvfAQWSrfGKD8hxm.webp)
+
 ## 1. Rejection Sensitive Dysphoria
 
 RSD is an extreme emotional response to real or perceived rejection. It feels physical — chest caving in.
@@ -117,11 +120,17 @@ Two response types: internalized (crushing shame) and externalized (rage). Neith
 
 **What helps:** Naming it. Alpha-2 agonists (guanfacine). Therapy focused on shame reduction.
 
+
+![Time Blindness: Hours Disappear, Deadlines Appear](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-time-blindness-C8P7uE6u7iD4pxefZq6pZ4.webp)
+
 ## 2. Time Blindness
 
 Inability to sense time passage. ADHD brains experience "now" and "not now" — the gap is a black hole. A 2022 meta-analysis confirmed measurable time estimation deficits.
 
 **What helps:** External clocks, analogue clocks, transparent timers. Reducing shame — shame makes it worse.
+
+
+![Sensory Overload: The ADHD Brain Can't Filter](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-sensory-overload-eqWm7GLH82go5mr7TKR34W.webp)
 
 ## 3. Sensory Sensitivity
 
@@ -129,11 +138,17 @@ ADHD brains struggle to filter irrelevant input. A 2025 meta-analysis found ADHD
 
 **What helps:** Noise-cancelling headphones, Loops earbuds, permission to leave loud spaces.
 
+
+![Task Paralysis: Wanting to Start But Can't](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-task-paralysis-QpUQHoCywydSKkoX8JZVVk.webp)
+
 ## 4. Task Paralysis
 
 Brain refuses to initiate a task you want to do. Not procrastination — trying and being locked out.
 
 **What helps:** 2-minute rule, external accountability (body doubling), breaking tasks until the first step is laughably small.
+
+
+![Emotional Dysregulation: The Intensity Dial Is Stuck on High](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-emotional-dysregulation-aFA9er5NWMA2q4Yzv3BjWF.webp)
 
 ## 5. Emotional Dysregulation
 
@@ -141,11 +156,17 @@ Feelings hit harder, faster, last longer. Barkley: the emotion comes up quickly 
 
 **What helps:** Medication (improves prefrontal regulation). CBT/DBT pause techniques. Barkley's micro-pause.
 
+
+![Auditory Processing: The Brain Hears But Doesn't Decode](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-auditory-processing-6Vyy9fy9wttQ4d77pnaqqx.webp)
+
 ## 6. Auditory Processing
 
 Brain struggles to decode sound in noisy environments. A 2023 EEG study found ADHD brains recruit visual cortex during auditory tasks.
 
 **What helps:** Captions always. Back-to-wall positioning. Asking people to get attention before speaking.
+
+
+![Delayed Sleep Phase: Your Clock Runs Late](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-delayed-sleep-phase-NeTXK7Pb9ExeZCSvRLnwDn.webp)
 
 ## 7. Delayed Sleep Phase
 

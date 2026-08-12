@@ -85,7 +85,7 @@ faq:
       Before 2013, DSM-IV prohibited co-diagnosis. Many diagnosed with one as
       child actually meet criteria for both.
 featuredImage: >-
-  https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post29-audhd-featured-KgXt7zF89cLxdBf7vQ7eRf.webp
+  https://files.manuscdn.com/user_upload_by_module/session_file/310519663538355759/UjqClTUhrEFWcLWl.png
 featuredImageAlt: ADHD vs Autism vs AuDHD comparison diagram
 ---
 

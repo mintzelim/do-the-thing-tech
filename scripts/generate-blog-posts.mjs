@@ -71,11 +71,13 @@ function generateBlogPosts() {
 
       const seoKeywords = Array.isArray(frontmatter.seoKeywords)
         ? frontmatter.seoKeywords
+        : Array.isArray(frontmatter.tags)
+          ? frontmatter.tags
         : [];
 
       const sources = Array.isArray(frontmatter.sources)
         ? frontmatter.sources.map((source) => ({
-            title: source.title || '',
+            title: source.title || source.text || source.name || '',
             url: source.url || '',
           }))
         : [];
@@ -90,19 +92,26 @@ function generateBlogPosts() {
 
       const faqItems = Array.isArray(frontmatter.faq)
         ? frontmatter.faq.map((item) => ({
-            q: item.q || '',
-            a: item.a || '',
+            q: item.q || item.question || '',
+            a: item.a || item.answer || '',
           }))
         : [];
 
+      const generatedWordCount = plainContent.split(/\s+/).filter(Boolean).length;
+      const frontmatterWordCount = Number(frontmatter.wordCount);
+      const wordCount = Number.isFinite(frontmatterWordCount) && frontmatterWordCount > 0
+        ? frontmatterWordCount
+        : generatedWordCount;
+      const filenameId = file.match(/^\d+/)?.[0];
+
       const post = {
-        id: String(frontmatter.id),
+        id: String(frontmatter.id ?? (filenameId ? Number(filenameId) : '')),
         title: frontmatter.title || '',
         excerpt: frontmatter.excerpt || '',
         date: frontmatter.date || '',
-        readTime: frontmatter.readTime || '',
-        category: frontmatter.category || '',
-        wordCount: frontmatter.wordCount || null,
+        readTime: frontmatter.readTime || `${Math.max(1, Math.ceil(wordCount / 200))} min read`,
+        category: String(frontmatter.category || 'ADHD').trim() || 'ADHD',
+        wordCount,
         updatedDate: frontmatter.updatedDate || frontmatter.date || '',
         primaryEntity: frontmatter.primaryEntity || '',
         secondaryEntities,
@@ -135,7 +144,22 @@ function generateBlogPosts() {
     });
   });
 
-  return blogPosts;
+  return blogPosts.map((post) => {
+    if (post.relatedPosts.length > 0) {
+      return post;
+    }
+
+    const relatedPosts = blogPosts
+      .filter((candidate) => candidate.id !== post.id)
+      .sort(
+        (a, b) =>
+          Number(b.category === post.category) - Number(a.category === post.category),
+      )
+      .slice(0, 3)
+      .map((candidate) => candidate.id);
+
+    return { ...post, relatedPosts };
+  });
 }
 
 function writeOutputFile(filePath, blogPosts) {

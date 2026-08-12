@@ -12,8 +12,8 @@ excerpt: >-
 date: 'May 12, 2026'
 readTime: 10 min read
 category: Tools & Resources
-featuredImage: /manus-storage/best-adhd-tools-featured_16393d40.png
-featuredImageAlt: Pixel art landscape showing Best ADHD Tools in 2026
+featuredImage: https://files.manuscdn.com/user_upload_by_module/session_file/310519663538355759/KJrLwNvxlTGBiFtR.png
+featuredImageAlt: Pixel-art desk scene showing a simple three-tool ADHD productivity stack for planning, focus, and getting things done
 primaryEntity: ADHD Productivity Tools
 secondaryEntities:
   - Task Management Apps
