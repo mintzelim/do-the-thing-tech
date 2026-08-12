@@ -1,0 +1,36 @@
+import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+
+const stylesheet = readFileSync(
+  resolve(process.cwd(), "client/src/pixel-art-refined.css"),
+  "utf8",
+);
+
+describe("approved hybrid pixel-art UI refresh", () => {
+  it("keeps the readable UI font separate from the pixel display font", () => {
+    expect(stylesheet).toContain('--ui-font: Inter');
+    expect(stylesheet).toContain('--display-font: VT323');
+    expect(stylesheet).toContain("body { font-family: var(--ui-font)");
+    expect(stylesheet).toContain("font-family: var(--display-font) !important");
+  });
+
+  it("defines the calm warm canvas, ink border, and indigo action palette", () => {
+    expect(stylesheet).toContain("--pixel-bg: #f6f5f2");
+    expect(stylesheet).toContain("--pixel-border: #26364a");
+    expect(stylesheet).toContain("--pixel-accent: #5b5ce2");
+    expect(stylesheet).toContain("--pixel-card-bg: #fffefb");
+  });
+
+  it("provides visible keyboard focus and mobile touch-target safeguards", () => {
+    expect(stylesheet).toContain("button:focus-visible");
+    expect(stylesheet).toContain("outline-offset: 3px");
+    expect(stylesheet).toContain("min-height: 48px");
+    expect(stylesheet).toContain("@media (prefers-reduced-motion: reduce)");
+  });
+
+  it("keeps the refresh presentation-only and preserves the existing widget anchor", () => {
+    expect(stylesheet).toContain("#widget { scroll-margin-top: 24px; }");
+    expect(stylesheet).toContain("Visual-only scope: existing routes, content, and feature classes remain unchanged.");
+  });
+});

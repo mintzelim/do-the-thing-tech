@@ -447,3 +447,19 @@
 - [x] Resolve the deployment build failure caused by ignored pnpm esbuild build scripts
 - [x] Verify affected blog images, category filters, and published deployment
 - [x] Synchronize the tested GitHub revision with the live production site and verify the public URLs
+
+## Pixel-Art Usability Refresh
+- [x] Audit the current pixel typography, control density, contrast, and feedback-reported usability friction
+- [x] Prepare an approval-only canvas proposal and exact typography/UI change summary before editing the public experience
+- [x] Obtain user approval for the proposed visual direction before implementing any public design changes
+- [x] Implement the approved typography and interface refresh across public pages
+- [x] Add regression coverage for the approved usability safeguards
+- [x] Validate the redesign at mobile and desktop breakpoints, then checkpoint the published revision
+
+## Pixel-Art Usability Refresh
+- [x] Audit the current pixel typography, control density, contrast, and feedback-reported usability friction
+- [x] Define a refined pixel-art typography system with a readable UI font and limited display-font use
+- [x] Simplify the primary navigation, task input, controls, and card treatment without removing the pixel-art identity
+- [x] Apply the refined public-facing visual system to the homepage, blog, article, and authority pages
+- [x] Add regression coverage for the new design tokens and visible usability safeguards
+- [x] Validate the redesign at mobile and desktop breakpoints, then checkpoint the published revision

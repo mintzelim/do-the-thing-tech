@@ -2,14 +2,15 @@
 id: '29'
 title: 'ADHD vs Autism vs AuDHD: Key Differences Explained'
 description: >-
-  ADHD and autism share many overlapping traits — but AuDHD (having both) is its
-  own distinct experience. Here's how to tell them apart.
+  ADHD and autism can share traits and can co-occur. Learn what AuDHD means,
+  where experiences can overlap, and why a professional assessment matters.
 slug: adhd-vs-autism-vs-audhd
 excerpt: >-
-  ADHD and autism share many overlapping traits — sensory issues, executive
-  dysfunction, hyperfocus. AuDHD is its own distinct experience.
+  ADHD and autism can share sensory differences, executive-function challenges,
+  and intense interests. AuDHD is an informal term for having both.
 date: 'June 23, 2026'
-readTime: 9 min read
+updatedDate: '2026-08-12'
+readTime: 10 min read
 category: ADHD Basics
 primaryEntity: AuDHD
 secondaryEntities:
@@ -31,22 +32,16 @@ seoKeywords:
   - what is AuDHD
   - ADHD autism comorbidity
 sources:
-  - title: 'Hollingdale et al. (2019) — ADHD and autism comorbidity review'
-    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6376165/
-  - title: 'Lai et al. (2019) — Prevalence of co-occurring ADHD in autism'
+  - title: 'Autistica — ADHD and autism: understanding the overlap'
+    url: https://www.autistica.org.uk/what-is-autism/adhd-and-autism
+  - title: 'NIMH — Attention-Deficit/Hyperactivity Disorder: What You Need to Know'
+    url: https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know
+  - title: 'Lai et al. (2019) — Co-occurring diagnoses in autism'
     url: https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366%2819%2930289-5/fulltext
   - title: 'Ayano et al. (2023) — Global prevalence of ADHD in adults'
     url: https://www.sciencedirect.com/science/article/pii/S0165178123003992
-  - title: 'Autistica — ADHD and autism: understanding the overlap'
-    url: https://www.autistica.org.uk/what-is-autism/adhd-and-autism
-  - title: 'Psychiatry UK — The overlap between ADHD and autism (AuDHD)'
-    url: https://www.psychiatry-uk.com/adhd-and-autism-overlap-audhd/
   - title: 'DSM-5-TR, American Psychiatric Association (2022)'
     url: https://www.psychiatry.org/psychiatrists/practice/dsm
-  - title: 'Behavioral Innovations — Autism, ADHD, and AuDHD'
-    url: https://www.behavioral-innovations.com/blog/autism-adhd-audhd-understanding-differences
-  - title: 'LA Concierge Psychologist — The Unique Experience of AuDHD'
-    url: https://laconciergepsychologist.com/blog/audhd-autism-and-adhd/
 relatedPosts:
   - '7'
   - '4'
@@ -56,156 +51,145 @@ relatedPosts:
 faq:
   - q: Can you have both ADHD and autism?
     a: >-
-      Yes. 21% of ADHD children meet criteria for autism; 28% of autistic
-      children meet criteria for ADHD. DSM-5 allows co-diagnosis since 2013.
-      AuDHD is the informal term.
+      Yes. ADHD and autism can co-occur, and DSM-5 permits co-diagnosis. The
+      exact percentage varies across research populations and assessment methods.
   - q: Is AuDHD the same as having both separately?
     a: >-
-      Clinically yes, but many describe the experience as distinct — craving
-      routine but unable to stick to it, intense social desire paired with
-      exhaustion.
+      AuDHD is an informal term for co-occurring ADHD and autism. Some people
+      find it captures their lived experience; clinicians may document the two
+      diagnoses separately.
   - q: What are the key differences between ADHD and autism?
     a: >-
-      ADHD: dopamine-driven attention/impulse difference. Autism: social
-      communication, sensory, routine difference. ADHD seeks novelty; autism
-      craves sameness.
+      There are overlapping and differing patterns, but no single difference can
+      identify either diagnosis. A qualified assessment considers developmental
+      history, symptoms across settings, daily impact, and other explanations.
   - q: How do I know if I have ADHD, autism, or both?
     a: >-
-      Formal assessment by a professional trained in both. Many traits overlap.
+      Online content can help you prepare questions, not diagnose you. A
+      qualified professional can assess ADHD, autism, or both using developmental
+      history and current functioning.
   - q: Is AuDHD harder than having just one?
     a: >-
-      Involves internal conflict: routine vs novelty, social desire vs
-      exhaustion.
+      Needs vary widely. Co-occurring traits can create competing support needs
+      for some people, but the useful focus is on the barriers and supports that
+      matter in your own life.
   - q: Can someone with AuDHD mask effectively?
     a: >-
-      Yes. ADHD social intuition masks autistic differences; autistic attention
-      masks ADHD carelessness. Leads to late diagnosis.
-  - q: Why diagnosed with both later in life?
-    a: >-
-      Before 2013, DSM-IV prohibited co-diagnosis. Many diagnosed with one as
-      child actually meet criteria for both.
-featuredImage: >-
-  https://files.manuscdn.com/user_upload_by_module/session_file/310519663538355759/UjqClTUhrEFWcLWl.png
-featuredImageAlt: ADHD vs Autism vs AuDHD comparison diagram
+      Some people mask or compensate for traits, which can make needs less
+      visible. Masking alone does not diagnose ADHD, autism, or AuDHD.
+featuredImage: https://files.manuscdn.com/user_upload_by_module/session_file/310519663538355759/UjqClTUhrEFWcLWl.png
+featuredImageAlt: Pixel-art ADHD, autism, and AuDHD overlap comparison illustration
 ---
 
 # ADHD vs Autism vs AuDHD: Key Differences Explained
 
-You've seen the Venn diagrams. Somewhere in the overlap you ask: do I have one? The other? Both?
+You have seen the Venn diagrams. Somewhere in the overlap, you may ask: do I have one? The other? Both?
 
-ADHD and autism share surface-level traits — executive dysfunction, sensory sensitivity, hyperfocus, social difficulty. But they run on different neurological mechanisms. When both are present (AuDHD), the experience isn't "having both" — it's a distinct neurotype with its own contradictions.
+ADHD and autism can share experiences such as executive-function challenges, sensory differences, intense focus, sleep issues, and social difficulty. They are distinct diagnoses, but they can co-occur. The overlap is real; it is also why a traits checklist cannot tell you which diagnosis, if any, applies to you.
 
-**AuDHD** is the informal term for co-occurring ADHD and autism. 21-28% of people with one condition also meet criteria for the other.
-
----
+**AuDHD** is an informal community term for co-occurring autism and ADHD. Autistica reports that approximately 21% of children with ADHD are also autistic and around 28% of autistic children meet criteria for ADHD, while also emphasizing that more research is needed to understand the relationship fully. These figures describe research samples; they are not a way to self-diagnose an individual.
 
 ## TL;DR
 
-- **ADHD and autism can co-occur.** 21% of ADHD children meet autism criteria; 28% of autistic children meet ADHD criteria. DSM-5 allows co-diagnosis since 2013.
-- **AuDHD has its own patterns** — craving routine but unable to stick to it.
-- **Core difference:** ADHD seeks novelty; autism craves sameness.
-- **Many diagnosed later in life** because before 2013, co-diagnosis was prohibited.
-
----
+- **ADHD and autism can co-occur.** DSM-5 permits co-diagnosis, and research finds meaningful overlap in some groups.
+- **AuDHD is an informal term.** People may describe a push-pull between a need for structure and a need for novelty, but experiences vary widely.
+- **Shared traits are not proof of a diagnosis.** Context, childhood history, frequency, impairment, and alternative explanations matter in a clinical assessment.
+- **Support should follow needs.** You can build clearer routines, sensory supports, task systems, and communication strategies before or regardless of a formal diagnosis.
 
 ## What Is ADHD?
 
-Dopamine dysregulation — fewer dopamine receptors in the prefrontal cortex. Tasks without interest or novelty require significantly more effort. About 3% of adults worldwide.
+ADHD is a neurodevelopmental disorder marked by persistent patterns of inattention, hyperactivity, and/or impulsivity that begin in childhood and can interfere with daily life. A person may have predominantly inattentive, predominantly hyperactive-impulsive, or combined presentation. The exact causes of ADHD are not fully known, so simplified explanations about one brain chemical or one brain region cannot diagnose or explain every person's experience.
 
-**Core features:** Difficulty sustaining attention, impulsivity, hyperactivity, executive dysfunction, emotional dysregulation including RSD, variable hyperfocus.
+Commonly discussed experiences include difficulty sustaining attention, impulsivity, restlessness, planning and time-management challenges, variable focus, and difficulties following through. Executive dysfunction, emotional regulation, rejection sensitivity, and sensory differences may be important lived experiences but are not all diagnostic criteria.
 
 ## What Is Autism?
 
-Differences in neural connectivity affecting how the brain filters and responds. About 1-2% of the population.
+Autism is a neurodevelopmental condition characterized clinically by differences in social communication and interaction alongside restricted or repetitive patterns of behavior, interests, or activities. Sensory differences and a preference for predictability are common for many autistic people, but no two autistic people have the same profile.
 
-**Core features:** Social communication differences, repetitive behaviours, sensory differences, preference for routine, deep focused interests, difficulty with unspoken rules.
+Commonly discussed experiences include social communication differences, sensory differences, deep or focused interests, repetitive behaviors or movements, a preference for predictability, and difficulty with unspoken social rules. A formal assessment looks at developmental history and how traits affect daily life; it is not based on one trait alone.
 
----
+## ADHD and Autism: Areas of Overlap and Difference
 
-## ADHD vs Autism: Key Differences
+| Domain | Experiences that may be more common in ADHD | Experiences that may be more common in autism | Why this is not a diagnostic test |
+| --- | --- | --- | --- |
+| Social interaction | Impulsivity, interruption, or difficulty following a conversation | Differences using or interpreting social communication; interaction may require recovery | Both can have social challenges for different reasons, and both can occur together. |
+| Attention and interests | Attention may shift with task demands, novelty, or distractions | Intense, sustained interests may be important and regulating | Either group can experience deep focus or difficulty disengaging. |
+| Routine and change | Difficulty maintaining a routine or boredom with repetition | A preference for predictability or distress with unexpected change | A person can want structure and struggle to enact it. |
+| Sensory experience | May seek stimulation or become overwhelmed | Sensory differences can be pronounced and affect participation | Sensory differences occur in many conditions and in people without a diagnosis. |
 
-| Domain | ADHD | Autism |
-|--------|------|--------|
-| Social | Seeks novelty, may overshare | Finds interaction exhausting |
-| Attention | Easily distracted except hyperfocus | Sustained deep focus on interests |
-| Routine | Struggles to maintain; bored | Needs routine; change distressing |
-| Sensory | May seek or be overwhelmed | More often hypersensitive |
-| Focus | Flickers between interests | Deep, sustained, hard to disengage |
-| Motivation | Dopamine-driven | Routine-driven |
+The idea of "novelty versus routine" can be useful language for some people, but it is not a rule. It should never be used as a shortcut to label yourself or someone else.
 
-**Most important:** ADHD seeks novelty. Autism needs sameness. If you experience both, that tension signals AuDHD.
+## What Does AuDHD Mean?
 
----
+DSM-5 removed the previous rule that prevented co-diagnosis. Research supports a meaningful overlap between ADHD and autism, but prevalence estimates differ by population, assessment method, age, and study design. "AuDHD" is useful community shorthand; clinicians may document co-occurring ADHD and autism separately.
 
-## What Is AuDHD?
+Some people describe patterns such as these:
 
-Before 2013, DSM-IV prohibited co-diagnosis. DSM-5 removed that rule. Hollingdale et al. found 21% of ADHD children meet autism criteria; Lai et al. found 28% of autistic children meet ADHD criteria.
+- **A push-pull around routine.** You may want predictability while finding repetition hard to maintain. The useful question is what amount of structure helps without becoming too rigid.
+- **A push-pull around social energy.** You may enjoy connection or stimulation and also need recovery after interaction. Consider environment, masking, sensory load, anxiety, and past experience rather than assuming one cause.
+- **Intense interests with variable access.** You may care deeply about an interest but have difficulty initiating, switching to it, or sustaining a related obligation. Support can focus on the transition into the task rather than judging the interest itself.
+- **Mixed sensory needs.** It is possible to seek one kind of sensory input while avoiding another. Track the setting, intensity, time of day, and recovery time to identify what helps.
 
----
+## Support Needs Are More Actionable Than a Perfect Label
 
-## How AuDHD Presents Differently
+Whether you are diagnosed, waiting for an assessment, or simply learning about yourself, start with the situations that create the most friction. A small support plan may include:
 
-**Internal war over routine:** Autistic brain needs routine. ADHD brain gets bored. Build a system, abandon it, feel guilty, repeat.
+| Situation | Support to test |
+| --- | --- |
+| A task is vague or overwhelming | Write the first action, reduce it to a visible step, or use DoTheThing to create an editable breakdown. |
+| A schedule changes unexpectedly | Ask for the new expectation in writing and leave a short transition buffer. |
+| Noise, light, or crowded spaces drain you | Use headphones, adjust lighting where possible, or plan recovery time after high-input events. |
+| Social communication feels unclear | Ask for direct expectations, agendas, or a written summary of a decision. |
+| You lose track of time or switches | Use visible timers, calendar blocks, and a one-line restart note. |
 
-**Social push-pull:** ADHD craves novelty. Autism finds social interaction draining. Initiate intensely, crash into exhaustion.
+These supports are not a substitute for clinical care. They are reasonable experiments in accessibility. Keep the ones that reduce friction and discard the ones that add pressure.
 
-**Focus that flickers:** Deep special interests (autistic) but struggle to engage consistently (ADHD).
+## When to Seek an Assessment or Professional Support
 
-**Sensory duality:** Sensory seeking and sensory avoidance in the same person.
+Consider speaking with a healthcare professional experienced in ADHD and autism if traits have been present since childhood and are affecting work, education, relationships, daily living, or wellbeing. A careful assessment considers developmental history, current functioning, overlapping conditions, and the environment—not only online checklists. If you pursue an assessment, you can prepare by noting examples from more than one setting, questions you want answered, and any accommodations that would make the appointment more accessible.
 
-**Expert masking:** ADHD pattern recognition + autistic detail. Simulates neurotypical functioning at severe burnout cost.
+For related practical support, see [ADHD symptoms in adults](/blog/adhd-symptoms-adults), [executive dysfunction and task paralysis](/blog/executive-dysfunction-vs-task-paralysis), and [ADHD burnout recovery](/blog/adhd-burnout-recovery).
 
----
+## Common Misinterpretations to Avoid
 
-## Why This Matters
+### "I relate to one trait, so I have the diagnosis"
 
-Different neurotypes need different strategies.
+Many human experiences overlap with ADHD and autism traits. Diagnosis depends on a broader pattern, developmental history, persistence, and impact—not a single video, chart, or quiz result.
 
-**ADHD alone:** dopamine-driven — novelty, urgency, external accountability.
+### "One diagnosis rules the other out"
 
-**Autism alone:** structure-driven — predictable routines, clear expectations.
+ADHD and autism can co-occur. An assessment should be able to consider both, as well as other conditions and life circumstances that can affect attention, mood, sleep, social energy, or sensory comfort.
 
-**AuDHD:** flexible systems with clear boundaries. DoTheThing provides external structure without requiring maintenance — the AI does the breakdown.
+### "A support only belongs to one neurotype"
 
----
+Clear instructions, predictable routines, sensory adjustments, timers, and task breakdown can help many people. Use supports because they improve your day, not because you have earned them with a label.
 
 ## Frequently Asked Questions
 
 ### Can you have both ADHD and autism?
 
-Yes — 21-28% overlap.
+Yes. ADHD and autism can co-occur, and DSM-5 permits co-diagnosis. The exact percentage varies across research populations and methods.
 
 ### Is AuDHD the same as having both separately?
 
-Clinically yes. Lived experience is distinct.
+AuDHD is an informal term for co-occurring ADHD and autism. Some people find it captures their lived experience; clinicians may document the diagnoses separately.
 
 ### What are the key differences?
 
-ADHD seeks novelty. Autism craves sameness.
+There are overlapping and differing patterns, but no single difference can identify either diagnosis. ADHD may involve attention regulation and impulsivity; autism involves social-communication differences and restricted or repetitive patterns. A professional assessment considers the full picture.
 
 ### How do I know if I have ADHD, autism, or both?
 
-Formal assessment by a professional trained in both.
+Online content can help you prepare questions, not diagnose you. A qualified professional can assess ADHD, autism, or both using developmental history and current functioning.
 
 ### Is AuDHD harder?
 
-Involves internal conflict — routine vs novelty, social desire vs exhaustion.
+Needs vary widely. Co-occurring traits can create competing support needs for some people, but the useful focus is on the barriers and supports that matter in your own life.
 
 ### Can someone with AuDHD mask effectively?
 
-Yes — this drives late diagnosis.
+Some people mask or compensate for traits, which can make needs less visible. Masking alone does not diagnose ADHD, autism, or AuDHD.
 
-### Why diagnosed with both later?
+## Sources
 
-DSM-IV prohibited co-diagnosis before 2013.
-
----
-
-https://pmc.ncbi.nlm.nih.gov/articles/PMC6376165/
-https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366%2819%2930289-5/fulltext
-https://www.sciencedirect.com/science/article/pii/S0165178123003992
-https://www.autistica.org.uk/what-is-autism/adhd-and-autism
-https://www.psychiatry-uk.com/adhd-and-autism-overlap-audhd/
-https://www.psychiatry.org/psychiatrists/practice/dsm
-https://www.behavioral-innovations.com/blog/autism-adhd-audhd-understanding-differences
-https://laconciergepsychologist.com/blog/audhd-autism-and-adhd/
+The source list for this article is maintained in the post metadata and displayed in the expandable sources section above. The updated explanation of shared traits, co-occurrence, and the 21%/28% research figures draws in particular on [Autistica's ADHD and autism overview](https://www.autistica.org.uk/what-is-autism/adhd-and-autism).
