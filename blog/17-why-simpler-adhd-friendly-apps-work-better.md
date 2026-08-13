@@ -2,6 +2,9 @@
 title: "Why Simpler ADHD-Friendly Apps Work Better"
 excerpt: "Complex apps overwhelm ADHD brains. Learn why simpler tools are more effective and how to choose ADHD-friendly software."
 date: "2026-04-11"
+updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png"
+featuredImageAlt: "Purple pixel mascot using a focus checklist"
 tags:
   - ADHD
   - apps
@@ -170,6 +173,26 @@ Periodically review your tools:
 - Does it reduce or increase my cognitive load?
 - Is there a simpler alternative?
 - Would I replace this if I lost it?
+
+## Run a Five-Minute App Audit
+
+Before adding another productivity tool, test the tool you already have. Can you capture a task in under a minute? Can you see the next action without opening several views? Can you return after missing a day without cleaning up a backlog first? If the answer is no, reduce a setting, remove one unused list, or move the next action into a simpler place.
+
+The goal is not the fewest possible features. It is the fewest decisions required to begin useful work. A feature that genuinely reduces friction for you is not “too much”; a feature you repeatedly avoid may be a sign that the setup is carrying more cognitive load than it returns.
+
+## Common Mistakes to Avoid When Simplifying Your Tools
+
+### Confusing simple with inaccessible
+
+An app can look minimal and still hide critical actions, use low-contrast text, or require too much memory. Keep the accessibility and visibility features that help you.
+
+### Deleting a system before moving essential information
+
+Before you abandon an app, export or copy deadlines, recurring tasks, and reference notes. Simplification should reduce risk, not erase commitments.
+
+### Adding a new tool for every problem
+
+Try to give each tool one clear job. If task breakdown is the bottleneck, a focused [AI task-breakdown guide](/blog/ai-that-breaks-down-tasks-adhd) may be more useful than another full project-management workspace. For broader comparisons, see [best ADHD tools](/blog/best-adhd-tools-2026).
 
 ## Key Takeaways
 

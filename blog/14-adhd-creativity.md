@@ -2,6 +2,9 @@
 title: "ADHD and Creativity: Harnessing the Divergent Mind"
 excerpt: "Explore the deep connection between ADHD and creativity, from divergent thinking to hyperfocus, and learn how to channel your creative energy."
 date: "2026-04-08"
+updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png"
+featuredImageAlt: "Purple pixel mascot considering a brain dump of tasks"
 tags:
   - ADHD
   - creativity
@@ -139,6 +142,26 @@ Many careers leverage ADHD creativity:
 - Music and performing arts
 - Film and media production
 - Innovation and R&D
+
+## Make Space for Both Ideas and Completion
+
+Creativity benefits from different conditions at different stages. Keep a low-friction place to capture ideas, then use a separate moment to choose one idea to develop. A simple two-list system can help: “capture” for anything interesting, and “current” for the one project that has permission to receive your next work block. This protects curiosity without requiring every idea to become a commitment.
+
+For creative work, define progress in visible units: one rough sketch, a three-sentence outline, a reference folder, or a fifteen-minute edit. A smaller definition of done makes it easier to restart after interruption and lowers the urge to wait for a perfect burst of motivation.
+
+## Common Mistakes to Avoid When Using Creativity as a Strength
+
+### Treating novelty as a deadline system
+
+Newness can make starting easier, but continually restarting projects can leave important work unfinished. Give the current project a modest finish line before you open the next idea.
+
+### Keeping every idea in your head
+
+An idea that is not captured has to compete with everything else you are remembering. Use a notes app, voice memo, or paper list, then return to the same place during a planned review.
+
+### Mistaking perfectionism for standards
+
+Standards can guide revision; perfectionism can prevent the first visible draft. If you keep postponing a creative project, try the [ADHD-and-perfectionism guide](/blog/adhd-perfectionism) or explore work patterns in [best jobs for ADHD](/blog/adhd-best-jobs-creativity-hyperfocus).
 
 ## Key Takeaways
 

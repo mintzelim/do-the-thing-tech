@@ -1,38 +1,19 @@
 {
   "summary": {
     "postCount": 31,
-    "postsAtOrAbove800Words": 22,
-    "postsWithAnyImageReference": 9,
-    "postsWithCommonMistakeGuidance": 7,
-    "postsBelow800Words": [
-      "06-adhd-medication-and-productivity.md",
-      "07-neuroscience-task-avoidance.md",
-      "10-adhd-relationships.md",
-      "11-adhd-workplace.md",
-      "12-adhd-sleep.md",
-      "14-adhd-creativity.md",
-      "16-neurodivergent-productivity-7-tactics.md",
-      "17-why-simpler-adhd-friendly-apps-work-better.md",
-      "18-one-task-is-enough-simple-self-acceptance.md"
-    ],
+    "postsAtOrAbove800Words": 31,
+    "postsWithAnyImageReference": 18,
+    "postsWithCommonMistakeGuidance": 16,
+    "postsBelow800Words": [],
     "postsWithoutImageReference": [
       "02-time-blindness-in-adhd.md",
       "03-breaking-down-big-tasks.md",
       "04-executive-dysfunction-vs-task-paralysis.md",
       "05-best-tools-for-adhd-task-management.md",
-      "06-adhd-medication-and-productivity.md",
-      "07-neuroscience-task-avoidance.md",
       "08-remote-work-adhd.md",
       "09-adhd-perfectionism.md",
-      "10-adhd-relationships.md",
-      "11-adhd-workplace.md",
-      "12-adhd-sleep.md",
       "13-adhd-financial-management.md",
-      "14-adhd-creativity.md",
       "15-free-tools-2026.md",
-      "16-neurodivergent-productivity-7-tactics.md",
-      "17-why-simpler-adhd-friendly-apps-work-better.md",
-      "18-one-task-is-enough-simple-self-acceptance.md",
       "19-adhd-morning-routine-no-motivation-1.md",
       "20-how-to-break-down-tasks-adhd.md",
       "21-adhd-best-jobs-creativity-hyperfocus.md",
@@ -45,17 +26,8 @@
       "03-breaking-down-big-tasks.md",
       "04-executive-dysfunction-vs-task-paralysis.md",
       "05-best-tools-for-adhd-task-management.md",
-      "06-adhd-medication-and-productivity.md",
-      "07-neuroscience-task-avoidance.md",
       "08-remote-work-adhd.md",
       "09-adhd-perfectionism.md",
-      "10-adhd-relationships.md",
-      "11-adhd-workplace.md",
-      "12-adhd-sleep.md",
-      "14-adhd-creativity.md",
-      "16-neurodivergent-productivity-7-tactics.md",
-      "17-why-simpler-adhd-friendly-apps-work-better.md",
-      "18-one-task-is-enough-simple-self-acceptance.md",
       "22-does-adhd-go-away.md",
       "23-best-adhd-tools-2026.md",
       "24-ai-that-breaks-down-tasks-adhd.md",
@@ -104,17 +76,17 @@
     },
     {
       "file": "06-adhd-medication-and-productivity.md",
-      "wordCount": 711,
+      "wordCount": 1059,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "07-neuroscience-task-avoidance.md",
-      "wordCount": 732,
+      "wordCount": 1008,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "08-remote-work-adhd.md",
@@ -132,24 +104,24 @@
     },
     {
       "file": "10-adhd-relationships.md",
-      "wordCount": 721,
+      "wordCount": 977,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "11-adhd-workplace.md",
-      "wordCount": 557,
+      "wordCount": 824,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "12-adhd-sleep.md",
-      "wordCount": 656,
+      "wordCount": 945,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "13-adhd-financial-management.md",
@@ -160,10 +132,10 @@
     },
     {
       "file": "14-adhd-creativity.md",
-      "wordCount": 658,
+      "wordCount": 895,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "15-free-tools-2026.md",
@@ -174,24 +146,24 @@
     },
     {
       "file": "16-neurodivergent-productivity-7-tactics.md",
-      "wordCount": 677,
+      "wordCount": 922,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "17-why-simpler-adhd-friendly-apps-work-better.md",
-      "wordCount": 797,
+      "wordCount": 1029,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "18-one-task-is-enough-simple-self-acceptance.md",
-      "wordCount": 628,
+      "wordCount": 886,
       "inlineImageReferences": 0,
-      "frontmatterImageReferences": 0,
-      "hasCommonMistakeGuidance": false
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
     },
     {
       "file": "19-adhd-morning-routine-no-motivation-1.md",

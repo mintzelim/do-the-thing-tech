@@ -2,6 +2,9 @@
 title: "7 Neurodivergent Productivity Tactics That Actually Work"
 excerpt: "Evidence-based productivity strategies designed specifically for neurodivergent brains, not neurotypical productivity advice."
 date: "2026-04-10"
+updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png"
+featuredImageAlt: "Purple pixel mascot beside a small generated task list"
 tags:
   - ADHD
   - productivity
@@ -138,3 +141,23 @@ You do not need to use all seven tactics. Pick two or three that address your bi
 ---
 
 *This article is for informational purposes only and does not constitute medical advice.*
+
+## Choose One Tactic Like an Experiment
+
+Seven tactics do not have to become seven new rules. Pick the friction you want to reduce this week, choose one tactic, and decide what a realistic observation looks like. For example: “For five workdays, I will write the next action before I close my laptop,” or “I will ask a friend to body-double for twenty minutes on Tuesday.” Review whether the tactic reduced friction, not whether it made you perfectly productive.
+
+ADHD can affect organization, attention, and task persistence across settings, so a useful system is usually external, visible, and forgiving. The [NIMH ADHD overview](https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd) is a good reference for understanding why a clinician may recommend broader support alongside everyday strategies.
+
+## Common Mistakes to Avoid When Trying Productivity Tactics
+
+### Implementing all seven tactics at once
+
+Too many changes make it impossible to know what helped and can create a new administrative burden. Start with one tactic that matches today’s bottleneck.
+
+### Measuring motivation instead of friction
+
+Motivation rises and falls. Track a concrete outcome: Did the task get a defined first action? Did you return after an interruption? Did the reminder appear where you needed it?
+
+### Using body doubling without a task boundary
+
+Another person’s presence will not decide the work for you. Before the session starts, name a small finish line. If you need help setting that boundary, use the [task-breakdown guide](/blog/breaking-down-big-tasks) or the [remote-work guide](/blog/remote-work-adhd).

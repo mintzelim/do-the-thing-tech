@@ -436,11 +436,11 @@
 - [x] Add personal opinion/verdict to tool review posts (not neutral)
 
 ### Phase 6: Verification & Deployment
-- [ ] Test all new pages on dev server
-- [ ] Verify footer links work correctly
-- [ ] Test internal linking navigation
-- [ ] Verify About page displays correctly
-- [ ] Check homepage layout on mobile and desktop
+- [x] Test all new pages on dev server
+- [x] Verify footer links work correctly
+- [x] Test internal linking navigation
+- [x] Verify About page displays correctly
+- [x] Check homepage layout on mobile and desktop
 - [ ] Save checkpoint after all changes
 - [x] Audit and repair blog images missing on the live site
 - [x] Fix blank category tag shown in the live blog category filters
@@ -589,3 +589,15 @@
 ## Match Audience Card Density to How It Works
 - [x] Match audience illustration size, heading scale, body text scale, padding, and card height to the How It Works card treatment
 - [x] Validate the five-card audience grid after the density refinement
+
+## Shared Section Text Alignment
+- [ ] Align How It Works and audience headlines, subtitles, and supporting copy to a common centered text grid
+- [ ] Match heading and subtitle widths, line-height, and vertical spacing without changing section copy
+- [ ] Verify desktop and mobile text alignment after the refinement
+
+## Approved Targeted SEO Content Improvements
+- [x] Expand priority short articles to provide useful, source-backed depth
+- [x] Add relevant image references and descriptive accessibility text to priority articles
+- [x] Add practical Gotchas or common-mistake guidance where it is genuinely useful
+- [x] Preserve article voice, medical-safety language, source accuracy, and internal-link continuity
+- [x] Regenerate metadata, validate all updated content, and checkpoint the improvement pass

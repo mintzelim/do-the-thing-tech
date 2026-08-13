@@ -2,6 +2,9 @@
 title: "ADHD in the Workplace: Thriving at Work with ADHD"
 excerpt: "Practical strategies for succeeding at work with ADHD, from navigating accommodations to leveraging your unique strengths."
 date: "2026-04-05"
+updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png"
+featuredImageAlt: "Purple pixel mascot beside a small generated task list"
 tags:
   - ADHD
   - workplace
@@ -14,7 +17,7 @@ sources:
   - text: "CHADD - ADHD and Employment"
     url: "https://chadd.org/about-adhd/employment/"
   - text: "Job Accommodation Network - ADHD"
-    url: "https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-ADHD.cfm"
+    url: "https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-AD-HD.cfm"
   - text: "NIMH - ADHD and Daily Functioning"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
   - text: "Barkley, R.A. ADHD in Adults: Workplace Challenges"
@@ -79,7 +82,7 @@ Workplace stress taxes emotional regulation:
 
 ### Legal Rights
 
-ADHD is recognized as a disability under the Americans with Disabilities Act (ADA). You have the right to reasonable accommodations that help you perform your job effectively.
+In the United States, ADHD may qualify as a disability under the Americans with Disabilities Act (ADA) when it substantially limits a major life activity. Whether an accommodation is appropriate is an individual, job-specific question.
 
 ### Common Accommodations
 
@@ -164,10 +167,30 @@ ADHD energy fluctuates. Work with it:
 - Take care of sleep, nutrition, and exercise
 - Recognize burnout warning signs
 
+## Design a Workday You Can Repeat
+
+The most useful workplace support is specific. Instead of “I need help focusing,” describe a work barrier and a practical adjustment: written follow-up after meetings, a protected focus block, a quieter workspace, or a brief planning check-in. The [Job Accommodation Network’s ADHD resource](https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-AD-HD.cfm) lists accommodation ideas and explains that needs should be considered individually.
+
+If you are in the United States, legal rights and processes can depend on the role, employer, and situation. If you are elsewhere, local employment law may differ. This article is practical information, not legal advice; a qualified employment adviser, HR professional, union representative, or disability-rights organization can help with your own circumstances.
+
+## Common Mistakes to Avoid at Work
+
+### Requesting a vague accommodation
+
+“Less distraction” is a real need but a difficult request to act on. Connect the request to a work outcome: “Written action items after meetings will help me deliver the correct next step.” Concrete requests are easier to discuss and review.
+
+### Disclosing before you have decided what you need
+
+Disclosure is personal. You do not have to decide in the middle of a stressful day. Write down the barrier, possible supports, and the people who need to know before you start the conversation.
+
+### Treating planning as extra work instead of part of the job
+
+Reserve a short weekly planning block to turn incoming work into visible next actions. For day-to-day task initiation, use the [task-breakdown guide](/blog/how-to-break-down-tasks-adhd) or the [remote-work guide](/blog/remote-work-adhd) rather than relying on memory alone.
+
 ## Key Takeaways
 
 - Workplace challenges are real but manageable with the right strategies
-- ADHD is a protected disability; accommodations are a legal right
+- ADHD may qualify for legal protection, and accommodation decisions are individual and job-specific
 - Leverage ADHD strengths like hyperfocus and creativity
 - Choose work environments that match your brain
 - Build external systems to compensate for executive challenges

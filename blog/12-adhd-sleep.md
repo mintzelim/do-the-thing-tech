@@ -2,6 +2,9 @@
 title: "ADHD and Sleep: Breaking the Insomnia Cycle"
 excerpt: "Explore the complex relationship between ADHD and sleep, including delayed sleep phase syndrome, racing thoughts, and practical strategies for better rest."
 date: "2026-04-06"
+updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png"
+featuredImageAlt: "Purple pixel mascot using a visible countdown timer"
 tags:
   - ADHD
   - sleep
@@ -130,6 +133,26 @@ Work with your doctor on medication timing:
 - Explore non-stimulant options
 - Discuss sleep medications if needed
 - Consider melatonin (discuss timing and dosage with your doctor)
+
+## Use a Seven-Day Sleep Review Before Changing Everything
+
+Rather than trying to build a flawless routine overnight, collect a small amount of information for a week: approximate bedtime, wake time, caffeine or alcohol timing, screens late in the evening, medication timing as prescribed, and how rested you feel the next day. The goal is not to grade yourself. It is to notice one pattern you can discuss with a clinician or test safely, such as moving a wind-down cue earlier or protecting a consistent wake time.
+
+The National Heart, Lung, and Blood Institute explains that sleep deficiency can involve too little sleep, poor-quality sleep, sleeping at the wrong time, or a sleep disorder. It can affect focus, learning, reactions, and mood. [Read NHLBI’s overview](https://www.nhlbi.nih.gov/health/sleep-deprivation). If you have severe daytime sleepiness, breathing pauses, a major mood change, or a medication concern, seek individual medical guidance.
+
+## Common Mistakes to Avoid With ADHD and Sleep
+
+### Treating sleep loss as only a productivity problem
+
+Sleep affects safety and health as well as next-day output. Do not use a new app, a larger to-do list, or an earlier alarm as a substitute for assessing persistent sleep problems.
+
+### Changing prescribed medication timing on your own
+
+Some medications can affect sleep, but timing and dosage decisions are clinical decisions. Bring your seven-day log to the person who prescribes your medication instead of experimenting alone.
+
+### Building a routine with too many steps
+
+A 14-step night routine can create another place to “fail.” Choose one cue that is easy to repeat—putting a charger outside the bedroom, setting a wind-down reminder, or laying out tomorrow’s first task. If mornings are also difficult, pair this with the [ADHD morning-routine guide](/blog/adhd-morning-routine-no-motivation-1).
 
 ## Key Takeaways
 

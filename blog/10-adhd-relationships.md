@@ -2,6 +2,9 @@
 title: "ADHD and Relationships: Navigating Love with a Neurodivergent Brain"
 excerpt: "ADHD affects relationships in complex ways. Learn about the dynamics, challenges, and strategies for building strong partnerships."
 date: "2026-04-04"
+updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png"
+featuredImageAlt: "Purple pixel mascot using a focus checklist"
 tags:
   - ADHD
   - relationships
@@ -191,6 +194,26 @@ ADHD brings relationship strengths too:
 - Intense passion and enthusiasm
 - Empathy and emotional depth
 - Unique perspectives on life
+
+## Build a Shared External System
+
+Relationship friction often grows when one person has to remember every plan, message, deadline, or household detail in their head. A shared external system can make the issue visible without making either person the “manager.” Pick one place for agreements—a shared calendar, a short weekly check-in note, or a written list of who owns the next action. Start small enough that both people can actually keep using it.
+
+This is not a substitute for support when a relationship feels unsafe, controlling, or persistently distressing. ADHD can affect daily functioning and relationships, but it does not excuse harm. If you are worried about safety, seek local professional or crisis support.
+
+## Common Mistakes to Avoid in ADHD Relationship Conversations
+
+### Turning a missed task into a verdict about care
+
+“You never care” and “you are too sensitive” make it harder to solve the actual logistics problem. Name the observable event, its impact, and one requested support: “The bill was missed; can we set a shared reminder before the due date?”
+
+### Making one partner the permanent reminder system
+
+Constant reminding can create resentment on both sides. Move recurring prompts into a shared calendar, checklist, or visible routine so neither person has to carry the entire memory load.
+
+### Saving difficult conversations for the most overloaded moment
+
+Try to choose a neutral time, agree on one topic, and end with one concrete next step. If rejection sensitivity is making feedback hard to hear, this [RSD guide](/blog/rejection-sensitive-dysphoria-rsd) may offer language for slowing the conversation down.
 
 ## Key Takeaways
 
