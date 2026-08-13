@@ -4,9 +4,14 @@ import { X } from "lucide-react";
 interface PinTabTutorialProps {
   showAfterBreakdown?: boolean;
   alwaysShowOnCurrentTasks?: boolean;
+  variant?: "default" | "task-side-panel";
 }
 
-export default function PinTabTutorial({ showAfterBreakdown = false, alwaysShowOnCurrentTasks = false }: PinTabTutorialProps) {
+export default function PinTabTutorial({
+  showAfterBreakdown = false,
+  alwaysShowOnCurrentTasks = false,
+  variant = "default",
+}: PinTabTutorialProps) {
   const [showTutorial, setShowTutorial] = useState(false);
 
   useEffect(() => {
@@ -44,13 +49,17 @@ export default function PinTabTutorial({ showAfterBreakdown = false, alwaysShowO
   if (!showTutorial) return null;
 
   // Position: inline at top for CurrentTasks, fixed bottom-right for default, inline for Home
-  const positionClass = alwaysShowOnCurrentTasks ? "" : (showAfterBreakdown ? "" : "fixed bottom-6 right-6 z-50");
-  const containerClass = alwaysShowOnCurrentTasks 
-    ? "border-4 border-foreground bg-card p-4 mb-4" 
-    : (showAfterBreakdown ? "border-4 border-foreground bg-card p-4 mt-4" : "border-4 border-foreground bg-card p-4 relative");
+  const positionClass = variant === "task-side-panel"
+    ? ""
+    : alwaysShowOnCurrentTasks ? "" : (showAfterBreakdown ? "" : "fixed bottom-6 right-6 z-50");
+  const containerClass = variant === "task-side-panel"
+    ? "reference-pro-tip-panel"
+    : alwaysShowOnCurrentTasks
+      ? "border-4 border-foreground bg-card p-4 mb-4"
+      : (showAfterBreakdown ? "border-4 border-foreground bg-card p-4 mt-4" : "border-4 border-foreground bg-card p-4 relative");
 
   return (
-    <div className={`${positionClass} ${(alwaysShowOnCurrentTasks || showAfterBreakdown) ? "w-full" : "max-w-xs"}`}>
+    <div className={`${positionClass} ${(alwaysShowOnCurrentTasks || showAfterBreakdown || variant === "task-side-panel") ? "w-full" : "max-w-xs"}`}>
       {/* Pixel-art speech bubble */}
       <div className={containerClass}>
         {/* Speech bubble pointer - only show for fixed position */}

@@ -35,6 +35,26 @@ describe("approved hybrid pixel-art UI refresh", () => {
   });
 });
 
+describe("homepage visual-edit safeguards", () => {
+  it("replaces the marked visual-only plan preview with the existing Pro Tip without removing the task input workflow", () => {
+    const home = readFileSync(resolve(process.cwd(), "client/src/pages/Home.tsx"), "utf8");
+    const tutorial = readFileSync(resolve(process.cwd(), "client/src/components/PinTabTutorial.tsx"), "utf8");
+
+    expect(home).not.toContain('className="reference-plan-card"');
+    expect(home).not.toContain("Today’s plan");
+    expect(home).not.toContain("VIEW FULL PLAN");
+    expect(home).toContain('className="reference-pro-tip-slot"');
+    expect(home).toContain('variant="task-side-panel"');
+    expect(home).toContain('id="widget"');
+    expect(home).toContain("BREAK IT DOWN");
+    expect(home).toContain("PinTabTutorial");
+    expect(tutorial).toContain('variant?: "default" | "task-side-panel"');
+    expect(tutorial).toContain("Pro Tip: Pin this tab so I stay safe while you work!");
+    expect(stylesheet).toContain(".reference-task-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;align-items:start;gap:24px;margin:0 0 34px}");
+    expect(stylesheet).toContain(".reference-pro-tip-panel");
+  });
+});
+
 
 describe("post-hero copy preservation", () => {
   it("keeps the approved lower landing section copy in the source", () => {
@@ -136,10 +156,22 @@ describe("mascot-led audience grid", () => {
     expect((homeContent.match(/className="audience-card-mascot"/g) ?? []).length).toBe(5);
     expect(homeContent).toContain("A Productivity Tool for Anyone Whose Brain Works Differently");
     expect(homeContent).toContain("Our AI task breakdown tool is for:");
-    expect(homeContent).toContain("Remote Workers & Freelancers:");
-    expect(homeContent).toContain("Employees & Corporate Teams:");
-    expect(homeContent).toContain("Project Managers:");
-    expect(homeContent).toContain("Parents:");
+    expect(homeContent).toContain("<h3>Students</h3>");
+    expect(homeContent).toContain("<h3>Remote Workers & Freelancers</h3>");
+    expect(homeContent).toContain("<h3>Employees & Corporate Teams</h3>");
+    expect(homeContent).toContain("<h3>Project Managers</h3>");
+    expect(homeContent).toContain("<h3>Parents</h3>");
+    expect(homeContent).toContain('Bypassing academic overwhelm and the "blank page" syndrome.');
+    expect(homeContent).toContain("For when you're your own boss and your initiation system is jamming.");
+    expect(homeContent).toContain('Stop losing hours to "prep work."');
+    expect(homeContent).toContain('Use it to convert a vague "milestone"');
+    expect(homeContent).toContain("Managing the invisible mental load of household admin and family logistics.");
+    expect(homeContent).not.toContain("<strong>Students:</strong>");
+    expect(homeContent).not.toContain("<strong>Remote Workers & Freelancers:</strong>");
+    expect(homeContent).not.toContain("<strong>Employees & Corporate Teams:</strong>");
+    expect(homeContent).not.toContain("<strong>Project Managers:</strong>");
+    expect(homeContent).not.toContain("<strong>Parents:</strong>");
+    expect(homeContent).not.toContain("<strong></strong>");
     expect(homeContent).toContain("WHO World Mental Health Survey");
     expect(homeContent).toContain("audience-howitworks-students_4055d5ad.png");
     expect(homeContent).toContain("audience-howitworks-remote-workers_7ce7f448.png");

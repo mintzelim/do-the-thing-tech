@@ -600,22 +600,9 @@ export default function Home() {
               </button>
 
               {/* Pro Tip Tutorial - always shows below BREAK IT DOWN */}
-              <PinTabTutorial showAfterBreakdown={true} />
               </div>
-              <aside className="reference-plan-card" aria-label="Preview of today's plan">
-                <div className="reference-plan-header">
-                  <span className="reference-plan-icon" aria-hidden="true">★</span>
-                  <div>
-                    <h2>Today’s plan</h2>
-                    <p>You’ve got this.</p>
-                  </div>
-                </div>
-                <div className="reference-plan-items">
-                  <div><span className="reference-plan-check" aria-hidden="true" /> <span>Reply to client email<small>10:00 AM</small></span></div>
-                  <div><span className="reference-plan-check" aria-hidden="true" /> <span>Draft project outline<small>1:00 PM</small></span></div>
-                  <div><span className="reference-plan-check" aria-hidden="true" /> <span>30-min walk<small>5:30 PM</small></span></div>
-                </div>
-                <a href="#widget" className="reference-plan-link">VIEW FULL PLAN <span aria-hidden="true">→</span></a>
+              <aside className="reference-pro-tip-slot" aria-label="Pro Tip">
+                <PinTabTutorial showAfterBreakdown={true} variant="task-side-panel" />
               </aside>
             </div>
 

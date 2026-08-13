@@ -622,3 +622,16 @@
 - [x] Audit all live image requests on dothething.tech and identify missing, inaccessible, or stale asset references
 - [x] Repair broken image references using deployment-safe storage URLs or correctly tracked repository assets
 - [x] Verify live production image delivery, regression coverage, and deployment synchronization
+
+## Homepage Visual Edit: Remove Marked Aside
+- [x] Locate the aside marked for removal in the homepage visual edit and remove it without changing the remaining task workflow
+- [x] Validate the homepage layout and publish the verified visual edit
+
+## Homepage Visual Edit: Reuse the Former Preview Space
+- [x] Restore the desktop two-column task layout and place the existing Pro Tip in the former right-side preview space
+- [x] Preserve the Pro Tip content and existing task workflow while validating the responsive layout
+
+## Homepage Visual Edit: Audience Copy Cleanup
+- [x] Remove the redundant “Students:” text label while preserving the audience-card message and semantics
+- [x] Validate the audience-card copy cleanup and publish the combined homepage visual edits
+- [x] Remove the repeated audience labels from the body copy of cards two through five while preserving their headings and descriptions
