@@ -55,7 +55,17 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("OPTION 03 · PROGRESS PATH");
     expect(html).toContain("task-preview-row");
     expect(html).toContain("Selected implementation: Focus Queue");
+    expect(html).toContain("Playful image-free modules");
+    expect(html).toContain("OPTION 01 · PIXEL POST-IT");
+    expect(html).toContain("OPTION 02 · QUEST TICKET");
+    expect(html).toContain("OPTION 03 · CHECKPOINT FLAG");
+    expect(html).toContain("illustrated-card system");
+    expect(html).toContain("OPTION 01 · PIXEL POST-IT · SELECTED");
+    expect(html).toContain("OPTION 02 · QUEST TICKET · SELECTED");
     expect(markdown).toContain("Current Tasks: Focus Queue");
+    expect(markdown).toContain("Content modules: illustrated and image-free");
+    expect(markdown).toContain("Pixel Post-It");
+    expect(markdown).toContain("Quest Ticket");
     expect(markdown).toContain("YOUR FOCUS QUEUE");
     expect(markdown).toContain("Add Task utility");
     expect(markdown).toContain("Breadcrumbs");

@@ -143,6 +143,18 @@ Buttons use Inter at 700 weight, 0.98rem, 8px radius, and 12px × 22px padding. 
 
 Main panels use a 1px panel border, 14px radius, and one offset shadow. Repeated content cards use a lighter 1px border, 10px radius, and a smaller cool-gray shadow. Avoid borders inside an already bordered wide panel unless the interior contains repeatable card items.
 
+### Content modules: illustrated and image-free
+
+Use the existing **illustrated card** when the transparent purple mascot or another approved image makes a concept easier to understand. Do not leave an empty illustration stage in a text-first module. For information that works without an image, two image-free systems are approved and should be applied by content purpose—not mixed arbitrarily inside the same group.
+
+| System | Selected use | Treatment | Avoid when |
+|---|---|---|---|
+| **Illustrated card** | A concept needs a mascot or visual analogy to be clearer. | One compact transparent illustration stage above the title, then centered or left-aligned copy as the section requires. | The illustration is decorative only or the content is a long factual list. |
+| **Pixel Post-It** | A short reframe, lived-experience note, definition, or helpful reminder. | One warm-white folded-corner note with an ink outline and a quiet lavender offset shadow. Use it as a single emphasis moment, not a grid. | There are multiple equal-priority statements, lengthy source material, or a need for an action sequence. |
+| **Quest Ticket** | An action prompt, task step, tool capability, or small useful challenge. | A compact indigo ticket marker, dashed stub divider, and readable Inter copy. Use a consistent ticket grid for one action-oriented group. | Content is legal, clinical, heavily sourced, or merely descriptive rather than actionable. |
+
+Pixel Post-It may carry a slight static rotation for a friendly note-like quality. Quest Ticket uses numbered circles only to reinforce a collection of capabilities or actions, not to imply a required order unless the surrounding heading says so. Both systems stack to one column on narrow screens and preserve visible text-first hierarchy.
+
 ### Alternate public-page rhythm
 
 Public authority and resource pages may alternate **three approved compositional modes** to create hierarchy without abandoning the calm landing system. The variation comes from proportion, alignment, and intentional row balancing—not additional color treatments. Use the same warm-white panel surface, ink outline, and quiet shadow where a panel is appropriate.

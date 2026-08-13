@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DoTheThing — About Page Brainstorm Layout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --canvas: #f6f5f2;
+        --surface: #fffefb;
+        --heading: #1f293b;
+        --ink: #26364a;
+        --muted: #566273;
+        --panel-border: #a8afc2;
+        --card-border: #c5cada;
+        --accent: #5b5ce2;
+        --accent-dark: #4a4bc4;
+        --lavender: #c8b1ef;
+        --lime: #c7db3e;
+        --shadow: rgba(210, 211, 224, .7);
+        --ui: Inter, ui-sans-serif, system-ui, sans-serif;
+        --pixel: VT323, "Courier New", monospace;
+      }
+
+      * { box-sizing: border-box; }
+      html { background: var(--canvas); scroll-behavior: smooth; }
+      body { margin: 0; background: var(--canvas); color: var(--ink); font-family: var(--ui); line-height: 1.55; }
+      a { color: inherit; }
+      h1, h2, h3, p { margin-top: 0; }
+      h1, h2, h3 { color: var(--heading); }
+      h1, h2 { font-weight: 800; letter-spacing: -.055em; line-height: .98; }
+      h1 { font-size: clamp(3rem, 7vw, 6.1rem); }
+      h2 { font-size: clamp(2.2rem, 4vw, 4.25rem); }
+      h3 { font-size: 1.05rem; font-weight: 800; letter-spacing: -.02em; line-height: 1.2; }
+      .page-shell { width: min(calc(100% - 32px), 1240px); margin: 0 auto; padding: 26px 0 72px; }
+      .eyebrow { margin: 0 0 11px; color: var(--accent-dark); font: 1.2rem/1 var(--pixel); letter-spacing: .09em; }
+      .lede { max-width: 700px; margin: 0; color: var(--muted); font-size: clamp(1rem, 1.55vw, 1.18rem); line-height: 1.6; }
+      .panel { border: 1px solid var(--panel-border); border-radius: 14px; background: var(--surface); box-shadow: 7px 8px 0 var(--shadow); }
+      .card { border: 1px solid var(--card-border); border-radius: 10px; background: var(--surface); box-shadow: 3px 4px 0 rgba(210, 211, 224, .65); }
+      .rule { width: 100%; height: 1px; background: #d9dce4; }
+
+      .document-intro { padding: clamp(26px, 5vw, 52px); }
+      .document-intro h1 { max-width: 820px; margin-bottom: 18px; }
+      .intro-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr); gap: 36px; align-items: end; }
+      .design-contract { padding: 18px; border-left: 3px solid var(--accent); background: #f0f1fb; color: var(--muted); font-size: .92rem; }
+      .design-contract strong { color: var(--heading); }
+      .legend { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+      .tag { display: inline-flex; min-height: 30px; align-items: center; padding: 5px 10px; border: 1px solid var(--card-border); border-radius: 7px; background: #fff; color: var(--muted); font-size: .77rem; font-weight: 700; }
+
+      .option { margin-top: 58px; }
+      .option-label { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; margin: 0 0 18px; }
+      .option-label .eyebrow { margin: 0; }
+      .option-label p { max-width: 650px; margin: 0; color: var(--muted); font-size: .92rem; text-align: right; }
+      .mock-page { overflow: hidden; padding: 14px; }
+      .mock-nav { display: flex; min-height: 62px; align-items: center; justify-content: space-between; gap: 18px; padding: 10px 14px; border-bottom: 1px solid #d9dce4; }
+      .brand { color: var(--accent-dark); font: 2rem/1 var(--pixel); letter-spacing: .03em; text-decoration: none; text-shadow: 2px 2px 0 #d9c6f4; }
+      .nav-links { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; justify-content: flex-end; }
+      .nav-links span { padding: 7px 9px; color: var(--ink); font-size: .74rem; font-weight: 700; }
+      .nav-links .active { border: 1px solid #d3d5ea; border-radius: 7px; background: #f0f1fb; color: var(--accent-dark); }
+      .nav-cta, .button { display: inline-flex; min-height: 42px; align-items: center; justify-content: center; padding: 9px 14px; border: 1px solid var(--accent-dark); border-radius: 8px; background: var(--accent); box-shadow: 3px 3px 0 rgba(74, 75, 196, .2); color: #fff; font: 700 .8rem var(--ui); letter-spacing: -.01em; }
+      .mini-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 22px 6px 5px; color: var(--muted); font-size: .76rem; }
+      .mini-footer div { display: flex; flex-wrap: wrap; gap: 12px; font-weight: 700; }
+
+      /* Shared pixel mascot: a decorative, abstract lavender rectangle, never a human. */
+      .mascot-stage { position: relative; display: grid; min-height: 150px; place-items: center; }
+      .mascot { position: relative; width: 68px; height: 66px; border: 4px solid var(--ink); border-radius: 14px 14px 16px 16px; background: var(--lavender); box-shadow: inset 0 0 0 5px #d9c6f4; image-rendering: pixelated; }
+      .mascot::before, .mascot::after { position: absolute; top: 28px; width: 7px; height: 7px; background: var(--ink); content: ""; }
+      .mascot::before { left: 17px; }
+      .mascot::after { right: 17px; }
+      .mascot .foot { position: absolute; bottom: -10px; width: 12px; height: 8px; border: 3px solid var(--ink); border-top: 0; background: var(--lavender); }
+      .mascot .foot:first-child { left: 8px; }
+      .mascot .foot:last-child { right: 8px; }
+      .mascot-note, .mascot-spark { position: absolute; border: 2px solid var(--ink); border-radius: 4px; background: #fffefb; color: var(--accent-dark); font: 1.1rem/1 var(--pixel); letter-spacing: .06em; }
+      .mascot-note { right: 15%; top: 18%; padding: 5px 7px; }
+      .mascot-note::after { position: absolute; right: 11px; bottom: -6px; width: 9px; height: 9px; border-right: 2px solid var(--ink); border-bottom: 2px solid var(--ink); background: #fffefb; content: ""; transform: rotate(45deg); }
+      .mascot-spark { left: 18%; bottom: 20%; width: 16px; height: 16px; border-color: var(--lime); background: var(--lime); transform: rotate(45deg); }
+      .mascot-prop { position: absolute; right: calc(50% - 76px); bottom: 25px; width: 42px; height: 52px; border: 3px solid var(--ink); border-radius: 4px; background: #fffefb; }
+      .mascot-prop::before { position: absolute; top: 11px; right: 8px; left: 8px; height: 3px; background: var(--accent); box-shadow: 0 10px 0 var(--accent), 0 20px 0 var(--accent); content: ""; }
+
+      /* Option 01 — Field Guide */
+      .field-guide-hero { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(250px, .75fr); gap: clamp(28px, 7vw, 92px); align-items: center; padding: clamp(34px, 6vw, 78px) clamp(18px, 5vw, 62px); }
+      .field-guide-hero h1 { max-width: 720px; margin-bottom: 16px; }
+      .field-guide-hero .mascot-stage { min-height: 270px; }
+      .hero-index { display: inline-flex; gap: 10px; align-items: center; margin-top: 28px; color: var(--muted); font-size: .8rem; font-weight: 700; }
+      .hero-index b { display: grid; width: 28px; height: 28px; place-items: center; border-radius: 7px; background: var(--accent); color: #fff; }
+      .guide-section { margin: 16px 0; }
+      .guide-dossier { display: grid; grid-template-columns: 156px minmax(0, 1fr); gap: 30px; align-items: start; padding: clamp(28px, 5vw, 54px); }
+      .dossier-side { padding-right: 28px; border-right: 1px solid #d9dce4; }
+      .dossier-side .mascot-stage { min-height: 132px; }
+      .dossier-copy p:not(.eyebrow) { max-width: 790px; margin-bottom: 13px; color: var(--muted); font-size: .94rem; }
+      .cred-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 20px 0 0; padding: 0; list-style: none; }
+      .cred-list li { padding: 12px; border-top: 2px solid var(--accent); background: #f6f5f2; color: var(--muted); font-size: .8rem; }
+      .field-guide-mission { display: grid; grid-template-columns: minmax(200px, .55fr) minmax(0, 1.45fr); gap: 40px; align-items: center; padding: clamp(28px, 5vw, 54px); }
+      .mission-mark { width: 112px; height: 112px; margin: auto; border: 1px solid var(--accent); border-radius: 50%; background: #f0f1fb; box-shadow: inset 0 0 0 13px var(--surface); }
+      .challenge-field { padding: 32px 0; }
+      .challenge-heading { max-width: 700px; margin: 0 auto 24px; text-align: center; }
+      .challenge-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 14px; }
+      .challenge-grid .card { min-height: 136px; padding: 18px; text-align: center; }
+      .challenge-grid .card:nth-child(-n+3) { grid-column: span 4; }
+      .challenge-grid .card:nth-child(4) { grid-column: 3 / span 4; }
+      .challenge-grid .card:nth-child(5) { grid-column: 7 / span 4; }
+      .challenge-grid p { margin: 0; color: var(--muted); font-size: .8rem; }
+      .field-guide-product { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(250px, .55fr); gap: 38px; align-items: center; padding: clamp(30px, 5vw, 56px); }
+      .feature-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 22px; }
+      .feature-strip div { padding: 14px 10px; border-top: 2px solid var(--accent); background: #f6f5f2; color: var(--muted); font-size: .78rem; }
+      .feature-strip b { display: block; margin-bottom: 5px; color: var(--heading); font-size: .8rem; }
+      .field-guide-steps { padding: clamp(30px, 5vw, 56px); }
+      .steps-header { display: flex; justify-content: space-between; gap: 20px; align-items: end; margin-bottom: 22px; }
+      .steps-header .lede { max-width: 420px; font-size: .9rem; text-align: right; }
+      .step-rail { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+      .rail-step { position: relative; min-height: 150px; padding: 16px; border-top: 3px solid var(--accent); background: #f6f5f2; }
+      .rail-step:nth-child(even) { margin-top: 22px; }
+      .rail-step span { display: block; margin-bottom: 26px; color: var(--accent-dark); font: 1.35rem/1 var(--pixel); }
+      .rail-step p { margin: 0; color: var(--muted); font-size: .77rem; }
+      .field-guide-audience { display: grid; grid-template-columns: minmax(250px, .6fr) minmax(0, 1.4fr); gap: 44px; align-items: center; padding: clamp(30px, 5vw, 56px); }
+      .audience-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .audience-list div { padding: 14px; border-left: 3px solid var(--lime); background: #f6f5f2; font-size: .8rem; font-weight: 700; }
+      .field-guide-cta { display: grid; grid-template-columns: 140px minmax(0, 1fr) auto; gap: 26px; align-items: center; padding: 28px 32px; }
+      .field-guide-cta .mascot-stage { min-height: 112px; }
+
+      /* Option 02 — Open Path */
+      .open-path-hero { position: relative; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(230px, .9fr); gap: 24px; min-height: 430px; padding: clamp(38px, 6vw, 72px); background: linear-gradient(120deg, #fffefb 0 63%, #f0f1fb 63% 100%); }
+      .open-path-hero::after { position: absolute; right: 5%; bottom: 11%; width: 36%; height: 1px; background: var(--accent); box-shadow: -30px -22px 0 -0.5px var(--accent), -62px -48px 0 -0.5px var(--accent); content: ""; transform: rotate(-19deg); }
+      .open-path-hero-copy { position: relative; z-index: 1; align-self: center; }
+      .open-path-hero h1 { max-width: 690px; margin-bottom: 16px; }
+      .open-path-art { position: relative; z-index: 1; display: grid; place-items: center; }
+      .open-path-art .mascot-stage { width: min(100%, 260px); min-height: 260px; border: 1px solid var(--panel-border); border-radius: 14px; background: var(--surface); box-shadow: 5px 6px 0 var(--shadow); }
+      .path-marker { position: absolute; right: 14px; bottom: 16px; padding: 5px 8px; color: var(--accent-dark); font: 1.05rem/1 var(--pixel); letter-spacing: .08em; }
+      .open-chapters { display: grid; gap: 16px; margin-top: 16px; }
+      .chapter { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 28px; align-items: stretch; padding: 0; overflow: hidden; }
+      .chapter-index { display: grid; place-items: center; min-height: 100%; padding: 28px 14px; border-right: 1px solid #d9dce4; color: var(--accent-dark); font: 2.2rem/1 var(--pixel); letter-spacing: .05em; }
+      .chapter-copy { padding: clamp(28px, 5vw, 50px) 0; }
+      .chapter-copy p:not(.eyebrow) { max-width: 760px; margin-bottom: 12px; color: var(--muted); font-size: .94rem; }
+      .chapter-copy .split-points { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 20px; }
+      .split-points div { padding: 14px; border-top: 2px solid var(--accent); background: #f6f5f2; color: var(--muted); font-size: .8rem; }
+      .open-knowledge { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); gap: 16px; }
+      .open-knowledge-intro { display: grid; align-content: center; min-height: 310px; padding: clamp(28px, 5vw, 50px); }
+      .open-knowledge-intro .mascot-stage { min-height: 126px; }
+      .issue-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; padding: 0; }
+      .issue-cards .card { display: grid; min-height: 142px; align-content: start; padding: 18px; }
+      .issue-cards .card:nth-child(5) { grid-column: 1 / -1; }
+      .issue-cards p { margin: 0; color: var(--muted); font-size: .8rem; }
+      .path-workflow { padding: clamp(30px, 5vw, 56px); }
+      .path-workflow-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 34px; align-items: end; }
+      .path-steps { display: grid; gap: 9px; }
+      .path-step { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 13px; align-items: center; padding: 12px 0; border-bottom: 1px solid #d9dce4; }
+      .path-step span { display: grid; width: 28px; height: 28px; place-items: center; border-radius: 7px; background: var(--accent); color: #fff; font-size: .75rem; font-weight: 800; }
+      .path-step b { display: block; color: var(--heading); font-size: .88rem; }
+      .path-step small { color: var(--muted); font-size: .76rem; }
+      .open-audience { display: grid; grid-template-columns: minmax(220px, .55fr) minmax(0, 1.45fr); gap: 40px; align-items: center; padding: clamp(30px, 5vw, 56px); }
+      .audience-tiles { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 9px; }
+      .audience-tiles div { display: grid; min-height: 98px; place-items: center; padding: 12px 6px; border-top: 2px solid var(--lime); background: #f6f5f2; color: var(--heading); font-size: .76rem; font-weight: 800; text-align: center; }
+      .open-path-cta { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: 28px; align-items: center; padding: 32px; }
+      .open-path-cta .mascot-stage { min-height: 128px; }
+
+      /* Option 03 — The Workbench */
+      .workbench-hero { display: grid; grid-template-columns: minmax(0, 1fr) 210px; gap: 30px; align-items: end; padding: clamp(36px, 6vw, 70px); }
+      .workbench-hero h1 { max-width: 780px; margin-bottom: 16px; }
+      .workbench-seal { display: grid; width: 132px; height: 132px; place-items: center; margin-left: auto; border: 1px solid var(--accent); border-radius: 50%; background: #f0f1fb; color: var(--accent-dark); font: 1.4rem/1.05 var(--pixel); letter-spacing: .08em; text-align: center; transform: rotate(7deg); }
+      .workbench-seal span { display: block; color: var(--heading); font: .78rem/1.1 var(--ui); font-weight: 800; letter-spacing: 0; }
+      .workbench-board { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(240px, .9fr); gap: 16px; margin-top: 16px; }
+      .workbench-profile { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 26px; align-items: start; padding: clamp(28px, 5vw, 48px); }
+      .workbench-profile .mascot-stage { min-height: 150px; }
+      .workbench-profile p:not(.eyebrow) { max-width: 640px; margin-bottom: 12px; color: var(--muted); font-size: .9rem; }
+      .workbench-proof { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+      .proof-card { display: grid; min-height: 156px; align-content: start; padding: 18px; }
+      .proof-card:nth-child(3) { grid-column: 1 / -1; }
+      .proof-card b { margin-bottom: 9px; color: var(--accent-dark); font: 1.15rem/1 var(--pixel); letter-spacing: .07em; }
+      .proof-card p { margin: 0; color: var(--muted); font-size: .8rem; }
+      .workbench-mission { display: grid; grid-template-columns: .8fr 1.2fr; gap: 32px; align-items: center; margin-top: 16px; padding: clamp(30px, 5vw, 54px); }
+      .mission-stamp { display: grid; width: 156px; height: 156px; place-items: center; margin: auto; border: 2px solid var(--accent); border-radius: 12px; color: var(--accent-dark); font: 1.8rem/1 var(--pixel); letter-spacing: .09em; text-align: center; transform: rotate(-3deg); }
+      .mission-stamp span { display: block; margin-top: 8px; color: var(--muted); font: .69rem/1.2 var(--ui); font-weight: 800; letter-spacing: 0; }
+      .workbench-library { display: grid; grid-template-columns: 170px minmax(0, 1fr); gap: 24px; align-items: start; margin-top: 16px; padding: clamp(28px, 5vw, 52px); }
+      .library-label { position: sticky; top: 0; }
+      .library-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+      .library-grid .card { min-height: 144px; padding: 17px; }
+      .library-grid .card:nth-child(4) { grid-column: 1 / span 2; }
+      .library-grid .card:nth-child(5) { grid-column: 3; }
+      .library-grid p { margin: 0; color: var(--muted); font-size: .8rem; }
+      .workbench-workflow { display: grid; grid-template-columns: .75fr 1.25fr; gap: 36px; align-items: center; margin-top: 16px; padding: clamp(30px, 5vw, 54px); }
+      .workbench-workflow .mascot-stage { min-height: 238px; }
+      .workflow-columns { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; }
+      .workflow-columns div { min-height: 176px; padding: 14px 11px; border-top: 3px solid var(--accent); background: #f6f5f2; }
+      .workflow-columns span { display: block; margin-bottom: 22px; color: var(--accent-dark); font: 1.25rem/1 var(--pixel); }
+      .workflow-columns b { display: block; margin-bottom: 6px; color: var(--heading); font-size: .76rem; }
+      .workflow-columns p { margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.4; }
+      .workbench-audience { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(220px, .65fr); gap: 40px; align-items: center; margin-top: 16px; padding: clamp(30px, 5vw, 54px); }
+      .workbench-audience-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .workbench-audience-list div { padding: 14px; border-left: 3px solid var(--lime); background: #f6f5f2; color: var(--heading); font-size: .8rem; font-weight: 800; }
+      .workbench-audience-list div:last-child { grid-column: 1 / -1; }
+      .workbench-cta { display: grid; grid-template-columns: 150px minmax(0, 1fr) auto; gap: 26px; align-items: center; margin-top: 16px; padding: 30px; }
+      .workbench-cta .mascot-stage { min-height: 112px; }
+
+      .option-notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+      .option-notes div { padding: 15px; border-left: 3px solid var(--accent); background: #f0f1fb; color: var(--muted); font-size: .82rem; }
+      .option-notes strong { display: block; margin-bottom: 5px; color: var(--heading); font-size: .84rem; }
+
+      @media (max-width: 960px) {
+        .intro-grid, .field-guide-hero, .field-guide-product, .field-guide-audience, .open-path-hero, .open-knowledge, .open-audience, .workbench-board, .workbench-mission, .workbench-workflow, .workbench-audience { grid-template-columns: 1fr; }
+        .field-guide-hero .mascot-stage, .open-path-art { order: -1; }
+        .field-guide-cta, .workbench-cta { grid-template-columns: 120px minmax(0, 1fr); }
+        .field-guide-cta .button, .workbench-cta .button { grid-column: 2; justify-self: start; }
+        .field-guide-product .mascot-stage, .field-guide-audience .mascot-stage, .open-audience .mascot-stage, .workbench-audience .mascot-stage { order: -1; }
+        .step-rail, .workflow-columns { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .rail-step:nth-child(even) { margin-top: 0; }
+        .library-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        .library-grid .card:nth-child(4) { grid-column: auto; }
+        .library-grid .card:nth-child(5) { grid-column: auto; }
+        .workbench-library { grid-template-columns: 1fr; }
+        .library-label { position: static; }
+        .option-notes { grid-template-columns: 1fr; }
+      }
+
+      @media (max-width: 680px) {
+        .page-shell { width: min(calc(100% - 24px), 1240px); padding-top: 14px; }
+        .document-intro, .mock-page { padding: 12px; }
+        .mock-nav { flex-wrap: wrap; }
+        .nav-links { justify-content: flex-start; order: 3; width: 100%; }
+        .option { margin-top: 38px; }
+        .option-label p { text-align: left; }
+        .field-guide-hero, .open-path-hero, .workbench-hero { padding: 34px 18px; }
+        .guide-dossier, .field-guide-mission, .chapter, .workbench-profile { grid-template-columns: 1fr; gap: 18px; }
+        .dossier-side, .chapter-index { padding: 0 0 18px; border-right: 0; border-bottom: 1px solid #d9dce4; }
+        .chapter-index { place-items: start; min-height: auto; font-size: 1.6rem; }
+        .chapter-copy { padding: 0 18px 28px; }
+        .cred-list, .feature-strip, .chapter-copy .split-points, .audience-list, .workbench-proof, .workbench-audience-list { grid-template-columns: 1fr; }
+        .challenge-grid { grid-template-columns: 1fr; }
+        .challenge-grid .card:nth-child(n) { grid-column: auto; }
+        .steps-header { display: block; }
+        .steps-header .lede { margin-top: 12px; text-align: left; }
+        .step-rail, .workflow-columns, .audience-tiles, .library-grid { grid-template-columns: 1fr; }
+        .rail-step, .workflow-columns div { min-height: auto; }
+        .open-path-hero::after { display: none; }
+        .open-knowledge-intro { min-height: auto; }
+        .issue-cards { grid-template-columns: 1fr; }
+        .issue-cards .card:nth-child(5) { grid-column: auto; }
+        .field-guide-cta, .open-path-cta, .workbench-cta { grid-template-columns: 1fr; text-align: center; }
+        .field-guide-cta .button, .workbench-cta .button { grid-column: auto; justify-self: center; }
+        .field-guide-cta .mascot-stage, .workbench-cta .mascot-stage { min-height: 92px; }
+        .workbench-hero { align-items: start; }
+        .workbench-seal { margin: 0; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="document-intro panel">
+        <div class="intro-grid">
+          <div>
+            <p class="eyebrow">ABOUT PAGE BRAINSTORM</p>
+            <h1>THREE FULL-PAGE LAYOUT DIRECTIONS</h1>
+            <p class="lede">This is a decision reference, not a live-page change. Each proposal carries the real About-page information architecture while using a different editorial rhythm. Choose a direction before any layout is applied to <strong>About DoTheThing</strong>.</p>
+          </div>
+          <aside class="design-contract">
+            <strong>Fixed design-system contract</strong><br />
+            Warm-gray canvas; Inter for all reading and controls; VT323 for short contextual eyebrows; bold Inter 800 display headings; transparent abstract purple creature only; one visible surface per panel; no new color story; visible focus states; concise 140–160ms interaction feedback; and a one-column mobile stack.
+          </aside>
+        </div>
+        <div class="legend" aria-label="Design system constraints"><span class="tag">Inter 800 headlines</span><span class="tag">Contextual VT323 eyebrows</span><span class="tag">Warm-white one-surface panels</span><span class="tag">Abstract purple mascot</span><span class="tag">No human pixel art</span><span class="tag">Responsive by default</span></div>
+      </header>
+
+      <section class="option" aria-labelledby="option-one-title">
+        <div class="option-label">
+          <p class="eyebrow" id="option-one-title">OPTION 01 · THE FIELD GUIDE</p>
+          <p><strong>Best for:</strong> a calm, authoritative story that feels researched and personal. The page reads as a practical field guide, with strong editorial pacing and intentionally centered card rows.</p>
+        </div>
+        <div class="mock-page panel">
+          <div class="mock-nav"><a class="brand" href="#option-one-title">DoTheThing</a><div class="nav-links"><span>HOME</span><span class="active">ABOUT</span><span>BLOG</span><span>QUIZ</span><span>CONTACT</span></div><span class="nav-cta">START A TASK →</span></div>
+
+          <section class="field-guide-hero">
+            <div>
+              <p class="eyebrow">ABOUT DOTHETHING</p><h1>ABOUT DO THE THING</h1><p class="lede">Understanding ADHD, task management, and why we built this app.</p><div class="hero-index"><b>01</b> A practical tool built around real initiation friction.</div>
+            </div>
+            <div class="mascot-stage" aria-hidden="true"><span class="mascot-note">START</span><span class="mascot-spark"></span><div class="mascot"><i class="foot"></i><i class="foot"></i></div><span class="mascot-prop"></span></div>
+          </section>
+
+          <section class="guide-section guide-dossier panel">
+            <aside class="dossier-side"><p class="eyebrow">BEHIND THE TOOL</p><div class="mascot-stage" aria-hidden="true"><div class="mascot"><i class="foot"></i><i class="foot"></i></div></div></aside>
+            <div class="dossier-copy"><h2>MEET THE CREATOR</h2><p><strong>Lim Min Tze — founder, product developer, and the person behind DoTheThing.</strong></p><p>Lead with the existing lived-experience story and the medical-care caveat. The long-form text stays comfortably readable, while the profile details become a deliberate three-part evidence strip rather than a wall of bullets.</p><div class="cred-list"><li>10+ years in product development and software engineering</li><li>Personal experience with late-diagnosis ADHD and time blindness</li><li>Research and interviews informing the tool’s practical constraints</li></div></div>
+          </section>
+
+          <section class="guide-section field-guide-mission panel"><div class="mission-mark" aria-hidden="true"></div><div><p class="eyebrow">OUR PURPOSE</p><h2>OUR MISSION</h2><p class="lede">The mission becomes a quieter horizontal pause: a short, centered proposition on the left and the complete existing mission copy on the right. There is only one panel surface.</p></div></section>
+
+          <section class="guide-section challenge-field"><div class="challenge-heading"><p class="eyebrow">WHAT THIS TOOL SUPPORTS</p><h2>ADHD AND TASK MANAGEMENT</h2><p class="lede">A transparent canvas field lets the five individual challenge cards breathe. The second row is centered intentionally.</p></div><div class="challenge-grid"><article class="card"><h3>TIME BLINDNESS</h3><p>Difficulty sensing how much time has passed or will be needed.</p></article><article class="card"><h3>TASK PARALYSIS</h3><p>Feeling overwhelmed by large tasks and not knowing where to start.</p></article><article class="card"><h3>EXECUTIVE DYSFUNCTION</h3><p>Difficulty initiating, planning, and completing tasks.</p></article><article class="card"><h3>TIME ESTIMATION ERRORS</h3><p>Consistently underestimating how long things take.</p></article><article class="card"><h3>HYPERFOCUS VARIABILITY</h3><p>Focusing intensely on interesting work but struggling with boring work.</p></article></div></section>
+
+          <section class="guide-section field-guide-product panel"><div><p class="eyebrow">DESIGNED FOR REAL FRICTION</p><h2>WHY DO THE THING EXISTS</h2><p class="lede">A broad product statement carries the contrast with traditional task apps, followed by a deliberately paced feature strip rather than a second boxed area.</p><div class="feature-strip"><div><b>AI TASK BREAKDOWN</b>Actionable steps</div><div><b>SMART ESTIMATES</b>ADHD-friendly buffers</div><div><b>FOCUS ADJUSTMENT</b>Today’s capacity matters</div></div></div><div class="mascot-stage" aria-hidden="true"><span class="mascot-note">OK!</span><div class="mascot"><i class="foot"></i><i class="foot"></i></div><span class="mascot-prop"></span></div></section>
+
+          <section class="guide-section field-guide-steps panel"><div class="steps-header"><div><p class="eyebrow">THE WORKFLOW</p><h2>HOW IT WORKS</h2></div><p class="lede">The five steps become a soft zig-zag rail. The stagger provides movement without new colors, nested boxes, or heavy illustration.</p></div><div class="step-rail"><article class="rail-step"><span>01</span><h3>BRAIN DUMP</h3><p>Enter one task or everything on your mind.</p></article><article class="rail-step"><span>02</span><h3>SELECT FOCUS</h3><p>Set the focus level that reflects today.</p></article><article class="rail-step"><span>03</span><h3>CHOOSE SIZE</h3><p>Pick tiny steps, balanced, or milestones.</p></article><article class="rail-step"><span>04</span><h3>GET BREAKDOWN</h3><p>Receive an actionable task sequence.</p></article><article class="rail-step"><span>05</span><h3>EDIT &amp; EXECUTE</h3><p>Adapt steps and use the countdown.</p></article></div></section>
+
+          <section class="guide-section field-guide-audience panel"><div class="mascot-stage" aria-hidden="true"><div class="mascot"><i class="foot"></i><i class="foot"></i></div><span class="mascot-prop"></span></div><div><p class="eyebrow">BUILT WITH YOU IN MIND</p><h2>FOR WHOM</h2><div class="audience-list"><div>People with ADHD</div><div>People with executive dysfunction</div><div>Neurodivergent individuals</div><div>People managing large projects</div><div>Anyone who underestimates time</div></div></div></section>
+
+          <section class="guide-section field-guide-cta panel"><div class="mascot-stage" aria-hidden="true"><div class="mascot"><i class="foot"></i><i class="foot"></i></div></div><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>READY TO DO THE THING?</h2><p class="lede">The existing direct CTA copy remains intact in a compact closing composition.</p></div><span class="button">START NOW →</span></section>
+          <footer class="mini-footer"><span>DoTheThing — Task Management for ADHD Brains</span><div><span>HOME</span><span>ABOUT</span><span>BLOG</span><span>CONTACT</span><span>PRIVACY</span></div></footer>
+        </div>
+        <div class="option-notes"><div><strong>Rhythm</strong>The sequence is hero → dossier → mission pause → transparent card field → product panel → steps rail → audience split → CTA.</div><div><strong>New proposal</strong>The personal-story evidence strip and soft zig-zag workflow rail create variety without creating new visual language.</div><div><strong>System fit</strong>Every bordered region has a single surface; all internal groups are open-grid or quiet strips rather than nested cards.</div></div>
+      </section>
+
+      <section class="option" aria-labelledby="option-two-title">
+        <div class="option-label">
+          <p class="eyebrow" id="option-two-title">OPTION 02 · THE OPEN PATH</p>
+          <p><strong>Best for:</strong> a more hopeful, journey-led story. This route uses an airy page path and chapter markers to make the About page feel like a route through the tool, without turning it into a game screen.</p>
+        </div>
+        <div class="mock-page panel">
+          <div class="mock-nav"><a class="brand" href="#option-two-title">DoTheThing</a><div class="nav-links"><span>HOME</span><span class="active">ABOUT</span><span>BLOG</span><span>QUIZ</span><span>CONTACT</span></div><span class="nav-cta">START A TASK →</span></div>
+
+          <section class="open-path-hero"><div class="open-path-hero-copy"><p class="eyebrow">ABOUT DOTHETHING</p><h1>ABOUT DO THE THING</h1><p class="lede">Understanding ADHD, task management, and why we built this app.</p><p class="hero-index"><b>01</b> Follow the route from friction to a smaller next step.</p></div><div class="open-path-art"><div class="mascot-stage" aria-hidden="true"><span class="mascot-note">NEXT</span><div class="mascot"><i class="foot"></i><i class="foot"></i></div><span class="mascot-prop"></span></div><span class="path-marker">THE OPEN PATH →</span></div></section>
+
+          <div class="open-chapters">
+            <section class="chapter panel"><div class="chapter-index">02</div><div class="chapter-copy"><p class="eyebrow">BEHIND THE TOOL</p><h2>MEET THE CREATOR</h2><p>Place the existing creator narrative in an open chapter format. Its long-form content keeps the reading width, while the professional-profile links become a compact action row at the chapter close.</p><div class="split-points"><div><strong>Personal context</strong><br />Lived experience gives the tool its practical constraints.</div><div><strong>Professional context</strong><br />Product-development experience supports a clear and usable interface.</div></div></div></section>
+            <section class="chapter panel"><div class="chapter-index">03</div><div class="chapter-copy"><p class="eyebrow">OUR PURPOSE</p><h2>OUR MISSION</h2><p>Use the existing mission as a simple point of orientation between longer narrative and the practical knowledge section. Keep this chapter concise and readable—no added color panel, no nested cards.</p><div class="split-points"><div><strong>Design constraint</strong><br />Executive dysfunction is not a personal failure.</div><div><strong>Product response</strong><br />The interface reduces the effort needed to begin.</div></div></div></section>
+          </div>
+
+          <section class="open-knowledge"><div class="open-knowledge-intro panel"><p class="eyebrow">WHAT THIS TOOL SUPPORTS</p><h2>ADHD AND TASK MANAGEMENT</h2><p class="lede">The challenge section becomes an open knowledge shelf: clear, compact, and more varied than one dense grid.</p><div class="mascot-stage" aria-hidden="true"><div class="mascot"><i class="foot"></i><i class="foot"></i></div></div></div><div class="issue-cards"><article class="card"><h3>TIME BLINDNESS</h3><p>Time can feel abstract until it is visible.</p></article><article class="card"><h3>TASK PARALYSIS</h3><p>Large tasks can hide the actual first move.</p></article><article class="card"><h3>EXECUTIVE DYSFUNCTION</h3><p>Starting, planning, and finishing can carry real friction.</p></article><article class="card"><h3>ESTIMATION ERRORS</h3><p>Expected duration and real duration often diverge.</p></article><article class="card"><h3>HYPERFOCUS VARIABILITY</h3><p>Interest can radically change access to focus.</p></article></div></section>
+
+          <section class="path-workflow panel"><div class="path-workflow-grid"><div><p class="eyebrow">THE WORKFLOW</p><h2>HOW IT WORKS</h2><p class="lede">Instead of a row of equal cards, the sequence becomes a readable vertical path. It is especially strong for narrow screens because the mobile version needs no conceptual change.</p></div><div class="path-steps"><div class="path-step"><span>1</span><div><b>BRAIN DUMP</b><small>Get the task out of your head.</small></div></div><div class="path-step"><span>2</span><div><b>SELECT FOCUS LEVEL</b><small>Describe today’s capacity.</small></div></div><div class="path-step"><span>3</span><div><b>CHOOSE BREAKDOWN SIZE</b><small>Set the right amount of detail.</small></div></div><div class="path-step"><span>4</span><div><b>GET AI BREAKDOWN</b><small>Receive smaller next actions.</small></div></div><div class="path-step"><span>5</span><div><b>EDIT &amp; EXECUTE</b><small>Adapt the queue and begin.</small></div></div></div></div></section>
+
+          <section class="open-audience panel"><div><p class="eyebrow">BUILT WITH YOU IN MIND</p><h2>FOR WHOM</h2><p class="lede">The audience remains a concise roll call. The five supported groups become signposts on the open route rather than full feature cards.</p><div class="audience-tiles"><div>ADHD</div><div>EXECUTIVE FUNCTION</div><div>NEURODIVERGENT</div><div>OVERWHELMED</div><div>TIME BLINDNESS</div></div></div><div class="mascot-stage" aria-hidden="true"><span class="mascot-note">GO</span><div class="mascot"><i class="foot"></i><i class="foot"></i></div></div></section>
+
+          <section class="open-path-cta panel"><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>READY TO DO THE THING?</h2><p class="lede">Preserve the existing no-signup, no-credit-card, start-now promise in this final deliberate pause.</p><span class="button">START NOW →</span></div><div class="mascot-stage" aria-hidden="true"><div class="mascot"><i class="foot"></i><i class="foot"></i></div><span class="mascot-spark"></span></div></section>
+          <footer class="mini-footer"><span>DoTheThing — Task Management for ADHD Brains</span><div><span>HOME</span><span>ABOUT</span><span>BLOG</span><span>CONTACT</span><span>PRIVACY</span></div></footer>
+        </div>
+        <div class="option-notes"><div><strong>Rhythm</strong>The open path uses a large journey-oriented hero, numbered narrative chapters, an asymmetric knowledge shelf, a vertical workflow, then audience and CTA pauses.</div><div><strong>New proposal</strong>Chapter index numbers and the lightly angled route line give the page a forward direction while keeping all text clear and static.</div><div><strong>System fit</strong>The only accent is the existing indigo/lime detail. White panels and transparent card fields preserve the calm site palette.</div></div>
+      </section>
+
+      <section class="option" aria-labelledby="option-three-title">
+        <div class="option-label">
+          <p class="eyebrow" id="option-three-title">OPTION 03 · THE WORKBENCH</p>
+          <p><strong>Best for:</strong> a product-maker perspective. This direction presents personal authority, product purpose, and workflow as a tidy but warm editorial workbench—structured, useful, and less narrative.</p>
+        </div>
+        <div class="mock-page panel">
+          <div class="mock-nav"><a class="brand" href="#option-three-title">DoTheThing</a><div class="nav-links"><span>HOME</span><span class="active">ABOUT</span><span>BLOG</span><span>QUIZ</span><span>CONTACT</span></div><span class="nav-cta">START A TASK →</span></div>
+
+          <section class="workbench-hero"><div><p class="eyebrow">ABOUT DOTHETHING</p><h1>ABOUT DO THE THING</h1><p class="lede">Understanding ADHD, task management, and why we built this app.</p></div><div class="workbench-seal">BUILT<br />AROUND<span>real friction, not generic productivity</span></div></section>
+
+          <section class="workbench-board"><div class="workbench-profile panel"><div class="mascot-stage" aria-hidden="true"><div class="mascot"><i class="foot"></i><i class="foot"></i></div><span class="mascot-prop"></span></div><div><p class="eyebrow">BEHIND THE TOOL</p><h2>MEET THE CREATOR</h2><p><strong>Lim Min Tze — founder, product developer, and the person behind DoTheThing.</strong></p><p>Give the existing creator narrative the broad, readable side of a maker’s workbench. The practical profile links remain below the copy, not inside another visual container.</p></div></div><div class="workbench-proof"><article class="proof-card card"><b>LIVED</b><p>Personal experience with ADHD, task paralysis, and time blindness informs the product’s practical choices.</p></article><article class="proof-card card"><b>BUILT</b><p>Product and software experience keeps the interaction model approachable and useful.</p></article><article class="proof-card card"><b>RESEARCHED</b><p>Clearly sourced educational material supports the resource, alongside the existing medical-care caveat.</p></article></div></section>
+
+          <section class="workbench-mission panel"><div class="mission-stamp">THE<br />PURPOSE<span>make the next thing more doable</span></div><div><p class="eyebrow">OUR PURPOSE</p><h2>OUR MISSION</h2><p class="lede">This mission layout works as a maker’s stamp: one clear objective, followed by the full existing mission paragraph. It feels distinct through proportion and alignment, not a new surface color.</p></div></section>
+
+          <section class="workbench-library panel"><aside class="library-label"><p class="eyebrow">WHAT THIS TOOL SUPPORTS</p><h2>THE FRICTION LIBRARY</h2><p class="lede">A catalog-like challenge section gives readers a clear way to scan the five issues the product addresses.</p></aside><div class="library-grid"><article class="card"><h3>TIME BLINDNESS</h3><p>Time can be hard to perceive without an external cue.</p></article><article class="card"><h3>TASK PARALYSIS</h3><p>Overwhelm often hides the workable first step.</p></article><article class="card"><h3>EXECUTIVE DYSFUNCTION</h3><p>Initiating, sequencing, and finishing are real demands.</p></article><article class="card"><h3>TIME ESTIMATION ERRORS</h3><p>Expected duration can repeatedly differ from reality.</p></article><article class="card"><h3>HYPERFOCUS VARIABILITY</h3><p>Interest can change focus availability from moment to moment.</p></article></div></section>
+
+          <section class="workbench-workflow panel"><div class="mascot-stage" aria-hidden="true"><span class="mascot-note">DO</span><div class="mascot"><i class="foot"></i><i class="foot"></i></div><span class="mascot-prop"></span></div><div><p class="eyebrow">THE WORKFLOW</p><h2>HOW IT WORKS</h2><div class="workflow-columns"><div><span>01</span><b>BRAIN DUMP</b><p>Enter one task or the entire pile.</p></div><div><span>02</span><b>SELECT FOCUS</b><p>Set today’s available capacity.</p></div><div><span>03</span><b>CHOOSE SIZE</b><p>Choose the needed detail level.</p></div><div><span>04</span><b>GET BREAKDOWN</b><p>Receive actionable micro-steps.</p></div><div><span>05</span><b>EDIT &amp; EXECUTE</b><p>Adapt the list and move forward.</p></div></div></div></section>
+
+          <section class="workbench-audience panel"><div><p class="eyebrow">BUILT WITH YOU IN MIND</p><h2>FOR WHOM</h2><p class="lede">A compact field of audience cards finishes the case for who the tool supports—without making the whole page look like a dashboard.</p><div class="workbench-audience-list"><div>People with ADHD</div><div>People with executive dysfunction</div><div>Neurodivergent individuals</div><div>People managing overwhelming projects</div><div>Anyone who underestimates time</div></div></div><div class="mascot-stage" aria-hidden="true"><span class="mascot-spark"></span><div class="mascot"><i class="foot"></i><i class="foot"></i></div></div></section>
+
+          <section class="workbench-cta panel"><div class="mascot-stage" aria-hidden="true"><div class="mascot"><i class="foot"></i><i class="foot"></i></div></div><div><p class="eyebrow">READY WHEN YOU ARE</p><h2>READY TO DO THE THING?</h2><p class="lede">Close with the exact existing practical promise and an explicit primary action.</p></div><span class="button">START NOW →</span></section>
+          <footer class="mini-footer"><span>DoTheThing — Task Management for ADHD Brains</span><div><span>HOME</span><span>ABOUT</span><span>BLOG</span><span>CONTACT</span><span>PRIVACY</span></div></footer>
+        </div>
+        <div class="option-notes"><div><strong>Rhythm</strong>This option organizes the page into a profile board, mission stamp, friction library, workflow workbench, audience field, and CTA.</div><div><strong>New proposal</strong>Maker-style labels, proof cards, and a mission stamp provide editorial character without changing the familiar type, color, or interaction rules.</div><div><strong>System fit</strong>The design treats each major area as one panel or one open field. The purple creature remains an abstract supporting accent, never an illustrated person.</div></div>
+      </section>
+    </main>
+  </body>
+</html>

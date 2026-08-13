@@ -50,7 +50,7 @@ export default function About() {
     <div className="mobile-frame about-page">
       <Navigation />
       <main className="about-shell">
-        <section className="about-hero" aria-labelledby="about-page-title">
+        <section className="about-hero about-workbench-hero" aria-labelledby="about-page-title">
           <div className="about-hero-copy">
             <p className="about-eyebrow"><span aria-hidden="true">✦</span> ABOUT DOTHETHING</p>
             <h1 id="about-page-title">ABOUT DO THE THING</h1>
@@ -62,7 +62,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-panel about-creator-panel" aria-labelledby="creator-heading">
+        <section className="about-panel about-creator-panel about-workbench-profile" aria-labelledby="creator-heading">
           <div className="about-section-copy">
             <p className="about-panel-label">BEHIND THE TOOL</p>
             <h2 id="creator-heading">MEET THE CREATOR</h2>
@@ -79,7 +79,7 @@ export default function About() {
               <li>Interviewed 50+ people with ADHD about their productivity struggles</li>
               <li>Building accessible tools that treat executive dysfunction as a design constraint, not a user failure</li>
             </ul>
-            <p>This tool exists because I needed it. And if you're reading this, you probably need it too.</p>
+            <p className="about-postit-note">This tool exists because I needed it. And if you're reading this, you probably need it too.</p>
             <nav className="about-profile-links" aria-label="Creator professional profiles">
               <span>Professional Profiles:</span>
               <a href="https://www.linkedin.com/in/min-tze-lim" target="_blank" rel="noopener noreferrer">LinkedIn</a>
@@ -92,7 +92,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-panel about-mission-panel about-tone-lavender" aria-labelledby="mission-heading">
+        <section className="about-panel about-mission-panel about-tone-lavender about-workbench-mission" aria-labelledby="mission-heading">
           <div className="about-side-art" aria-hidden="true"><img src={MASCOTS.breakdown} alt="" /></div>
           <div className="about-section-copy">
             <p className="about-panel-label">OUR PURPOSE</p>
@@ -102,7 +102,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-panel about-centered-panel about-challenges-section" aria-labelledby="challenges-heading">
+        <section className="about-panel about-centered-panel about-challenges-section about-workbench-library" aria-labelledby="challenges-heading">
           <p className="about-eyebrow"><span aria-hidden="true">✦</span> WHAT THIS TOOL SUPPORTS</p>
           <h2 id="challenges-heading">ADHD AND TASK MANAGEMENT</h2>
           <p className="about-centered-lede">People with ADHD often struggle with executive function—the brain's ability to plan, organize, and execute tasks. This isn't laziness or lack of motivation. It's how their neurology works.</p>
@@ -114,7 +114,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-panel about-product-panel about-accent-band" aria-labelledby="why-heading">
+        <section className="about-panel about-product-panel about-accent-band about-workbench-product" aria-labelledby="why-heading">
           <div className="about-section-copy">
             <p className="about-panel-label">DESIGNED FOR REAL FRICTION</p>
             <h2 id="why-heading">WHY DO THE THING EXISTS</h2>
@@ -122,14 +122,14 @@ export default function About() {
             <p>DoTheThing is different. We built it specifically for how ADHD brains work:</p>
           </div>
           <div className="about-side-art" aria-hidden="true"><img src={MASCOTS.timer} alt="" /></div>
-          <div className="about-card-grid about-feature-grid">
+          <div className="about-card-grid about-feature-grid about-quest-ticket-grid">
             {features.map(([title, description]) => (
               <article className="about-mini-card" key={title}><h3>{title}</h3><p>{description}</p></article>
             ))}
           </div>
         </section>
 
-        <section className="about-panel about-centered-panel about-workflow-section" aria-labelledby="how-heading">
+        <section className="about-panel about-centered-panel about-workflow-section about-workbench-workflow" aria-labelledby="how-heading">
           <p className="about-panel-label">THE WORKFLOW</p>
           <h2 id="how-heading">HOW IT WORKS</h2>
           <div className="about-card-grid about-steps-grid">
@@ -143,7 +143,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-panel about-for-whom-panel about-tone-lavender" aria-labelledby="for-whom-heading">
+        <section className="about-panel about-for-whom-panel about-tone-lavender about-workbench-audience" aria-labelledby="for-whom-heading">
           <div className="about-side-art" aria-hidden="true"><img src={MASCOTS.focus} alt="" /></div>
           <div className="about-section-copy">
             <p className="about-panel-label">BUILT WITH YOU IN MIND</p>
@@ -159,7 +159,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-cta about-cta-ink" aria-labelledby="about-cta-heading">
+        <section className="about-cta about-cta-ink about-workbench-cta" aria-labelledby="about-cta-heading">
           <div className="about-cta-art" aria-hidden="true"><img src={MASCOTS.timer} alt="" /></div>
           <div>
             <p className="about-eyebrow">READY WHEN YOU ARE</p>

@@ -16,8 +16,8 @@ describe("About page design-system refresh", () => {
     expect(aboutPage).toContain("WHAT THIS TOOL SUPPORTS");
     expect(aboutPage).toContain("READY WHEN YOU ARE");
     expect(aboutPage).not.toContain("A SMALLER NEXT STEP");
-    expect(aboutPage).toContain('className="about-panel about-creator-panel"');
-    expect(aboutPage).toContain('className="about-cta about-cta-ink"');
+    expect(aboutPage).toContain("about-panel about-creator-panel about-workbench-profile");
+    expect(aboutPage).toContain("about-cta about-cta-ink about-workbench-cta");
     expect(aboutStyles).toContain("width:min(calc(100% - 32px),1240px)");
     expect(aboutStyles).toContain("border:1px solid #a8afc2");
     expect(aboutStyles).toContain("border-radius:14px");
@@ -43,8 +43,8 @@ describe("About page design-system refresh", () => {
   });
 
   it("uses documented layout rhythm rather than new color treatments", () => {
-    expect(aboutPage).toContain('className="about-panel about-centered-panel about-challenges-section"');
-    expect(aboutPage).toContain('className="about-panel about-product-panel about-accent-band"');
+    expect(aboutPage).toContain("about-challenges-section about-workbench-library");
+    expect(aboutPage).toContain("about-product-panel about-accent-band about-workbench-product");
     expect(aboutRhythm).toContain("grid-template-columns: repeat(12, minmax(0, 1fr))");
     expect(aboutRhythm).toContain("grid-column: 3 / span 4");
     expect(aboutRhythm).toContain("grid-template-columns: repeat(6, minmax(0, 1fr))");
@@ -53,5 +53,42 @@ describe("About page design-system refresh", () => {
     expect(designSystem).toContain("The variation comes from proportion, alignment, and intentional row balancing—not additional color treatments.");
     expect(visualReference).toContain("Alternate layout patterns");
     expect(visualReference).toContain("Wide editorial panel");
+  });
+
+  it("applies the approved Workbench composition with measured desktop and mobile spacing", () => {
+    expect(aboutPage).toContain('className="about-hero about-workbench-hero"');
+    expect(aboutPage).toContain("about-workbench-profile");
+    expect(aboutPage).toContain("about-workbench-mission");
+    expect(aboutPage).toContain("about-workbench-library");
+    expect(aboutPage).toContain("about-workbench-product");
+    expect(aboutPage).toContain("about-workbench-workflow");
+    expect(aboutPage).toContain("about-workbench-audience");
+    expect(aboutPage).toContain("about-workbench-cta");
+    expect(aboutRhythm).toContain("--workbench-panel-padding");
+    expect(aboutRhythm).toContain("grid-template-areas: \"art copy\"");
+    expect(aboutRhythm).toContain("width: min(calc(100% - 32px), 1120px)");
+    expect(aboutRhythm).toContain("@media (max-width: 900px)");
+    expect(aboutRhythm).toContain("@media (max-width: 620px)");
+    expect(aboutPage).toContain("not a substitute for diagnosis or medical care");
+  });
+
+  it("uses open editorial fields rather than repeated nested card surfaces in the Workbench sections", () => {
+    expect(aboutRhythm).toContain("Surface-rhythm refinement: open fields");
+    expect(aboutRhythm).toContain(".about-workbench-library .about-mini-card");
+    expect(aboutRhythm).toContain(".about-workbench-product .about-feature-grid .about-mini-card");
+    expect(aboutRhythm).toContain(".about-workbench-workflow .about-step-card");
+    expect(aboutRhythm).toContain("border-left: 1px solid #d9dce4");
+    expect(aboutRhythm).toContain("background: transparent");
+    expect(aboutRhythm).toContain("box-shadow: none");
+  });
+
+  it("uses the selected Pixel Post-It and Quest Ticket modules only for fitting About-page content", () => {
+    expect(aboutPage).toContain('className="about-postit-note"');
+    expect(aboutPage).toContain("about-quest-ticket-grid");
+    expect(aboutRhythm).toContain("Selected text-first modules: Pixel Post-It for one warm reframe; Quest Tickets for actionable capabilities.");
+    expect(aboutRhythm).toContain(".about-postit-note");
+    expect(aboutRhythm).toContain(".about-workbench-product .about-feature-grid.about-quest-ticket-grid");
+    expect(aboutRhythm).toContain("counter-reset: capability");
+    expect(aboutPage).toContain("This tool exists because I needed it. And if you're reading this, you probably need it too.");
   });
 });

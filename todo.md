@@ -653,6 +653,37 @@
 - [x] Document reusable layout-rhythm patterns, not additional color treatments, in the Markdown and HTML design-system references
 - [x] Validate the varied About layout across responsive breakpoints and publish the refinement
 
+## About Page Brainstorm Layout Reference
+- [x] Create a standalone About Page Brainstorm Layout.html with three full-page creative layout directions
+- [x] Ensure every brainstorm direction adheres to the established tokens, typography, eyebrow, mascot, single-surface, motion, and responsive rules
+- [x] Validate the brainstorm reference and present the three options for selection before changing the live About page
+
+## Selected About Layout: Option 03 · The Workbench
+- [x] Apply the selected Workbench composition to the live About page without changing its existing authority, trust, or educational copy
+- [x] Use consistent gutters, measured reading widths, aligned component baselines, balanced grid rows, and a deliberate mobile stack
+- [x] Preserve the established pixel-art design-system rules, including the abstract purple mascot, one-surface rule, typography, and motion safeguards
+- [x] Validate responsive spacing and publish the selected About-page layout
+
+## Workbench Surface-Rhythm Refinement
+- [x] Reduce repetitive bordered-card treatment by retaining panels only where they serve grouping or task comprehension
+- [x] Recompose the challenge, workflow, and audience areas as open editorial canvas sections with dividers, typography, and mascot placement creating hierarchy
+- [x] Validate the reduced-surface Workbench rhythm across responsive breakpoints and publish the refinement
+
+## Image-Free Card System Options
+- [x] Define when to use the existing illustrated-card system versus an image-free card system
+- [x] Add three image-free card-design options to the visual design-system HTML reference
+- [x] Validate and present the image-free card options for user selection before applying one to the live About page
+
+## Playful Image-Free Module Options
+- [x] Replace the rejected image-free card options with three fresh, fun brand-forward content-module directions
+- [x] Keep the refreshed options consistent with the DoTheThing typography, palette, readable hierarchy, single-surface rule, and responsive behavior
+- [x] Validate and present the three playful options for selection before applying one to the live About page
+
+## Selected Image-Free Modules: Pixel Post-It + Quest Ticket
+- [x] Document Pixel Post-It for friendly reframes, definitions, and brief helpful notes, and Quest Ticket for action prompts, task steps, and tool capabilities
+- [x] Apply each selected module only where its content purpose fits in the About page, without changing existing copy
+- [x] Validate and publish the selected module systems alongside the refined Workbench About page
+
 ## Data Presentation Options in the Design System
 - [x] Define three visual options each for article tables, data-chart containers, and bullet lists within the restrained landing-page system
 - [x] Add the three options to the visual HTML design-system reference without applying any option to live article pages
