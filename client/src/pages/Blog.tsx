@@ -4,24 +4,11 @@ import Footer from "@/components/Footer";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import { displayBlogCategory, getBlogCategories } from "@/lib/blogCategoryUtils";
 import { assetUrl } from "@/lib/assetUrl";
+import { usePreloadedBlogPosts, type BlogPostRecord } from "@/contexts/BlogPostsContext";
 import "../pixel-art-refined.css";
 import "../blog-refined.css";
 
-type BlogPost = {
-  id: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  readTime: string;
-  category: string;
-  seoKeywords: string[];
-  sources: Array<{ title: string; url: string }>;
-  relatedPosts: string[];
-  content: string;
-  slug: string;
-  featuredImage?: string;
-  featuredImageAlt?: string;
-};
+type BlogPost = BlogPostRecord;
 
 const blogMascot = assetUrl("/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png");
 
@@ -36,8 +23,9 @@ function BlogStatus({ message, isError = false }: { message: string; isError?: b
 }
 
 export default function Blog() {
-  const [posts, setPosts] = useState<BlogPost[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const preloadedPosts = usePreloadedBlogPosts();
+  const [posts, setPosts] = useState<BlogPost[]>(() => preloadedPosts ?? []);
+  const [isLoading, setIsLoading] = useState(() => preloadedPosts === null);
   const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
@@ -46,6 +34,11 @@ export default function Blog() {
   }, []);
 
   useEffect(() => {
+    if (preloadedPosts !== null) {
+      setPosts(preloadedPosts);
+      setIsLoading(false);
+      return;
+    }
     const loadPosts = async () => {
       try {
         setIsLoading(true);
@@ -61,7 +54,7 @@ export default function Blog() {
       }
     };
     loadPosts();
-  }, []);
+  }, [preloadedPosts]);
 
   const categories = getBlogCategories(posts);
   const filteredPosts = selectedCategory ? posts.filter((post) => post.category === selectedCategory) : posts;

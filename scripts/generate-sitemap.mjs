@@ -14,6 +14,10 @@ const SITEMAP_OUTPUTS = [
 const staticPages = [
   { url: "/", priority: "1.0", changefreq: "weekly" },
   { url: "/about", priority: "0.8", changefreq: "monthly" },
+  { url: "/how-it-works", priority: "0.9", changefreq: "monthly" },
+  { url: "/compare/goblin-tools", priority: "0.8", changefreq: "monthly" },
+  { url: "/editorial-standards", priority: "0.7", changefreq: "monthly" },
+  { url: "/media", priority: "0.6", changefreq: "monthly" },
   { url: "/blog", priority: "0.9", changefreq: "daily" },
   { url: "/contact", priority: "0.7", changefreq: "monthly" },
   { url: "/privacy", priority: "0.5", changefreq: "yearly" },

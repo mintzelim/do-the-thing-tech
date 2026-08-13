@@ -9,8 +9,13 @@ import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
 import CurrentTasks from "./pages/CurrentTasks";
 import Quiz from "./pages/Quiz";
+import ProductProof from "./pages/ProductProof";
+import GoblinToolsComparison from "./pages/GoblinToolsComparison";
+import EditorialStandards from "./pages/EditorialStandards";
+import MediaKit from "./pages/MediaKit";
 import NotFound from "./pages/NotFound";
 import { Switch, Route } from "wouter";
+import { BlogPostsProvider, type BlogPostRecord } from "./contexts/BlogPostsContext";
 
 function Router() {
   return (
@@ -18,6 +23,10 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/current-tasks"} component={CurrentTasks} />
       <Route path={"/about"} component={About} />
+      <Route path={"/how-it-works"} component={ProductProof} />
+      <Route path={"/compare/goblin-tools"} component={GoblinToolsComparison} />
+      <Route path={"/editorial-standards"} component={EditorialStandards} />
+      <Route path={"/media"} component={MediaKit} />
       <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/blog"} component={Blog} />
       <Route path={"/contact"} component={Contact} />
@@ -30,12 +39,14 @@ function Router() {
   );
 }
 
-function App() {
+function App({ initialBlogPosts }: { initialBlogPosts?: BlogPostRecord[] | null }) {
   return (
     <ThemeProvider>
-      <TimerProvider>
-        <Router />
-      </TimerProvider>
+      <BlogPostsProvider initialPosts={initialBlogPosts}>
+        <TimerProvider>
+          <Router />
+        </TimerProvider>
+      </BlogPostsProvider>
     </ThemeProvider>
   );
 }

@@ -24,7 +24,23 @@ The production homepage states the product category, intended audience, function
 4. **Independent corroboration is thin.** The site has its own claims, social profiles, educational citations, and founder explanation, but no clearly connected independent product reviews, use-case coverage, reputable directory listing, or expert commentary. AI systems are more likely to confidently qualify a product when reliable third-party sources independently describe the same entity and use case. This must be earned through genuine coverage, not manufactured reviews or link schemes.
 5. **Recommendation pages are missing.** The site explains the tool and provides broad blog content, but it does not yet offer a transparent, citation-ready comparison or use-case page answering questions such as “Who is DoTheThing for?”, “When is it a better fit than a full project manager?”, “What does it not do?”, and “How does it compare with a timer, a general AI assistant, or a task manager?” These pages should be honest, specific, and visibly authored.
 
+## Goblin.tools comparison research
+
+Goblin.tools describes itself as a collection of small tools for situations that feel too big or complicated. Its official home page lists Magic ToDo for breaking down todo items, Taskmaster for focusing on one task at a time, Estimator for guessing an activity’s timeframe, Compiler for turning a brain dump into actions, plus communication and decision-support tools such as Formalizer, Judge, Professor, and Consultant. The Magic ToDo page describes its core job as “Breaking things down so you don’t [have to].” The site also presents account-based history, sync, and sharing as available functionality. [3] [4]
+
+The comparison should therefore **not** imply that Goblin.tools lacks task breakdown, brain-dump support, time estimation, or focused-task tooling. DoTheThing’s factual differentiation should focus on its single integrated starting workflow: its intentionally calm, large-text task interface; explicit current focus-level and breakdown-size controls; practical time estimates paired with a visible countdown during execution; and a no-login path for an immediate task-breakdown session. The copy should clearly state that Goblin.tools is a credible alternative for people wanting a broader collection of small tools, account sync or sharing, or its dedicated text and decision utilities.
+
+### Visual-comparison review
+
+The published development comparison route presents both public-interface screenshots at equal width within a two-column, single-surface figure treatment. At desktop width, the screenshots, captions, source note, and surrounding gutter spacing render clearly. The comparison includes a plain-language disclosure that it compares observable workflows and stated features rather than clinical outcomes or a universal “best” tool, and links to the official Goblin.tools and Magic ToDo pages for source checking.
+
+The product-proof route presents the task-initiation workflow, factual illustrative sequence, privacy link, and non-clinical boundary language in the same visual system. The development document includes the expected direct CSS stylesheet link and reports an active stylesheet, while production SSR verification remains the acceptance source for crawler-visible output.
+
 ## References
 
 [1]: https://developers.google.com/search/docs/fundamentals/ai-optimization-guide "Google Search Central: Optimizing your website for generative AI features"
 [2]: https://www.bing.com/webmasters/help/webmaster-guidelines-30fba23a "Bing Webmaster Guidelines"
+
+[3]: https://goblin.tools/ "Goblin.tools official home"
+
+[4]: https://goblin.tools/ToDo "Goblin.tools Magic ToDo"

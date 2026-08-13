@@ -62,7 +62,7 @@ export default function About() {
           </div>
         </section>
 
-        <section className="about-panel about-creator-panel about-workbench-profile" aria-labelledby="creator-heading">
+        <section id="author" className="about-panel about-creator-panel about-workbench-profile" aria-labelledby="creator-heading">
           <div className="about-section-copy">
             <p className="about-panel-label">BEHIND THE TOOL</p>
             <h2 id="creator-heading">MEET THE CREATOR</h2>
@@ -85,6 +85,7 @@ export default function About() {
               <a href="https://www.linkedin.com/in/min-tze-lim" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a href="https://github.com/mintzelim" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href="mailto:support@dothething.tech">Email</a>
+              <a href="/editorial-standards">Editorial standards</a>
             </nav>
           </div>
           <div className="about-side-art about-creator-art" aria-hidden="true">

@@ -625,6 +625,18 @@
 - [x] Standardize structured-data entity identifiers on the canonical dothething.tech host
 - [x] Validate the revised structured-data implementation and publish the integrity correction
 
+## Full Ethical GEO Implementation
+- [x] Implement a crawlable rendering strategy for the homepage, About page, blog index, and article pages
+- [x] Inject accurate Organization, SoftwareApplication, WebSite, WebPage, Article, and Breadcrumb structured data in the rendered public pages
+- [x] Create a transparent product-proof page covering intended use, capabilities, limitations, privacy, and a factual worked example
+- [x] Create an honest tool-selection comparison page that explains when DoTheThing fits and when another category is more appropriate
+- [x] Include an evidence-led DoTheThing versus Goblin.tools comparison covering task workflows, interface readability, timer behavior, and fair use-case boundaries
+- [x] Add a clearly labelled side-by-side workflow visual comparing observable DoTheThing and Goblin.tools Magic ToDo interface patterns
+- [x] Add visible author profiles, article bylines, editorial standards, and medical-information boundaries using only substantiated information
+- [x] Add a factual media and review-request kit that encourages independent, genuine coverage without fabricated claims or incentives for sentiment
+- [x] Document a recurring recommendation-visibility monitoring framework using representative queries, Search Console, and Bing Webmaster signals
+- [x] Add regression coverage, validate crawlability and public-page behavior, then publish the full GEO implementation
+
 ## Landing-Page Design System Documentation
 - [x] Extract the implemented landing-page design tokens, component rules, and responsive treatments
 - [x] Create a clear Markdown design-system guide based on the current landing page

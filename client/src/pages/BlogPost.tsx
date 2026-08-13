@@ -5,31 +5,14 @@ import Footer from "@/components/Footer";
 import BlogContentRenderer from "@/components/BlogContentRenderer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { updateMetaTags } from "@/lib/metaTags";
-import { generateBlogPostingSchemaWithBreadcrumb, injectBlogPostingSchema, type BlogPostData } from "@/lib/blogPostingSchema";
 import { assetUrl } from "@/lib/assetUrl";
 import { getBlogCategoryEyebrow } from "@/lib/blogCategoryUtils";
+import { usePreloadedBlogPosts, type BlogPostRecord } from "@/contexts/BlogPostsContext";
 import "../pixel-art-refined.css";
 import "../blog-refined.css";
 import "../blog-breadcrumb.css";
 
-type BlogPost = {
-  id: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  readTime: string;
-  category: string;
-  wordCount?: number;
-  updatedDate?: string;
-  seoKeywords: string[];
-  sources: Array<{ title: string; url: string }>;
-  relatedPosts: string[];
-  content: string;
-  slug: string;
-  faq?: Array<{ q: string; a: string }>;
-  featuredImage?: string;
-  featuredImageAlt?: string;
-};
+type BlogPost = BlogPostRecord;
 
 const articleMascot = assetUrl("/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png");
 const ctaMascot = assetUrl("/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png");
@@ -53,13 +36,20 @@ function BlogPostStatus({ message, isError = false }: { message: string; isError
 export default function BlogPost() {
   const [, navigate] = useLocation();
   const [match, params] = useRoute("/blog/:slug");
-  const [post, setPost] = useState<BlogPost | null>(null);
-  const [allPosts, setAllPosts] = useState<BlogPost[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const preloadedPosts = usePreloadedBlogPosts();
   const slug = params?.slug as string | undefined;
+  const [post, setPost] = useState<BlogPost | null>(() => preloadedPosts?.find((candidate) => candidate.slug === slug) ?? null);
+  const [allPosts, setAllPosts] = useState<BlogPost[]>(() => preloadedPosts ?? []);
+  const [isLoading, setIsLoading] = useState(() => preloadedPosts === null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (preloadedPosts !== null) {
+      setAllPosts(preloadedPosts);
+      setPost(preloadedPosts.find((candidate) => candidate.slug === slug) ?? null);
+      setIsLoading(false);
+      return;
+    }
     const loadPosts = async () => {
       try {
         setIsLoading(true);
@@ -75,7 +65,7 @@ export default function BlogPost() {
       }
     };
     loadPosts();
-  }, []);
+  }, [preloadedPosts, slug]);
 
   useEffect(() => {
     if (!slug || allPosts.length === 0) return;
@@ -84,8 +74,6 @@ export default function BlogPost() {
     setPost(foundPost);
     const blogPostUrl = `https://dothething.tech/blog/${foundPost.slug}`;
     updateMetaTags({ title: `${foundPost.title} | DoTheThing Blog`, description: foundPost.excerpt, canonicalUrl: blogPostUrl, ogUrl: blogPostUrl, ogId: `${blogPostUrl}#blogpost`, keywords: foundPost.seoKeywords?.join(", ") });
-    const blogPostData: BlogPostData = { slug: foundPost.slug, title: foundPost.title, description: foundPost.excerpt, content: foundPost.content, author: "DoTheThing", datePublished: foundPost.date, dateModified: foundPost.updatedDate || foundPost.date, category: [foundPost.category], keywords: foundPost.seoKeywords, faq: foundPost.faq, sources: foundPost.sources };
-    injectBlogPostingSchema(generateBlogPostingSchemaWithBreadcrumb(blogPostData));
   }, [slug, allPosts]);
 
   const relatedPostsList = post ? post.relatedPosts.map((id) => allPosts.find((candidate) => candidate.id === id)).filter(Boolean) as BlogPost[] : [];
@@ -106,6 +94,7 @@ export default function BlogPost() {
               <h1>{post.title}</h1>
               <p className="blog-article-excerpt">{post.excerpt}</p>
               <div className="blog-article-meta"><span>Published {post.date}</span>{post.updatedDate && <><span aria-hidden="true">•</span><span>Updated {post.updatedDate}</span></>}<span aria-hidden="true">•</span><span>{post.readTime}</span>{post.wordCount && <><span aria-hidden="true">•</span><span>{post.wordCount.toLocaleString()} words</span></>}</div>
+              <p className="blog-article-byline">Written by <a href="/about#author">Lim Min Tze</a>, founder and product developer of DoTheThing. <a href="/editorial-standards">Editorial standards</a></p>
             </div>
             <div className="blog-article-mascot" aria-hidden="true"><img src={articleMascot} alt="" /></div>
           </header>

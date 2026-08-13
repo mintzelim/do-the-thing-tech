@@ -18,8 +18,9 @@ describe("blog design-system refresh", () => {
     expect(blogIndex).toContain("dothething-how-it-works-brain-dump-transparent_805dc4d4.png");
   });
 
-  it("preserves article metadata, schema injection, sources, CTA, and related-post navigation in the refined template", () => {
-    expect(blogPost).toContain("injectBlogPostingSchema(generateBlogPostingSchemaWithBreadcrumb(blogPostData))");
+  it("preserves article metadata, server-rendered schema compatibility, sources, CTA, and related-post navigation in the refined template", () => {
+    expect(blogPost).toContain("updateMetaTags({ title: `${foundPost.title} | DoTheThing Blog`");
+    expect(blogPost).not.toContain("injectBlogPostingSchema(");
     expect(blogPost).toContain('className="blog-article-hero"');
     expect(blogPost).toContain('className="blog-article-body"');
     expect(blogPost).toContain('className="blog-sources-panel"');
