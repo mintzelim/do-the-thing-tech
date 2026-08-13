@@ -694,6 +694,11 @@
 - [x] Ensure each animated option preserves readable Inter content, keyboard focus, restrained timing, and reduced-motion support
 - [x] Validate and present the hover-animated options for user selection before applying any option to live pages
 
+## Six-Card Group Interaction Options
+- [x] Replace the individual-card hover concepts with three interactive six-card group systems
+- [x] Ensure the collection animations maintain readable card content, keyboard access, purposeful timing, and reduced-motion fallback
+- [x] Validate and present the six-card interaction options for selection before applying one to live pages
+
 ## Data Presentation Options in the Design System
 - [x] Define three visual options each for article tables, data-chart containers, and bullet lists within the restrained landing-page system
 - [x] Add the three options to the visual HTML design-system reference without applying any option to live article pages

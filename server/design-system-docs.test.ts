@@ -62,10 +62,13 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("illustrated-card system");
     expect(html).toContain("OPTION 01 · PIXEL POST-IT · SELECTED");
     expect(html).toContain("OPTION 02 · QUEST TICKET · SELECTED");
-    expect(html).toContain("Playful hover-animated cards");
-    expect(html).toContain("OPTION 01 · MOMENTUM BUMP");
-    expect(html).toContain("OPTION 02 · PROGRESS STAMP");
-    expect(html).toContain("OPTION 03 · TRAIL REVEAL");
+    expect(html).toContain("Six-card group interactions");
+    expect(html).toContain("OPTION 01 · FOCUS FAN");
+    expect(html).toContain("OPTION 02 · CHECK-IN WAVE");
+    expect(html).toContain("OPTION 03 · ROUTE MAP");
+    expect(html).toContain("group-demo fan-deck");
+    expect(html).toContain("group-demo wave-queue");
+    expect(html).toContain("group-demo trail-map");
     expect(html).toContain("@media(prefers-reduced-motion:reduce)");
     expect(html).toContain("hover-demo:focus-visible");
     expect(markdown).toContain("Current Tasks: Focus Queue");
