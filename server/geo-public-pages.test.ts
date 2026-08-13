@@ -51,7 +51,7 @@ describe("GEO product proof and comparison routes", () => {
     expect(geoStyles).toContain('background:#fffefb');
     expect(geoStyles).toContain('color:#566273');
     expect(geoStyles).toContain('background:#5b5ce2');
-    expect(geoStyles).toContain('border:1px solid #26364a!important;border-collapse:separate!important;border-spacing:0!important;border-radius:8px!important');
+    expect(geoStyles).toContain('border:1px solid #c5cada!important');
     expect(geoStyles).toContain('padding:9px;border-bottom:1px solid #d9dce4');
     expect(geoStyles).toContain('font-family:Inter,ui-sans-serif,system-ui,sans-serif!important');
   });

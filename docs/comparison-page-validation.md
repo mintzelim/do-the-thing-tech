@@ -13,3 +13,5 @@ Final rendered-token check confirms the approved roles: the canvas is `#f6f5f2`,
 After matching the selected visual reference, the live comparison table computes to the required 1px `#c5cada` outline, 8px radius, 0.78rem table font size, and 9px cell padding. Its semantic wrapper still retains the 720px minimum table width for narrow-screen horizontal scrolling.
 
 Following the visual correction request, the reference-aligned table now uses the explicit dark ink `#26364a` outer outline. A full cell check confirms that every table header, row heading, and body cell resolves to Inter; no table cell inherits VT323. The live header fill is `#f0f1fb` and cell padding remains 9px.
+
+The visual design-system source was then rechecked. Its selected Quiet Ledger border uses `var(--card-border)`, which resolves to `#c5cada`, not dark ink. The live comparison table was restored to that exact 1px `#c5cada` outline. Its computed cells all remain Inter, its header remains `#f0f1fb`, and its cell padding remains 9px.

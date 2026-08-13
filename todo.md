@@ -646,7 +646,8 @@
 - [x] Verify the comparison uses Inter for all readable content and controls, VT323 only for compact contextual labels, and the documented warm beige, warm-white, ink-blue, muted gray-blue, indigo, and limited lime palette
 - [x] Match the comparison table exactly to the selected Quiet Ledger table reference in the visual design-system HTML
 - [x] Override the inherited VT323 table-cell rule so every comparison table header, row heading, and body cell uses Inter
-- [x] Restore the reference’s dark ink outline around the Quiet Ledger table and preserve its light internal row separators
+- [x] Correct the initial outline assumption and retain the actual selected Quiet Ledger `#c5cada` card-border outline with light internal row separators
+- [x] Restore the actual selected Quiet Ledger `#c5cada` card-border outline after confirming the visual design-system source
 
 ## Blog Tables and Utility Pages Design-System Alignment
 - [ ] Apply the selected Quiet Ledger table system to every blog table while preserving semantic table markup, all table content, and narrow-screen horizontal scrolling
