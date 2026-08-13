@@ -1,0 +1,288 @@
+{
+  "summary": {
+    "postCount": 31,
+    "postsAtOrAbove800Words": 22,
+    "postsWithAnyImageReference": 9,
+    "postsWithCommonMistakeGuidance": 7,
+    "postsBelow800Words": [
+      "06-adhd-medication-and-productivity.md",
+      "07-neuroscience-task-avoidance.md",
+      "10-adhd-relationships.md",
+      "11-adhd-workplace.md",
+      "12-adhd-sleep.md",
+      "14-adhd-creativity.md",
+      "16-neurodivergent-productivity-7-tactics.md",
+      "17-why-simpler-adhd-friendly-apps-work-better.md",
+      "18-one-task-is-enough-simple-self-acceptance.md"
+    ],
+    "postsWithoutImageReference": [
+      "02-time-blindness-in-adhd.md",
+      "03-breaking-down-big-tasks.md",
+      "04-executive-dysfunction-vs-task-paralysis.md",
+      "05-best-tools-for-adhd-task-management.md",
+      "06-adhd-medication-and-productivity.md",
+      "07-neuroscience-task-avoidance.md",
+      "08-remote-work-adhd.md",
+      "09-adhd-perfectionism.md",
+      "10-adhd-relationships.md",
+      "11-adhd-workplace.md",
+      "12-adhd-sleep.md",
+      "13-adhd-financial-management.md",
+      "14-adhd-creativity.md",
+      "15-free-tools-2026.md",
+      "16-neurodivergent-productivity-7-tactics.md",
+      "17-why-simpler-adhd-friendly-apps-work-better.md",
+      "18-one-task-is-enough-simple-self-acceptance.md",
+      "19-adhd-morning-routine-no-motivation-1.md",
+      "20-how-to-break-down-tasks-adhd.md",
+      "21-adhd-best-jobs-creativity-hyperfocus.md",
+      "22-does-adhd-go-away.md",
+      "24-ai-that-breaks-down-tasks-adhd.md"
+    ],
+    "postsWithoutCommonMistakeGuidance": [
+      "01-how-adhd-affects-task-management.md",
+      "02-time-blindness-in-adhd.md",
+      "03-breaking-down-big-tasks.md",
+      "04-executive-dysfunction-vs-task-paralysis.md",
+      "05-best-tools-for-adhd-task-management.md",
+      "06-adhd-medication-and-productivity.md",
+      "07-neuroscience-task-avoidance.md",
+      "08-remote-work-adhd.md",
+      "09-adhd-perfectionism.md",
+      "10-adhd-relationships.md",
+      "11-adhd-workplace.md",
+      "12-adhd-sleep.md",
+      "14-adhd-creativity.md",
+      "16-neurodivergent-productivity-7-tactics.md",
+      "17-why-simpler-adhd-friendly-apps-work-better.md",
+      "18-one-task-is-enough-simple-self-acceptance.md",
+      "22-does-adhd-go-away.md",
+      "23-best-adhd-tools-2026.md",
+      "24-ai-that-breaks-down-tasks-adhd.md",
+      "25-adhd-never-finish-anything.md",
+      "28-adhd-burnout-recovery.md",
+      "29-adhd-vs-autism-vs-audhd.md",
+      "30-rejection-sensitive-dysphoria-rsd.md",
+      "31-adhd-in-women.md"
+    ]
+  },
+  "posts": [
+    {
+      "file": "01-how-adhd-affects-task-management.md",
+      "wordCount": 1026,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "02-time-blindness-in-adhd.md",
+      "wordCount": 959,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "03-breaking-down-big-tasks.md",
+      "wordCount": 954,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "04-executive-dysfunction-vs-task-paralysis.md",
+      "wordCount": 901,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "05-best-tools-for-adhd-task-management.md",
+      "wordCount": 1072,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "06-adhd-medication-and-productivity.md",
+      "wordCount": 711,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "07-neuroscience-task-avoidance.md",
+      "wordCount": 732,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "08-remote-work-adhd.md",
+      "wordCount": 1419,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "09-adhd-perfectionism.md",
+      "wordCount": 958,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "10-adhd-relationships.md",
+      "wordCount": 721,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "11-adhd-workplace.md",
+      "wordCount": 557,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "12-adhd-sleep.md",
+      "wordCount": 656,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "13-adhd-financial-management.md",
+      "wordCount": 1235,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": true
+    },
+    {
+      "file": "14-adhd-creativity.md",
+      "wordCount": 658,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "15-free-tools-2026.md",
+      "wordCount": 1173,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": true
+    },
+    {
+      "file": "16-neurodivergent-productivity-7-tactics.md",
+      "wordCount": 677,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "17-why-simpler-adhd-friendly-apps-work-better.md",
+      "wordCount": 797,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "18-one-task-is-enough-simple-self-acceptance.md",
+      "wordCount": 628,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "19-adhd-morning-routine-no-motivation-1.md",
+      "wordCount": 1334,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": true
+    },
+    {
+      "file": "20-how-to-break-down-tasks-adhd.md",
+      "wordCount": 1385,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": true
+    },
+    {
+      "file": "21-adhd-best-jobs-creativity-hyperfocus.md",
+      "wordCount": 1452,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": true
+    },
+    {
+      "file": "22-does-adhd-go-away.md",
+      "wordCount": 945,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "23-best-adhd-tools-2026.md",
+      "wordCount": 1167,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "24-ai-that-breaks-down-tasks-adhd.md",
+      "wordCount": 989,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "25-adhd-never-finish-anything.md",
+      "wordCount": 907,
+      "inlineImageReferences": 5,
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "26-adhd-symptoms-adults.md",
+      "wordCount": 1215,
+      "inlineImageReferences": 5,
+      "frontmatterImageReferences": 0,
+      "hasCommonMistakeGuidance": true
+    },
+    {
+      "file": "27-uncommon-adhd-symptoms.md",
+      "wordCount": 1378,
+      "inlineImageReferences": 7,
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": true
+    },
+    {
+      "file": "28-adhd-burnout-recovery.md",
+      "wordCount": 1066,
+      "inlineImageReferences": 3,
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "29-adhd-vs-autism-vs-audhd.md",
+      "wordCount": 1424,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "30-rejection-sensitive-dysphoria-rsd.md",
+      "wordCount": 2243,
+      "inlineImageReferences": 1,
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": false
+    },
+    {
+      "file": "31-adhd-in-women.md",
+      "wordCount": 2348,
+      "inlineImageReferences": 0,
+      "frontmatterImageReferences": 1,
+      "hasCommonMistakeGuidance": false
+    }
+  ]
+}

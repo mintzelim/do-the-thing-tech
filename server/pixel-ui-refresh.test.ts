@@ -142,7 +142,9 @@ describe("mascot-led audience grid", () => {
     expect(homeContent).not.toContain("audience-students-pixel_");
     expect(stylesheet).toContain(".audience-grid{display:grid;width:100%;max-width:1120px;grid-template-columns:repeat(5");
     expect(stylesheet).toContain(".audience-card-mascot");
-    expect(stylesheet).toContain("width:min(100%,188px);height:152px");
+    expect(stylesheet).toContain("width:min(100%,132px);height:108px");
+    expect(stylesheet).toContain(".audience-card{display:flex;flex-direction:column;align-items:center;min-height:437px;padding:20px");
+    expect(stylesheet).toContain(".audience-card h3{margin:0 0 8px");
     expect(stylesheet).toContain("max-width:1120px");
     expect(stylesheet).toContain(".audience-card:nth-child(4){grid-column:2/span 2}");
     expect(stylesheet).toContain(".audience-card:last-child{grid-column:1/-1");

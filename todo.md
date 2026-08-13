@@ -585,3 +585,7 @@
 ## Exact Five Audience Asset Mapping
 - [x] Apply the supplied student, remote-worker, employee, project-manager, and parent illustrations in that exact card order
 - [x] Keep all five audience assets transparent, centered, and consistently sized within the card grid
+
+## Match Audience Card Density to How It Works
+- [x] Match audience illustration size, heading scale, body text scale, padding, and card height to the How It Works card treatment
+- [x] Validate the five-card audience grid after the density refinement
