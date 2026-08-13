@@ -635,3 +635,7 @@
 - [x] Remove the redundant “Students:” text label while preserving the audience-card message and semantics
 - [x] Validate the audience-card copy cleanup and publish the combined homepage visual edits
 - [x] Remove the repeated audience labels from the body copy of cards two through five while preserving their headings and descriptions
+
+## Homepage Visual Edit: Remove Marked Section Surface
+- [x] Remove the marked `#fffefb` section surface while preserving its heading, text, card grid, and responsive layout
+- [x] Validate and publish the section-surface cleanup

@@ -191,3 +191,22 @@ describe("mascot-led audience grid", () => {
     expect(stylesheet).toContain(".audience-card:last-child{grid-column:1/-1");
   });
 });
+
+describe("How It Works surface cleanup", () => {
+  it("keeps the heading and cards directly on the page canvas without an outer warm-white panel", () => {
+    const homeContent = readFileSync(
+      resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
+      "utf8",
+    );
+    const surfaceStyles = readFileSync(
+      resolve(process.cwd(), "client/src/how-it-works-surface.css"),
+      "utf8",
+    );
+
+    expect(homeContent).toContain('className="content-section how-it-works-section"');
+    expect(surfaceStyles).toContain("background: transparent !important");
+    expect(surfaceStyles).toContain("border: 0 !important");
+    expect(surfaceStyles).toContain("box-shadow: none !important");
+    expect(surfaceStyles).toContain("padding: 0 !important");
+  });
+});

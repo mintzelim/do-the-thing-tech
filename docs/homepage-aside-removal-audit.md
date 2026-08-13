@@ -21,3 +21,7 @@ The original two-column task composition was restored at desktop width. The exis
 ## Audience-card copy verification — 13 August 2026
 
 The audience-card descriptions were simplified so each audience name appears only in its `h3` heading. Browser inspection confirmed all five cards retain their intended heading and descriptive body copy, and every audience-card paragraph has `strongCount: 0`.
+
+## How It Works surface verification — 13 August 2026
+
+The outer How It Works wrapper now sits directly on the page canvas. Browser-computed styles confirmed a transparent background, `0px` border, no shadow, and `0px` padding for the wrapper. Its five individual step cards retain their warm-white backgrounds and 1px borders.

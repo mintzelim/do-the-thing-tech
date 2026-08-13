@@ -1,12 +1,13 @@
 import { Link } from "wouter";
 import { LEARNING_PATHS } from "@/lib/learningPaths";
 import { assetUrl } from "@/lib/assetUrl";
+import "../how-it-works-surface.css";
 
 export default function HomeContent() {
   return (
     <div className="home-content-sections">
       {/* SECTION 2: HOW IT WORKS */}
-      <section className="content-section">
+      <section className="content-section how-it-works-section">
         <h2 className="section-heading" style={{ textAlign: 'center' }}>How It Works</h2>
         <p className="section-subtitle" style={{ textAlign: 'center' }}>Five steps. Under a minute.</p>
         <div className="steps-grid">

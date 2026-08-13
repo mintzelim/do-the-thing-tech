@@ -1,0 +1,14 @@
+/* The How It Works heading and cards intentionally sit on the page canvas. */
+.content-section.how-it-works-section {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+@media (max-width: 560px) {
+  .content-section.how-it-works-section {
+    padding: 0 !important;
+  }
+}
