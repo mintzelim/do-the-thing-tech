@@ -554,3 +554,25 @@
 ## Audience Asset Transparency Correction
 - [x] Remove all grey canvas pixels so each audience illustration has a true transparent background
 - [x] Verify the updated transparent audience assets render without a rectangular backdrop
+
+## Canvas-Quality Audience Illustration Restoration
+- [ ] Restore the polished canvas-quality compositions for all five audience illustrations
+- [ ] Retain true transparent backgrounds without replacing the generated visual treatment with local fallback art
+- [ ] Validate the five corrected assets in the audience card layout
+
+## Exact Supplied Canvas Audience Assets
+- [ ] Remove only the green/dark scenic background from the five user-supplied canvas illustrations
+- [ ] Use the cleaned exact canvas compositions in the five audience cards
+
+## Canvas Cutout Artifact Cleanup
+- [ ] Remove residual green glow and grey horizontal streaks from the five transparent canvas cutouts
+- [ ] Verify clean alpha edges around every mascot and prop
+
+## Exact Canvas Asset Sizing
+- [ ] Use the provided background-removed canvas assets directly in their five audience cards
+- [ ] Size and center every audience illustration consistently without clipping any mascot or prop
+
+## Remove Planning Section
+- [x] Remove the complete “The AI Does the Planning. You Do the Thing.” section from the landing page
+- [x] Preserve all surrounding landing content, navigation, and task functionality after removal
+- [x] Update regression coverage and validate the page after section removal

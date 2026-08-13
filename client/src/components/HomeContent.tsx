@@ -4,26 +4,7 @@ import { LEARNING_PATHS } from "@/lib/learningPaths";
 export default function HomeContent() {
   return (
     <div className="home-content-sections">
-      {/* SECTION 2: THE PROBLEM & SOLUTION */}
-      <section className="content-section">
-        <h2 className="section-heading" style={{ textAlign: 'center' }}>The AI Does the Planning. You Do the Thing.</h2>
-        <div className="section-content">
-          <p>
-            You know the feeling. Task open. Brain closed.
-          </p>
-          <p>
-            You want to do it. You can picture doing it. And yet — nothing.
-          </p>
-          <p>
-            That gap between wanting and starting has a name: <strong><a href="https://my.clevelandclinic.org/health/symptoms/23224-executive-dysfunction" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>Executive dysfunction</a></strong>. It's the planning circuit that should fire and doesn't, the initiation signal that arrives late or not at all. It's how ADHD works. And every app that hands you a blank list and says "prioritise this" is asking the wrong brain to do the wrong job.
-          </p>
-          <p>
-            We built DoTheThing because we believe executive dysfunction isn't a personal failure. It's a neurological difference that deserves a tool designed around it. So we kept it to one job: get you to the first step. Everything else follows from there.
-          </p>
-        </div>
-      </section>
-
-      {/* SECTION 3: HOW IT WORKS */}
+      {/* SECTION 2: HOW IT WORKS */}
       <section className="content-section">
         <h2 className="section-heading" style={{ textAlign: 'center' }}>How It Works</h2>
         <p className="section-subtitle" style={{ textAlign: 'center' }}>Five steps. Under a minute.</p>

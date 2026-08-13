@@ -44,8 +44,6 @@ describe("post-hero copy preservation", () => {
     );
 
     const preservedCopy = [
-      "The AI Does the Planning. You Do the Thing.",
-      "You know the feeling. Task open. Brain closed.",
       "How It Works",
       "Five steps. Under a minute.",
       "Built for the Initiation Problem",
@@ -60,6 +58,8 @@ describe("post-hero copy preservation", () => {
     for (const copy of preservedCopy) {
       expect(homeContent).toContain(copy);
     }
+    expect(homeContent).not.toContain("The AI Does the Planning. You Do the Thing.");
+    expect(homeContent).not.toContain("You know the feeling. Task open. Brain closed.");
   });
 });
 
