@@ -545,3 +545,12 @@
 - [x] Expand the audience section from four cards to five audience groups while preserving the existing post-hero copy
 - [x] Replace failed generated image URLs with reliable mascot illustrations matching the supplied rectangular creature reference
 - [x] Add regression coverage for five cards and non-failed asset references
+
+## Audience Illustration Style Correction
+- [x] Restyle all five audience illustrations to match the existing How It Works purple mascot illustration family
+- [x] Symbolize the five audience groups with small props while preserving the five-card copy and layout
+- [x] Update regression coverage and validate the corrected illustration family
+
+## Audience Asset Transparency Correction
+- [x] Remove all grey canvas pixels so each audience illustration has a true transparent background
+- [x] Verify the updated transparent audience assets render without a rectangular backdrop
