@@ -35,4 +35,15 @@ describe("Current Tasks Focus Queue system", () => {
     expect(styles).toContain(".current-tasks-pro-tip");
     expect(styles).toContain("@media(prefers-reduced-motion:reduce)");
   });
+
+  it("centers a purple-mascot YAY celebration in the all-complete state without changing the reset action", () => {
+    expect(page).toContain('className="current-tasks-complete-art"');
+    expect(page).toContain('className="current-tasks-celebration-bubble"');
+    expect(page).toContain(">YAY!</span>");
+    expect(page).toContain("dothething-how-it-works-focus-transparent_c55dcc2f.png");
+    expect(page).toContain('localStorage.removeItem("doTheThing_state")');
+    expect(styles).toContain(".current-tasks-complete-art");
+    expect(styles).toContain(".current-tasks-celebration-bubble");
+    expect(styles).toContain("justify-items:center");
+  });
 });

@@ -681,6 +681,9 @@
 - [x] Align the Current Tasks title, Back control, and Add Task utility action with the documented typography, secondary-action, and dashed-utility patterns
 - [x] Align each task-row drag handle, checkbox, and task title on a shared top row while keeping description and controls below
 - [x] Add regression coverage, validate responsive task-list states, and publish the implementation
+- [x] Add a centered purple-mascot completion visual with a YAY speech accent while preserving the all-complete reset behavior
+- [x] Align the completed-state eyebrow, heading, supporting text, mascot visual, and recovery action on one responsive vertical axis
+- [x] Validate and publish the completed-task celebration state
 
 ## Blog Index and Article Template Design-System Refresh
 - [ ] Review the blog index and individual article template against the documented landing-page shell, typography, panel, card, and motion rules

@@ -4,6 +4,7 @@ import { useTimer } from "@/contexts/TimerContext";
 import Navigation from "@/components/Navigation";
 import PinTabTutorial from "@/components/PinTabTutorial";
 import Footer from "@/components/Footer";
+import { assetUrl } from "@/lib/assetUrl";
 import "../pixel-art-refined.css";
 import "../current-tasks-refined.css";
 
@@ -163,6 +164,10 @@ export default function CurrentTasks() {
           <PinTabTutorial alwaysShowOnCurrentTasks />
           {allCompleted ? (
             <section className="current-tasks-complete" aria-labelledby="complete-heading">
+              <div className="current-tasks-complete-art" aria-hidden="true">
+                <span className="current-tasks-celebration-bubble">YAY!</span>
+                <img src={assetUrl("/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png")} alt="" />
+              </div>
               <p className="current-tasks-eyebrow">FOCUS QUEUE COMPLETE</p>
               <h1 id="complete-heading">YOU DID IT!</h1>
               <p>All {steps.length} tasks are complete. Amazing work.</p>
