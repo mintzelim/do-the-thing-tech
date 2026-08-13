@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import "../pixel-art-refined.css";
+import "../utility-pages.css";
 
 export default function Privacy() {
   const [, navigate] = useLocation();
@@ -14,17 +15,17 @@ export default function Privacy() {
   }, []);
 
   return (
-    <div className="mobile-frame">
+    <div className="mobile-frame utility-page">
       <Navigation />
       
-      <div className="mobile-content">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="mobile-heading-1" style={{ marginBottom: "24px" }}>PRIVACY POLICY</h1>
+      <main className="utility-shell">
+        <div>
+          <h1 className="utility-title" style={{ marginBottom: "24px" }}>PRIVACY POLICY</h1>
 
-          <div className="mobile-card" style={{ marginBottom: "20px", fontFamily: "'Roboto Mono', monospace" }}>
-            <h2 className="mobile-heading-2" style={{ fontFamily: 'VT323, monospace' }}>Last Updated: April 2026</h2>
+          <div className="utility-legal-panel">
+            <h2 className="utility-date">Last Updated: April 2026</h2>
             
-            <div className="mobile-body" style={{ marginTop: "16px", lineHeight: "1.8", fontFamily: "'Roboto Mono', monospace", fontSize: '14px' }}>
+            <div className="utility-legal-copy">
               <p style={{ marginBottom: "16px" }}>
                 Do The Thing ("we," "us," "our," or "Company") operates the Do The Thing website and application. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
               </p>
@@ -76,7 +77,7 @@ export default function Privacy() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
       {/* Footer */}
       <Footer />

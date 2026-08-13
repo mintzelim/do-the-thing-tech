@@ -651,9 +651,9 @@
 
 ## Blog Tables and Utility Pages Design-System Alignment
 - [x] Apply the selected Quiet Ledger table system to every blog table while preserving semantic table markup, all table content, and narrow-screen horizontal scrolling
-- [ ] Apply the documented clean pixel-art public-page system to the Contact page without changing its form fields, contact details, or submission behavior
-- [ ] Apply the documented clean pixel-art public-page system to the Privacy Policy and Terms pages without changing their legal copy or links
-- [ ] Add regression coverage and validate responsive, accessible rendering for the table and utility-page updates
+- [x] Apply the documented clean pixel-art public-page system to the Contact page without changing its form fields, contact details, or submission behavior
+- [x] Apply the documented clean pixel-art public-page system to the Privacy Policy and Terms pages without changing their legal copy or links
+- [x] Add regression coverage and validate responsive, accessible rendering for the table and utility-page updates
 
 ## Blog Article Mobile Responsiveness
 - [x] Audit and correct narrow-screen article layout, typography, navigation, media, Quiet Ledger table scrolling, sources, and CTA behavior without changing article copy or SEO structure

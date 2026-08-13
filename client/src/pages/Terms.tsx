@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import "../pixel-art-refined.css";
+import "../utility-pages.css";
 
 export default function Terms() {
   const [, navigate] = useLocation();
@@ -14,17 +15,17 @@ export default function Terms() {
   }, []);
 
   return (
-    <div className="mobile-frame">
+    <div className="mobile-frame utility-page">
       <Navigation />
       
-      <div className="mobile-content">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="mobile-heading-1" style={{ marginBottom: "24px" }}>TERMS OF SERVICE</h1>
+      <main className="utility-shell">
+        <div>
+          <h1 className="utility-title" style={{ marginBottom: "24px" }}>TERMS OF SERVICE</h1>
 
-          <div className="mobile-card" style={{ marginBottom: "20px", fontFamily: "'Roboto Mono', monospace" }}>
-            <h2 className="mobile-heading-2" style={{ fontFamily: 'VT323, monospace' }}>Last Updated: April 2026</h2>
+          <div className="utility-legal-panel">
+            <h2 className="utility-date">Last Updated: April 2026</h2>
             
-            <div className="mobile-body" style={{ marginTop: "16px", lineHeight: "1.8", fontFamily: "'Roboto Mono', monospace", fontSize: '14px' }}>
+            <div className="utility-legal-copy">
               <p style={{ marginBottom: "16px" }}>
                 These Terms of Service ("Terms") govern your use of the Do The Thing website and application (the "Service"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree to abide by the above, please do not use this service.
               </p>
@@ -78,7 +79,7 @@ export default function Terms() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
 
       {/* Footer */}
       <Footer />
