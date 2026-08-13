@@ -522,3 +522,21 @@
 ## No Nested Card Surfaces
 - [x] Remove nested white/lavender card wrappers and inner borders from the landing-page visual treatment
 - [x] Validate that every affected section has one clean surface and one border only
+
+## Flag-Only CTA Visual
+- [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference
+- [x] Preserve the CTA copy, single-surface card, and #widget scroll behavior
+
+## Exact Supplied Flag Asset
+- [x] Crop the exact flag-on-island artwork from Screenshot2026-08-13at22.16.46.png and clean it for transparent use
+- [x] Use the exact flag asset in the CTA's left visual area without changing CTA copy or #widget behavior
+
+## Audience Grid Mascot Redesign
+- [x] Create four mascot-only purple creature illustrations for the audience groups
+- [x] Replace the existing audience text block with a responsive four-card audience grid while preserving its copy and meaning
+- [x] Add regression coverage for the four-card audience layout and asset usage
+
+## Exact Creature Consistency Correction
+- [x] Regenerate the four audience mascots to use the approved lavender rectangular creature reference consistently
+- [x] Keep audience-specific props minimal and preserve the existing four-card copy and layout
+- [x] Update regression coverage for the shared creature asset family

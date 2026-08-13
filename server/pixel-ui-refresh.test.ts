@@ -107,7 +107,36 @@ describe("hero-matched CTA and headlines", () => {
     expect(homeContent).toContain("Ready to Break Down Your First Task?");
     expect(homeContent).toContain("Stop overthinking. Start with one small step.");
     expect(homeContent).toContain('href="#widget"');
+    expect(homeContent).toContain("/manus-storage/dothething-cta-flag_aa5cdcdc.png");
     expect(stylesheet).toContain(".content-section > .section-heading");
     expect(stylesheet).toContain(".cta-reference-card");
+    expect(stylesheet).toContain("object-fit:contain");
+    expect(stylesheet).toContain("transform:none");
+  });
+});
+
+
+describe("mascot-led audience grid", () => {
+  it("keeps four audience groups with mascot-only image assets and preserved audience copy", () => {
+    const homeContent = readFileSync(
+      resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
+      "utf8",
+    );
+
+    expect((homeContent.match(/className="audience-card"/g) ?? []).length).toBe(4);
+    expect((homeContent.match(/className="audience-card-mascot"/g) ?? []).length).toBe(4);
+    expect(homeContent).toContain("A Productivity Tool for Anyone Whose Brain Works Differently");
+    expect(homeContent).toContain("Our AI task breakdown tool is for:");
+    expect(homeContent).toContain("Remote Workers & Freelancers:");
+    expect(homeContent).toContain("Employees & Corporate Teams:");
+    expect(homeContent).toContain("Project Managers:");
+    expect(homeContent).toContain("Parents:");
+    expect(homeContent).toContain("WHO World Mental Health Survey");
+    expect(homeContent).toContain("audience-adhd-brains-v2_");
+    expect(homeContent).toContain("audience-students-v2_");
+    expect(homeContent).toContain("audience-professionals-v2_");
+    expect(homeContent).toContain("audience-everyone-v2_");
+    expect(stylesheet).toContain(".audience-grid{display:grid;grid-template-columns:repeat(4");
+    expect(stylesheet).toContain(".audience-card-mascot");
   });
 });
