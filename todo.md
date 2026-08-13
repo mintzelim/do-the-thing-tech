@@ -556,23 +556,32 @@
 - [x] Verify the updated transparent audience assets render without a rectangular backdrop
 
 ## Canvas-Quality Audience Illustration Restoration
-- [ ] Restore the polished canvas-quality compositions for all five audience illustrations
-- [ ] Retain true transparent backgrounds without replacing the generated visual treatment with local fallback art
-- [ ] Validate the five corrected assets in the audience card layout
+- [x] Restore the polished canvas-quality compositions for all five audience illustrations
+- [x] Retain true transparent backgrounds without replacing the generated visual treatment with local fallback art
+- [x] Validate the five corrected assets in the audience card layout
 
 ## Exact Supplied Canvas Audience Assets
-- [ ] Remove only the green/dark scenic background from the five user-supplied canvas illustrations
-- [ ] Use the cleaned exact canvas compositions in the five audience cards
+- [x] Confirm the user-supplied canvas illustrations already have transparent backgrounds; no further background removal applied
+- [x] Use the exact canvas compositions in the five audience cards
 
 ## Canvas Cutout Artifact Cleanup
-- [ ] Remove residual green glow and grey horizontal streaks from the five transparent canvas cutouts
-- [ ] Verify clean alpha edges around every mascot and prop
+- [x] Confirm further artifact cleanup is not required for the supplied transparent canvas assets
+- [x] Verify the supplied transparent artwork is used directly without a rectangular canvas backdrop
 
 ## Exact Canvas Asset Sizing
-- [ ] Use the provided background-removed canvas assets directly in their five audience cards
-- [ ] Size and center every audience illustration consistently without clipping any mascot or prop
+- [x] Use the provided background-removed canvas assets directly in their five audience cards
+- [x] Size and center every audience illustration consistently without clipping any mascot or prop
 
 ## Remove Planning Section
 - [x] Remove the complete “The AI Does the Planning. You Do the Thing.” section from the landing page
 - [x] Preserve all surrounding landing content, navigation, and task functionality after removal
 - [x] Update regression coverage and validate the page after section removal
+
+## Landing Layout Consistency Audit
+- [x] Audit desktop and mobile alignment, padding, gutters, card spacing, and section rhythm
+- [x] Refine inconsistent spacing and audience image sizing without changing approved copy or functionality
+- [x] Validate the consistency pass with regression coverage and responsive checks
+
+## Exact Five Audience Asset Mapping
+- [x] Apply the supplied student, remote-worker, employee, project-manager, and parent illustrations in that exact card order
+- [x] Keep all five audience assets transparent, centered, and consistently sized within the card grid
