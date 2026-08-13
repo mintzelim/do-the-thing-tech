@@ -644,6 +644,9 @@
 - [x] Align the comparison page with the documented clean pixel-art typography, contextual eyebrow, spacing rhythm, component treatments, one-surface rule, table treatment, mascot guidance, and responsive behavior while preserving its evidence-led copy
 - [x] Apply and visually verify the approved Quiet Ledger table treatment on the comparison page before beginning the remaining blog-table and utility-page updates
 - [x] Verify the comparison uses Inter for all readable content and controls, VT323 only for compact contextual labels, and the documented warm beige, warm-white, ink-blue, muted gray-blue, indigo, and limited lime palette
+- [x] Match the comparison table exactly to the selected Quiet Ledger table reference in the visual design-system HTML
+- [x] Override the inherited VT323 table-cell rule so every comparison table header, row heading, and body cell uses Inter
+- [x] Restore the reference’s dark ink outline around the Quiet Ledger table and preserve its light internal row separators
 
 ## Blog Tables and Utility Pages Design-System Alignment
 - [ ] Apply the selected Quiet Ledger table system to every blog table while preserving semantic table markup, all table content, and narrow-screen horizontal scrolling
