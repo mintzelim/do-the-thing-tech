@@ -540,3 +540,8 @@
 - [x] Regenerate the four audience mascots to use the approved lavender rectangular creature reference consistently
 - [x] Keep audience-specific props minimal and preserve the existing four-card copy and layout
 - [x] Update regression coverage for the shared creature asset family
+
+## Five Audience Cards and Failed Image Replacement
+- [x] Expand the audience section from four cards to five audience groups while preserving the existing post-hero copy
+- [x] Replace failed generated image URLs with reliable mascot illustrations matching the supplied rectangular creature reference
+- [x] Add regression coverage for five cards and non-failed asset references

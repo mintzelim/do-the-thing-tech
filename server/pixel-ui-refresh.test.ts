@@ -117,14 +117,14 @@ describe("hero-matched CTA and headlines", () => {
 
 
 describe("mascot-led audience grid", () => {
-  it("keeps four audience groups with mascot-only image assets and preserved audience copy", () => {
+  it("keeps five audience groups with mascot-only image assets and preserved audience copy", () => {
     const homeContent = readFileSync(
       resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
       "utf8",
     );
 
-    expect((homeContent.match(/className="audience-card"/g) ?? []).length).toBe(4);
-    expect((homeContent.match(/className="audience-card-mascot"/g) ?? []).length).toBe(4);
+    expect((homeContent.match(/className="audience-card"/g) ?? []).length).toBe(5);
+    expect((homeContent.match(/className="audience-card-mascot"/g) ?? []).length).toBe(5);
     expect(homeContent).toContain("A Productivity Tool for Anyone Whose Brain Works Differently");
     expect(homeContent).toContain("Our AI task breakdown tool is for:");
     expect(homeContent).toContain("Remote Workers & Freelancers:");
@@ -132,11 +132,14 @@ describe("mascot-led audience grid", () => {
     expect(homeContent).toContain("Project Managers:");
     expect(homeContent).toContain("Parents:");
     expect(homeContent).toContain("WHO World Mental Health Survey");
-    expect(homeContent).toContain("audience-adhd-brains-v2_");
-    expect(homeContent).toContain("audience-students-v2_");
-    expect(homeContent).toContain("audience-professionals-v2_");
-    expect(homeContent).toContain("audience-everyone-v2_");
-    expect(stylesheet).toContain(".audience-grid{display:grid;grid-template-columns:repeat(4");
+    expect(homeContent).toContain("audience-students-pixel_");
+    expect(homeContent).toContain("audience-remote-workers-pixel_");
+    expect(homeContent).toContain("audience-employees-pixel_");
+    expect(homeContent).toContain("audience-project-managers-pixel_");
+    expect(homeContent).toContain("audience-parents-pixel_");
+    expect(homeContent).not.toContain("Image generation failed");
+    expect(homeContent).not.toContain("audience-adhd-brains-v2_");
+    expect(stylesheet).toContain(".audience-grid{display:grid;grid-template-columns:repeat(5");
     expect(stylesheet).toContain(".audience-card-mascot");
   });
 });

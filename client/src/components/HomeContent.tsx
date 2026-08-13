@@ -120,31 +120,37 @@ export default function HomeContent() {
       {/* SECTION 5: WHO IT'S FOR */}
       <section className="content-section audience-section">
         <h2 className="section-heading" style={{ textAlign: 'center' }}>A Productivity Tool for Anyone Whose Brain Works Differently</h2>
+        <p className="section-subtitle" style={{ textAlign: 'center' }}>We built this for the ADHD community and anyone struggling with task paralysis.</p>
         <p className="section-subtitle" style={{ textAlign: 'center' }}>Our AI task breakdown tool is for:</p>
         <div className="audience-grid">
           <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-adhd-brains-v2_1bc2713d.png" alt="" aria-hidden="true" />
-            <h3>ADHD Brains</h3>
-            <p>We built this for the ADHD community and anyone struggling with task paralysis.</p>
-          </article>
-          <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-students-v2_e92912e2.png" alt="" aria-hidden="true" />
+            <img className="audience-card-mascot" src="/manus-storage/audience-students-pixel_2d951eff.png" alt="" aria-hidden="true" />
             <h3>Students</h3>
             <p><strong>Students:</strong> Bypassing academic overwhelm and the "blank page" syndrome.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-professionals-v2_a0bd5978.png" alt="" aria-hidden="true" />
-            <h3>Professionals</h3>
+            <img className="audience-card-mascot" src="/manus-storage/audience-remote-workers-pixel_8d16b289.png" alt="" aria-hidden="true" />
+            <h3>Remote Workers & Freelancers</h3>
             <p><strong>Remote Workers & Freelancers:</strong> For when you're your own boss and your initiation system is jamming.</p>
+          </article>
+          <article className="audience-card">
+            <img className="audience-card-mascot" src="/manus-storage/audience-employees-pixel_fd8e9c6e.png" alt="" aria-hidden="true" />
+            <h3>Employees & Corporate Teams</h3>
             <p><strong>Employees & Corporate Teams:</strong> Stop losing hours to "prep work." Use DTT to generate accurate time estimates and concrete first steps.</p>
+          </article>
+          <article className="audience-card">
+            <img className="audience-card-mascot" src="/manus-storage/audience-project-managers-pixel_2948b15c.png" alt="" aria-hidden="true" />
+            <h3>Project Managers</h3>
             <p><strong>Project Managers:</strong> Use it to convert a vague "milestone" into a numbered micro-step list for your team in seconds.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-everyone-v2_037a8e88.png" alt="" aria-hidden="true" />
-            <h3>Everyone</h3>
+            <img className="audience-card-mascot" src="/manus-storage/audience-parents-pixel_9c34099b.png" alt="" aria-hidden="true" />
+            <h3>Parents</h3>
             <p><strong>Parents:</strong> Managing the invisible mental load of household admin and family logistics.</p>
-            <p>The <a href="https://www.researchgate.net/publication/5344712_The_prevalence_and_effects_of_Adult_Attention-Deficithyperactivity_Disorder_ADHD_on_the_performance_of_workers_Results_from_the_WHO_World_Mental_Health_Survey_Initiative" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>WHO World Mental Health Survey</a> found that adults lose an average of 22 working days a year to executive dysfunction. DoTheThing won't fix your biology or your boss, but it acts as an external executive function—giving you a specific first step when your brain (or your team) can't generate one on its own.</p>
           </article>
+        </div>
+        <div className="section-content audience-support-copy">
+          <p>The <a href="https://www.researchgate.net/publication/5344712_The_prevalence_and_effects_of_Adult_Attention-Deficithyperactivity_Disorder_ADHD_on_the_performance_of_workers_Results_from_the_WHO_World_Mental_Health_Survey_Initiative" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>WHO World Mental Health Survey</a> found that adults lose an average of 22 working days a year to executive dysfunction. DoTheThing won't fix your biology or your boss, but it acts as an external executive function—giving you a specific first step when your brain (or your team) can't generate one on its own.</p>
         </div>
       </section>
 
