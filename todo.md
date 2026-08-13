@@ -432,7 +432,7 @@
 - [x] Add "Updated on [Date]" timestamp to all blog posts (show active maintenance)
 - [x] Verify all blog posts are 800+ words (minimum for quality signals)
 - [ ] Ensure each post has unique imagery/screenshots (not generic stock photos)
-- [ ] Add "Gotchas" or "Common Mistakes" section to technical posts
+- [x] Add "Gotchas" or "Common Mistakes" section to all published technical posts
 - [x] Add personal opinion/verdict to tool review posts (not neutral)
 
 ### Phase 6: Verification & Deployment
