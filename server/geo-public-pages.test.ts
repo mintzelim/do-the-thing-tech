@@ -9,6 +9,7 @@ const standards = readFileSync(resolve(process.cwd(), "client/src/pages/Editoria
 const media = readFileSync(resolve(process.cwd(), "client/src/pages/MediaKit.tsx"), "utf8");
 const article = readFileSync(resolve(process.cwd(), "client/src/pages/BlogPost.tsx"), "utf8");
 const about = readFileSync(resolve(process.cwd(), "client/src/pages/About.tsx"), "utf8");
+const geoStyles = readFileSync(resolve(process.cwd(), "client/src/geo-pages.css"), "utf8");
 const sitemap = readFileSync(resolve(process.cwd(), "scripts/generate-sitemap.mjs"), "utf8");
 const ssr = readFileSync(resolve(process.cwd(), "client/src/entry-server.tsx"), "utf8");
 
@@ -36,6 +37,20 @@ describe("GEO product proof and comparison routes", () => {
     expect(comparison).toContain("goblin-tools-magic-todo-2026-08-13_a38f7bda.webp");
     expect(comparison).toContain('href="https://goblin.tools/ToDo"');
     expect(comparison).toContain("Screenshots show the public interfaces viewed on 13 August 2026");
+  });
+
+  it("applies the documented public-page comparison rhythm without weakening the evidence-led content", () => {
+    expect(comparison).toContain('comparison-page');
+    expect(comparison).toContain('comparison-hero');
+    expect(comparison).toContain('comparison-canvas-field');
+    expect(comparison).toContain('comparison-ledger');
+    expect(comparison).toContain('comparison-fit-grid');
+    expect(comparison).toContain('comparison-citation-strip');
+    expect(geoStyles).toContain('.comparison-page{background:#f6f5f2;color:#223047}');
+    expect(geoStyles).toContain('font-family:Inter,ui-sans-serif,system-ui,sans-serif');
+    expect(geoStyles).toContain('background:#fffefb');
+    expect(geoStyles).toContain('color:#566273');
+    expect(geoStyles).toContain('background:#5b5ce2');
   });
 
   it("adds visible authorship, first-party editorial boundaries, and a correction path", () => {

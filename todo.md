@@ -640,6 +640,17 @@
 - [x] Document a recurring recommendation-visibility monitoring framework using representative queries, Search Console, and Bing Webmaster signals
 - [x] Add regression coverage, validate crawlability and public-page behavior, then publish the full GEO implementation
 
+## Goblin.tools Comparison Design-System Alignment
+- [x] Align the comparison page with the documented clean pixel-art typography, contextual eyebrow, spacing rhythm, component treatments, one-surface rule, table treatment, mascot guidance, and responsive behavior while preserving its evidence-led copy
+- [x] Apply and visually verify the approved Quiet Ledger table treatment on the comparison page before beginning the remaining blog-table and utility-page updates
+- [x] Verify the comparison uses Inter for all readable content and controls, VT323 only for compact contextual labels, and the documented warm beige, warm-white, ink-blue, muted gray-blue, indigo, and limited lime palette
+
+## Blog Tables and Utility Pages Design-System Alignment
+- [ ] Apply the selected Quiet Ledger table system to every blog table while preserving semantic table markup, all table content, and narrow-screen horizontal scrolling
+- [ ] Apply the documented clean pixel-art public-page system to the Contact page without changing its form fields, contact details, or submission behavior
+- [ ] Apply the documented clean pixel-art public-page system to the Privacy Policy and Terms pages without changing their legal copy or links
+- [ ] Add regression coverage and validate responsive, accessible rendering for the table and utility-page updates
+
 ## Landing-Page Design System Documentation
 - [x] Extract the implemented landing-page design tokens, component rules, and responsive treatments
 - [x] Create a clear Markdown design-system guide based on the current landing page
