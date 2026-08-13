@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DoTheThing — Landing Page Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet" />
+    <style>
+      :root { --canvas:#f6f5f2; --surface:#fffefb; --ink:#223047; --muted:#566273; --border:#26364a; --panel-border:#a8afc2; --card-border:#c5cada; --accent:#5b5ce2; --accent-dark:#4a4bc4; --success:#78a83b; --heading:#1f293b; --shadow:rgba(38,54,74,.16); --ui:Inter,ui-sans-serif,system-ui,sans-serif; --pixel:VT323,"Courier New",monospace; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--canvas); color:var(--ink); font-family:var(--ui); line-height:1.55; }
+      .shell { width:min(calc(100% - 32px),1240px); margin:0 auto; padding:28px 0 56px; }
+      .banner { padding:28px; border:1px solid var(--panel-border); border-radius:14px; background:var(--surface); box-shadow:7px 8px 0 rgba(210,211,224,.7); }
+      .eyebrow { margin:0 0 10px; color:var(--accent-dark); font:1.2rem/1 var(--pixel); letter-spacing:.09em; }
+      h1,h2,h3,p { margin-top:0; }
+      h1 { max-width:940px; margin-bottom:14px; color:var(--heading); font-size:clamp(2.8rem,6vw,5.25rem); font-weight:800; letter-spacing:-.055em; line-height:.98; }
+      h2 { margin-bottom:16px; color:var(--heading); font-size:clamp(2.2rem,4vw,4rem); font-weight:800; letter-spacing:-.055em; line-height:.98; }
+      h3 { margin-bottom:8px; color:var(--heading); font-size:1.2rem; font-weight:800; letter-spacing:-.02em; line-height:1.15; }
+      .lede { max-width:720px; margin:0; color:var(--muted); font-size:clamp(1rem,1.35vw,1.14rem); }
+      .section { margin-top:24px; padding:clamp(22px,4vw,52px); border:1px solid var(--panel-border); border-radius:14px; background:var(--surface); box-shadow:7px 8px 0 rgba(210,211,224,.7); }
+      .center { text-align:center; } .center .lede { margin-right:auto; margin-left:auto; }
+      .rule { height:1px; margin:28px 0; background:#d9dce4; }
+      .chips,.swatches { display:flex; flex-wrap:wrap; gap:12px; }
+      .chip { padding:8px 12px; border:1px solid var(--card-border); border-radius:8px; background:#fff; font-size:.88rem; }
+      .swatch { width:142px; overflow:hidden; border:1px solid var(--card-border); border-radius:10px; background:#fff; }
+      .swatch-color { height:64px; } .swatch-label { padding:10px; font-size:.78rem; }
+      .grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:16px; margin-top:24px; }
+      .card { min-height:300px; padding:20px; border:1px solid var(--card-border); border-radius:10px; background:#fffefb; box-shadow:3px 4px 0 rgba(210,211,224,.65); text-align:center; }
+      .art { display:grid; width:132px; height:108px; place-items:center; margin:0 auto 16px; }
+      .mascot { position:relative; width:66px; height:64px; border:4px solid var(--border); border-radius:12px 12px 14px 14px; background:#c8b1ef; box-shadow:inset 0 0 0 5px #d9c6f4; }
+      .mascot:before,.mascot:after { content:""; position:absolute; top:28px; width:7px; height:7px; background:var(--border); }
+      .mascot:before { left:18px; } .mascot:after { right:18px; }
+      .mascot i { position:absolute; right:-22px; bottom:4px; width:30px; height:24px; border:3px solid var(--border); border-radius:4px; background:#fff; }
+      .number { display:grid; width:34px; height:34px; place-items:center; margin-bottom:10px; border-radius:7px; background:var(--accent); color:#fff; font-size:.95rem; font-weight:800; }
+      .card p { margin:0; color:var(--muted); font-size:.98rem; }
+      .buttons { display:flex; flex-wrap:wrap; gap:14px; }
+      button { min-height:48px; padding:12px 22px; border-radius:8px; font:700 .98rem var(--ui); cursor:pointer; }
+      .primary { border:1px solid var(--accent-dark); background:var(--accent); color:#fff; box-shadow:3px 3px 0 rgba(74,75,196,.2); }
+      .secondary { border:1px solid var(--accent); background:transparent; color:var(--accent-dark); }
+      .panel { display:grid; grid-template-columns:.7fr 1.35fr; gap:clamp(28px,5vw,72px); align-items:center; min-height:210px; padding:clamp(24px,4vw,40px); border:1px solid var(--panel-border); border-radius:14px; background:var(--surface); box-shadow:4px 4px 0 rgba(38,54,74,.1); }
+      .flag { display:grid; width:190px; height:120px; align-content:end; justify-content:center; margin:auto; background:linear-gradient(0deg,#8faa44 0 20%,transparent 20%); }
+      .flag:before { content:""; width:4px; height:74px; margin-left:22px; background:var(--border); box-shadow:22px 9px 0 -7px #c7db3e; }
+      .type-sample { margin:0; } .pixel-sample { color:var(--accent-dark); font:1.35rem var(--pixel); letter-spacing:.09em; }
+      .table-wrap { overflow:auto; } table { width:100%; border-collapse:collapse; font-size:.92rem; } th,td { padding:12px; border-bottom:1px solid #d9dce4; text-align:left; } th { color:var(--heading); }
+      .focus { padding:4px; outline:3px solid rgba(91,92,226,.35); outline-offset:3px; border-radius:4px; }
+      @media (max-width:1100px) { .grid { grid-template-columns:repeat(3,1fr); } }
+      @media (max-width:768px) { .shell { width:min(calc(100% - 24px),1240px); } .grid { grid-template-columns:repeat(2,1fr); } .panel { grid-template-columns:1fr; text-align:center; } }
+      @media (max-width:560px) { .shell { padding-top:16px; } .section { padding:28px 18px; } .grid { grid-template-columns:1fr; } .buttons { flex-direction:column; } button { width:100%; } }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="banner">
+        <p class="eyebrow">✦ DESIGN SYSTEM</p>
+        <h1>DoTheThing<br />Landing Page</h1>
+        <p class="lede">A calm hybrid pixel system for ADHD-friendly task initiation: readable Inter UI, focused VT323 accents, warm-white panels, ink-blue outlines, and mascot-only illustration.</p>
+      </header>
+
+      <section class="section">
+        <h2>Foundation tokens</h2>
+        <div class="swatches">
+          <div class="swatch"><div class="swatch-color" style="background:#f6f5f2"></div><div class="swatch-label"><strong>Canvas</strong><br>#F6F5F2</div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#fffefb"></div><div class="swatch-label"><strong>Surface</strong><br>#FFFEFB</div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#26364a"></div><div class="swatch-label"><strong>Ink border</strong><br>#26364A</div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#5b5ce2"></div><div class="swatch-label"><strong>Accent</strong><br>#5B5CE2</div></div>
+          <div class="swatch"><div class="swatch-color" style="background:#78a83b"></div><div class="swatch-label"><strong>Success / lime</strong><br>#78A83B</div></div>
+        </div>
+        <div class="rule"></div>
+        <div class="chips"><span class="chip">Main panel radius: 14px</span><span class="chip">Card radius: 10px</span><span class="chip">Control radius: 8px</span><span class="chip">Panel gap: 24px</span><span class="chip">Grid gap: 16px</span><span class="chip">Content shell: 1240px</span></div>
+      </section>
+
+      <section class="section center">
+        <p class="eyebrow">A SMALLER NEXT STEP</p>
+        <h2>Shared type hierarchy</h2>
+        <p class="lede">Major headings and their supporting text share a single centered axis. Inter carries the reading load; VT323 supplies a compact pixel signal.</p>
+        <div class="rule"></div>
+        <p class="type-sample" style="font-size:2.2rem;font-weight:800;letter-spacing:-.055em;line-height:.98">Make the next<br />thing doable.</p>
+        <p class="type-sample" style="margin-top:18px;color:var(--muted);font-size:1.08rem">Break tasks into smaller steps, build momentum, and get more of the important stuff done.</p>
+        <p class="pixel-sample" style="margin-top:22px">✦ A SMALLER NEXT STEP</p>
+      </section>
+
+      <section class="section">
+        <h2>Card system</h2>
+        <div class="grid">
+          <article class="card"><span class="number">1</span><div class="art"><div class="mascot"><i></i></div></div><h3>Brain Dump</h3><p>Clear imagery, centered copy, and one simple first action.</p></article>
+          <article class="card"><span class="number">2</span><div class="art"><div class="mascot"><i></i></div></div><h3>Focus Level</h3><p>Repeatable cards use 20px padding and a 16px grid gutter.</p></article>
+          <article class="card"><span class="number">3</span><div class="art"><div class="mascot"><i></i></div></div><h3>Tiny Steps</h3><p>Illustrations stay transparent, contained, and mascot-only.</p></article>
+          <article class="card"><span class="number">4</span><div class="art"><div class="mascot"><i></i></div></div><h3>Clear Copy</h3><p>Inter body text maintains readability at 0.98rem.</p></article>
+          <article class="card"><span class="number">5</span><div class="art"><div class="mascot"><i></i></div></div><h3>One Surface</h3><p>Do not place a bordered card inside another bordered card.</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Actions and focus</h2>
+        <div class="buttons"><button class="primary">Start a task →</button><button class="secondary">Explore guides ▱</button><button class="secondary focus">Keyboard focus</button></div>
+      </section>
+
+      <section class="section">
+        <div class="panel">
+          <div class="flag"></div>
+          <div><p class="eyebrow">A SMALLER NEXT STEP</p><h2 style="font-size:clamp(2rem,4vw,3.2rem)">Single-surface CTA</h2><p class="lede" style="margin-bottom:20px">Use a compact transparent flag illustration, one panel outline, a left-to-right desktop composition, and a centered mobile stack.</p><button class="primary">Scroll up to start</button></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>Responsive contract</h2>
+        <div class="table-wrap"><table><thead><tr><th>Breakpoint</th><th>Change</th><th>Purpose</th></tr></thead><tbody><tr><td>1200px</td><td>Audience grid uses six internal columns</td><td>Centers incomplete rows</td></tr><tr><td>1100px</td><td>How It Works becomes three columns</td><td>Preserves readable card widths</td></tr><tr><td>860px</td><td>Header, hero, and task layout stack</td><td>Protects hierarchy on tablet</td></tr><tr><td>760px</td><td>Audience cards become two columns</td><td>Balances five cards</td></tr><tr><td>560px</td><td>All card grids become one column</td><td>Supports touch targets and reading width</td></tr></tbody></table></div>
+      </section>
+
+      <section class="section">
+        <h2>Implementation rules</h2>
+        <div class="table-wrap"><table><thead><tr><th>Do</th><th>Do not</th></tr></thead><tbody><tr><td>Use Inter for UI, task copy, and major headings.</td><td>Use pixel type for multi-line reading content.</td></tr><tr><td>Keep subtitles and supporting text on the shared centered grid.</td><td>Mix left and centered supporting copy without a structural reason.</td></tr><tr><td>Use transparent mascot assets with <code>object-fit: contain</code>.</td><td>Add beige or gray image rectangles behind card art.</td></tr><tr><td>Use 48px minimum touch targets and visible 3px focus rings.</td><td>Rely on color alone to communicate selected or focused state.</td></tr></tbody></table></div>
+      </section>
+    </main>
+  </body>
+</html>

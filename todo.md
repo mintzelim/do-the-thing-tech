@@ -430,7 +430,7 @@
 
 ### Phase 5: Content Quality Signals
 - [x] Add "Updated on [Date]" timestamp to all blog posts (show active maintenance)
-- [ ] Verify all blog posts are 800+ words (minimum for quality signals)
+- [x] Verify all blog posts are 800+ words (minimum for quality signals)
 - [ ] Ensure each post has unique imagery/screenshots (not generic stock photos)
 - [ ] Add "Gotchas" or "Common Mistakes" section to technical posts
 - [x] Add personal opinion/verdict to tool review posts (not neutral)
@@ -601,3 +601,15 @@
 - [x] Add practical Gotchas or common-mistake guidance where it is genuinely useful
 - [x] Preserve article voice, medical-safety language, source accuracy, and internal-link continuity
 - [x] Regenerate metadata, validate all updated content, and checkpoint the improvement pass
+
+## Approved Second SEO Content Batch
+- [ ] Add one original topic-specific image and descriptive alt text to Time Blindness, Breaking Down Big Tasks, Executive Dysfunction vs. Task Paralysis, Best Tools for ADHD Task Management, Remote Work With ADHD, ADHD and Perfectionism, and AI That Breaks Down Tasks
+- [ ] Add concise, practical common-mistake guidance to the same seven high-intent articles
+- [ ] Preserve medical-safety language, source accuracy, article voice, and internal-link continuity
+- [ ] Regenerate metadata, validate the seven updates, and checkpoint the batch
+
+## Landing-Page Design System Documentation
+- [x] Extract the implemented landing-page design tokens, component rules, and responsive treatments
+- [x] Create a clear Markdown design-system guide based on the current landing page
+- [x] Create a standalone HTML design-system reference with visual token and component examples
+- [x] Verify the documentation matches the implemented landing page and checkpoint the deliverables
