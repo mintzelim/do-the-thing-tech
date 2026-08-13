@@ -605,10 +605,14 @@
 ## Approved Second SEO Content Batch
 - [ ] Add one original topic-specific image and descriptive alt text to Time Blindness, Breaking Down Big Tasks, Executive Dysfunction vs. Task Paralysis, Best Tools for ADHD Task Management, Remote Work With ADHD, ADHD and Perfectionism, and AI That Breaks Down Tasks
 - [x] Add concise, practical common-mistake guidance to the same seven high-intent articles
-- [ ] Preserve medical-safety language, source accuracy, article voice, and internal-link continuity
+- [x] Preserve medical-safety language, source accuracy, article voice, and internal-link continuity
 - [ ] Regenerate metadata, validate the seven updates, and checkpoint the batch
 - [x] Add and upload the original Time Blindness featured image with descriptive alt text
 - [ ] Generate and upload the six remaining topic-specific featured images after the image-generation quota resets
+
+## Remaining SEO Featured Images
+- [ ] Create and apply a consistent original featured image and descriptive alt text for each of the six remaining high-intent ADHD articles
+- [ ] Regenerate blog metadata and verify every remaining image has a production-safe public URL
 
 ## Landing-Page Design System Documentation
 - [x] Extract the implemented landing-page design tokens, component rules, and responsive treatments
@@ -737,8 +741,8 @@
 - [x] Validate and publish the completed-task celebration state
 
 ## Blog Index and Article Template Design-System Refresh
-- [ ] Review the blog index and individual article template against the documented landing-page shell, typography, panel, card, and motion rules
-- [ ] Restyle the blog index while preserving post metadata, filters, image rendering, routes, and accessibility
-- [ ] Restyle the article template while preserving article copy, citations, structured metadata, related posts, and navigation
-- [ ] Add approved purple-mascot accents to the blog index and article template without adding human pixel art
-- [ ] Validate responsive blog and article layouts, update regression coverage, and publish the public-page refresh
+- [x] Review the blog index and individual article template against the documented landing-page shell, typography, panel, card, and motion rules
+- [x] Restyle the blog index while preserving post metadata, filters, image rendering, routes, and accessibility
+- [x] Restyle the article template while preserving article copy, citations, structured metadata, related posts, and navigation
+- [x] Add approved purple-mascot accents to the blog index and article template without adding human pixel art
+- [x] Validate responsive blog and article layouts, update regression coverage, and publish the public-page refresh
