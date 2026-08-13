@@ -9,12 +9,12 @@ export const enhancedSchema = {
     // Organization Schema - Primary entity
     {
       "@type": "Organization",
-      "@id": "https://www.dothething.tech/#organization",
+      "@id": "https://dothething.tech/#organization",
       "name": "Boundless One Ventures",
       "alternateName": "DoTheThing",
-      "url": "https://www.dothething.tech/",
-      "logo": "https://www.dothething.tech/logo.png",
-      "image": "https://www.dothething.tech/logo.png",
+      "url": "https://dothething.tech/",
+      "logo": "https://dothething.tech/logo.png",
+      "image": "https://dothething.tech/logo.png",
       "description": "Boundless One Ventures builds AI-powered tools for neurodivergent individuals. DoTheThing is a global SaaS platform that helps people with ADHD and executive dysfunction break down overwhelming tasks into manageable micro-steps with AI-powered time estimation.",
       "foundingDate": "2026",
       "foundingLocation": {
@@ -34,14 +34,14 @@ export const enhancedSchema = {
           "@type": "Person",
           "name": "Lim Min Tze",
           "jobTitle": "Founder",
-          "url": "https://www.dothething.tech/about"
+          "url": "https://dothething.tech/about"
         }
       ],
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
         "email": "contact@dothething.tech",
-        "url": "https://www.dothething.tech/contact"
+        "url": "https://dothething.tech/contact"
       },
       "sameAs": [
         "https://www.instagram.com/dothething.tech",
@@ -69,48 +69,33 @@ export const enhancedSchema = {
     // WebSite Schema - Root website definition
     {
       "@type": "WebSite",
-      "@id": "https://www.dothething.tech/#website",
+      "@id": "https://dothething.tech/#website",
       "name": "DoTheThing",
-      "url": "https://www.dothething.tech/",
+      "url": "https://dothething.tech/",
       "description": "AI-powered task breakdown app for ADHD brains - global access, no login required",
       "publisher": {
-        "@id": "https://www.dothething.tech/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.dothething.tech/blog?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
+        "@id": "https://dothething.tech/#organization"
       }
     },
 
     // SoftwareApplication Schema - For the AI task management tool
     {
       "@type": "SoftwareApplication",
-      "@id": "https://www.dothething.tech/#software",
+      "@id": "https://dothething.tech/#software",
       "name": "DoTheThing",
       "description": "AI-powered task breakdown and time estimation tool designed for ADHD brains. Instantly breaks down overwhelming tasks into micro-steps with realistic time estimates based on focus level.",
-      "url": "https://www.dothething.tech/",
+      "url": "https://dothething.tech/",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 4.8,
-        "ratingCount": 156,
-        "bestRating": 5,
-        "worstRating": 1
-      },
       "author": {
-        "@id": "https://www.dothething.tech/#organization"
+        "@id": "https://dothething.tech/#organization"
       },
       "publisher": {
-        "@id": "https://www.dothething.tech/#organization"
+        "@id": "https://dothething.tech/#organization"
       },
       "featureList": [
         "AI-powered task breakdown",
@@ -128,25 +113,25 @@ export const enhancedSchema = {
     // WebPage Schema - Homepage
     {
       "@type": "WebPage",
-      "@id": "https://www.dothething.tech/#webpage",
-      "url": "https://www.dothething.tech/",
+      "@id": "https://dothething.tech/#webpage",
+      "url": "https://dothething.tech/",
       "name": "DoTheThing — AI Task Breakdown for ADHD Brains",
       "description": "DoTheThing helps people with ADHD beat task paralysis. Enter any task, pick your focus level, and get an instant AI-powered breakdown with realistic time estimates. Free, no login required, global access.",
       "isPartOf": {
-        "@id": "https://www.dothething.tech/#website"
+        "@id": "https://dothething.tech/#website"
       },
       "publisher": {
-        "@id": "https://www.dothething.tech/#organization"
+        "@id": "https://dothething.tech/#organization"
       },
       "mainEntity": {
-        "@id": "https://www.dothething.tech/#software"
+        "@id": "https://dothething.tech/#software"
       },
       "datePublished": "2026-01-01",
       "dateModified": new Date().toISOString().split('T')[0],
       "inLanguage": "en-US",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://www.dothething.tech/logo.png",
+        "url": "https://dothething.tech/logo.png",
         "width": 1200,
         "height": 630
       }
@@ -155,8 +140,8 @@ export const enhancedSchema = {
     // FAQPage Schema - For featured snippets
     {
       "@type": "FAQPage",
-      "@id": "https://www.dothething.tech/#faqpage",
-      "url": "https://www.dothething.tech/",
+      "@id": "https://dothething.tech/#faqpage",
+      "url": "https://dothething.tech/",
       "mainEntity": [
         {
           "@type": "Question",
@@ -212,31 +197,31 @@ export const enhancedSchema = {
     // BreadcrumbList Schema - For navigation
     {
       "@type": "BreadcrumbList",
-      "@id": "https://www.dothething.tech/#breadcrumb",
+      "@id": "https://dothething.tech/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.dothething.tech/"
+          "item": "https://dothething.tech/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "About",
-          "item": "https://www.dothething.tech/about"
+          "item": "https://dothething.tech/about"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Blog",
-          "item": "https://www.dothething.tech/blog"
+          "item": "https://dothething.tech/blog"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "Contact",
-          "item": "https://www.dothething.tech/contact"
+          "item": "https://dothething.tech/contact"
         }
       ]
     }

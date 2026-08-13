@@ -4,6 +4,7 @@ import { describe, expect, it } from "vitest";
 
 const markdown = readFileSync(resolve(process.cwd(), "docs/dothething-landing-design-system.md"), "utf8");
 const html = readFileSync(resolve(process.cwd(), "docs/dothething-landing-design-system.html"), "utf8");
+const enhancedSchema = readFileSync(resolve(process.cwd(), "client/src/lib/enhancedSchema.ts"), "utf8");
 
 describe("landing-page design-system documentation", () => {
   it("documents the implemented hybrid pixel tokens and shared text grid", () => {
@@ -81,5 +82,13 @@ describe("landing-page design-system documentation", () => {
     expect(markdown).toContain("Add Task utility");
     expect(markdown).toContain("Breadcrumbs");
     expect(markdown).toContain("Inline Trail");
+  });
+
+  it("does not fabricate aggregate ratings in structured data", () => {
+    expect(enhancedSchema).not.toContain('"aggregateRating"');
+    expect(enhancedSchema).not.toContain("ratingCount");
+    expect(enhancedSchema).not.toContain('"SearchAction"');
+    expect(enhancedSchema).not.toContain("https://www.dothething.tech");
+    expect(enhancedSchema).toContain('"@id": "https://dothething.tech/#organization"');
   });
 });

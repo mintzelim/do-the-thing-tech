@@ -465,29 +465,29 @@
 - [x] Validate the redesign at mobile and desktop breakpoints, then checkpoint the published revision
 
 ## Approved Reference Mockup Implementation
-- [ ] Rebuild the homepage header and hero composition to match the approved reference mockup without changing existing copy or routes
-- [ ] Add the approved pixel-art hero illustration and retain an accessible fallback treatment
-- [ ] Restyle the existing task widget to match the approved input card, energy selector, and primary action layout without changing behavior
-- [ ] Add a visual-only Today's Plan side card that does not replace or remove existing task functionality
-- [ ] Preserve all existing homepage sections, blog content, navigation, and backend features
-- [ ] Add regression coverage for the approved reference-layout safeguards
-- [ ] Validate desktop and mobile layouts, then checkpoint the approved implementation
+- [x] Rebuild the homepage header and hero composition to match the approved reference mockup without changing existing copy or routes
+- [x] Add the approved pixel-art hero illustration and retain an accessible fallback treatment
+- [x] Restyle the existing task widget to match the approved input card, energy selector, and primary action layout without changing behavior
+- [x] Replace the superseded visual-only Today's Plan side card with the existing Pro Tip without removing any task functionality
+- [x] Preserve all existing homepage sections, blog content, navigation, and backend features
+- [x] Add regression coverage for the approved reference-layout safeguards
+- [x] Validate desktop and mobile layouts, then checkpoint the approved implementation
 
 ## Unified Reference Design System
-- [ ] Apply the approved first-fold design system consistently to all lower landing sections, FAQ, and footer without changing content or feature behavior
-- [ ] Validate visual consistency across desktop and mobile breakpoints and checkpoint the unified implementation
+- [x] Apply the approved first-fold design system consistently to all lower landing sections, FAQ, and footer without changing content or feature behavior
+- [x] Validate visual consistency across desktop and mobile breakpoints and checkpoint the unified implementation
 
 ## Final Reference Character and Unified Landing System
-- [ ] Replace human pixel-art direction with the preferred abstract pixel character across the approved hero and visual assets
-- [ ] Add the existing Breakdown Size selector to the reference task card without changing its behavior
-- [ ] Apply the same warm-gray, rounded-card, ink-outline, indigo-accent design system to all lower landing sections and footer
-- [ ] Preserve all current navigation pages, article content, FAQ content, task behavior, and backend features
-- [ ] Add regression coverage for the final reference design constraints
-- [ ] Validate desktop and mobile layouts, then checkpoint the final implementation
+- [x] Replace human pixel-art direction with the preferred abstract pixel character across the approved hero and visual assets
+- [x] Add the existing Breakdown Size selector to the reference task card without changing its behavior
+- [x] Apply the same warm-gray, rounded-card, ink-outline, indigo-accent design system to all lower landing sections and footer
+- [x] Preserve all current navigation pages, article content, FAQ content, task behavior, and backend features
+- [x] Add regression coverage for the final reference design constraints
+- [x] Validate desktop and mobile layouts, then checkpoint the final implementation
 
 ## Strict Post-Hero Copy Preservation
-- [ ] Preserve every existing post-hero word, section order, link label, FAQ answer, creator statement, learning-path description, featured-post excerpt, CTA, and footer text exactly while changing presentation only
-- [ ] Add automated copy-preservation coverage for the lower landing content before checkpointing
+- [x] Preserve every existing post-hero word, section order, link label, FAQ answer, creator statement, learning-path description, featured-post excerpt, CTA, and footer text exactly while changing presentation only
+- [x] Add automated copy-preservation coverage for the lower landing content before checkpointing
 
 ## How It Works Mascot Illustrations
 - [x] Add mascot-only pixel-art illustrations to all five existing How It Works cards without changing their copy, order, or behavior
@@ -613,6 +613,17 @@
 ## Remaining SEO Featured Images
 - [ ] Create and apply a consistent original featured image and descriptive alt text for each of the six remaining high-intent ADHD articles
 - [ ] Regenerate blog metadata and verify every remaining image has a production-safe public URL
+
+## AI Recommendation and GEO Readiness Assessment
+- [x] Research how AI recommendation systems qualify and select brands in category-level answers
+- [x] Audit DoTheThing’s current clarity, credibility, structured-data, evidence, and third-party authority signals for ADHD task-management recommendations
+- [x] Present a prioritized ethical GEO plan for approval before implementing public-site changes
+
+## Structured-Data Integrity
+- [x] Remove the unsubstantiated aggregate-rating markup from the SoftwareApplication schema
+- [x] Remove the unsupported SearchAction markup because the blog does not provide an on-site query search endpoint
+- [x] Standardize structured-data entity identifiers on the canonical dothething.tech host
+- [x] Validate the revised structured-data implementation and publish the integrity correction
 
 ## Landing-Page Design System Documentation
 - [x] Extract the implemented landing-page design tokens, component rules, and responsive treatments
