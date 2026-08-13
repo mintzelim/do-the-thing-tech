@@ -2,6 +2,7 @@
 title: "Breaking Down Big Tasks: An ADHD-Friendly Guide"
 excerpt: "Learn how to break down overwhelming tasks into manageable steps using evidence-based strategies designed for the ADHD brain."
 date: "2026-03-28"
+updatedDate: "2026-08-13"
 tags:
   - ADHD
   - task management
@@ -167,6 +168,20 @@ Task breakdown works even better with body doubling:
 - Have them check in after each step
 - Use Focusmate or similar for live accountability
 - Text a friend your task list for the next hour
+
+## Common Mistakes When Breaking Down Big Tasks
+
+### Stopping at a step that still contains several decisions
+
+“Work on the proposal” is smaller than “finish the project,” but it can still hide choices about where to begin, what file to open, and what counts as enough. If a step produces a pause, make the next version more concrete: open the draft, write three rough headings, or find the last client email. A useful first step tells you what to touch, not only what to achieve.
+
+### Building the perfect task system before starting the task
+
+Color coding, app comparison, and template design can feel productive while keeping the actual work at a distance. Use whatever system is easiest to reach today, even if that is a scrap of paper. You can refine the system after it has helped you complete a real step.
+
+### Making every step equally tiny
+
+Tiny steps are useful when activation is the barrier, but a long list can become its own source of overwhelm. Keep the next action very small and group later actions into a short cluster once you have momentum. The goal is a workable path, not the most detailed list possible.
 
 ## Key Takeaways
 

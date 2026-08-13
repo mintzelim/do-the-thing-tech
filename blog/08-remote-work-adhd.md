@@ -2,7 +2,7 @@
 title: "ADHD and Remote Work: Strategies for Success"
 excerpt: "Remote work presents unique challenges and opportunities for ADHD brains. Learn strategies to thrive in a work-from-home environment."
 date: "2026-04-02"
-updatedDate: "2026-08-12"
+updatedDate: "2026-08-13"
 category: "ADHD at Work"
 tags:
   - ADHD
@@ -152,7 +152,7 @@ Remote work gets harder when every message feels equally urgent. Ask your team t
 
 This protects attention for everyone, not only people with ADHD. The [CDC notes that some adults with ADHD may find workplace accommodations helpful for staying on task or limiting distractions](https://www.cdc.gov/adhd/about/adhd-in-adults.html). For formal accommodations, eligibility and process depend on the employer, job, and local law; consider qualified HR or legal guidance for your own situation.
 
-## Common Remote-Work Failure Modes
+## Common Mistakes When Working Remotely With ADHD
 
 ### The workday never starts
 

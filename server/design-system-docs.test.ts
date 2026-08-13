@@ -28,9 +28,28 @@ describe("landing-page design-system documentation", () => {
       expect(document).toContain("160ms");
     }
 
-    expect(markdown).toContain("Canonical eyebrow");
+    expect(markdown).toContain("Contextual eyebrow pattern");
     expect(markdown).toContain("Motion and Interaction");
+    expect(markdown).toContain("Alternate public-page rhythm");
+    expect(markdown).toContain("Ink editorial band");
     expect(html).toContain("site-header-demo");
     expect(html).toContain("site-footer-demo");
+    expect(html).toContain("rhythm-demo");
+    expect(html).toContain("Alternate panel patterns");
+    expect(html).toContain("ARTICLE DATA PRESENTATION");
+    expect(html).toContain("OPTION 01 · QUIET LEDGER");
+    expect(html).toContain("OPTION 02 · GUIDED COMPARISON");
+    expect(html).toContain("COMPONENT · CONTEXT STRIPS");
+    expect(html).toContain("Selected use criteria");
+    expect(markdown).toContain("Quiet Ledger table");
+    expect(markdown).toContain("Guided progress chart");
+    expect(markdown).toContain("Numbered action steps");
+    expect(markdown).toContain("Context strips");
+    expect(html).toContain("NAVIGATION CONTEXT");
+    expect(html).toContain("OPTION 01 · INLINE TRAIL");
+    expect(html).toContain("OPTION 02 · SEGMENTED TRAIL");
+    expect(html).toContain("OPTION 03 · RETURN PATH");
+    expect(markdown).toContain("Breadcrumbs");
+    expect(markdown).toContain("Inline Trail");
   });
 });

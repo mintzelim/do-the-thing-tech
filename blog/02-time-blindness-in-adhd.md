@@ -2,6 +2,9 @@
 title: "Time Blindness in ADHD: Why 5 Minutes Feels Like 5 Hours"
 excerpt: "Explore the neuroscience of time blindness in ADHD, why your brain perceives time differently, and practical strategies to manage temporal awareness without shame."
 date: "2026-03-27"
+updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/blog-time-blindness-featured_3c63db49.png"
+featuredImageAlt: "Lavender pixel mascot using a large clock and visual time cues"
 tags:
   - ADHD
   - time blindness
@@ -142,6 +145,20 @@ Working alongside someone else creates external time structure. The other person
 - Coffee shops or libraries
 - Study groups or co-working spaces
 - Asking a friend to work alongside you
+
+## Common Mistakes to Avoid With Time Blindness
+
+### Treating one timer as a complete system
+
+A single alarm can tell you when time is up, but it does not always help you notice a transition, leave the house, or estimate the next task. Pair a visible countdown with a warning before the switch and a buffer in the calendar. The point is not to create more alerts. It is to make the next decision easier when your attention is already elsewhere.
+
+### Using time tracking as evidence against yourself
+
+Tracking is useful when it reveals a pattern you can design around. It becomes counterproductive when every overrun turns into proof that you are lazy or careless. Try a short, neutral experiment: track one recurring task for a week, compare the estimate with the actual time, then update the next estimate. That is data for your system, not a verdict on you.
+
+### Planning only the task and not the transition
+
+An appointment can be thirty minutes long and still require an hour of real-world time once setup, travel, finding materials, and recovery are included. When a plan repeatedly fails, add the invisible steps to the schedule before assuming you need more discipline. A transition warning and a deliberately protected buffer are often more useful than a stricter to-do list.
 
 ## Key Takeaways
 

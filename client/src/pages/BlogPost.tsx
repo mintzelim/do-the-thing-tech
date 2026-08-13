@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useRoute, useLocation } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -6,91 +6,11 @@ import BlogContentRenderer from "@/components/BlogContentRenderer";
 import Breadcrumb from "@/components/Breadcrumb";
 import { updateMetaTags } from "@/lib/metaTags";
 import { generateBlogPostingSchemaWithBreadcrumb, injectBlogPostingSchema, type BlogPostData } from "@/lib/blogPostingSchema";
+import { assetUrl } from "@/lib/assetUrl";
+import { getBlogCategoryEyebrow } from "@/lib/blogCategoryUtils";
 import "../pixel-art-refined.css";
-
-// Mobile-optimized sources section component
-function SourcesSection({ sources }: { sources: Array<{ title: string; url: string }> }) {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  return (
-    <div className="mobile-card" style={{ marginBottom: "24px", padding: "16px", overflowX: "hidden" }}>
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          background: "transparent",
-          border: "none",
-          cursor: "pointer",
-          padding: "0",
-          color: "var(--pixel-text)",
-          fontSize: "16px",
-          fontWeight: "bold",
-          fontFamily: "'Roboto Mono', monospace",
-          transition: "all 0.2s"
-        }}
-        onMouseEnter={(e) => {
-          (e.currentTarget as HTMLElement).style.opacity = "0.8";
-        }}
-        onMouseLeave={(e) => {
-          (e.currentTarget as HTMLElement).style.opacity = "1";
-        }}
-      >
-        <span>SOURCES ({sources.length})</span>
-        <span style={{ transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}>▼</span>
-      </button>
-      
-      {isExpanded && (
-        <ul style={{
-          paddingLeft: "16px",
-          margin: "12px 0 0 0",
-          fontFamily: "'Roboto Mono', monospace",
-          fontSize: "13px",
-          fontWeight: 500,
-          listStyle: "none"
-        }}>
-          {sources.map((source, idx) => (
-            <li key={idx} style={{ marginBottom: "10px", wordBreak: "break-word" }}>
-              <a
-                href={source.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  color: "var(--pixel-accent)",
-                  textDecoration: "none",
-                  fontFamily: "'Roboto Mono', monospace",
-                  fontSize: "13px",
-                  transition: "all 0.2s",
-                  display: "block",
-                  width: "100%",
-                  overflow: "hidden",
-                  textOverflow: "ellipsis",
-                  whiteSpace: "nowrap"
-                }}
-                onTouchStart={(e) => {
-                  (e.currentTarget as HTMLElement).style.textDecoration = "underline";
-                }}
-                onTouchEnd={(e) => {
-                  (e.currentTarget as HTMLElement).style.textDecoration = "none";
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.textDecoration = "underline";
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLElement).style.textDecoration = "none";
-                }}
-              >
-                {source.title} ↗
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
-}
+import "../blog-refined.css";
+import "../blog-breadcrumb.css";
 
 type BlogPost = {
   id: string;
@@ -111,6 +31,25 @@ type BlogPost = {
   featuredImageAlt?: string;
 };
 
+const articleMascot = assetUrl("/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png");
+const ctaMascot = assetUrl("/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png");
+
+function SourcesSection({ sources }: { sources: Array<{ title: string; url: string }> }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  return (
+    <section className="blog-sources-panel" aria-label="Article sources">
+      <button type="button" className="blog-sources-toggle" onClick={() => setIsExpanded((value) => !value)} aria-expanded={isExpanded}>
+        <span>SOURCES ({sources.length})</span><span className={isExpanded ? "is-open" : ""} aria-hidden="true">⌄</span>
+      </button>
+      {isExpanded && <ul>{sources.map((source, index) => <li key={`${source.url}-${index}`}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.title} <span aria-hidden="true">↗</span></a></li>)}</ul>}
+    </section>
+  );
+}
+
+function BlogPostStatus({ message, isError = false }: { message: string; isError?: boolean }) {
+  return <div className="mobile-frame blog-post-page"><Navigation /><main className="blog-article-shell"><section className="blog-status-panel"><p className="blog-eyebrow">TOOLS &amp; RESOURCES</p><h1>BLOG</h1><p className={isError ? "blog-status-error" : "blog-status-copy"}>{message}</p></section></main><Footer /></div>;
+}
+
 export default function BlogPost() {
   const [, navigate] = useLocation();
   const [match, params] = useRoute("/blog/:slug");
@@ -118,296 +57,72 @@ export default function BlogPost() {
   const [allPosts, setAllPosts] = useState<BlogPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-
   const slug = params?.slug as string | undefined;
 
-  // Load all blog posts
   useEffect(() => {
     const loadPosts = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(`/blog-posts.json?v=${Date.now()}`, {
-          cache: 'no-store',
-        });
-        if (!response.ok) {
-          throw new Error(`Failed to load blog posts: ${response.statusText}`);
-        }
-        const data = await response.json();
-        setAllPosts(data);
+        const response = await fetch(`/blog-posts.json?v=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`Failed to load blog posts: ${response.statusText}`);
+        setAllPosts(await response.json());
         setError(null);
       } catch (err) {
-        console.error('Error loading blog posts:', err);
-        setError('Failed to load blog posts. Please try again later.');
+        console.error("Error loading blog posts:", err);
+        setError("Failed to load blog posts. Please try again later.");
       } finally {
         setIsLoading(false);
       }
     };
-
     loadPosts();
   }, []);
 
-  // Find the specific post by slug
   useEffect(() => {
-    if (slug && allPosts.length > 0) {
-      const foundPost = allPosts.find(p => p.slug === slug);
-      if (foundPost) {
-        setPost(foundPost);
-        const blogPostUrl = `https://dothething.tech/blog/${foundPost.slug}`;
-        // Update all meta tags for SEO
-        updateMetaTags({
-          title: `${foundPost.title} | DoTheThing Blog`,
-          description: foundPost.excerpt,
-          canonicalUrl: blogPostUrl,
-          ogUrl: blogPostUrl,
-          ogId: `${blogPostUrl}#blogpost`,
-          keywords: foundPost.seoKeywords?.join(', '),
-        });
-
-        // Inject BlogPosting schema with FAQPage and BreadcrumbList in @graph structure
-        const blogPostData: BlogPostData = {
-          slug: foundPost.slug,
-          title: foundPost.title,
-          description: foundPost.excerpt,
-          content: foundPost.content,
-          author: "DoTheThing",
-          datePublished: foundPost.date,
-          dateModified: foundPost.updatedDate || foundPost.date,
-          category: [foundPost.category],
-          keywords: foundPost.seoKeywords,
-          faq: foundPost.faq,
-          sources: foundPost.sources
-        };
-        const blogPostingSchema = generateBlogPostingSchemaWithBreadcrumb(blogPostData);
-        injectBlogPostingSchema(blogPostingSchema);
-      } else {
-        setError('Blog post not found.');
-      }
-    }
+    if (!slug || allPosts.length === 0) return;
+    const foundPost = allPosts.find((candidate) => candidate.slug === slug);
+    if (!foundPost) { setError("Blog post not found."); return; }
+    setPost(foundPost);
+    const blogPostUrl = `https://dothething.tech/blog/${foundPost.slug}`;
+    updateMetaTags({ title: `${foundPost.title} | DoTheThing Blog`, description: foundPost.excerpt, canonicalUrl: blogPostUrl, ogUrl: blogPostUrl, ogId: `${blogPostUrl}#blogpost`, keywords: foundPost.seoKeywords?.join(", ") });
+    const blogPostData: BlogPostData = { slug: foundPost.slug, title: foundPost.title, description: foundPost.excerpt, content: foundPost.content, author: "DoTheThing", datePublished: foundPost.date, dateModified: foundPost.updatedDate || foundPost.date, category: [foundPost.category], keywords: foundPost.seoKeywords, faq: foundPost.faq, sources: foundPost.sources };
+    injectBlogPostingSchema(generateBlogPostingSchemaWithBreadcrumb(blogPostData));
   }, [slug, allPosts]);
 
-  const relatedPostsList = post
-    ? post.relatedPosts
-        .map(id => allPosts.find(p => p.id === id))
-        .filter(Boolean) as BlogPost[]
-    : [];
-
-  if (!match) {
-    return null;
-  }
-
-  if (isLoading) {
-    return (
-      <div className="mobile-frame">
-        <Navigation />
-        <div className="mobile-content">
-          <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
-            <h1 className="mobile-heading-1" style={{ marginBottom: "24px" }}>BLOG</h1>
-            <div className="mobile-card">
-              <p className="mobile-body">Loading blog post...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (error || !post) {
-    return (
-      <div className="mobile-frame">
-        <Navigation />
-        <div className="mobile-content">
-          <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
-            <h1 className="mobile-heading-1" style={{ marginBottom: "24px" }}>BLOG</h1>
-            <div className="mobile-card">
-              <p className="mobile-body" style={{ color: '#c62828' }}>
-                {error || 'Blog post not found.'}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  const relatedPostsList = post ? post.relatedPosts.map((id) => allPosts.find((candidate) => candidate.id === id)).filter(Boolean) as BlogPost[] : [];
+  if (!match) return null;
+  if (isLoading) return <BlogPostStatus message="Loading blog post..." />;
+  if (error || !post) return <BlogPostStatus message={error || "Blog post not found."} isError />;
+  const articleEyebrow = getBlogCategoryEyebrow(post.category);
 
   return (
-    <div className="mobile-frame">
+    <div className="mobile-frame blog-post-page">
       <Navigation />
-
-      <div className="mobile-content">
-        <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
-          <Breadcrumb
-            items={[
-              { label: "Home", href: "/" },
-              { label: "Blog", href: "/blog" },
-              { label: post.title },
-            ]}
-          />
-
-          <article style={{ marginBottom: "32px" }}>
-            {post.featuredImage && (
-              <img
-                src={post.featuredImage}
-                alt={post.featuredImageAlt || post.title}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxHeight: "400px",
-                  objectFit: "cover",
-                  display: "block",
-                  marginBottom: "24px",
-                  border: "3px solid var(--pixel-border)"
-                }}
-              />
-            )}
-            <div style={{ marginBottom: "24px" }}>
-              <h1 className="mobile-heading-1" style={{ marginBottom: "12px" }}>
-                {post.title}
-              </h1>
-
-              <div style={{ 
-                display: "flex", 
-                gap: "16px", 
-                fontSize: "13px", 
-                color: "var(--pixel-text-light)",
-                flexWrap: "wrap",
-                alignItems: "center"
-              }}>
-                <span>Published {post.date}</span>
-                {post.updatedDate && (
-                  <>
-                    <span>•</span>
-                    <span>Updated {post.updatedDate}</span>
-                  </>
-                )}
-                <span>•</span>
-                <span>{post.readTime}</span>
-                {post.wordCount && (
-                  <>
-                    <span>•</span>
-                    <span>{post.wordCount.toLocaleString()} words</span>
-                  </>
-                )}
-                <span>•</span>
-                <span style={{ 
-                  backgroundColor: "var(--pixel-accent)", 
-                  color: "white", 
-                  padding: "4px 12px",
-                  fontFamily: "'VT323', monospace"
-                }}>
-                  {post.category}
-                </span>
-              </div>
+      <main className="blog-article-shell">
+        <div className="blog-breadcrumb-wrap"><Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: post.title }]} /></div>
+        <article>
+          <header className="blog-article-hero">
+            <div className="blog-article-title-copy">
+              <p className="blog-eyebrow"><span aria-hidden="true">✦</span> {articleEyebrow}</p>
+              <p className="blog-article-category">{post.category}</p>
+              <h1>{post.title}</h1>
+              <p className="blog-article-excerpt">{post.excerpt}</p>
+              <div className="blog-article-meta"><span>Published {post.date}</span>{post.updatedDate && <><span aria-hidden="true">•</span><span>Updated {post.updatedDate}</span></>}<span aria-hidden="true">•</span><span>{post.readTime}</span>{post.wordCount && <><span aria-hidden="true">•</span><span>{post.wordCount.toLocaleString()} words</span></>}</div>
             </div>
+            <div className="blog-article-mascot" aria-hidden="true"><img src={articleMascot} alt="" /></div>
+          </header>
 
-            <div className="mobile-card" style={{ marginBottom: "32px", padding: "24px" }}>
-              <div style={{ 
-                fontFamily: "'Roboto Mono', monospace",
-                fontSize: "16px",
-                fontWeight: 500,
-                lineHeight: "1.8",
-                color: "var(--pixel-text)"
-              }}>
-                <BlogContentRenderer 
-                  content={post.content}
-                  onInternalLinkClick={(postId) => {
-                    const relatedPost = allPosts.find(p => p.id === postId);
-                    if (relatedPost) {
-                      navigate(`/blog/${relatedPost.slug}`, { replace: false });
-                    }
-                  }}
-                />
-              </div>
-            </div>
+          {post.featuredImage && <figure className="blog-article-feature"><img src={post.featuredImage} alt={post.featuredImageAlt || post.title} /></figure>}
+          <div className="blog-article-body"><BlogContentRenderer content={post.content} onInternalLinkClick={(postId) => { const relatedPost = allPosts.find((candidate) => candidate.id === postId); if (relatedPost) navigate(`/blog/${relatedPost.slug}`, { replace: false }); }} /></div>
+          {post.sources && post.sources.length > 0 && <SourcesSection sources={post.sources} />}
 
-            {post.sources && post.sources.length > 0 && (
-              <SourcesSection sources={post.sources} />
-            )}
+          <section className="blog-article-cta" aria-labelledby="article-cta-heading">
+            <div className="blog-article-cta-art" aria-hidden="true"><img src={ctaMascot} alt="" /></div>
+            <div><p className="blog-eyebrow">START WHEN READY</p><h2 id="article-cta-heading">READY TO BREAK DOWN YOUR TASKS?</h2><p>Use DoTheThing to turn your brain dump into actionable steps. Free. No login. Works in under a minute.</p><a href="/">OPEN DOTHETHING <span aria-hidden="true">→</span></a></div>
+          </section>
 
-            {/* CTA: Back to DoTheThing */}
-            <div className="mobile-card" style={{ padding: "20px", backgroundColor: "var(--pixel-accent)", marginBottom: "20px" }}>
-              <h3 className="mobile-heading-3" style={{ marginBottom: "12px", marginTop: "0", color: "white" }}>
-                READY TO BREAK DOWN YOUR TASKS?
-              </h3>
-              <p style={{ color: "white", fontSize: "14px", marginBottom: "16px", fontFamily: "'Roboto Mono', monospace" }}>
-                Use DoTheThing to turn your brain dump into actionable steps. Free. No login. Works in under a minute.
-              </p>
-              <a
-                href="/"
-                style={{
-                  display: "inline-block",
-                  backgroundColor: "white",
-                  color: "var(--pixel-accent)",
-                  padding: "12px 20px",
-                  border: "2px solid white",
-                  fontFamily: "'VT323', monospace",
-                  fontSize: "14px",
-                  fontWeight: "bold",
-                  cursor: "pointer",
-                  textDecoration: "none",
-                  transition: "all 0.2s"
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.transform = "translate(-2px, -2px)";
-                  el.style.boxShadow = "2px 2px 0 rgba(0,0,0,0.2)";
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.transform = "translate(0, 0)";
-                  el.style.boxShadow = "none";
-                }}
-              >
-                → OPEN DOTHETHING
-              </a>
-            </div>
-
-            {relatedPostsList.length > 0 && (
-              <div className="mobile-card" style={{ padding: "20px" }}>
-                <h3 className="mobile-heading-3" style={{ marginBottom: "16px", marginTop: "0" }}>
-                  RELATED POSTS
-                </h3>
-                <div style={{ display: "grid", gap: "12px" }}>
-                  {relatedPostsList.map((relatedPost) => (
-                    <a
-                      key={relatedPost.id}
-                      href={`/blog/${relatedPost.slug}`}
-                      style={{
-                        backgroundColor: "var(--pixel-card-bg)",
-                        border: "2px solid var(--pixel-border)",
-                        padding: "12px 16px",
-                        textAlign: "left",
-                        cursor: "pointer",
-                        fontFamily: "'VT323', monospace",
-                        fontSize: "14px",
-                        transition: "all 0.2s",
-                        display: "block",
-                        width: "100%",
-                        color: "var(--pixel-text)",
-                        textDecoration: "none"
-                      }}
-                      onMouseEnter={(e) => {
-                        const el = e.currentTarget as HTMLElement;
-                        el.style.backgroundColor = "var(--pixel-accent)";
-                        el.style.color = "white";
-                        el.style.transform = "translate(-2px, -2px)";
-                      }}
-                      onMouseLeave={(e) => {
-                        const el = e.currentTarget as HTMLElement;
-                        el.style.backgroundColor = "var(--pixel-card-bg)";
-                        el.style.color = "var(--pixel-text)";
-                        el.style.transform = "translate(0, 0)";
-                      }}
-                    >
-                      {relatedPost.title}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            )}
-          </article>
-        </div>
-      </div>
-      
+          {relatedPostsList.length > 0 && <section className="blog-related-section" aria-labelledby="related-posts-heading"><p className="blog-panel-label">KEEP GOING</p><h2 id="related-posts-heading">RELATED POSTS</h2><div>{relatedPostsList.map((relatedPost) => <a key={relatedPost.id} href={`/blog/${relatedPost.slug}`}><p>{relatedPost.category}</p><h3>{relatedPost.title}</h3><span>Read guide <span aria-hidden="true">→</span></span></a>)}</div></section>}
+        </article>
+      </main>
       <Footer />
     </div>
   );

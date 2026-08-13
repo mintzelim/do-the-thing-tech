@@ -604,9 +604,11 @@
 
 ## Approved Second SEO Content Batch
 - [ ] Add one original topic-specific image and descriptive alt text to Time Blindness, Breaking Down Big Tasks, Executive Dysfunction vs. Task Paralysis, Best Tools for ADHD Task Management, Remote Work With ADHD, ADHD and Perfectionism, and AI That Breaks Down Tasks
-- [ ] Add concise, practical common-mistake guidance to the same seven high-intent articles
+- [x] Add concise, practical common-mistake guidance to the same seven high-intent articles
 - [ ] Preserve medical-safety language, source accuracy, article voice, and internal-link continuity
 - [ ] Regenerate metadata, validate the seven updates, and checkpoint the batch
+- [x] Add and upload the original Time Blindness featured image with descriptive alt text
+- [ ] Generate and upload the six remaining topic-specific featured images after the image-generation quota resets
 
 ## Landing-Page Design System Documentation
 - [x] Extract the implemented landing-page design tokens, component rules, and responsive treatments
@@ -639,3 +641,39 @@
 ## Homepage Visual Edit: Remove Marked Section Surface
 - [x] Remove the marked `#fffefb` section surface while preserving its heading, text, card grid, and responsive layout
 - [x] Validate and publish the section-surface cleanup
+
+## About Page Design-System Refresh
+- [ ] Review the existing About page against the documented landing-page header, typography, card, spacing, and motion system
+- [ ] Restyle the About page to match the landing-page design system without removing its existing trust and authority content
+- [ ] Add purple-mascot visual accents using available approved assets or documented placeholders if new asset generation remains unavailable
+- [ ] Validate the responsive About-page refresh, update tests, and publish the revision
+
+## About Page Layout Rhythm Refinement
+- [ ] Add design-system-consistent alternating editorial layouts to the About page while retaining the restrained existing palette and avoiding nested surfaces
+- [ ] Document reusable layout-rhythm patterns, not additional color treatments, in the Markdown and HTML design-system references
+- [ ] Validate the varied About layout across responsive breakpoints and publish the refinement
+
+## Data Presentation Options in the Design System
+- [x] Define three visual options each for article tables, data-chart containers, and bullet lists within the restrained landing-page system
+- [x] Add the three options to the visual HTML design-system reference without applying any option to live article pages
+- [x] Validate the visual reference and present the three options for user selection
+- [x] Finalize Quiet Ledger as the table system, retain both selected chart and bullet-list patterns, and rename the non-tabular Field Notes treatment
+- [x] Document when each selected table, chart, bullet, and editorial data-presentation pattern should be used in both design-system references
+
+## Eyebrow and Breadcrumb System
+- [x] Clarify that the eyebrow is a reusable VT323 styling pattern rather than fixed “A SMALLER NEXT STEP” copy, using context-appropriate labels such as “TOOLS & RESOURCES”
+- [x] Add multiple accessible breadcrumb pattern proposals to the visual HTML design-system reference without changing live blog breadcrumbs
+- [x] Validate the eyebrow guidance and breadcrumb proposals, then present the choices for user selection
+- [x] Apply the selected Option 01 Inline Trail breadcrumb to individual blog posts with semantic navigation and a non-linked current-page label
+
+## Category-Aware Blog Eyebrows
+- [x] Map each blog category to a contextual VT323 eyebrow label, such as “ADHD BASICS” and “TASK MANAGEMENT,” with a readable fallback
+- [x] Render the category-aware eyebrow in article headers while preserving current category metadata and structured data
+- [x] Document the category-to-eyebrow mapping and validate it with regression coverage
+
+## Blog Index and Article Template Design-System Refresh
+- [ ] Review the blog index and individual article template against the documented landing-page shell, typography, panel, card, and motion rules
+- [ ] Restyle the blog index while preserving post metadata, filters, image rendering, routes, and accessibility
+- [ ] Restyle the article template while preserving article copy, citations, structured metadata, related posts, and navigation
+- [ ] Add approved purple-mascot accents to the blog index and article template without adding human pixel art
+- [ ] Validate responsive blog and article layouts, update regression coverage, and publish the public-page refresh

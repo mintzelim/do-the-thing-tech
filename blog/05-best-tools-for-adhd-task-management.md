@@ -2,7 +2,7 @@
 title: "The Best Tools for ADHD Task Management"
 excerpt: "Reviews and analysis of the best task management tools for ADHD brains, from simple apps to comprehensive systems."
 date: "2026-03-30"
-updatedDate: "2026-08-12"
+updatedDate: "2026-08-13"
 category: "Tools & Resources"
 tags:
   - ADHD
@@ -171,7 +171,7 @@ The best tool is the one you will actually use. Start with one tool and use it c
 - **If you need body doubling:** Focusmate
 - **If you need focus assistance:** Forest
 
-## Three Ways Tool Choice Goes Wrong
+## Common Mistakes When Choosing ADHD Task Tools
 
 ### You pick the most impressive app, not the easiest next action
 

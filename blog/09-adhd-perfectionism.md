@@ -2,7 +2,7 @@
 title: "ADHD and Perfectionism: The Hidden Connection"
 excerpt: "Explore the complex relationship between ADHD and perfectionism, from rejection sensitive dysphoria to all-or-nothing thinking."
 date: "2026-04-03"
-updatedDate: "2026-08-12"
+updatedDate: "2026-08-13"
 category: "Emotional Wellbeing"
 tags:
   - ADHD
@@ -140,7 +140,7 @@ Your worth is not determined by the quality of your work. Practice separating yo
 - Mistakes are events, not identities
 - You are more than your productivity
 
-## Common Perfectionism Traps
+## Common Mistakes When ADHD and Perfectionism Collide
 
 ### Improving the system instead of touching the work
 

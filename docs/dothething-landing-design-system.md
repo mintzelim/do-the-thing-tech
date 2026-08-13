@@ -42,7 +42,7 @@
 | **Hero H1** | Inter | 800 | `clamp(3.15rem, 6.2vw, 5.75rem)`, `line-height: .98`, tracking `-.055em`. |
 | **Major section heading** | Inter | 800 | `clamp(2.45rem, 5vw, 4.6rem)`, shared centered 940px maximum. |
 | **Card heading** | Inter | 800 | 1.2rem, `line-height: 1.15`, centered in card grids. |
-| **Eyebrow / pixel accent** | VT323 | 400 | 1–1.22rem with increased letter spacing. The canonical eyebrow reads **“A SMALLER NEXT STEP”** and is used sparingly to introduce a headline or CTA. |
+| **Eyebrow / pixel accent** | VT323 | 400 | 1–1.22rem with increased letter spacing. This is a **styling pattern, not fixed copy**; use a short context label such as **“TOOLS & RESOURCES”**, **“BEHIND THE TOOL”**, or **“READY WHEN YOU ARE.”** |
 | **Supporting copy** | Inter | 400 | `clamp(1rem, 1.35vw, 1.14rem)`, muted ink, centered on a 720px grid where used beneath section headings. |
 
 ### Spacing and shape
@@ -96,11 +96,38 @@ The shared footer uses the same centered 1240px shell and intentionally feels li
 
 Footer links and controls use Inter at approximately 0.8rem. Preserve readable text contrast, visible link labels, and a clear route back into the product. At mobile widths, reduce the outer shell to a 12px inset while retaining the same panel treatment.
 
-### Canonical eyebrow: “A SMALLER NEXT STEP”
+### Contextual eyebrow pattern
 
-> **“A SMALLER NEXT STEP” is the canonical eyebrow in the DoTheThing heading system.** It labels the hierarchy before the headline; it is not a second headline, a navigation item, or body copy.
+> **The DoTheThing eyebrow is a reusable VT323 hierarchy treatment—not a fixed “A SMALLER NEXT STEP” label.** It introduces a headline with context-specific copy; it is not a second headline, a navigation item, or body copy.
 
-Use the eyebrow immediately above a hero, section headline, or CTA title when a compact pixel-art signal helps establish the next action. Set it in VT323 at 1–1.22rem, 0.09em letter spacing, and `--pixel-accent-dark`. The hero version pairs the text with a restrained lime spark. Keep a 10–18px gap below the eyebrow before the Inter headline. Do not set sentence-length copy in the eyebrow style, repeat it mechanically before every heading, or use it to replace semantic heading levels.
+Use the eyebrow immediately above a hero, section headline, or CTA title when a compact pixel-art signal helps establish context. Set it in VT323 at 1–1.22rem, 0.09em letter spacing, and `--pixel-accent-dark`. The hero version may pair the copy with a restrained lime spark. Keep a 10–18px gap below it before the Inter headline. Examples include **“TOOLS & RESOURCES”** for an article, **“BEHIND THE TOOL”** for creator context, and **“READY WHEN YOU ARE”** for a CTA. **“A SMALLER NEXT STEP”** remains an optional homepage message, not a required repeated label.
+
+On an individual blog article, derive the eyebrow from the article’s category so the styling supplies hierarchy while the copy supplies topical context.
+
+| Article category | Article eyebrow |
+|---|---|
+| ADHD / ADHD Basics | **ADHD BASICS** |
+| ADHD at Work | **ADHD AT WORK** |
+| Daily Life | **DAILY LIFE** |
+| Daily Routines | **DAILY ROUTINES** |
+| Emotional Wellbeing | **EMOTIONAL WELLBEING** |
+| Psychology | **ADHD & PSYCHOLOGY** |
+| Task Management | **TASK MANAGEMENT** |
+| Tools & Resources | **TOOLS & RESOURCES** |
+
+If a new category has no explicit mapping, use its trimmed uppercase category name. Never replace the semantic category metadata or structured data; the eyebrow is a supplementary visual label.
+
+### Breadcrumbs
+
+Breadcrumbs appear on article pages to show the reader’s location and to provide a low-friction route back to the guide index. They use Inter, semantic navigation with an `aria-label`, visible text links, and a non-linked current-page label. Use them once, directly above the article header; do not repeat the current title elsewhere in the breadcrumb.
+
+| Proposal | Visual treatment | Best use |
+|---|---|---|
+| **Inline Trail** | Quiet text path with slim slash separators, no surface or border. | Long article titles and content-led pages where the trail should remain visually recessive. |
+| **Segmented Trail** | Each navigable level is a small warm-white outlined control; the current title remains plain text. | Shorter guide routes where the navigation itself benefits from a little more touch clarity. |
+| **Return Path** | A compact “Back to Blog” action paired with a small current-location line. | Mobile-first articles or a deep guide series where returning to the index is the reader’s main navigation need. |
+
+At mobile widths, preserve the Home and Blog links, truncate only the current label, and keep at least a 44px target for any standalone return control. The breadcrumb never becomes a page heading or a filter control.
 
 ### Primary and secondary buttons
 
@@ -116,6 +143,18 @@ Buttons use Inter at 700 weight, 0.98rem, 8px radius, and 12px × 22px padding. 
 
 Main panels use a 1px panel border, 14px radius, and one offset shadow. Repeated content cards use a lighter 1px border, 10px radius, and a smaller cool-gray shadow. Avoid borders inside an already bordered wide panel unless the interior contains repeatable card items.
 
+### Alternate public-page rhythm
+
+Public authority and resource pages may alternate **three approved compositional modes** to create hierarchy without abandoning the calm landing system. Use them between standard warm-white panels rather than applying a new color to every section.
+
+| Pattern | Surface and layout | Appropriate use |
+|---|---|---|
+| **Lavender editorial split** | A pale-indigo `#eef0ff` main panel with one transparent mascot illustration opposite a text block. It retains the 14px panel radius, one 1px outline, and one low-contrast shadow. | Mission, audience, or creator context where a quieter tonal break helps the reader reset. |
+| **Canvas card field** | The outer section stays transparent on the warm-gray canvas; repeated white cards become the only visible surfaces. Incomplete rows are centered deliberately. | A short collection of challenges, principles, or steps that benefits from a scannable grid. |
+| **Ink editorial band** | A `#26364a` full panel with white text, restrained lavender/lime detail, and repeatable warm-white cards only where a card grid is needed. The panel may use one subtle static geometric accent. | Product differentiation, an important contrast statement, or a single decisive CTA. |
+
+The ink band is not a dark-mode theme and should never be used for dense long-form reading. Keep its copy concise, retain the same 14px radius and 1px ink outline, and preserve the short transform/color interaction rules. At mobile widths, every split stacks to one column and the card field becomes a single column.
+
 ### How It Works cards
 
 Five desktop cards use equal-width columns and 16px gutters. Each card uses: a 34px indigo number, a 132px × 108px transparent mascot illustration stage, a centered 1.2rem heading, and centered 0.98rem supporting copy. At 1100px the grid changes to three columns, then two below 860px, and one column at 560px.
@@ -127,6 +166,21 @@ The audience section mirrors How It Works density: the same **132px × 108px** i
 ### CTA panel
 
 The CTA is a single wide 1120px panel, never a landscape card inside another section card. It has a compact transparent flag-on-island illustration left of a text block. On mobile, the panel becomes one column and centers its eyebrow, headline, supporting copy, and button.
+
+### Article data presentation
+
+Use the selected components below to make evidence and practical guidance easier to scan without making an educational article feel like a dashboard. **Quiet Ledger is the only table system.** The other patterns are deliberately named as chart, list, or editorial components rather than tables.
+
+| Component | Use it when | Do not use it when |
+|---|---|---|
+| **Quiet Ledger table** | The reader needs to compare two or more consistent variables across short rows, such as a method, its benefit, and its limitation. Keep a real semantic table, a visible header row, and concise cells. | The content is a narrative sequence, a decision path, or has uneven prose-heavy cells. |
+| **Focus bar chart** | Comparing a small number of discrete values or categories with the same unit. Use a visible legend and a short caption that states the measure and time frame. | The reader needs to understand an order of actions, a part-to-whole relationship, or an unquantified idea. |
+| **Guided progress chart** | Showing a bounded progression through labelled stages, such as start, focus, and reset. Labels must remain visible; the bars do not replace written explanation. | The bar lengths could be read as precise data without a defensible scale. |
+| **Check bullets** | A parallel set of tips, signs, or self-checks where order does not matter. Keep each point to one clear idea. | The reader must complete actions in sequence. |
+| **Numbered action steps** | A process, routine, or troubleshooting sequence where the order materially changes the outcome. | The list is a collection of interchangeable suggestions. |
+| **Context strips** | A short editorial orientation pattern such as **Now / Next / Later**, **Notice / Test / Keep**, or a definition with an adjacent practical implication. It is a non-tabular component. | Comparing repeated values, presenting numeric data, or claiming a ranked result. |
+
+All data components use Inter for reading, thin blue-gray outlines, the restrained indigo/lime palette, visible headings, and normal document flow. On narrow screens, tables stay horizontally scrollable rather than compressing text beyond readability; chart and list components stack as ordinary document blocks.
 
 ## 5. Illustration System
 

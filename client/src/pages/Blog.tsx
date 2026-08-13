@@ -1,9 +1,11 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import { displayBlogCategory, getBlogCategories } from "@/lib/blogCategoryUtils";
+import { assetUrl } from "@/lib/assetUrl";
 import "../pixel-art-refined.css";
+import "../blog-refined.css";
 
 type BlogPost = {
   id: string;
@@ -21,253 +23,94 @@ type BlogPost = {
   featuredImageAlt?: string;
 };
 
+const blogMascot = assetUrl("/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png");
+
+function BlogStatus({ message, isError = false }: { message: string; isError?: boolean }) {
+  return (
+    <div className="mobile-frame blog-page">
+      <Navigation />
+      <main className="blog-shell"><section className="blog-status-panel"><p className="blog-eyebrow">TOOLS &amp; RESOURCES</p><h1>BLOG</h1><p className={isError ? "blog-status-error" : "blog-status-copy"}>{message}</p></section></main>
+      <Footer />
+    </div>
+  );
+}
+
 export default function Blog() {
   const [posts, setPosts] = useState<BlogPost[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Update meta tags when component mounts
   useEffect(() => {
     updateMetaTags(pageMetaTags.blog);
   }, []);
 
-  // Load blog posts from generated JSON
   useEffect(() => {
     const loadPosts = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch(`/blog-posts.json?v=${Date.now()}`, {
-          cache: 'no-store',
-        });
-        if (!response.ok) {
-          throw new Error(`Failed to load blog posts: ${response.statusText}`);
-        }
-        const data = await response.json();
-        setPosts(data);
+        const response = await fetch(`/blog-posts.json?v=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error(`Failed to load blog posts: ${response.statusText}`);
+        setPosts(await response.json());
         setError(null);
       } catch (err) {
-        console.error('Error loading blog posts:', err);
-        setError('Failed to load blog posts. Please try again later.');
+        console.error("Error loading blog posts:", err);
+        setError("Failed to load blog posts. Please try again later.");
       } finally {
         setIsLoading(false);
       }
     };
-
     loadPosts();
   }, []);
 
   const categories = getBlogCategories(posts);
+  const filteredPosts = selectedCategory ? posts.filter((post) => post.category === selectedCategory) : posts;
 
-  // Filter posts based on selected category
-  const filteredPosts = selectedCategory
-    ? posts.filter(post => post.category === selectedCategory)
-    : posts;
-
-  if (isLoading) {
-    return (
-      <div className="mobile-frame">
-        <Navigation />
-        <div className="mobile-content">
-          <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
-            <h1 className="mobile-heading-1" style={{ marginBottom: "24px" }}>BLOG</h1>
-            <div className="mobile-card">
-              <p className="mobile-body">Loading blog posts...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="mobile-frame">
-        <Navigation />
-        <div className="mobile-content">
-          <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
-            <h1 className="mobile-heading-1" style={{ marginBottom: "24px" }}>BLOG</h1>
-            <div className="mobile-card">
-              <p className="mobile-body" style={{ color: '#c62828' }}>
-                {error}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  if (isLoading) return <BlogStatus message="Loading blog posts..." />;
+  if (error) return <BlogStatus message={error} isError />;
 
   return (
-    <div className="mobile-frame">
+    <div className="mobile-frame blog-page">
       <Navigation />
-
-      <div className="mobile-content">
-        <div style={{ maxWidth: "900px", margin: "0 auto", width: "100%", padding: "0 16px" }}>
-          <div style={{ marginBottom: "32px" }}>
-            <h1 className="mobile-heading-1" style={{ marginBottom: "12px" }}>BLOG</h1>
-            <p className="mobile-body" style={{ marginBottom: "16px", color: "var(--pixel-text-light)" }}>
-              Explore articles about ADHD, task management, productivity, and neurodiversity.
-            </p>
-
-            {/* Category Filter */}
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginBottom: "24px" }}>
-              <button
-                onClick={() => setSelectedCategory(null)}
-                style={{
-                  backgroundColor: selectedCategory === null ? "var(--pixel-accent)" : "transparent",
-                  color: selectedCategory === null ? "white" : "var(--pixel-text)",
-                  border: "2px solid var(--pixel-border)",
-                  padding: "6px 12px",
-                  fontFamily: "'VT323', monospace",
-                  fontSize: "12px",
-                  cursor: "pointer",
-                  transition: "all 0.2s",
-                }}
-                onMouseEnter={(e) => {
-                  if (selectedCategory !== null) {
-                    const el = e.currentTarget as HTMLElement;
-                    el.style.backgroundColor = "var(--pixel-accent)";
-                    el.style.color = "white";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  if (selectedCategory !== null) {
-                    const el = e.currentTarget as HTMLElement;
-                    el.style.backgroundColor = "transparent";
-                    el.style.color = "var(--pixel-text)";
-                  }
-                }}
-              >
-                ALL
-              </button>
-              {categories.map((category) => (
-                <button
-                  key={category}
-                  onClick={() => setSelectedCategory(category)}
-                  style={{
-                    backgroundColor: selectedCategory === category ? "var(--pixel-accent)" : "transparent",
-                    color: selectedCategory === category ? "white" : "var(--pixel-text)",
-                    border: "2px solid var(--pixel-border)",
-                    padding: "6px 12px",
-                    fontFamily: "'VT323', monospace",
-                    fontSize: "12px",
-                    cursor: "pointer",
-                    transition: "all 0.2s",
-                  }}
-                  onMouseEnter={(e) => {
-                    if (selectedCategory !== category) {
-                      const el = e.currentTarget as HTMLElement;
-                      el.style.backgroundColor = "var(--pixel-accent)";
-                      el.style.color = "white";
-                    }
-                  }}
-                  onMouseLeave={(e) => {
-                    if (selectedCategory !== category) {
-                      const el = e.currentTarget as HTMLElement;
-                      el.style.backgroundColor = "transparent";
-                      el.style.color = "var(--pixel-text)";
-                    }
-                  }}
-                >
-                  {category}
-                </button>
-              ))}
-            </div>
+      <main className="blog-shell">
+        <section className="blog-index-hero" aria-labelledby="blog-page-title">
+          <div className="blog-index-copy">
+            <p className="blog-eyebrow"><span aria-hidden="true">✦</span> TOOLS &amp; RESOURCES</p>
+            <h1 id="blog-page-title">BLOG</h1>
+            <p>Explore articles about ADHD, task management, productivity, and neurodiversity.</p>
           </div>
+          <div className="blog-index-art" aria-hidden="true"><img src={blogMascot} alt="" /></div>
+        </section>
 
-          <div style={{ display: "grid", gap: "16px", marginBottom: "32px" }}>
-            {filteredPosts.map((post) => (
-              <a
-                key={post.id}
-                href={`/blog/${post.slug}`}
-                style={{
-                  backgroundColor: "var(--pixel-card-bg)",
-                  border: "3px solid var(--pixel-border)",
-                  padding: "0",
-                  textAlign: "left",
-                  cursor: "pointer",
-                  fontFamily: "'VT323', monospace",
-                  transition: "all 0.2s ease",
-                  boxShadow: "4px 4px 0 rgba(0, 0, 0, 0.1)",
-                  position: "relative",
-                  display: "block",
-                  width: "100%",
-                  textDecoration: "none",
-                  color: "var(--pixel-text)",
-                  overflow: "hidden",
-                }}
-                onMouseEnter={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  // Use a light accent background instead of full purple for better contrast
-                  el.style.backgroundColor = "#e0e7ff";
-                  el.style.color = "var(--pixel-text)";
-                  el.style.transform = "translate(-2px, -2px)";
-                  el.style.boxShadow = "6px 6px 0 rgba(0, 0, 0, 0.15)";
-                  // Update tag styling for hover state
-                  const tag = el.querySelector('span[style*="background-color"]') as HTMLElement;
-                  if (tag) {
-                    tag.style.backgroundColor = "var(--pixel-accent)";
-                    tag.style.color = "white";
-                  }
-                }}
-                onMouseLeave={(e) => {
-                  const el = e.currentTarget as HTMLElement;
-                  el.style.backgroundColor = "var(--pixel-card-bg)";
-                  el.style.color = "var(--pixel-text)";
-                  el.style.transform = "translate(0, 0)";
-                  el.style.boxShadow = "4px 4px 0 rgba(0, 0, 0, 0.1)";
-                }}
-              >
-                {post.featuredImage && (
-                  <img
-                    src={post.featuredImage}
-                    alt={post.featuredImageAlt || post.title}
-                    style={{
-                      width: "100%",
-                      height: "200px",
-                      objectFit: "cover",
-                      display: "block",
-                      marginBottom: "0"
-                    }}
-                  />
-                )}
-                <div style={{ padding: "20px" }}>
-                  <h3 className="mobile-heading-3" style={{ marginBottom: "8px", marginTop: "0" }}>
-                    {post.title}
-                  </h3>
-                  <p className="mobile-body-sm" style={{ marginBottom: "12px", color: "var(--pixel-text-light)" }}>
-                    {post.excerpt}
-                  </p>
-                  <div style={{ display: "flex", gap: "12px", fontSize: "12px", color: "var(--pixel-text-light)", flexWrap: "wrap" }}>
-                    <span>{post.date}</span>
-                    <span>•</span>
-                    <span>{post.readTime}</span>
-                    <span>•</span>
-                    <span style={{ 
-                      backgroundColor: "var(--pixel-accent)", 
-                      color: "white", 
-                      padding: "2px 8px",
-                      fontFamily: "'VT323', monospace"
-                    }}>
-                      {displayBlogCategory(post.category)}
-                    </span>
-                  </div>
-                </div>
-              </a>
+        <section className="blog-filter-panel" aria-label="Filter articles by category">
+          <p className="blog-panel-label">EXPLORE GUIDES</p>
+          <h2>Find the next useful read</h2>
+          <div className="blog-filter-list">
+            <button type="button" className={selectedCategory === null ? "blog-filter is-active" : "blog-filter"} onClick={() => setSelectedCategory(null)}>ALL</button>
+            {categories.map((category) => (
+              <button type="button" key={category} className={selectedCategory === category ? "blog-filter is-active" : "blog-filter"} onClick={() => setSelectedCategory(category)}>{category}</button>
             ))}
           </div>
+        </section>
 
-          {filteredPosts.length === 0 && (
-            <div className="mobile-card" style={{ padding: "24px", textAlign: "center" }}>
-              <p className="mobile-body" style={{ color: "var(--pixel-text-light)" }}>
-                No posts found in this category.
-              </p>
-            </div>
-          )}
-        </div>
-      </div>
+        <section className="blog-post-grid" aria-live="polite" aria-label="Blog posts">
+          {filteredPosts.map((post) => (
+            <a className="blog-post-card" key={post.id} href={`/blog/${post.slug}`}>
+              <div className="blog-card-image-wrap">
+                {post.featuredImage ? <img src={post.featuredImage} alt={post.featuredImageAlt || post.title} className="blog-card-image" /> : <img src={blogMascot} alt="" className="blog-card-mascot" aria-hidden="true" />}
+              </div>
+              <div className="blog-card-copy">
+                <p className="blog-card-category">{displayBlogCategory(post.category)}</p>
+                <h2>{post.title}</h2>
+                <p className="blog-card-excerpt">{post.excerpt}</p>
+                <div className="blog-card-meta"><span>{post.date}</span><span aria-hidden="true">•</span><span>{post.readTime}</span></div>
+              </div>
+            </a>
+          ))}
+        </section>
 
+        {filteredPosts.length === 0 && <section className="blog-empty-panel"><p>No posts found in this category.</p></section>}
+      </main>
       <Footer />
     </div>
   );

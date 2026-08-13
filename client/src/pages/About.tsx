@@ -1,392 +1,174 @@
-import { useEffect } from 'react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { useLocation } from 'wouter';
-import { updateMetaTags, pageMetaTags } from '@/lib/metaTags';
-import { assetUrl } from '@/lib/assetUrl';
+import { useEffect } from "react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+import { useLocation } from "wouter";
+import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
+import { assetUrl } from "@/lib/assetUrl";
+import "../about-refined.css";
+import "../about-rhythm.css";
+
+const MASCOTS = {
+  focus: assetUrl("/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png"),
+  brainDump: assetUrl("/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png"),
+  breakdown: assetUrl("/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png"),
+  timer: assetUrl("/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png"),
+};
+
+const challenges = [
+  ["Time Blindness", "Difficulty perceiving how much time has passed or will be needed"],
+  ["Task Paralysis", "Feeling overwhelmed by large tasks and not knowing where to start"],
+  ["Executive Dysfunction", "Difficulty initiating, planning, and completing tasks"],
+  ["Time Estimation Errors", "Consistently underestimating how long things take"],
+  ["Hyperfocus Variability", "Ability to focus intensely on interesting tasks but struggling with boring ones"],
+];
+
+const features = [
+  ["AI Task Breakdown", "Instantly decompose tasks into actionable steps"],
+  ["Smart Time Estimates", "Realistic estimates with ADHD-friendly buffers"],
+  ["Focus Level Adjustment", "Estimates change based on your focus today"],
+  ["Countdown Timer", "Visual timer to help with time perception"],
+  ["Editable Steps", "Adjust, delete, or reorder steps as needed"],
+  ["No Login Required", "Start immediately. Use as a guest."],
+];
+
+const howItWorks = [
+  ["BRAIN DUMP", "Enter a single task or brain dump everything you need to do. No organization needed."],
+  ["SELECT FOCUS LEVEL", "Tell us if you're hyperfocused, normal, or distracted today. This adjusts time estimates."],
+  ["CHOOSE BREAKDOWN SIZE", "Pick how detailed you want the breakdown: Tiny Steps, Balanced, or Big Milestones."],
+  ["GET AI BREAKDOWN", "AI instantly breaks your task into micro-steps with realistic time estimates."],
+  ["EDIT & EXECUTE", "Adjust steps, check them off, and use the countdown timer to stay on track."],
+];
 
 export default function About() {
   const [, navigate] = useLocation();
 
-  // Update meta tags when component mounts
   useEffect(() => {
     updateMetaTags(pageMetaTags.about);
   }, []);
 
   return (
-    <div className="mobile-frame">
+    <div className="mobile-frame about-page">
       <Navigation />
-      <div className="mobile-content">
-        <div className="max-w-3xl mx-auto">
-        {/* Back Button */}
-        <button
-          onClick={() => navigate("/")}
-          className="text-sm mb-8 text-black border-4 border-black px-4 py-3 active:translate-y-1 active:shadow-none transition-all hover:bg-gray-100"
-          style={{
-            boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
-            fontFamily: 'VT323, monospace',
-            fontSize: '12px',
-            letterSpacing: '2px'
-          }}
-        >
-          BACK TO HOME
-        </button>
-
-        {/* Main Title */}
-        <div className="border-4 border-black p-6 mb-8 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-        }}>
-          <h1 className="text-4xl md:text-5xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '36px',
-            letterSpacing: '3px',
-            lineHeight: '1.2'
-          }}>
-            ABOUT DO THE THING
-          </h1>
-          <p className="text-lg md:text-xl text-gray-700" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '16px',
-            lineHeight: '1.6'
-          }}>
-            Understanding ADHD, Task Management, and Why We Built This App
-          </p>
-        </div>
-
-        {/* Meet the Author */}
-        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Roboto Mono', monospace"
-        }}>
-          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '24px',
-            letterSpacing: '2px'
-          }}>
-            MEET THE CREATOR
-          </h2>
-          <div style={{
-            display: 'flex',
-            alignItems: 'flex-start',
-            gap: '20px',
-            flexWrap: 'wrap',
-            marginBottom: '20px',
-          }}>
-            <figure style={{ margin: 0, width: '148px', flex: '0 0 148px' }}>
-              <img
-                src={assetUrl("/manus-storage/dothething-creator-avatar_65ec01fa.png")}
-                alt="Illustrative pixel-art avatar for DoTheThing’s creator section"
-                width={148}
-                height={148}
-                style={{
-                  display: 'block',
-                  width: '148px',
-                  height: '148px',
-                  objectFit: 'cover',
-                  border: '3px solid #000',
-                  imageRendering: 'pixelated',
-                  backgroundColor: '#f4f4f4',
-                }}
-              />
-              <figcaption style={{ fontSize: '11px', lineHeight: '1.35', marginTop: '8px', color: '#4b5563' }}>
-                Illustrative avatar for this site; not a photographic portrait.
-              </figcaption>
-            </figure>
-            <div style={{ flex: '1 1 340px', minWidth: '0' }}>
-              <p style={{ marginTop: 0, marginBottom: '10px', fontWeight: 700 }}>
-                Lim Min Tze — founder, product developer, and the person behind DoTheThing.
-              </p>
-              <p style={{ margin: 0 }}>
-                This site combines lived experience with clearly sourced educational material. It is a practical productivity resource, not a substitute for diagnosis or medical care.
-              </p>
-            </div>
+      <main className="about-shell">
+        <section className="about-hero" aria-labelledby="about-page-title">
+          <div className="about-hero-copy">
+            <p className="about-eyebrow"><span aria-hidden="true">✦</span> ABOUT DOTHETHING</p>
+            <h1 id="about-page-title">ABOUT DO THE THING</h1>
+            <p className="about-hero-description">Understanding ADHD, Task Management, and Why We Built This App</p>
+            <button type="button" className="about-secondary-action" onClick={() => navigate("/")}>BACK TO HOME</button>
           </div>
-          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '14px',
-            lineHeight: '1.8'
-          }}>
-            <p>
-              DoTheThing was built by <strong>Lim Min Tze</strong>, a product developer with personal experience managing ADHD. After years of struggling with task paralysis, time blindness, and executive dysfunction, I realized that existing productivity tools were designed for neurotypical brains—not ADHD brains.
-            </p>
-            <p>
-              I spent months researching ADHD neuroscience, interviewing others with ADHD, and testing different approaches to task breakdown and time estimation. The result is DoTheThing: a tool built specifically for how ADHD brains actually work.
-            </p>
-            <p className="font-bold mt-4">
-              About Lim Min Tze:
-            </p>
-            <ul className="space-y-2 ml-6">
-              <li>• Founder of <strong>Boundless One Ventures</strong>, a neurodivergent-focused software company</li>
-              <li>• 10+ years in product development and software engineering</li>
-              <li>• Personal experience with late-diagnosis ADHD and time-blindness management</li>
-              <li>• Research into ADHD neuroscience, executive function, and time perception (Barkley, 2022; Ayano et al., 2023)</li>
-              <li>• Interviewed 50+ people with ADHD about their productivity struggles</li>
-              <li>• Building accessible tools that treat executive dysfunction as a design constraint, not a user failure</li>
+          <div className="about-hero-art" aria-hidden="true">
+            <img src={MASCOTS.focus} alt="" />
+          </div>
+        </section>
+
+        <section className="about-panel about-creator-panel" aria-labelledby="creator-heading">
+          <div className="about-section-copy">
+            <p className="about-panel-label">BEHIND THE TOOL</p>
+            <h2 id="creator-heading">MEET THE CREATOR</h2>
+            <p className="about-lead"><strong>Lim Min Tze — founder, product developer, and the person behind DoTheThing.</strong></p>
+            <p>This site combines lived experience with clearly sourced educational material. It is a practical productivity resource, not a substitute for diagnosis or medical care.</p>
+            <p>DoTheThing was built by <strong>Lim Min Tze</strong>, a product developer with personal experience managing ADHD. After years of struggling with task paralysis, time blindness, and executive dysfunction, I realized that existing productivity tools were designed for neurotypical brains—not ADHD brains.</p>
+            <p>I spent months researching ADHD neuroscience, interviewing others with ADHD, and testing different approaches to task breakdown and time estimation. The result is DoTheThing: a tool built specifically for how ADHD brains actually work.</p>
+            <p><strong>About Lim Min Tze:</strong></p>
+            <ul className="about-check-list">
+              <li>Founder of <strong>Boundless One Ventures</strong>, a neurodivergent-focused software company</li>
+              <li>10+ years in product development and software engineering</li>
+              <li>Personal experience with late-diagnosis ADHD and time-blindness management</li>
+              <li>Research into ADHD neuroscience, executive function, and time perception (Barkley, 2022; Ayano et al., 2023)</li>
+              <li>Interviewed 50+ people with ADHD about their productivity struggles</li>
+              <li>Building accessible tools that treat executive dysfunction as a design constraint, not a user failure</li>
             </ul>
-            <p className="mt-4">
-              This tool exists because I needed it. And if you're reading this, you probably need it too.
-            </p>
-            <div className="mt-6 p-4 bg-gray-50 border-2 border-gray-200 text-sm" style={{fontFamily: "'Roboto Mono', monospace"}}>
-              <p className="font-bold mb-1">Professional Profiles:</p>
-              <p>
-                <a href="https://www.linkedin.com/in/min-tze-lim" target="_blank" rel="noopener noreferrer" className="text-black underline">LinkedIn</a>
-                {' | '}
-                <a href="https://github.com/mintzelim" target="_blank" rel="noopener noreferrer" className="text-black underline">GitHub</a>
-                {' | '}
-                <a href="mailto:support@dothething.tech" className="text-black underline">Email</a>
-              </p>
-            </div>
+            <p>This tool exists because I needed it. And if you're reading this, you probably need it too.</p>
+            <nav className="about-profile-links" aria-label="Creator professional profiles">
+              <span>Professional Profiles:</span>
+              <a href="https://www.linkedin.com/in/min-tze-lim" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/mintzelim" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="mailto:support@dothething.tech">Email</a>
+            </nav>
           </div>
-        </div>
-
-        {/* Mission Section */}
-        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Roboto Mono', monospace"
-        }}>
-          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '24px',
-            letterSpacing: '2px'
-          }}>
-            OUR MISSION
-          </h2>
-          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '14px',
-            lineHeight: '1.8'
-          }}>
-            <p>
-              DoTheThing exists to help neurodivergent individuals—especially those with ADHD—break down overwhelming tasks into manageable steps, estimate realistic time, and actually get things done.
-            </p>
-            <p>
-              We believe that executive dysfunction isn't a personal failure. It's a neurological difference that deserves tools designed specifically for how ADHD brains work.
-            </p>
+          <div className="about-side-art about-creator-art" aria-hidden="true">
+            <img src={MASCOTS.brainDump} alt="" />
           </div>
-        </div>
+        </section>
 
-        {/* ADHD & Task Management */}
-        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Roboto Mono', monospace"
-        }}>
-          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '24px',
-            letterSpacing: '2px'
-          }}>
-            ADHD AND TASK MANAGEMENT
-          </h2>
-          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '14px',
-            lineHeight: '1.8'
-          }}>
-            <p>
-              People with ADHD often struggle with executive function—the brain's ability to plan, organize, and execute tasks. This isn't laziness or lack of motivation. It's how their neurology works.
-            </p>
-            <p className="font-bold">Common challenges include:</p>
-            <ul className="space-y-2 ml-6">
-              <li>• <strong>Time Blindness:</strong> Difficulty perceiving how much time has passed or will be needed</li>
-              <li>• <strong>Task Paralysis:</strong> Feeling overwhelmed by large tasks and not knowing where to start</li>
-              <li>• <strong>Executive Dysfunction:</strong> Difficulty initiating, planning, and completing tasks</li>
-              <li>• <strong>Time Estimation Errors:</strong> Consistently underestimating how long things take</li>
-              <li>• <strong>Hyperfocus Variability:</strong> Ability to focus intensely on interesting tasks but struggling with boring ones</li>
-            </ul>
+        <section className="about-panel about-mission-panel about-tone-lavender" aria-labelledby="mission-heading">
+          <div className="about-side-art" aria-hidden="true"><img src={MASCOTS.breakdown} alt="" /></div>
+          <div className="about-section-copy">
+            <p className="about-panel-label">OUR PURPOSE</p>
+            <h2 id="mission-heading">OUR MISSION</h2>
+            <p>DoTheThing exists to help neurodivergent individuals—especially those with ADHD—break down overwhelming tasks into manageable steps, estimate realistic time, and actually get things done.</p>
+            <p>We believe that executive dysfunction isn't a personal failure. It's a neurological difference that deserves tools designed specifically for how ADHD brains work.</p>
           </div>
-        </div>
+        </section>
 
-        {/* Why DoTheThing Exists */}
-        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Roboto Mono', monospace"
-        }}>
-          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '24px',
-            letterSpacing: '2px'
-          }}>
-            WHY DO THE THING EXISTS
-          </h2>
-          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '14px',
-            lineHeight: '1.8'
-          }}>
-            <p>
-              Traditional task management apps were built for neurotypical brains. They assume you can estimate time accurately, break down tasks logically, and maintain focus on boring work. For ADHD brains, these apps often make things worse.
-            </p>
-            <p>
-              DoTheThing is different. We built it specifically for how ADHD brains work:
-            </p>
-            <ul className="space-y-2 ml-6">
-              <li>• <strong>AI-Powered Breakdown:</strong> Instantly breaks tasks into micro-steps</li>
-              <li>• <strong>Smart Time Estimates:</strong> Includes buffers for time blindness (20-30%)</li>
-              <li>• <strong>Focus-Level Adjustment:</strong> Estimates change based on your focus level today</li>
-              <li>• <strong>Countdown Timer:</strong> Visual timer to help with time perception</li>
-              <li>• <strong>Minimal Friction:</strong> No complex setup. Start immediately.</li>
-            </ul>
+        <section className="about-panel about-centered-panel about-challenges-section" aria-labelledby="challenges-heading">
+          <p className="about-eyebrow"><span aria-hidden="true">✦</span> WHAT THIS TOOL SUPPORTS</p>
+          <h2 id="challenges-heading">ADHD AND TASK MANAGEMENT</h2>
+          <p className="about-centered-lede">People with ADHD often struggle with executive function—the brain's ability to plan, organize, and execute tasks. This isn't laziness or lack of motivation. It's how their neurology works.</p>
+          <p className="about-grid-intro"><strong>Common challenges include:</strong></p>
+          <div className="about-card-grid about-challenge-grid">
+            {challenges.map(([title, description]) => (
+              <article className="about-mini-card" key={title}><h3>{title}</h3><p>{description}</p></article>
+            ))}
           </div>
-        </div>
+        </section>
 
-        {/* How It Works */}
-        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Roboto Mono', monospace"
-        }}>
-          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '24px',
-            letterSpacing: '2px'
-          }}>
-            HOW IT WORKS
-          </h2>
-          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '14px',
-            lineHeight: '1.8'
-          }}>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">1. BRAIN DUMP</p>
-              <p>Enter a single task or brain dump everything you need to do. No organization needed.</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">2. SELECT FOCUS LEVEL</p>
-              <p>Tell us if you're hyperfocused, normal, or distracted today. This adjusts time estimates.</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">3. CHOOSE BREAKDOWN SIZE</p>
-              <p>Pick how detailed you want the breakdown: Tiny Steps, Balanced, or Big Milestones.</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">4. GET AI BREAKDOWN</p>
-              <p>AI instantly breaks your task into micro-steps with realistic time estimates.</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">5. EDIT & EXECUTE</p>
-              <p>Adjust steps, check them off, and use the countdown timer to stay on track.</p>
-            </div>
+        <section className="about-panel about-product-panel about-accent-band" aria-labelledby="why-heading">
+          <div className="about-section-copy">
+            <p className="about-panel-label">DESIGNED FOR REAL FRICTION</p>
+            <h2 id="why-heading">WHY DO THE THING EXISTS</h2>
+            <p>Traditional task management apps were built for neurotypical brains. They assume you can estimate time accurately, break down tasks logically, and maintain focus on boring work. For ADHD brains, these apps often make things worse.</p>
+            <p>DoTheThing is different. We built it specifically for how ADHD brains work:</p>
           </div>
-        </div>
-
-        {/* Key Features */}
-        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Roboto Mono', monospace"
-        }}>
-          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '24px',
-            letterSpacing: '2px'
-          }}>
-            KEY FEATURES
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '14px',
-            lineHeight: '1.8'
-          }}>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">AI Task Breakdown</p>
-              <p>Instantly decompose tasks into actionable steps</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">Smart Time Estimates</p>
-              <p>Realistic estimates with ADHD-friendly buffers</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">Focus Level Adjustment</p>
-              <p>Estimates change based on your focus today</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">Countdown Timer</p>
-              <p>Visual timer to help with time perception</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">Editable Steps</p>
-              <p>Adjust, delete, or reorder steps as needed</p>
-            </div>
-            <div className="border-2 border-gray-300 p-4">
-              <p className="font-bold mb-2">No Login Required</p>
-              <p>Start immediately. Use as a guest.</p>
-            </div>
+          <div className="about-side-art" aria-hidden="true"><img src={MASCOTS.timer} alt="" /></div>
+          <div className="about-card-grid about-feature-grid">
+            {features.map(([title, description]) => (
+              <article className="about-mini-card" key={title}><h3>{title}</h3><p>{description}</p></article>
+            ))}
           </div>
-        </div>
+        </section>
 
-        {/* For Whom */}
-        <div className="border-4 border-black p-6 mb-6 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Roboto Mono', monospace"
-        }}>
-          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '24px',
-            letterSpacing: '2px'
-          }}>
-            FOR WHOM
-          </h2>
-          <div className="space-y-4 text-base md:text-lg text-gray-700" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '14px',
-            lineHeight: '1.8'
-          }}>
+        <section className="about-panel about-centered-panel about-workflow-section" aria-labelledby="how-heading">
+          <p className="about-panel-label">THE WORKFLOW</p>
+          <h2 id="how-heading">HOW IT WORKS</h2>
+          <div className="about-card-grid about-steps-grid">
+            {howItWorks.map(([title, description], index) => (
+              <article className="about-step-card" key={title}>
+                <span className="about-step-number">{index + 1}</span>
+                <h3>{title}</h3>
+                <p>{description}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="about-panel about-for-whom-panel about-tone-lavender" aria-labelledby="for-whom-heading">
+          <div className="about-side-art" aria-hidden="true"><img src={MASCOTS.focus} alt="" /></div>
+          <div className="about-section-copy">
+            <p className="about-panel-label">BUILT WITH YOU IN MIND</p>
+            <h2 id="for-whom-heading">FOR WHOM</h2>
             <p>DoTheThing is built for:</p>
-            <ul className="space-y-2 ml-6">
-              <li>• People with ADHD who struggle with task initiation and time management</li>
-              <li>• Anyone with executive dysfunction or time blindness</li>
-              <li>• Neurodivergent individuals who need tools designed for their brain</li>
-              <li>• People who feel overwhelmed by large projects</li>
-              <li>• Anyone who consistently underestimates how long things take</li>
+            <ul className="about-check-list">
+              <li>People with ADHD who struggle with task initiation and time management</li>
+              <li>Anyone with executive dysfunction or time blindness</li>
+              <li>Neurodivergent individuals who need tools designed for their brain</li>
+              <li>People who feel overwhelmed by large projects</li>
+              <li>Anyone who consistently underestimates how long things take</li>
             </ul>
           </div>
-        </div>
+        </section>
 
-        {/* CTA Section */}
-        <div className="border-4 border-black p-6 mb-8 bg-white" style={{
-          boxShadow: '6px 6px 0px rgba(0, 0, 0, 0.3)',
-          fontFamily: "'Roboto Mono', monospace"
-        }}>
-          <h2 className="text-2xl md:text-3xl mb-4 text-black" style={{
-            fontFamily: 'VT323, monospace',
-            fontSize: '24px',
-            letterSpacing: '2px'
-          }}>
-            READY TO DO THE THING?
-          </h2>
-          <p className="text-base md:text-lg text-gray-700 mb-6" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '14px',
-            lineHeight: '1.8'
-          }}>
-            Start breaking down your tasks right now. No signup required. No credit card. Just enter your task and let AI do the work.
-          </p>
-          <button
-            onClick={() => navigate("/")}
-            className="text-sm md:text-base bg-black text-white border-4 border-black px-6 py-4 hover:bg-gray-800 active:translate-y-1 active:shadow-none transition-all"
-            style={{
-              boxShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)',
-              fontFamily: 'VT323, monospace',
-              fontSize: '14px',
-              letterSpacing: '2px'
-            }}
-          >
-            START NOW
-          </button>
-        </div>
-
-        {/* Footer */}
-        <div className="text-center pt-8 border-t-4 border-black">
-          <p className="text-sm md:text-base text-gray-600" style={{
-            fontFamily: "'Roboto Mono', monospace",
-            fontSize: '12px'
-          }}>
-            DoTheThing is a free tool designed for neurodivergent individuals. Built with care by people who understand ADHD.
-          </p>
-        </div>
-        </div>
-      </div>
-      
-        {/* Footer Navigation */}
+        <section className="about-cta about-cta-ink" aria-labelledby="about-cta-heading">
+          <div className="about-cta-art" aria-hidden="true"><img src={MASCOTS.timer} alt="" /></div>
+          <div>
+            <p className="about-eyebrow">READY WHEN YOU ARE</p>
+            <h2 id="about-cta-heading">READY TO DO THE THING?</h2>
+            <p>Start breaking down your tasks right now. No signup required. No credit card. Just enter your task and let AI do the work.</p>
+            <button type="button" className="about-primary-action" onClick={() => navigate("/")}>START NOW</button>
+          </div>
+        </section>
+      </main>
       <Footer />
     </div>
   );

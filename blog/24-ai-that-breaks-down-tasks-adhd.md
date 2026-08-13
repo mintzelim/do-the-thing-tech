@@ -11,6 +11,7 @@ excerpt: >-
   brains. AI task breakdown removes that requirement. Here's what to look for
   and which ones work.
 date: 'May 14, 2026'
+updatedDate: '2026-08-13'
 readTime: 7 min read
 category: Tools & Resources
 primaryEntity: AI Task Breakdown ADHD
@@ -168,6 +169,22 @@ Combines AI breakdown with visual daily planner, countdown timers, icon-based sc
 Getting the breakdown is step 1. Using it is step 2. Many tools handle step 1 and assume step 2 takes care of itself.
 
 For ADHD brains, it often doesn't. A built-in countdown timer converts the list from a static document into an active session. When you start a step, the timer runs. When it ends, you move on or stop. That's the difference between a tool that breaks down your task and one that helps you do it.
+
+---
+
+## Common Mistakes When Using AI to Break Down Tasks
+
+### Treating the first output as instructions you must follow exactly
+
+An AI-generated list is a draft, not an authority. It can miss context, suggest a step in the wrong order, or use a level of detail that does not fit your day. Read the first step only, change the wording until it feels physically doable, and remove anything that does not apply to your task.
+
+### Asking for a plan that is still too large to start
+
+“Plan my whole project” may produce a thoughtful list that is too long to act on when you are already overwhelmed. Narrow the input to the next deliverable or the next fifteen minutes. A useful breakdown turns a vague task into an observable action, such as opening a file or finding one source.
+
+### Using a generated plan as a substitute for professional support
+
+Task tools can support planning and initiation, but they do not diagnose ADHD, assess mental health, or replace clinical care. If attention, mood, sleep, or distress is affecting your safety or day-to-day functioning, seek support from a qualified healthcare professional alongside the practical system you choose.
 
 ---
 
