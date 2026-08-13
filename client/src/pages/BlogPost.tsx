@@ -103,7 +103,6 @@ export default function BlogPost() {
           <header className="blog-article-hero">
             <div className="blog-article-title-copy">
               <p className="blog-eyebrow"><span aria-hidden="true">✦</span> {articleEyebrow}</p>
-              <p className="blog-article-category">{post.category}</p>
               <h1>{post.title}</h1>
               <p className="blog-article-excerpt">{post.excerpt}</p>
               <div className="blog-article-meta"><span>Published {post.date}</span>{post.updatedDate && <><span aria-hidden="true">•</span><span>Updated {post.updatedDate}</span></>}<span aria-hidden="true">•</span><span>{post.readTime}</span>{post.wordCount && <><span aria-hidden="true">•</span><span>{post.wordCount.toLocaleString()} words</span></>}</div>

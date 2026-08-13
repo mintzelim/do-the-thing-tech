@@ -31,6 +31,7 @@ describe("blog design-system refresh", () => {
     expect(blogPost).toContain('import "../blog-breadcrumb.css"');
     expect(blogPost).toContain("START WHEN READY");
     expect(blogPost).not.toContain("A SMALLER NEXT STEP");
+    expect(blogPost).not.toContain('className="blog-article-category"');
   });
 
   it("applies documented panel, card, motion, and reduced-motion rules without reintroducing heavy legacy styling", () => {

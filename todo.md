@@ -670,6 +670,7 @@
 - [x] Map each blog category to a contextual VT323 eyebrow label, such as “ADHD BASICS” and “TASK MANAGEMENT,” with a readable fallback
 - [x] Render the category-aware eyebrow in article headers while preserving current category metadata and structured data
 - [x] Document the category-to-eyebrow mapping and validate it with regression coverage
+- [x] Remove the duplicate visible category line from article headers while retaining the category-aware eyebrow and hidden metadata
 
 ## Blog Index and Article Template Design-System Refresh
 - [ ] Review the blog index and individual article template against the documented landing-page shell, typography, panel, card, and motion rules
