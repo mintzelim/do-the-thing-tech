@@ -30,3 +30,11 @@ The blog generator now applies the same origin to featured-image and inline Mark
 The development deployment rendered the homepage with the expected external Manus asset URLs. A DOM audit of every `document.images` entry returned an empty broken-image array; every inspected image had nonzero intrinsic dimensions.
 
 The remaining release check is to repeat the DOM audit at `https://dothething.tech` after the next checkpoint publishes, including a representative blog article and the About-page creator avatar.
+
+## Post-checkpoint Production Check — 13 August 2026
+
+Immediately after checkpoint `ebeb6d85`, `https://dothething.tech` still served the prior relative `/manus-storage/` image paths. The browser audit found all thirteen landing-page images at zero intrinsic dimensions. This indicates that the Vercel production deployment had not yet synchronized to the checkpointed revision at the time of the check; it does not invalidate the locally verified external-origin repair.
+
+After the GitHub-triggered Vercel deployment window completed, a cache-busted production reload rendered the external `https://dothething-zkgytwax.manus.space/manus-storage/` image URLs. A repeat `document.images` audit returned an empty broken-image array, confirming that all thirteen homepage images loaded with nonzero intrinsic dimensions on `https://dothething.tech`.
+
+The published `blog-posts.json` registry was also checked in production. All 31 posts avoid relative `/manus-storage/` featured-image paths. Seven older posts intentionally retain fully qualified CloudFront or Manus CDN URLs; the remaining featured images use the production-safe Manus deployment origin.
