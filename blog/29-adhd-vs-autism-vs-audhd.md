@@ -150,7 +150,7 @@ Consider speaking with a healthcare professional experienced in ADHD and autism 
 
 For related practical support, see [ADHD symptoms in adults](/blog/adhd-symptoms-adults), [executive dysfunction and task paralysis](/blog/executive-dysfunction-vs-task-paralysis), and [ADHD burnout recovery](/blog/adhd-burnout-recovery).
 
-## Common Misinterpretations to Avoid
+## Common Mistakes
 
 ### "I relate to one trait, so I have the diagnosis"
 

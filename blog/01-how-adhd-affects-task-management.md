@@ -182,6 +182,12 @@ While strategies can help, ADHD is a medical condition. If task management chall
 - **Therapy:** CBT for ADHD, particularly executive function coaching, can build skills
 - **Accommodations:** Workplace accommodations can make a huge difference
 
+## Common Mistakes
+
+- **Treating a hard start as a character flaw.** Difficulty initiating, sequencing, or estimating tasks can be a reason to change the task structure or seek support; it is not proof that you are lazy.
+- **Copying a productivity system before making the first step smaller.** A detailed planner cannot remove the friction of a task that still feels vague or oversized. Start by naming one visible action.
+- **Using a timer as a test of willpower.** Adjust the work interval until it is realistic enough to begin, rather than forcing a standard length that makes you avoid the task altogether.
+
 ## Key Takeaways
 
 - ADHD affects task management through executive dysfunction, not lack of effort or laziness

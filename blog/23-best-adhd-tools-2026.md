@@ -163,7 +163,7 @@ It is **not** meant to replace a full project-management system, long-term knowl
 
 My practical recommendation is intentionally boring: start with DoTheThing plus one other tool. Keep the pair for two weeks. Add a third tool only when you can name the exact problem it solves. Pricing, features, and free-tier limits change, so verify the current details on each provider's site before committing.
 
-## Common Tool-Stack Mistakes
+## Common Mistakes
 
 ### Building a system before solving today's task
 

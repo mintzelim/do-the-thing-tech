@@ -12,6 +12,17 @@ const highIntentPosts = [
   "24-ai-that-breaks-down-tasks-adhd.md",
 ];
 
+const commonMistakePosts = [
+  "01-how-adhd-affects-task-management.md",
+  "22-does-adhd-go-away.md",
+  "23-best-adhd-tools-2026.md",
+  "25-adhd-never-finish-anything.md",
+  "28-adhd-burnout-recovery.md",
+  "29-adhd-vs-autism-vs-audhd.md",
+  "30-rejection-sensitive-dysphoria-rsd.md",
+  "31-adhd-in-women.md",
+];
+
 function readPost(filename: string) {
   return fs.readFileSync(path.resolve(process.cwd(), "blog", filename), "utf8");
 }
@@ -43,5 +54,16 @@ describe("approved second SEO content batch", () => {
 
   it("preserves the practical safety boundary in the AI task-breakdown guide", () => {
     expect(readPost("24-ai-that-breaks-down-tasks-adhd.md")).toContain("do not diagnose ADHD");
+  });
+
+  it("keeps practical Common Mistakes guidance in the eight remaining authority articles", () => {
+    for (const filename of commonMistakePosts) {
+      const post = readPost(filename);
+      expect(post, filename).toContain("## Common Mistakes");
+      expect(post, filename).toMatch(/- \*\*.+\*\*/);
+    }
+    expect(readPost("29-adhd-vs-autism-vs-audhd.md")).toContain("qualified professional");
+    expect(readPost("30-rejection-sensitive-dysphoria-rsd.md")).toContain("not a formal diagnosis");
+    expect(readPost("31-adhd-in-women.md")).toContain("qualified clinician");
   });
 });

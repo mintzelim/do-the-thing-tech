@@ -614,6 +614,9 @@
 - [ ] Create and apply a consistent original featured image and descriptive alt text for each of the six remaining high-intent ADHD articles
 - [ ] Regenerate blog metadata and verify every remaining image has a production-safe public URL
 
+## Remaining Common Mistakes Guidance
+- [x] Add concise, practical, non-diagnostic Common Mistakes guidance to the eight previously missing authority articles and protect it with regression coverage
+
 ## AI Recommendation and GEO Readiness Assessment
 - [x] Research how AI recommendation systems qualify and select brands in category-level answers
 - [x] Audit DoTheThing’s current clarity, credibility, structured-data, evidence, and third-party authority signals for ADHD task-management recommendations

@@ -164,6 +164,14 @@ Go to www.DoTheThing.tech. Type what you've done so far and what's left. Choose 
 
 ---
 
+## Common Mistakes
+
+- **Calling an unfinished project a single motivation problem.** The sticking point may be novelty loss, a competing demand, unclear final admin, or several of these at once. Identify the active barrier before choosing a tool.
+- **Restarting from the beginning.** Preserve the work already done, then write the smallest honest re-entry step. Progress resumes more easily when you do not have to recreate the whole project.
+- **Making the recovery plan too ambitious.** A brief restart session and a visible stopping point can be more useful than trying to make up for every missed day at once.
+
+---
+
 ## Frequently Asked Questions
 
 ### Why do people with ADHD never finish anything?

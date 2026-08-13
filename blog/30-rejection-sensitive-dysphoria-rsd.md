@@ -258,6 +258,14 @@ If this resonates, consider reading our guide to [ADHD and Emotional Dysregulati
 
 ---
 
+## Common Mistakes
+
+- **Using “RSD” as a diagnosis for every strong emotion.** Rejection sensitivity is a useful descriptive framework for some people, but intense distress can have many causes. A qualified clinician can help with a fuller picture.
+- **Replying while the reaction is at its peak.** When possible, pause, ground yourself, and ask for time before sending a message or making a decision that is hard to undo.
+- **Treating the feeling as proof of another person’s intention.** Name the interpretation, then seek context or a calm clarification rather than assuming criticism or rejection is certain.
+
+---
+
 ## FAQ
 
 ### What is rejection sensitive dysphoria (RSD)?

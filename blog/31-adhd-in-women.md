@@ -222,6 +222,14 @@ Whether it's an online community like r/adhdwomen, a friend who gets it, or a ne
 
 ---
 
+## Common Mistakes
+
+- **Ruling ADHD out because you were not outwardly hyperactive.** Internal restlessness, executive-function friction, and masking can matter in an assessment, alongside a person’s developmental history and current impact.
+- **Using social-media checklists as a diagnosis.** Self-observation can help you prepare questions, but a qualified clinician is the right person to assess overlapping conditions and individual circumstances.
+- **Changing treatment around your cycle without clinical guidance.** Tracking patterns can be useful; treatment or medication changes should be discussed with the relevant prescriber or health professional.
+
+---
+
 ## Frequently Asked Questions
 
 **Can you have ADHD in women without hyperactivity?**

@@ -199,6 +199,14 @@ The goal is not perfect prevention. It is earlier recognition and a safer respon
 
 ---
 
+## Common Mistakes
+
+- **Treating recovery like a productivity sprint.** Adding an ambitious reset routine can recreate the overload you are trying to reduce. Start with essentials and one gentle support.
+- **Changing prescribed treatment on your own.** Bring concerns about medication, sleep, or worsening symptoms to an appropriate clinician or prescriber.
+- **Using a fixed recovery timeline as a verdict.** Recovery varies. Persistent, worsening, or safety-related symptoms deserve qualified support rather than self-management alone.
+
+---
+
 ## Key Takeaways
 
 - **Burnout is not character failure.** It is a cue to examine demands, support, health, and recovery.

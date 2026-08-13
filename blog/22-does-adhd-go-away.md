@@ -173,6 +173,14 @@ What changes is presentation and demands, not the neurology. Effective managemen
 
 ---
 
+## Common Mistakes
+
+- **Assuming fewer visible hyperactive traits mean ADHD has disappeared.** Presentation can change across life stages; a clinician can help distinguish ongoing ADHD-related difficulties from other concerns.
+- **Explaining every memory or organisation change as ADHD.** New, sudden, or worsening symptoms deserve professional assessment, especially when other health factors may be involved.
+- **Waiting for motivation to create structure.** When work, school, or family routines shift, rebuild external cues such as appointments, reminders, and a very small next action.
+
+---
+
 ## Frequently Asked Questions
 
 ### Does ADHD go away with age?
