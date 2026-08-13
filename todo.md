@@ -672,6 +672,16 @@
 - [x] Document the category-to-eyebrow mapping and validate it with regression coverage
 - [x] Remove the duplicate visible category line from article headers while retaining the category-aware eyebrow and hidden metadata
 
+## Current Tasks Post–Brain-Dump Design System
+- [x] Review the Current Tasks page state after a brain dump and inventory the task summary, progress, task-row, control, add-task, and Pro Tip components
+- [x] Add the Current Tasks state, layout, typography, spacing, controls, and accessibility guidance to both design-system references
+- [x] Add multiple Current Tasks layout options to the visual HTML design-system reference before changing the live task interface
+- [x] Obtain the user's selected Current Tasks option before changing task data, editing, deleting, reordering, timer behavior, or the live page layout
+- [x] Apply the selected Focus Queue clean pixel-art system to the live Current Tasks page without changing task data, editing, deleting, reordering, or timer behavior
+- [x] Align the Current Tasks title, Back control, and Add Task utility action with the documented typography, secondary-action, and dashed-utility patterns
+- [x] Align each task-row drag handle, checkbox, and task title on a shared top row while keeping description and controls below
+- [x] Add regression coverage, validate responsive task-list states, and publish the implementation
+
 ## Blog Index and Article Template Design-System Refresh
 - [ ] Review the blog index and individual article template against the documented landing-page shell, typography, panel, card, and motion rules
 - [ ] Restyle the blog index while preserving post metadata, filters, image rendering, routes, and accessibility

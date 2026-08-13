@@ -55,7 +55,7 @@ export default function PinTabTutorial({
   const containerClass = variant === "task-side-panel"
     ? "reference-pro-tip-panel"
     : alwaysShowOnCurrentTasks
-      ? "border-4 border-foreground bg-card p-4 mb-4"
+      ? "current-tasks-pro-tip"
       : (showAfterBreakdown ? "border-4 border-foreground bg-card p-4 mt-4" : "border-4 border-foreground bg-card p-4 relative");
 
   return (

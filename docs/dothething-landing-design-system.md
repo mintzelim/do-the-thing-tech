@@ -182,6 +182,22 @@ Use the selected components below to make evidence and practical guidance easier
 
 All data components use Inter for reading, thin blue-gray outlines, the restrained indigo/lime palette, visible headings, and normal document flow. On narrow screens, tables stay horizontally scrollable rather than compressing text beyond readability; chart and list components stack as ordinary document blocks.
 
+### Current Tasks: Focus Queue
+
+The selected post–brain-dump state is **Focus Queue**: one calm linear task list led by a single, clickable time-and-progress summary. It is a task-management view, not a dashboard. Preserve the existing task order, checkbox, editable estimate, edit and delete controls, drag behavior, timer behavior, and add-task function; the design system changes hierarchy and presentation only.
+
+| Element | Focus Queue rule |
+|---|---|
+| **Page header** | Use a context-specific VT323 eyebrow, **“YOUR FOCUS QUEUE,”** above an Inter 800 display heading, **“CURRENT TASKS.”** The eyebrow supplies context; the heading supplies the page name. |
+| **Back control** | Use the secondary action style: 44px minimum height, 8px radius, thin indigo border, transparent/warm-white surface, and a left arrow with the visible **BACK** label. Do not use a detached pixel-only button. |
+| **Summary bridge** | Place one pale-indigo 14px summary panel below the header. It contains the timer state, a large VT323 time value, a visible start/stop cue, and progress. The full panel is the timer control. |
+| **Task row** | Use one repeated warm-white 10px card per task. The drag grip, checkbox, and Inter task title share the first grid row, with tops aligned within 2px. Description and time/edit/delete controls sit beneath inside the title column. |
+| **Task controls** | Use compact Inter controls: a readable numeric duration input with the visible **MIN** label, indigo **EDIT**, and a restrained red outlined **DELETE** action. Preserve explicit text labels. |
+| **Add Task utility** | Use a full-width transparent dashed control with a visible plus and **ADD TASK** label. It is a utility action, not a primary CTA; use pale indigo only on hover. |
+| **Pro Tip** | Use one quiet warm-white 10px inline card above the header. Keep its close control, explicit pinning guidance, and compact disk indicator. |
+
+At 700px, reduce the outer shell to a 12px inset while preserving the summary and one-column card queue. At 520px, stack the header controls, retain the shared drag-grip/checkbox/title row, and let the compact task controls wrap without losing their labels.
+
 ## 5. Illustration System
 
 Use only the approved abstract lavender mascot identity: a rounded/rectangular lavender character, dark indigo outline, square eyes, and compact pixel silhouette. Avoid human pixel art.

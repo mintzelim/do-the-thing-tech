@@ -49,6 +49,15 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("OPTION 01 · INLINE TRAIL");
     expect(html).toContain("OPTION 02 · SEGMENTED TRAIL");
     expect(html).toContain("OPTION 03 · RETURN PATH");
+    expect(html).toContain("POST–BRAIN-DUMP FLOW");
+    expect(html).toContain("OPTION 01 · FOCUS QUEUE");
+    expect(html).toContain("OPTION 02 · NEXT ACTION SPLIT");
+    expect(html).toContain("OPTION 03 · PROGRESS PATH");
+    expect(html).toContain("task-preview-row");
+    expect(html).toContain("Selected implementation: Focus Queue");
+    expect(markdown).toContain("Current Tasks: Focus Queue");
+    expect(markdown).toContain("YOUR FOCUS QUEUE");
+    expect(markdown).toContain("Add Task utility");
     expect(markdown).toContain("Breadcrumbs");
     expect(markdown).toContain("Inline Trail");
   });
