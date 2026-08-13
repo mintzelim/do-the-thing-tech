@@ -611,6 +611,7 @@
 - [ ] Generate and upload the six remaining topic-specific featured images after the image-generation quota resets
 
 ## Remaining SEO Featured Images
+- [x] Prepare consistent production briefs, asset keys, and descriptive alt-text targets for the six queued original featured images
 - [ ] Create and apply a consistent original featured image and descriptive alt text for each of the six remaining high-intent ADHD articles
 - [ ] Regenerate blog metadata and verify every remaining image has a production-safe public URL
 
