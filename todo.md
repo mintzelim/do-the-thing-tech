@@ -684,6 +684,16 @@
 - [x] Apply each selected module only where its content purpose fits in the About page, without changing existing copy
 - [x] Validate and publish the selected module systems alongside the refined Workbench About page
 
+## Pixel Post-It Challenges Treatment
+- [x] Apply the selected Pixel Post-It system to the existing Common challenges section without changing its title or descriptions
+- [x] Preserve the challenge grid’s clear scan order, equal spacing, and responsive single-column behavior
+- [x] Validate and publish the Pixel Post-It challenge treatment
+
+## Hover-Animated Card Options
+- [x] Add three playful hover-animated card options to the visual design-system HTML reference
+- [x] Ensure each animated option preserves readable Inter content, keyboard focus, restrained timing, and reduced-motion support
+- [x] Validate and present the hover-animated options for user selection before applying any option to live pages
+
 ## Data Presentation Options in the Design System
 - [x] Define three visual options each for article tables, data-chart containers, and bullet lists within the restrained landing-page system
 - [x] Add the three options to the visual HTML design-system reference without applying any option to live article pages

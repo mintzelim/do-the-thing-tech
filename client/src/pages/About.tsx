@@ -107,7 +107,7 @@ export default function About() {
           <h2 id="challenges-heading">ADHD AND TASK MANAGEMENT</h2>
           <p className="about-centered-lede">People with ADHD often struggle with executive function—the brain's ability to plan, organize, and execute tasks. This isn't laziness or lack of motivation. It's how their neurology works.</p>
           <p className="about-grid-intro"><strong>Common challenges include:</strong></p>
-          <div className="about-card-grid about-challenge-grid">
+          <div className="about-card-grid about-challenge-grid about-postit-challenge-grid">
             {challenges.map(([title, description]) => (
               <article className="about-mini-card" key={title}><h3>{title}</h3><p>{description}</p></article>
             ))}

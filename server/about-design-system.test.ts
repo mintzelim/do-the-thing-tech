@@ -91,4 +91,14 @@ describe("About page design-system refresh", () => {
     expect(aboutRhythm).toContain("counter-reset: capability");
     expect(aboutPage).toContain("This tool exists because I needed it. And if you're reading this, you probably need it too.");
   });
+
+  it("applies the selected Pixel Post-It treatment to the existing Common challenges grid without changing its content", () => {
+    expect(aboutPage).toContain("about-challenge-grid about-postit-challenge-grid");
+    expect(aboutRhythm).toContain("Pixel Post-Its make the Common challenges section feel helpful and human");
+    expect(aboutRhythm).toContain(".about-postit-challenge-grid");
+    expect(aboutRhythm).toContain("box-shadow: 5px 5px 0 #d9c6f4");
+    expect(aboutRhythm).toContain("Common challenges section feel helpful");
+    expect(aboutPage).toContain("Time Blindness");
+    expect(aboutPage).toContain("Hyperfocus Variability");
+  });
 });

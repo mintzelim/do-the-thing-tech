@@ -417,3 +417,67 @@
   .about-workbench-product .about-feature-grid.about-quest-ticket-grid .about-mini-card:last-child { min-height: 112px; padding: 16px 16px 16px 64px; border: 1px solid var(--pixel-accent-dark); border-radius: 8px; }
   .about-workbench-product .about-feature-grid.about-quest-ticket-grid .about-mini-card::before { left: 48px; }
 }
+
+/* Pixel Post-Its make the Common challenges section feel helpful and human without losing its scan order. */
+.about-workbench-library .about-challenge-grid.about-postit-challenge-grid {
+  gap: 16px;
+  align-items: stretch;
+}
+
+.about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card {
+  position: relative;
+  min-height: 168px;
+  padding: 21px 20px 24px;
+  border: 2px solid var(--pixel-border);
+  border-radius: 9px 9px 18px 9px;
+  background: #fffefb;
+  box-shadow: 5px 5px 0 #d9c6f4;
+  transform: rotate(-.65deg);
+}
+
+.about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card::after {
+  position: absolute;
+  right: -2px;
+  bottom: -2px;
+  width: 25px;
+  height: 25px;
+  border-top: 2px solid var(--pixel-border);
+  border-left: 2px solid var(--pixel-border);
+  background: #f0f1fb;
+  content: "";
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card:nth-child(2),
+.about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card:nth-child(5) {
+  box-shadow: 5px 5px 0 #d6e8a3;
+  transform: rotate(.7deg);
+}
+
+.about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card:nth-child(3) {
+  box-shadow: 5px 5px 0 #c7d0f5;
+  transform: rotate(-.25deg);
+}
+
+.about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card h3 {
+  margin-bottom: 10px;
+  color: var(--pixel-text);
+  font-size: .92rem;
+}
+
+.about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card p {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  color: var(--pixel-text-light);
+  font-size: .84rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 620px) {
+  .about-workbench-library .about-challenge-grid.about-postit-challenge-grid { gap: 13px; }
+  .about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card,
+  .about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card:nth-child(2),
+  .about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card:nth-child(3),
+  .about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card:nth-child(5) { min-height: 0; padding: 18px 18px 21px; transform: none; }
+}
