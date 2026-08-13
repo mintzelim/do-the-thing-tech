@@ -115,6 +115,15 @@ describe("hero-matched CTA and headlines", () => {
   });
 });
 
+describe("shared landing-section text alignment", () => {
+  it("centers the How It Works and audience headline support copy on one text grid", () => {
+    expect(stylesheet).toContain(".content-section > .section-heading + .section-subtitle,.audience-section > .section-subtitle{display:block;width:min(100%,720px)");
+    expect(stylesheet).toContain("margin-right:auto!important;margin-left:auto!important;text-align:center!important");
+    expect(stylesheet).toContain(".audience-support-copy{width:min(100%,720px)");
+    expect(stylesheet).toContain("margin:30px auto 0!important");
+  });
+});
+
 
 describe("mascot-led audience grid", () => {
   it("keeps five audience groups with mascot-only image assets and preserved audience copy", () => {

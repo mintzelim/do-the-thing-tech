@@ -591,9 +591,9 @@
 - [x] Validate the five-card audience grid after the density refinement
 
 ## Shared Section Text Alignment
-- [ ] Align How It Works and audience headlines, subtitles, and supporting copy to a common centered text grid
-- [ ] Match heading and subtitle widths, line-height, and vertical spacing without changing section copy
-- [ ] Verify desktop and mobile text alignment after the refinement
+- [x] Align How It Works and audience headlines, subtitles, and supporting copy to a common centered text grid
+- [x] Match heading and subtitle widths, line-height, and vertical spacing without changing section copy
+- [x] Verify desktop and mobile text alignment after the refinement
 
 ## Approved Targeted SEO Content Improvements
 - [x] Expand priority short articles to provide useful, source-backed depth
