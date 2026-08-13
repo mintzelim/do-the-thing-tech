@@ -650,10 +650,14 @@
 - [x] Restore the actual selected Quiet Ledger `#c5cada` card-border outline after confirming the visual design-system source
 
 ## Blog Tables and Utility Pages Design-System Alignment
-- [ ] Apply the selected Quiet Ledger table system to every blog table while preserving semantic table markup, all table content, and narrow-screen horizontal scrolling
+- [x] Apply the selected Quiet Ledger table system to every blog table while preserving semantic table markup, all table content, and narrow-screen horizontal scrolling
 - [ ] Apply the documented clean pixel-art public-page system to the Contact page without changing its form fields, contact details, or submission behavior
 - [ ] Apply the documented clean pixel-art public-page system to the Privacy Policy and Terms pages without changing their legal copy or links
 - [ ] Add regression coverage and validate responsive, accessible rendering for the table and utility-page updates
+
+## Blog Article Mobile Responsiveness
+- [x] Audit and correct narrow-screen article layout, typography, navigation, media, Quiet Ledger table scrolling, sources, and CTA behavior without changing article copy or SEO structure
+- [x] Add mobile regression coverage and validate representative article pages at narrow viewport widths
 
 ## Landing-Page Design System Documentation
 - [x] Extract the implemented landing-page design tokens, component rules, and responsive treatments

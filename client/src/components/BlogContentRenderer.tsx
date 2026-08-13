@@ -330,39 +330,15 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
       
       if (tableRows.length > 0) {
         elements.push(
-          <div key={`table-${i}`} style={{ overflowX: 'auto', marginBottom: '24px', marginTop: '24px', width: '100%' }}>
-            <table
-              style={{
-                width: '100%',
-                borderCollapse: 'collapse',
-                border: '2px solid var(--pixel-border)',
-                fontFamily: "'VT323', monospace",
-                fontSize: '16px',
-                backgroundColor: 'var(--pixel-card-bg)',
-                marginTop: '24px',
-                marginBottom: '24px'
-              }}
-            >
+          <div key={`table-${i}`} className="quiet-ledger-wrap">
+            <table className="quiet-ledger-table">
               <thead>
                 {tableRows.length > 0 && (
-                  <tr
-                    style={{
-                      backgroundColor: 'var(--pixel-accent)',
-                      borderBottom: '2px solid var(--pixel-border)'
-                    }}
-                  >
+                  <tr>
                     {tableRows[0].map((cell, cellIndex) => (
                       <th
                         key={`th-${cellIndex}`}
-                        style={{
-                          padding: '12px 16px',
-                          fontWeight: 600,
-                          textAlign: 'left',
-                          color: 'white',
-                          border: '2px solid var(--pixel-border)',
-                          wordWrap: 'break-word',
-                          overflowWrap: 'break-word'
-                        }}
+                        scope="col"
                       >
                         {parseInlineMarkdown(cell)}
                       </th>
@@ -372,25 +348,10 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
               </thead>
               <tbody>
                 {tableRows.slice(1).map((row, rowIndex) => (
-                  <tr
-                    key={`tr-${rowIndex}`}
-                    style={{
-                      borderBottom: '1px solid #ddd',
-                      backgroundColor: rowIndex % 2 === 0 ? '#fafafa' : 'transparent',
-                    }}
-                  >
+                  <tr key={`tr-${rowIndex}`}>
                     {row.map((cell, cellIndex) => (
                       <td
                         key={`td-${rowIndex}-${cellIndex}`}
-                        style={{
-                          padding: '12px 16px',
-                          borderRight: cellIndex < row.length - 1 ? '1px solid #ddd' : 'none',
-                          textAlign: 'left',
-                          color: 'var(--pixel-text)',
-                          wordWrap: 'break-word',
-                          overflowWrap: 'break-word',
-                          lineHeight: '1.6'
-                        }}
                       >
                         {parseInlineMarkdown(cell)}
                       </td>
