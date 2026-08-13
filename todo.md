@@ -699,6 +699,11 @@
 - [x] Ensure the collection animations maintain readable card content, keyboard access, purposeful timing, and reduced-motion fallback
 - [x] Validate and present the six-card interaction options for selection before applying one to live pages
 
+## Selected Six-Card Interaction: Focus Fan
+- [x] Document Focus Fan as the selected group interaction for six related cards
+- [x] Apply Focus Fan to the six existing product capability cards on the About page without changing their copy or individual action semantics
+- [x] Validate and publish the Focus Fan interaction with keyboard and reduced-motion support
+
 ## Data Presentation Options in the Design System
 - [x] Define three visual options each for article tables, data-chart containers, and bullet lists within the restrained landing-page system
 - [x] Add the three options to the visual HTML design-system reference without applying any option to live article pages

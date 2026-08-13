@@ -13,3 +13,7 @@ The selected Workbench revision retains the creator and mission panels as the tw
 The Pixel Post-It appears once, below the creator evidence list, as a compact folded-corner personal reframe. Its width, offset shadow, and surrounding whitespace distinguish the line without creating another repeating card group. Quest Tickets are reserved for the product capability group so the action-oriented motif does not compete with the creator narrative.
 
 The Quest Ticket capability group renders as six consistently sized modules on the desktop Workbench grid, occupying a measured 1123px content width. Its numbered ticket stub is reserved for the practical product-capability section, preserving the lighter open treatment for the challenge and workflow sections.
+
+## Focus Fan verification
+
+Focus Fan is now the selected group interaction for the six product-capability Quest Tickets. The collection is a labelled, focusable group and preserves all six original capability labels. The browser confirms the group contains exactly six cards and can receive keyboard focus; the documented CSS reserves the outward transforms for pointer hover or keyboard-visible focus, while narrow-screen and reduced-motion rules retain the static readable grid.

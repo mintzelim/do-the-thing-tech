@@ -155,6 +155,12 @@ Use the existing **illustrated card** when the transparent purple mascot or anot
 
 Pixel Post-It may carry a slight static rotation for a friendly note-like quality. Quest Ticket uses numbered circles only to reinforce a collection of capabilities or actions, not to imply a required order unless the surrounding heading says so. Both systems stack to one column on narrow screens and preserve visible text-first hierarchy.
 
+### Group interaction: Focus Fan
+
+**Focus Fan** is the selected interaction for a group of exactly six closely related cards, such as the six DoTheThing product capabilities. The default state is a stable, fully readable three-by-two grid. On pointer hover or keyboard focus of the group, the six cards open outward as a small fan over 180ms, using only transform and border/shadow feedback. The interaction should clarify that the six cards form one useful set; it must not hide labels, require pointer precision, or imply that a card has been activated.
+
+Do not use Focus Fan for fewer than six cards, for unrelated content, or for groups that already have individual hover interactions. At narrow widths and whenever reduced motion is requested, retain the same static, readable grid with no transform effect.
+
 ### Alternate public-page rhythm
 
 Public authority and resource pages may alternate **three approved compositional modes** to create hierarchy without abandoning the calm landing system. The variation comes from proportion, alignment, and intentional row balancing—not additional color treatments. Use the same warm-white panel surface, ink outline, and quiet shadow where a panel is appropriate.

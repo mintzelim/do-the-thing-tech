@@ -69,12 +69,14 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("group-demo fan-deck");
     expect(html).toContain("group-demo wave-queue");
     expect(html).toContain("group-demo trail-map");
+    expect(html).toContain("OPTION 01 · FOCUS FAN · SELECTED");
     expect(html).toContain("@media(prefers-reduced-motion:reduce)");
     expect(html).toContain("hover-demo:focus-visible");
     expect(markdown).toContain("Current Tasks: Focus Queue");
     expect(markdown).toContain("Content modules: illustrated and image-free");
     expect(markdown).toContain("Pixel Post-It");
     expect(markdown).toContain("Quest Ticket");
+    expect(markdown).toContain("Group interaction: Focus Fan");
     expect(markdown).toContain("YOUR FOCUS QUEUE");
     expect(markdown).toContain("Add Task utility");
     expect(markdown).toContain("Breadcrumbs");

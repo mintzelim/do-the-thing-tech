@@ -481,3 +481,49 @@
   .about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card:nth-child(3),
   .about-workbench-library .about-challenge-grid.about-postit-challenge-grid .about-mini-card:nth-child(5) { min-height: 0; padding: 18px 18px 21px; transform: none; }
 }
+
+/* Selected group interaction: Focus Fan opens six related Quest Tickets as one capability set. */
+.about-workbench-product .about-feature-grid.about-focus-fan {
+  position: relative;
+  outline: none;
+}
+
+.about-workbench-product .about-feature-grid.about-focus-fan:focus-visible {
+  outline: 3px solid var(--pixel-lime, #c7db3e);
+  outline-offset: 5px;
+}
+
+.about-workbench-product .about-feature-grid.about-focus-fan .about-mini-card {
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  will-change: transform;
+}
+
+.about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card,
+.about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card {
+  border-color: var(--pixel-accent-dark);
+  box-shadow: 5px 6px 0 #d9c6f4;
+}
+
+.about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card:nth-child(1),
+.about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card:nth-child(1) { transform: translate(-9px, -8px) rotate(-3deg); }
+.about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card:nth-child(2),
+.about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card:nth-child(2) { transform: translateY(-11px) rotate(-1deg); }
+.about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card:nth-child(3),
+.about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card:nth-child(3) { transform: translate(9px, -8px) rotate(3deg); }
+.about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card:nth-child(4),
+.about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card:nth-child(4) { transform: translate(-9px, 8px) rotate(-2deg); }
+.about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card:nth-child(5),
+.about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card:nth-child(5) { transform: translateY(11px) rotate(1deg); }
+.about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card:nth-child(6),
+.about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card:nth-child(6) { transform: translate(9px, 8px) rotate(2deg); }
+
+@media (max-width: 620px) {
+  .about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card,
+  .about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-workbench-product .about-feature-grid.about-focus-fan .about-mini-card { transition: none; }
+  .about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card,
+  .about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card { transform: none; }
+}

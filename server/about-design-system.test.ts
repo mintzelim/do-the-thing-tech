@@ -101,4 +101,14 @@ describe("About page design-system refresh", () => {
     expect(aboutPage).toContain("Time Blindness");
     expect(aboutPage).toContain("Hyperfocus Variability");
   });
+
+  it("applies the selected Focus Fan interaction to the six existing product capability cards", () => {
+    expect(aboutPage).toContain("about-quest-ticket-grid about-focus-fan");
+    expect(aboutPage).toContain('aria-label="Six DoTheThing product capabilities"');
+    expect(aboutRhythm).toContain("Selected group interaction: Focus Fan opens six related Quest Tickets as one capability set.");
+    expect(aboutRhythm).toContain(".about-focus-fan:hover .about-mini-card:nth-child(6)");
+    expect(aboutRhythm).toContain("@media (prefers-reduced-motion: reduce)");
+    expect(aboutPage).toContain("AI Task Breakdown");
+    expect(aboutPage).toContain("No Login Required");
+  });
 });

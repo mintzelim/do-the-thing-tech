@@ -122,7 +122,7 @@ export default function About() {
             <p>DoTheThing is different. We built it specifically for how ADHD brains work:</p>
           </div>
           <div className="about-side-art" aria-hidden="true"><img src={MASCOTS.timer} alt="" /></div>
-          <div className="about-card-grid about-feature-grid about-quest-ticket-grid">
+          <div className="about-card-grid about-feature-grid about-quest-ticket-grid about-focus-fan" tabIndex={0} role="group" aria-label="Six DoTheThing product capabilities">
             {features.map(([title, description]) => (
               <article className="about-mini-card" key={title}><h3>{title}</h3><p>{description}</p></article>
             ))}
