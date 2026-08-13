@@ -9,6 +9,17 @@ const outputFiles = [
   path.join(__dirname, '../client/public/blog-posts.json'),
   path.join(__dirname, '../public/blog-posts.json'),
 ];
+const PUBLIC_MANUS_ASSET_ORIGIN = 'https://dothething-zkgytwax.manus.space';
+
+function toProductionAssetUrl(value) {
+  return typeof value === 'string' && value.startsWith('/manus-storage/')
+    ? `${PUBLIC_MANUS_ASSET_ORIGIN}${value}`
+    : value;
+}
+
+function normalizeMarkdownAssetUrls(markdown) {
+  return markdown.replaceAll('](/manus-storage/', `](${PUBLIC_MANUS_ASSET_ORIGIN}/manus-storage/`);
+}
 
 function parseDateValue(dateString) {
   const timestamp = Date.parse(dateString);
@@ -67,7 +78,7 @@ function generateBlogPosts() {
 
     try {
       const { frontmatter, content: markdown } = parseFrontmatter(content);
-      const plainContent = preserveMarkdown(markdown);
+      const plainContent = normalizeMarkdownAssetUrls(preserveMarkdown(markdown));
 
       const seoKeywords = Array.isArray(frontmatter.seoKeywords)
         ? frontmatter.seoKeywords
@@ -119,7 +130,7 @@ function generateBlogPosts() {
         seoKeywords,
         sources,
         relatedPosts,
-        featuredImage: frontmatter.featuredImage || '',
+        featuredImage: toProductionAssetUrl(frontmatter.featuredImage || ''),
         featuredImageAlt: frontmatter.featuredImageAlt || '',
         content: plainContent,
         slug: file.replace(/^\d+-/, '').replace('.md', ''),

@@ -613,3 +613,12 @@
 - [x] Create a clear Markdown design-system guide based on the current landing page
 - [x] Create a standalone HTML design-system reference with visual token and component examples
 - [x] Verify the documentation matches the implemented landing page and checkpoint the deliverables
+- [x] Document the shared header and footer systems in both design-system references
+- [x] Define the “A SMALLER NEXT STEP” eyebrow as a reusable heading-system pattern
+- [x] Document the implemented motion, interaction, and reduced-motion accessibility rules
+- [x] Validate the extended Markdown and HTML references, then publish the update
+
+## Live Production Image Delivery Repair
+- [x] Audit all live image requests on dothething.tech and identify missing, inaccessible, or stale asset references
+- [x] Repair broken image references using deployment-safe storage URLs or correctly tracked repository assets
+- [ ] Verify live production image delivery, regression coverage, and deployment synchronization

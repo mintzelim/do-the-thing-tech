@@ -3,6 +3,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { useLocation } from 'wouter';
 import { updateMetaTags, pageMetaTags } from '@/lib/metaTags';
+import { assetUrl } from '@/lib/assetUrl';
 
 export default function About() {
   const [, navigate] = useLocation();
@@ -73,7 +74,7 @@ export default function About() {
           }}>
             <figure style={{ margin: 0, width: '148px', flex: '0 0 148px' }}>
               <img
-                src="/manus-storage/dothething-creator-avatar_65ec01fa.png"
+                src={assetUrl("/manus-storage/dothething-creator-avatar_65ec01fa.png")}
                 alt="Illustrative pixel-art avatar for DoTheThing’s creator section"
                 width={148}
                 height={148}

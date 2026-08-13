@@ -10,6 +10,7 @@ import { useTimer } from "@/contexts/TimerContext";
 import { ErrorModal } from "@/components/ErrorModal";
 import PocketsFullModal from "@/components/PocketsFullModal";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
+import { assetUrl } from "@/lib/assetUrl";
 import "../pixel-art-refined.css";
 
 type Step = {
@@ -434,7 +435,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="reference-hero-visual" aria-label="A small pixel character taking a manageable next step">
-                <img src="/manus-storage/dothething-abstract-hero-final_f2a98e80.png" alt="Pixel character standing on a grassy step beside a flag" />
+                <img src={assetUrl("/manus-storage/dothething-abstract-hero-final_f2a98e80.png")} alt="Pixel character standing on a grassy step beside a flag" />
               </div>
             </section>
 

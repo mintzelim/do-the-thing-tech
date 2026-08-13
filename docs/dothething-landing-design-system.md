@@ -1,7 +1,7 @@
 # DoTheThing Landing Page Design System
 
 **Version:** Hybrid Pixel 2026  
-**Applies to:** The public landing page, task widget, lower landing sections, cards, CTA panels, and footer.
+**Applies to:** The public landing page, header, task widget, lower landing sections, cards, CTA panels, footer, and shared interaction patterns.
 
 > **Design intent:** A calm, readable productivity space that retains a pixel-art identity without forcing pixel typography onto task-focused UI content. The system uses clean sans-serif reading text, compact pixel accents, warm off-white surfaces, thin ink-blue outlines, and mascot-only illustration.
 
@@ -42,7 +42,7 @@
 | **Hero H1** | Inter | 800 | `clamp(3.15rem, 6.2vw, 5.75rem)`, `line-height: .98`, tracking `-.055em`. |
 | **Major section heading** | Inter | 800 | `clamp(2.45rem, 5vw, 4.6rem)`, shared centered 940px maximum. |
 | **Card heading** | Inter | 800 | 1.2rem, `line-height: 1.15`, centered in card grids. |
-| **Eyebrow / pixel accent** | VT323 | 400 | 1–1.22rem, increased letter spacing, used sparingly. |
+| **Eyebrow / pixel accent** | VT323 | 400 | 1–1.22rem with increased letter spacing. The canonical eyebrow reads **“A SMALLER NEXT STEP”** and is used sparingly to introduce a headline or CTA. |
 | **Supporting copy** | Inter | 400 | `clamp(1rem, 1.35vw, 1.14rem)`, muted ink, centered on a 720px grid where used beneath section headings. |
 
 ### Spacing and shape
@@ -81,7 +81,26 @@ Major lower-section headings use the same Inter headline treatment as the hero. 
 
 ### Header
 
-Use a 14px-radius warm-white panel, a 1px `#a8afc2` outline, and a restrained shadow. Navigation links are quiet by default and gain a pale-indigo background and border when active or hovered. The primary header action is indigo with a 3px offset shadow.
+The shared header sits in the same 1240px shell as the page content, with a 16px desktop top margin. It uses a warm-white panel, a 1px `#a8afc2` outline, a 14px radius, and a soft downwards shadow. It is a **site-level navigation pattern**, not a nested content card.
+
+| Header part | Implemented rule |
+|---|---|
+| **Brand** | Use the pixel-rendered DoTheThing logo at 184px wide on desktop and 148px on narrow mobile. Keep the brand control at least 48px tall. |
+| **Desktop navigation** | Use quiet Inter links at 0.88rem, 42px minimum height, 8px radius, and 6px inter-link gaps. The active and hover state is pale indigo with a subtle border. |
+| **Primary action** | Use the indigo header action at 44px minimum height, with a 3px indigo offset shadow. It darkens on hover without changing the navigation layout. |
+| **Mobile behavior** | At 860px, replace desktop navigation with a 42px menu control and an optional task shortcut. The expanded menu is a separate 12px-radius warm-white panel beneath the header. |
+
+### Footer
+
+The shared footer uses the same centered 1240px shell and intentionally feels like the closing panel of the page rather than a full-bleed utility bar. It has a warm-white surface, a 1px `#a8afc2` outline, a 14px radius, and a low-contrast offset shadow. Keep the footer 24px below the main content and 16px from the viewport edge.
+
+Footer links and controls use Inter at approximately 0.8rem. Preserve readable text contrast, visible link labels, and a clear route back into the product. At mobile widths, reduce the outer shell to a 12px inset while retaining the same panel treatment.
+
+### Canonical eyebrow: “A SMALLER NEXT STEP”
+
+> **“A SMALLER NEXT STEP” is the canonical eyebrow in the DoTheThing heading system.** It labels the hierarchy before the headline; it is not a second headline, a navigation item, or body copy.
+
+Use the eyebrow immediately above a hero, section headline, or CTA title when a compact pixel-art signal helps establish the next action. Set it in VT323 at 1–1.22rem, 0.09em letter spacing, and `--pixel-accent-dark`. The hero version pairs the text with a restrained lime spark. Keep a 10–18px gap below the eyebrow before the Inter headline. Do not set sentence-length copy in the eyebrow style, repeat it mechanically before every heading, or use it to replace semantic heading levels.
 
 ### Primary and secondary buttons
 
@@ -132,11 +151,27 @@ Use only the approved abstract lavender mascot identity: a rounded/rectangular l
 | **760px** | Audience cards become two columns. |
 | **560px** | Header tightens; card grids become one column; section panels use 28px × 18px padding. |
 
-## 7. Accessibility and Interaction
+## 7. Motion and Interaction
+
+Motion should acknowledge an interaction without introducing cognitive noise. The system favors short transitions and small positional shifts rather than decorative looping animation.
+
+| Interaction | Implemented behavior | Timing |
+|---|---|---:|
+| **Navigation links** | Pale-indigo background, border, and ink changes on hover or active state. | 160ms ease |
+| **Hero actions** | Primary and secondary actions lift by 2px on hover; the primary action also darkens. | 140ms transform; 160ms color/background |
+| **Header action** | Indigo action darkens on hover while retaining its fixed 3px offset shadow. | Short color transition; no layout movement |
+| **Blog and content cards** | Cards lift by 2px and gain an accent border only when the movement reinforces clickability. | 160ms ease |
+| **Press feedback** | Existing task controls move by 2px × 2px when pressed, echoing the small offset-shadow language. | Short active-state response |
+
+Only animate `transform`, `opacity`, and color-related properties. Do not animate layout dimensions, use large parallax effects, or introduce looping decoration that competes with task completion. Keyboard-initiated navigation should remain immediate.
+
+The global reduced-motion rule respects `prefers-reduced-motion: reduce` by reducing transition and animation durations to 0.01ms, limiting animation iterations, and restoring normal scroll behavior. Any future non-essential motion must preserve this behavior.
+
+## 8. Accessibility and Interaction
 
 All keyboard-reachable controls use a **3px indigo focus ring** with a 3px offset. Primary actions and mobile controls preserve a 48px minimum height. Motion is limited to short 120–160ms transitions for hover and active feedback, and is suppressed under `prefers-reduced-motion`. Use semantic headings, descriptive image alt text, and visible text labels; do not communicate state with color alone.
 
-## 8. Do / Do Not
+## 9. Do / Do Not
 
 | Do | Do not |
 |---|---|
@@ -146,11 +181,13 @@ All keyboard-reachable controls use a **3px indigo focus ring** with a 3px offse
 | Let mascot illustrations remain transparent and contained. | Add solid beige or gray image backdrops. |
 | Keep controls explicit and touch-friendly. | Replace labels with ambiguous icon-only choices. |
 | Center incomplete grid rows intentionally. | Leave a lonely final card visually stranded on the left. |
+| Use “A SMALLER NEXT STEP” as a compact hierarchy cue. | Turn the eyebrow into a paragraph or duplicate the headline. |
+| Use short hover and press feedback to confirm an action. | Use constant motion, delayed keyboard actions, or layout-shifting effects. |
 
-## 9. Implementation Checklist
+## 10. Implementation Checklist
 
-When adding a new landing section, first align its panel width to the 1240px shell, choose whether it needs one wide panel or a repeated-card grid, and apply the established Inter headline system. Use the 720px centered text grid for supporting copy that sits below a centered headline. Reuse the 14px/10px radius hierarchy, thin blue-gray outlines, and muted offset shadows. Test at desktop, tablet, and 560px mobile widths before publishing.
+When adding a new landing section, first align its panel width to the 1240px shell, choose whether it needs one wide panel or a repeated-card grid, and apply the established Inter headline system. If the section needs an eyebrow, use the canonical “A SMALLER NEXT STEP” treatment above the headline rather than inventing a competing accent style. Use the 720px centered text grid for supporting copy that sits below a centered headline. Reuse the 14px/10px radius hierarchy, thin blue-gray outlines, and muted offset shadows. Test header, footer, and section behavior at desktop, tablet, and 560px mobile widths before publishing.
 
-## 10. Reference Validation
+## 11. Reference Validation
 
-The companion HTML reference has been checked in a browser at desktop width. Its token swatches, shared typography sample, five-card demonstration, CTA example, responsive contract, and implementation rules render as clear, readable panels that match the live landing-page treatment.
+The companion HTML reference was checked in a browser on 13 August 2026 at desktop width. Its token swatches, shared typography sample, header and footer demonstrations, canonical eyebrow sample, motion contract, five-card demonstration, CTA example, responsive contract, and implementation rules rendered as clear, readable panels that match the live landing-page treatment.

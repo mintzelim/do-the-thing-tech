@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { LEARNING_PATHS } from "@/lib/learningPaths";
+import { assetUrl } from "@/lib/assetUrl";
 
 export default function HomeContent() {
   return (
@@ -11,31 +12,31 @@ export default function HomeContent() {
         <div className="steps-grid">
           <div className="step-card">
             <div className="step-number">1</div>
-            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png" alt="Purple mascot considering a pile of thoughts" />
+            <img className="how-it-works-mascot" src={assetUrl("/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png")} alt="Purple mascot considering a pile of thoughts" />
             <h3>Brain Dump</h3>
             <p>Type a task. Or type everything. No sorting needed — the AI reads the pile and finds the work inside it.</p>
           </div>
           <div className="step-card">
             <div className="step-number">2</div>
-            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png" alt="Purple mascot with a focus checklist" />
+            <img className="how-it-works-mascot" src={assetUrl("/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png")} alt="Purple mascot with a focus checklist" />
             <h3>Pick Your Focus Level</h3>
             <p>Hyperfocused. Normal. Distracted. Your time estimates shift to match your actual brain today, not the version you wish showed up.</p>
           </div>
           <div className="step-card">
             <div className="step-number">3</div>
-            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-works-breakdown-size-transparent_631cd19e.png" alt="Purple mascot choosing between three step sizes" />
+            <img className="how-it-works-mascot" src={assetUrl("/manus-storage/dothething-how-works-breakdown-size-transparent_631cd19e.png")} alt="Purple mascot choosing between three step sizes" />
             <h3>Choose Your Breakdown Size</h3>
             <p>Tiny Steps for the days when even starting feels huge. Balanced for normal days. Big Milestones when you want the shape of a project without every detail.</p>
           </div>
           <div className="step-card">
             <div className="step-number">4</div>
-            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png" alt="Purple mascot beside a generated step list" />
+            <img className="how-it-works-mascot" src={assetUrl("/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png")} alt="Purple mascot beside a generated step list" />
             <h3>Get Your Breakdown</h3>
             <p>A numbered list of specific steps lands in seconds. Each one small enough to start without deciding anything first.</p>
           </div>
           <div className="step-card">
             <div className="step-number">5</div>
-            <img className="how-it-works-mascot" src="/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png" alt="Purple mascot with a countdown timer and completion checkmark" />
+            <img className="how-it-works-mascot" src={assetUrl("/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png")} alt="Purple mascot with a countdown timer and completion checkmark" />
             <h3>Use the Timer</h3>
             <p>Check steps off as you go. The countdown timer keeps time visible — because ADHD time blindness is real, and watching an hour disappear is not a character flaw.</p>
           </div>
@@ -46,7 +47,7 @@ export default function HomeContent() {
       <section className="content-section cta-section">
         <div className="cta-reference-card">
           <div className="cta-reference-art" aria-hidden="true">
-            <img src="/manus-storage/dothething-cta-flag_aa5cdcdc.png" alt="" />
+            <img src={assetUrl("/manus-storage/dothething-cta-flag_aa5cdcdc.png")} alt="" />
           </div>
           <div className="cta-reference-copy">
             <p className="reference-eyebrow cta-eyebrow"><span>✦</span> A SMALLER NEXT STEP</p>
@@ -105,27 +106,27 @@ export default function HomeContent() {
         <p className="section-subtitle" style={{ textAlign: 'center' }}>Our AI task breakdown tool is for:</p>
         <div className="audience-grid">
           <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-howitworks-students_4055d5ad.png" alt="" aria-hidden="true" />
+            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-students_4055d5ad.png")} alt="" aria-hidden="true" />
             <h3>Students</h3>
             <p><strong>Students:</strong> Bypassing academic overwhelm and the "blank page" syndrome.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-howitworks-remote-workers_7ce7f448.png" alt="" aria-hidden="true" />
+            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-remote-workers_7ce7f448.png")} alt="" aria-hidden="true" />
             <h3>Remote Workers & Freelancers</h3>
             <p><strong>Remote Workers & Freelancers:</strong> For when you're your own boss and your initiation system is jamming.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-howitworks-employees_e7e52497.png" alt="" aria-hidden="true" />
+            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-employees_e7e52497.png")} alt="" aria-hidden="true" />
             <h3>Employees & Corporate Teams</h3>
             <p><strong>Employees & Corporate Teams:</strong> Stop losing hours to "prep work." Use DTT to generate accurate time estimates and concrete first steps.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-howitworks-project-managers_4856400a.png" alt="" aria-hidden="true" />
+            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-project-managers_4856400a.png")} alt="" aria-hidden="true" />
             <h3>Project Managers</h3>
             <p><strong>Project Managers:</strong> Use it to convert a vague "milestone" into a numbered micro-step list for your team in seconds.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src="/manus-storage/audience-howitworks-parents_e566bb8e.png" alt="" aria-hidden="true" />
+            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-parents_e566bb8e.png")} alt="" aria-hidden="true" />
             <h3>Parents</h3>
             <p><strong>Parents:</strong> Managing the invisible mental load of household admin and family logistics.</p>
           </article>

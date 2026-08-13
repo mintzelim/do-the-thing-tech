@@ -18,4 +18,19 @@ describe("landing-page design-system documentation", () => {
       expect(document).toContain("transparent");
     }
   });
+
+  it("covers the shared shell, canonical eyebrow, and accessible motion contract", () => {
+    for (const document of [markdown, html]) {
+      expect(document).toContain("A SMALLER NEXT STEP");
+      expect(document).toContain("Header");
+      expect(document).toContain("Footer");
+      expect(document).toContain("prefers-reduced-motion");
+      expect(document).toContain("160ms");
+    }
+
+    expect(markdown).toContain("Canonical eyebrow");
+    expect(markdown).toContain("Motion and Interaction");
+    expect(html).toContain("site-header-demo");
+    expect(html).toContain("site-footer-demo");
+  });
 });

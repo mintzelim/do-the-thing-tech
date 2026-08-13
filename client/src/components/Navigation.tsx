@@ -1,5 +1,6 @@
 import { useLocation } from "wouter";
 import { useState, useEffect } from "react";
+import { assetUrl } from "@/lib/assetUrl";
 
 export default function Navigation() {
   const [location, navigate] = useLocation();
@@ -58,7 +59,7 @@ export default function Navigation() {
           aria-label="DoTheThing home"
         >
           <img
-            src="/manus-storage/logo_dabca0e9.png"
+            src={assetUrl("/manus-storage/logo_dabca0e9.png")}
             alt="DoTheThing Logo"
             className="reference-brand-logo"
           />
