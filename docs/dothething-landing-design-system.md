@@ -145,15 +145,15 @@ Main panels use a 1px panel border, 14px radius, and one offset shadow. Repeated
 
 ### Alternate public-page rhythm
 
-Public authority and resource pages may alternate **three approved compositional modes** to create hierarchy without abandoning the calm landing system. Use them between standard warm-white panels rather than applying a new color to every section.
+Public authority and resource pages may alternate **three approved compositional modes** to create hierarchy without abandoning the calm landing system. The variation comes from proportion, alignment, and intentional row balancing—not additional color treatments. Use the same warm-white panel surface, ink outline, and quiet shadow where a panel is appropriate.
 
 | Pattern | Surface and layout | Appropriate use |
 |---|---|---|
-| **Lavender editorial split** | A pale-indigo `#eef0ff` main panel with one transparent mascot illustration opposite a text block. It retains the 14px panel radius, one 1px outline, and one low-contrast shadow. | Mission, audience, or creator context where a quieter tonal break helps the reader reset. |
+| **Editorial split** | One warm-white panel pairs a transparent mascot illustration with a text block. Alternate the illustration from left to right between successive content areas while retaining the 14px panel radius, one 1px outline, and one low-contrast shadow. | Mission, audience, or creator context where a structural reset helps the reader move through longer authority content. |
 | **Canvas card field** | The outer section stays transparent on the warm-gray canvas; repeated white cards become the only visible surfaces. Incomplete rows are centered deliberately. | A short collection of challenges, principles, or steps that benefits from a scannable grid. |
-| **Ink editorial band** | A `#26364a` full panel with white text, restrained lavender/lime detail, and repeatable warm-white cards only where a card grid is needed. The panel may use one subtle static geometric accent. | Product differentiation, an important contrast statement, or a single decisive CTA. |
+| **Wide editorial panel** | A single warm-white panel uses an asymmetric text-and-mascot header, followed by a deliberately paced grid when repeatable features are needed. It does not add a second enclosing surface or a new page color. | Product differentiation, a key value proposition, or a decisive CTA. |
 
-The ink band is not a dark-mode theme and should never be used for dense long-form reading. Keep its copy concise, retain the same 14px radius and 1px ink outline, and preserve the short transform/color interaction rules. At mobile widths, every split stacks to one column and the card field becomes a single column.
+Keep these layouts concise, retain the same 14px radius and 1px ink outline, and preserve the short transform/color interaction rules. At mobile widths, every split stacks to one column and the card field becomes a single column.
 
 ### How It Works cards
 

@@ -1,2 +1,78 @@
-/* Alternate public-page layouts: rhythm comes from composition, not additional color treatments. */
-.about-tone-lavender,.about-accent-band,.about-cta-ink{background:#fffefb;box-shadow:7px 8px 0 rgba(210,211,224,.7)}.about-challenges-section,.about-workflow-section{padding:12px 0;border:0;background:transparent;box-shadow:none}.about-challenges-section .about-grid-intro{margin-top:26px!important}.about-challenges-section .about-challenge-grid{grid-template-columns:repeat(12,minmax(0,1fr));align-items:stretch}.about-challenges-section .about-mini-card{grid-column:span 4;min-height:172px}.about-challenges-section .about-mini-card:nth-child(4){grid-column:3/span 4}.about-challenges-section .about-mini-card:nth-child(5){grid-column:7/span 4}.about-workflow-section{padding-top:30px;padding-bottom:30px}.about-workflow-section .about-steps-grid{grid-template-columns:repeat(6,minmax(0,1fr));width:min(100%,1120px);margin-right:auto;margin-left:auto}.about-workflow-section .about-step-card{grid-column:span 2}.about-workflow-section .about-step-card:nth-child(4){grid-column:2/span 2}.about-workflow-section .about-step-card:nth-child(5){grid-column:4/span 2}.about-accent-band{position:static;overflow:visible}.about-accent-band::after,.about-cta-ink::before{display:none}.about-accent-band .about-section-copy,.about-accent-band .about-side-art,.about-accent-band .about-feature-grid{position:static}.about-accent-band .about-panel-label{color:var(--pixel-accent-dark)}.about-accent-band h2,.about-accent-band p,.about-accent-band .about-section-copy p,.about-accent-band .about-section-copy p strong{color:inherit!important}.about-accent-band .about-feature-grid{margin-top:8px}.about-accent-band .about-mini-card{background:#fffefb}.about-accent-band .about-mini-card h3{color:#1f293b}.about-accent-band .about-mini-card p{color:var(--pixel-text-light)!important}.about-accent-band .about-side-art img{filter:none}.about-cta-ink{position:static;overflow:visible;border-color:#a8afc2}.about-cta-ink>*{position:static}.about-cta-ink h2,.about-cta-ink p:not(.about-eyebrow){color:inherit!important}.about-cta-ink .about-eyebrow{color:var(--pixel-accent-dark)}.about-cta-ink .about-primary-action{border-color:var(--pixel-accent-dark);background:var(--pixel-accent);color:#fff}.about-cta-ink .about-primary-action:hover{background:var(--pixel-accent-dark)}@media (max-width:1100px){.about-challenges-section .about-challenge-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.about-challenges-section .about-mini-card,.about-challenges-section .about-mini-card:nth-child(4),.about-challenges-section .about-mini-card:nth-child(5){grid-column:span 2}.about-challenges-section .about-mini-card:last-child{grid-column:3/span 2}.about-workflow-section .about-steps-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.about-workflow-section .about-step-card,.about-workflow-section .about-step-card:nth-child(4),.about-workflow-section .about-step-card:nth-child(5){grid-column:auto}}@media (max-width:700px){.about-challenges-section .about-challenge-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-challenges-section .about-mini-card,.about-challenges-section .about-mini-card:nth-child(4),.about-challenges-section .about-mini-card:nth-child(5),.about-challenges-section .about-mini-card:last-child{grid-column:auto}}@media (max-width:560px){.about-challenges-section,.about-workflow-section{padding:0}.about-workflow-section{padding-top:8px}.about-workflow-section .about-steps-grid{grid-template-columns:1fr}}
+.about-tone-lavender,
+.about-accent-band,
+.about-cta-ink {
+  background: var(--pixel-card-bg, #fffefb);
+  box-shadow: 7px 8px 0 rgba(210, 211, 224, .7);
+}
+
+.about-challenges-section,
+.about-workflow-section {
+  padding: 12px 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.about-challenges-section .about-grid-intro { margin-top: 26px !important; }
+.about-challenges-section .about-challenge-grid { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); align-items: stretch; }
+.about-challenges-section .about-mini-card { grid-column: span 4; min-height: 172px; }
+.about-challenges-section .about-mini-card:nth-child(4) { grid-column: 3 / span 4; }
+.about-challenges-section .about-mini-card:nth-child(5) { grid-column: 7 / span 4; }
+
+.about-workflow-section { padding-top: 30px; padding-bottom: 30px; }
+.about-workflow-section .about-steps-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); width: min(100%, 1120px); margin-right: auto; margin-left: auto; }
+.about-workflow-section .about-step-card { grid-column: span 2; }
+.about-workflow-section .about-step-card:nth-child(4) { grid-column: 2 / span 2; }
+.about-workflow-section .about-step-card:nth-child(5) { grid-column: 4 / span 2; }
+
+.about-accent-band,
+.about-cta-ink { position: static; overflow: visible; }
+.about-accent-band::after,
+.about-cta-ink::before { display: none; }
+.about-accent-band .about-section-copy,
+.about-accent-band .about-side-art,
+.about-accent-band .about-feature-grid,
+.about-cta-ink > * { position: static; }
+.about-accent-band .about-panel-label,
+.about-cta-ink .about-eyebrow { color: var(--pixel-accent-dark); }
+.about-accent-band h2,
+.about-accent-band p,
+.about-accent-band .about-section-copy p,
+.about-accent-band .about-section-copy p strong,
+.about-cta-ink h2,
+.about-cta-ink p:not(.about-eyebrow) { color: inherit !important; }
+.about-accent-band .about-feature-grid { margin-top: 8px; }
+.about-accent-band .about-mini-card { background: #fffefb; }
+.about-accent-band .about-mini-card h3 { color: #1f293b; }
+.about-accent-band .about-mini-card p { color: var(--pixel-text-light) !important; }
+.about-accent-band .about-side-art img { filter: none; }
+.about-cta-ink { border-color: #a8afc2; }
+.about-cta-ink .about-primary-action { border-color: var(--pixel-accent-dark); background: var(--pixel-accent); color: #fff; }
+.about-cta-ink .about-primary-action:hover { background: var(--pixel-accent-dark); }
+
+@media (max-width: 1100px) {
+  .about-challenges-section .about-challenge-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .about-challenges-section .about-mini-card,
+  .about-challenges-section .about-mini-card:nth-child(4),
+  .about-challenges-section .about-mini-card:nth-child(5) { grid-column: span 2; }
+  .about-challenges-section .about-mini-card:last-child { grid-column: 3 / span 2; }
+  .about-workflow-section .about-steps-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .about-workflow-section .about-step-card,
+  .about-workflow-section .about-step-card:nth-child(4),
+  .about-workflow-section .about-step-card:nth-child(5) { grid-column: auto; }
+}
+
+@media (max-width: 700px) {
+  .about-challenges-section .about-challenge-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .about-challenges-section .about-mini-card,
+  .about-challenges-section .about-mini-card:nth-child(4),
+  .about-challenges-section .about-mini-card:nth-child(5),
+  .about-challenges-section .about-mini-card:last-child { grid-column: auto; }
+}
+
+@media (max-width: 560px) {
+  .about-challenges-section,
+  .about-workflow-section { padding: 0; }
+  .about-workflow-section { padding-top: 8px; }
+  .about-workflow-section .about-steps-grid { grid-template-columns: 1fr; }
+}

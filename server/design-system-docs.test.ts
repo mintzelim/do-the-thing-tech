@@ -31,11 +31,11 @@ describe("landing-page design-system documentation", () => {
     expect(markdown).toContain("Contextual eyebrow pattern");
     expect(markdown).toContain("Motion and Interaction");
     expect(markdown).toContain("Alternate public-page rhythm");
-    expect(markdown).toContain("Ink editorial band");
+    expect(markdown).toContain("Wide editorial panel");
     expect(html).toContain("site-header-demo");
     expect(html).toContain("site-footer-demo");
     expect(html).toContain("rhythm-demo");
-    expect(html).toContain("Alternate panel patterns");
+    expect(html).toContain("Alternate layout patterns");
     expect(html).toContain("ARTICLE DATA PRESENTATION");
     expect(html).toContain("OPTION 01 · QUIET LEDGER");
     expect(html).toContain("OPTION 02 · GUIDED COMPARISON");

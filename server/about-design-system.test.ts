@@ -4,6 +4,9 @@ import { describe, expect, it } from "vitest";
 
 const aboutPage = readFileSync(resolve(process.cwd(), "client/src/pages/About.tsx"), "utf8");
 const aboutStyles = readFileSync(resolve(process.cwd(), "client/src/about-refined.css"), "utf8");
+const aboutRhythm = readFileSync(resolve(process.cwd(), "client/src/about-rhythm.css"), "utf8");
+const designSystem = readFileSync(resolve(process.cwd(), "docs/dothething-landing-design-system.md"), "utf8");
+const visualReference = readFileSync(resolve(process.cwd(), "docs/dothething-landing-design-system.html"), "utf8");
 
 describe("About page design-system refresh", () => {
   it("uses the landing shell, contextual eyebrow treatment, and documented visual hierarchy", () => {
@@ -37,5 +40,18 @@ describe("About page design-system refresh", () => {
     expect(aboutStyles).toContain("@media (max-width:560px)");
     expect(aboutPage).toContain("Creator professional profiles");
     expect(aboutPage).toContain("not a substitute for diagnosis or medical care");
+  });
+
+  it("uses documented layout rhythm rather than new color treatments", () => {
+    expect(aboutPage).toContain('className="about-panel about-centered-panel about-challenges-section"');
+    expect(aboutPage).toContain('className="about-panel about-product-panel about-accent-band"');
+    expect(aboutRhythm).toContain("grid-template-columns: repeat(12, minmax(0, 1fr))");
+    expect(aboutRhythm).toContain("grid-column: 3 / span 4");
+    expect(aboutRhythm).toContain("grid-template-columns: repeat(6, minmax(0, 1fr))");
+    expect(aboutRhythm).toContain("background: transparent");
+    expect(designSystem).toContain("Alternate public-page rhythm");
+    expect(designSystem).toContain("The variation comes from proportion, alignment, and intentional row balancing—not additional color treatments.");
+    expect(visualReference).toContain("Alternate layout patterns");
+    expect(visualReference).toContain("Wide editorial panel");
   });
 });

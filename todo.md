@@ -643,15 +643,15 @@
 - [x] Validate and publish the section-surface cleanup
 
 ## About Page Design-System Refresh
-- [ ] Review the existing About page against the documented landing-page header, typography, card, spacing, and motion system
-- [ ] Restyle the About page to match the landing-page design system without removing its existing trust and authority content
-- [ ] Add purple-mascot visual accents using available approved assets or documented placeholders if new asset generation remains unavailable
-- [ ] Validate the responsive About-page refresh, update tests, and publish the revision
+- [x] Review the existing About page against the documented landing-page header, typography, card, spacing, and motion system
+- [x] Restyle the About page to match the landing-page design system without removing its existing trust and authority content
+- [x] Add purple-mascot visual accents using available approved assets or documented placeholders if new asset generation remains unavailable
+- [x] Validate the responsive About-page refresh, update tests, and publish the revision
 
 ## About Page Layout Rhythm Refinement
-- [ ] Add design-system-consistent alternating editorial layouts to the About page while retaining the restrained existing palette and avoiding nested surfaces
-- [ ] Document reusable layout-rhythm patterns, not additional color treatments, in the Markdown and HTML design-system references
-- [ ] Validate the varied About layout across responsive breakpoints and publish the refinement
+- [x] Add design-system-consistent alternating editorial layouts to the About page while retaining the restrained existing palette and avoiding nested surfaces
+- [x] Document reusable layout-rhythm patterns, not additional color treatments, in the Markdown and HTML design-system references
+- [x] Validate the varied About layout across responsive breakpoints and publish the refinement
 
 ## Data Presentation Options in the Design System
 - [x] Define three visual options each for article tables, data-chart containers, and bullet lists within the restrained landing-page system

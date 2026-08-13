@@ -63,7 +63,7 @@
       .motion-button:hover { transform:translateY(-2px); background:var(--accent-dark); }
       .motion-button:active { transform:translate(2px,2px); }
       .reduced-motion { margin:16px 0 0; padding:14px; border-left:3px solid var(--accent); background:#f0f1fb; color:var(--muted); font-size:.94rem; }
-      .rhythm-demo { display:grid; grid-template-columns:1.1fr .9fr; gap:16px; margin-top:20px; } .rhythm-lavender,.rhythm-ink { min-height:170px; padding:24px; border:1px solid var(--panel-border); border-radius:14px; box-shadow:4px 4px 0 rgba(38,54,74,.1); } .rhythm-lavender { background:#eef0ff; } .rhythm-ink { position:relative; overflow:hidden; background:var(--border); color:#fff; } .rhythm-ink:after { content:""; position:absolute; width:130px; height:130px; right:-42px; bottom:-46px; border:1px solid rgba(217,198,244,.45); border-radius:50%; box-shadow:0 0 0 20px rgba(217,198,244,.08); } .rhythm-ink h3,.rhythm-ink p { position:relative; z-index:1; color:#fff; } .rhythm-ink p { margin:0; font-size:.94rem; } .rhythm-field { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; grid-column:1/-1; } .rhythm-field .card { min-height:130px; padding:18px; }
+      .rhythm-demo { display:grid; grid-template-columns:1.1fr .9fr; gap:16px; margin-top:20px; } .rhythm-lavender,.rhythm-ink { min-height:170px; padding:24px; border:1px solid var(--panel-border); border-radius:14px; background:var(--surface); box-shadow:4px 4px 0 rgba(38,54,74,.1); } .rhythm-lavender { display:grid; align-content:center; } .rhythm-ink { display:grid; align-content:center; } .rhythm-ink p { margin:0; color:var(--muted); font-size:.94rem; } .rhythm-field { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; grid-column:1/-1; } .rhythm-field .card { min-height:130px; padding:18px; }
       .site-footer-demo { display:grid; grid-template-columns:1fr auto; gap:24px; align-items:center; margin-top:24px; padding:26px; border:1px solid var(--panel-border); border-radius:14px; background:var(--surface); box-shadow:4px 5px 0 rgba(210,211,224,.7); }
       .site-footer-demo p { margin:0; color:var(--muted); font-size:.88rem; }
       .footer-links { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:14px; }
@@ -142,11 +142,11 @@
 
       <section class="section">
         <p class="eyebrow">PUBLIC PAGE RHYTHM</p>
-        <h2>Alternate panel patterns</h2>
-        <p class="lede">Use a small number of tonal and compositional shifts to help authority and resource pages breathe. Each pattern retains the same radius, outline, readable Inter copy, and restrained interaction language.</p>
+        <h2>Alternate layout patterns</h2>
+        <p class="lede">Use proportion, alignment, and intentional row balancing to help authority and resource pages breathe. Each pattern retains the same warm-white surface, radius, outline, readable Inter copy, and restrained interaction language.</p>
         <div class="rhythm-demo">
-          <article class="rhythm-lavender"><h3>Lavender editorial split</h3><p>A pale-indigo panel provides a quiet visual reset for a mission, audience, or creator statement, with one mascot illustration opposite the copy.</p></article>
-          <article class="rhythm-ink"><h3>Ink editorial band</h3><p>A concise contrast section for product differentiation or one decisive call to action. It is not a dark-mode body template.</p></article>
+          <article class="rhythm-lavender"><h3>Editorial split</h3><p>Use a wide text-and-mascot composition, alternating the illustration side between sections. The reset comes from proportion, not a new color.</p></article>
+          <article class="rhythm-ink"><h3>Wide editorial panel</h3><p>A concise asymmetric header followed by an optional paced card grid makes product differentiation or a decisive call to action feel distinct without a second surface.</p></article>
           <div class="rhythm-field"><article class="card"><h3>Canvas card field</h3><p>Leave the outer section transparent and let repeatable cards carry the only visible surfaces.</p></article><article class="card"><h3>Centered row</h3><p>Balance incomplete grids intentionally rather than leaving a single card stranded.</p></article><article class="card"><h3>Mobile stack</h3><p>Every split stacks, and every card field becomes one column on narrow screens.</p></article></div>
         </div>
       </section>
