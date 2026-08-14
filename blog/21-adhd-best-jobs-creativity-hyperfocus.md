@@ -3,6 +3,8 @@ title: "Best Jobs for ADHD: Leveraging Hyperfocus and Creativity"
 excerpt: "Discover careers that leverage ADHD strengths like hyperfocus, creativity, and quick thinking. Find work that matches your brain."
 date: "2026-04-15"
 updatedDate: "2026-08-12"
+featuredImage: "/manus-storage/blog-best-jobs-adhd-featured_bcdca525.png"
+featuredImageAlt: "A purple pixel-art mascot stands at three creative work paths."
 category: "ADHD at Work"
 tags:
   - ADHD

@@ -3,8 +3,8 @@ title: "ADHD and Creativity: Harnessing the Divergent Mind"
 excerpt: "Explore the deep connection between ADHD and creativity, from divergent thinking to hyperfocus, and learn how to channel your creative energy."
 date: "2026-04-08"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png"
-featuredImageAlt: "Purple pixel mascot considering a brain dump of tasks"
+featuredImage: "/manus-storage/blog-adhd-creativity-featured_22cf1a2e.png"
+featuredImageAlt: "A purple pixel-art mascot gathers creative sparks into an open idea canvas."
 tags:
   - ADHD
   - creativity

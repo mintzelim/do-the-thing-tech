@@ -3,6 +3,8 @@ title: "How to Break Down Tasks: An ADHD Guide"
 excerpt: "Learn how to effectively break down overwhelming tasks into manageable steps with ADHD, using evidence-based strategies."
 date: "2026-04-14"
 updatedDate: "2026-08-12"
+featuredImage: "/manus-storage/blog-how-to-break-down-tasks-featured_c86e2a7f.png"
+featuredImageAlt: "A purple pixel-art mascot unfolds a large task map into a three-stop route."
 category: "Task Management"
 tags:
   - ADHD

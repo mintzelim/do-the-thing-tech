@@ -3,6 +3,8 @@ title: "15 Free Tools for ADHD Adults in 2026"
 excerpt: "A comprehensive review of the best free tools for ADHD adults, from task management to focus aids."
 date: "2026-04-09"
 updatedDate: "2026-08-12"
+featuredImage: "/manus-storage/blog-free-tools-adhd-featured_1274e7b0.png"
+featuredImageAlt: "A purple pixel-art mascot opens a simple toolkit with a timer and checklist."
 category: "Tools & Resources"
 tags:
   - ADHD

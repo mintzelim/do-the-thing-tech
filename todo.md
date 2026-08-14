@@ -431,7 +431,7 @@
 ### Phase 5: Content Quality Signals
 - [x] Add "Updated on [Date]" timestamp to all blog posts (show active maintenance)
 - [x] Verify all blog posts are 800+ words (minimum for quality signals)
-- [ ] Ensure each post has unique imagery/screenshots (not generic stock photos)
+- [x] Ensure each post has unique imagery/screenshots (not generic stock photos)
 - [x] Add "Gotchas" or "Common Mistakes" section to all published technical posts
 - [x] Add personal opinion/verdict to tool review posts (not neutral)
 
@@ -441,7 +441,7 @@
 - [x] Test internal linking navigation
 - [x] Verify About page displays correctly
 - [x] Check homepage layout on mobile and desktop
-- [ ] Save checkpoint after all changes
+- [x] Save checkpoint after all changes
 - [x] Audit and repair blog images missing on the live site
 - [x] Fix blank category tag shown in the live blog category filters
 - [x] Resolve the deployment build failure caused by ignored pnpm esbuild build scripts
@@ -582,7 +582,7 @@
 
 ## Mascot-Led Audience Card Design Options
 - [x] Add three creative, fun, responsive audience-card design options to the visual design-system HTML, keeping the approved mascot as the hero and leaving the live audience section unchanged until selection
-- [ ] Present and validate the audience-card options without requesting connected-browser authorization or an extension
+- [x] Present and validate the audience-card options without requesting connected-browser authorization or an extension
 - [x] Add three further dynamic, creative, fun five-card audience-system options to the visual design-system HTML without changing the live audience section
 - [x] Apply the selected Option 02 Little Worlds mascot-scene treatment to the live five-card audience section without changing its copy, assets, links, or responsive behavior
 

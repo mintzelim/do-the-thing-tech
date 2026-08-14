@@ -3,6 +3,8 @@ title: "ADHD and Financial Management: Taming Impulse Spending"
 excerpt: "ADHD affects financial decisions through impulse control challenges, working memory limitations, and dopamine-seeking behavior. Learn strategies for better financial management."
 date: "2026-04-07"
 updatedDate: "2026-08-12"
+featuredImage: "/manus-storage/blog-adhd-financial-management-featured_bce7f42f.png"
+featuredImageAlt: "A purple pixel-art mascot organizes an envelope, wallet, and calendar tile."
 category: "Daily Life"
 tags:
   - ADHD

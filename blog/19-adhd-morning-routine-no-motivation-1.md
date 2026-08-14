@@ -3,6 +3,8 @@ title: "ADHD Morning Routine: How to Start Your Day Without Motivation"
 excerpt: "A practical, no-motivation-required morning routine designed for ADHD brains. Start your day without relying on willpower."
 date: "2026-04-13"
 updatedDate: "2026-08-12"
+featuredImage: "/manus-storage/blog-adhd-morning-routine-featured_29167d6d.png"
+featuredImageAlt: "A purple pixel-art mascot takes one small step from night toward a morning task."
 category: "Daily Routines"
 tags:
   - ADHD

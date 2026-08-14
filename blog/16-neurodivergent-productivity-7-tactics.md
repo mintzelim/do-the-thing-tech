@@ -3,8 +3,8 @@ title: "7 Neurodivergent Productivity Tactics That Actually Work"
 excerpt: "Evidence-based productivity strategies designed specifically for neurodivergent brains, not neurotypical productivity advice."
 date: "2026-04-10"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png"
-featuredImageAlt: "Purple pixel mascot beside a small generated task list"
+featuredImage: "/manus-storage/blog-neurodivergent-productivity-tactics-featured_ff5db036.png"
+featuredImageAlt: "A purple pixel-art mascot uses seven small productivity tactic tiles."
 tags:
   - ADHD
   - productivity

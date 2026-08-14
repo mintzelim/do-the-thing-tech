@@ -30,7 +30,7 @@ describe("targeted SEO content improvements", () => {
     for (const filename of priorityPosts) {
       const post = readPost(filename);
       expect(post, filename).toContain('updatedDate: "2026-08-13"');
-      expect(post, filename).toMatch(/featuredImage: "\/manus-storage\/dothething-how-it-works-/);
+      expect(post, filename).toMatch(/featuredImage: "\/manus-storage\//);
       expect(post, filename).toContain("featuredImageAlt:");
       expect(post, filename).toContain("## Common Mistakes to Avoid");
       expect(post, filename).toContain("](/blog/");
