@@ -547,6 +547,7 @@
 - [x] Inspect the supplied Figma card-template file and add ten design-system-aligned selection-only card-layout adaptations to the visual design-system HTML without changing the live site
 - [x] Rebuild the ten Figma-informed selection-only card previews to follow the source alignment and proportions while retaining DoTheThing styling
 - [x] Save checkpoint for the corrected source-faithful Figma card-library alignment
+- [x] Rebuild the Figma-informed card-library previews from measured source frames, gutters, padding, and internal rails while retaining DoTheThing styling
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

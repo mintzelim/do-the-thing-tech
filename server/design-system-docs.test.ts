@@ -179,12 +179,20 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("@media(prefers-reduced-motion:reduce)");
     expect(html).toContain("original grid, spacing, and proportion logic");
     expect(html).toContain("figma-source-grid");
+    expect(html).toContain("SOURCE-MEASURED FIGMA BOARD");
+    expect(html).toContain("figma-measured-board");
+    expect(html).toContain("repeat(5,540px)");
+    expect(html).toContain("gap:36px");
+    expect(html).toContain("540px frame");
+    expect(html).toContain("Scroll horizontally on smaller screens");
     for (const geometryClass of ["p-editorial", "p-identity", "p-snapshot", "p-ledger", "p-media-story", "p-numbered", "p-fact-hub", "p-tag-rail", "p-date-note", "p-progress"]) {
       expect(html).toContain(geometryClass);
     }
     expect(html).toContain("figma-option-label");
     expect(homeContent).not.toContain("FIGMA-INSPIRED CARD LIBRARY");
     expect(homeContent).not.toContain("PROGRESS PULSE");
+    expect(markdown).toContain("fixed **540px frame**");
+    expect(markdown).toContain("**36px gutter**");
   });
 
   it("does not fabricate aggregate ratings in structured data", () => {

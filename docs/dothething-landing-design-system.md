@@ -149,6 +149,12 @@ Buttons use Inter at 700 weight, 0.98rem, 8px radius, and 12px × 22px padding. 
 
 Main panels use a 1px panel border, 14px radius, and one offset shadow. Repeated content cards use a lighter 1px border, 10px radius, and a smaller cool-gray shadow. Avoid borders inside an already bordered wide panel unless the interior contains repeatable card items.
 
+### Figma-informed card library
+
+The Figma-informed card library is a **selection-only reference board**, not a live-site component set. Its layout geometry follows the supplied source board rather than the public site’s normal responsive card grid: every preview uses a fixed **540px frame**, neighbouring source columns have a **36px gutter**, and the board retains five columns on wide screens. On narrower screens, provide horizontal scrolling rather than compressing a source card into a new proportion.
+
+Each card retains its own source-derived rhythm. Do not standardise them to one shared inset or height. The board includes a large centred callout, shallow identity and time-rail rows, a two-by-two visual quartet, a progress note, a media-plus-metadata frame, a numbered editorial rail, a fact matrix with an overlapping mascot, a tag-rail utility, and a paced editorial note. Use only DoTheThing’s colour, font, border, and mascot conventions as the styling layer; the measured frame, gutter, alignment rails, and vertical sequencing are structural constraints.
+
 ### Content modules: illustrated and image-free
 
 Use the existing **illustrated card** when the transparent purple mascot or another approved image makes a concept easier to understand. Do not leave an empty illustration stage in a text-first module. For information that works without an image, two image-free systems are approved and should be applied by content purpose—not mixed arbitrarily inside the same group.
