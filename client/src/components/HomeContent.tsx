@@ -263,7 +263,7 @@ export default function HomeContent() {
       </section>
 
       {/* CTA SECTION 2: After Blog Links */}
-      <section className="content-section cta-section final-cta-cheer" aria-labelledby="final-cta-heading">
+      <section className="content-section cta-section final-cta-cheer final-cta-balanced-buddy" aria-labelledby="final-cta-heading">
         <div className="final-cta-copy">
           <h2 id="final-cta-heading" className="section-heading">Try DoTheThing Now</h2>
           <p className="section-content">Free. No login. No email. Just type your task and get your breakdown in under a minute.</p>

@@ -231,6 +231,8 @@ The visual design-system reference includes three **selection-only** final CTA d
 | **Option 02 · Action Pedestal** | Centered copy and action form the primary composition; the mascot supports the base of the action. | The section needs the most compact, symmetrical final ask. |
 | **Option 03 · Finish-Line Guide** | Mascot stage anchors the left edge while all reading and action elements share one right-hand rail. | The CTA should feel like a guided last step with strong editorial alignment. |
 
+**Selected implementation: Option 01 · Balanced Buddy.** The live final CTA uses the measured two-column copy/mascot rhythm and deliberately has **no dotted vertical divider**. Its original headline, supporting sentence, `#widget` action, canonical mascot, and “You got this.” bubble remain intact.
+
 ### Article data presentation
 
 Use the selected components below to make evidence and practical guidance easier to scan without making an educational article feel like a dashboard. **Quiet Ledger is the only table system.** The other patterns are deliberately named as chart, list, or editorial components rather than tables.

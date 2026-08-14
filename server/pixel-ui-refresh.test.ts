@@ -193,13 +193,16 @@ describe("hero-matched CTA and headlines", () => {
       "utf8",
     );
 
-    expect(homeContent).toContain('className="content-section cta-section final-cta-cheer"');
+    expect(homeContent).toContain('className="content-section cta-section final-cta-cheer final-cta-balanced-buddy"');
     expect(homeContent).toContain("Try DoTheThing Now");
     expect(homeContent).toContain("Free. No login. No email. Just type your task and get your breakdown in under a minute.");
     expect(homeContent).toContain('href="#widget" className="cta-button final-cta-action"');
     expect(homeContent).toContain('className="final-cta-bubble">You got this.</span>');
     expect(homeContent).toContain("audience-howitworks-remote-workers_7ce7f448.png");
     expect(stylesheet).toContain(".final-cta-cheer");
+    expect(stylesheet).toContain(".final-cta-cheer.final-cta-balanced-buddy{grid-template-columns:minmax(0,1.25fr) minmax(190px,.55fr)");
+    expect(stylesheet).toContain(".final-cta-cheer.final-cta-balanced-buddy .final-cta-mascot{min-height:220px;overflow:hidden;border-left:0!important}");
+    expect(stylesheet).not.toContain(".final-cta-cheer.final-cta-balanced-buddy .final-cta-mascot{border-left:1px dashed");
     expect(stylesheet).toContain(".final-cta-bubble");
     expect(stylesheet).toContain("@media (max-width:760px){.final-cta-cheer");
     expect(mascotStandard).toContain("canonical DoTheThing mascot");
