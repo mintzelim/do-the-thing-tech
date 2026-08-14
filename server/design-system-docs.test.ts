@@ -84,6 +84,20 @@ describe("landing-page design-system documentation", () => {
     expect(markdown).toContain("Inline Trail");
   });
 
+  it("presents six mascot-led audience-card options without changing the live audience section", () => {
+    expect(html).toContain('id="audience-card-options"');
+    expect(html).toContain("OPTION 01 · MASCOT MISSIONS");
+    expect(html).toContain("OPTION 02 · LITTLE WORLDS");
+    expect(html).toContain("OPTION 03 · TEAM PASSPORTS");
+    expect(html).toContain("OPTION 04 · TAKE-OFF DECK");
+    expect(html).toContain("OPTION 05 · MASCOT PARADE");
+    expect(html).toContain("OPTION 06 · POCKET ARCADE");
+    expect(html).toContain('role="group" aria-label="Take-Off Deck audience-card interaction preview"');
+    expect(html).toContain('role="group" aria-label="Mascot Parade audience-card interaction preview"');
+    expect(html).toContain('role="group" aria-label="Pocket Arcade audience-card interaction preview"');
+    expect(html).toContain("@media(prefers-reduced-motion:reduce)");
+  });
+
   it("does not fabricate aggregate ratings in structured data", () => {
     expect(enhancedSchema).not.toContain('"aggregateRating"');
     expect(enhancedSchema).not.toContain("ratingCount");

@@ -575,6 +575,11 @@
 ## Audience Image Scale Regression
 - [x] Diagnose and correct the unexpectedly oversized audience-card illustrations while preserving the five audience-card copy, order, assets, and responsive behavior
 
+## Mascot-Led Audience Card Design Options
+- [x] Add three creative, fun, responsive audience-card design options to the visual design-system HTML, keeping the approved mascot as the hero and leaving the live audience section unchanged until selection
+- [ ] Present and validate the audience-card options without requesting connected-browser authorization or an extension
+- [x] Add three further dynamic, creative, fun five-card audience-system options to the visual design-system HTML without changing the live audience section
+
 ## Remove Planning Section
 - [x] Remove the complete “The AI Does the Planning. You Do the Thing.” section from the landing page
 - [x] Preserve all surrounding landing content, navigation, and task functionality after removal
