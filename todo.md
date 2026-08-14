@@ -659,6 +659,12 @@
 ## Blog Article Mobile Responsiveness
 - [x] Audit and correct narrow-screen article layout, typography, navigation, media, Quiet Ledger table scrolling, sources, and CTA behavior without changing article copy or SEO structure
 - [x] Add mobile regression coverage and validate representative article pages at narrow viewport widths
+- [x] Correct the remaining real-device mobile hero overflow affecting breadcrumbs, mascot decoration, headline, metadata, byline, and featured-image containment
+- [x] Validate the article hero against the reported narrow mobile pattern without changing article copy or SEO structure
+
+## Categorised Footer Navigation Options
+- [x] Add several selectable categorised footer-navigation options to the visual design-system HTML, including the comparison and other public GEO pages, without changing the live footer before user selection
+- [x] Implement the selected Option 01 Directory footer with Product, Learn, Trust, and Explore route groups
 
 ## Landing-Page Design System Documentation
 - [x] Extract the implemented landing-page design tokens, component rules, and responsive treatments

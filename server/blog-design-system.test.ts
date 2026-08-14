@@ -74,5 +74,12 @@ describe("blog design-system refresh", () => {
     expect(styles).toContain('.blog-post-page,.blog-article-shell,.blog-article-hero,.blog-article-title-copy,.blog-article-mascot,.blog-article-meta,.blog-article-feature,.blog-article-body,.blog-article-body>div,.blog-sources-panel,.blog-article-cta,.blog-related-section{min-width:0;max-width:100%;box-sizing:border-box}');
     expect(styles).toContain('.blog-article-hero{grid-template-columns:minmax(0,1fr)!important}');
     expect(styles).toContain('.blog-article-body .quiet-ledger-wrap{max-width:100%!important;overflow-x:auto!important}');
+    expect(styles).toContain('.blog-post-page .blog-article-hero{display:flex!important;flex-direction:column!important;align-items:stretch!important;min-height:0!important;gap:12px!important;padding:4px 0 14px!important;overflow:hidden}');
+    expect(styles).toContain('.blog-post-page .blog-article-shell{width:min(calc(100% - 32px),680px)!important;max-width:100%!important;grid-template-columns:minmax(0,1fr)!important}');
+    expect(styles).toContain('.blog-post-page .blog-article-shell>article{width:100%!important;min-width:0!important;max-width:100%!important}');
+    expect(styles).toContain('.blog-post-page .blog-article-mascot{order:-1!important;display:flex!important;min-height:76px!important;justify-content:flex-end!important;align-items:center!important;overflow:hidden}');
+    expect(styles).toContain('.blog-post-page .blog-article-feature img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;max-height:340px!important;object-fit:cover!important}');
+    expect(breadcrumbStyles).toContain('text-overflow:ellipsis');
+    expect(breadcrumbStyles).toContain('.blog-breadcrumb-item:last-child{min-width:0;overflow:hidden}');
   });
 });
