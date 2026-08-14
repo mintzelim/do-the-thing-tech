@@ -179,13 +179,13 @@ Five desktop cards use equal-width columns and 16px gutters. Each card uses: a 3
 
 ### Audience cards
 
-The audience section mirrors How It Works density: the same **132px × 108px** illustration stage, 1.2rem heading, 0.98rem body, 20px padding, and 437px desktop minimum height. The five supplied illustrations remain centered and use transparent backgrounds. At 1200px the final two cards are centered in a six-column grid; at 760px the grid becomes two columns, with the final card centered; at 560px it becomes one column.
+The audience section mirrors How It Works density: the same **132px × 108px** illustration stage, 1.2rem heading, and 0.98rem body. To keep the Little Worlds scenes lively rather than vertically stretched, desktop cards use a **360px minimum height**, a 16px frame, and a 116px scene stage. The supplied illustrations remain centered and use transparent backgrounds. At 1200px the final two cards are centered in a six-column grid; at 760px the grid becomes two columns, with the final card centered; at 560px it becomes one column and retains its compact, content-led mobile height.
 
 ### Initiation Problem: Signal Stack
 
-**Signal Stack** is the selected treatment for the “Built for the Initiation Problem” section. It keeps one wide, warm-white editorial panel. The existing eyebrow, Inter display heading, and three explanatory paragraphs remain in the left reading column; the six existing product capabilities become a numbered set of Context Strips on the right. The final “Free. No login.” statement may sit in one lightweight Pixel Post-It to mark the lowest-friction entry point, but it is not a second panel or a new call to action.
+**Signal Stack** is the selected treatment for the “Built for the Initiation Problem” section. It keeps one wide, warm-white editorial panel. The existing eyebrow, Inter display heading, and three explanatory paragraphs remain in the left reading column; all six product capabilities become a numbered set of Context Strips on the right. The **Free · No Login** statement remains the sixth strip, using the exact same scan-first styling as the first five capabilities. A single lightweight Pixel Post-It beneath the explanatory copy carries the encouragement: “You can start and you can finish!”
 
-The Signal Stack is appropriate when explanatory product copy needs priority and the supporting capabilities should be quick to scan. Use Inter for all capability text, VT323 only for the compact `01–06` labels, thin blue-gray separators between strips, and a small lavender shadow beneath the one Post-It. On screens below 900px, stack the reading column above the strip list. The content, order, and wording of the feature statements must remain unchanged.
+The Signal Stack is appropriate when explanatory product copy needs priority and the supporting capabilities should be quick to scan. Use Inter for all capability text, VT323 only for the compact `01–06` labels, thin blue-gray separators between strips, and one small lavender-shadowed Post-It in the editorial column. On screens below 900px, stack the reading column above the strip list. The original feature statements remain unchanged; the Post-It adds one concise encouragement rather than replacing a capability.
 
 ### CTA panel
 

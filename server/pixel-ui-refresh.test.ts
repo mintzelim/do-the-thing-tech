@@ -122,17 +122,21 @@ describe("single-surface landing panels", () => {
     );
 
     expect(homeContent).toContain('className="initiation-panel-features initiation-signal-stack"');
-    expect((homeContent.match(/className="initiation-signal-strip"/g) ?? []).length).toBe(5);
-    expect((homeContent.match(/className="initiation-signal-note"/g) ?? []).length).toBe(1);
+    expect((homeContent.match(/className="initiation-signal-strip"/g) ?? []).length).toBe(6);
+    expect((homeContent.match(/className="initiation-signal-note"/g) ?? []).length).toBe(0);
+    expect((homeContent.match(/className="initiation-access-highlight"/g) ?? []).length).toBe(0);
+    expect((homeContent.match(/className="initiation-post-it"/g) ?? []).length).toBe(1);
     expect(homeContent).toContain("AI task breakdown.</strong> Vague becomes specific in seconds.");
     expect(homeContent).toContain("Focus-level adjustment.</strong> Estimates match today's capacity, whatever that looks like.");
     expect(homeContent).toContain("ADHD time buffers.</strong> 20–30% built into every estimate.");
     expect(homeContent).toContain("Visual countdown timer.</strong> Time becomes something you can see.");
     expect(homeContent).toContain("Brain dump mode.</strong> Type the whole pile. The AI finds the work.");
     expect(homeContent).toContain("Free. No login.</strong> Open the tab. Start.");
+    expect(homeContent).toContain("You can start and you can finish!");
     expect(stylesheet).toContain(".initiation-panel-features.initiation-signal-stack{display:grid;gap:0");
     expect(stylesheet).toContain(".initiation-signal-strip{display:grid;grid-template-columns:34px minmax(0,1fr)");
-    expect(stylesheet).toContain(".initiation-signal-note{display:grid;grid-template-columns:34px minmax(0,1fr)");
+    expect(stylesheet).toContain(".initiation-post-it{margin:22px 0 0;padding:15px 16px 17px");
+    expect(stylesheet).toContain("box-shadow:3px 3px 0 #d9c6f4");
   });
 });
 
@@ -207,6 +211,8 @@ describe("mascot-led audience grid", () => {
     expect(stylesheet).toContain("flex:0 0 108px!important;width:132px!important;min-width:0!important;max-width:132px!important;height:108px!important;max-height:108px!important");
     expect(stylesheet).toContain("flex-basis:96px!important;width:120px!important;max-width:120px!important;height:96px!important;max-height:96px!important");
     expect(stylesheet).toContain(".audience-card{display:flex;flex-direction:column;align-items:center;min-height:437px;padding:20px");
+    expect(stylesheet).toContain("@media (min-width:761px){.audience-card{min-height:360px;padding:16px}");
+    expect(stylesheet).toContain(".audience-card,.audience-card:last-child{grid-column:auto;width:auto;min-height:0;padding:20px}");
     expect(stylesheet).toContain(".audience-card h3{margin:0 0 8px");
     expect(stylesheet).toContain("max-width:1120px");
     expect(stylesheet).toContain(".audience-card:nth-child(4){grid-column:2/span 2}");

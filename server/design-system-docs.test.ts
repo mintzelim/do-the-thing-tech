@@ -104,6 +104,8 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("OPTION 02 · THE SIGNAL STACK");
     expect(html).toContain("OPTION 03 · THE FOCUS FAN CONTROL ROOM");
     expect(html).toContain("Selected implementation:</strong> Option 02 · The Signal Stack");
+    expect(html).toContain("You can start and you can finish!");
+    expect(html).toContain("06 · Free, no login");
     expect(html).toContain("Quest Ticket");
     expect(html).toContain("Pixel Post-It");
     expect(html).toContain("Context Strips");
@@ -111,6 +113,8 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("@media(prefers-reduced-motion:reduce)");
     expect(markdown).toContain("Initiation Problem: Signal Stack");
     expect(markdown).toContain("**Signal Stack** is the selected treatment");
+    expect(markdown).toContain("360px minimum height");
+    expect(markdown).toContain("You can start and you can finish!");
   });
 
   it("does not fabricate aggregate ratings in structured data", () => {

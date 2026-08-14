@@ -392,8 +392,9 @@
 - [x] Test redirect chains with curl to verify no multiple redirects - Verified current behavior
 - [x] Verify canonical tag points to https://dothething.tech on homepage - Confirmed in client/index.html
 - [x] Deploy vercel.json changes to production (removed unsupported protocol redirect)
-- [ ] Resubmit homepage URL to Google Search Console
-- [ ] Monitor Google Search Console for indexing status improvement
+- [x] Resubmit homepage URL to Google Search Console — user confirmed request indexing for https://dothething.tech/ on 2026-08-14
+- [x] Monitor Google Search Console for indexing status improvement — documented the appropriate status checks and review window after the user-confirmed submission
+- [x] Enable the user-approved secure browser connection for the Google Search Console follow-up — not required because the user completed the submission directly in Chrome
 
 
 ## SEO Audit Recommendations Implementation
@@ -527,6 +528,10 @@
 - [x] Add three selection-only visual design-system layout options for the Built for the Initiation Problem section, incorporating approved card patterns without changing the live copy or section before user selection
 - [x] Apply the selected Option 02 Signal Stack layout to the live Built for the Initiation Problem section while preserving its exact existing copy and feature statements
 - [x] Document the selected Signal Stack implementation in the design-system references and validate it with regression coverage
+- [x] Reduce the vertical height of desktop Little Worlds audience cards while preserving their approved mobile proportions and layout
+- [x] Clarification superseded the original left-side Free, no login relocation: retain Free, no login as a normal sixth right-side Context Strip
+- [x] Restore Free, no login as the sixth right-side Signal Stack Context Strip and use a left-side Post-It for the approved “You can start and you can finish!” message
+- [x] Save checkpoint for the completed audience-card and Signal Stack refinement
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

@@ -76,6 +76,9 @@ export default function HomeContent() {
                 DoTheThing converts vague tasks into specific, numbered micro-steps before you begin. Every estimate includes a 20–30% buffer — because time blindness makes optimistic estimates structurally wrong, every time. The focus level setting means a day where you're running on fumes gets a different plan than a sharp morning.
               </p>
             </div>
+            <aside className="initiation-post-it" aria-label="Encouragement">
+              <p><strong>You can start and you can finish!</strong> One clear next step is enough to get moving.</p>
+            </aside>
           </div>
           <div className="initiation-panel-features initiation-signal-stack" aria-label="DoTheThing initiation support features">
             <div className="initiation-signal-strip">
@@ -98,7 +101,7 @@ export default function HomeContent() {
               <span className="initiation-signal-index" aria-hidden="true">05</span>
               <p><strong>Brain dump mode.</strong> Type the whole pile. The AI finds the work.</p>
             </div>
-            <div className="initiation-signal-note">
+            <div className="initiation-signal-strip">
               <span className="initiation-signal-index" aria-hidden="true">06</span>
               <p><strong>Free. No login.</strong> Open the tab. Start.</p>
             </div>
