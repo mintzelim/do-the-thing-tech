@@ -545,6 +545,8 @@
 - [x] Remove the purple article-title list from each live Mascot Wayfinder card while preserving its direct starter-article link
 - [x] Save checkpoint for the simplified direct-link Mascot Wayfinder experience
 - [x] Inspect the supplied Figma card-template file and add ten design-system-aligned selection-only card-layout adaptations to the visual design-system HTML without changing the live site
+- [x] Rebuild the ten Figma-informed selection-only card previews to follow the source alignment and proportions while retaining DoTheThing styling
+- [x] Save checkpoint for the corrected source-faithful Figma card-library alignment
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

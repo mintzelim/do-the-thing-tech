@@ -177,6 +177,12 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("selection-only references");
     expect(html).toContain("@media(max-width:780px)");
     expect(html).toContain("@media(prefers-reduced-motion:reduce)");
+    expect(html).toContain("original grid, spacing, and proportion logic");
+    expect(html).toContain("figma-source-grid");
+    for (const geometryClass of ["p-editorial", "p-identity", "p-snapshot", "p-ledger", "p-media-story", "p-numbered", "p-fact-hub", "p-tag-rail", "p-date-note", "p-progress"]) {
+      expect(html).toContain(geometryClass);
+    }
+    expect(html).toContain("figma-option-label");
     expect(homeContent).not.toContain("FIGMA-INSPIRED CARD LIBRARY");
     expect(homeContent).not.toContain("PROGRESS PULSE");
   });
