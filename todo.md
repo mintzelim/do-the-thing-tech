@@ -544,6 +544,7 @@
 - [x] Remove the unrequested dedicated learning-path pages and link each Wayfinder card directly to its first recommended article
 - [x] Remove the purple article-title list from each live Mascot Wayfinder card while preserving its direct starter-article link
 - [x] Save checkpoint for the simplified direct-link Mascot Wayfinder experience
+- [x] Inspect the supplied Figma card-template file and add ten design-system-aligned selection-only card-layout adaptations to the visual design-system HTML without changing the live site
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

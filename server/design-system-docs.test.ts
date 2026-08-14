@@ -167,6 +167,20 @@ describe("landing-page design-system documentation", () => {
     expect(markdown).toContain("do not show blog-title lists inside the route card");
   });
 
+  it("presents ten Figma-informed card-layout adaptations without changing the live site", () => {
+    expect(html).toContain('id="figma-card-layout-options"');
+    expect(html).toContain("FIGMA-INSPIRED CARD LIBRARY");
+    for (const option of ["EDITORIAL SPLIT", "COMPACT IDENTITY ROW", "THREE-PART SNAPSHOT", "QUIET METRIC LEDGER", "MEDIA-FIRST STORY", "NUMBERED FEATURE", "CENTERED FACT HUB", "TAG-RAIL UTILITY", "DATE-RAIL NOTE", "PROGRESS PULSE"]) {
+      expect(html).toContain(option);
+    }
+    expect(html).toContain("warm canvas, single-surface rhythm, Inter reading hierarchy");
+    expect(html).toContain("selection-only references");
+    expect(html).toContain("@media(max-width:780px)");
+    expect(html).toContain("@media(prefers-reduced-motion:reduce)");
+    expect(homeContent).not.toContain("FIGMA-INSPIRED CARD LIBRARY");
+    expect(homeContent).not.toContain("PROGRESS PULSE");
+  });
+
   it("does not fabricate aggregate ratings in structured data", () => {
     expect(enhancedSchema).not.toContain('"aggregateRating"');
     expect(enhancedSchema).not.toContain("ratingCount");
