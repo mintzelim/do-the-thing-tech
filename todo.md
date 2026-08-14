@@ -572,6 +572,9 @@
 - [x] Use the provided background-removed canvas assets directly in their five audience cards
 - [x] Size and center every audience illustration consistently without clipping any mascot or prop
 
+## Audience Image Scale Regression
+- [x] Diagnose and correct the unexpectedly oversized audience-card illustrations while preserving the five audience-card copy, order, assets, and responsive behavior
+
 ## Remove Planning Section
 - [x] Remove the complete “The AI Does the Planning. You Do the Thing.” section from the landing page
 - [x] Preserve all surrounding landing content, navigation, and task functionality after removal
