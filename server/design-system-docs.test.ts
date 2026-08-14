@@ -218,6 +218,26 @@ describe("landing-page design-system documentation", () => {
     expect(homeContent).toContain("PRODUCT PRACTICE");
   });
 
+  it("presents three selection-only final CTA alignment directions without changing the live CTA", () => {
+    expect(html).toContain('id="final-cta-alignment-options"');
+    expect(html).toContain("OPTION 01 · BALANCED BUDDY");
+    expect(html).toContain("OPTION 02 · ACTION PEDESTAL");
+    expect(html).toContain("OPTION 03 · FINISH-LINE GUIDE");
+    expect(html).toContain('role="group" aria-label="Balanced Buddy final CTA alignment preview"');
+    expect(html).toContain('role="group" aria-label="Action Pedestal final CTA alignment preview"');
+    expect(html).toContain('role="group" aria-label="Finish-Line Guide final CTA alignment preview"');
+    expect(html).toContain("You got this.");
+    expect(html).toContain("audience-howitworks-remote-workers_7ce7f448.png");
+    expect(html).toContain("prefers-reduced-motion");
+    expect(markdown).toContain("Final CTA alignment options");
+    expect(markdown).toContain("Balanced Buddy");
+    expect(markdown).toContain("Action Pedestal");
+    expect(markdown).toContain("Finish-Line Guide");
+    expect(homeContent).not.toContain("BALANCED BUDDY");
+    expect(homeContent).not.toContain("ACTION PEDESTAL");
+    expect(homeContent).not.toContain("FINISH-LINE GUIDE");
+  });
+
   it("does not fabricate aggregate ratings in structured data", () => {
     expect(enhancedSchema).not.toContain('"aggregateRating"');
     expect(enhancedSchema).not.toContain("ratingCount");

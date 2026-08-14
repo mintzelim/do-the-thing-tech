@@ -221,6 +221,16 @@ The Signal Stack is appropriate when explanatory product copy needs priority and
 
 The CTA is a single wide 1120px panel, never a landscape card inside another section card. It has a compact transparent flag-on-island illustration left of a text block. On mobile, the panel becomes one column and centers its eyebrow, headline, supporting copy, and button.
 
+### Final CTA alignment options
+
+The visual design-system reference includes three **selection-only** final CTA directions using the canonical mascot and a **“You got this.”** speech bubble. The live CTA remains unchanged until a direction is selected. Every option preserves the exact CTA headline, supporting sentence, and `#widget` action.
+
+| Option | Alignment approach | Use when |
+| --- | --- | --- |
+| **Option 01 · Balanced Buddy** | Editorial copy and a dedicated mascot stage share a precise two-column centerline. | The CTA should feel even on desktop and stack simply on mobile. |
+| **Option 02 · Action Pedestal** | Centered copy and action form the primary composition; the mascot supports the base of the action. | The section needs the most compact, symmetrical final ask. |
+| **Option 03 · Finish-Line Guide** | Mascot stage anchors the left edge while all reading and action elements share one right-hand rail. | The CTA should feel like a guided last step with strong editorial alignment. |
+
 ### Article data presentation
 
 Use the selected components below to make evidence and practical guidance easier to scan without making an educational article feel like a dashboard. **Quiet Ledger is the only table system.** The other patterns are deliberately named as chart, list, or editorial components rather than tables.

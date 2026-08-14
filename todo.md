@@ -554,6 +554,7 @@
 - [x] Align the landing-page Empathy Switchboard with the established homepage eyebrow, Inter heading, text-grid, button, spacing, and responsive design-system rules
 - [x] Add a design-system-aligned lavender mascot and “You got this.” speech bubble to the final landing-page CTA while preserving CTA copy and scroll behavior
 - [x] Enforce the supplied canonical lavender mascot design in the final CTA and document identity-preservation rules for future mascot use
+- [x] Add three selection-only final CTA alignment options with the canonical mascot and “You got this.” speech bubble to the visual design-system HTML
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference
