@@ -556,6 +556,8 @@
 - [x] Enforce the supplied canonical lavender mascot design in the final CTA and document identity-preservation rules for future mascot use
 - [x] Add three selection-only final CTA alignment options with the canonical mascot and “You got this.” speech bubble to the visual design-system HTML
 - [x] Apply the selected Option 01 Balanced Buddy alignment to the live final CTA without a dotted divider
+- [x] Reduce the final CTA mascot scale and establish measured inset rails so the selected Balanced Buddy composition no longer crowds the page edge
+- [x] Contain the final landing CTA within one warm-white single-surface panel with balanced internal copy and mascot insets
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference
