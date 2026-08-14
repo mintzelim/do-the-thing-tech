@@ -153,6 +153,8 @@ Main panels use a 1px panel border, 14px radius, and one offset shadow. Repeated
 
 The “Built by Someone Who Gets It” creator section has three **selection-only** layout directions in the visual design-system reference. Each direction preserves the existing founder biography, professional credentials, medical-care caveat, profile links, lived-experience context, sourced research context, and lavender mascot constraint. A selection changes composition and motion only; it must not rewrite or shorten the existing About-page claims.
 
+**Selected implementation: Empathy Switchboard.** The live creator section now uses the three visible input rows for lived experience, product practice, and research/interviews. The existing **“MEET THE CREATOR”** heading, full biography, evidence list, post-it statement, professional profile links, and mascot image remain unchanged.
+
 | Option | Layout logic | Appropriate use |
 |---|---|---|
 | **Origin Arcade** | A three-stage vertical signal rail—Friction, Lived, Built—leads into one generous narrative column and three proof signals. | The lived-to-built arc should feel playful, but the biography needs first priority. |

@@ -62,11 +62,16 @@ export default function About() {
           </div>
         </section>
 
-        <section id="author" className="about-panel about-creator-panel about-workbench-profile" aria-labelledby="creator-heading">
+        <section id="author" className="about-panel about-creator-panel about-switchboard-profile" tabIndex={0} role="group" aria-labelledby="creator-heading">
           <div className="about-section-copy">
             <p className="about-panel-label">BEHIND THE TOOL</p>
             <h2 id="creator-heading">MEET THE CREATOR</h2>
             <p className="about-lead"><strong>Lim Min Tze — founder, product developer, and the person behind DoTheThing.</strong></p>
+            <div className="about-switchboard-inputs" aria-label="The creator perspectives that shaped DoTheThing">
+              <div className="about-switchboard-row"><i aria-hidden="true"></i><b>LIVED EXPERIENCE</b><span>ON</span></div>
+              <div className="about-switchboard-row"><i aria-hidden="true"></i><b>PRODUCT PRACTICE</b><span>ON</span></div>
+              <div className="about-switchboard-row"><i aria-hidden="true"></i><b>RESEARCH &amp; INTERVIEWS</b><span>ON</span></div>
+            </div>
             <p>This site combines lived experience with clearly sourced educational material. It is a practical productivity resource, not a substitute for diagnosis or medical care.</p>
             <p>DoTheThing was built by <strong>Lim Min Tze</strong>, a product developer with personal experience managing ADHD. After years of struggling with task paralysis, time blindness, and executive dysfunction, I realized that existing productivity tools were designed for neurotypical brains—not ADHD brains.</p>
             <p>I spent months researching ADHD neuroscience, interviewing others with ADHD, and testing different approaches to task breakdown and time estimation. The result is DoTheThing: a tool built specifically for how ADHD brains actually work.</p>
@@ -88,7 +93,7 @@ export default function About() {
               <a href="/editorial-standards">Editorial standards</a>
             </nav>
           </div>
-          <div className="about-side-art about-creator-art" aria-hidden="true">
+          <div className="about-side-art about-creator-art about-switchboard-art" aria-hidden="true">
             <img src={MASCOTS.brainDump} alt="" />
           </div>
         </section>

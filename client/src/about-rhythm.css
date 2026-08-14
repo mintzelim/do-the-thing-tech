@@ -527,3 +527,120 @@
   .about-workbench-product .about-feature-grid.about-focus-fan:hover .about-mini-card,
   .about-workbench-product .about-feature-grid.about-focus-fan:focus-visible .about-mini-card { transform: none; }
 }
+
+/* Selected creator treatment: Empathy Switchboard makes real design inputs visible without rewriting the biography. */
+.about-switchboard-profile {
+  display: grid;
+  grid-template-areas: "copy art";
+  grid-template-columns: minmax(0, 1.45fr) minmax(210px, .42fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: stretch;
+  min-height: 420px;
+  overflow: hidden;
+  outline: none;
+  background: linear-gradient(135deg, #fffefb 0 76%, #eef0ff 76% 100%);
+}
+
+.about-switchboard-profile:focus-visible { outline: 3px solid var(--pixel-lime, #c7db3e); outline-offset: 5px; }
+.about-switchboard-profile .about-section-copy { grid-area: copy; max-width: 780px; }
+.about-switchboard-profile .about-section-copy > p { max-width: 740px; }
+
+.about-switchboard-inputs {
+  display: grid;
+  margin: 24px 0 22px;
+  border-top: 1px solid #d9dce4;
+}
+
+.about-switchboard-row {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: center;
+  min-height: 42px;
+  border-bottom: 1px solid #d9dce4;
+  color: var(--pixel-text-light);
+  font-size: .78rem;
+}
+
+.about-switchboard-row i {
+  position: relative;
+  width: 24px;
+  height: 12px;
+  border: 1px solid var(--pixel-accent-dark);
+  border-radius: 99px;
+}
+
+.about-switchboard-row i::after {
+  position: absolute;
+  top: 2px;
+  left: 14px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--pixel-accent);
+  content: "";
+}
+
+.about-switchboard-row b { color: var(--pixel-text); font-size: .72rem; letter-spacing: .06em; }
+.about-switchboard-row span { color: var(--pixel-accent-dark); font-family: var(--display-font); font-size: 1rem; letter-spacing: .05em; }
+
+.about-switchboard-profile .about-check-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px 28px;
+  margin: 24px 0;
+  padding: 21px 0;
+  border-top: 1px solid #d9dce4;
+  border-bottom: 1px solid #d9dce4;
+}
+
+.about-switchboard-art {
+  position: relative;
+  grid-area: art;
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-left: 1px dashed #a8afc2;
+  background: linear-gradient(180deg, #eef0ff 0 62%, #fffefb 62% 100%);
+}
+
+.about-switchboard-art::before {
+  position: absolute;
+  right: 22px;
+  bottom: 52px;
+  left: 22px;
+  height: 3px;
+  background: #c7db3e;
+  box-shadow: 0 -5px 0 rgba(199, 219, 62, .28);
+  content: "";
+}
+
+.about-switchboard-art::after {
+  position: absolute;
+  top: 26px;
+  right: 28px;
+  width: 36px;
+  height: 20px;
+  border-top: 2px solid var(--pixel-accent-dark);
+  border-right: 2px solid var(--pixel-accent-dark);
+  content: "";
+}
+
+.about-switchboard-art img { position: relative; z-index: 1; transition: transform 180ms cubic-bezier(.23, 1, .32, 1); }
+.about-switchboard-profile:hover .about-switchboard-art img,
+.about-switchboard-profile:focus-visible .about-switchboard-art img { transform: translateY(-10px) rotate(2deg); }
+
+@media (max-width: 860px) {
+  .about-switchboard-profile { grid-template-areas: "copy" "art"; grid-template-columns: 1fr; min-height: 0; gap: 22px; }
+  .about-switchboard-art { min-height: 150px; border-top: 1px dashed #a8afc2; border-left: 0; }
+}
+
+@media (max-width: 620px) {
+  .about-switchboard-profile .about-check-list { grid-template-columns: 1fr; gap: 10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-switchboard-art img { transition: none; }
+  .about-switchboard-profile:hover .about-switchboard-art img,
+  .about-switchboard-profile:focus-visible .about-switchboard-art img { transform: none; }
+}
