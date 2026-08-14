@@ -16,7 +16,7 @@ describe("About page design-system refresh", () => {
     expect(aboutPage).toContain("WHAT THIS TOOL SUPPORTS");
     expect(aboutPage).toContain("READY WHEN YOU ARE");
     expect(aboutPage).not.toContain("A SMALLER NEXT STEP");
-    expect(aboutPage).toContain("about-panel about-creator-panel about-switchboard-profile");
+    expect(aboutPage).toContain("about-panel about-creator-panel about-workbench-profile");
     expect(aboutPage).toContain("about-cta about-cta-ink about-workbench-cta");
     expect(aboutStyles).toContain("width:min(calc(100% - 32px),1240px)");
     expect(aboutStyles).toContain("border:1px solid #a8afc2");
@@ -55,9 +55,9 @@ describe("About page design-system refresh", () => {
     expect(visualReference).toContain("Wide editorial panel");
   });
 
-  it("applies the selected Switchboard creator composition alongside the approved Workbench sections", () => {
+  it("applies the approved Workbench composition with measured desktop and mobile spacing", () => {
     expect(aboutPage).toContain('className="about-hero about-workbench-hero"');
-    expect(aboutPage).toContain("about-switchboard-profile");
+    expect(aboutPage).toContain("about-workbench-profile");
     expect(aboutPage).toContain("about-workbench-mission");
     expect(aboutPage).toContain("about-workbench-library");
     expect(aboutPage).toContain("about-workbench-product");
@@ -66,7 +66,6 @@ describe("About page design-system refresh", () => {
     expect(aboutPage).toContain("about-workbench-cta");
     expect(aboutRhythm).toContain("--workbench-panel-padding");
     expect(aboutRhythm).toContain("grid-template-areas: \"art copy\"");
-    expect(aboutRhythm).toContain(".about-switchboard-profile");
     expect(aboutRhythm).toContain("width: min(calc(100% - 32px), 1120px)");
     expect(aboutRhythm).toContain("@media (max-width: 900px)");
     expect(aboutRhythm).toContain("@media (max-width: 620px)");

@@ -196,7 +196,7 @@ describe("landing-page design-system documentation", () => {
     expect(markdown).toContain("**36px gutter**");
   });
 
-  it("presents three playful selection-only creator-section directions without changing the live About page", () => {
+  it("presents three playful creator-section directions and records Empathy Switchboard on the intended landing page", () => {
     expect(html).toContain('id="creator-layout-options"');
     expect(html).toContain("Make “built by someone who gets it” feel more alive");
     expect(html).toContain("OPTION 01 · ORIGIN ARCADE");
@@ -206,13 +206,16 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain('role="group" aria-label="Empathy Switchboard creator section preview"');
     expect(html).toContain('role="group" aria-label="Origin Quest Log creator section preview"');
     expect(html).toContain("prefers-reduced-motion");
-    expect(markdown).toContain("About-page creator section options");
+    expect(markdown).toContain("Landing-page creator section options");
     expect(markdown).toContain("Origin Arcade");
     expect(markdown).toContain("Empathy Switchboard");
     expect(markdown).toContain("The Origin Quest Log");
     expect(aboutPage).not.toContain("Origin Arcade");
     expect(aboutPage).not.toContain("Empathy Switchboard");
     expect(aboutPage).not.toContain("The Origin Quest Log");
+    expect(homeContent).toContain("landing-creator-switchboard");
+    expect(homeContent).toContain("LIVED EXPERIENCE");
+    expect(homeContent).toContain("PRODUCT PRACTICE");
   });
 
   it("does not fabricate aggregate ratings in structured data", () => {

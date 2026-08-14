@@ -550,6 +550,8 @@
 - [x] Rebuild the Figma-informed card-library previews from measured source frames, gutters, padding, and internal rails while retaining DoTheThing styling
 - [x] Create three playful, mascot-led selection-only layout options for the About-page “Built by Someone Who Gets It” section in the visual design-system HTML
 - [x] Apply the selected Option 02 Empathy Switchboard composition to the live About-page creator section while preserving its existing copy, links, evidence, and accessibility
+- [x] Correct the misapplied creator Switchboard: restore the About-page creator composition and apply Option 02 only to the landing-page “Built by Someone Who Gets It” section
+- [x] Align the landing-page Empathy Switchboard with the established homepage eyebrow, Inter heading, text-grid, button, spacing, and responsive design-system rules
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

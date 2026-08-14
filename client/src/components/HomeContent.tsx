@@ -182,19 +182,28 @@ export default function HomeContent() {
       </section>
 
       {/* SECTION 6.5: MEET THE CREATOR */}
-      <section className="content-section">
-        <h2 className="section-heading" style={{ textAlign: 'center' }}>Built by Someone Who Gets It</h2>
-        <div className="section-content" style={{ textAlign: 'center', maxWidth: '600px', margin: '0 auto' }}>
-          <p style={{ fontSize: '16px', marginBottom: '16px' }}>
+      <section className="content-section landing-creator-switchboard" tabIndex={0} aria-labelledby="landing-creator-heading">
+        <div className="landing-creator-copy">
+          <p className="reference-eyebrow landing-creator-kicker"><span aria-hidden="true">✦</span> BEHIND THE TOOL</p>
+          <h2 id="landing-creator-heading" className="section-heading">Built by Someone Who Gets It</h2>
+          <div className="landing-creator-inputs" role="list" aria-label="The product perspectives that shape DoTheThing">
+            <div className="landing-creator-input" role="listitem"><i aria-hidden="true"></i><b>LIVED EXPERIENCE</b><span>ON</span></div>
+            <div className="landing-creator-input" role="listitem"><i aria-hidden="true"></i><b>PRODUCT PRACTICE</b><span>ON</span></div>
+            <div className="landing-creator-input" role="listitem"><i aria-hidden="true"></i><b>RESEARCH &amp; INTERVIEWS</b><span>ON</span></div>
+          </div>
+          <div className="section-content">
+          <p>
             DoTheThing was built by Lim Min Tze, a product developer with personal experience managing ADHD. After years of struggling with task paralysis and time blindness, I realized existing productivity tools were designed for neurotypical brains.
           </p>
-          <p style={{ fontSize: '16px', marginBottom: '16px' }}>
+          <p>
             The site separates lived experience from research: articles cite their sources, while the tool focuses on one practical question—what is the smallest next step you can take right now?
           </p>
-          <Link href="/about" className="cta-button" style={{ display: 'inline-block', padding: '10px 24px', backgroundColor: 'var(--pixel-accent)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>
+          <Link href="/about" className="reference-primary-action landing-creator-action">
             LEARN MORE ABOUT THE CREATOR
           </Link>
+          </div>
         </div>
+        <div className="landing-creator-art" aria-hidden="true"><img src={assetUrl("/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png")} alt="" /></div>
       </section>
 
       {/* SECTION 6.75: START HERE LEARNING PATHS */}

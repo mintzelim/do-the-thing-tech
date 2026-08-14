@@ -149,11 +149,11 @@ Buttons use Inter at 700 weight, 0.98rem, 8px radius, and 12px × 22px padding. 
 
 Main panels use a 1px panel border, 14px radius, and one offset shadow. Repeated content cards use a lighter 1px border, 10px radius, and a smaller cool-gray shadow. Avoid borders inside an already bordered wide panel unless the interior contains repeatable card items.
 
-### About-page creator section options
+### Landing-page creator section options
 
-The “Built by Someone Who Gets It” creator section has three **selection-only** layout directions in the visual design-system reference. Each direction preserves the existing founder biography, professional credentials, medical-care caveat, profile links, lived-experience context, sourced research context, and lavender mascot constraint. A selection changes composition and motion only; it must not rewrite or shorten the existing About-page claims.
+The landing-page “Built by Someone Who Gets It” section has three **selection-only** layout directions in the visual design-system reference. Each direction preserves the existing landing-page copy, the creator route, lived-experience context, sourced-research context, and lavender mascot constraint. A selection changes composition and motion only; it must not rewrite or shorten the existing landing-page claims.
 
-**Selected implementation: Empathy Switchboard.** The live creator section now uses the three visible input rows for lived experience, product practice, and research/interviews. The existing **“MEET THE CREATOR”** heading, full biography, evidence list, post-it statement, professional profile links, and mascot image remain unchanged.
+**Selected implementation: Empathy Switchboard.** The landing-page creator section now uses the three visible input rows for lived experience, product practice, and research/interviews. The existing **“Built by Someone Who Gets It”** headline, two supporting paragraphs, creator route, and mascot image remain unchanged.
 
 | Option | Layout logic | Appropriate use |
 |---|---|---|
