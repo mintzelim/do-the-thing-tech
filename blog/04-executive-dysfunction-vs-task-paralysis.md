@@ -3,6 +3,8 @@ title: "Executive Dysfunction vs. Task Paralysis: What s the Difference?"
 excerpt: "Executive dysfunction and task paralysis are closely related but distinct challenges. Learn how they differ, how they interact, and how to break free from both."
 date: "2026-03-29"
 updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/blog-executive-dysfunction-task-paralysis-featured_d6d41652.png"
+featuredImageAlt: "A purple pixel-art mascot stands beside two distinct task-start barriers."
 tags:
   - ADHD
   - executive dysfunction

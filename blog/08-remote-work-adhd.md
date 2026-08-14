@@ -3,6 +3,8 @@ title: "ADHD and Remote Work: Strategies for Success"
 excerpt: "Remote work presents unique challenges and opportunities for ADHD brains. Learn strategies to thrive in a work-from-home environment."
 date: "2026-04-02"
 updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/blog-remote-work-adhd-featured_d82ffd34.png"
+featuredImageAlt: "A purple pixel-art mascot works at a simple remote desk with one visible task."
 category: "ADHD at Work"
 tags:
   - ADHD

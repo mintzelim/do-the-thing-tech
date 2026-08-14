@@ -3,6 +3,8 @@ title: "Breaking Down Big Tasks: An ADHD-Friendly Guide"
 excerpt: "Learn how to break down overwhelming tasks into manageable steps using evidence-based strategies designed for the ADHD brain."
 date: "2026-03-28"
 updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/blog-breaking-down-big-tasks-featured_cfdc79fb.png"
+featuredImageAlt: "A purple pixel-art mascot turns one large task block into smaller stepping stones."
 tags:
   - ADHD
   - task management

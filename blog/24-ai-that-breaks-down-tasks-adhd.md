@@ -12,6 +12,8 @@ excerpt: >-
   and which ones work.
 date: 'May 14, 2026'
 updatedDate: '2026-08-13'
+featuredImage: "/manus-storage/blog-ai-task-breakdown-featured_5bae34ae.png"
+featuredImageAlt: "A purple pixel-art mascot uses an AI helper to divide one task into smaller cards."
 readTime: 7 min read
 category: Tools & Resources
 primaryEntity: AI Task Breakdown ADHD

@@ -3,6 +3,8 @@ title: "ADHD and Perfectionism: The Hidden Connection"
 excerpt: "Explore the complex relationship between ADHD and perfectionism, from rejection sensitive dysphoria to all-or-nothing thinking."
 date: "2026-04-03"
 updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/blog-adhd-perfectionism-featured_d88e5796.png"
+featuredImageAlt: "A purple pixel-art mascot moves an imperfect task card toward completion."
 category: "Emotional Wellbeing"
 tags:
   - ADHD

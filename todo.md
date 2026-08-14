@@ -617,17 +617,17 @@
 - [x] Regenerate metadata, validate all updated content, and checkpoint the improvement pass
 
 ## Approved Second SEO Content Batch
-- [ ] Add one original topic-specific image and descriptive alt text to Time Blindness, Breaking Down Big Tasks, Executive Dysfunction vs. Task Paralysis, Best Tools for ADHD Task Management, Remote Work With ADHD, ADHD and Perfectionism, and AI That Breaks Down Tasks
+- [x] Add one original topic-specific image and descriptive alt text to Time Blindness, Breaking Down Big Tasks, Executive Dysfunction vs. Task Paralysis, Best Tools for ADHD Task Management, Remote Work With ADHD, ADHD and Perfectionism, and AI That Breaks Down Tasks
 - [x] Add concise, practical common-mistake guidance to the same seven high-intent articles
 - [x] Preserve medical-safety language, source accuracy, article voice, and internal-link continuity
-- [ ] Regenerate metadata, validate the seven updates, and checkpoint the batch
+- [x] Regenerate metadata, validate the seven updates, and checkpoint the batch
 - [x] Add and upload the original Time Blindness featured image with descriptive alt text
-- [ ] Generate and upload the six remaining topic-specific featured images after the image-generation quota resets
+- [x] Generate and upload the six remaining topic-specific featured images after the image-generation quota resets
 
 ## Remaining SEO Featured Images
 - [x] Prepare consistent production briefs, asset keys, and descriptive alt-text targets for the six queued original featured images
-- [ ] Create and apply a consistent original featured image and descriptive alt text for each of the six remaining high-intent ADHD articles
-- [ ] Regenerate blog metadata and verify every remaining image has a production-safe public URL
+- [x] Create and apply a consistent original featured image and descriptive alt text for each of the six remaining high-intent ADHD articles
+- [x] Regenerate blog metadata and verify every remaining image has a production-safe public URL
 
 ## Remaining Common Mistakes Guidance
 - [x] Add concise, practical, non-diagnostic Common Mistakes guidance to the eight previously missing authority articles and protect it with regression coverage

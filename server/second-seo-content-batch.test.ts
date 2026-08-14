@@ -46,10 +46,25 @@ describe("approved second SEO content batch", () => {
     }
   });
 
-  it("keeps the applied Time Blindness image original, descriptive, and production-safe while remaining images are queued", () => {
+  it("keeps every high-intent featured image original, descriptive, and production-safe", () => {
     const timeBlindness = readPost("02-time-blindness-in-adhd.md");
     expect(timeBlindness).toContain('featuredImage: "/manus-storage/blog-time-blindness-featured_3c63db49.png"');
     expect(timeBlindness).toContain('featuredImageAlt: "Lavender pixel mascot using a large clock and visual time cues"');
+
+    const expectedImages = [
+      ["03-breaking-down-big-tasks.md", "blog-breaking-down-big-tasks-featured_cfdc79fb.png", "A purple pixel-art mascot turns one large task block into smaller stepping stones."],
+      ["04-executive-dysfunction-vs-task-paralysis.md", "blog-executive-dysfunction-task-paralysis-featured_d6d41652.png", "A purple pixel-art mascot stands beside two distinct task-start barriers."],
+      ["05-best-tools-for-adhd-task-management.md", "blog-best-tools-adhd-task-management-featured_5edd6d49.png", "A purple pixel-art mascot chooses a simple task-management toolkit."],
+      ["08-remote-work-adhd.md", "blog-remote-work-adhd-featured_d82ffd34.png", "A purple pixel-art mascot works at a simple remote desk with one visible task."],
+      ["09-adhd-perfectionism.md", "blog-adhd-perfectionism-featured_d88e5796.png", "A purple pixel-art mascot moves an imperfect task card toward completion."],
+      ["24-ai-that-breaks-down-tasks-adhd.md", "blog-ai-task-breakdown-featured_5bae34ae.png", "A purple pixel-art mascot uses an AI helper to divide one task into smaller cards."],
+    ];
+
+    for (const [filename, imageKey, altText] of expectedImages) {
+      const post = readPost(filename);
+      expect(post, filename).toContain(`featuredImage: "/manus-storage/${imageKey}"`);
+      expect(post, filename).toContain(`featuredImageAlt: "${altText}"`);
+    }
   });
 
   it("preserves the practical safety boundary in the AI task-breakdown guide", () => {

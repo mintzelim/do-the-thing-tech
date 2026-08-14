@@ -3,6 +3,8 @@ title: "The Best Tools for ADHD Task Management"
 excerpt: "Reviews and analysis of the best task management tools for ADHD brains, from simple apps to comprehensive systems."
 date: "2026-03-30"
 updatedDate: "2026-08-13"
+featuredImage: "/manus-storage/blog-best-tools-adhd-task-management-featured_5edd6d49.png"
+featuredImageAlt: "A purple pixel-art mascot chooses a simple task-management toolkit."
 category: "Tools & Resources"
 tags:
   - ADHD
