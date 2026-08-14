@@ -241,6 +241,22 @@ describe("landing-page design-system documentation", () => {
     expect(homeContent).not.toContain("FINISH-LINE GUIDE");
   });
 
+  it("documents the reconciled landing-system foundation and hero proof-bubble pattern", () => {
+    for (const document of [markdown, html]) {
+      expect(document).toContain("1240px");
+      expect(document).toContain("#fffefb");
+      expect(document).toContain("#a8afc2");
+      expect(document).toContain("One foundation");
+      expect(document).toContain("Free. No login. Under a minute.");
+    }
+    expect(html).toContain('id="landing-system-reconciliation"');
+    expect(html).toContain("LANDING SYSTEM");
+    expect(html).toContain("hero-proof-mascot");
+    expect(markdown).toContain("One foundation. Different situations.");
+    expect(markdown).toContain("Hero proof point");
+    expect(markdown).toContain("long supporting paragraph is removed");
+  });
+
   it("does not fabricate aggregate ratings in structured data", () => {
     expect(enhancedSchema).not.toContain('"aggregateRating"');
     expect(enhancedSchema).not.toContain("ratingCount");

@@ -221,6 +221,18 @@ The Signal Stack is appropriate when explanatory product copy needs priority and
 
 The CTA is a single wide 1120px panel, never a landscape card inside another section card. It has a compact transparent flag-on-island illustration left of a text block. On mobile, the panel becomes one column and centers its eyebrow, headline, supporting copy, and button.
 
+### One foundation. Different situations.
+
+The landing page uses one clear foundation with three purposeful expressions. The **open canvas** is reserved for the hero and How It Works header; **wide panels** use a 1240px maximum rail, `#fffefb` surface, `#a8afc2` 1px outline, 14px radius, and `7px 8px 0 rgba(210,211,224,.7)` shadow; and **compact cards** use `#c5cada`, a 10px radius, and the smaller `3px 4px` neutral shadow only where an illustration or interaction needs lift. Color and composition—not new container geometries—create section variety.
+
+| System layer | Contract | Applied character |
+|---|---|---|
+| Alignment | 1240px outer rail; `clamp(22px, 4vw, 52px)` panel gutters | The header, task widget, editorial panels, FAQ, creator, learning paths, featured posts, and final CTA align without becoming repetitive. |
+| Typography | Inter 800 section headings, `-.055em` tracking, readable Inter body copy at 1.6 line height | The hero remains the largest expression; lower sections use one controlled tier below it. VT323 is reserved for small eyebrows, indices, and stamps. |
+| Surfaces | One wide-panel foundation; quiet compact-card outline; one intentional Post-It exception | Signal Stack, Wayfinder, audience micro-scenes, and feature cards remain distinct through layout and mascot context rather than conflicting shadows. |
+| Mascot speech bubbles | The canonical hero proof point and closing CTA encouragement use **VT323** in warm-white speech bubbles. | Keep all headings and body copy in Inter; VT323 is reserved here for the mascot’s short, conversational voice. |
+| Hero proof point | The canonical hero mascot carries **“Free. No login. Under a minute.”** in a warm-white speech bubble. | The long supporting paragraph is removed, leaving the headline, primary description, and two actions as the hero’s reading hierarchy. |
+
 ### Final CTA alignment options
 
 The visual design-system reference includes three **selection-only** final CTA directions using the canonical mascot and a **“You got this.”** speech bubble. The live CTA remains unchanged until a direction is selected. Every option preserves the exact CTA headline, supporting sentence, and `#widget` action.
@@ -231,7 +243,7 @@ The visual design-system reference includes three **selection-only** final CTA d
 | **Option 02 · Action Pedestal** | Centered copy and action form the primary composition; the mascot supports the base of the action. | The section needs the most compact, symmetrical final ask. |
 | **Option 03 · Finish-Line Guide** | Mascot stage anchors the left edge while all reading and action elements share one right-hand rail. | The CTA should feel like a guided last step with strong editorial alignment. |
 
-**Selected implementation: Option 01 · Balanced Buddy.** The live final CTA is contained in one warm-white, 1120px maximum single-surface panel with a 1px ink outline and restrained offset shadow. It uses a measured 620px reading rail and a compact 250px internally inset mascot stage. It deliberately has **no dotted vertical divider**, so the surface—not a line—provides the alignment boundary. Its original headline, supporting sentence, `#widget` action, canonical mascot, and “You got this.” bubble remain intact.
+**Selected implementation: Option 01 · Balanced Buddy.** The live final CTA uses an explicit inner `final-cta-surface` element with `background: #fffefb`. Its surface deliberately uses the same wide-panel contract as the rest of the landing page: a 1240px maximum width, `38px clamp(22px, 4vw, 52px)` padding, 1px `#a8afc2` outline, 14px radius, and `7px 8px 0 rgba(210,211,224,.7)` shadow. It retains a measured 620px reading rail and compact 250px internally inset mascot stage. It deliberately has **no dotted vertical divider**, so the actual warm-white surface—not a line—provides the alignment boundary. Its original headline, supporting sentence, `#widget` action, canonical mascot, and “You got this.” bubble remain intact.
 
 ### Article data presentation
 

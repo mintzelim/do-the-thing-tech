@@ -12,6 +12,7 @@ import PocketsFullModal from "@/components/PocketsFullModal";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import { assetUrl } from "@/lib/assetUrl";
 import "../pixel-art-refined.css";
+import "../landing-system-reconciliation.css";
 
 type Step = {
   id: string;
@@ -350,15 +351,13 @@ export default function Home() {
                   Break tasks into smaller steps, build momentum,<br className="reference-desktop-break" />
                   and get more of the important stuff done.
                 </p>
-                <p className="reference-hero-supporting-copy">
-                  Type any task or brain dump the whole pile. DoTheThing breaks it into steps you can actually start. Free. No login. Under a minute.
-                </p>
                 <div className="reference-hero-actions">
                   <a href="#widget" className="reference-primary-action">START A TASK <span aria-hidden="true">→</span></a>
                   <a href="/blog" className="reference-secondary-action">EXPLORE GUIDES <span aria-hidden="true">▱</span></a>
                 </div>
               </div>
               <div className="reference-hero-visual" aria-label="A small pixel character taking a manageable next step">
+                <p className="hero-mascot-proof-bubble">Free. No login. Under a minute.</p>
                 <img src={assetUrl("/manus-storage/dothething-abstract-hero-final_f2a98e80.png")} alt="Pixel character standing on a grassy step beside a flag" />
               </div>
             </section>

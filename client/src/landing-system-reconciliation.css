@@ -1,0 +1,576 @@
+/*
+ * Landing page reconciliation
+ *
+ * One foundation, three purposeful expressions:
+ * 1) open canvas for the hero and How It Works;
+ * 2) 1240px wide panels for editorial and conversion moments;
+ * 3) quiet compact cards for scannable information.
+ *
+ * Existing page copy and interaction markup remain untouched. These rules load
+ * after the historical refresh styles so the current landing page has one clear
+ * rail, type hierarchy, and surface contract without losing its varied layouts.
+ */
+
+:root {
+  --landing-rail: 1240px;
+  --landing-gutter: clamp(22px, 4vw, 52px);
+  --landing-panel-bg: #fffefb;
+  --landing-panel-border: #a8afc2;
+  --landing-item-border: #c5cada;
+  --landing-panel-radius: 14px;
+  --landing-item-radius: 10px;
+  --landing-panel-shadow: 7px 8px 0 rgba(210, 211, 224, .7);
+  --landing-card-shadow: 3px 4px 0 rgba(210, 211, 224, .65);
+  --landing-title: clamp(2.35rem, 4vw, 3.9rem);
+  --landing-feature-title: clamp(2.1rem, 3.45vw, 3.3rem);
+  --landing-copy: 1rem;
+  --landing-copy-leading: 1.6;
+}
+
+.home-content-sections {
+  gap: 32px;
+}
+
+/* Shared panel foundation. The system uses pale-indigo only as a deliberate
+ * section variation, never as an accidental result of child position. */
+.home-content-sections .content-section {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 !important;
+  padding: 38px var(--landing-gutter) !important;
+  border: 1px solid var(--landing-panel-border) !important;
+  border-radius: var(--landing-panel-radius) !important;
+  background: var(--landing-panel-bg) !important;
+  box-shadow: var(--landing-panel-shadow) !important;
+}
+
+.home-content-sections .content-section.how-it-works-section,
+.home-content-sections .content-section.cta-section,
+.home-content-sections .content-section.initiation-section {
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.home-content-sections .content-section.how-it-works-section {
+  padding: 18px 0 0 !important;
+}
+
+.home-content-sections .content-section.audience-section,
+.home-content-sections .content-section.featured-posts-section {
+  background: #f0f1fb !important;
+}
+
+/* Shared editorial hierarchy: Inter 800, tight but not cramped tracking, and
+ * one medium display tier below the hero. */
+.home-content-sections .content-section > .section-heading,
+.home-content-sections .learning-paths-section .section-heading,
+.home-content-sections .landing-creator-switchboard .section-heading {
+  max-width: 880px;
+  margin: 0 auto 16px !important;
+  color: #1f293b !important;
+  font-family: var(--ui-font) !important;
+  font-size: var(--landing-title) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.055em !important;
+  line-height: .98 !important;
+  text-wrap: balance;
+}
+
+.home-content-sections .content-section > .section-subtitle {
+  width: min(100%, 720px);
+  margin-right: auto !important;
+  margin-left: auto !important;
+  color: var(--pixel-text-light) !important;
+  font-family: var(--ui-font) !important;
+  font-size: clamp(1rem, 1.45vw, 1.12rem) !important;
+  font-weight: 500 !important;
+  letter-spacing: -.012em !important;
+  line-height: 1.55 !important;
+}
+
+.home-content-sections .section-content,
+.home-content-sections .section-content p {
+  color: var(--pixel-text-light);
+  font-family: var(--ui-font) !important;
+  font-size: var(--landing-copy) !important;
+  line-height: var(--landing-copy-leading) !important;
+}
+
+.home-content-sections .reference-eyebrow {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  letter-spacing: .085em;
+}
+
+/* Wide-panel variants share the same physical footprint. Their layouts remain
+ * distinct: flag split, signal stack, creator inputs, and closing CTA. */
+.home-content-sections .cta-reference-card,
+.home-content-sections .initiation-feature-panel,
+.home-content-sections .final-cta-surface {
+  box-sizing: border-box;
+  width: min(100%, var(--landing-rail));
+  margin: 0 auto;
+  padding: 38px var(--landing-gutter);
+  border: 1px solid var(--landing-panel-border);
+  border-radius: var(--landing-panel-radius);
+  background: var(--landing-panel-bg) !important;
+  box-shadow: var(--landing-panel-shadow);
+}
+
+.home-content-sections .cta-reference-card {
+  grid-template-columns: minmax(210px, .72fr) minmax(0, 1.28fr);
+  gap: clamp(32px, 5vw, 64px);
+  min-height: 232px;
+}
+
+.home-content-sections .initiation-feature-panel {
+  grid-template-columns: minmax(0, 1.04fr) minmax(300px, .96fr);
+  gap: clamp(34px, 5vw, 64px);
+}
+
+.home-content-sections .cta-reference-title,
+.home-content-sections .initiation-panel-title,
+.home-content-sections .landing-creator-switchboard .section-heading,
+.home-content-sections .final-cta-cheer .section-heading {
+  margin: 0 0 14px !important;
+  color: #1f293b !important;
+  font-family: var(--ui-font) !important;
+  font-size: var(--landing-feature-title) !important;
+  font-weight: 800 !important;
+  letter-spacing: -.055em !important;
+  line-height: .99 !important;
+}
+
+.home-content-sections .cta-reference-description,
+.home-content-sections .final-cta-cheer .section-content {
+  max-width: 620px;
+  color: var(--pixel-text-light) !important;
+  font-size: var(--landing-copy) !important;
+  font-weight: 400 !important;
+  line-height: var(--landing-copy-leading) !important;
+}
+
+/* Signal Stack: scan-first rows, one playful Post-It, and no competing panel
+ * shadows inside the shared wide surface. */
+.home-content-sections .initiation-signal-strip {
+  padding: 14px 0;
+  border-color: #d9dce4;
+}
+
+.home-content-sections .initiation-signal-strip p {
+  font-size: .92rem !important;
+  line-height: 1.5 !important;
+}
+
+.home-content-sections .initiation-post-it {
+  margin-top: 20px;
+  box-shadow: 3px 3px 0 #d9c6f4;
+}
+
+/* Compact information cards share quiet outlines. Shadow is reserved for
+ * mascot-led and interactive cards, so dense utility content stays calm. */
+.home-content-sections .faq-item,
+.home-content-sections .blog-link-card {
+  border: 1px solid var(--landing-item-border) !important;
+  border-radius: var(--landing-item-radius) !important;
+  background: #fffefb !important;
+  box-shadow: none !important;
+}
+
+.home-content-sections .faq-list {
+  max-width: 960px;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.home-content-sections .faq-item {
+  padding: 18px 22px !important;
+}
+
+.home-content-sections .faq-item h3,
+.home-content-sections .blog-link-card h3 {
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -.025em !important;
+  line-height: 1.25 !important;
+}
+
+.home-content-sections .faq-item p,
+.home-content-sections .blog-link-card p {
+  font-size: .95rem !important;
+  line-height: 1.55 !important;
+}
+
+.home-content-sections .blog-link-card {
+  min-height: 142px;
+  padding: 22px !important;
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms cubic-bezier(.23, 1, .32, 1);
+}
+
+.home-content-sections .blog-link-card:hover {
+  border-color: var(--pixel-accent) !important;
+  background: #f7f7ff !important;
+  box-shadow: 3px 4px 0 rgba(91, 92, 226, .14) !important;
+  transform: translateY(-2px);
+}
+
+.home-content-sections .featured-posts-section .blog-links-grid {
+  max-width: 1120px;
+  gap: 14px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home-content-sections .featured-posts-section .blog-link-card:last-child {
+  grid-column: 1 / -1;
+  width: calc(50% - 7px);
+  justify-self: center;
+}
+
+/* How It Works stays open and playful. Its cards are the compact-card variant
+ * allowed to carry a small shadow because the illustrations are primary cues. */
+.home-content-sections .how-it-works-section .steps-grid {
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.home-content-sections .how-it-works-section .step-card,
+.home-content-sections .audience-card,
+.home-content-sections .learning-path-card {
+  border: 1px solid var(--landing-item-border) !important;
+  border-radius: var(--landing-item-radius) !important;
+  background: #fffefb !important;
+  box-shadow: var(--landing-card-shadow) !important;
+}
+
+.home-content-sections .how-it-works-section .step-card {
+  min-height: 338px;
+  padding: 18px !important;
+}
+
+.home-content-sections .how-it-works-section .step-card h3 {
+  min-height: 2.3em;
+  margin: 0 0 8px;
+  font-size: 1.04rem !important;
+  line-height: 1.14 !important;
+}
+
+.home-content-sections .how-it-works-section .step-card p {
+  margin: 0;
+  font-size: .9rem !important;
+  line-height: 1.55 !important;
+}
+
+.home-content-sections .how-it-works-section .how-it-works-mascot {
+  width: 120px;
+  height: 96px;
+  margin: 8px auto 14px;
+}
+
+/* Audience: one lavender emphasis panel; personality comes from five scenes,
+ * while card geometry remains quiet and consistent. */
+.home-content-sections .audience-section > .section-heading {
+  max-width: 900px;
+}
+
+.home-content-sections .audience-section > .section-subtitle {
+  margin-bottom: 18px !important;
+}
+
+.home-content-sections .audience-grid {
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.home-content-sections .audience-card {
+  min-height: 334px;
+  padding: 16px;
+}
+
+.home-content-sections .audience-card-world {
+  min-height: 112px;
+  margin: -16px -16px 12px;
+}
+
+.home-content-sections .audience-card h3 {
+  min-height: 2.3em;
+  margin: 0 0 7px;
+  font-size: 1.03rem !important;
+  line-height: 1.15 !important;
+}
+
+.home-content-sections .audience-card p {
+  max-width: 230px;
+  margin: 0;
+  font-size: .9rem !important;
+  line-height: 1.55 !important;
+}
+
+.home-content-sections .audience-support-copy {
+  max-width: 720px;
+  margin-top: 28px !important;
+  font-size: .98rem !important;
+  line-height: 1.58 !important;
+}
+
+/* Creator: retain the Switchboard idea, but let the wide-panel system carry the
+ * surface. The right-stage is a subtle mascot scene, not a second container. */
+.home-content-sections .landing-creator-switchboard {
+  grid-template-columns: minmax(0, 1.08fr) minmax(230px, .52fr);
+  gap: clamp(32px, 5vw, 64px);
+  min-height: 0;
+  padding: 38px var(--landing-gutter) !important;
+  background: #fffefb !important;
+}
+
+.home-content-sections .landing-creator-switchboard .reference-eyebrow {
+  margin-bottom: 12px;
+}
+
+.home-content-sections .landing-creator-switchboard .section-heading {
+  max-width: 660px;
+  text-align: left !important;
+}
+
+.home-content-sections .landing-creator-inputs {
+  margin-bottom: 20px;
+}
+
+.home-content-sections .landing-creator-art {
+  min-height: 270px;
+  border-left: 0;
+  background: radial-gradient(circle at 72% 28%, #eef0ff 0 18%, transparent 18%);
+}
+
+.home-content-sections .landing-creator-art:after {
+  border-color: var(--pixel-accent-dark);
+}
+
+.home-content-sections .landing-creator-art img {
+  width: min(100%, 176px);
+  max-height: 158px;
+}
+
+/* Wayfinder: one wide panel, then three tactile route cards. Remove the
+ * redundant inner shell so the mascot and paths breathe within one surface. */
+.home-content-sections .learning-paths-section {
+  background: #fffefb !important;
+}
+
+.home-content-sections .learning-path-wayfinder {
+  max-width: 1120px;
+  margin-top: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.home-content-sections .learning-path-mascot-guide {
+  min-height: 210px;
+  padding: 12px 16px;
+  border-right: 1px solid #d9dce4;
+}
+
+.home-content-sections .learning-path-card {
+  min-height: 184px;
+  box-shadow: none !important;
+}
+
+.home-content-sections .learning-path-wayfinder:hover .learning-path-card,
+.home-content-sections .learning-path-wayfinder:focus-within .learning-path-card {
+  box-shadow: var(--landing-card-shadow) !important;
+}
+
+/* The final CTA is a shared panel with a deliberately modest mascot stage. */
+.home-content-sections .final-cta-surface {
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: clamp(30px, 5vw, 56px);
+  min-height: 278px;
+}
+
+.home-content-sections .final-cta-surface .final-cta-copy {
+  max-width: 620px;
+}
+
+.home-content-sections .final-cta-surface .final-cta-mascot {
+  min-height: 150px;
+  padding: 14px 26px 16px 14px;
+}
+
+.home-content-sections .final-cta-surface .final-cta-mascot:before {
+  right: 26px;
+  bottom: 14px;
+  left: 14px;
+}
+
+.home-content-sections .final-cta-surface .final-cta-mascot img {
+  width: 150px;
+  height: 108px;
+}
+
+.home-content-sections .final-cta-surface .final-cta-bubble {
+  top: 4px;
+  min-width: 96px;
+  padding: 6px 9px;
+  font-family: var(--display-font);
+  font-size: 1.12rem;
+  font-weight: 400;
+  letter-spacing: .035em;
+  line-height: 1.02;
+}
+
+/* The hero mascot carries the short proof point so the copy column can stay
+ * focused on the main promise and two clear actions. */
+.reference-hero-visual {
+  position: relative;
+}
+
+.hero-mascot-proof-bubble {
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  left: 56%;
+  width: min(176px, 40%);
+  margin: 0;
+  padding: 9px 11px;
+  border: 2px solid var(--pixel-border);
+  border-radius: 8px;
+  background: #fffefb;
+  box-shadow: 3px 3px 0 rgba(38, 54, 74, .12);
+  color: var(--pixel-text);
+  font-family: var(--display-font);
+  font-size: 1.12rem;
+  font-weight: 400;
+  letter-spacing: .035em;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.hero-mascot-proof-bubble::after {
+  position: absolute;
+  bottom: -9px;
+  left: 22px;
+  width: 14px;
+  height: 14px;
+  border-right: 2px solid var(--pixel-border);
+  border-bottom: 2px solid var(--pixel-border);
+  background: #fffefb;
+  content: "";
+  transform: rotate(45deg);
+}
+
+@media (max-width: 960px) {
+  .home-content-sections {
+    gap: 28px;
+  }
+
+  .home-content-sections .initiation-feature-panel,
+  .home-content-sections .landing-creator-switchboard,
+  .home-content-sections .final-cta-surface {
+    grid-template-columns: 1fr;
+  }
+
+  .home-content-sections .initiation-panel-features.initiation-signal-stack {
+    max-width: 720px;
+  }
+
+  .home-content-sections .landing-creator-art {
+    min-height: 180px;
+  }
+
+  .home-content-sections .final-cta-surface .final-cta-mascot {
+    order: -1;
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
+  .hero-mascot-proof-bubble {
+    top: 8px;
+    left: 54%;
+    width: min(170px, 45%);
+  }
+}
+
+@media (max-width: 760px) {
+  .home-content-sections {
+    gap: 24px;
+  }
+
+  .home-content-sections .content-section {
+    padding: 30px 18px !important;
+  }
+
+  .home-content-sections .content-section.how-it-works-section,
+  .home-content-sections .content-section.cta-section,
+  .home-content-sections .content-section.initiation-section {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .home-content-sections .content-section > .section-heading,
+  .home-content-sections .learning-paths-section .section-heading {
+    font-size: clamp(2.2rem, 10vw, 3.25rem) !important;
+  }
+
+  .home-content-sections .cta-reference-card,
+  .home-content-sections .initiation-feature-panel,
+  .home-content-sections .final-cta-surface,
+  .home-content-sections .landing-creator-switchboard {
+    width: calc(100% - 24px);
+    padding: 28px 20px !important;
+  }
+
+  .home-content-sections .cta-reference-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .home-content-sections .featured-posts-section .blog-link-card:last-child {
+    width: 100%;
+  }
+
+  .home-content-sections .learning-path-wayfinder {
+    grid-template-columns: 1fr;
+  }
+
+  .home-content-sections .learning-path-mascot-guide {
+    min-height: 116px;
+    border-right: 0;
+    border-bottom: 1px solid #d9dce4;
+  }
+
+  .hero-mascot-proof-bubble {
+    top: 4px;
+    left: 50%;
+    width: min(166px, 56%);
+    padding: 8px 9px;
+    font-size: 1.04rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .home-content-sections .how-it-works-section .steps-grid,
+  .home-content-sections .featured-posts-section .blog-links-grid {
+    gap: 12px;
+  }
+
+  .home-content-sections .how-it-works-section .step-card,
+  .home-content-sections .audience-card {
+    min-height: 0;
+  }
+
+  .home-content-sections .final-cta-surface .final-cta-mascot {
+    min-height: 136px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-content-sections .blog-link-card,
+  .home-content-sections .learning-path-card {
+    transition: none !important;
+  }
+}

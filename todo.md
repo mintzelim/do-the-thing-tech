@@ -558,6 +558,11 @@
 - [x] Apply the selected Option 01 Balanced Buddy alignment to the live final CTA without a dotted divider
 - [x] Reduce the final CTA mascot scale and establish measured inset rails so the selected Balanced Buddy composition no longer crowds the page edge
 - [x] Contain the final landing CTA within one warm-white single-surface panel with balanced internal copy and mascot insets
+- [x] Ensure the final CTA visibly renders the #fffefb warm-white surface against the warm-gray page background
+- [x] Align the final CTA surface dimensions and panel tokens exactly with the established landing-page wide-panel system
+- [x] Audit and reconcile landing-page alignment rails, padding, gutters, typography, tracking, panel dimensions, border and shadow rules, and mascot placement without changing copy or functionality
+- [x] Replace the hero supporting paragraph with the canonical mascot speech bubble “Free. No login. Under a minute.” while preserving the hero headline, description, actions, and task behavior
+- [x] Set all live mascot speech-bubble text to VT323 while retaining Inter for headings and body copy
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

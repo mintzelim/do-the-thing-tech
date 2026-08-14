@@ -147,7 +147,7 @@ export default function HomeContent() {
       </section>
 
       {/* SECTION 6: FAQ */}
-      <section className="content-section">
+      <section className="content-section faq-section">
         <h2 className="section-heading" style={{ textAlign: 'center' }}>Frequently Asked Questions</h2>
         <div className="faq-list">
           <div className="faq-item">
@@ -228,7 +228,7 @@ export default function HomeContent() {
       </section>
 
       {/* SECTION 7: FEATURED POSTS */}
-      <section className="content-section">
+      <section className="content-section featured-posts-section">
         <h2 className="section-heading" style={{ textAlign: 'center' }}>Featured Posts: ADHD & Productivity</h2>
         <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '32px' }}>Hand-picked articles to help you understand ADHD and get things done</p>
         
@@ -264,14 +264,16 @@ export default function HomeContent() {
 
       {/* CTA SECTION 2: After Blog Links */}
       <section className="content-section cta-section final-cta-cheer final-cta-balanced-buddy" aria-labelledby="final-cta-heading">
-        <div className="final-cta-copy">
-          <h2 id="final-cta-heading" className="section-heading">Try DoTheThing Now</h2>
-          <p className="section-content">Free. No login. No email. Just type your task and get your breakdown in under a minute.</p>
-          <div className="final-cta-action-wrap">
-            <a href="#widget" className="cta-button final-cta-action">↑ SCROLL UP TO START</a>
+        <div className="final-cta-surface">
+          <div className="final-cta-copy">
+            <h2 id="final-cta-heading" className="section-heading">Try DoTheThing Now</h2>
+            <p className="section-content">Free. No login. No email. Just type your task and get your breakdown in under a minute.</p>
+            <div className="final-cta-action-wrap">
+              <a href="#widget" className="cta-button final-cta-action">↑ SCROLL UP TO START</a>
+            </div>
           </div>
+          <div className="final-cta-mascot" aria-hidden="true"><span className="final-cta-bubble">You got this.</span><img src={assetUrl("/manus-storage/audience-howitworks-remote-workers_7ce7f448.png")} alt="" /></div>
         </div>
-        <div className="final-cta-mascot" aria-hidden="true"><span className="final-cta-bubble">You got this.</span><img src={assetUrl("/manus-storage/audience-howitworks-remote-workers_7ce7f448.png")} alt="" /></div>
       </section>
     </div>
   );

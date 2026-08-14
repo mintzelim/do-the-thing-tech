@@ -194,16 +194,18 @@ describe("hero-matched CTA and headlines", () => {
     );
 
     expect(homeContent).toContain('className="content-section cta-section final-cta-cheer final-cta-balanced-buddy"');
+    expect(homeContent).toContain('className="final-cta-surface"');
     expect(homeContent).toContain("Try DoTheThing Now");
     expect(homeContent).toContain("Free. No login. No email. Just type your task and get your breakdown in under a minute.");
     expect(homeContent).toContain('href="#widget" className="cta-button final-cta-action"');
     expect(homeContent).toContain('className="final-cta-bubble">You got this.</span>');
     expect(homeContent).toContain("audience-howitworks-remote-workers_7ce7f448.png");
     expect(stylesheet).toContain(".final-cta-cheer");
-    expect(stylesheet).toContain(".final-cta-cheer.final-cta-balanced-buddy{box-sizing:border-box;width:min(calc(100% - 48px),1120px);grid-template-columns:minmax(0,620px) minmax(210px,250px)");
-    expect(stylesheet).toContain("border:1px solid var(--pixel-border)!important;border-radius:14px!important;background:var(--pixel-card-bg)!important;box-shadow:4px 4px 0 rgba(38,54,74,.1)!important");
-    expect(stylesheet).toContain(".final-cta-cheer.final-cta-balanced-buddy .final-cta-mascot{box-sizing:border-box;min-height:166px;padding:18px 34px 20px 18px}");
-    expect(stylesheet).toContain(".final-cta-cheer.final-cta-balanced-buddy .final-cta-mascot img{width:170px;height:122px;transform:scale(1)}");
+    expect(stylesheet).toContain(".content-section.cta-section.final-cta-cheer.final-cta-balanced-buddy{display:block!important;width:100%!important");
+    expect(stylesheet).toContain(".final-cta-surface{box-sizing:border-box;display:grid;width:min(100%,1240px);grid-template-columns:minmax(0,1fr) 250px;gap:48px;align-items:center;min-height:300px;margin:0 auto;padding:38px clamp(22px,4vw,52px)");
+    expect(stylesheet).toContain("border:1px solid #a8afc2;border-radius:14px;background:#fffefb!important;box-shadow:7px 8px 0 rgba(210,211,224,.7)");
+    expect(stylesheet).toContain(".final-cta-surface .final-cta-mascot{box-sizing:border-box;min-height:166px;padding:18px 34px 20px 18px}");
+    expect(stylesheet).toContain(".final-cta-surface .final-cta-mascot img{width:170px;height:122px;max-height:none;transform:scale(1)}");
     expect(stylesheet).not.toContain(".final-cta-cheer.final-cta-balanced-buddy .final-cta-mascot{border-left:1px dashed");
     expect(stylesheet).toContain(".final-cta-bubble");
     expect(stylesheet).toContain("@media (max-width:760px){.final-cta-cheer");
