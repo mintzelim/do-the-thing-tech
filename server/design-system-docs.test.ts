@@ -103,11 +103,14 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("OPTION 01 · THE QUEST BOARD");
     expect(html).toContain("OPTION 02 · THE SIGNAL STACK");
     expect(html).toContain("OPTION 03 · THE FOCUS FAN CONTROL ROOM");
+    expect(html).toContain("Selected implementation:</strong> Option 02 · The Signal Stack");
     expect(html).toContain("Quest Ticket");
     expect(html).toContain("Pixel Post-It");
     expect(html).toContain("Context Strips");
     expect(html).toContain('role="group" aria-label="Focus Fan Initiation Problem capability preview"');
     expect(html).toContain("@media(prefers-reduced-motion:reduce)");
+    expect(markdown).toContain("Initiation Problem: Signal Stack");
+    expect(markdown).toContain("**Signal Stack** is the selected treatment");
   });
 
   it("does not fabricate aggregate ratings in structured data", () => {

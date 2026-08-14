@@ -525,6 +525,8 @@
 
 ## Initiation Problem Layout Options
 - [x] Add three selection-only visual design-system layout options for the Built for the Initiation Problem section, incorporating approved card patterns without changing the live copy or section before user selection
+- [x] Apply the selected Option 02 Signal Stack layout to the live Built for the Initiation Problem section while preserving its exact existing copy and feature statements
+- [x] Document the selected Signal Stack implementation in the design-system references and validate it with regression coverage
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

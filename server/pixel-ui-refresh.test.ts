@@ -114,6 +114,26 @@ describe("single-surface landing panels", () => {
     expect(stylesheet).toContain(".content-section.initiation-section,.content-section.cta-section{background:transparent");
     expect(stylesheet).toContain("border-left:0");
   });
+
+  it("uses the selected Signal Stack to preserve each Initiation Problem statement in a scan-first layout", () => {
+    const homeContent = readFileSync(
+      resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
+      "utf8",
+    );
+
+    expect(homeContent).toContain('className="initiation-panel-features initiation-signal-stack"');
+    expect((homeContent.match(/className="initiation-signal-strip"/g) ?? []).length).toBe(5);
+    expect((homeContent.match(/className="initiation-signal-note"/g) ?? []).length).toBe(1);
+    expect(homeContent).toContain("AI task breakdown.</strong> Vague becomes specific in seconds.");
+    expect(homeContent).toContain("Focus-level adjustment.</strong> Estimates match today's capacity, whatever that looks like.");
+    expect(homeContent).toContain("ADHD time buffers.</strong> 20–30% built into every estimate.");
+    expect(homeContent).toContain("Visual countdown timer.</strong> Time becomes something you can see.");
+    expect(homeContent).toContain("Brain dump mode.</strong> Type the whole pile. The AI finds the work.");
+    expect(homeContent).toContain("Free. No login.</strong> Open the tab. Start.");
+    expect(stylesheet).toContain(".initiation-panel-features.initiation-signal-stack{display:grid;gap:0");
+    expect(stylesheet).toContain(".initiation-signal-strip{display:grid;grid-template-columns:34px minmax(0,1fr)");
+    expect(stylesheet).toContain(".initiation-signal-note{display:grid;grid-template-columns:34px minmax(0,1fr)");
+  });
 });
 
 

@@ -77,24 +77,30 @@ export default function HomeContent() {
               </p>
             </div>
           </div>
-          <div className="initiation-panel-features features-list">
-            <div className="feature-item">
-              <strong>AI task breakdown.</strong> Vague becomes specific in seconds.
+          <div className="initiation-panel-features initiation-signal-stack" aria-label="DoTheThing initiation support features">
+            <div className="initiation-signal-strip">
+              <span className="initiation-signal-index" aria-hidden="true">01</span>
+              <p><strong>AI task breakdown.</strong> Vague becomes specific in seconds.</p>
             </div>
-            <div className="feature-item">
-              <strong>Focus-level adjustment.</strong> Estimates match today's capacity, whatever that looks like.
+            <div className="initiation-signal-strip">
+              <span className="initiation-signal-index" aria-hidden="true">02</span>
+              <p><strong>Focus-level adjustment.</strong> Estimates match today's capacity, whatever that looks like.</p>
             </div>
-            <div className="feature-item">
-              <strong>ADHD time buffers.</strong> 20–30% built into every estimate.
+            <div className="initiation-signal-strip">
+              <span className="initiation-signal-index" aria-hidden="true">03</span>
+              <p><strong>ADHD time buffers.</strong> 20–30% built into every estimate.</p>
             </div>
-            <div className="feature-item">
-              <strong>Visual countdown timer.</strong> Time becomes something you can see.
+            <div className="initiation-signal-strip">
+              <span className="initiation-signal-index" aria-hidden="true">04</span>
+              <p><strong>Visual countdown timer.</strong> Time becomes something you can see.</p>
             </div>
-            <div className="feature-item">
-              <strong>Brain dump mode.</strong> Type the whole pile. The AI finds the work.
+            <div className="initiation-signal-strip">
+              <span className="initiation-signal-index" aria-hidden="true">05</span>
+              <p><strong>Brain dump mode.</strong> Type the whole pile. The AI finds the work.</p>
             </div>
-            <div className="feature-item">
-              <strong>Free. No login.</strong> Open the tab. Start.
+            <div className="initiation-signal-note">
+              <span className="initiation-signal-index" aria-hidden="true">06</span>
+              <p><strong>Free. No login.</strong> Open the tab. Start.</p>
             </div>
           </div>
         </div>
