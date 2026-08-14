@@ -142,6 +142,24 @@ describe("landing-page design-system documentation", () => {
     expect(markdown).toContain("2px ink-blue border");
   });
 
+  it("presents three mascot-led interactive learning-path layouts without changing the live section", () => {
+    expect(html).toContain('id="learning-path-layout-options"');
+    expect(html).toContain("OPTION 01 · MASCOT WAYFINDER");
+    expect(html).toContain("OPTION 02 · PATH PARADE");
+    expect(html).toContain("OPTION 03 · QUEST CONSTELLATION");
+    expect(html).toContain('role="group" aria-label="Mascot Wayfinder learning-path interaction preview"');
+    expect(html).toContain('role="group" aria-label="Path Parade learning-path interaction preview"');
+    expect(html).toContain('role="group" aria-label="Quest Constellation learning-path interaction preview"');
+    expect(html).toContain("STARTING FEELS IMPOSSIBLE");
+    expect(html).toContain("TIME KEEPS GETTING AWAY");
+    expect(html).toContain("WORK WITHOUT THE OVERWHELM");
+    expect(html).toContain("@media(prefers-reduced-motion:reduce)");
+    expect(homeContent).not.toContain("learning-mascot");
+    expect(homeContent).not.toContain("Mascot Wayfinder");
+    expect(homeContent).not.toContain("Path Parade");
+    expect(homeContent).not.toContain("Quest Constellation");
+  });
+
   it("does not fabricate aggregate ratings in structured data", () => {
     expect(enhancedSchema).not.toContain('"aggregateRating"');
     expect(enhancedSchema).not.toContain("ratingCount");

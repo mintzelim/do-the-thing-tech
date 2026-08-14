@@ -537,6 +537,7 @@
 - [x] Document and validate the selected Corner Burst input cue across desktop and mobile widget states
 - [x] Replace the selected Corner Burst copy with BRAIN DUMP HERE! across the live widget, design-system references, and regression coverage
 - [x] Save checkpoint for the selected Corner Burst task-widget input cue
+- [x] Add three selection-only mascot-led interactive layout options for the Start Here learning-path section in the visual design-system HTML without changing the live section before user selection
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference
