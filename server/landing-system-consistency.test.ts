@@ -24,12 +24,13 @@ describe("landing-page design-system reconciliation", () => {
   });
 
   it("governs outer gaps, panel padding, and content starts with one responsive spacing scale", () => {
-    expect(reconciliation).toContain("--landing-section-gap: 32px");
+    expect(reconciliation).toContain("--landing-section-gap: 38px");
     expect(reconciliation).toContain("--landing-section-pad: 38px");
     expect(reconciliation).toContain("--landing-content-gap: 24px");
     expect(reconciliation).toContain("gap: var(--landing-section-gap)");
     expect(reconciliation).toContain("padding: 0 !important");
-    expect(reconciliation).toContain("--landing-section-gap: 24px");
+    expect(reconciliation).toContain("--landing-section-gap: 34px");
+    expect(reconciliation).toContain("--landing-section-gap: 29px");
     expect(reconciliation).toContain("--landing-content-gap: 20px");
   });
 

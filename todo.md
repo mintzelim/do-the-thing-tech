@@ -565,6 +565,7 @@
 - [x] Set all live mascot speech-bubble text to VT323 while retaining Inter for headings and body copy
 - [x] Reposition the mobile final CTA “You got this.” bubble so it does not cover the canonical mascot
 - [x] Audit and normalize inconsistent desktop and mobile vertical gaps between landing-page panels and sections without changing copy or features
+- [x] Increase the shared landing-page inter-section spacing by 20% across desktop and mobile while preserving internal panel spacing
 - [ ] Audit every blog illustration and featured image against the approved canonical lavender rectangular mascot standard
 - [ ] Regenerate and replace each inconsistent blog mascot image while preserving article topics, copy, alt text, and metadata
 - [ ] Use only newly generated landing-mascot illustrations for the blog refresh; do not reuse or substitute existing blog mascot art

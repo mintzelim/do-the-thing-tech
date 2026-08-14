@@ -21,7 +21,8 @@
   --landing-item-radius: 10px;
   --landing-panel-shadow: 7px 8px 0 rgba(210, 211, 224, .7);
   --landing-card-shadow: 3px 4px 0 rgba(210, 211, 224, .65);
-  --landing-section-gap: 32px;
+  /* 20% more breathing room between sections; inner panel rhythm stays unchanged. */
+  --landing-section-gap: 38px;
   --landing-section-pad: 38px;
   --landing-content-gap: 24px;
   --landing-title: clamp(2.35rem, 4vw, 3.9rem);
@@ -477,7 +478,7 @@
 
 @media (max-width: 960px) {
   .home-content-sections {
-    --landing-section-gap: 28px;
+    --landing-section-gap: 34px;
   }
 
   .home-content-sections .initiation-feature-panel,
@@ -520,7 +521,7 @@
 
 @media (max-width: 760px) {
   .home-content-sections {
-    --landing-section-gap: 24px;
+    --landing-section-gap: 29px;
     --landing-section-pad: 30px;
     --landing-content-gap: 20px;
   }
