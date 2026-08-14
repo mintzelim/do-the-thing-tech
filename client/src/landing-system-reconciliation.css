@@ -21,6 +21,9 @@
   --landing-item-radius: 10px;
   --landing-panel-shadow: 7px 8px 0 rgba(210, 211, 224, .7);
   --landing-card-shadow: 3px 4px 0 rgba(210, 211, 224, .65);
+  --landing-section-gap: 32px;
+  --landing-section-pad: 38px;
+  --landing-content-gap: 24px;
   --landing-title: clamp(2.35rem, 4vw, 3.9rem);
   --landing-feature-title: clamp(2.1rem, 3.45vw, 3.3rem);
   --landing-copy: 1rem;
@@ -28,7 +31,8 @@
 }
 
 .home-content-sections {
-  gap: 32px;
+  gap: var(--landing-section-gap);
+  margin-bottom: var(--landing-section-gap);
 }
 
 /* Shared panel foundation. The system uses pale-indigo only as a deliberate
@@ -37,7 +41,7 @@
   box-sizing: border-box;
   width: 100%;
   margin: 0 !important;
-  padding: 38px var(--landing-gutter) !important;
+  padding: var(--landing-section-pad) var(--landing-gutter) !important;
   border: 1px solid var(--landing-panel-border) !important;
   border-radius: var(--landing-panel-radius) !important;
   background: var(--landing-panel-bg) !important;
@@ -47,14 +51,11 @@
 .home-content-sections .content-section.how-it-works-section,
 .home-content-sections .content-section.cta-section,
 .home-content-sections .content-section.initiation-section {
+  padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
   box-shadow: none !important;
-}
-
-.home-content-sections .content-section.how-it-works-section {
-  padding: 18px 0 0 !important;
 }
 
 .home-content-sections .content-section.audience-section,
@@ -88,6 +89,11 @@
   font-weight: 500 !important;
   letter-spacing: -.012em !important;
   line-height: 1.55 !important;
+  margin-bottom: 0 !important;
+}
+
+.home-content-sections .audience-section > .section-subtitle + .section-subtitle {
+  margin-top: 10px !important;
 }
 
 .home-content-sections .section-content,
@@ -112,7 +118,7 @@
   box-sizing: border-box;
   width: min(100%, var(--landing-rail));
   margin: 0 auto;
-  padding: 38px var(--landing-gutter);
+  padding: var(--landing-section-pad) var(--landing-gutter);
   border: 1px solid var(--landing-panel-border);
   border-radius: var(--landing-panel-radius);
   background: var(--landing-panel-bg) !important;
@@ -182,7 +188,7 @@
 .home-content-sections .faq-list {
   max-width: 960px;
   gap: 10px;
-  margin-top: 28px;
+  margin-top: var(--landing-content-gap);
 }
 
 .home-content-sections .faq-item {
@@ -219,6 +225,7 @@
 .home-content-sections .featured-posts-section .blog-links-grid {
   max-width: 1120px;
   gap: 14px;
+  margin-top: var(--landing-content-gap);
   margin-right: auto;
   margin-left: auto;
 }
@@ -233,7 +240,7 @@
  * allowed to carry a small shadow because the illustrations are primary cues. */
 .home-content-sections .how-it-works-section .steps-grid {
   gap: 14px;
-  margin-top: 26px;
+  margin-top: var(--landing-content-gap);
 }
 
 .home-content-sections .how-it-works-section .step-card,
@@ -281,7 +288,7 @@
 
 .home-content-sections .audience-grid {
   gap: 14px;
-  margin-top: 24px;
+  margin-top: var(--landing-content-gap);
 }
 
 .home-content-sections .audience-card {
@@ -310,7 +317,7 @@
 
 .home-content-sections .audience-support-copy {
   max-width: 720px;
-  margin-top: 28px !important;
+  margin-top: var(--landing-content-gap) !important;
   font-size: .98rem !important;
   line-height: 1.58 !important;
 }
@@ -321,7 +328,7 @@
   grid-template-columns: minmax(0, 1.08fr) minmax(230px, .52fr);
   gap: clamp(32px, 5vw, 64px);
   min-height: 0;
-  padding: 38px var(--landing-gutter) !important;
+  padding: var(--landing-section-pad) var(--landing-gutter) !important;
   background: #fffefb !important;
 }
 
@@ -361,7 +368,7 @@
 
 .home-content-sections .learning-path-wayfinder {
   max-width: 1120px;
-  margin-top: 30px;
+  margin-top: var(--landing-content-gap);
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -423,6 +430,11 @@
   line-height: 1.02;
 }
 
+.home-content-sections .featured-posts-action-wrap {
+  margin-top: var(--landing-content-gap);
+  text-align: center;
+}
+
 /* The hero mascot carries the short proof point so the copy column can stay
  * focused on the main promise and two clear actions. */
 .reference-hero-visual {
@@ -465,7 +477,7 @@
 
 @media (max-width: 960px) {
   .home-content-sections {
-    gap: 28px;
+    --landing-section-gap: 28px;
   }
 
   .home-content-sections .initiation-feature-panel,
@@ -508,7 +520,9 @@
 
 @media (max-width: 760px) {
   .home-content-sections {
-    gap: 24px;
+    --landing-section-gap: 24px;
+    --landing-section-pad: 30px;
+    --landing-content-gap: 20px;
   }
 
   .home-content-sections .content-section {
@@ -532,7 +546,7 @@
   .home-content-sections .final-cta-surface,
   .home-content-sections .landing-creator-switchboard {
     width: calc(100% - 24px);
-    padding: 28px 20px !important;
+    padding: var(--landing-section-pad) 20px !important;
   }
 
   .home-content-sections .cta-reference-card {

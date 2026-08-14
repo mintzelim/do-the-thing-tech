@@ -564,6 +564,11 @@
 - [x] Replace the hero supporting paragraph with the canonical mascot speech bubble “Free. No login. Under a minute.” while preserving the hero headline, description, actions, and task behavior
 - [x] Set all live mascot speech-bubble text to VT323 while retaining Inter for headings and body copy
 - [x] Reposition the mobile final CTA “You got this.” bubble so it does not cover the canonical mascot
+- [x] Audit and normalize inconsistent desktop and mobile vertical gaps between landing-page panels and sections without changing copy or features
+- [ ] Audit every blog illustration and featured image against the approved canonical lavender rectangular mascot standard
+- [ ] Regenerate and replace each inconsistent blog mascot image while preserving article topics, copy, alt text, and metadata
+- [ ] Use only newly generated landing-mascot illustrations for the blog refresh; do not reuse or substitute existing blog mascot art
+- [ ] Validate the refreshed blog images in article and index layouts, add regression coverage, and publish the update
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

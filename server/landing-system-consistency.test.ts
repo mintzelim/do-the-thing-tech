@@ -23,6 +23,16 @@ describe("landing-page design-system reconciliation", () => {
     expect(reconciliation).toContain("--landing-copy-leading: 1.6");
   });
 
+  it("governs outer gaps, panel padding, and content starts with one responsive spacing scale", () => {
+    expect(reconciliation).toContain("--landing-section-gap: 32px");
+    expect(reconciliation).toContain("--landing-section-pad: 38px");
+    expect(reconciliation).toContain("--landing-content-gap: 24px");
+    expect(reconciliation).toContain("gap: var(--landing-section-gap)");
+    expect(reconciliation).toContain("padding: 0 !important");
+    expect(reconciliation).toContain("--landing-section-gap: 24px");
+    expect(reconciliation).toContain("--landing-content-gap: 20px");
+  });
+
   it("preserves varied section compositions while normalizing their surface rules", () => {
     expect(reconciliation).toContain(".content-section.how-it-works-section");
     expect(reconciliation).toContain(".content-section.audience-section");
@@ -41,6 +51,8 @@ describe("landing-page design-system reconciliation", () => {
   it("adds semantics-only section hooks without changing landing content", () => {
     expect(homeContent).toContain('className="content-section faq-section"');
     expect(homeContent).toContain('className="content-section featured-posts-section"');
+    expect(homeContent).toContain('className="featured-posts-action-wrap"');
+    expect(homeContent).not.toContain("marginBottom: '32px'");
     expect(homeContent).toContain("Try DoTheThing Now");
     expect(homeContent).toContain("Built for the Initiation Problem");
     expect(homeContent).toContain("A Productivity Tool for Anyone Whose Brain Works Differently");

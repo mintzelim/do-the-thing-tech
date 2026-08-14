@@ -209,7 +209,7 @@ export default function HomeContent() {
       {/* SECTION 6.75: START HERE LEARNING PATHS */}
       <section className="content-section learning-paths-section" id="learning-paths" aria-labelledby="learning-paths-heading">
         <h2 id="learning-paths-heading" className="section-heading" style={{ textAlign: 'center' }}>Start Here: Choose Your Learning Path</h2>
-        <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '32px' }}>
+        <p className="section-subtitle" style={{ textAlign: 'center' }}>
           Pick the problem that is loudest today. Each path begins with two practical, source-backed articles.
         </p>
         <div className="learning-path-wayfinder" role="group" aria-label="Choose a DoTheThing learning path">
@@ -230,7 +230,7 @@ export default function HomeContent() {
       {/* SECTION 7: FEATURED POSTS */}
       <section className="content-section featured-posts-section">
         <h2 className="section-heading" style={{ textAlign: 'center' }}>Featured Posts: ADHD & Productivity</h2>
-        <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '32px' }}>Hand-picked articles to help you understand ADHD and get things done</p>
+        <p className="section-subtitle" style={{ textAlign: 'center' }}>Hand-picked articles to help you understand ADHD and get things done</p>
         
         <div className="blog-links-grid">
           <Link href="/blog/adhd-in-women" className="blog-link-card">
@@ -255,7 +255,7 @@ export default function HomeContent() {
           </Link>
         </div>
         
-        <div style={{ textAlign: 'center', marginTop: '32px' }}>
+        <div className="featured-posts-action-wrap">
           <Link href="/blog" className="cta-button" style={{ display: 'inline-block', padding: '10px 24px', backgroundColor: 'var(--pixel-border)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>
             VIEW ALL POSTS
           </Link>
