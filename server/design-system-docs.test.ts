@@ -6,6 +6,7 @@ const markdown = readFileSync(resolve(process.cwd(), "docs/dothething-landing-de
 const html = readFileSync(resolve(process.cwd(), "docs/dothething-landing-design-system.html"), "utf8");
 const enhancedSchema = readFileSync(resolve(process.cwd(), "client/src/lib/enhancedSchema.ts"), "utf8");
 const homeContent = readFileSync(resolve(process.cwd(), "client/src/components/HomeContent.tsx"), "utf8");
+const aboutPage = readFileSync(resolve(process.cwd(), "client/src/pages/About.tsx"), "utf8");
 
 describe("landing-page design-system documentation", () => {
   it("documents the implemented hybrid pixel tokens and shared text grid", () => {
@@ -193,6 +194,25 @@ describe("landing-page design-system documentation", () => {
     expect(homeContent).not.toContain("PROGRESS PULSE");
     expect(markdown).toContain("fixed **540px frame**");
     expect(markdown).toContain("**36px gutter**");
+  });
+
+  it("presents three playful selection-only creator-section directions without changing the live About page", () => {
+    expect(html).toContain('id="creator-layout-options"');
+    expect(html).toContain("Make “built by someone who gets it” feel more alive");
+    expect(html).toContain("OPTION 01 · ORIGIN ARCADE");
+    expect(html).toContain("OPTION 02 · EMPATHY SWITCHBOARD");
+    expect(html).toContain("OPTION 03 · THE ORIGIN QUEST LOG");
+    expect(html).toContain('role="group" aria-label="Origin Arcade creator section preview"');
+    expect(html).toContain('role="group" aria-label="Empathy Switchboard creator section preview"');
+    expect(html).toContain('role="group" aria-label="Origin Quest Log creator section preview"');
+    expect(html).toContain("prefers-reduced-motion");
+    expect(markdown).toContain("About-page creator section options");
+    expect(markdown).toContain("Origin Arcade");
+    expect(markdown).toContain("Empathy Switchboard");
+    expect(markdown).toContain("The Origin Quest Log");
+    expect(aboutPage).not.toContain("Origin Arcade");
+    expect(aboutPage).not.toContain("Empathy Switchboard");
+    expect(aboutPage).not.toContain("The Origin Quest Log");
   });
 
   it("does not fabricate aggregate ratings in structured data", () => {

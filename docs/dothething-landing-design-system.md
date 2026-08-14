@@ -149,6 +149,18 @@ Buttons use Inter at 700 weight, 0.98rem, 8px radius, and 12px × 22px padding. 
 
 Main panels use a 1px panel border, 14px radius, and one offset shadow. Repeated content cards use a lighter 1px border, 10px radius, and a smaller cool-gray shadow. Avoid borders inside an already bordered wide panel unless the interior contains repeatable card items.
 
+### About-page creator section options
+
+The “Built by Someone Who Gets It” creator section has three **selection-only** layout directions in the visual design-system reference. Each direction preserves the existing founder biography, professional credentials, medical-care caveat, profile links, lived-experience context, sourced research context, and lavender mascot constraint. A selection changes composition and motion only; it must not rewrite or shorten the existing About-page claims.
+
+| Option | Layout logic | Appropriate use |
+|---|---|---|
+| **Origin Arcade** | A three-stage vertical signal rail—Friction, Lived, Built—leads into one generous narrative column and three proof signals. | The lived-to-built arc should feel playful, but the biography needs first priority. |
+| **Empathy Switchboard** | Three connected, non-functional visual inputs represent lived experience, product practice, and research alongside the creator narrative. | The section should clearly show that product decisions come from several real sources, not one generic claim. |
+| **The Origin Quest Log** | A compact numbered route frames the creator narrative as friction, learning, and a practical tool. | The personal story needs an energetic, memorable rhythm without human illustration or an over-carded layout. |
+
+For all three options, hover or keyboard focus may move the mascot only with a restrained transform over 180ms. The interaction is decorative and cannot conceal copy or change navigation. On narrow screens, each option becomes a linear reading sequence and respects `prefers-reduced-motion`.
+
 ### Figma-informed card library
 
 The Figma-informed card library is a **selection-only reference board**, not a live-site component set. Its layout geometry follows the supplied source board rather than the public site’s normal responsive card grid: every preview uses a fixed **540px frame**, neighbouring source columns have a **36px gutter**, and the board retains five columns on wide screens. On narrower screens, provide horizontal scrolling rather than compressing a source card into a new proportion.
