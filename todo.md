@@ -563,6 +563,7 @@
 - [x] Audit and reconcile landing-page alignment rails, padding, gutters, typography, tracking, panel dimensions, border and shadow rules, and mascot placement without changing copy or functionality
 - [x] Replace the hero supporting paragraph with the canonical mascot speech bubble “Free. No login. Under a minute.” while preserving the hero headline, description, actions, and task behavior
 - [x] Set all live mascot speech-bubble text to VT323 while retaining Inter for headings and body copy
+- [x] Reposition the mobile final CTA “You got this.” bubble so it does not cover the canonical mascot
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

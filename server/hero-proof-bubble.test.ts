@@ -35,4 +35,10 @@ describe("hero mascot proof bubble", () => {
     expect(styles).toContain("font-size: 1.12rem");
     expect((styles.match(/font-family: var\(--display-font\)/g) ?? []).length).toBeGreaterThanOrEqual(2);
   });
+
+  it("reserves a dedicated upper rail for the stacked mobile CTA bubble so it cannot cover the mascot", () => {
+    expect(styles).toContain("min-height: 204px");
+    expect(styles).toContain("padding: 64px 18px 16px");
+    expect(styles).toContain(".final-cta-surface .final-cta-bubble {\n    top: 0;\n    left: calc(50% + 38px)");
+  });
 });

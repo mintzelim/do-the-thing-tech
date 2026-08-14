@@ -485,7 +485,18 @@
   .home-content-sections .final-cta-surface .final-cta-mascot {
     order: -1;
     max-width: 260px;
+    min-height: 204px;
     margin: 0 auto;
+    padding: 64px 18px 16px;
+  }
+
+  .home-content-sections .final-cta-surface .final-cta-bubble {
+    top: 0;
+    left: calc(50% + 38px);
+  }
+
+  .home-content-sections .final-cta-surface .final-cta-bubble::after {
+    left: 16px;
   }
 
   .hero-mascot-proof-bubble {
@@ -564,7 +575,7 @@
   }
 
   .home-content-sections .final-cta-surface .final-cta-mascot {
-    min-height: 136px;
+    min-height: 204px;
   }
 }
 
