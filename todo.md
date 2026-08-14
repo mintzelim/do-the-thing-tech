@@ -538,6 +538,12 @@
 - [x] Replace the selected Corner Burst copy with BRAIN DUMP HERE! across the live widget, design-system references, and regression coverage
 - [x] Save checkpoint for the selected Corner Burst task-widget input cue
 - [x] Add three selection-only mascot-led interactive layout options for the Start Here learning-path section in the visual design-system HTML without changing the live section before user selection
+- [x] Apply the selected Option 01 Mascot Wayfinder to the live Start Here learning-path section
+- [x] Clarification superseded dedicated learning-path destinations: use one direct starter-article link per card instead
+- [x] Document and validate the linked Mascot Wayfinder experience across responsive states
+- [x] Remove the unrequested dedicated learning-path pages and link each Wayfinder card directly to its first recommended article
+- [x] Remove the purple article-title list from each live Mascot Wayfinder card while preserving its direct starter-article link
+- [x] Save checkpoint for the simplified direct-link Mascot Wayfinder experience
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

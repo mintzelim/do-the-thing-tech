@@ -75,6 +75,10 @@ The widget pairs a flexible task-entry card with a fixed 330px “Today’s plan
 
 The selected input cue is **Option 01 · Corner Burst**: a compact yellow **“BRAIN DUMP HERE!”** sticker placed on the upper-right edge of the textarea. It is the only yellow exception in the widget and follows the system’s own 2px ink-blue border, 2px ink-blue offset shadow, restrained six-degree rotation, Inter 800 text, 4px control radius, and 10px desktop inset. The sticker is decorative (`aria-hidden`, non-interactive) and must never cover the placeholder, focus indicator, or typing surface. At 560px and below, reduce its size and inset without moving it into the text field.
 
+### Learning paths
+
+The selected **Option 01 · Mascot Wayfinder** treats each of the three learning paths as one full-card link. Keep each card clean: show only its problem title, short description, number, and directional arrow. Each card links directly to its first recommended article so visitors can simply begin there; do not show blog-title lists inside the route card. Use one transparent mascot guide beside the group, a single warm-white Wayfinder field, equal route cards, keyboard-visible group feedback, and a one-column mobile stack.
+
 ### Section headline grid
 
 Major lower-section headings use the same Inter headline treatment as the hero. The headline itself is capped at **940px**. Its subtitle and audience supporting line sit on a **720px centered text grid**, with a 30px intentional pause between the audience subtitle and its introductory sentence.

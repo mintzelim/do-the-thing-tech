@@ -160,6 +160,13 @@ describe("landing-page design-system documentation", () => {
     expect(homeContent).not.toContain("Quest Constellation");
   });
 
+  it("records Mascot Wayfinder as the selected linked learning-path system", () => {
+    expect(html).toContain("Selected implementation:</strong> Option 01 · Mascot Wayfinder is now applied");
+    expect(markdown).toContain("The selected **Option 01 · Mascot Wayfinder**");
+    expect(markdown).toContain("links directly to its first recommended article");
+    expect(markdown).toContain("do not show blog-title lists inside the route card");
+  });
+
   it("does not fabricate aggregate ratings in structured data", () => {
     expect(enhancedSchema).not.toContain('"aggregateRating"');
     expect(enhancedSchema).not.toContain("ratingCount");

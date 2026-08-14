@@ -198,27 +198,23 @@ export default function HomeContent() {
       </section>
 
       {/* SECTION 6.75: START HERE LEARNING PATHS */}
-      <section className="content-section" aria-labelledby="learning-paths-heading">
+      <section className="content-section learning-paths-section" id="learning-paths" aria-labelledby="learning-paths-heading">
         <h2 id="learning-paths-heading" className="section-heading" style={{ textAlign: 'center' }}>Start Here: Choose Your Learning Path</h2>
         <p className="section-subtitle" style={{ textAlign: 'center', marginBottom: '32px' }}>
           Pick the problem that is loudest today. Each path begins with two practical, source-backed articles.
         </p>
-        <div className="blog-links-grid">
-          {LEARNING_PATHS.map((path) => (
-            <section key={path.title} className="blog-link-card" aria-label={path.title}>
-              <h3>{path.title}</h3>
-              <p>{path.description}</p>
-              <ul style={{ paddingLeft: '18px', margin: '16px 0 0', display: 'grid', gap: '8px' }}>
-                {path.posts.map((post) => (
-                  <li key={post.href}>
-                    <Link href={post.href} style={{ color: 'var(--pixel-accent)', textDecoration: 'underline' }}>
-                      {post.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
+        <div className="learning-path-wayfinder" role="group" aria-label="Choose a DoTheThing learning path">
+          <div className="learning-path-mascot-guide" aria-hidden="true"><img src={assetUrl("/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png")} alt="" /></div>
+          <div className="learning-path-card-grid">
+            {LEARNING_PATHS.map((path, index) => (
+              <a key={path.title} className="learning-path-card" href={path.posts[0].href} aria-label={`Read ${path.posts[0].label} to start the ${path.title} learning path`}>
+                <span className="learning-path-card-number" aria-hidden="true">0{index + 1}</span>
+                <h3>{path.title}</h3>
+                <p>{path.description}</p>
+                <span className="learning-path-card-arrow" aria-hidden="true">→</span>
+              </a>
+            ))}
+          </div>
         </div>
       </section>
 
