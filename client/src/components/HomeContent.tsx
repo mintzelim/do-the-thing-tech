@@ -263,12 +263,15 @@ export default function HomeContent() {
       </section>
 
       {/* CTA SECTION 2: After Blog Links */}
-      <section className="content-section cta-section">
-        <h2 className="section-heading" style={{ textAlign: 'center' }}>Try DoTheThing Now</h2>
-        <p className="section-content" style={{ fontSize: '20px', textAlign: 'center', marginBottom: '24px' }}>Free. No login. No email. Just type your task and get your breakdown in under a minute.</p>
-        <div style={{ textAlign: 'center' }}>
-          <a href="#widget" className="cta-button" style={{ display: 'inline-block', padding: '12px 32px', backgroundColor: 'var(--pixel-accent)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '18px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>↑ SCROLL UP TO START</a>
+      <section className="content-section cta-section final-cta-cheer" aria-labelledby="final-cta-heading">
+        <div className="final-cta-copy">
+          <h2 id="final-cta-heading" className="section-heading">Try DoTheThing Now</h2>
+          <p className="section-content">Free. No login. No email. Just type your task and get your breakdown in under a minute.</p>
+          <div className="final-cta-action-wrap">
+            <a href="#widget" className="cta-button final-cta-action">↑ SCROLL UP TO START</a>
+          </div>
         </div>
+        <div className="final-cta-mascot" aria-hidden="true"><span className="final-cta-bubble">You got this.</span><img src={assetUrl("/manus-storage/audience-howitworks-remote-workers_7ce7f448.png")} alt="" /></div>
       </section>
     </div>
   );

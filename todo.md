@@ -552,6 +552,8 @@
 - [x] Apply the selected Option 02 Empathy Switchboard composition to the live About-page creator section while preserving its existing copy, links, evidence, and accessibility
 - [x] Correct the misapplied creator Switchboard: restore the About-page creator composition and apply Option 02 only to the landing-page “Built by Someone Who Gets It” section
 - [x] Align the landing-page Empathy Switchboard with the established homepage eyebrow, Inter heading, text-grid, button, spacing, and responsive design-system rules
+- [x] Add a design-system-aligned lavender mascot and “You got this.” speech bubble to the final landing-page CTA while preserving CTA copy and scroll behavior
+- [x] Enforce the supplied canonical lavender mascot design in the final CTA and document identity-preservation rules for future mascot use
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

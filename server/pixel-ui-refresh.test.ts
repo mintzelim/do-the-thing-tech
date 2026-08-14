@@ -174,6 +174,39 @@ describe("hero-matched CTA and headlines", () => {
     expect(stylesheet).toContain("object-fit:contain");
     expect(stylesheet).toContain("transform:none");
   });
+
+  it("adds a small mascot encouragement to the final CTA without replacing its existing copy or scroll action", () => {
+    const homeContent = readFileSync(
+      resolve(process.cwd(), "client/src/components/HomeContent.tsx"),
+      "utf8",
+    );
+    const mascotStandard = readFileSync(
+      resolve(process.cwd(), "docs/mascot-identity-standard.md"),
+      "utf8",
+    );
+    const designSystem = readFileSync(
+      resolve(process.cwd(), "docs/dothething-landing-design-system.md"),
+      "utf8",
+    );
+    const visualReference = readFileSync(
+      resolve(process.cwd(), "docs/dothething-landing-design-system.html"),
+      "utf8",
+    );
+
+    expect(homeContent).toContain('className="content-section cta-section final-cta-cheer"');
+    expect(homeContent).toContain("Try DoTheThing Now");
+    expect(homeContent).toContain("Free. No login. No email. Just type your task and get your breakdown in under a minute.");
+    expect(homeContent).toContain('href="#widget" className="cta-button final-cta-action"');
+    expect(homeContent).toContain('className="final-cta-bubble">You got this.</span>');
+    expect(homeContent).toContain("audience-howitworks-remote-workers_7ce7f448.png");
+    expect(stylesheet).toContain(".final-cta-cheer");
+    expect(stylesheet).toContain(".final-cta-bubble");
+    expect(stylesheet).toContain("@media (max-width:760px){.final-cta-cheer");
+    expect(mascotStandard).toContain("canonical DoTheThing mascot");
+    expect(mascotStandard).toContain("Do not redraw, restyle, recolor, humanize");
+    expect(designSystem).toContain("### Canonical mascot identity");
+    expect(visualReference).toContain("Canonical mascot identity:");
+  });
 });
 
 describe("shared landing-section text alignment", () => {

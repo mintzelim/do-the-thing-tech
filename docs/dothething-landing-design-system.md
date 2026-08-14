@@ -15,6 +15,10 @@
 | **Quiet hierarchy** | Prefer ink-blue text, warm-white cards, modest indigo actions, and soft offset shadows over black borders or saturated backgrounds. |
 | **A smaller next step** | Headlines, controls, and images should lower cognitive load: clear choices, intentional spacing, and visible focus states. |
 
+### Canonical mascot identity
+
+The lavender creature is a **single, fixed character**, not a loose illustration style. Keep its compact rounded-rectangle silhouette, two navy square eyes, minimal friendly expression, lavender front plane, deep navy-purple side/shadow planes, dark navy pixel outline, and restrained upper-left highlight exactly consistent with the approved audience and editorial references. Reuse an approved asset whenever possible. Do not humanize, recolor, redraw, smooth, change the facial language, or alter the mascot’s proportions for a new situation. Props and speech bubbles may vary; the character must not.
+
 ## 2. Foundation Tokens
 
 ### Color
