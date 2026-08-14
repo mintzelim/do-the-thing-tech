@@ -154,6 +154,7 @@ describe("mascot-led audience grid", () => {
 
     expect((homeContent.match(/className="audience-card"/g) ?? []).length).toBe(5);
     expect((homeContent.match(/className="audience-card-mascot"/g) ?? []).length).toBe(5);
+    expect((homeContent.match(/className="audience-card-world"/g) ?? []).length).toBe(5);
     expect(homeContent).toContain("A Productivity Tool for Anyone Whose Brain Works Differently");
     expect(homeContent).toContain("Our AI task breakdown tool is for:");
     expect(homeContent).toContain("<h3>Students</h3>");
@@ -190,6 +191,9 @@ describe("mascot-led audience grid", () => {
     expect(stylesheet).toContain("max-width:1120px");
     expect(stylesheet).toContain(".audience-card:nth-child(4){grid-column:2/span 2}");
     expect(stylesheet).toContain(".audience-card:last-child{grid-column:1/-1");
+    expect(stylesheet).toContain(".audience-card{overflow:hidden}");
+    expect(stylesheet).toContain(".audience-card-world{position:relative;display:flex;align-items:flex-end");
+    expect(stylesheet).toContain(".audience-card-world .audience-card-mascot{position:relative;z-index:1;margin:0 auto!important}");
   });
 });
 

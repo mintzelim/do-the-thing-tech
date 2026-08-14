@@ -107,27 +107,27 @@ export default function HomeContent() {
         <p className="section-subtitle" style={{ textAlign: 'center' }}>Our AI task breakdown tool is for:</p>
         <div className="audience-grid">
           <article className="audience-card">
-            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-students_4055d5ad.png")} alt="" aria-hidden="true" />
+            <div className="audience-card-world" aria-hidden="true"><img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-students_4055d5ad.png")} alt="" /></div>
             <h3>Students</h3>
             <p>Bypassing academic overwhelm and the "blank page" syndrome.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-remote-workers_7ce7f448.png")} alt="" aria-hidden="true" />
+            <div className="audience-card-world" aria-hidden="true"><img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-remote-workers_7ce7f448.png")} alt="" /></div>
             <h3>Remote Workers & Freelancers</h3>
             <p>For when you're your own boss and your initiation system is jamming.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-employees_e7e52497.png")} alt="" aria-hidden="true" />
+            <div className="audience-card-world" aria-hidden="true"><img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-employees_e7e52497.png")} alt="" /></div>
             <h3>Employees & Corporate Teams</h3>
             <p>Stop losing hours to "prep work." Use DTT to generate accurate time estimates and concrete first steps.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-project-managers_4856400a.png")} alt="" aria-hidden="true" />
+            <div className="audience-card-world" aria-hidden="true"><img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-project-managers_4856400a.png")} alt="" /></div>
             <h3>Project Managers</h3>
             <p>Use it to convert a vague "milestone" into a numbered micro-step list for your team in seconds.</p>
           </article>
           <article className="audience-card">
-            <img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-parents_e566bb8e.png")} alt="" aria-hidden="true" />
+            <div className="audience-card-world" aria-hidden="true"><img className="audience-card-mascot" src={assetUrl("/manus-storage/audience-howitworks-parents_e566bb8e.png")} alt="" /></div>
             <h3>Parents</h3>
             <p>Managing the invisible mental load of household admin and family logistics.</p>
           </article>

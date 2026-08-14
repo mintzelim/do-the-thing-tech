@@ -98,6 +98,18 @@ describe("landing-page design-system documentation", () => {
     expect(html).toContain("@media(prefers-reduced-motion:reduce)");
   });
 
+  it("presents three selection-only Initiation Problem layout options using approved card patterns", () => {
+    expect(html).toContain('id="initiation-layout-options"');
+    expect(html).toContain("OPTION 01 · THE QUEST BOARD");
+    expect(html).toContain("OPTION 02 · THE SIGNAL STACK");
+    expect(html).toContain("OPTION 03 · THE FOCUS FAN CONTROL ROOM");
+    expect(html).toContain("Quest Ticket");
+    expect(html).toContain("Pixel Post-It");
+    expect(html).toContain("Context Strips");
+    expect(html).toContain('role="group" aria-label="Focus Fan Initiation Problem capability preview"');
+    expect(html).toContain("@media(prefers-reduced-motion:reduce)");
+  });
+
   it("does not fabricate aggregate ratings in structured data", () => {
     expect(enhancedSchema).not.toContain('"aggregateRating"');
     expect(enhancedSchema).not.toContain("ratingCount");

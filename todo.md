@@ -523,6 +523,9 @@
 - [x] Remove nested white/lavender card wrappers and inner borders from the landing-page visual treatment
 - [x] Validate that every affected section has one clean surface and one border only
 
+## Initiation Problem Layout Options
+- [x] Add three selection-only visual design-system layout options for the Built for the Initiation Problem section, incorporating approved card patterns without changing the live copy or section before user selection
+
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference
 - [x] Preserve the CTA copy, single-surface card, and #widget scroll behavior
@@ -579,6 +582,7 @@
 - [x] Add three creative, fun, responsive audience-card design options to the visual design-system HTML, keeping the approved mascot as the hero and leaving the live audience section unchanged until selection
 - [ ] Present and validate the audience-card options without requesting connected-browser authorization or an extension
 - [x] Add three further dynamic, creative, fun five-card audience-system options to the visual design-system HTML without changing the live audience section
+- [x] Apply the selected Option 02 Little Worlds mascot-scene treatment to the live five-card audience section without changing its copy, assets, links, or responsive behavior
 
 ## Remove Planning Section
 - [x] Remove the complete “The AI Does the Planning. You Do the Thing.” section from the landing page
