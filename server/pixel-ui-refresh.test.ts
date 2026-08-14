@@ -53,6 +53,23 @@ describe("homepage visual-edit safeguards", () => {
     expect(stylesheet).toContain(".reference-task-layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;align-items:start;gap:24px;margin:0 0 34px}");
     expect(stylesheet).toContain(".reference-pro-tip-panel");
   });
+
+  it("adds the selected Corner Burst as a decorative, design-system-aligned input cue without changing typing behavior", () => {
+    const home = readFileSync(resolve(process.cwd(), "client/src/pages/Home.tsx"), "utf8");
+
+    expect(home).toContain('className="reference-task-input-cue"');
+    expect(home).toContain('className="reference-input-corner-burst" aria-hidden="true">BRAIN DUMP HERE!');
+    expect(home).toContain('aria-label="Task or brain dump"');
+    expect(home).toContain('value={brainDump}');
+    expect(home).toContain('onChange={(e) => setBrainDump(e.target.value)}');
+    expect(stylesheet).toContain(".reference-task-input-cue{position:relative;margin-bottom:10px}");
+    expect(stylesheet).toContain("border:2px solid var(--pixel-border)");
+    expect(stylesheet).toContain("background:#ffd24a");
+    expect(stylesheet).toContain("box-shadow:2px 2px 0 var(--pixel-border)");
+    expect(stylesheet).toContain("transform:rotate(-6deg)");
+    expect(stylesheet).toContain("pointer-events:none");
+    expect(stylesheet).toContain("@media(max-width:560px){.reference-input-corner-burst");
+  });
 });
 
 

@@ -374,12 +374,16 @@ export default function Home() {
                 </div>
 
 
-              <textarea
-                className="mobile-textarea"
-                placeholder="Write project proposal, update documentation, respond to emails, plan team meeting..."
-                value={brainDump}
-                onChange={(e) => setBrainDump(e.target.value)}
-              />
+              <div className="reference-task-input-cue">
+                <span className="reference-input-corner-burst" aria-hidden="true">BRAIN DUMP HERE!</span>
+                <textarea
+                  className="mobile-textarea"
+                  aria-label="Task or brain dump"
+                  placeholder="Write project proposal, update documentation, respond to emails, plan team meeting..."
+                  value={brainDump}
+                  onChange={(e) => setBrainDump(e.target.value)}
+                />
+              </div>
 
               <div style={{ marginBottom: "20px" }}>
                 <p className="mobile-body-lg" style={{ marginBottom: "12px", fontWeight: 600 }}>

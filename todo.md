@@ -532,6 +532,11 @@
 - [x] Clarification superseded the original left-side Free, no login relocation: retain Free, no login as a normal sixth right-side Context Strip
 - [x] Restore Free, no login as the sixth right-side Signal Stack Context Strip and use a left-side Post-It for the approved “You can start and you can finish!” message
 - [x] Save checkpoint for the completed audience-card and Signal Stack refinement
+- [x] Add three selection-only visual design-system New sticker options that clarify the task widget accepts typed input without changing the live widget before user selection
+- [x] Apply the selected Option 01 Corner Burst as a design-system-aligned yellow input cue in the live task widget
+- [x] Document and validate the selected Corner Burst input cue across desktop and mobile widget states
+- [x] Replace the selected Corner Burst copy with BRAIN DUMP HERE! across the live widget, design-system references, and regression coverage
+- [x] Save checkpoint for the selected Corner Burst task-widget input cue
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference

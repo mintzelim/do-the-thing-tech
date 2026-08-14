@@ -5,6 +5,7 @@ import { describe, expect, it } from "vitest";
 const markdown = readFileSync(resolve(process.cwd(), "docs/dothething-landing-design-system.md"), "utf8");
 const html = readFileSync(resolve(process.cwd(), "docs/dothething-landing-design-system.html"), "utf8");
 const enhancedSchema = readFileSync(resolve(process.cwd(), "client/src/lib/enhancedSchema.ts"), "utf8");
+const homeContent = readFileSync(resolve(process.cwd(), "client/src/components/HomeContent.tsx"), "utf8");
 
 describe("landing-page design-system documentation", () => {
   it("documents the implemented hybrid pixel tokens and shared text grid", () => {
@@ -115,6 +116,30 @@ describe("landing-page design-system documentation", () => {
     expect(markdown).toContain("**Signal Stack** is the selected treatment");
     expect(markdown).toContain("360px minimum height");
     expect(markdown).toContain("You can start and you can finish!");
+  });
+
+  it("presents three selection-only New sticker input cues without changing the live task widget", () => {
+    expect(html).toContain('id="widget-new-sticker-options"');
+    expect(html).toContain("OPTION 01 · CORNER BURST");
+    expect(html).toContain("OPTION 02 · FIELD NUDGE");
+    expect(html).toContain("OPTION 03 · LABEL NUDGE");
+    expect(html).toContain("BRAIN DUMP HERE!");
+    expect(html).toContain("TYPE ANYTHING");
+    expect(html).toContain("START HERE");
+    expect(html).toContain("border:2px solid #26364a");
+    expect(html).toContain("box-shadow:2px 2px 0 #26364a");
+    expect(html).toContain("pointer-events:none");
+    expect(html).toContain("textarea readonly");
+    expect(homeContent).not.toContain("BRAIN DUMP HERE!");
+    expect(homeContent).not.toContain("TYPE ANYTHING");
+    expect(homeContent).not.toContain("new-sticker");
+  });
+
+  it("records Corner Burst as the selected live input cue", () => {
+    expect(html).toContain("Selected implementation:</strong> Option 01 · Corner Burst is now applied");
+    expect(markdown).toContain("The selected input cue is **Option 01 · Corner Burst**");
+    expect(markdown).toContain("BRAIN DUMP HERE!");
+    expect(markdown).toContain("2px ink-blue border");
   });
 
   it("does not fabricate aggregate ratings in structured data", () => {
