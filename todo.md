@@ -573,7 +573,7 @@
 - [x] Show the approved Pixel Post-It, Quiet Ledger table, and Guided Progress chart placements explicitly in the selection-only ADHD in Women Focus Ledger reference
 - [x] Add distinct featured-visual, mascot, and evidence-module previews for all three selection-only blog-post template options in the design-system HTML
 - [x] Create a separate Blog Exploration HTML file that adapts the supplied editorial article reference without modifying the live blog template or production pages
-- [ ] Audit every blog illustration and featured image against the approved canonical lavender rectangular mascot standard
+- [x] Audit every blog illustration and featured image against the approved canonical lavender rectangular mascot standard
 - [ ] Regenerate and replace each inconsistent blog mascot image while preserving article topics, copy, alt text, and metadata
 - [ ] Use only newly generated landing-mascot illustrations for the blog refresh; do not reuse or substitute existing blog mascot art
 - [ ] Validate the refreshed blog images in article and index layouts, add regression coverage, and publish the update
@@ -867,3 +867,8 @@
 - [x] Rebuild the standalone Focus Ledger Blog Exploration using the exact published ADHD in Women article content, changing presentation only
 - [x] Decide and document which existing article content belongs in reading flow, a Pixel Post-It, Quiet Ledger table, Guided Progress sequence, and supporting callouts
 - [x] Verify the standalone exploration preserves live copy and does not alter production routes or the live BlogPost template
+
+## Reusable Blog Exploration Elements
+- [x] Identify reusable editorial elements from the exact-content Focus Ledger exploration that improve content structure without creating card clutter
+- [x] Add selection-only reusable-element previews, usage rules, and responsive constraints to the visual and Markdown design-system references
+- [x] Validate the isolated design-system expansion and present the new elements for user selection before changing the live blog

@@ -187,6 +187,19 @@ Within this expanded Focus Ledger example, apply the approved article modules de
 
 Do not add a quantitative bar, line, or pie chart to this article: it has no internally sourced numerical dataset that needs visualization. The Guide Progress pattern is a structural sequence graphic, not a data chart.
 
+#### Reusable Blog Exploration elements
+
+The exact-content *ADHD in Women* exploration identifies four additional **selection-only** in-flow elements. They are not a new card system and should never be applied as a formula. Each exists to clarify one specific content job while preserving a calm, uninterrupted Inter reading rail.
+
+| Element | Content job | ADHD in Women placement | Use when | Do not use when |
+|---|---|---|---|---|
+| **Definition Beacon** | Grounds a key term in one concise, plain-language definition. | The existing definition immediately after TL;DR. | The article already has a concept readers must understand before the argument develops. | The content is a cited research claim, a personal reframe, or a glossary with several terms. |
+| **Evidence Checkpoint** | Keeps source context adjacent to the statement it supports. | The existing statement about internalized symptoms and the *British Journal of Psychiatry* study. | Existing language makes a research, guideline, or source-specific claim. | The paragraph is unsourced explanatory text, or the component would repeat beside every paragraph. |
+| **Pattern Loop** | Makes an existing repeated causal, behavioural, or emotional cycle readable at a glance. | The five existing masking-burnout steps: push hard, hide effort, exhaustion, crash, recover. | The article itself names a real sequence that returns to its starting condition. | The content is a treatment plan, a ranking, or interchangeable tips. |
+| **Scope Guardrail** | Turns existing common-mistake or medical-information boundaries into a calm notice–boundary–next orientation. | The three existing Common Mistakes items. | Readers need to distinguish observation, limits, and an appropriate next step. | A generic disclaimer would be inserted without article-specific guidance, or the content is legal material. |
+
+All four use **Inter** for reading text and **VT323** only for compact labels. They stay in normal document flow, use thin dividers or a single 3px accent rather than a new card surface, and stack to one readable column below 560px. They are intentionally distinct from the existing modules: retain **Quiet Ledger** for actual comparisons, **Pixel Post-It** for one human reframe, and **Guided Progress** only for a genuine action sequence. The gallery in the visual reference is selection-only and does not change the live BlogPost component or any article copy.
+
 ### Primary and secondary buttons
 
 | Variant | Background | Border | Text | Behavior |

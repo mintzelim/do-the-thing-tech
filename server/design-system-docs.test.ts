@@ -294,6 +294,26 @@ describe("landing-page design-system documentation", () => {
     expect(blogPostTemplate).not.toContain("PIXEL POST-IT · ONE PER ARTICLE");
   });
 
+  it("presents reusable in-flow Blog Exploration elements without wiring them into the live article template", () => {
+    expect(html).toContain('id="blog-reusable-elements"');
+    expect(html).toContain("EDITORIAL ELEMENT KIT");
+    expect(html).toContain("DEFINITION BEACON");
+    expect(html).toContain("EVIDENCE CHECKPOINT");
+    expect(html).toContain("PATTERN LOOP");
+    expect(html).toContain("SCOPE GUARDRAIL");
+    expect(html).toContain('role="group" aria-label="Pattern Loop example for the masking-burnout cycle"');
+    expect(html).toContain("ADHD in Women map:");
+    expect(markdown).toContain("Reusable Blog Exploration elements");
+    expect(markdown).toContain("Definition Beacon");
+    expect(markdown).toContain("Evidence Checkpoint");
+    expect(markdown).toContain("Pattern Loop");
+    expect(markdown).toContain("Scope Guardrail");
+    expect(markdown).toContain("selection-only");
+    for (const liveOnlyLabel of ["DEFINITION BEACON", "EVIDENCE CHECKPOINT", "PATTERN LOOP", "SCOPE GUARDRAIL"]) {
+      expect(blogPostTemplate).not.toContain(liveOnlyLabel);
+    }
+  });
+
   it("documents the reconciled landing-system foundation and hero proof-bubble pattern", () => {
     for (const document of [markdown, html]) {
       expect(document).toContain("1240px");
