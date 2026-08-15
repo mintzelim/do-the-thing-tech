@@ -314,6 +314,39 @@ describe("landing-page design-system documentation", () => {
     }
   });
 
+  it("presents complete option sets for every major long-form article content job without changing the live template", () => {
+    expect(html).toContain('id="full-blog-content-system"');
+    expect(html).toContain("FULL BLOG CONTENT SYSTEM");
+    for (const contentJob of [
+      "DIRECT ANSWER",
+      "TL;DR",
+      "DEFINITIONS &amp; GLOSSARY TERMS",
+      "STEP-BY-STEP GUIDANCE",
+      "BULLETS &amp; CHECKLISTS",
+      "TABLES &amp; COMPARISONS",
+      "CHARTS &amp; DATA VISUALS",
+      "EVIDENCE, CITATIONS &amp; QUOTES",
+      "HYPERLINKS &amp; CONTEXTUAL LINKS",
+      "FAQS",
+      "SOURCES &amp; REFERENCE LISTS",
+      "COMMON MISTAKES &amp; SAFETY BOUNDARIES",
+      "RELATED READING &amp; ARTICLE-TO-TOOL BRIDGES",
+    ]) {
+      expect(html).toContain(contentJob);
+    }
+    for (const option of ["SIGNAL LINE", "SCAN RAIL", "GUIDED PROGRESS", "QUIET LEDGER", "FOCUS BARS", "EVIDENCE CHECKPOINT", "INK LINK", "QUIET ACCORDION", "SOURCE LEDGER", "SCOPE GUARDRAIL", "TOOL BRIDGE"]) {
+      expect(html).toContain(option);
+    }
+    expect(html).toContain("article-sourced, clearly captioned numerical data");
+    expect(html).toContain("semantic table");
+    expect(markdown).toContain("Complete reusable blog content system");
+    expect(markdown).toContain("| **Direct Answer** | Signal Line | Answer Field | Ask / Answer |");
+    expect(markdown).toContain("| **Charts** | Focus Bars | Comparison Dots | Stage Track |");
+    expect(markdown).toContain("visible unit, source, caption, and time frame");
+    expect(blogPostTemplate).not.toContain("FULL BLOG CONTENT SYSTEM");
+    expect(blogPostTemplate).not.toContain("SIGNAL LINE");
+  });
+
   it("documents the reconciled landing-system foundation and hero proof-bubble pattern", () => {
     for (const document of [markdown, html]) {
       expect(document).toContain("1240px");

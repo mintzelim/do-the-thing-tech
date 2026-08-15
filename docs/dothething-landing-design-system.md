@@ -200,6 +200,30 @@ The exact-content *ADHD in Women* exploration identifies four additional **selec
 
 All four use **Inter** for reading text and **VT323** only for compact labels. They stay in normal document flow, use thin dividers or a single 3px accent rather than a new card surface, and stack to one readable column below 560px. They are intentionally distinct from the existing modules: retain **Quiet Ledger** for actual comparisons, **Pixel Post-It** for one human reframe, and **Guided Progress** only for a genuine action sequence. The gallery in the visual reference is selection-only and does not change the live BlogPost component or any article copy.
 
+#### Complete reusable blog content system
+
+The visual reference now includes a **selection-only Full Blog Content System**. It treats a post as an accessible reading sequence, not a dashboard or a catalogue of cards. Select **one** option for each content job that exists in the published article; do not add components merely for decoration. Preserve semantic headings, lists, tables, links, citations, and source markup in the live implementation.
+
+| Content job | Option 01 | Option 02 | Option 03 | Selection rule |
+|---|---|---|---|---|
+| **Direct Answer** | Signal Line | Answer Field | Ask / Answer | Use one concise, article-supported answer near the beginning. |
+| **TL;DR** | Scan Rail | Quick Ledger | Pocket Summary | Summarise existing conclusions only; do not make new claims. |
+| **Definitions** | Definition Beacon | Term Strip | Inline Term | Define only terms necessary to the reader’s understanding. |
+| **Section navigation** | Editorial Rule | Chapter Marker | Reading Map | Use only for articles with genuinely separate long-form sections. |
+| **Steps** | Guided Progress | Numbered Rail | Quest Tickets | Only when existing steps are ordered and the order matters. |
+| **Bullets** | Check Bullets | Field Notes | Signal Strips | Use for parallel tips, signs, or self-checks—not an ordered process. |
+| **Tables** | Quiet Ledger | Comparison Rows | Data Shelf | Use a real semantic table only for repeated variables and concise cells. |
+| **Charts** | Focus Bars | Comparison Dots | Stage Track | Use only with a defensible article-sourced dataset, visible unit, source, caption, and time frame. |
+| **Evidence** | Evidence Checkpoint | Inline Citation | Source Note | Place evidence near the source-specific claim; distinguish evidence from editorial or lived experience. |
+| **Hyperlinks** | Ink Link | Context Link | Reading Bridge | Use descriptive, relevant anchors; never keyword-stuff or interrupt a paragraph with unrelated links. |
+| **FAQ** | Quiet Accordion | Question Stack | FAQ Trail | Answer real article-specific questions; keep important safety information discoverable. |
+| **Sources** | Source Ledger | Reference Drawer | Source Rail | Keep the full reference list findable; a mobile drawer is a space-saving treatment, not a replacement. |
+| **Common mistakes & boundaries** | Scope Guardrail | Mistake Check | Boundary Note | Use specific limits and appropriate next steps, not generic disclaimers. |
+| **Takeaways & reflection** | Key Takeaways | Pixel Post-It | Lived Note | End with article-supported synthesis or clearly labelled perspective. |
+| **Related reading & tool bridge** | Related Trio | Tool Bridge | Next Route | Offer adjacent reading and one transparent product action without replacing the conclusion. |
+
+The universal responsive contract is that every component becomes a single, readable Inter column below 560px. Tables retain horizontal scrolling; charts never shrink text or conceal a legend; accordions maintain a visible keyboard focus state; links retain descriptive labels; and tool bridges remain optional and subordinate to the educational content. **Quiet Ledger**, **Pixel Post-It**, and **Guided Progress** retain their previously documented constraints.
+
 ### Primary and secondary buttons
 
 | Variant | Background | Border | Text | Behavior |
