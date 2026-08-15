@@ -7,6 +7,7 @@ const html = readFileSync(resolve(process.cwd(), "docs/dothething-landing-design
 const enhancedSchema = readFileSync(resolve(process.cwd(), "client/src/lib/enhancedSchema.ts"), "utf8");
 const homeContent = readFileSync(resolve(process.cwd(), "client/src/components/HomeContent.tsx"), "utf8");
 const aboutPage = readFileSync(resolve(process.cwd(), "client/src/pages/About.tsx"), "utf8");
+const blogPostTemplate = readFileSync(resolve(process.cwd(), "client/src/pages/BlogPost.tsx"), "utf8");
 
 describe("landing-page design-system documentation", () => {
   it("documents the implemented hybrid pixel tokens and shared text grid", () => {
@@ -239,6 +240,58 @@ describe("landing-page design-system documentation", () => {
     expect(homeContent).not.toContain("BALANCED BUDDY");
     expect(homeContent).not.toContain("ACTION PEDESTAL");
     expect(homeContent).not.toContain("FINISH-LINE GUIDE");
+  });
+
+  it("presents three selection-only blog-post template directions without changing the live article template", () => {
+    expect(html).toContain('id="blog-template-options"');
+    expect(html).toContain("OPTION 01 · THE FIELD GUIDE");
+    expect(html).toContain("OPTION 02 · FOCUS LEDGER");
+    expect(html).toContain("OPTION 03 · QUESTLINE READER");
+    expect(html).toContain('role="group" aria-label="Field Guide article template preview"');
+    expect(html).toContain('role="group" aria-label="Focus Ledger article template preview"');
+    expect(html).toContain('role="group" aria-label="Questline Reader article template preview"');
+    expect(html).toContain("prefers-reduced-motion");
+    expect(markdown).toContain("Blog-post template options");
+    expect(markdown).toContain("The Field Guide");
+    expect(markdown).toContain("Focus Ledger");
+    expect(markdown).toContain("Questline Reader");
+    expect(markdown).toContain("They do not change the live article template");
+    for (const visualClass of ["field-guide-visual", "focus-ledger-visual", "questline-visual"]) {
+      expect(html).toContain(visualClass);
+    }
+    expect(html).toContain("OPEN MAP · ONE CLEAR START");
+    expect(html).toContain("EVIDENCE FIELD · SIGNALS, NOT NOISE");
+    expect(html).toContain("ROUTE MAP · SMALL MOVES, VISIBLE PROGRESS");
+    expect(html).toContain("dothething-how-it-works-breakdown-transparent_3a48d1ce.png");
+    expect(markdown).toContain("Visual treatment comparison");
+    expect(markdown).toContain("A restrained evidence field with five slim signal markers");
+    expect(blogPostTemplate).not.toContain("field-guide-visual");
+    expect(blogPostTemplate).not.toContain("focus-ledger-visual");
+    expect(blogPostTemplate).not.toContain("questline-visual");
+  });
+
+  it("expands Focus Ledger with the real ADHD in Women evidence hierarchy while keeping the live post template unchanged", () => {
+    expect(html).toContain("FOCUS LEDGER · ADHD IN WOMEN EXPANDED EXAMPLE");
+    expect(html).toContain('aria-label="Expanded Focus Ledger ADHD in Women article template preview"');
+    expect(html).toContain("ADHD in Women: The Symptoms Nobody Told You About");
+    expect(html).toContain("2,458 words");
+    expect(html).toContain("8 listed sources");
+    expect(html).toContain("SOURCE LEDGER");
+    expect(html).toContain("Common Mistakes guidance and six FAQs");
+    expect(html).toContain("QUIET LEDGER · CYCLE-AWARE PLANNING");
+    expect(html).toContain("PIXEL POST-IT · ONE PER ARTICLE");
+    expect(html).toContain("Your pattern is information, not a personal failure.");
+    expect(html).toContain("GUIDED PROGRESS · PRACTICAL PATH");
+    expect(html).toContain("It visualizes the existing five support steps; it does not invent measurement data.");
+    expect(markdown).toContain("Focus Ledger expanded reference: ADHD in Women");
+    expect(markdown).toContain("eight-source count");
+    expect(markdown).toContain("selection-only");
+    expect(markdown).toContain("Pixel Post-It");
+    expect(markdown).toContain("Guided Progress chart");
+    expect(markdown).toContain("Do not add a quantitative bar, line, or pie chart");
+    expect(blogPostTemplate).not.toContain("FOCUS LEDGER");
+    expect(blogPostTemplate).not.toContain("ARTICLE LEDGER");
+    expect(blogPostTemplate).not.toContain("PIXEL POST-IT · ONE PER ARTICLE");
   });
 
   it("documents the reconciled landing-system foundation and hero proof-bubble pattern", () => {

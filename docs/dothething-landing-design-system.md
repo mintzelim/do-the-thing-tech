@@ -139,6 +139,54 @@ Breadcrumbs appear on article pages to show the reader’s location and to provi
 
 At mobile widths, preserve the Home and Blog links, truncate only the current label, and keep at least a 44px target for any standalone return control. The breadcrumb never becomes a page heading or a filter control.
 
+### Blog-post template options
+
+The visual reference includes three **selection-only** blog-post template directions. They do not change the live article template. Every option preserves the existing category-aware eyebrow, Inline Trail breadcrumb, title, excerpt, byline, dates, reading time, word count, featured image, article body, sources, CTA, related posts, semantic article structure, structured metadata, and mobile safeguards. A future selection changes hierarchy and layout only; it must not remove evidence, citations, medical-information boundaries, or navigation.
+
+| Option | Layout logic | Appropriate use | Responsive rule |
+|---|---|---|---|
+| **The Field Guide** | A generous hero introduces the article beside one contained mascot waypoint. A compact three-point “start here” scan follows before the calm reading rail. | Foundational explainers, ADHD basics, and high-intent guides where readers benefit from immediate orientation. | The mascot support stacks below the title; the start scan remains an in-flow list. |
+| **Focus Ledger** | A quiet editorial rail carries update, reading-time, source posture, and authorship signals next to one uninterrupted article column. | Research-backed explainers, comparisons, and articles that need visible evidence and provenance cues. | The rail becomes a short top summary with no persistent sidebar behavior. |
+| **Questline Reader** | Small numbered chapter waypoints accompany an action-oriented reading rail, indicating progress without turning the article into a gamified task list. | Routines, practical workflows, tool walkthroughs, and long how-to articles with a natural sequence. | The markers compress into a simple linear chapter order alongside the reading rail. |
+
+All three options use Inter for readable article text and reserve VT323 for the contextual eyebrow, compact metadata stamps, and chapter markers. The canonical lavender rectangular mascot may appear once as a supporting orientation cue; it must remain the approved identity and never cover article text. Use one clear article surface and thin dividers for long-form hierarchy instead of nesting bordered cards inside the article body. At narrow widths, every option becomes a single linear reading sequence and respects `prefers-reduced-motion`.
+
+#### Visual treatment comparison
+
+Each blog-template option carries a distinct visual language while reusing the approved canonical mascot asset. These are **editorial orientation visuals**, not replacement article illustrations and not a reason to introduce a different mascot design.
+
+| Option | Featured visual | Mascot role | Supporting visual modules |
+|---|---|---|---|
+| **The Field Guide** | A broad pale-indigo and lime terrain with one destination flag. | A calm map waypoint beside the opening orientation. | A compact three-point “start here” scan; source and table modules remain in the reading rail. |
+| **Focus Ledger** | A restrained evidence field with five slim signal markers on an editorial baseline. | A contained observer alongside source, context, practice, guide, and note signals. | Quiet Ledger tables, one Pixel Post-It after dense evidence, Guided Progress only for a genuine step sequence, and the Source Ledger at the end. |
+| **Questline Reader** | A warm route map with three numbered stops and one lime checkpoint. | A small route guide close to the current waypoint, never a large hero illustration. | Chapter markers, optional existing step lists, and links to related reading; no data chart unless the article contains real numerical data. |
+
+At mobile widths, each visual becomes a contained full-width band above the relevant reading rail. The mascot stays under 105px wide, labels remain in VT323, and the article copy always follows in Inter as one uninterrupted column.
+
+#### Focus Ledger expanded reference: ADHD in Women
+
+The visual reference expands **Focus Ledger** with the real hierarchy of *ADHD in Women: The Symptoms Nobody Told You About*. It shows how a **2,458-word**, **10-minute** article can make its category, update date, author, evidence count, medical-information boundary, guide map, article sections, source posture, and end-of-article source module visible without turning the reading experience into a dashboard.
+
+| Focus Ledger region | ADHD in Women content used | Design purpose |
+|---|---|---|
+| **Article Ledger** | Updated date, reading time, word count, eight-source count, educational scope, and guide map. | Establish trust and orientation before the reader enters the long-form narrative. |
+| **Single reading rail** | The existing definition, “Why ADHD Looks Different in Women,” symptom overview, hormonal context, masking-burnout cycle, practical steps, Common Mistakes, FAQs, and Key Takeaways. | Preserve the article’s substantive reading flow with dividers rather than nested content cards. |
+| **Evidence checkpoint** | A compact source-aware point beside the discussion of research on internalized symptoms. | Distinguish cited evidence from the article’s explanatory or lived-experience framing. |
+| **Quiet Ledger table** | A small rendering of the article’s existing cycle-phase planning table. | Keep structured information scannable inside the main reading flow. |
+| **Source Ledger** | The existing eight-source module and medical-information boundary. | Make provenance easy to locate without using a persistent sidebar on mobile. |
+
+On desktop, the evidence rail remains secondary to the article title and copy. At tablet and mobile widths, it moves above the article as a compact summary, after which the post continues as one linear reading sequence. The expanded example is **selection-only**: it does not change the live ADHD in Women article, its featured image, its content, its links, or its metadata.
+
+Within this expanded Focus Ledger example, apply the approved article modules deliberately:
+
+| Module | Exact placement in ADHD in Women | Rule |
+|---|---|---|
+| **Quiet Ledger table** | The existing cycle-phase planning table, within “The Hormonal Story” section. | Use for the factual comparison of phase, typical experience, and planning shape. Keep the selected pale-indigo header, `#c5cada` outline, Inter cells, and narrow-screen horizontal safety. |
+| **Pixel Post-It** | Once, immediately after the cycle-phase evidence and before “From ‘I Think This Is Me’ to Support.” | Use a short reader reframe—“Your pattern is information, not a personal failure.”—after dense evidence. Do not repeat it elsewhere in the article and do not use it for a clinical claim. |
+| **Guided Progress chart** | Immediately after the introduction to the article’s existing five practical support steps. | Use only because the article already contains a genuine five-step path. It visualizes the existing sequence without adding quantitative data or implying a prescribed clinical pathway. |
+
+Do not add a quantitative bar, line, or pie chart to this article: it has no internally sourced numerical dataset that needs visualization. The Guide Progress pattern is a structural sequence graphic, not a data chart.
+
 ### Primary and secondary buttons
 
 | Variant | Background | Border | Text | Behavior |

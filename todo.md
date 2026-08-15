@@ -566,6 +566,13 @@
 - [x] Reposition the mobile final CTA “You got this.” bubble so it does not cover the canonical mascot
 - [x] Audit and normalize inconsistent desktop and mobile vertical gaps between landing-page panels and sections without changing copy or features
 - [x] Increase the shared landing-page inter-section spacing by 20% across desktop and mobile while preserving internal panel spacing
+- [x] Create three selection-only blog-post template directions in the design-system HTML without changing the live article template
+- [x] Document the purpose, content hierarchy, responsive behavior, and use case of each blog-post template option
+- [x] Validate the blog-template option gallery and present it for user selection before applying a live template
+- [x] Expand the selection-only Focus Ledger preview with the ADHD in Women article’s real hierarchy, authorship, evidence, and source signals without changing the live post
+- [x] Show the approved Pixel Post-It, Quiet Ledger table, and Guided Progress chart placements explicitly in the selection-only ADHD in Women Focus Ledger reference
+- [x] Add distinct featured-visual, mascot, and evidence-module previews for all three selection-only blog-post template options in the design-system HTML
+- [x] Create a separate Blog Exploration HTML file that adapts the supplied editorial article reference without modifying the live blog template or production pages
 - [ ] Audit every blog illustration and featured image against the approved canonical lavender rectangular mascot standard
 - [ ] Regenerate and replace each inconsistent blog mascot image while preserving article topics, copy, alt text, and metadata
 - [ ] Use only newly generated landing-mascot illustrations for the blog refresh; do not reuse or substitute existing blog mascot art
