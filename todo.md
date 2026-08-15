@@ -862,3 +862,8 @@
 - [x] Restyle the article template while preserving article copy, citations, structured metadata, related posts, and navigation
 - [x] Add approved purple-mascot accents to the blog index and article template without adding human pixel art
 - [x] Validate responsive blog and article layouts, update regression coverage, and publish the public-page refresh
+
+## Exact-Content Blog Exploration Refinement
+- [x] Rebuild the standalone Focus Ledger Blog Exploration using the exact published ADHD in Women article content, changing presentation only
+- [x] Decide and document which existing article content belongs in reading flow, a Pixel Post-It, Quiet Ledger table, Guided Progress sequence, and supporting callouts
+- [x] Verify the standalone exploration preserves live copy and does not alter production routes or the live BlogPost template

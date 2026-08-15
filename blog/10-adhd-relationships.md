@@ -3,7 +3,7 @@ title: "ADHD and Relationships: Navigating Love with a Neurodivergent Brain"
 excerpt: "ADHD affects relationships in complex ways. Learn about the dynamics, challenges, and strategies for building strong partnerships."
 date: "2026-04-04"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/blog-adhd-relationships-featured_1991cecb.png"
+featuredImage: "/manus-storage/featured-10-adhd-relationships_77bce3fa.png"
 featuredImageAlt: "A purple pixel-art mascot sends a message across a small bridge."
 tags:
   - ADHD

@@ -3,7 +3,7 @@ title: "ADHD and Sleep: Breaking the Insomnia Cycle"
 excerpt: "Explore the complex relationship between ADHD and sleep, including delayed sleep phase syndrome, racing thoughts, and practical strategies for better rest."
 date: "2026-04-06"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png"
+featuredImage: "/manus-storage/featured-12-adhd-sleep_4d12eeae.png"
 featuredImageAlt: "Purple pixel mascot using a visible countdown timer"
 tags:
   - ADHD

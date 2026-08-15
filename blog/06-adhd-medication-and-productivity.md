@@ -3,7 +3,7 @@ title: "ADHD Medication and Productivity: What Science Says"
 excerpt: "An evidence-based look at how ADHD medication affects productivity, executive function, and daily task management."
 date: "2026-03-31"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png"
+featuredImage: "/manus-storage/featured-06-adhd-medication-and-productivity_501b12b4.png"
 featuredImageAlt: "Purple pixel mascot using a focus checklist"
 tags:
   - ADHD

@@ -3,7 +3,7 @@ title: "One Task Is Enough: Simple Self-Acceptance for the ADHD Brain"
 excerpt: "Why the pressure to do more makes ADHD harder, and how embracing one task at a time can transform your productivity and mental health."
 date: "2026-04-12"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/blog-one-task-enough-featured_5deaa5aa.png"
+featuredImage: "/manus-storage/featured-18-one-task-is-enough_4d752c08.png"
 featuredImageAlt: "A purple pixel-art mascot rests beside one completed task tile."
 tags:
   - ADHD

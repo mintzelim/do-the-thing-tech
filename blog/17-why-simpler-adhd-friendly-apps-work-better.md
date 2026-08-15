@@ -3,7 +3,7 @@ title: "Why Simpler ADHD-Friendly Apps Work Better"
 excerpt: "Complex apps overwhelm ADHD brains. Learn why simpler tools are more effective and how to choose ADHD-friendly software."
 date: "2026-04-11"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/blog-simpler-adhd-apps-featured_72ac7829.png"
+featuredImage: "/manus-storage/featured-17-simpler-adhd-friendly-apps_44b8056c.png"
 featuredImageAlt: "A purple pixel-art mascot chooses one simple task tile over a cluttered set."
 tags:
   - ADHD

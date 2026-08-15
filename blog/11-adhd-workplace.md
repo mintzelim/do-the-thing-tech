@@ -3,7 +3,7 @@ title: "ADHD in the Workplace: Thriving at Work with ADHD"
 excerpt: "Practical strategies for succeeding at work with ADHD, from navigating accommodations to leveraging your unique strengths."
 date: "2026-04-05"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png"
+featuredImage: "/manus-storage/featured-11-adhd-workplace_4a8794af.png"
 featuredImageAlt: "Purple pixel mascot beside a small generated task list"
 tags:
   - ADHD

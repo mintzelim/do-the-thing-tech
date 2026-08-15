@@ -3,7 +3,7 @@ title: "Time Blindness in ADHD: Why 5 Minutes Feels Like 5 Hours"
 excerpt: "Explore the neuroscience of time blindness in ADHD, why your brain perceives time differently, and practical strategies to manage temporal awareness without shame."
 date: "2026-03-27"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/blog-time-blindness-featured_3c63db49.png"
+featuredImage: "/manus-storage/featured-02-time-blindness-in-adhd_a3aa1d6e.png"
 featuredImageAlt: "Lavender pixel mascot using a large clock and visual time cues"
 tags:
   - ADHD

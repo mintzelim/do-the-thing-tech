@@ -3,7 +3,7 @@ title: "The Neuroscience of Task Avoidance in ADHD"
 excerpt: "Explore the brain mechanisms behind ADHD task avoidance, from dopamine deficiency to the default mode network, and how understanding the science can help you work with your brain."
 date: "2026-04-01"
 updatedDate: "2026-08-13"
-featuredImage: "/manus-storage/dothething-how-it-works-brain-dump-transparent_805dc4d4.png"
+featuredImage: "/manus-storage/featured-07-neuroscience-task-avoidance_a3fc3b80.png"
 featuredImageAlt: "Purple pixel mascot considering a brain dump of tasks"
 tags:
   - ADHD

@@ -2,7 +2,7 @@
 title: "How ADHD Affects Task Management: The Real Reason We Struggle"
 excerpt: "Explore the neural mechanisms behind ADHD-related task management challenges, from executive dysfunction to time blindness, and learn evidence-based strategies that actually work."
 date: "2026-03-26"
-featuredImage: "/manus-storage/blog-how-adhd-affects-task-management-featured_989e8ce8.png"
+featuredImage: "/manus-storage/featured-01-how-adhd-affects-task-management_f3223346.png"
 featuredImageAlt: "A purple pixel-art mascot arranges scattered task tiles into a clear path."
 tags:
   - ADHD
