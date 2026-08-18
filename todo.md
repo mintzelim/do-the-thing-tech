@@ -893,6 +893,7 @@
 - [x] Apply and validate only any warranted source-level route, redirect, sitemap, or crawlability repair for the reported URLs
 - [x] Diagnose the reported crawler failures for the published `/blog/adhd-vs-autism-vs-audhd` and `/blog/uncommon-adhd-symptoms` URLs
 - [x] Apply and validate only a warranted source-level crawler-access repair for those two published URLs (no repair was warranted after live HTTP, canonical, robots, and sitemap verification)
+- [x] Provide a verified external retry and escalation path for the persistent third-party CRAWL_ERROR report without adding speculative site changes
 
 ## Valid Homepage SoftwareApplication Metadata
 - [x] Add valid softwareVersion, softwareHelp, and mainEntityOfPage fields to the canonical SoftwareApplication schema
