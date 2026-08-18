@@ -891,12 +891,25 @@
 ## Reported Blog URL Availability
 - [x] Diagnose why `/blog/adhd-and-anxiety`, `/blog/adhd-burnout`, `/blog/adhd-and-emotional-dysregulation`, `/blog/adhd-medication-and-productivity`, `/blog/neuroscience-task-avoidance`, `/blog/adhd-relationships`, `/blog/adhd-workplace`, `/blog/adhd-sleep`, `/blog/adhd-financial-management`, `/blog/adhd-creativity`, `/blog/why-simpler-adhd-friendly-apps-work-better`, `/blog/free-tools-2026`, `/blog/neurodivergent-productivity-7-tactics`, and `/blog/how-to-break-down-tasks-adhd` fail crawler fetches against the published blog registry, sitemap, and crawl controls
 - [x] Apply and validate only any warranted source-level route, redirect, sitemap, or crawlability repair for the reported URLs
+- [ ] Diagnose the reported crawler failures for the published `/blog/adhd-vs-autism-vs-audhd` and `/blog/uncommon-adhd-symptoms` URLs
+- [ ] Apply and validate only a warranted source-level crawler-access repair for those two published URLs
 
 ## Valid Homepage SoftwareApplication Metadata
 - [x] Add valid softwareVersion, softwareHelp, and mainEntityOfPage fields to the canonical SoftwareApplication schema
 - [x] Preserve the public DoTheThing name and concise product description without adding a fabricated aggregateRating
 - [x] Add regression coverage and validate the homepage JSON-LD, production build, and published output
 - [x] Verify the live dothething.tech homepage contains the valid source-level fields and does not fabricate aggregateRating or embed scanner diagnostic metadata
+
+## Remaining GEO Scanner Verification
+- [ ] Audit the reported About-page aggregateRating, description-quality, entity-clarity, offering-description, and freshness flags against the current published HTML and source
+- [ ] Audit the reported description-quality flags for `/blog/adhd-sleep` and `/blog/free-tools-2026` against the current published HTML and shared blog schema source
+- [ ] Present an approval-ready, truthful remediation plan that retains the no-fabricated-ratings policy and protected post-hero copy
+
+## Standalone GEO FAQ Page
+- [x] Audit existing verified product FAQs, FAQPage schema, related navigation, and FAQ-route availability
+- [x] Prepare an approval-only standalone FAQ-page design and content map using only substantiated product, privacy, and support answers
+- [x] Reconcile the approval-only FAQ exploration exactly to the landing-page rail, panel, typography, eyebrow, spacing, button, and responsive system before requesting implementation approval
+- [ ] After approval, implement the `/faq` route, internal navigation, canonical FAQPage schema, test coverage, responsive validation, sitemap inclusion, and publish verification
 
 ## Approved NAP, Entity Clarity, and Freshness Signals
 - [x] Add the approved online-business NAP details through shared sources on the homepage, Contact page, and Organization structured data
@@ -909,3 +922,8 @@
 ## Attached Scanner Diagnostic Export
 - [x] Classify the attached JSON fields and confirm whether any represent valid Schema.org data rather than internal audit metadata
 - [x] Apply only a verified, source-level correction if the attachment identifies a factual, actionable gap
+
+## Visible GEO Content Cleanup and Footer Redesign
+- [ ] Audit visible GEO-related content in the homepage hero and shared footer, separating machine-readable schema from user-facing trust information
+- [ ] Add selection-only footer redesign directions that retain concise support access without visible NAP or freshness copy overload
+- [ ] Present an approval-only footer example and content-visibility rules before modifying the live website
