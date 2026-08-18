@@ -19,13 +19,13 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
 ];
 
 export const ADHD_TYPE_RESULTS: Record<QuizTypeKey, Omit<QuizResult, 'resultKey' | 'score'>> = {
-  classic: { type: 'Classic ADHD', character: 'The "Quest-Chaser" pattern', description: 'Your answers leaned toward a classic ADHD pattern in this quiz.' },
-  inattentive: { type: 'Inattentive ADHD', character: 'The "High Ping" pattern', description: 'Your answers leaned toward an inattentive ADHD pattern in this quiz.' },
-  overfocused: { type: 'Overfocused ADHD', character: 'The "Strong Grip" pattern', description: 'Your answers leaned toward an overfocused ADHD pattern in this quiz.' },
-  temporal: { type: 'Temporal Lobe ADHD', character: 'The "Time-Blind" pattern', description: 'Your answers leaned toward a temporal lobe ADHD pattern in this quiz.' },
-  limbic: { type: 'Limbic ADHD', character: 'The "Low-gear" pattern', description: 'Your answers leaned toward a limbic ADHD pattern in this quiz.' },
-  ringOfFire: { type: 'Ring of Fire ADHD', character: 'The "Many Tabs" pattern', description: 'Your answers leaned toward a Ring of Fire ADHD pattern in this quiz.' },
-  anxious: { type: 'Anxious ADHD', character: 'The "Careful Thought" pattern', description: 'Your answers leaned toward an anxious ADHD pattern in this quiz.' },
+  classic: { type: 'Classic ADHD', character: 'The "Quest-Chaser" pattern', description: 'This result points to an action-first pattern: your brain may spot a spark and go, “Let’s do it now!” Planning, pausing, or finishing can be the less exciting sequel.' },
+  inattentive: { type: 'Inattentive ADHD', character: 'The "High Ping" pattern', description: 'This result points to an internally busy pattern: your attention may drift before you mean it to, especially when a next step is boring, invisible, or far away.' },
+  overfocused: { type: 'Overfocused ADHD', character: 'The "Strong Grip" pattern', description: 'This result points to a strong-stickiness pattern: once your mind locks onto an idea, task, or worry, changing channels can feel surprisingly hard.' },
+  temporal: { type: 'Temporal Lobe ADHD', character: 'The "Time-Blind" pattern', description: 'This result points to a pattern where time, memory cues, and emotional reactions can feel extra loud. A small disruption may land bigger than you expected.' },
+  limbic: { type: 'Limbic ADHD', character: 'The "Low-gear" pattern', description: 'This result points to a low-gear pattern: task energy can rise and fall with mood, so an ordinary job may look like a mountain on a heavier day.' },
+  ringOfFire: { type: 'Ring of Fire ADHD', character: 'The "Many Tabs" pattern', description: 'This result points to a high-input pattern: your brain may feel like it is juggling sixteen tabs at once—ideas, noise, energy, and all.' },
+  anxious: { type: 'Anxious ADHD', character: 'The "Careful Thought" pattern', description: 'This result points to a care-first pattern: your brain can be an excellent risk scanner, but it may keep scanning long after the moment needs it to.' },
 };
 
 const INITIAL_SCORES: Record<QuizTypeKey, number> = { classic: 0, inattentive: 0, overfocused: 0, temporal: 0, limbic: 0, ringOfFire: 0, anxious: 0 };

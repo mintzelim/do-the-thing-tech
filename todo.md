@@ -992,3 +992,6 @@
 - [x] Research Dr. Amen’s seven-type framework and create an approval-only result-content system for each type: what can feel tricky, the strength or “superpower” to lean on, and one kind next step
 - [x] Apply the approved empowering three-part result system across all seven calculated outcomes and prove distinct answer paths produce distinct result types
 - [x] Explicitly attribute the Meet the Types seven-type framework to Dr. Amen/Amen Clinics while retaining the visible non-diagnostic boundary
+
+## Educational Quiz Result Explanations
+- [x] Improve the seven result descriptions so each gives a light-hearted, educational plain-language explanation of the pattern without implying clinical diagnosis
