@@ -925,5 +925,6 @@
 
 ## Visible GEO Content Cleanup and Footer Redesign
 - [ ] Audit visible GEO-related content in the homepage hero and shared footer, separating machine-readable schema from user-facing trust information
-- [ ] Add selection-only footer redesign directions that retain concise support access without visible NAP or freshness copy overload
+- [x] Add selection-only footer redesign directions that retain concise support access without visible NAP or freshness copy overload
 - [ ] Present an approval-only footer example and content-visibility rules before modifying the live website
+- [x] Add three approval-only footer explorations to the design-system HTML, each showing a distinct truthful address, ownership, support, freshness, and navigation treatment

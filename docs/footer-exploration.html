@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Footer Explorations — DoTheThing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet" />
+    <style>
+      :root { --pixel-bg:#f6f5f2; --panel:#fffefb; --ink:#1f293b; --muted:#566273; --accent:#5b5ce2; --accent-dark:#4a4bc4; --panel-border:#a8afc2; --item-border:#c5cada; --shadow:7px 8px 0 rgba(210,211,224,.7); --ui:Inter,ui-sans-serif,system-ui,sans-serif; --display:VT323,"Courier New",monospace; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--pixel-bg); color:var(--ink); font-family:var(--ui); font-size:16px; line-height:1.6; }
+      a { color:inherit; }
+      :focus-visible { outline:3px solid rgba(91,92,226,.35); outline-offset:3px; }
+      .shell { width:min(calc(100% - 32px),1240px); margin:0 auto; padding:42px 0 58px; }
+      .intro { max-width:760px; margin:0 auto 42px; text-align:center; }
+      .eyebrow, .footer-demo__eyebrow, .footer-demo__group h3, .footer-demo__ledger-label { margin:0; color:var(--accent-dark); font-family:var(--display); font-size:1.08rem; font-weight:400; letter-spacing:.085em; line-height:1; }
+      .eyebrow { display:flex; justify-content:center; align-items:center; gap:9px; margin-bottom:13px; }
+      .eyebrow span { color:#c7db3e; font-family:var(--ui); font-size:1.24rem; }
+      h1, h2, h3, p { margin-top:0; }
+      h1 { max-width:760px; margin:0 auto 16px; color:#1f293b; font-size:clamp(2.7rem,5vw,4.6rem); font-weight:800; letter-spacing:-.055em; line-height:.98; }
+      .intro > p:last-child { margin:0; color:var(--muted); font-size:clamp(1rem,1.45vw,1.12rem); line-height:1.55; }
+      .option { margin:0 0 46px; }
+      .option-head { display:flex; align-items:flex-end; justify-content:space-between; gap:20px; max-width:1000px; margin:0 auto 15px; }
+      .option-head h2 { margin:0; color:#1f293b; font-size:clamp(1.55rem,3vw,2.25rem); font-weight:800; letter-spacing:-.045em; line-height:1.04; }
+      .option-head p { max-width:410px; margin:0; color:var(--muted); font-size:.88rem; line-height:1.5; text-align:right; }
+
+      /* Shared live footer foundation: 1240px rail, single panel, 14px, #a8afc2, warm white, 7px×8px shadow. */
+      .footer-demo { overflow:hidden; border:1px solid var(--panel-border); border-radius:14px; background:var(--panel); box-shadow:var(--shadow); }
+      .footer-demo__directory { display:grid; gap:clamp(24px,4vw,56px); padding:clamp(24px,4vw,42px); }
+      .footer-demo__intro { min-width:0; }
+      .footer-demo__promise { max-width:300px; margin:12px 0 8px; color:#1f293b; font-size:clamp(1.35rem,2.1vw,1.8rem); font-weight:800; letter-spacing:-.04em; line-height:1.03; }
+      .footer-demo__description { max-width:320px; margin:0; color:var(--muted); font-size:.9rem; line-height:1.55; }
+      .footer-demo__entity { max-width:340px; margin:14px 0 0; color:var(--ink); font-size:.78rem; font-weight:700; line-height:1.45; }
+      .footer-demo__support { display:inline-block; margin-top:9px; color:var(--accent-dark); font-size:.82rem; font-weight:700; text-underline-offset:3px; }
+      .footer-demo__groups { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; }
+      .footer-demo__group { min-width:0; }
+      .footer-demo__group h3 { margin-bottom:12px; }
+      .footer-demo__group ul { display:grid; gap:8px; margin:0; padding:0; list-style:none; }
+      .footer-demo__group a { color:var(--ink); font-size:.84rem; font-weight:700; line-height:1.35; text-decoration:none; }
+      .footer-demo__group a:hover { color:var(--accent-dark); text-decoration:underline; }
+      .footer-demo__base { display:flex; align-items:center; justify-content:space-between; gap:16px; padding:15px clamp(24px,4vw,42px); border-top:1px solid #d9dce4; background:#f0f1fb; }
+      .footer-demo__base p { margin:0; color:var(--muted); font-size:.78rem; line-height:1.45; }
+      .footer-demo__social { display:flex; flex-wrap:wrap; gap:8px; }
+      .footer-demo__social a { display:inline-flex; align-items:center; min-height:32px; padding:5px 9px; border:1px solid var(--item-border); border-radius:7px; background:var(--panel); color:var(--accent-dark); font-size:.76rem; font-weight:700; text-decoration:none; }
+      .footer-demo__identity-row { display:flex; align-items:center; justify-content:space-between; gap:14px 24px; padding:16px clamp(24px,4vw,42px); border-top:1px solid #d9dce4; color:var(--muted); font-size:.78rem; line-height:1.5; }
+      .footer-demo__identity-row b { color:var(--ink); }
+      .footer-demo__review { flex:0 0 auto; color:var(--muted); font-size:.72rem; white-space:nowrap; }
+      .footer-demo__ledger { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:18px 30px; margin-top:18px; padding-top:18px; border-top:1px solid #d9dce4; }
+      .footer-demo__ledger-item { min-width:0; }
+      .footer-demo__ledger-label { display:block; margin-bottom:6px; }
+      .footer-demo__ledger-value { margin:0; color:var(--muted); font-size:.78rem; line-height:1.5; }
+      .footer-demo__ledger-value a { color:var(--accent-dark); font-weight:700; text-underline-offset:3px; }
+      .option-key { display:inline-flex; align-items:center; min-height:30px; padding:4px 8px; border:1px solid var(--item-border); border-radius:7px; background:var(--panel); color:var(--accent-dark); font-family:var(--display); font-size:1.08rem; letter-spacing:.06em; }
+
+      .minimal .footer-demo__directory { grid-template-columns:minmax(235px,.76fr) minmax(0,2.24fr); }
+      .compact .footer-demo__directory { grid-template-columns:minmax(235px,.84fr) minmax(0,2.16fr); }
+      .ledger .footer-demo__directory { grid-template-columns:minmax(280px,.95fr) minmax(0,2.05fr); }
+      @media (max-width:900px) { .footer-demo__directory,.minimal .footer-demo__directory,.compact .footer-demo__directory,.ledger .footer-demo__directory { grid-template-columns:1fr; gap:26px; } .footer-demo__description { max-width:560px; } .footer-demo__groups { grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:24px; } .footer-demo__identity-row { align-items:flex-start; flex-direction:column; } .option-head { align-items:flex-start; flex-direction:column; } .option-head p { text-align:left; } }
+      @media (max-width:560px) { .shell { width:min(calc(100% - 24px),1240px); padding-top:30px; } .footer-demo__directory { padding:26px 18px; } .footer-demo__groups { gap:24px 16px; } .footer-demo__base { align-items:flex-start; flex-direction:column; padding:15px 18px; } .footer-demo__social { width:100%; } .footer-demo__social a { justify-content:center; flex:1; } .footer-demo__identity-row { padding:16px 18px; } .footer-demo__review { white-space:normal; } .footer-demo__ledger { grid-template-columns:1fr; gap:15px; } .option { margin-bottom:38px; } }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <section class="intro">
+        <p class="eyebrow"><span aria-hidden="true">✦</span> SELECTION-ONLY FOOTER STUDIES</p>
+        <h1>Close the page with less noise.</h1>
+        <p>All three directions retain the same truthful business identity. The choice is about how much of the address, phone, ownership, freshness label, and support information a reader sees directly in the shared footer.</p>
+      </section>
+
+      <section class="option minimal" aria-labelledby="option-one-title">
+        <header class="option-head"><div><span class="option-key">OPTION 01 · MINIMAL TRUST STRIP</span><h2 id="option-one-title">Support first. Details where they belong.</h2></div><p>Lowest-density footer. The Contact page and structured data carry full street-address detail; the footer stays calm and useful.</p></header>
+        <footer class="footer-demo">
+          <div class="footer-demo__directory">
+            <div class="footer-demo__intro"><p class="footer-demo__eyebrow">DOTHETHING</p><p class="footer-demo__promise">Make the next thing doable.</p><p class="footer-demo__description">Task management for ADHD brains. One smaller next step, when you are ready.</p><p class="footer-demo__entity">DoTheThing is an online product by Boundless One Ventures.</p><a class="footer-demo__support" href="mailto:support@dothething.tech">support@dothething.tech</a></div>
+            <nav class="footer-demo__groups" aria-label="Option one footer navigation"><section class="footer-demo__group"><h3>PRODUCT</h3><ul><li><a href="#">Start a task</a></li><li><a href="#">How it works</a></li></ul></section><section class="footer-demo__group"><h3>LEARN</h3><ul><li><a href="#">Blog</a></li><li><a href="#">ADHD quiz</a></li></ul></section><section class="footer-demo__group"><h3>TRUST</h3><ul><li><a href="#">About</a></li><li><a href="#">Editorial standards</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></section><section class="footer-demo__group"><h3>EXPLORE</h3><ul><li><a href="#">Compare with Goblin.tools</a></li><li><a href="#">Media information</a></li><li><a href="#">Contact</a></li></ul></section></nav>
+          </div>
+          <div class="footer-demo__base"><p>© 2026 DoTheThing. Task management for ADHD brains. · Product information reviewed 18 August 2026.</p><div class="footer-demo__social"><a href="#">Instagram ↗</a><a href="#">TikTok ↗</a></div></div>
+        </footer>
+      </section>
+
+      <section class="option compact" aria-labelledby="option-two-title">
+        <header class="option-head"><div><span class="option-key">OPTION 02 · COMPACT IDENTITY ROW</span><h2 id="option-two-title">The whole identity, in one quiet line.</h2></div><p>Medium-density footer. The full legal and support identity moves beneath the directory instead of piling up in the left brand column.</p></header>
+        <footer class="footer-demo">
+          <div class="footer-demo__directory">
+            <div class="footer-demo__intro"><p class="footer-demo__eyebrow">DOTHETHING</p><p class="footer-demo__promise">Make the next thing doable.</p><p class="footer-demo__description">Task management for ADHD brains. One smaller next step, when you are ready.</p></div>
+            <nav class="footer-demo__groups" aria-label="Option two footer navigation"><section class="footer-demo__group"><h3>PRODUCT</h3><ul><li><a href="#">Start a task</a></li><li><a href="#">How it works</a></li></ul></section><section class="footer-demo__group"><h3>LEARN</h3><ul><li><a href="#">Blog</a></li><li><a href="#">ADHD quiz</a></li></ul></section><section class="footer-demo__group"><h3>TRUST</h3><ul><li><a href="#">About</a></li><li><a href="#">Editorial standards</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></section><section class="footer-demo__group"><h3>EXPLORE</h3><ul><li><a href="#">Compare with Goblin.tools</a></li><li><a href="#">Media information</a></li><li><a href="#">Contact</a></li></ul></section></nav>
+          </div>
+          <div class="footer-demo__identity-row"><p><b>ONLINE PRODUCT · BOUNDLESS ONE VENTURES</b> · 15B-8-4, Mont Kiara Pines, Jalan Kiara 1, Mont Kiara, 50480 Kuala Lumpur, Malaysia · <a href="tel:+60166467024">+60166467024</a> · <a href="mailto:support@dothething.tech">support@dothething.tech</a></p><span class="footer-demo__review">Reviewed 18 Aug 2026</span></div>
+          <div class="footer-demo__base"><p>© 2026 DoTheThing. Task management for ADHD brains.</p><div class="footer-demo__social"><a href="#">Instagram ↗</a><a href="#">TikTok ↗</a></div></div>
+        </footer>
+      </section>
+
+      <section class="option ledger" aria-labelledby="option-three-title">
+        <header class="option-head"><div><span class="option-key">OPTION 03 · ADDRESS LEDGER</span><h2 id="option-three-title">Every detail, but ordered.</h2></div><p>Highest-density footer. It retains every current public detail, reorganised as a readable business ledger rather than stacked paragraphs.</p></header>
+        <footer class="footer-demo">
+          <div class="footer-demo__directory">
+            <div class="footer-demo__intro"><p class="footer-demo__eyebrow">DOTHETHING</p><p class="footer-demo__promise">Make the next thing doable.</p><p class="footer-demo__description">Task management for ADHD brains. One smaller next step, when you are ready.</p><div class="footer-demo__ledger"><div class="footer-demo__ledger-item"><span class="footer-demo__ledger-label">BUSINESS</span><p class="footer-demo__ledger-value">DoTheThing is an online product by Boundless One Ventures.</p></div><div class="footer-demo__ledger-item"><span class="footer-demo__ledger-label">SUPPORT</span><p class="footer-demo__ledger-value"><a href="tel:+60166467024">+60166467024</a><br /><a href="mailto:support@dothething.tech">support@dothething.tech</a></p></div><div class="footer-demo__ledger-item"><span class="footer-demo__ledger-label">ADDRESS</span><p class="footer-demo__ledger-value">15B-8-4, Mont Kiara Pines, Jalan Kiara 1, Mont Kiara, 50480 Kuala Lumpur, Malaysia</p></div><div class="footer-demo__ledger-item"><span class="footer-demo__ledger-label">FRESHNESS</span><p class="footer-demo__ledger-value">Product information reviewed 18 August 2026.</p></div></div></div>
+            <nav class="footer-demo__groups" aria-label="Option three footer navigation"><section class="footer-demo__group"><h3>PRODUCT</h3><ul><li><a href="#">Start a task</a></li><li><a href="#">How it works</a></li></ul></section><section class="footer-demo__group"><h3>LEARN</h3><ul><li><a href="#">Blog</a></li><li><a href="#">ADHD quiz</a></li></ul></section><section class="footer-demo__group"><h3>TRUST</h3><ul><li><a href="#">About</a></li><li><a href="#">Editorial standards</a></li><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul></section><section class="footer-demo__group"><h3>EXPLORE</h3><ul><li><a href="#">Compare with Goblin.tools</a></li><li><a href="#">Media information</a></li><li><a href="#">Contact</a></li></ul></section></nav>
+          </div>
+          <div class="footer-demo__base"><p>© 2026 DoTheThing. Task management for ADHD brains.</p><div class="footer-demo__social"><a href="#">Instagram ↗</a><a href="#">TikTok ↗</a></div></div>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
