@@ -978,3 +978,6 @@
 ## Homepage Entity-Copy Visibility Review
 - [x] Audit whether the visible homepage entity-clarity sentence can be removed while preserving truthful metadata and structured-data coverage without hidden-text tactics
 - [x] Remove the approved visible homepage entity-clarity paragraph while retaining the existing factual server-rendered metadata and schema coverage
+
+## Quiz Design-System Reconciliation
+- [x] Audit the live quiz flow against the approved DoTheThing landing system and create three approval-only redesign directions before changing the public quiz
