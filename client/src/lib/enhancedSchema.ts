@@ -37,8 +37,8 @@ export const enhancedSchema = {
         {
           "@type": "Person",
           "name": "Lim Min Tze",
-          "jobTitle": "Founder",
-          "url": "https://dothething.tech/about"
+          "jobTitle": "Founder, Creative Director, Product Developer",
+          "url": "https://www.linkedin.com/in/mintze/"
         }
       ],
       "contactPoint": {

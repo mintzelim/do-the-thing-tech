@@ -1,7 +1,7 @@
 export const SITE_IDENTITY = {
   name: "DoTheThing",
   legalName: "Boundless One Ventures",
-  ownershipStatement: "DoTheThing is an online-only brand owned by Boundless One Ventures.",
+  ownershipStatement: "A Boundless One Ventures product.",
   businessDescription: "DoTheThing is a free web-based task breakdown tool that helps people with ADHD and executive-function friction turn overwhelming tasks into small, actionable steps.",
   entityClarity: "An online task-breakdown tool for people with ADHD and executive-function friction, with focus-aware steps, realistic time estimates, and a visible task timer. No account is required to start.",
   supportEmail: "support@dothething.tech",

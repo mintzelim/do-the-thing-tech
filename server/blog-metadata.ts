@@ -101,8 +101,9 @@ function generateBlogPostSchema(post: BlogPost, baseUrl: string): string {
       {
         "@type": "Person",
         name: "Lim Min Tze",
-        url: "https://github.com/mintzelim",
-        description: "Founder of Boundless One Ventures. Product developer with personal ADHD experience. 10+ years in tech.",
+        url: "https://www.linkedin.com/in/mintze/",
+        jobTitle: "Founder, Creative Director, Product Developer",
+        description: "Founder, Creative Director, and Product Developer of DoTheThing, with personal ADHD experience.",
         knowsAbout: ["ADHD", "Executive Dysfunction", "Time Blindness", "Neurodivergent Productivity"],
       },
     ],

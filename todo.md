@@ -537,6 +537,7 @@
 - [x] Document and validate the selected Corner Burst input cue across desktop and mobile widget states
 - [x] Replace the selected Corner Burst copy with BRAIN DUMP HERE! across the live widget, design-system references, and regression coverage
 - [x] Save checkpoint for the selected Corner Burst task-widget input cue
+- [x] Create an approval-only task-input interaction exploration with a blinking type cursor, rotating relatable brain-dump examples, reduced-motion behavior, and preserved text-entry access
 - [x] Add three selection-only mascot-led interactive layout options for the Start Here learning-path section in the visual design-system HTML without changing the live section before user selection
 - [x] Apply the selected Option 01 Mascot Wayfinder to the live Start Here learning-path section
 - [x] Clarification superseded dedicated learning-path destinations: use one direct starter-article link per card instead
@@ -863,6 +864,10 @@
 - [x] Add approved purple-mascot accents to the blog index and article template without adding human pixel art
 - [x] Validate responsive blog and article layouts, update regression coverage, and publish the public-page refresh
 
+## Live Blog-Card Featured Image Correction
+- [x] Diagnose why live blog-index cards for canonical-refreshed articles still show legacy human-style featured images — confirmed stale browser cache; live canonical asset URLs already serve the approved mascot art
+- [x] Repair the proven blog-card featured-image data source, add regression coverage, and verify live canonical-mascot card images — no repair was needed because the live data source already resolves to canonical mascot assets
+
 ## Exact-Content Blog Exploration Refinement
 - [x] Rebuild the standalone Focus Ledger Blog Exploration using the exact published ADHD in Women article content, changing presentation only
 - [x] Decide and document which existing article content belongs in reading flow, a Pixel Post-It, Quiet Ledger table, Guided Progress sequence, and supporting callouts
@@ -896,6 +901,10 @@
 - [x] Validate emitted Blog, blog article, About, Contact, Editorial Standards, How It Works, Media, Privacy, Quiz, and Terms JSON-LD, production/SSR build, and publish the schema correction
 - [x] Re-check the published About JSON-LD after deployment to confirm the scanner can see the specific application fields
 - [x] Verify every blog article emits valid SoftwareApplication, public name, and concise description fields without embedding scanner diagnostic metadata
+
+## Founder Profile Update
+- [x] Update Lim Min Tze’s public LinkedIn profile to `https://www.linkedin.com/in/mintze/` and approved role line, “Founder, Creative Director, Product Developer,” across visible About content and related structured data
+- [x] Add regression coverage and validate the rendered public founder information before publishing
 
 ## Reported Blog URL Availability
 - [x] Diagnose why `/blog/adhd-and-anxiety`, `/blog/adhd-burnout`, `/blog/adhd-and-emotional-dysregulation`, `/blog/adhd-medication-and-productivity`, `/blog/neuroscience-task-avoidance`, `/blog/adhd-relationships`, `/blog/adhd-workplace`, `/blog/adhd-sleep`, `/blog/adhd-financial-management`, `/blog/adhd-creativity`, `/blog/why-simpler-adhd-friendly-apps-work-better`, `/blog/free-tools-2026`, `/blog/neurodivergent-productivity-7-tactics`, and `/blog/how-to-break-down-tasks-adhd` fail crawler fetches against the published blog registry, sitemap, and crawl controls
@@ -944,3 +953,4 @@
 - [x] Present an approval-only footer example and content-visibility rules before modifying the live website
 - [x] Add three approval-only footer explorations to the design-system HTML, each showing a distinct truthful address, ownership, support, freshness, and navigation treatment
 - [x] Apply the approved Option 01 Minimal Trust Strip to the shared footer while retaining the review label, support email, ownership statement, Contact-page NAP, and Organization structured-data NAP
+- [x] Replace the awkward visible “online-only” ownership phrase with the approved concise shared-footer statement, “A Boundless One Ventures product.”, while retaining truthful ownership context elsewhere

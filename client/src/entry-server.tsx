@@ -38,7 +38,7 @@ const organization = {
   email: SITE_IDENTITY.supportEmail,
   telephone: SITE_IDENTITY.telephone,
   address: { "@type": "PostalAddress", ...SITE_IDENTITY.address },
-  founder: { "@type": "Person", name: "Lim Min Tze", jobTitle: "Founder", url: `${ORIGIN}/about` },
+  founder: { "@type": "Person", name: "Lim Min Tze", jobTitle: "Founder, Creative Director, Product Developer", url: "https://www.linkedin.com/in/mintze/" },
   contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: SITE_IDENTITY.supportEmail, telephone: SITE_IDENTITY.telephone, url: `${ORIGIN}/contact` },
   sameAs: ["https://www.instagram.com/dothething.tech", "https://www.tiktok.com/@dothething.tech"],
 };

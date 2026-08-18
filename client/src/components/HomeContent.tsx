@@ -193,7 +193,7 @@ export default function HomeContent() {
           </div>
           <div className="section-content">
           <p>
-            DoTheThing was built by Lim Min Tze, a product developer with personal experience managing ADHD. After years of struggling with task paralysis and time blindness, I realized existing productivity tools were designed for neurotypical brains.
+            DoTheThing was built by Lim Min Tze, Founder, Creative Director, Product Developer, with personal experience managing ADHD. After years of struggling with task paralysis and time blindness, I realized existing productivity tools were designed for neurotypical brains.
           </p>
           <p>
             The site separates lived experience from research: articles cite their sources, while the tool focuses on one practical question—what is the smallest next step you can take right now?

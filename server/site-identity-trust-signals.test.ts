@@ -17,6 +17,8 @@ describe("approved NAP, entity clarity, and freshness signals", () => {
   });
 
   it("keeps detailed NAP on the Contact page while the shared Option 01 footer stays compact", () => {
+    expect(identity).toContain('ownershipStatement: "A Boundless One Ventures product."');
+    expect(identity).not.toContain("online-only brand owned");
     expect(home).toContain("SITE_IDENTITY.entityClarity");
     expect(footer).toContain("SITE_IDENTITY.ownershipStatement");
     expect(footer).toContain("SITE_IDENTITY.supportEmail");

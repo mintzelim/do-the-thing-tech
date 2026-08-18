@@ -94,7 +94,7 @@ export default function BlogPost() {
               <h1>{post.title}</h1>
               <p className="blog-article-excerpt">{post.excerpt}</p>
               <div className="blog-article-meta"><span>Published {post.date}</span>{post.updatedDate && <><span aria-hidden="true">•</span><span>Updated {post.updatedDate}</span></>}<span aria-hidden="true">•</span><span>{post.readTime}</span>{post.wordCount && <><span aria-hidden="true">•</span><span>{post.wordCount.toLocaleString()} words</span></>}</div>
-              <p className="blog-article-byline">Written by <a href="/about#author">Lim Min Tze</a>, founder and product developer of DoTheThing. <a href="/editorial-standards">Editorial standards</a></p>
+              <p className="blog-article-byline">Written by <a href="/about#author">Lim Min Tze</a>, Founder, Creative Director, Product Developer at DoTheThing. <a href="/editorial-standards">Editorial standards</a></p>
             </div>
             <div className="blog-article-mascot" aria-hidden="true"><img src={articleMascot} alt="" /></div>
           </header>

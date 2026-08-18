@@ -23,3 +23,15 @@ The live meta description and JSON-LD description for `ADHD and Sleep` match the
 ## About entity clarity — approved hero clarification
 
 Following approval, the About page now opens with one factual statement that directly identifies DoTheThing as a free online task-breakdown tool, names people with ADHD and executive-function friction as the audience, and describes its differentiating workflow: brain dumps become smaller steps, focus-aware estimates, and an editable plan. Desktop and 390px mobile rendering both preserve the existing layout and leave every post-hero section unchanged. No aggregate rating, review, medical claim, or scanner diagnostic markup was added.
+
+## Live Blog-Card Featured Image Audit — 18 August 2026
+
+The published `/blog` document emits project-storage featured image URLs for the screenshot examples: `featured-31-adhd-in-women_3300c74d.png` and `featured-30-rsd_611f3afe.png`. Lower cards for articles 26–28 visibly render the canonical lavender mascot. The reported top-card screenshot is therefore not caused by a stale legacy CloudFront URL in blog-index data; the next diagnostic step is to verify the content served by the selected project-storage image objects and reconcile any legacy asset retained under a canonical-looking filename.
+
+Direct asset inspection confirms that the currently served `featured-31-adhd-in-women_3300c74d.png` object is a canonical lavender rounded-rectangle mascot illustration beside a seasonal cycle wheel, calendar, and task pad; it contains no human figure. The user’s screenshot therefore reflects a previously cached or previously deployed blog-card image rather than the current image object served through the published index URL.
+
+Direct inspection of `featured-30-rsd_611f3afe.png` likewise shows the canonical lavender rounded-rectangle mascot with the approved square navy eyes, dark outline, and restrained lavender shading; it contains no human figure. Both screenshot examples therefore point to stale browser or prior-deployment image state, not a currently served legacy featured object.
+
+## Footer ownership wording — development verification
+
+The shared Minimal Trust Strip now renders the approved concise identity line, “A Boundless One Ventures product.” The support email and factual product-review label remain present, while visible address and phone details remain intentionally available on Contact and through the Organization schema rather than crowding the footer.

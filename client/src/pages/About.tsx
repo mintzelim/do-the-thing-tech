@@ -66,9 +66,9 @@ export default function About() {
           <div className="about-section-copy">
             <p className="about-panel-label">BEHIND THE TOOL</p>
             <h2 id="creator-heading">MEET THE CREATOR</h2>
-            <p className="about-lead"><strong>Lim Min Tze — founder, product developer, and the person behind DoTheThing.</strong></p>
+            <p className="about-lead"><strong>Lim Min Tze — Founder, Creative Director, Product Developer, and the person behind DoTheThing.</strong></p>
             <p>This site combines lived experience with clearly sourced educational material. It is a practical productivity resource, not a substitute for diagnosis or medical care.</p>
-            <p>DoTheThing was built by <strong>Lim Min Tze</strong>, a product developer with personal experience managing ADHD. After years of struggling with task paralysis, time blindness, and executive dysfunction, I realized that existing productivity tools were designed for neurotypical brains—not ADHD brains.</p>
+            <p>DoTheThing was built by <strong>Lim Min Tze</strong>, Founder, Creative Director, and Product Developer, with personal experience managing ADHD. After years of struggling with task paralysis, time blindness, and executive dysfunction, I realized that existing productivity tools were designed for neurotypical brains—not ADHD brains.</p>
             <p>I spent months researching ADHD neuroscience, interviewing others with ADHD, and testing different approaches to task breakdown and time estimation. The result is DoTheThing: a tool built specifically for how ADHD brains actually work.</p>
             <p><strong>About Lim Min Tze:</strong></p>
             <ul className="about-check-list">
@@ -82,7 +82,7 @@ export default function About() {
             <p className="about-postit-note">This tool exists because I needed it. And if you're reading this, you probably need it too.</p>
             <nav className="about-profile-links" aria-label="Creator professional profiles">
               <span>Professional Profiles:</span>
-              <a href="https://www.linkedin.com/in/min-tze-lim" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/mintze/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
               <a href="https://github.com/mintzelim" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href="mailto:support@dothething.tech">Email</a>
               <a href="/editorial-standards">Editorial standards</a>
