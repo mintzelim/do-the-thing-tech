@@ -868,6 +868,11 @@
 - [x] Decide and document which existing article content belongs in reading flow, a Pixel Post-It, Quiet Ledger table, Guided Progress sequence, and supporting callouts
 - [x] Verify the standalone exploration preserves live copy and does not alter production routes or the live BlogPost template
 
+## Embedded Blog-Body Image Refresh
+- [x] Audit published article-body image references, source markdown, and renderer output to identify remaining legacy visuals
+- [x] Prepare an approval-only plan for replacing any confirmed legacy in-body illustrations with newly generated canonical-mascot visuals
+- [ ] After approval, update only confirmed legacy image references, add regression coverage, and verify live article-body image delivery
+
 ## Reusable Blog Exploration Elements
 - [x] Identify reusable editorial elements from the exact-content Focus Ledger exploration that improve content structure without creating card clutter
 - [x] Add selection-only reusable-element previews, usage rules, and responsive constraints to the visual and Markdown design-system references
