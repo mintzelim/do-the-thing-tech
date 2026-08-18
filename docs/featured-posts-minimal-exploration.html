@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DoTheThing · Featured Posts Minimal Exploration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#f6f5f2;--panel:#fffefb;--ink:#26364a;--muted:#667080;--accent:#5b5ce2;--accent-dark:#4a4bc4;--line:#a8afc2;--item:#c5cada;--lavender:#eef0ff;--rail:1240px;--radius:14px;--item-radius:10px;--shadow:7px 8px 0 rgba(210,211,224,.7);--small-shadow:3px 4px 0 rgba(210,211,224,.65)}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.5}.wrap{width:min(calc(100% - 32px),var(--rail));margin:0 auto;padding:44px 0 72px}.exploration-note{margin:0 0 24px;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:#fff8bf;color:var(--ink);font-size:.88rem;font-weight:600;box-shadow:var(--small-shadow)}.eyebrow{margin:0 0 8px;color:var(--accent-dark);font-family:VT323,monospace;font-size:1.15rem;letter-spacing:.1em}.page-title{max-width:800px;margin:0;font-size:clamp(2.25rem,5vw,4.3rem);font-weight:800;letter-spacing:-.06em;line-height:.96}.page-intro{max-width:740px;margin:18px 0 42px;color:var(--muted);font-size:1.05rem;line-height:1.6}.context{margin:0 0 36px;padding:20px 22px;border:1px dashed #b7bdd0;border-radius:var(--radius);background:rgba(255,254,251,.7)}.context p{margin:0;color:var(--muted);font-size:.9rem}.context strong{color:var(--ink)}.option{margin:48px 0 0}.option-head{display:grid;grid-template-columns:88px minmax(0,1fr);gap:18px;align-items:start;margin:0 0 18px}.option-number{display:inline-flex;align-items:center;justify-content:center;width:72px;height:40px;border:1px solid var(--accent-dark);border-radius:8px;background:var(--lavender);color:var(--accent-dark);font-family:VT323,monospace;font-size:1.15rem;letter-spacing:.06em}.option h2{margin:0;font-size:clamp(1.5rem,3vw,2rem);font-weight:800;letter-spacing:-.045em}.option-head p{max-width:700px;margin:7px 0 0;color:var(--muted);font-size:.95rem}.sample{padding:clamp(24px,4vw,46px);border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);box-shadow:var(--shadow)}.sample-kicker{margin:0;color:var(--accent-dark);font-family:VT323,monospace;font-size:1rem;letter-spacing:.1em}.sample-title{margin:8px 0 6px;font-size:clamp(1.85rem,4vw,3.1rem);font-weight:800;letter-spacing:-.06em;line-height:1}.sample-deck{max-width:620px;margin:0;color:var(--muted);font-size:.96rem}.sample-link{display:inline-flex;align-items:center;gap:8px;color:var(--accent-dark);font-size:.86rem;font-weight:700;text-decoration:none}.sample-link:hover{text-decoration:underline}.quiet-list{margin:26px 0 20px;border-top:1px solid var(--item)}.quiet-row{display:grid;grid-template-columns:38px minmax(0,1fr) auto;gap:14px;align-items:center;padding:16px 0;border-bottom:1px solid var(--item);color:inherit;text-decoration:none}.quiet-row:hover .quiet-title{color:var(--accent-dark)}.post-index{color:var(--accent-dark);font-family:VT323,monospace;font-size:1.15rem}.quiet-title{font-size:1rem;font-weight:800;letter-spacing:-.025em}.quiet-note{display:block;margin-top:3px;color:var(--muted);font-size:.85rem;line-height:1.45}.arrow{color:var(--accent);font-size:1.15rem}.editorial-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:26px 0 20px;border-top:1px solid var(--item);border-left:1px solid var(--item)}.editorial-link{min-height:144px;padding:20px;border-right:1px solid var(--item);border-bottom:1px solid var(--item);color:inherit;text-decoration:none}.editorial-link:first-child{grid-column:span 2;min-height:110px;background:#f8f8ff}.editorial-link:hover{background:#f8f8ff}.editorial-tag{display:block;margin-bottom:10px;color:var(--accent-dark);font-family:VT323,monospace;font-size:.98rem;letter-spacing:.09em}.editorial-title{font-size:1rem;font-weight:800;letter-spacing:-.025em;line-height:1.25}.editorial-note{margin:7px 0 0;color:var(--muted);font-size:.85rem;line-height:1.45}.stack{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(250px,.9fr);gap:0;margin:26px 0 20px;border:1px solid var(--item);border-radius:var(--item-radius);overflow:hidden}.stack-lead{display:flex;flex-direction:column;justify-content:space-between;min-height:290px;padding:26px;border-right:1px solid var(--item);background:#f8f8ff;color:inherit;text-decoration:none}.stack-lead .editorial-title{font-size:clamp(1.35rem,2.5vw,1.8rem)}.stack-list{display:grid}.stack-item{display:grid;grid-template-columns:28px minmax(0,1fr);gap:10px;align-items:start;padding:16px;border-bottom:1px solid var(--item);color:inherit;text-decoration:none}.stack-item:last-child{border-bottom:0}.stack-item:hover{background:#f8f8ff}.stack-item .editorial-title{font-size:.92rem}.use{margin:18px 0 0;padding-left:14px;border-left:3px solid #c7db3e;color:var(--muted);font-size:.88rem}.use strong{color:var(--ink)}.footer-note{margin:54px 0 0;color:var(--muted);font-size:.86rem;text-align:center}@media(max-width:720px){.wrap{width:min(calc(100% - 24px),var(--rail));padding-top:26px}.option-head{grid-template-columns:1fr;gap:10px}.editorial-grid{grid-template-columns:1fr}.editorial-link:first-child{grid-column:auto}.stack{grid-template-columns:1fr}.stack-lead{min-height:200px;border-right:0;border-bottom:1px solid var(--item)}.quiet-row{grid-template-columns:28px minmax(0,1fr) auto}.sample{padding:24px 18px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="exploration-note">APPROVAL ONLY · This page explores a quieter Featured Posts treatment. It does not change the live homepage.</p>
+    <p class="eyebrow">HOMEPAGE · READING CONTINUATION</p>
+    <h1 class="page-title">Featured Posts, after the paths.</h1>
+    <p class="page-intro">Learning Paths should remain the primary “where do I start?” moment. These options turn Featured Posts into a calmer optional continuation for readers who want to browse a little further.</p>
+    <aside class="context"><p><strong>Shared rules in every option:</strong> no illustrations, no competing CTA card, one warm-white surface, Inter-led reading hierarchy, VT323 only for small labels, and a simple “View all posts” exit.</p></aside>
+
+    <section class="option" aria-labelledby="option-one">
+      <div class="option-head"><span class="option-number">01</span><div><h2 id="option-one">Quiet List</h2><p>A compact five-row reading index. The least visually loud option: titles do the work, summaries are optional, and the whole section reads like a helpful shelf.</p></div></div>
+      <div class="sample">
+        <p class="sample-kicker">KEEP READING</p><h3 class="sample-title">A few more useful reads.</h3><p class="sample-deck">Not sure where to go next? Pick the question that feels loudest today.</p>
+        <div class="quiet-list">
+          <a class="quiet-row" href="#"><span class="post-index">01</span><span><span class="quiet-title">ADHD in Women: The Symptoms Nobody Told You About</span><span class="quiet-note">Why it can look internal, not hyperactive.</span></span><span class="arrow">→</span></a>
+          <a class="quiet-row" href="#"><span class="post-index">02</span><span><span class="quiet-title">ADHD Burnout: Why It’s Different</span><span class="quiet-note">A kinder way to understand the crash.</span></span><span class="arrow">→</span></a>
+          <a class="quiet-row" href="#"><span class="post-index">03</span><span><span class="quiet-title">How ADHD Affects Task Management</span><span class="quiet-note">The friction underneath ordinary to-do lists.</span></span><span class="arrow">→</span></a>
+          <a class="quiet-row" href="#"><span class="post-index">04</span><span><span class="quiet-title">Time Blindness in ADHD</span><span class="quiet-note">Why five minutes can feel like five hours.</span></span><span class="arrow">→</span></a>
+          <a class="quiet-row" href="#"><span class="post-index">05</span><span><span class="quiet-title">ADHD and Perfectionism</span><span class="quiet-note">When caring deeply makes finishing harder.</span></span><span class="arrow">→</span></a>
+        </div>
+        <a class="sample-link" href="#">VIEW ALL POSTS <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="use"><strong>Use when:</strong> the goal is maximum calm and scanability. Recommended if Learning Paths should clearly remain the homepage’s main editorial feature.</p>
+    </section>
+
+    <section class="option" aria-labelledby="option-two">
+      <div class="option-head"><span class="option-number">02</span><div><h2 id="option-two">Editorial Shelf</h2><p>A quiet newspaper-like grid. The first article gets a gentle lead position, while the other four form an even, low-contrast browse surface—without individual card shadows.</p></div></div>
+      <div class="sample">
+        <p class="sample-kicker">FROM THE LIBRARY</p><h3 class="sample-title">Read on, if it helps.</h3><p class="sample-deck">Five practical guides for the moments after you have found a path.</p>
+        <div class="editorial-grid">
+          <a class="editorial-link" href="#"><span class="editorial-tag">START HERE</span><span class="editorial-title">ADHD in Women: The Symptoms Nobody Told You About</span><p class="editorial-note">A grounded guide to the quieter ways ADHD can show up.</p></a>
+          <a class="editorial-link" href="#"><span class="editorial-tag">RECOVERY</span><span class="editorial-title">ADHD Burnout: Why It’s Different</span><p class="editorial-note">Recognise the crash before blaming yourself.</p></a>
+          <a class="editorial-link" href="#"><span class="editorial-tag">BASICS</span><span class="editorial-title">How ADHD Affects Task Management</span><p class="editorial-note">Why standard productivity systems can miss the point.</p></a>
+          <a class="editorial-link" href="#"><span class="editorial-tag">TIME</span><span class="editorial-title">Time Blindness in ADHD</span><p class="editorial-note">Make time feel more visible and workable.</p></a>
+          <a class="editorial-link" href="#"><span class="editorial-tag">FINISHING</span><span class="editorial-title">ADHD and Perfectionism</span><p class="editorial-note">A gentler route around the stuck point.</p></a>
+        </div>
+        <a class="sample-link" href="#">VIEW ALL POSTS <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="use"><strong>Use when:</strong> the site needs a little more editorial character, but not the visual weight of the current standalone card grid.</p>
+    </section>
+
+    <section class="option" aria-labelledby="option-three">
+      <div class="option-head"><span class="option-number">03</span><div><h2 id="option-three">One More Thing</h2><p>A single lead recommendation paired with a tight “next reads” stack. It gives readers one obvious optional recommendation, then keeps the rest in the background.</p></div></div>
+      <div class="sample">
+        <p class="sample-kicker">ONE MORE THING</p><h3 class="sample-title">If you have room for one more read.</h3><p class="sample-deck">One gentle recommendation, plus a short stack for later.</p>
+        <div class="stack">
+          <a class="stack-lead" href="#"><span class="editorial-tag">FEATURED GUIDE</span><span class="editorial-title">ADHD in Women: The Symptoms Nobody Told You About</span><span class="editorial-note">Explore why ADHD can be missed when it looks internal, high-masking, or hormonally shaped.</span></a>
+          <div class="stack-list">
+            <a class="stack-item" href="#"><span class="post-index">02</span><span class="editorial-title">ADHD Burnout: Why It’s Different</span></a>
+            <a class="stack-item" href="#"><span class="post-index">03</span><span class="editorial-title">How ADHD Affects Task Management</span></a>
+            <a class="stack-item" href="#"><span class="post-index">04</span><span class="editorial-title">Time Blindness in ADHD</span></a>
+            <a class="stack-item" href="#"><span class="post-index">05</span><span class="editorial-title">ADHD and Perfectionism</span></a>
+          </div>
+        </div>
+        <a class="sample-link" href="#">VIEW ALL POSTS <span aria-hidden="true">↗</span></a>
+      </div>
+      <p class="use"><strong>Use when:</strong> there is one timely priority article worth gently elevating, while the rest of the library stays secondary to Learning Paths.</p>
+    </section>
+    <p class="footer-note">DoTheThing · Featured Posts minimal-layout exploration · No live homepage changes are represented here.</p>
+  </main>
+</body>
+</html>

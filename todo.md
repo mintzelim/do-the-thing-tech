@@ -1007,7 +1007,8 @@
 - [x] Shorten the WHO-supporting sentence while retaining its source attribution and the external-first-step message
 
 ## Minimal Featured Posts Continuation
-- [ ] Create an approval-only minimal Featured Posts layout that sits quietly beneath Learning Paths without competing with it
+- [x] Create an approval-only minimal Featured Posts layout that sits quietly beneath Learning Paths without competing with it
+- [x] Create three minimal Featured Posts layout options in a dedicated approval-only HTML exploration for user selection
 
 ## Task Widget Icon Restoration
 - [x] Restore the intended visible icon beside the “What needs doing?” task-widget heading
