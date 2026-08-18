@@ -77,7 +77,7 @@ faq:
     a: >-
       Some people mask or compensate for traits, which can make needs less
       visible. Masking alone does not diagnose ADHD, autism, or AuDHD.
-featuredImage: https://files.manuscdn.com/user_upload_by_module/session_file/310519663538355759/UjqClTUhrEFWcLWl.png
+featuredImage: "/manus-storage/featured-29-adhd-autism-audhd_ca321ad3.png"
 featuredImageAlt: Pixel-art ADHD, autism, and AuDHD overlap comparison illustration
 ---
 

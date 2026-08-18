@@ -29,7 +29,8 @@ seoKeywords:
   - "how to cope with RSD ADHD"
   - "guanfacine RSD ADHD"
   - "rejection sensitivity ADHD adults"
-featuredImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post30-featured-rsd-rejection-sensitivity-AV8vpFZ6v3qauaw8Q54kWk.webp"
+featuredImage: "/manus-storage/featured-30-rsd_611f3afe.png"
+featuredImageAlt: "A lavender pixel-art mascot pauses beside gentle emotional regulation tools."
 sources:
   - title: "Dodson, W. (2021), Rejection Sensitive Dysphoria and ADHD"
     url: "https://www.additudemag.com/rejection-sensitive-dysphoria-and-adhd/"

@@ -1,6 +1,6 @@
 ---
 id: '27'
-featuredImage: https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-rsd-physical-pain-FedyzrVvfAQWSrfGKD8hxm.webp
+featuredImage: "/manus-storage/featured-27-uncommon-adhd-symptoms_f2e4edce.png"
 featuredImageAlt: Pixel-art illustration of the emotional impact of perceived criticism
 title: 7 ADHD Experiences That Are Often Missing From the Short Checklist
 description: >-

@@ -10,7 +10,7 @@ excerpt: >-
   Many people are told they will grow out of ADHD. The research tells a
   different story. Here's what actually happens to ADHD symptoms with age.
 date: 'May 02, 2026'
-featuredImage: "/manus-storage/blog-does-adhd-go-away-featured_ac47b073.png"
+featuredImage: "/manus-storage/featured-22-does-adhd-go-away_eb60394f.png"
 featuredImageAlt: "A purple pixel-art mascot walks beside a continuous path through three life stages."
 readTime: 9 min read
 category: ADHD Basics

@@ -574,9 +574,9 @@
 - [x] Add distinct featured-visual, mascot, and evidence-module previews for all three selection-only blog-post template options in the design-system HTML
 - [x] Create a separate Blog Exploration HTML file that adapts the supplied editorial article reference without modifying the live blog template or production pages
 - [x] Audit every blog illustration and featured image against the approved canonical lavender rectangular mascot standard
-- [ ] Regenerate and replace each inconsistent blog mascot image while preserving article topics, copy, alt text, and metadata
-- [ ] Use only newly generated landing-mascot illustrations for the blog refresh; do not reuse or substitute existing blog mascot art
-- [ ] Validate the refreshed blog images in article and index layouts, add regression coverage, and publish the update
+- [x] Regenerate and replace each inconsistent blog mascot image while preserving article topics, copy, alt text, and metadata
+- [x] Use only newly generated landing-mascot illustrations for the blog refresh; do not reuse or substitute existing blog mascot art
+- [x] Validate the refreshed blog images in article and index layouts, add regression coverage, and publish the update
 
 ## Flag-Only CTA Visual
 - [x] Replace the CTA landscape/character artwork with a simple transparent flag-on-island illustration matching the supplied reference
@@ -884,8 +884,8 @@
 - [x] Include the specific SoftwareApplication schema on the About page with applicationCategory, offers, and operatingSystem
 - [x] Include the specific SoftwareApplication schema on every blog article page, including `/blog/breaking-down-big-tasks`
 - [x] Add regression coverage ensuring Blog, blog articles, About, Contact, Editorial Standards, How It Works, Media, Privacy, Quiz, and Terms schema graphs identify the public brand and specific app fields consistently
-- [ ] Validate emitted Blog, blog article, About, Contact, Editorial Standards, How It Works, Media, Privacy, Quiz, and Terms JSON-LD, production/SSR build, and publish the schema correction
-- [ ] Re-check the published About JSON-LD after deployment to confirm the scanner can see the specific application fields
+- [x] Validate emitted Blog, blog article, About, Contact, Editorial Standards, How It Works, Media, Privacy, Quiz, and Terms JSON-LD, production/SSR build, and publish the schema correction
+- [x] Re-check the published About JSON-LD after deployment to confirm the scanner can see the specific application fields
 - [x] Verify every blog article emits valid SoftwareApplication, public name, and concise description fields without embedding scanner diagnostic metadata
 
 ## Reported Blog URL Availability
@@ -895,11 +895,17 @@
 ## Valid Homepage SoftwareApplication Metadata
 - [x] Add valid softwareVersion, softwareHelp, and mainEntityOfPage fields to the canonical SoftwareApplication schema
 - [x] Preserve the public DoTheThing name and concise product description without adding a fabricated aggregateRating
-- [ ] Add regression coverage and validate the homepage JSON-LD, production build, and published output
+- [x] Add regression coverage and validate the homepage JSON-LD, production build, and published output
+- [x] Verify the live dothething.tech homepage contains the valid source-level fields and does not fabricate aggregateRating or embed scanner diagnostic metadata
 
 ## Approved NAP, Entity Clarity, and Freshness Signals
 - [x] Add the approved online-business NAP details through shared sources on the homepage, Contact page, and Organization structured data
 - [x] Make DoTheThing’s business type, target customer, and differentiators explicit through shared homepage and core-service content without changing protected post-hero copy
 - [x] Add a factual freshness signal using shared source data rather than unsupported promotional or seasonal claims
-- [ ] Add regression coverage and validate consistent rendered NAP, entity clarity, freshness, and structured-data output
+- [x] Add regression coverage and validate consistent rendered NAP, entity clarity, freshness, and structured-data output
 - [x] Present homepage NAP details through the shared footer rather than crowding the protected hero composition
+- [x] Verify the live homepage and representative blog article expose factual update/review dates without adding auditor diagnostic JSON
+
+## Attached Scanner Diagnostic Export
+- [x] Classify the attached JSON fields and confirm whether any represent valid Schema.org data rather than internal audit metadata
+- [x] Apply only a verified, source-level correction if the attachment identifies a factual, actionable gap

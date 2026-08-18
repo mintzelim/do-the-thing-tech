@@ -1,6 +1,6 @@
 ---
 id: '25'
-featuredImage: https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-title-featured-dTXxYj5ZgYCmRgnDPqoqHw.webp
+featuredImage: "/manus-storage/featured-25-never-finish-anything_fc553d7a.png"
 featuredImageAlt: >-
   Pixel-art landscape showing ADHD project completion: character at 70% with
   fading dopamine, competing ideas, boring tasks

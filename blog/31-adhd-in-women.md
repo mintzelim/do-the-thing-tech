@@ -7,7 +7,7 @@ readTime: "10 min read"
 category: "ADHD Basics"
 wordCount: 2458
 updatedDate: "August 4, 2026"
-featuredImage: "https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post31-featured-adhd-women-gTXYY2zK4frXCPQZreXgUV.webp"
+featuredImage: "/manus-storage/featured-31-adhd-in-women_3300c74d.png"
 featuredImageAlt: "Pixel-art illustration of a woman at a desk with a lightbulb above her head, surrounded by menstrual cycle wheel, clocks, and empowering messages about understanding ADHD in women"
 primaryEntity: "ADHD in women"
 seoKeywords:

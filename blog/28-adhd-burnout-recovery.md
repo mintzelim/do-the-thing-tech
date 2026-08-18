@@ -84,8 +84,7 @@ faq:
     a: >-
       No. Symptoms return to baseline after recovery. Repeated cycles reinforce
       shame patterns. Prevention becomes more important with each cycle.
-featuredImage: >-
-  https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-adhd-burnout-featured-ZvTkw9i65EatzgVSy8aA4S.webp
+featuredImage: "/manus-storage/featured-28-adhd-burnout-recovery_1bc96bca.png"
 featuredImageAlt: ADHD burnout illustration showing neural fatigue
 ---
 

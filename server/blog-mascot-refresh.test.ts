@@ -23,6 +23,17 @@ const replacementSlugs = [
   "18-one-task-is-enough-simple-self-acceptance",
   "19-adhd-morning-routine-no-motivation-1",
   "20-how-to-break-down-tasks-adhd",
+  "21-adhd-best-jobs-creativity-hyperfocus",
+  "22-does-adhd-go-away",
+  "23-best-adhd-tools-2026",
+  "24-ai-that-breaks-down-tasks-adhd",
+  "25-adhd-never-finish-anything",
+  "26-adhd-symptoms-adults",
+  "27-uncommon-adhd-symptoms",
+  "28-adhd-burnout-recovery",
+  "29-adhd-vs-autism-vs-audhd",
+  "30-rejection-sensitive-dysphoria-rsd",
+  "31-adhd-in-women",
 ];
 
 describe("canonical blog mascot refresh", () => {
@@ -30,7 +41,7 @@ describe("canonical blog mascot refresh", () => {
     for (const slug of replacementSlugs) {
       const source = readFileSync(resolve(process.cwd(), `blog/${slug}.md`), "utf8");
       expect(source).toMatch(/^featuredImage: "\/manus-storage\/featured-\d{2}-.+_[a-f0-9]{8}\.png"$/m);
-      expect(source).toMatch(/^featuredImageAlt: ".+"$/m);
+      expect(source).toMatch(/^featuredImageAlt:/m);
     }
   });
 

@@ -10,7 +10,7 @@ excerpt: >-
   looks different. Here's what actually changes and what doesn't.
 date: 'June 7, 2026'
 updatedDate: '2026-08-12'
-featuredImage: "/manus-storage/blog-adhd-symptoms-adults-featured_2ad9f0ee.png"
+featuredImage: "/manus-storage/featured-26-adhd-symptoms-adults_2e91b752.png"
 featuredImageAlt: "A purple pixel-art mascot notices everyday task cues and chooses one next step."
 readTime: 10 min read
 category: ADHD Basics

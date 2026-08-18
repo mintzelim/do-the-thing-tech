@@ -54,7 +54,7 @@ describe("approved second SEO content batch", () => {
       ["05-best-tools-for-adhd-task-management.md", "featured-05-best-tools-for-adhd-task-management_[a-f0-9]{8}\.png", "A purple pixel-art mascot chooses a simple task-management toolkit."],
       ["08-remote-work-adhd.md", "featured-08-remote-work-adhd_[a-f0-9]{8}\.png", "A purple pixel-art mascot works at a simple remote desk with one visible task."],
       ["09-adhd-perfectionism.md", "featured-09-adhd-perfectionism_[a-f0-9]{8}\.png", "A purple pixel-art mascot moves an imperfect task card toward completion."],
-      ["24-ai-that-breaks-down-tasks-adhd.md", "blog-ai-task-breakdown-featured_5bae34ae\.png", "A purple pixel-art mascot uses an AI helper to divide one task into smaller cards."],
+      ["24-ai-that-breaks-down-tasks-adhd.md", "featured-24-ai-task-breakdown_[a-f0-9]{8}\.png", "A purple pixel-art mascot uses an AI helper to divide one task into smaller cards."],
     ];
 
     for (const [filename, imageKey, altText] of expectedImages) {
