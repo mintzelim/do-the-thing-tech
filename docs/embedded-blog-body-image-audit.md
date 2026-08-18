@@ -25,4 +25,4 @@ Any replacement must use **newly generated** canonical DoTheThing mascot visuals
 
 ## Quota-reset continuation
 
-The first five Article 25 replacements have been queued and referenced. The remaining approved images are paused until the daily generation quota resets. A one-time automatic continuation is active; it must use the same canonical mascot reference for every new visual and stop rather than substitute an old, reused, human, or mismatched image if the quota remains unavailable.
+The first five Article 25 replacements have been queued and referenced. The remaining approved images are paused until the daily generation quota resets. A live retry on 18 August 2026 confirmed that the generation limit remained unavailable, so no substitute or source change was made. The approved one-time continuation is set for 01:07 MYT on 19 August 2026 and must use the same canonical mascot reference for every new visual; it must stop rather than substitute an old, reused, human, or mismatched image if the quota remains unavailable.
