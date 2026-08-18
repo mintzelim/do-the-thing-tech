@@ -987,3 +987,6 @@
 - [x] Add a clear non-diagnostic self-reflection boundary and a practical task-tool next action without representing the quiz as clinical assessment
 - [x] Add regression coverage, validate desktop and mobile quiz paths, and publish the selected design-system reconciliation
 - [x] Preserve an unmistakable “ADHD Type Quiz” title, the direct ten-question quiz purpose, and the existing quiz-first journey while applying Gentle Questline styling
+
+## Empowering ADHD Type Quiz Results
+- [x] Research Dr. Amen’s seven-type framework and create an approval-only result-content system for each type: what can feel tricky, the strength or “superpower” to lean on, and one kind next step
