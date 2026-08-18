@@ -16,12 +16,16 @@ describe("approved NAP, entity clarity, and freshness signals", () => {
     expect(identity).toContain('addressLine: "15B-8-4, Mont Kiara Pines, Jalan Kiara 1, Mont Kiara, 50480 Kuala Lumpur, Malaysia"');
   });
 
-  it("uses the shared identity source for visible homepage and Contact-page trust signals", () => {
+  it("keeps detailed NAP on the Contact page while the shared Option 01 footer stays compact", () => {
     expect(home).toContain("SITE_IDENTITY.entityClarity");
-    expect(footer).toContain("SITE_IDENTITY.addressLine");
+    expect(footer).toContain("SITE_IDENTITY.ownershipStatement");
+    expect(footer).toContain("SITE_IDENTITY.supportEmail");
     expect(footer).toContain("SITE_IDENTITY.productReviewedLabel");
+    expect(footer).not.toContain("SITE_IDENTITY.addressLine");
+    expect(footer).not.toContain("SITE_IDENTITY.telephoneHref");
     expect(contact).toContain("SITE_IDENTITY.ownershipStatement");
     expect(contact).toContain("SITE_IDENTITY.telephoneHref");
+    expect(contact).toContain("SITE_IDENTITY.addressLine");
   });
 
   it("keeps the same public identity and valid software fields in server-rendered JSON-LD", () => {

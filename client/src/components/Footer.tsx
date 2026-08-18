@@ -44,11 +44,7 @@ export default function Footer() {
           <p className="site-footer__promise">Make the next thing doable.</p>
           <p className="site-footer__description">Task management for ADHD brains. One smaller next step, when you are ready.</p>
           <p className="site-footer__entity">{SITE_IDENTITY.ownershipStatement}</p>
-          <address className="site-footer__contact">
-            {SITE_IDENTITY.addressLine}<br />
-            <a href={SITE_IDENTITY.telephoneHref}>{SITE_IDENTITY.telephone}</a> · <a href={`mailto:${SITE_IDENTITY.supportEmail}`}>{SITE_IDENTITY.supportEmail}</a>
-          </address>
-          <p className="site-footer__reviewed">{SITE_IDENTITY.productReviewedLabel}</p>
+          <a className="site-footer__support" href={`mailto:${SITE_IDENTITY.supportEmail}`}>{SITE_IDENTITY.supportEmail}</a>
         </div>
         <nav className="site-footer__groups" aria-label="Footer navigation">
           {footerGroups.map((group) => (
@@ -64,7 +60,7 @@ export default function Footer() {
         </nav>
       </div>
       <div className="site-footer__base">
-        <p>© {new Date().getFullYear()} DoTheThing. Task management for ADHD brains.</p>
+        <p>© {new Date().getFullYear()} DoTheThing. Task management for ADHD brains. · {SITE_IDENTITY.productReviewedLabel}</p>
         <div className="site-footer__social" aria-label="Social links">
           <a href="https://www.instagram.com/dothething.tech?igsh=MWxhM2xqMzM0ZHE1OQ==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
           <a href="https://www.tiktok.com/@dothething.tech?_r=1&_t=ZS-967yRO88m9c" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a>

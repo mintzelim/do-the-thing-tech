@@ -924,7 +924,8 @@
 - [x] Apply only a verified, source-level correction if the attachment identifies a factual, actionable gap
 
 ## Visible GEO Content Cleanup and Footer Redesign
-- [ ] Audit visible GEO-related content in the homepage hero and shared footer, separating machine-readable schema from user-facing trust information
+- [x] Audit visible GEO-related content in the homepage hero and shared footer, separating machine-readable schema from user-facing trust information
 - [x] Add selection-only footer redesign directions that retain concise support access without visible NAP or freshness copy overload
-- [ ] Present an approval-only footer example and content-visibility rules before modifying the live website
+- [x] Present an approval-only footer example and content-visibility rules before modifying the live website
 - [x] Add three approval-only footer explorations to the design-system HTML, each showing a distinct truthful address, ownership, support, freshness, and navigation treatment
+- [x] Apply the approved Option 01 Minimal Trust Strip to the shared footer while retaining the review label, support email, ownership statement, Contact-page NAP, and Organization structured-data NAP

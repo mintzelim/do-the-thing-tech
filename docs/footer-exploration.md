@@ -39,3 +39,7 @@ Select **01**, **02**, or **03** after reviewing the visual exploration. Once se
 ## Visual review
 
 The three explorations were reviewed at desktop width. Each preserves the established single-panel footer geometry, directory-grid alignment, warm-white surface, blue-gray outline, low-contrast offset shadow, Inter hierarchy, and lower legal/social rail. Option 01 is the least dense; Option 02 keeps the full visible NAP material in a distinct low-emphasis row; and Option 03 makes the full contact material easiest to scan, at the cost of the largest visible information block. The live shared footer remains unchanged pending selection.
+
+## Selected implementation verification
+
+**Option 01 · Minimal Trust Strip** was selected and checked on the development homepage. The shared footer now displays the compact ownership relationship and support email in its left rail, retains the factual product-review label in the lower legal rail, and does not visually repeat the street address or telephone. The directory grid, warm-white panel, outlined lower rail, and social links remain aligned with the landing system. Full NAP remains visible on the Contact page and is still emitted in the server-rendered Organization schema.

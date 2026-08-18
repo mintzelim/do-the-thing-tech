@@ -24,4 +24,14 @@ describe("selected Directory footer", () => {
     expect(styles).toContain('@media(max-width:900px)');
     expect(styles).toContain('@media(max-width:560px)');
   });
+
+  it("keeps the selected Minimal Trust Strip compact without changing the shared footer foundation", () => {
+    expect(footer).toContain('className="site-footer__support"');
+    expect(footer).toContain('SITE_IDENTITY.supportEmail');
+    expect(footer).toContain('SITE_IDENTITY.productReviewedLabel');
+    expect(footer).not.toContain('SITE_IDENTITY.addressLine');
+    expect(footer).not.toContain('SITE_IDENTITY.telephoneHref');
+    expect(styles).toContain('grid-template-columns:minmax(220px,.76fr) minmax(0,2.24fr)');
+    expect(styles).toContain('.site-footer__support{display:inline-block');
+  });
 });
