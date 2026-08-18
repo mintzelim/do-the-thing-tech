@@ -19,13 +19,13 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
 ];
 
 export const ADHD_TYPE_RESULTS: Record<QuizTypeKey, Omit<QuizResult, 'resultKey' | 'score'>> = {
-  classic: { type: 'Classic ADHD', character: 'The "Quest-Chaser" pattern', description: 'This result points to an action-first pattern: your brain may spot a spark and go, “Let’s do it now!” Planning, pausing, or finishing can be the less exciting sequel.' },
-  inattentive: { type: 'Inattentive ADHD', character: 'The "High Ping" pattern', description: 'This result points to an internally busy pattern: your attention may drift before you mean it to, especially when a next step is boring, invisible, or far away.' },
-  overfocused: { type: 'Overfocused ADHD', character: 'The "Strong Grip" pattern', description: 'This result points to a strong-stickiness pattern: once your mind locks onto an idea, task, or worry, changing channels can feel surprisingly hard.' },
-  temporal: { type: 'Temporal Lobe ADHD', character: 'The "Time-Blind" pattern', description: 'This result points to a pattern where time, memory cues, and emotional reactions can feel extra loud. A small disruption may land bigger than you expected.' },
-  limbic: { type: 'Limbic ADHD', character: 'The "Low-gear" pattern', description: 'This result points to a low-gear pattern: task energy can rise and fall with mood, so an ordinary job may look like a mountain on a heavier day.' },
-  ringOfFire: { type: 'Ring of Fire ADHD', character: 'The "Many Tabs" pattern', description: 'This result points to a high-input pattern: your brain may feel like it is juggling sixteen tabs at once—ideas, noise, energy, and all.' },
-  anxious: { type: 'Anxious ADHD', character: 'The "Careful Thought" pattern', description: 'This result points to a care-first pattern: your brain can be an excellent risk scanner, but it may keep scanning long after the moment needs it to.' },
+  classic: { type: 'The Spark Starter', sourceLabel: 'Classic ADD', character: 'The "Quest-Chaser" pattern', description: 'This result points to an action-first pattern: your brain may spot a spark and go, “Let’s do it now!” Planning, pausing, or finishing can be the less exciting sequel.' },
+  inattentive: { type: 'The Thought Wanderer', sourceLabel: 'Inattentive ADD', character: 'The "High Ping" pattern', description: 'This result points to an internally busy pattern: your attention may drift before you mean it to, especially when a next step is boring, invisible, or far away.' },
+  overfocused: { type: 'The Deep-Dive Mind', sourceLabel: 'Overfocused ADD', character: 'The "Strong Grip" pattern', description: 'This result points to a strong-stickiness pattern: once your mind locks onto an idea, task, or worry, changing channels can feel surprisingly hard.' },
+  temporal: { type: 'The Signal Catcher', sourceLabel: 'Temporal Lobe ADD', character: 'The "Time-Blind" pattern', description: 'This result points to a pattern where time, memory cues, and emotional reactions can feel extra loud. A small disruption may land bigger than you expected.' },
+  limbic: { type: 'The Mood-Powered Mind', sourceLabel: 'Limbic ADD', character: 'The "Low-gear" pattern', description: 'This result points to a low-gear pattern: task energy can rise and fall with mood, so an ordinary job may look like a mountain on a heavier day.' },
+  ringOfFire: { type: 'The Many-Tabs Mind', sourceLabel: 'Ring of Fire ADD', character: 'The "Many Tabs" pattern', description: 'This result points to a high-input pattern: your brain may feel like it is juggling sixteen tabs at once—ideas, noise, energy, and all.' },
+  anxious: { type: 'The Careful Scout', sourceLabel: 'Anxious ADD', character: 'The "Careful Thought" pattern', description: 'This result points to a care-first pattern: your brain can be an excellent risk scanner, but it may keep scanning long after the moment needs it to.' },
 };
 
 const INITIAL_SCORES: Record<QuizTypeKey, number> = { classic: 0, inattentive: 0, overfocused: 0, temporal: 0, limbic: 0, ringOfFire: 0, anxious: 0 };
@@ -35,7 +35,7 @@ export function calculateQuizResult(answers: QuizAnswer[]): QuizResult {
   answers.forEach((answer) => { scores[answer.type] += answer.weight; });
   const highestType = (Object.entries(scores) as [QuizTypeKey, number][]).reduce((current, next) => current[1] >= next[1] ? current : next)[0];
   const profile = ADHD_TYPE_RESULTS[highestType];
-  return { resultKey: highestType, type: profile.type, character: profile.character, score: scores[highestType], description: profile.description };
+  return { resultKey: highestType, type: profile.type, sourceLabel: profile.sourceLabel, character: profile.character, score: scores[highestType], description: profile.description };
 }
 
 interface QuizFlowProps { onComplete: (quizResult: QuizResult) => void; }

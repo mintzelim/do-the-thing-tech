@@ -30,8 +30,8 @@ describe('selected Quiz Option 03 — Gentle Questline', () => {
     expect(hero).toContain("What&apos;s Your ADHD Type?");
     expect(hero).toContain('Take this 10-question quiz to discover which of the 7 ADHD types matches your brain pattern.');
     expect(flow).toContain('Find your type in 10 questions.');
-    expect(results).toContain('YOUR ADHD TYPE');
-    expect(types).toContain('The 7 ADHD Types');
+    expect(results).toContain('YOUR QUIZ PATTERN');
+    expect(types).toContain('The 7 Quiz Patterns');
     expect(types).toContain('Dr. Amen/Amen Clinics&apos; seven-type framework');
   });
 
@@ -40,7 +40,8 @@ describe('selected Quiz Option 03 — Gentle Questline', () => {
     expect(flow).toContain('Array(QUIZ_QUESTIONS.length).fill(null)');
     expect(flow).toContain('export function calculateQuizResult');
     expect(flow).toContain('SEE MY ADHD TYPE');
-    expect(results).toContain('seven-type framework for self-reflection');
+    expect(results).toContain('we use friendly names here');
+    expect(results).toContain('Classic ADD, Inattentive ADD, Overfocused ADD, Temporal Lobe ADD, Limbic ADD, Ring of Fire ADD, and Anxious ADD');
     expect(results).toContain('not a clinical diagnosis or assessment');
     expect(hero).toContain('not a medical diagnosis or a clinical assessment');
   });

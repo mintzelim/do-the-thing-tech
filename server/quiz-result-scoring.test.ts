@@ -7,6 +7,9 @@ describe('ADHD Type Quiz weighted result paths', () => {
   it('maps all seven named Dr. Amen framework labels to their own result profile', () => {
     expect(typeKeys).toEqual(['classic', 'inattentive', 'overfocused', 'temporal', 'limbic', 'ringOfFire', 'anxious']);
     expect(new Set(Object.values(ADHD_TYPE_RESULTS).map((profile) => profile.type)).size).toBe(7);
+    expect(Object.values(ADHD_TYPE_RESULTS).map((profile) => profile.sourceLabel)).toEqual(['Classic ADD', 'Inattentive ADD', 'Overfocused ADD', 'Temporal Lobe ADD', 'Limbic ADD', 'Ring of Fire ADD', 'Anxious ADD']);
+    expect(ADHD_TYPE_RESULTS.anxious.type).toBe('The Careful Scout');
+    expect(ADHD_TYPE_RESULTS.limbic.type).toBe('The Mood-Powered Mind');
   });
 
   it('gives every framework outcome a distinct plain-language pattern explanation rather than a generic label', () => {
@@ -38,10 +41,11 @@ describe('ADHD Type Quiz weighted result paths', () => {
     });
   });
 
-  it('does not default all answer patterns to Anxious ADHD', () => {
+  it('does not default all answer patterns to the same friendly result name', () => {
     const classicPath = QUIZ_QUESTIONS.flatMap((question) => question.answers.filter((answer) => answer.type === 'classic'));
     const anxiousPath = QUIZ_QUESTIONS.flatMap((question) => question.answers.filter((answer) => answer.type === 'anxious'));
-    expect(calculateQuizResult(classicPath).type).toBe('Classic ADHD');
-    expect(calculateQuizResult(anxiousPath).type).toBe('Anxious ADHD');
+    expect(calculateQuizResult(classicPath).type).toBe('The Spark Starter');
+    expect(calculateQuizResult(anxiousPath).type).toBe('The Careful Scout');
+    expect(calculateQuizResult(anxiousPath).sourceLabel).toBe('Anxious ADD');
   });
 });

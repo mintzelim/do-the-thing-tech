@@ -11,7 +11,7 @@ import '../quiz-system.css';
 import '../quiz-result-reflections.css';
 
 export type QuizStep = 'hero' | 'quiz' | 'results';
-export interface QuizResult { resultKey: string; type: string; score: number; character: string; description: string; }
+export interface QuizResult { resultKey: string; type: string; sourceLabel: string; score: number; character: string; description: string; }
 
 export default function Quiz() {
   const [step, setStep] = useState<QuizStep>('hero');

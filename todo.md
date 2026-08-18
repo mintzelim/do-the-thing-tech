@@ -995,3 +995,9 @@
 
 ## Educational Quiz Result Explanations
 - [x] Improve the seven result descriptions so each gives a light-hearted, educational plain-language explanation of the pattern without implying clinical diagnosis
+
+## Friendly ADHD Quiz Outcome Names
+- [x] Replace clinical-sounding reader-facing outcome titles with relevant, fun pattern names while showing the corresponding Dr. Amen/Amen Clinics framework label in the visible non-diagnostic source note
+
+## Homepage Visual Edit Follow-Up
+- [x] Verify the visual-editor request to remove the homepage input target, apply the intended removal manually if needed, and ensure the task-entry workflow remains intact

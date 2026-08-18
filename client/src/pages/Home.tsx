@@ -455,15 +455,6 @@ export default function Home() {
                     BIG
                   </button>
                 </div>
-
-                <input
-                  type="range"
-                  className="mobile-slider"
-                  min="0"
-                  max="100"
-                  value={granularity}
-                  onChange={(e) => handleSliderChange(parseInt(e.target.value))}
-                />
               </div>
 
               <p className="mobile-body-sm" style={{ marginBottom: "16px", color: "var(--pixel-text-light)", fontStyle: "italic" }}>
