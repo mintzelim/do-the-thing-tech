@@ -50,8 +50,11 @@ describe('selected Quiz Option 03 — Gentle Questline', () => {
     expect(results).toContain('THE TRICKY BIT');
     expect(results).toContain('YOUR BRIGHT SIDE');
     expect(results).toContain('A KIND NEXT STEP');
+    expect(results).toContain('A REMINDER FOR YOU');
+    expect(results).toContain('reflection.quote');
     expect(results).toContain('ringOfFire');
     expect(reflectionStyles).toContain('.quiz-reflection-card.is-bright');
     expect(reflectionStyles).toContain('.quiz-reflection-card.is-next');
+    expect(reflectionStyles).toContain('.quiz-result-quote');
   });
 });

@@ -1000,7 +1000,7 @@
 - [x] Replace clinical-sounding reader-facing outcome titles with relevant, fun pattern names while showing the corresponding Dr. Amen/Amen Clinics framework label in the visible non-diagnostic source note
 
 ## Personal-Support Quiz Reflections
-- [ ] Make every A Kind Next Step a practical self-support action rather than a tool prompt and add a positive person-centred reminder quote for all seven outcomes
+- [x] Make every A Kind Next Step a practical self-support action rather than a tool prompt and add a positive person-centred reminder quote for all seven outcomes
 
 ## Homepage Visual Edit Follow-Up
 - [x] Verify the visual-editor request to remove the homepage input target, apply the intended removal manually if needed, and ensure the task-entry workflow remains intact
