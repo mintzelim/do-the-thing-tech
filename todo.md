@@ -903,8 +903,9 @@
 ## Remaining GEO Scanner Verification
 - [x] Audit the reported About-page aggregateRating, description-quality, entity-clarity, offering-description, and freshness flags against the current published HTML and source
 - [x] Audit the reported description-quality flags for `/blog/adhd-sleep` and `/blog/free-tools-2026` against the current published HTML and shared blog schema source
-- [ ] Present an approval-ready, truthful remediation plan that retains the no-fabricated-ratings policy and protected post-hero copy
-- [ ] Audit the persistent About-page non-schema entity-clarity flag and show an approval-only visible wording comparison before making any public content change
+- [x] Present an approval-ready, truthful remediation plan that retains the no-fabricated-ratings policy and protected post-hero copy
+- [x] Audit the persistent About-page non-schema entity-clarity flag and show an approval-only visible wording comparison before making any public content change
+- [x] Apply the approved hero-only About subtitle that explicitly states DoTheThing’s business type, audience, and practical differentiator, then validate the protected post-hero content remains unchanged
 
 ## Standalone GEO FAQ Page
 - [x] Audit existing verified product FAQs, FAQPage schema, related navigation, and FAQ-route availability

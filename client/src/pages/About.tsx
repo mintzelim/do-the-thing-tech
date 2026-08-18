@@ -54,7 +54,7 @@ export default function About() {
           <div className="about-hero-copy">
             <p className="about-eyebrow"><span aria-hidden="true">✦</span> ABOUT DOTHETHING</p>
             <h1 id="about-page-title">ABOUT DO THE THING</h1>
-            <p className="about-hero-description">Understanding ADHD, Task Management, and Why We Built This App</p>
+            <p className="about-hero-description">DoTheThing is a free online task-breakdown tool for people with ADHD and executive-function friction. Turn brain dumps into smaller steps, focus-aware estimates, and an editable plan you can start today.</p>
             <button type="button" className="about-secondary-action" onClick={() => navigate("/")}>BACK TO HOME</button>
           </div>
           <div className="about-hero-art" aria-hidden="true">

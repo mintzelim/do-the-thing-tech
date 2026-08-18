@@ -24,6 +24,14 @@ describe("About page design-system refresh", () => {
     expect(aboutStyles).toContain("font-family:var(--ui-font)");
   });
 
+  it("states the public business type, audience, and practical differentiator directly in the approved hero", () => {
+    expect(aboutPage).toContain("DoTheThing is a free online task-breakdown tool for people with ADHD and executive-function friction.");
+    expect(aboutPage).toContain("Turn brain dumps into smaller steps, focus-aware estimates, and an editable plan you can start today.");
+    expect(aboutPage).not.toContain("Understanding ADHD, Task Management, and Why We Built This App");
+    expect(aboutPage).toContain("This site combines lived experience with clearly sourced educational material.");
+    expect(aboutPage).toContain("This tool exists because I needed it. And if you're reading this, you probably need it too.");
+  });
+
   it("uses existing abstract purple mascot assets rather than human creator artwork", () => {
     expect(aboutPage).toContain("dothething-how-it-works-focus-transparent_c55dcc2f.png");
     expect(aboutPage).toContain("dothething-how-it-works-brain-dump-transparent_805dc4d4.png");
