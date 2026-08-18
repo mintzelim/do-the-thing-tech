@@ -871,7 +871,11 @@
 ## Embedded Blog-Body Image Refresh
 - [x] Audit published article-body image references, source markdown, and renderer output to identify remaining legacy visuals
 - [x] Prepare an approval-only plan for replacing any confirmed legacy in-body illustrations with newly generated canonical-mascot visuals
-- [ ] After approval, update only confirmed legacy image references, add regression coverage, and verify live article-body image delivery
+- [x] Schedule one-time resumption after the image-generation quota reset using the same approved canonical mascot reference for every remaining visual, with no alternate silhouette, human figure, reused featured art, or mismatched mascot
+- [ ] Generate and integrate ten newly created canonical-mascot illustrations for articles 25 and 26, preserving image jobs and all surrounding content
+- [ ] Generate and integrate ten newly created canonical-mascot illustrations for articles 27 and 28, preserving image jobs and all surrounding content
+- [ ] Generate and integrate one newly created canonical-mascot illustration for article 30, preserving image job and all surrounding content
+- [ ] Add complete image-reference regression coverage, verify zero legacy inline CloudFront URLs, validate affected routes, and publish the finished refresh
 
 ## Reusable Blog Exploration Elements
 - [x] Identify reusable editorial elements from the exact-content Focus Ledger exploration that improve content structure without creating card clutter

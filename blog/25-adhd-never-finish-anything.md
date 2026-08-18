@@ -100,7 +100,7 @@ This is one of the most consistent patterns in adult ADHD. It's not about discip
 
 ---
 
-![Why People with ADHD Never Finish Anything](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-featured-adhd-never-finish-8zwkCa9o3aqmPENvsBh2AW.webp)
+![Why People with ADHD Never Finish Anything](/manus-storage/body-25-project-lifecycle_13171366.png)
 
 ## Why ADHD Brains Start So Well
 
@@ -112,7 +112,7 @@ The ADHD brain is optimised for starting. The architecture that makes starting e
 
 ## Pattern 1: Novelty Depletion
 
-![The Project Lifecycle: Novelty Depletion Over Time](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-novelty-depletion-P556DP8Az7qx9NwiMjN2mB.webp)
+![The Project Lifecycle: Novelty Depletion Over Time](/manus-storage/body-25-novelty-depletion_571cf1a1.png)
 
 Every project starts with high novelty. As you work through it, what remains is refinement, editing, admin. The dopamine signal fades.
 
@@ -126,7 +126,7 @@ This is why projects reach 70-80% and stall. The interesting problems are solved
 
 ## Pattern 2: Competing Interest Pull
 
-![Competing Interest Pull: New Idea Shines, Old Project Fades](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-competing-interests-fG5AJfodtYsvbSWBqGkxDG.webp)
+![Competing Interest Pull: New Idea Shines, Old Project Fades](/manus-storage/body-25-competing-interests_19c71f25.png)
 
 A new idea arrives mid-project. It's fresh, unresolved, immediately more interesting. The ADHD brain responds more strongly to the new stimulus. The existing project gets backgrounded.
 
@@ -138,7 +138,7 @@ Hoogman et al. found ADHD brains generate a higher volume of divergent ideas tha
 
 ## Pattern 3: Low-Stimulation Phase Avoidance
 
-![The Low-Stimulation Trap: 90% Done, 10% Feels Impossible](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-low-stimulation-avoidance-JPmmp9D38iFQjEaeZvNkG2.webp)
+![The Low-Stimulation Trap: 90% Done, 10% Feels Impossible](/manus-storage/body-25-low-stimulation-trap_3496c57a.png)
 
 Every project contains phases carrying low stimulation: editing a draft, admin, formatting. These trigger ADHD task paralysis — the freeze response when a task carries low interest.
 
@@ -148,7 +148,7 @@ ADDA describes ADHD paralysis as an overload response, often outside conscious c
 
 ---
 
-![Dopamine Level Over Project Timeline](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post25-dopamine-curve-FxMRJsWqGDMJQLHaGaLhfq.webp)
+![Dopamine Level Over Project Timeline](/manus-storage/body-25-dopamine-curve-concept_78750e9c.png)
 
 ## The Combined Picture
 

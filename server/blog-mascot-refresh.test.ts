@@ -52,4 +52,19 @@ describe("canonical blog mascot refresh", () => {
     expect(sources).not.toContain("dothething-how-it-works-breakdown-transparent");
     expect(sources).not.toContain("dothething-how-it-works-timer-transparent");
   });
+
+  it("replaces the first approved embedded legacy batch with article-specific canonical storage assets", () => {
+    const source = readFileSync(resolve(process.cwd(), "blog/25-adhd-never-finish-anything.md"), "utf8");
+
+    expect(source).toContain("/manus-storage/body-25-project-lifecycle_13171366.png");
+    expect(source).toContain("/manus-storage/body-25-novelty-depletion_571cf1a1.png");
+    expect(source).toContain("/manus-storage/body-25-competing-interests_19c71f25.png");
+    expect(source).toContain("/manus-storage/body-25-low-stimulation-trap_3496c57a.png");
+    expect(source).toContain("/manus-storage/body-25-dopamine-curve-concept_78750e9c.png");
+    expect(source).not.toContain("post25-featured-adhd-never-finish");
+    expect(source).not.toContain("post25-novelty-depletion");
+    expect(source).not.toContain("post25-competing-interests");
+    expect(source).not.toContain("post25-low-stimulation-avoidance");
+    expect(source).not.toContain("post25-dopamine-curve");
+  });
 });
