@@ -10,5 +10,5 @@ const ADHD_TYPES: ADHDTypePreview[] = [
 ];
 
 export default function ADHDTypesDisplay() {
-  return <section className="quiz-pattern-section"><div className="quiz-shell quiz-panel quiz-panel-inner"><div className="quiz-section-head"><p className="quiz-eyebrow">MEET THE TYPES</p><h2>The 7 ADHD Types</h2><p>According to this quiz, there are seven distinct ADHD types, each with its own perks and challenges.</p></div><div className="quiz-pattern-grid">{ADHD_TYPES.map((type) => <article className="quiz-pattern-card" key={type.id}><b>{String(type.id).padStart(2, '0')}</b><h3>{type.title}</h3><p>{type.description}</p></article>)}</div></div></section>;
+  return <section className="quiz-pattern-section"><div className="quiz-shell quiz-panel quiz-panel-inner"><div className="quiz-section-head"><p className="quiz-eyebrow">MEET THE TYPES</p><h2>The 7 ADHD Types</h2><p>This quiz is based on <a className="quiz-source-link" href="https://www.amenclinics.com/conditions/adhd-add/" target="_blank" rel="noreferrer">Dr. Amen/Amen Clinics&apos; seven-type framework</a>, in which each pattern has its own perks and challenges.</p></div><div className="quiz-pattern-grid">{ADHD_TYPES.map((type) => <article className="quiz-pattern-card" key={type.id}><b>{String(type.id).padStart(2, '0')}</b><h3>{type.title}</h3><p>{type.description}</p></article>)}</div></div></section>;
 }

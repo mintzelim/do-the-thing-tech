@@ -8,9 +8,10 @@ import FinalCTA from '@/components/quiz/FinalCTA';
 import QuizFlow from '@/components/quiz/QuizFlow';
 import QuizResults from '@/components/quiz/QuizResults';
 import '../quiz-system.css';
+import '../quiz-result-reflections.css';
 
 export type QuizStep = 'hero' | 'quiz' | 'results';
-export interface QuizResult { type: string; score: number; character: string; description: string; }
+export interface QuizResult { resultKey: string; type: string; score: number; character: string; description: string; }
 
 export default function Quiz() {
   const [step, setStep] = useState<QuizStep>('hero');

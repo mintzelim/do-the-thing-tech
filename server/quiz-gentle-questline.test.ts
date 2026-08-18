@@ -9,6 +9,7 @@ const flow = read('client/src/components/quiz/QuizFlow.tsx');
 const results = read('client/src/components/quiz/QuizResults.tsx');
 const types = read('client/src/components/quiz/ADHDTypesDisplay.tsx');
 const styles = read('client/src/quiz-system.css');
+const reflectionStyles = read('client/src/quiz-result-reflections.css');
 
 describe('selected Quiz Option 03 — Gentle Questline', () => {
   it('uses the shared landing-system quiz stylesheet and canonical mascot without legacy game-screen treatments', () => {
@@ -31,6 +32,7 @@ describe('selected Quiz Option 03 — Gentle Questline', () => {
     expect(flow).toContain('Find your type in 10 questions.');
     expect(results).toContain('YOUR ADHD TYPE');
     expect(types).toContain('The 7 ADHD Types');
+    expect(types).toContain('Dr. Amen/Amen Clinics&apos; seven-type framework');
   });
 
   it('preserves ten-question weighted scoring and adds a clear non-diagnostic boundary', () => {
@@ -38,7 +40,17 @@ describe('selected Quiz Option 03 — Gentle Questline', () => {
     expect(flow).toContain('Array(QUIZ_QUESTIONS.length).fill(null)');
     expect(flow).toContain('export function calculateQuizResult');
     expect(flow).toContain('SEE MY ADHD TYPE');
-    expect(results).toContain('self-reflection tool, not a clinical diagnosis or assessment');
+    expect(results).toContain('seven-type framework for self-reflection');
+    expect(results).toContain('not a clinical diagnosis or assessment');
     expect(hero).toContain('not a medical diagnosis or a clinical assessment');
+  });
+
+  it('renders the approved empowering reflection structure for all calculated results', () => {
+    expect(results).toContain('THE TRICKY BIT');
+    expect(results).toContain('YOUR BRIGHT SIDE');
+    expect(results).toContain('A KIND NEXT STEP');
+    expect(results).toContain('ringOfFire');
+    expect(reflectionStyles).toContain('.quiz-reflection-card.is-bright');
+    expect(reflectionStyles).toContain('.quiz-reflection-card.is-next');
   });
 });

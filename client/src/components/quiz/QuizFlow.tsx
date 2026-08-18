@@ -1,40 +1,41 @@
 import { useState } from 'react';
-import { QuizResult } from '@/pages/Quiz';
+import type { QuizResult } from '@/pages/Quiz';
 
-export interface QuizAnswer { text: string; type: string; weight: number; }
+export type QuizTypeKey = 'classic' | 'inattentive' | 'overfocused' | 'temporal' | 'limbic' | 'ringOfFire' | 'anxious';
+export interface QuizAnswer { text: string; type: QuizTypeKey; weight: number; }
 export interface QuizQuestion { id: number; text: string; answers: QuizAnswer[]; }
 
 export const QUIZ_QUESTIONS: QuizQuestion[] = [
-  { id: 1, text: 'When faced with a task, what usually happens?', answers: [{ text: 'I jump in immediately without planning', type: 'impulsive', weight: 2 }, { text: 'I get overwhelmed and avoid it', type: 'inattentive', weight: 2 }, { text: 'I start but get distracted halfway', type: 'classic', weight: 2 }, { text: 'I worry about doing it perfectly', type: 'anxious', weight: 2 }] },
-  { id: 2, text: 'How do you experience time?', answers: [{ text: "Time? What time? I'm always late", type: 'temporal', weight: 3 }, { text: "I'm constantly rushing", type: 'hyperactive', weight: 2 }, { text: 'I lose track of it completely', type: 'inattentive', weight: 2 }, { text: "I'm anxious about being late", type: 'anxious', weight: 1 }] },
-  { id: 3, text: 'Your energy levels are usually:', answers: [{ text: 'Bouncing off the walls', type: 'hyperactive', weight: 3 }, { text: 'Inconsistent — high then crashed', type: 'classic', weight: 2 }, { text: 'Calm but easily overwhelmed', type: 'inattentive', weight: 2 }, { text: 'Anxious and tense', type: 'anxious', weight: 2 }] },
-  { id: 4, text: 'In social situations, you tend to:', answers: [{ text: 'Talk a lot and interrupt people', type: 'hyperactive', weight: 2 }, { text: 'Act without thinking about consequences', type: 'impulsive', weight: 2 }, { text: 'Struggle to follow conversations', type: 'inattentive', weight: 2 }, { text: 'Worry about saying the wrong thing', type: 'anxious', weight: 2 }] },
-  { id: 5, text: 'Your workspace is usually:', answers: [{ text: 'Chaotic — I work in organized chaos', type: 'classic', weight: 2 }, { text: 'Perfectly organized or completely messy', type: 'anxious', weight: 2 }, { text: 'I have no idea where anything is', type: 'inattentive', weight: 2 }, { text: "Whatever — I'm too busy to care", type: 'impulsive', weight: 2 }] },
-  { id: 6, text: 'When you make a mistake, you:', answers: [{ text: 'Shrug it off and move on', type: 'impulsive', weight: 2 }, { text: 'Spiral and obsess over it', type: 'anxious', weight: 3 }, { text: "Didn't even notice I made one", type: 'inattentive', weight: 2 }, { text: 'Get frustrated and try again', type: 'classic', weight: 1 }] },
-  { id: 7, text: 'Your to-do list is:', answers: [{ text: 'Non-existent — I just do things', type: 'impulsive', weight: 2 }, { text: 'Overwhelming and never-ending', type: 'anxious', weight: 2 }, { text: 'Started but never finished', type: 'classic', weight: 2 }, { text: 'What to-do list?', type: 'inattentive', weight: 2 }] },
-  { id: 8, text: 'You focus best when:', answers: [{ text: "There's a deadline and pressure", type: 'classic', weight: 2 }, { text: "I'm genuinely interested in the topic", type: 'inattentive', weight: 2 }, { text: 'I can move around and fidget', type: 'hyperactive', weight: 2 }, { text: 'Everything is perfect and organized', type: 'anxious', weight: 2 }] },
-  { id: 9, text: 'Your biggest struggle is:', answers: [{ text: 'Staying still and focused', type: 'hyperactive', weight: 3 }, { text: 'Controlling my impulses', type: 'impulsive', weight: 3 }, { text: 'Remembering things and paying attention', type: 'inattentive', weight: 3 }, { text: 'Perfectionism and anxiety', type: 'anxious', weight: 3 }] },
-  { id: 10, text: 'If you had to describe yourself in one word:', answers: [{ text: 'Chaotic', type: 'classic', weight: 2 }, { text: 'Scattered', type: 'inattentive', weight: 2 }, { text: 'Energetic', type: 'hyperactive', weight: 2 }, { text: 'Combination of everything', type: 'combination', weight: 3 }] },
+  { id: 1, text: 'When faced with a task, what usually happens?', answers: [{ text: 'I jump in immediately without planning', type: 'classic', weight: 2 }, { text: 'I get overwhelmed and avoid it', type: 'inattentive', weight: 2 }, { text: 'I start but get distracted halfway', type: 'ringOfFire', weight: 2 }, { text: 'I worry about doing it perfectly', type: 'anxious', weight: 2 }] },
+  { id: 2, text: 'How do you experience time?', answers: [{ text: "Time? What time? I'm always late", type: 'temporal', weight: 3 }, { text: "I'm constantly rushing", type: 'ringOfFire', weight: 2 }, { text: 'I lose track of it completely', type: 'inattentive', weight: 2 }, { text: "I'm anxious about being late", type: 'anxious', weight: 1 }] },
+  { id: 3, text: 'Your energy levels are usually:', answers: [{ text: 'Bouncing off the walls', type: 'ringOfFire', weight: 3 }, { text: 'Inconsistent — high then crashed', type: 'limbic', weight: 2 }, { text: 'Calm but easily overwhelmed', type: 'inattentive', weight: 2 }, { text: 'Anxious and tense', type: 'anxious', weight: 2 }] },
+  { id: 4, text: 'In social situations, you tend to:', answers: [{ text: 'Talk a lot and interrupt people', type: 'ringOfFire', weight: 2 }, { text: 'Act without thinking about consequences', type: 'classic', weight: 2 }, { text: 'Struggle to follow conversations', type: 'inattentive', weight: 2 }, { text: 'Worry about saying the wrong thing', type: 'anxious', weight: 2 }] },
+  { id: 5, text: 'Your workspace is usually:', answers: [{ text: 'Chaotic — I work in organized chaos', type: 'classic', weight: 2 }, { text: 'Perfectly organized or completely messy', type: 'overfocused', weight: 2 }, { text: 'I have no idea where anything is', type: 'temporal', weight: 2 }, { text: "Whatever — I'm too busy to care", type: 'limbic', weight: 2 }] },
+  { id: 6, text: 'When you make a mistake, you:', answers: [{ text: 'Shrug it off and move on', type: 'classic', weight: 2 }, { text: 'Spiral and obsess over it', type: 'overfocused', weight: 3 }, { text: "Didn't even notice I made one", type: 'temporal', weight: 2 }, { text: 'Get frustrated and try again', type: 'limbic', weight: 1 }] },
+  { id: 7, text: 'Your to-do list is:', answers: [{ text: 'Non-existent — I just do things', type: 'temporal', weight: 2 }, { text: 'Overwhelming and never-ending', type: 'anxious', weight: 2 }, { text: 'Started but never finished', type: 'limbic', weight: 2 }, { text: 'What to-do list?', type: 'inattentive', weight: 2 }] },
+  { id: 8, text: 'You focus best when:', answers: [{ text: "There's a deadline and pressure", type: 'classic', weight: 2 }, { text: "I'm genuinely interested in the topic", type: 'inattentive', weight: 2 }, { text: 'I can move around and fidget', type: 'ringOfFire', weight: 2 }, { text: 'Everything is perfect and organized', type: 'overfocused', weight: 2 }] },
+  { id: 9, text: 'Your biggest struggle is:', answers: [{ text: 'Staying still and focused', type: 'ringOfFire', weight: 3 }, { text: 'Controlling my impulses', type: 'classic', weight: 3 }, { text: 'Remembering things and paying attention', type: 'temporal', weight: 3 }, { text: 'Perfectionism and anxiety', type: 'anxious', weight: 3 }] },
+  { id: 10, text: 'If you had to describe yourself in one word:', answers: [{ text: 'Chaotic', type: 'classic', weight: 2 }, { text: 'Scattered', type: 'inattentive', weight: 2 }, { text: 'Energetic', type: 'ringOfFire', weight: 2 }, { text: 'Combination of everything', type: 'limbic', weight: 3 }] },
 ];
 
-export const ADHD_TYPE_RESULTS = {
-  classic: { type: 'Classic ADHD', character: 'The "Quest-Chaser" pattern', description: 'Your answers point toward a classic ADHD pattern: high energy, impulsive starts, and plenty of ideas pulling for your attention.' },
-  inattentive: { type: 'Inattentive ADHD', character: 'The "High Ping" pattern', description: 'Your answers point toward an inattentive ADHD pattern: drifting attention, forgetfulness, and thoughtful deep focus when something clicks.' },
-  hyperactive: { type: 'Hyperactive ADHD', character: 'The "Bouncy" pattern', description: 'Your answers point toward a hyperactive ADHD pattern: movement, mental momentum, and energy that is looking for a useful route.' },
-  impulsive: { type: 'Impulsive ADHD', character: 'The "Spontaneous" pattern', description: 'Your answers point toward an impulsive ADHD pattern: fast action, quick decisions, and an appetite for what is new or immediate.' },
-  anxious: { type: 'Anxious ADHD', character: 'The "Worried" pattern', description: 'Your answers point toward an anxious ADHD pattern: careful thinking, high self-monitoring, and perfection pressure that can make a task feel bigger.' },
-  temporal: { type: 'Temporal ADHD', character: 'The "Time-Blind" pattern', description: 'Your answers point toward a temporal ADHD pattern: time can disappear, feel compressed, or become urgent without warning.' },
-  combination: { type: 'Combination ADHD', character: 'The "Multi-Signal" pattern', description: 'Your answers point toward a combination ADHD pattern: more than one familiar signal may be showing up at the same time.' },
-} as const;
+export const ADHD_TYPE_RESULTS: Record<QuizTypeKey, Omit<QuizResult, 'resultKey' | 'score'>> = {
+  classic: { type: 'Classic ADHD', character: 'The "Quest-Chaser" pattern', description: 'Your answers leaned toward a classic ADHD pattern in this quiz.' },
+  inattentive: { type: 'Inattentive ADHD', character: 'The "High Ping" pattern', description: 'Your answers leaned toward an inattentive ADHD pattern in this quiz.' },
+  overfocused: { type: 'Overfocused ADHD', character: 'The "Strong Grip" pattern', description: 'Your answers leaned toward an overfocused ADHD pattern in this quiz.' },
+  temporal: { type: 'Temporal Lobe ADHD', character: 'The "Time-Blind" pattern', description: 'Your answers leaned toward a temporal lobe ADHD pattern in this quiz.' },
+  limbic: { type: 'Limbic ADHD', character: 'The "Low-gear" pattern', description: 'Your answers leaned toward a limbic ADHD pattern in this quiz.' },
+  ringOfFire: { type: 'Ring of Fire ADHD', character: 'The "Many Tabs" pattern', description: 'Your answers leaned toward a Ring of Fire ADHD pattern in this quiz.' },
+  anxious: { type: 'Anxious ADHD', character: 'The "Careful Thought" pattern', description: 'Your answers leaned toward an anxious ADHD pattern in this quiz.' },
+};
 
-const INITIAL_SCORES = { classic: 0, inattentive: 0, hyperactive: 0, impulsive: 0, anxious: 0, temporal: 0, combination: 0 };
+const INITIAL_SCORES: Record<QuizTypeKey, number> = { classic: 0, inattentive: 0, overfocused: 0, temporal: 0, limbic: 0, ringOfFire: 0, anxious: 0 };
 
 export function calculateQuizResult(answers: QuizAnswer[]): QuizResult {
   const scores = { ...INITIAL_SCORES };
-  answers.forEach((answer) => { scores[answer.type as keyof typeof scores] += answer.weight; });
-  const highestType = Object.entries(scores).reduce((current, next) => current[1] >= next[1] ? current : next)[0] as keyof typeof ADHD_TYPE_RESULTS;
+  answers.forEach((answer) => { scores[answer.type] += answer.weight; });
+  const highestType = (Object.entries(scores) as [QuizTypeKey, number][]).reduce((current, next) => current[1] >= next[1] ? current : next)[0];
   const profile = ADHD_TYPE_RESULTS[highestType];
-  return { type: profile.type, character: profile.character, score: scores[highestType], description: profile.description };
+  return { resultKey: highestType, type: profile.type, character: profile.character, score: scores[highestType], description: profile.description };
 }
 
 interface QuizFlowProps { onComplete: (quizResult: QuizResult) => void; }
