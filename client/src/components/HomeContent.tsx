@@ -67,13 +67,10 @@ export default function HomeContent() {
             <h2 className="section-heading initiation-panel-title">Built for the Initiation Problem</h2>
             <div className="section-content">
               <p>
-                Most productivity apps organise your tasks. DoTheThing initiates them.
+                Most productivity apps organise your tasks. DoTheThing helps you get started.
               </p>
               <p>
-                There's a difference. Organising assumes you can already break a task down, estimate how long it'll take, and generate the signal to begin. For ADHD brains, those are the exact steps executive dysfunction blocks.
-              </p>
-              <p>
-                DoTheThing converts vague tasks into specific, numbered micro-steps before you begin. Every estimate includes a 20–30% buffer — because time blindness makes optimistic estimates structurally wrong, every time. The focus level setting means a day where you're running on fumes gets a different plan than a sharp morning.
+                For ADHD brains, knowing what needs doing and getting moving can be two different things. DoTheThing is built for that gap.
               </p>
             </div>
             <aside className="initiation-post-it" aria-label="Encouragement">
@@ -142,7 +139,7 @@ export default function HomeContent() {
           </article>
         </div>
         <div className="section-content audience-support-copy">
-          <p>The <a href="https://www.researchgate.net/publication/5344712_The_prevalence_and_effects_of_Adult_Attention-Deficithyperactivity_Disorder_ADHD_on_the_performance_of_workers_Results_from_the_WHO_World_Mental_Health_Survey_Initiative" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>WHO World Mental Health Survey</a> found that adults lose an average of 22 working days a year to executive dysfunction. DoTheThing won't fix your biology or your boss, but it acts as an external executive function—giving you a specific first step when your brain (or your team) can't generate one on its own.</p>
+          <p>The <a href="https://www.researchgate.net/publication/5344712_The_prevalence_and_effects_of_Adult_Attention-Deficithyperactivity_Disorder_ADHD_on_the_performance_of_workers_Results_from_the_WHO_World_Mental_Health_Survey_Initiative" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--pixel-accent)', textDecoration: 'underline', cursor: 'pointer' }}>WHO World Mental Health Survey</a> found that adults lose an average of 22 working days a year to executive dysfunction. DoTheThing supplies an external first step when your brain needs one.</p>
         </div>
       </section>
 

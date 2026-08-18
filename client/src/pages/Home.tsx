@@ -373,7 +373,14 @@ export default function Home() {
             <div className="reference-task-layout">
               <div className="mobile-card reference-task-card" id="widget">
                 <div className="reference-task-heading">
-                  <span className="reference-task-icon" aria-hidden="true">▣</span>
+                  <span className="reference-task-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false">
+                      <path d="m4.5 7 2 2 3.5-4" />
+                      <path d="M12 7h7" />
+                      <path d="m4.5 15 2 2 3.5-4" />
+                      <path d="M12 15h7" />
+                    </svg>
+                  </span>
                   <div>
                     <h2 className="reference-task-title">What needs doing?</h2>
                     <p className="reference-task-helper">Be specific or fuzzy—either way works. We’ll help you start.</p>

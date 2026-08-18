@@ -1001,3 +1001,13 @@
 
 ## Homepage Visual Edit Follow-Up
 - [x] Verify the visual-editor request to remove the homepage input target, apply the intended removal manually if needed, and ensure the task-entry workflow remains intact
+
+## Initiation Problem Copy Refinement
+- [x] Shorten the Initiation Problem introduction and remove overlap with the six numbered benefit pointers
+- [x] Shorten the WHO-supporting sentence while retaining its source attribution and the external-first-step message
+
+## Minimal Featured Posts Continuation
+- [ ] Create an approval-only minimal Featured Posts layout that sits quietly beneath Learning Paths without competing with it
+
+## Task Widget Icon Restoration
+- [x] Restore the intended visible icon beside the “What needs doing?” task-widget heading
