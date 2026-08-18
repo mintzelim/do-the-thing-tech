@@ -115,6 +115,14 @@ export const pageMetaTags = {
     ogId: 'https://dothething.tech/contact#page',
     keywords: 'contact DoTheThing, feedback, partnership, support',
   },
+  faq: {
+    title: 'DoTheThing FAQ | ADHD Task Breakdown Help',
+    description: 'Clear answers about using DoTheThing for task breakdowns, brain dumps, focus-aware estimates, privacy, support, and product boundaries.',
+    canonicalUrl: 'https://dothething.tech/faq',
+    ogUrl: 'https://dothething.tech/faq',
+    ogId: 'https://dothething.tech/faq#webpage',
+    keywords: 'DoTheThing FAQ, ADHD task breakdown help, task paralysis help, executive function productivity tool',
+  },
   privacy: {
     title: 'Privacy Policy | DoTheThing',
     description: 'Read DoTheThing\'s privacy policy. Learn how we collect, use, and protect your personal data.',

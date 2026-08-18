@@ -61,3 +61,11 @@ If this direction is approved, I will build it exactly as the accompanying visua
 ## Visual reconciliation check
 
 The revised exploration was visually checked at desktop width after reconciliation. It now uses the landing header proportions and action treatment, the open hero’s existing left-copy/right-mascot composition, the live `#fffefb` wide-panel geometry with `#a8afc2` outline and 7px × 8px neutral shadow, the same centered Inter 800 section-heading tier, `#c5cada` compact FAQ rows with 10px corners, and the landing mobile stack behavior. The former dark exploration banner, substitute navigation shell, dashed hero note, and generic 900px card were removed because they were not part of the approved landing system.
+
+## Implementation visual check
+
+The first development render confirmed the page content, route, footer discovery link, and wording. It also showed that the FAQ route was loading the landing reconciliation’s proof-bubble positioning rule but not the base hero visual geometry rule: browser inspection measured a block-level, unconstrained mascot stage instead of the landing hero’s flex-centred contained stage. The production implementation now explicitly defines the FAQ-scoped stage geometry before final desktop and mobile verification. The same inspection showed that the shared navigation’s base header geometry was absent from this route during direct development rendering, so the page also needs an exact scoped fallback for the existing header shell rather than a new header design.
+
+The corrected development render now measures the expected 184px pixel logo, a constrained 406px mascot stage with 300px minimum height, and a contained 406px-wide mascot image inside the desktop hero column. The header shell is restored to the shared 1240px rail with its existing relative placement. This is the same landing-system composition, not a separate FAQ header or mascot treatment.
+
+A 390px-wide mobile render was also checked. It uses the shared compact header and menu control, places the mascot stage above the copy as the landing system requires, keeps the **ASK AWAY.** speech bubble clear of the mascot, preserves the Inter 800 heading hierarchy, and stacks the two 48px actions without crowding the page edge.

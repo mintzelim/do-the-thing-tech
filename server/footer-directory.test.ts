@@ -12,6 +12,7 @@ describe("selected Directory footer", () => {
     expect(footer).toContain('title: "TRUST"');
     expect(footer).toContain('title: "EXPLORE"');
     expect(footer).toContain('["How it works", "/how-it-works"]');
+    expect(footer).toContain('["FAQ", "/faq"]');
     expect(footer).toContain('["Editorial standards", "/editorial-standards"]');
     expect(footer).toContain('["Compare with Goblin.tools", "/compare/goblin-tools"]');
     expect(footer).toContain('["Media information", "/media"]');

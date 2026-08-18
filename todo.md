@@ -909,7 +909,10 @@
 - [x] Audit existing verified product FAQs, FAQPage schema, related navigation, and FAQ-route availability
 - [x] Prepare an approval-only standalone FAQ-page design and content map using only substantiated product, privacy, and support answers
 - [x] Reconcile the approval-only FAQ exploration exactly to the landing-page rail, panel, typography, eyebrow, spacing, button, and responsive system before requesting implementation approval
-- [ ] After approval, implement the `/faq` route, internal navigation, canonical FAQPage schema, test coverage, responsive validation, sitemap inclusion, and publish verification
+- [x] Create a shared, visible-only FAQ content source with the 12 approved substantiated product, privacy, support, and boundary answers
+- [x] Implement the approved landing-system `/faq` page using the shared Footer without a page-specific footer variant
+- [x] Add `/faq` route discovery in navigation and footer, canonical metadata, canonical FAQPage schema, and sitemap inclusion
+- [x] Add regression tests and verify crawler-visible, desktop, and mobile rendering before publishing
 
 ## Approved NAP, Entity Clarity, and Freshness Signals
 - [x] Add the approved online-business NAP details through shared sources on the homepage, Contact page, and Organization structured data

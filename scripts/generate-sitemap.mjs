@@ -18,6 +18,7 @@ const staticPages = [
   { url: "/compare/goblin-tools", priority: "0.8", changefreq: "monthly" },
   { url: "/editorial-standards", priority: "0.7", changefreq: "monthly" },
   { url: "/media", priority: "0.6", changefreq: "monthly" },
+  { url: "/faq", priority: "0.7", changefreq: "monthly" },
   { url: "/blog", priority: "0.9", changefreq: "daily" },
   { url: "/contact", priority: "0.7", changefreq: "monthly" },
   { url: "/privacy", priority: "0.5", changefreq: "yearly" },

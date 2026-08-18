@@ -1,5 +1,7 @@
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { TimerProvider } from "./contexts/TimerContext";
+import "./pixel-art-refined.css";
+import "./landing-system-reconciliation.css";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
@@ -13,6 +15,7 @@ import ProductProof from "./pages/ProductProof";
 import GoblinToolsComparison from "./pages/GoblinToolsComparison";
 import EditorialStandards from "./pages/EditorialStandards";
 import MediaKit from "./pages/MediaKit";
+import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 import { Switch, Route } from "wouter";
 import { BlogPostsProvider, type BlogPostRecord } from "./contexts/BlogPostsContext";
@@ -27,6 +30,7 @@ function Router() {
       <Route path={"/compare/goblin-tools"} component={GoblinToolsComparison} />
       <Route path={"/editorial-standards"} component={EditorialStandards} />
       <Route path={"/media"} component={MediaKit} />
+      <Route path={"/faq"} component={FAQ} />
       <Route path={"/blog/:slug"} component={BlogPost} />
       <Route path={"/blog"} component={Blog} />
       <Route path={"/contact"} component={Contact} />

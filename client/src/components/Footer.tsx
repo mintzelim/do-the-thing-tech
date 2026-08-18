@@ -20,6 +20,7 @@ const footerGroups = [
     title: "TRUST",
     links: [
       ["About", "/about"],
+      ["FAQ", "/faq"],
       ["Editorial standards", "/editorial-standards"],
       ["Privacy", "/privacy"],
       ["Terms", "/terms"],
