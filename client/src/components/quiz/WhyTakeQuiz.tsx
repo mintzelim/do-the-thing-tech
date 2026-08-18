@@ -1,74 +1,9 @@
+const signals = [
+  { title: 'Understand your brain', description: 'Learn which of the 7 ADHD types matches your brain pattern and discover your unique strengths.' },
+  { title: 'Get your ADHD type', description: 'See the result pattern your answers point toward and the everyday strengths it can highlight.' },
+  { title: 'Keep a useful next step', description: 'Use the result as a starting point for one practical adjustment or a smaller task.' },
+];
+
 export default function WhyTakeQuiz() {
-  const features = [
-    {
-      icon: '🧠',
-      title: 'UNDERSTAND YOUR BRAIN',
-      description:
-        'Learn which of the 7 ADHD types matches your brain pattern and discover your unique strengths.'
-    },
-    {
-      icon: '🎴',
-      title: 'GET YOUR ADHD TYPE CARD',
-      description:
-        'Receive a beautiful trading card with your ADHD type, character, and personalized stats.'
-    },
-    {
-      icon: '🕸️',
-      title: 'SHARE & CONNECT',
-      description:
-        'Download your card and share it on TikTok, Instagram, Facebook, and Twitter to connect with others.'
-    }
-  ];
-
-  return (
-    <section
-      className="relative w-full py-24 px-4 sm:px-6 lg:px-8"
-      style={{
-        backgroundImage:
-          'url(/figma-quiz-assets/why-take-quiz-bg.png)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
-      {/* Overlay for better readability */}
-      <div className="absolute inset-0 bg-black/30"></div>
-
-      <div className="relative z-10 max-w-6xl mx-auto">
-        {/* Section Title */}
-        <h2
-          className="font-['Press_Start_2P'] text-white text-3xl sm:text-4xl md:text-5xl text-center mb-16 drop-shadow-lg"
-          style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}
-        >
-          WHY TAKE THIS QUIZ?
-        </h2>
-
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-purple-600 border-4 border-purple-800 p-6 sm:p-8 flex flex-col items-center text-center hover:bg-purple-700 transition-colors"
-            >
-              {/* Icon */}
-              <div className="text-5xl sm:text-6xl mb-4">{feature.icon}</div>
-
-              {/* Title */}
-              <h3
-                className="font-['Press_Start_2P'] text-white text-sm sm:text-base md:text-lg mb-4 leading-tight"
-                style={{ minHeight: '3rem' }}
-              >
-                {feature.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-white text-sm sm:text-base leading-relaxed">
-                {feature.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+  return <section className="quiz-signals"><div className="quiz-shell quiz-panel quiz-panel-inner quiz-signal-stack"><div className="quiz-signal-copy"><p className="quiz-eyebrow">WHY TAKE THIS QUIZ?</p><h2>Find the type that feels most like you.</h2><p>This is a 10-question ADHD type quiz designed to help you notice the patterns, strengths, and friction points that show up most often for you.</p><aside className="quiz-postit"><small>ONE THING TO KEEP</small><p>You do not need a perfect answer to find a useful pattern.</p></aside></div><div className="quiz-signal-list">{signals.map((signal, index) => <div className="quiz-signal-row" key={signal.title}><b>{String(index + 1).padStart(2, '0')}</b><span><strong>{signal.title}.</strong> {signal.description}</span></div>)}</div></div></section>;
 }

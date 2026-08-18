@@ -981,3 +981,9 @@
 
 ## Quiz Design-System Reconciliation
 - [x] Audit the live quiz flow against the approved DoTheThing landing system and create three approval-only redesign directions before changing the public quiz
+
+## Selected Quiz Direction: Option 03 · Gentle Questline
+- [x] Apply the approved Gentle Questline visual system across the quiz landing, ten-question flow, and result view while preserving scoring, navigation, and footer behavior
+- [x] Add a clear non-diagnostic self-reflection boundary and a practical task-tool next action without representing the quiz as clinical assessment
+- [x] Add regression coverage, validate desktop and mobile quiz paths, and publish the selected design-system reconciliation
+- [x] Preserve an unmistakable “ADHD Type Quiz” title, the direct ten-question quiz purpose, and the existing quiz-first journey while applying Gentle Questline styling
