@@ -6,9 +6,9 @@
 
 Every direction retains the exact existing text: **“Pro Tip: Pin this tab so I stay safe while you work!”**, **“Right-click the tab and hit ‘Pin’ to keep DoTheThing always visible.”**, and the **“GOT IT”** dismissal. The component remains a single side-rail unit next to the task widget, not a card nested within another card. The close affordance remains available, and body copy stays in Inter.
 
-## Option 01 · Pinboard Post-It — recommended
+## Option 01 · Pixel Post-It — recommended
 
-A single soft butter-yellow Post-It becomes the panel itself, held by one small indigo pixel pin. The current disk glyph acts as a compact utility stamp; the title stays in Inter for readability, while the short `QUICK SAVE` label uses VT323. A restrained lavender drop shadow and slight rotation connect it directly to the approved Signal Stack Post-It while keeping the content calm and scanable.
+A single Pixel Post-It becomes the panel itself. It now reuses the exact approved component treatment from the landing design system: `#fff8bf` surface, `1px solid var(--border)`, `8px` radius, `4px 4px 0 #d9c6f4` shadow, `-1.1deg` rotation, compact VT323 label, and Inter reading copy. The current disk glyph acts as a compact utility stamp; no new pin, outline colour, or shadow treatment is introduced.
 
 Use this when the tip should feel **warm, optional, and encouraging** rather than like a product feature. This is the strongest fit for the current one-off reminder.
 

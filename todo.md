@@ -966,3 +966,4 @@
 
 ## Pro Tip Panel Exploration
 - [x] Create three approval-only visual directions for a more engaging homepage Pro Tip panel, including a post-it treatment, without changing the live widget before user selection
+- [x] Revise the approval-only Pinboard Post-It direction to reuse the exact component-system Post-It treatment from `dothething-landing-design-system.html`
