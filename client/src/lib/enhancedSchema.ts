@@ -2,6 +2,7 @@
  * Enhanced Schema.org JSON-LD for comprehensive SEO and rich snippets
  * Includes Organization, Product, SoftwareApplication, WebSite, WebPage, FAQPage, and BreadcrumbList
  */
+import { SITE_IDENTITY } from "./siteIdentity";
 
 export const enhancedSchema = {
   "@context": "https://schema.org",
@@ -10,12 +11,15 @@ export const enhancedSchema = {
     {
       "@type": "Organization",
       "@id": "https://dothething.tech/#organization",
-      "name": "Boundless One Ventures",
-      "alternateName": "DoTheThing",
+      "name": SITE_IDENTITY.name,
       "url": "https://dothething.tech/",
       "logo": "https://dothething.tech/logo.png",
       "image": "https://dothething.tech/logo.png",
-      "description": "Boundless One Ventures builds AI-powered tools for neurodivergent individuals. DoTheThing is a global SaaS platform that helps people with ADHD and executive dysfunction break down overwhelming tasks into manageable micro-steps with AI-powered time estimation.",
+      "description": SITE_IDENTITY.businessDescription,
+      "legalName": SITE_IDENTITY.legalName,
+      "email": SITE_IDENTITY.supportEmail,
+      "telephone": SITE_IDENTITY.telephone,
+      "address": { "@type": "PostalAddress", ...SITE_IDENTITY.address },
       "foundingDate": "2026",
       "foundingLocation": {
         "@type": "Place",
@@ -40,7 +44,8 @@ export const enhancedSchema = {
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
-        "email": "contact@dothething.tech",
+        "email": SITE_IDENTITY.supportEmail,
+        "telephone": SITE_IDENTITY.telephone,
         "url": "https://dothething.tech/contact"
       },
       "sameAs": [
@@ -73,6 +78,9 @@ export const enhancedSchema = {
       "name": "DoTheThing",
       "url": "https://dothething.tech/",
       "description": "AI-powered task breakdown app for ADHD brains - global access, no login required",
+      "softwareVersion": SITE_IDENTITY.softwareVersion,
+      "softwareHelp": "https://dothething.tech/contact",
+      "mainEntityOfPage": { "@id": "https://dothething.tech/#webpage" },
       "publisher": {
         "@id": "https://dothething.tech/#organization"
       }

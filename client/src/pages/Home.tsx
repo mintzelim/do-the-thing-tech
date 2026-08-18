@@ -11,6 +11,7 @@ import { ErrorModal } from "@/components/ErrorModal";
 import PocketsFullModal from "@/components/PocketsFullModal";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import { assetUrl } from "@/lib/assetUrl";
+import { SITE_IDENTITY } from "@/lib/siteIdentity";
 import "../pixel-art-refined.css";
 import "../landing-system-reconciliation.css";
 
@@ -350,6 +351,9 @@ export default function Home() {
                 <p className="reference-hero-description">
                   Break tasks into smaller steps, build momentum,<br className="reference-desktop-break" />
                   and get more of the important stuff done.
+                </p>
+                <p className="reference-hero-description" style={{ fontSize: "0.96rem", marginTop: "-0.5rem", maxWidth: "43rem" }}>
+                  {SITE_IDENTITY.entityClarity}
                 </p>
                 <div className="reference-hero-actions">
                   <a href="#widget" className="reference-primary-action">START A TASK <span aria-hidden="true">→</span></a>

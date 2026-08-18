@@ -27,6 +27,36 @@ describe("public SSR and metadata rendering", () => {
     expect(entry).toContain("notFound: true");
   });
 
+  it("uses the public DoTheThing brand and a clean product description for the organization schema", () => {
+    expect(entry).toContain("name: SITE_NAME");
+    expect(entry).toContain("description: SITE_IDENTITY.businessDescription");
+    expect(entry).not.toContain('name: "Boundless One Ventures"');
+    expect(entry).not.toContain("alternateName: \"DoTheThing\"");
+  });
+
+  it("emits a specific SoftwareApplication entity for About with the required public product fields", () => {
+    expect(entry).toContain('applicationCategory: "ProductivityApplication"');
+    expect(entry).toContain('operatingSystem: "Web"');
+    expect(entry).toContain('offers: { "@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock" }');
+    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema("/about"');
+  });
+
+  it("emits the same specific SoftwareApplication entity on blog and supporting public routes", () => {
+    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema("/blog"');
+    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema(url, post.title, post.excerpt), blogSchema(post), breadcrumbSchema(post)]');
+    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema("/editorial-standards"');
+    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema(path, page.title, page.description)]');
+  });
+
+  it("uses valid application metadata and public identity details without fabricating ratings", () => {
+    expect(entry).toContain("softwareVersion: SITE_IDENTITY.softwareVersion");
+    expect(entry).toContain('softwareHelp: `${ORIGIN}/contact`');
+    expect(entry).toContain('mainEntityOfPage: { "@id": `${ORIGIN}/#webpage` }');
+    expect(entry).toContain("telephone: SITE_IDENTITY.telephone");
+    expect(entry).toContain('address: { "@type": "PostalAddress", ...SITE_IDENTITY.address }');
+    expect(entry).not.toContain("aggregateRating");
+  });
+
   it("hydrates the same preloaded blog registry and builds the dedicated SSR bundle in production mode", () => {
     expect(client).toContain("window.__DTT_BLOG_POSTS__");
     expect(client).toContain("hydrateRoot");

@@ -1,4 +1,5 @@
 import "../footer.css";
+import { SITE_IDENTITY } from "@/lib/siteIdentity";
 
 const footerGroups = [
   {
@@ -42,6 +43,12 @@ export default function Footer() {
           <p className="site-footer__eyebrow">DOTHETHING</p>
           <p className="site-footer__promise">Make the next thing doable.</p>
           <p className="site-footer__description">Task management for ADHD brains. One smaller next step, when you are ready.</p>
+          <p className="site-footer__entity">{SITE_IDENTITY.ownershipStatement}</p>
+          <address className="site-footer__contact">
+            {SITE_IDENTITY.addressLine}<br />
+            <a href={SITE_IDENTITY.telephoneHref}>{SITE_IDENTITY.telephone}</a> · <a href={`mailto:${SITE_IDENTITY.supportEmail}`}>{SITE_IDENTITY.supportEmail}</a>
+          </address>
+          <p className="site-footer__reviewed">{SITE_IDENTITY.productReviewedLabel}</p>
         </div>
         <nav className="site-footer__groups" aria-label="Footer navigation">
           {footerGroups.map((group) => (

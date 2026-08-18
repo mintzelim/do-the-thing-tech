@@ -1,0 +1,20 @@
+export const SITE_IDENTITY = {
+  name: "DoTheThing",
+  legalName: "Boundless One Ventures",
+  ownershipStatement: "DoTheThing is an online-only brand owned by Boundless One Ventures.",
+  businessDescription: "DoTheThing is a free web-based task breakdown tool that helps people with ADHD and executive-function friction turn overwhelming tasks into small, actionable steps.",
+  entityClarity: "An online task-breakdown tool for people with ADHD and executive-function friction, with focus-aware steps, realistic time estimates, and a visible task timer. No account is required to start.",
+  supportEmail: "support@dothething.tech",
+  telephone: "+60166467024",
+  telephoneHref: "tel:+60166467024",
+  addressLine: "15B-8-4, Mont Kiara Pines, Jalan Kiara 1, Mont Kiara, 50480 Kuala Lumpur, Malaysia",
+  address: {
+    streetAddress: "15B-8-4, Mont Kiara Pines, Jalan Kiara 1, Mont Kiara",
+    postalCode: "50480",
+    addressLocality: "Kuala Lumpur",
+    addressCountry: "MY",
+  },
+  softwareVersion: "1.0.0",
+  productReviewedLabel: "Product information reviewed 18 August 2026.",
+  productReviewedDate: "2026-08-18",
+} as const;

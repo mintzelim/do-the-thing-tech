@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { toast } from "sonner";
 import { trpc } from "@/lib/trpc";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
+import { SITE_IDENTITY } from "@/lib/siteIdentity";
 import "../pixel-art-refined.css";
 import "../utility-pages.css";
 
@@ -85,7 +86,12 @@ export default function Contact() {
         </form>
 
         <div className="utility-contact-details">
-          <p>📧 Email: support@dothething.tech</p>
+          <p><strong>{SITE_IDENTITY.name}</strong> is an online-only task-breakdown service for people with ADHD and executive-function friction.</p>
+          <p>{SITE_IDENTITY.ownershipStatement}</p>
+          <p>📧 Email: <a href={`mailto:${SITE_IDENTITY.supportEmail}`}>{SITE_IDENTITY.supportEmail}</a></p>
+          <p>☎ Phone: <a href={SITE_IDENTITY.telephoneHref}>{SITE_IDENTITY.telephone}</a></p>
+          <address>📍 Address: {SITE_IDENTITY.addressLine}</address>
+          <p><small>{SITE_IDENTITY.productReviewedLabel}</small></p>
           <p>We typically respond within 24 hours.</p>
         </div>
       </main>

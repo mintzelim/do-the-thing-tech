@@ -13,7 +13,7 @@ describe("utility page design system", () => {
     expect(contact).toContain('className="utility-contact-form"');
     expect(contact).toContain('className="utility-submit"');
     expect(contact).toContain("contactMutation.mutateAsync");
-    expect(contact).toContain("support@dothething.tech");
+    expect(contact).toContain("SITE_IDENTITY.supportEmail");
   });
 
   it("preserves Privacy and Terms legal copy in the shared readable legal-page system", () => {

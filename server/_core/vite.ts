@@ -8,6 +8,9 @@ import { loadBlogPosts } from "../blog-metadata.js";
 const ORIGIN = "https://dothething.tech";
 const SITE_NAME = "DoTheThing";
 const FALLBACK_DESCRIPTION = "Free, no-login task breakdown for ADHD and executive-function friction.";
+const LEGACY_BLOG_REDIRECTS: Record<string, string> = {
+  "/blog/adhd-burnout": "/blog/adhd-burnout-recovery",
+};
 
 type SsrHead = {
   title: string;
@@ -80,6 +83,8 @@ export async function setupVite(app: Express, server: Server) {
   app.use(vite.middlewares);
   app.use("*", async (req, res, next) => {
     try {
+      const canonicalPath = LEGACY_BLOG_REDIRECTS[req.originalUrl.split("?")[0]];
+      if (canonicalPath) return res.redirect(301, canonicalPath);
       const templatePath = path.resolve(import.meta.dirname, "../..", "client", "index.html");
       let template = await fs.promises.readFile(templatePath, "utf-8");
       template = template.replace(`src="/src/entry-client.tsx"`, `src="/src/entry-client.tsx?v=${nanoid()}"`);
@@ -105,6 +110,8 @@ export function serveStatic(app: Express) {
   app.use((req: Request, res: Response, next) => {
     if (req.path === "/index.html") return res.redirect(301, "/");
     if (req.path !== "/" && /\/+$/ .test(req.path)) return res.redirect(301, req.path.replace(/\/+$/, "") + req.originalUrl.slice(req.path.length));
+    const canonicalPath = LEGACY_BLOG_REDIRECTS[req.originalUrl.split("?")[0]];
+    if (canonicalPath) return res.redirect(301, canonicalPath);
     next();
   });
   app.use(express.static(distPath, { index: false, redirect: false, maxAge: "1d", etag: false }));

@@ -877,3 +877,29 @@
 - [x] Inventory every standard long-form article-content structure, including Direct Answer, TL;DR, steps, bullets, tables, graphs, sources, hyperlinks, citations, FAQs, and article-to-tool transitions
 - [x] Add selection-only visual variants, use rules, accessibility requirements, and responsive constraints for the complete component system in both design-system references
 - [x] Validate the complete reusable blog content library and present all options before changing the live blog template
+
+## GEO/AEO Structured-Data Brand Correction
+- [x] Replace the legal/entity organization name with the public-facing DoTheThing brand name at the structured-data source
+- [x] Replace the legal/entity organization description with concise public-facing DoTheThing product language at the structured-data source
+- [x] Include the specific SoftwareApplication schema on the About page with applicationCategory, offers, and operatingSystem
+- [x] Include the specific SoftwareApplication schema on every blog article page, including `/blog/breaking-down-big-tasks`
+- [x] Add regression coverage ensuring Blog, blog articles, About, Contact, Editorial Standards, How It Works, Media, Privacy, Quiz, and Terms schema graphs identify the public brand and specific app fields consistently
+- [ ] Validate emitted Blog, blog article, About, Contact, Editorial Standards, How It Works, Media, Privacy, Quiz, and Terms JSON-LD, production/SSR build, and publish the schema correction
+- [ ] Re-check the published About JSON-LD after deployment to confirm the scanner can see the specific application fields
+- [x] Verify every blog article emits valid SoftwareApplication, public name, and concise description fields without embedding scanner diagnostic metadata
+
+## Reported Blog URL Availability
+- [x] Diagnose why `/blog/adhd-and-anxiety`, `/blog/adhd-burnout`, `/blog/adhd-and-emotional-dysregulation`, `/blog/adhd-medication-and-productivity`, `/blog/neuroscience-task-avoidance`, `/blog/adhd-relationships`, `/blog/adhd-workplace`, `/blog/adhd-sleep`, `/blog/adhd-financial-management`, `/blog/adhd-creativity`, `/blog/why-simpler-adhd-friendly-apps-work-better`, `/blog/free-tools-2026`, `/blog/neurodivergent-productivity-7-tactics`, and `/blog/how-to-break-down-tasks-adhd` fail crawler fetches against the published blog registry, sitemap, and crawl controls
+- [x] Apply and validate only any warranted source-level route, redirect, sitemap, or crawlability repair for the reported URLs
+
+## Valid Homepage SoftwareApplication Metadata
+- [x] Add valid softwareVersion, softwareHelp, and mainEntityOfPage fields to the canonical SoftwareApplication schema
+- [x] Preserve the public DoTheThing name and concise product description without adding a fabricated aggregateRating
+- [ ] Add regression coverage and validate the homepage JSON-LD, production build, and published output
+
+## Approved NAP, Entity Clarity, and Freshness Signals
+- [x] Add the approved online-business NAP details through shared sources on the homepage, Contact page, and Organization structured data
+- [x] Make DoTheThing’s business type, target customer, and differentiators explicit through shared homepage and core-service content without changing protected post-hero copy
+- [x] Add a factual freshness signal using shared source data rather than unsupported promotional or seasonal claims
+- [ ] Add regression coverage and validate consistent rendered NAP, entity clarity, freshness, and structured-data output
+- [x] Present homepage NAP details through the shared footer rather than crowding the protected hero composition

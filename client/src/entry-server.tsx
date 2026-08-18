@@ -6,10 +6,11 @@ import superjson from "superjson";
 import App from "./App";
 import { trpc } from "@/lib/trpc";
 import type { BlogPostRecord } from "@/contexts/BlogPostsContext";
+import { SITE_IDENTITY } from "./lib/siteIdentity";
 
 const ORIGIN = "https://dothething.tech";
-const SITE_NAME = "DoTheThing";
-const DEFAULT_DESCRIPTION = "Free, no-login task breakdown for ADHD and executive-function friction. Turn an overwhelming task or brain dump into small, actionable steps with focus-aware estimates and a visible timer.";
+const SITE_NAME = SITE_IDENTITY.name;
+const DEFAULT_DESCRIPTION = SITE_IDENTITY.businessDescription;
 const DEFAULT_IMAGE = `${ORIGIN}/og-image.png`;
 
 export type HeadMeta = {
@@ -28,13 +29,16 @@ export type RenderResult = { html: string; head: HeadMeta; blogPosts: BlogPostRe
 const organization = {
   "@type": "Organization",
   "@id": `${ORIGIN}/#organization`,
-  name: "Boundless One Ventures",
-  alternateName: "DoTheThing",
+  name: SITE_NAME,
   url: ORIGIN,
   logo: `${ORIGIN}/favicon.ico`,
-  description: "Boundless One Ventures builds DoTheThing, a practical task-breakdown tool for people experiencing ADHD and executive-function friction.",
+  description: SITE_IDENTITY.businessDescription,
+  legalName: SITE_IDENTITY.legalName,
+  email: SITE_IDENTITY.supportEmail,
+  telephone: SITE_IDENTITY.telephone,
+  address: { "@type": "PostalAddress", ...SITE_IDENTITY.address },
   founder: { "@type": "Person", name: "Lim Min Tze", jobTitle: "Founder", url: `${ORIGIN}/about` },
-  contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: "contact@dothething.tech", url: `${ORIGIN}/contact` },
+  contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: SITE_IDENTITY.supportEmail, telephone: SITE_IDENTITY.telephone, url: `${ORIGIN}/contact` },
   sameAs: ["https://www.instagram.com/dothething.tech", "https://www.tiktok.com/@dothething.tech"],
 };
 
@@ -46,6 +50,9 @@ const software = {
   operatingSystem: "Web",
   url: ORIGIN,
   description: DEFAULT_DESCRIPTION,
+  softwareVersion: SITE_IDENTITY.softwareVersion,
+  softwareHelp: `${ORIGIN}/contact`,
+  mainEntityOfPage: { "@id": `${ORIGIN}/#webpage` },
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   author: { "@id": `${ORIGIN}/#organization` },
   featureList: ["AI task breakdown", "focus-level adjustment", "breakdown-size controls", "time estimates", "visible countdown timer", "no login required"],
@@ -99,18 +106,18 @@ function faqSchema() {
 
 function metadataFor(path: string, posts: BlogPostRecord[]): HeadMeta {
   if (path === "/") return { title: "DoTheThing | Free ADHD Task Breakdown Tool", description: DEFAULT_DESCRIPTION, canonicalPath: "/", ogType: "website", jsonLd: [organization, website, software, pageSchema("/", "DoTheThing | Free ADHD Task Breakdown Tool", DEFAULT_DESCRIPTION), faqSchema()] };
-  if (path === "/about") return { title: "About DoTheThing | Task Breakdown for ADHD", description: "Learn who built DoTheThing, what the tool is designed to help with, and the boundaries of its practical ADHD-friendly task workflow.", canonicalPath: "/about", ogType: "website", jsonLd: [organization, website, pageSchema("/about", "About DoTheThing", "Learn who built DoTheThing and how its practical task workflow supports task initiation.")] };
+  if (path === "/about") return { title: "About DoTheThing | Task Breakdown for ADHD", description: "Learn who built DoTheThing, what the tool is designed to help with, and the boundaries of its practical ADHD-friendly task workflow.", canonicalPath: "/about", ogType: "website", jsonLd: [organization, website, software, pageSchema("/about", "About DoTheThing", "Learn who built DoTheThing and how its practical task workflow supports task initiation.")] };
   if (path === "/how-it-works") return { title: "How DoTheThing Works | ADHD Task Initiation Support", description: "See how DoTheThing turns an overwhelming task or brain dump into small next steps, focus-aware estimates, and a visible task timer.", canonicalPath: "/how-it-works", ogType: "website", jsonLd: [organization, website, software, pageSchema("/how-it-works", "How DoTheThing Works", "A practical task-initiation workflow for turning overwhelming tasks into small next steps.")] };
   if (path === "/compare/goblin-tools") return { title: "DoTheThing vs. Goblin.tools Magic ToDo | Task Workflow Comparison", description: "A fair comparison of DoTheThing and Goblin.tools Magic ToDo for task breakdown, execution flow, interface choices, and practical fit.", canonicalPath: "/compare/goblin-tools", ogType: "website", jsonLd: [organization, website, software, pageSchema("/compare/goblin-tools", "DoTheThing vs. Goblin.tools Magic ToDo", "A factual comparison of two task-breakdown workflows.")] };
-  if (path === "/editorial-standards") return { title: "Editorial Standards | DoTheThing", description: "How DoTheThing creates, reviews, updates, and corrects educational content about ADHD task management and executive function.", canonicalPath: "/editorial-standards", ogType: "website", jsonLd: [organization, website, pageSchema("/editorial-standards", "Editorial Standards", "How DoTheThing creates, reviews, and corrects its educational content.")] };
+  if (path === "/editorial-standards") return { title: "Editorial Standards | DoTheThing", description: "How DoTheThing creates, reviews, updates, and corrects educational content about ADHD task management and executive function.", canonicalPath: "/editorial-standards", ogType: "website", jsonLd: [organization, website, software, pageSchema("/editorial-standards", "Editorial Standards", "How DoTheThing creates, reviews, and corrects its educational content.")] };
   if (path === "/media") return { title: "Media and Independent Review Information | DoTheThing", description: "Factual information, product screenshots, and contact details for independent coverage or review of DoTheThing.", canonicalPath: "/media", ogType: "website", jsonLd: [organization, website, software, pageSchema("/media", "Media and Independent Review Information", "Factual product information for independent DoTheThing coverage.")] };
-  if (path === "/blog") return { title: "ADHD Task Management Guides | DoTheThing Blog", description: "Practical, source-backed guides about ADHD, executive function, task management, and task initiation.", canonicalPath: "/blog", ogType: "website", jsonLd: [organization, website, pageSchema("/blog", "ADHD Task Management Guides", "Practical guides about ADHD, executive function, and task management.")] };
+  if (path === "/blog") return { title: "ADHD Task Management Guides | DoTheThing Blog", description: "Practical, source-backed guides about ADHD, executive function, task management, and task initiation.", canonicalPath: "/blog", ogType: "website", jsonLd: [organization, website, software, pageSchema("/blog", "ADHD Task Management Guides", "Practical guides about ADHD, executive function, and task management.")] };
   if (path.startsWith("/blog/")) {
     const slug = path.slice("/blog/".length);
     const post = posts.find(item => item.slug === slug);
     if (!post) return { title: "Page not found | DoTheThing", description: DEFAULT_DESCRIPTION, canonicalPath: path, ogType: "website", noindex: true, notFound: true, jsonLd: [organization, website] };
     const url = `/blog/${post.slug}`;
-    return { title: `${post.title} | DoTheThing Blog`, description: post.excerpt, canonicalPath: url, ogType: "article", ogImage: absoluteUrl(post.featuredImage), jsonLd: [organization, website, pageSchema(url, post.title, post.excerpt), blogSchema(post), breadcrumbSchema(post)] };
+    return { title: `${post.title} | DoTheThing Blog`, description: post.excerpt, canonicalPath: url, ogType: "article", ogImage: absoluteUrl(post.featuredImage), jsonLd: [organization, website, software, pageSchema(url, post.title, post.excerpt), blogSchema(post), breadcrumbSchema(post)] };
   }
   const staticPages: Record<string, { title: string; description: string }> = {
     "/contact": { title: "Contact DoTheThing", description: "Contact the DoTheThing team with product questions, feedback, or partnership enquiries." },
@@ -119,7 +126,7 @@ function metadataFor(path: string, posts: BlogPostRecord[]): HeadMeta {
     "/quiz": { title: "ADHD Productivity Quiz | DoTheThing", description: "Explore an ADHD-friendly productivity learning path." },
   };
   const page = staticPages[path];
-  if (page) return { title: page.title, description: page.description, canonicalPath: path, ogType: "website", jsonLd: [organization, website, pageSchema(path, page.title, page.description)] };
+  if (page) return { title: page.title, description: page.description, canonicalPath: path, ogType: "website", jsonLd: [organization, website, software, pageSchema(path, page.title, page.description)] };
   if (path === "/current-tasks") return { title: "Current Tasks | DoTheThing", description: "Continue a local DoTheThing task session.", canonicalPath: path, ogType: "website", noindex: true, jsonLd: [organization, website] };
   return { title: "Page not found | DoTheThing", description: DEFAULT_DESCRIPTION, canonicalPath: path, ogType: "website", noindex: true, notFound: true, jsonLd: [organization, website] };
 }
