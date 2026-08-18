@@ -22,3 +22,7 @@ The published `/blog/adhd-symptoms-adults` page shows the new canonical featured
 ## Replacement boundary
 
 Any replacement must use **newly generated** canonical DoTheThing mascot visuals, retain each image’s existing educational job and accessible alt text, use project storage URLs, and preserve every article word, heading, table, citation, and link. The 21 illustrations should not be replaced with a repeated or generic visual; each must remain topic-specific.
+
+## Quota-reset continuation
+
+The first five Article 25 replacements have been queued and referenced. The remaining approved images are paused until the daily generation quota resets. A one-time automatic continuation is active; it must use the same canonical mascot reference for every new visual and stop rather than substitute an old, reused, human, or mismatched image if the quota remains unavailable.
