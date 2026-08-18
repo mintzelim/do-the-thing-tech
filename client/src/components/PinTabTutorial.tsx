@@ -53,7 +53,7 @@ export default function PinTabTutorial({
     ? ""
     : alwaysShowOnCurrentTasks ? "" : (showAfterBreakdown ? "" : "fixed bottom-6 right-6 z-50");
   const containerClass = variant === "task-side-panel"
-    ? "reference-pro-tip-panel"
+    ? "reference-pro-tip-panel reference-pro-tip-post-it"
     : alwaysShowOnCurrentTasks
       ? "current-tasks-pro-tip"
       : (showAfterBreakdown ? "border-4 border-foreground bg-card p-4 mt-4" : "border-4 border-foreground bg-card p-4 relative");
@@ -67,7 +67,7 @@ export default function PinTabTutorial({
           <div className="absolute -bottom-3 right-6 w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-foreground"></div>
         )}
         
-        <div className="flex items-start gap-3">
+        <div className="flex items-start gap-3 reference-pro-tip-content">
           {/* Pixel-art character */}
           <div className="flex-shrink-0 text-2xl font-vt323">
             💾
@@ -78,7 +78,7 @@ export default function PinTabTutorial({
               Pro Tip: Pin this tab so I stay safe while you work!
             </p>
             <p className="font-vt323 text-xs text-muted-foreground mb-3">
-              Right-click the tab and hit "Pin" to keep DoTheThing always visible.
+              Pin this tab to keep your tasks close. Check off steps and keep track as you go!
             </p>
             
             {!alwaysShowOnCurrentTasks && (

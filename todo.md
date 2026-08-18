@@ -963,7 +963,14 @@
 - [x] Preserve focus/value dismissal, keyboard text entry, `aria-hidden` visual-only prompts, and a static reduced-motion fallback
 - [x] Add regression coverage, validate desktop and mobile behavior, and publish the approved input cue
 - [x] Ensure the first prompt is visible immediately when the empty widget renders and that the rotating sequence has no blank interval
+- [x] Replace the report-themed rotating example with a cute, relatable parent-life brain dump while preserving the cursor behavior
 
 ## Pro Tip Panel Exploration
 - [x] Create three approval-only visual directions for a more engaging homepage Pro Tip panel, including a post-it treatment, without changing the live widget before user selection
 - [x] Revise the approval-only Pinboard Post-It direction to reuse the exact component-system Post-It treatment from `dothething-landing-design-system.html`
+
+## Selected Pro Tip Panel: Option 01 · Pixel Post-It
+- [x] Apply the approved exact Pixel Post-It component treatment to the live homepage Pro Tip panel while preserving its current copy, controls, and functional behavior
+- [x] Add regression coverage, validate desktop and mobile presentation, and publish the selected Pro Tip treatment
+- [x] Update the Pro Tip supporting sentence to explain that pinning keeps tasks available to check off and track
+- [x] Verify the user-edited selected sentence, synchronize the exploration and regression assertion, then publish the validated wording

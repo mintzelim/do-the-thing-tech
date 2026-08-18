@@ -4,7 +4,7 @@
 
 ## Fixed content and behavior
 
-Every direction retains the exact existing text: **“Pro Tip: Pin this tab so I stay safe while you work!”**, **“Right-click the tab and hit ‘Pin’ to keep DoTheThing always visible.”**, and the **“GOT IT”** dismissal. The component remains a single side-rail unit next to the task widget, not a card nested within another card. The close affordance remains available, and body copy stays in Inter.
+Every direction retains the exact selected text: **“Pro Tip: Pin this tab so I stay safe while you work!”**, **“Pin this tab to keep your tasks close. Check off steps and keep track as you go!”**, and the **“GOT IT”** dismissal. The component remains a single side-rail unit next to the task widget, not a card nested within another card. The close affordance remains available, and body copy stays in Inter.
 
 ## Option 01 · Pixel Post-It — recommended
 

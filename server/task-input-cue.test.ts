@@ -10,7 +10,7 @@ describe("selected Gentle Typewriter task-input cue", () => {
   it("uses rotating, relatable examples as a visual-only overlay instead of input data", () => {
     expect(home).toContain("const taskInputCuePrompts = [");
     expect(home).toContain("Email the dentist, reply to Sam");
-    expect(home).toContain("Write the report. Start the report.");
+    expect(home).toContain("Wash the clothes, buy groceries, send the kids to tuition");
     expect(home).toContain('className="reference-task-input-overlay" aria-hidden="true"');
     expect(home).toContain("taskInputCuePrompts.map((prompt, index) => (");
     expect(home).not.toContain("setBrainDump(taskInputCuePrompts");

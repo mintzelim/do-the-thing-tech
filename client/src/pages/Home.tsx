@@ -28,7 +28,7 @@ type GranularityPreset = "tiny" | "balanced" | "big";
 
 const taskInputCuePrompts = [
   "Email the dentist, reply to Sam, and work out why the laundry is now a chair.",
-  "Write the report. Start the report. Open the report. You know—the report.",
+  "Wash the clothes, buy groceries, send the kids to tuition… and rescue the lunchbox before it starts a science project.",
   "Plan the presentation that is next week and currently exists as a haunted tab.",
   "Sort the insurance forms, buy food, and somehow answer three messages.",
 ];
