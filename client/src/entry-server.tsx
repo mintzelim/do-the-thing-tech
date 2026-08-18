@@ -50,7 +50,7 @@ const software = {
   applicationCategory: "ProductivityApplication",
   operatingSystem: "Web",
   url: ORIGIN,
-  description: DEFAULT_DESCRIPTION,
+  description: SITE_IDENTITY.entityClarity,
   softwareVersion: SITE_IDENTITY.softwareVersion,
   softwareHelp: `${ORIGIN}/contact`,
   mainEntityOfPage: { "@id": `${ORIGIN}/#webpage` },

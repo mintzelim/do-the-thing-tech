@@ -16,10 +16,10 @@ describe("approved NAP, entity clarity, and freshness signals", () => {
     expect(identity).toContain('addressLine: "15B-8-4, Mont Kiara Pines, Jalan Kiara 1, Mont Kiara, 50480 Kuala Lumpur, Malaysia"');
   });
 
-  it("keeps detailed NAP on the Contact page while the shared Option 01 footer stays compact", () => {
+  it("keeps detailed NAP on the Contact page while the shared Option 01 footer and hero stay compact", () => {
     expect(identity).toContain('ownershipStatement: "A Boundless One Ventures product."');
     expect(identity).not.toContain("online-only brand owned");
-    expect(home).toContain("SITE_IDENTITY.entityClarity");
+    expect(home).not.toContain("SITE_IDENTITY.entityClarity");
     expect(footer).toContain("SITE_IDENTITY.ownershipStatement");
     expect(footer).toContain("SITE_IDENTITY.supportEmail");
     expect(footer).toContain("SITE_IDENTITY.productReviewedLabel");
@@ -32,6 +32,7 @@ describe("approved NAP, entity clarity, and freshness signals", () => {
 
   it("keeps the same public identity and valid software fields in server-rendered JSON-LD", () => {
     expect(entry).toContain("description: SITE_IDENTITY.businessDescription");
+    expect(entry).toContain("description: SITE_IDENTITY.entityClarity");
     expect(entry).toContain("legalName: SITE_IDENTITY.legalName");
     expect(entry).toContain("softwareVersion: SITE_IDENTITY.softwareVersion");
     expect(entry).not.toContain("aggregateRating");

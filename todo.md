@@ -974,3 +974,7 @@
 - [x] Add regression coverage, validate desktop and mobile presentation, and publish the selected Pro Tip treatment
 - [x] Update the Pro Tip supporting sentence to explain that pinning keeps tasks available to check off and track
 - [x] Verify the user-edited selected sentence, synchronize the exploration and regression assertion, then publish the validated wording
+
+## Homepage Entity-Copy Visibility Review
+- [x] Audit whether the visible homepage entity-clarity sentence can be removed while preserving truthful metadata and structured-data coverage without hidden-text tactics
+- [x] Remove the approved visible homepage entity-clarity paragraph while retaining the existing factual server-rendered metadata and schema coverage
