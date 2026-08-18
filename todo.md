@@ -891,8 +891,8 @@
 ## Reported Blog URL Availability
 - [x] Diagnose why `/blog/adhd-and-anxiety`, `/blog/adhd-burnout`, `/blog/adhd-and-emotional-dysregulation`, `/blog/adhd-medication-and-productivity`, `/blog/neuroscience-task-avoidance`, `/blog/adhd-relationships`, `/blog/adhd-workplace`, `/blog/adhd-sleep`, `/blog/adhd-financial-management`, `/blog/adhd-creativity`, `/blog/why-simpler-adhd-friendly-apps-work-better`, `/blog/free-tools-2026`, `/blog/neurodivergent-productivity-7-tactics`, and `/blog/how-to-break-down-tasks-adhd` fail crawler fetches against the published blog registry, sitemap, and crawl controls
 - [x] Apply and validate only any warranted source-level route, redirect, sitemap, or crawlability repair for the reported URLs
-- [ ] Diagnose the reported crawler failures for the published `/blog/adhd-vs-autism-vs-audhd` and `/blog/uncommon-adhd-symptoms` URLs
-- [ ] Apply and validate only a warranted source-level crawler-access repair for those two published URLs
+- [x] Diagnose the reported crawler failures for the published `/blog/adhd-vs-autism-vs-audhd` and `/blog/uncommon-adhd-symptoms` URLs
+- [x] Apply and validate only a warranted source-level crawler-access repair for those two published URLs (no repair was warranted after live HTTP, canonical, robots, and sitemap verification)
 
 ## Valid Homepage SoftwareApplication Metadata
 - [x] Add valid softwareVersion, softwareHelp, and mainEntityOfPage fields to the canonical SoftwareApplication schema
@@ -901,8 +901,8 @@
 - [x] Verify the live dothething.tech homepage contains the valid source-level fields and does not fabricate aggregateRating or embed scanner diagnostic metadata
 
 ## Remaining GEO Scanner Verification
-- [ ] Audit the reported About-page aggregateRating, description-quality, entity-clarity, offering-description, and freshness flags against the current published HTML and source
-- [ ] Audit the reported description-quality flags for `/blog/adhd-sleep` and `/blog/free-tools-2026` against the current published HTML and shared blog schema source
+- [x] Audit the reported About-page aggregateRating, description-quality, entity-clarity, offering-description, and freshness flags against the current published HTML and source
+- [x] Audit the reported description-quality flags for `/blog/adhd-sleep` and `/blog/free-tools-2026` against the current published HTML and shared blog schema source
 - [ ] Present an approval-ready, truthful remediation plan that retains the no-fabricated-ratings policy and protected post-hero copy
 
 ## Standalone GEO FAQ Page

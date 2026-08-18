@@ -13,3 +13,9 @@ The published `https://dothething.tech/blog/adhd-sleep` article has a plain-lang
 ## Free Tools 2026 article — 18 August 2026
 
 The published `https://dothething.tech/blog/free-tools-2026` article has a plain-language summary: “A comprehensive review of the best free tools for ADHD adults, from task management to focus aids.” It visibly distinguishes free plans, premium options, free trials, and current-provider verification. It is marked as published on 9 April 2026 and updated on 12 August 2026, with a 1,269-word count, author identity, editorial standards link, seven listed sources, and a factual product-information review label dated 18 August 2026.
+
+## Current source and live-output comparison
+
+The current About document emits the DoTheThing brand name and a concise product description in Organization and SoftwareApplication schema. Its visible content names the target audience, task breakdown, focus-level adjustment, time estimates, countdown timer, editable steps, guest access, ownership, support route, and product-review date. It does not emit `aggregateRating`, because no verified customer rating data exists to represent.
+
+The live meta description and JSON-LD description for `ADHD and Sleep` match the article’s source excerpt exactly. The same is true for `15 Free Tools for ADHD Adults in 2026`. Both are plain text, not markup, and each article exposes a current updated date. Their scanner flags are therefore not caused by a stale mismatch between the source frontmatter and the currently published description. Any decision to rewrite those short summaries would be a visible editorial change and requires explicit approval rather than a speculative scanner-driven edit.

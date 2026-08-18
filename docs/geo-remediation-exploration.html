@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>DoTheThing — GEO Remediation Comparison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=VT323&display=swap" rel="stylesheet" />
+    <style>
+      :root { --bg:#f6f5f2; --panel:#fffefb; --ink:#26364a; --muted:#667080; --accent:#5b5ce2; --border:#a8afc2; --item:#c5cada; --shadow:7px 8px 0 rgba(210,211,224,.7); }
+      * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--ink); font-family:Inter, sans-serif; } main { width:min(calc(100% - 32px),1240px); margin:16px auto 42px; }
+      header, section { border:1px solid var(--border); border-radius:14px; background:var(--panel); box-shadow:var(--shadow); } header { display:grid; grid-template-columns:minmax(0,1fr) 250px; gap:28px; align-items:center; padding:38px clamp(22px,4vw,52px); }
+      .eyebrow, .label { margin:0 0 12px; color:var(--accent); font-family:VT323, monospace; font-size:1.18rem; letter-spacing:.08em; } h1 { max-width:740px; margin:0; font-size:clamp(2.65rem,5vw,4.65rem); line-height:.98; letter-spacing:-.055em; } .lede { max-width:740px; margin:20px 0 0; color:var(--muted); font-size:1.05rem; line-height:1.6; } .bubble { padding:12px 16px; border:2px solid var(--ink); border-radius:8px; background:var(--panel); box-shadow:3px 3px 0 rgba(38,54,74,.12); font-family:VT323, monospace; font-size:1.35rem; text-align:center; }
+      section { margin-top:38px; padding:clamp(22px,4vw,52px); } h2 { margin:0; font-size:clamp(1.8rem,3vw,2.6rem); line-height:1.05; letter-spacing:-.045em; } p { color:var(--muted); line-height:1.6; } table { width:100%; margin-top:22px; border-collapse:collapse; font-size:.92rem; line-height:1.55; } th,td { padding:14px; border:1px solid var(--item); text-align:left; vertical-align:top; } th { background:#f0f1fb; color:var(--ink); font-weight:800; } td strong { color:var(--ink); } .option-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:22px; } .option { border:1px solid var(--item); border-radius:10px; padding:20px; } .option h3 { margin:0; font-size:1.1rem; } .option p { margin:8px 0 0; } .guardrail { border-left:4px solid var(--accent); padding:14px 18px; background:#f0f1fb; }
+      @media(max-width:760px){ main{width:min(calc(100% - 24px),1240px);margin-top:12px;} header{grid-template-columns:1fr;padding:30px 20px;} section{margin-top:29px;padding:30px 20px;} table{display:block;overflow:auto;} .option-grid{grid-template-columns:1fr;} }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p class="eyebrow">✦ SOURCE-LEVEL CHECK</p>
+          <h1>What is real, what is optional, and what should stay out.</h1>
+          <p class="lede">A truthful response to the remaining GEO audit flags. This is an approval-only comparison, not a live-site change.</p>
+        </div>
+        <p class="bubble">NO FAKE RATINGS.<br />NO FILLER.</p>
+      </header>
+
+      <section>
+        <p class="label">01 · CONFIRMED EVIDENCE</p>
+        <h2>The two reported articles are publicly crawlable.</h2>
+        <table>
+          <thead><tr><th>URL</th><th>Live evidence</th><th>Correct action</th></tr></thead>
+          <tbody>
+            <tr><td><strong>/blog/adhd-vs-autism-vs-audhd</strong></td><td>HTTP 200 · self-canonical · index, follow · sitemap · robots allowed</td><td>Do not redirect or rewrite. Ask the audit tool to retry.</td></tr>
+            <tr><td><strong>/blog/uncommon-adhd-symptoms</strong></td><td>HTTP 200 · self-canonical · index, follow · sitemap · robots allowed</td><td>Do not redirect or rewrite. Ask the audit tool to retry.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <p class="label">02 · ABOUT-PAGE BOUNDARY</p>
+        <h2>Keep the accurate signals. Reject the impossible one.</h2>
+        <div class="guardrail"><strong>aggregateRating stays absent.</strong> DoTheThing has no verified rating dataset to represent. The current About content already explains the tool, audience, practical capabilities, ownership, support path, and freshness date.</div>
+      </section>
+
+      <section>
+        <p class="label">03 · OPTIONAL METADATA</p>
+        <h2>Three exact description refinements, if you want them.</h2>
+        <table>
+          <thead><tr><th>Page</th><th>Current description</th><th>Proposed source-only description</th></tr></thead>
+          <tbody>
+            <tr><td><strong>About</strong></td><td>Learn who built DoTheThing, what the tool is designed to help with, and the boundaries of its practical ADHD-friendly task workflow.</td><td>DoTheThing is a free online task-breakdown tool for people with ADHD and executive-function friction. It turns brain dumps into actionable steps, focus-aware estimates, and editable task plans.</td></tr>
+            <tr><td><strong>ADHD Sleep</strong></td><td>Explore the complex relationship between ADHD and sleep, including delayed sleep phase syndrome, racing thoughts, and practical strategies for better rest.</td><td>ADHD and sleep guide: why delayed sleep timing, racing thoughts, and time blindness can make rest harder, plus practical, non-medical strategies to try.</td></tr>
+            <tr><td><strong>Free Tools 2026</strong></td><td>A comprehensive review of the best free tools for ADHD adults, from task management to focus aids.</td><td>Compare 15 free ADHD-friendly tools for task planning, focus, and time management in 2026, with free-tier context, practical trade-offs, and provider-verification notes.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <p class="label">04 · CHOOSE A DIRECTION</p>
+        <h2>No hidden changes.</h2>
+        <div class="option-grid">
+          <article class="option"><h3>A — Evidence only</h3><p>Keep all source text as-is and ask the external audit tool to refresh its cache using the documented 200, canonical, robots, and sitemap evidence.</p></article>
+          <article class="option"><h3>B — Tighten three descriptions</h3><p>Apply only the three exact description changes above, then test source-to-SSR parity and publish. No visible post-hero copy changes.</p></article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
