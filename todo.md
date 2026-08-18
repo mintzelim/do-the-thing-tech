@@ -954,3 +954,6 @@
 - [x] Add three approval-only footer explorations to the design-system HTML, each showing a distinct truthful address, ownership, support, freshness, and navigation treatment
 - [x] Apply the approved Option 01 Minimal Trust Strip to the shared footer while retaining the review label, support email, ownership statement, Contact-page NAP, and Organization structured-data NAP
 - [x] Replace the awkward visible “online-only” ownership phrase with the approved concise shared-footer statement, “A Boundless One Ventures product.”, while retaining truthful ownership context elsewhere
+
+## Cursor Exploration Revision
+- [x] Revise the approval-only task-input exploration so it presents three distinct cursor-led directions in the dedicated HTML file, without changing the live widget before selection

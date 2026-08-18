@@ -25,16 +25,19 @@
     .widget { position:relative; margin-top:20px; padding:14px; border:1px solid var(--ink); border-radius:8px; background:#fff; min-height:132px; overflow:hidden; }
     .burst { position:absolute; top:-10px; right:10px; z-index:2; padding:4px 7px; border:1px solid #a7800c; border-radius:4px; background:#ffe37b; color:#5d4810; font:1.04rem/1 VT323,monospace; letter-spacing:.06em; transform:rotate(3deg); }
     .prompt { position:absolute; inset:32px 16px 16px; color:#6d7483; font:1.43rem/1.15 VT323,monospace; letter-spacing:.025em; }
-    .cursor { display:inline-block; width:8px; height:1.15em; margin-left:2px; vertical-align:-.2em; background:var(--accent); animation:blink 850ms steps(1,end) infinite; }
-    .carousel .prompt { opacity:0; animation:carousel 10s ease-in-out infinite; }
-    .carousel .prompt:nth-of-type(2) { animation-delay:5s; }
+    .cursor { display:inline-block; margin-left:2px; vertical-align:-.18em; background:var(--accent); }
+    .cursor-bar { width:8px; height:1.15em; animation:blink 850ms steps(1,end) infinite; }
+    .cursor-block { width:.74em; height:1.02em; margin-left:4px; border-radius:1px; animation:block-pulse 1.05s steps(1,end) infinite; }
+    .cursor-underscore { width:.9em; height:3px; margin-left:4px; vertical-align:-.04em; animation:underscore-step 1.45s steps(2,end) infinite; }
+    .rotating .prompt { opacity:0; animation:carousel 9s ease-in-out infinite; }
+    .rotating .prompt:nth-of-type(2) { animation-delay:4.5s; }
     .nudge .verbs { display:flex; gap:5px; margin:2px 0 16px; color:var(--accent-dark); font:1.1rem/1 VT323,monospace; letter-spacing:.08em; }
     .nudge .verbs span { animation:pop 2.4s steps(1,end) infinite; }.nudge .verbs span:nth-child(2){animation-delay:.8s}.nudge .verbs span:nth-child(3){animation-delay:1.6s}
     .nudge .prompt { top:53px; }
     .rules { margin-top:34px; padding:28px; border:1px solid var(--line); border-radius:14px; background:var(--panel); box-shadow:var(--shadow); }
     .rules h2 { font-size:clamp(2rem,4vw,3.4rem); }.rules ul { margin:18px 0 0; padding-left:20px; color:var(--muted); line-height:1.7; }.rules strong { color:var(--ink); }
-    @keyframes blink { 50% { opacity:0; } } @keyframes carousel { 0%,45% { opacity:0; transform:translateY(3px); } 8%,38% { opacity:1; transform:none; } } @keyframes pop { 0%,100%{opacity:.32} 12%,31%{opacity:1} }
-    @media (prefers-reduced-motion:reduce) { .cursor,.carousel .prompt,.nudge .verbs span { animation:none!important; }.carousel .prompt:not(:first-of-type){display:none}.carousel .prompt:first-of-type{opacity:1}.cursor{opacity:1} }
+    @keyframes blink { 50% { opacity:0; } } @keyframes block-pulse { 0%,43% { opacity:1; } 50%,100% { opacity:.22; } } @keyframes underscore-step { 0%,37% { opacity:1; transform:translateX(0); } 38%,56% { opacity:.2; transform:translateX(5px); } 57%,100% { opacity:1; transform:translateX(0); } } @keyframes carousel { 0%,45% { opacity:0; transform:translateY(3px); } 8%,38% { opacity:1; transform:none; } } @keyframes pop { 0%,100%{opacity:.32} 12%,31%{opacity:1} }
+    @media (prefers-reduced-motion:reduce) { .cursor,.rotating .prompt,.nudge .verbs span { animation:none!important; }.rotating .prompt:not(:first-of-type){display:none}.rotating .prompt:first-of-type{opacity:1}.cursor{opacity:1} }
     @media (max-width:860px) { main{margin-top:24px}.option-grid{grid-template-columns:1fr}.option{padding:22px}.widget{min-height:116px}.prompt{font-size:1.35rem} }
   </style>
 </head>
@@ -42,26 +45,26 @@
   <main>
     <p class="kicker">APPROVAL-ONLY · TASK INPUT CUE</p>
     <h1>Make the blank box feel like an invitation.</h1>
-    <p class="lede">Three small motion directions for the existing brain-dump field. Each keeps the live textarea empty and fully usable; these examples are visual prompts only.</p>
-    <p class="notice"><strong>Recommended:</strong> Option 01 uses the least extra UI and makes “you can type here” obvious at the exact point of action.</p>
-    <section class="option-grid" aria-label="Task input cue options">
+    <p class="lede">Three cursor-led directions for the existing brain-dump field. Each keeps the live textarea empty and fully usable; these examples are visual prompts only.</p>
+    <p class="notice"><strong>Recommended:</strong> Option 01 uses the clearest familiar cursor, making “you can type here” obvious at the exact point of action.</p>
+    <section class="option-grid" aria-label="Task input cursor options">
       <article class="option is-recommended">
         <p class="option-tag">OPTION 01 · GENTLE TYPEWRITER</p>
         <h2>Type here. Even the messy version.</h2>
         <p>A quiet blinking cursor and rotating relatable example directly inside the field.</p>
-        <div class="widget" aria-hidden="true"><span class="burst">BRAIN DUMP HERE!</span><p class="prompt">Email the dentist, reply to Sam, and work out why the laundry is now a chair.<span class="cursor"></span></p></div>
+        <div class="widget" aria-hidden="true"><span class="burst">BRAIN DUMP HERE!</span><p class="prompt">Email the dentist, reply to Sam, and work out why the laundry is now a chair.<span class="cursor cursor-bar"></span></p></div>
       </article>
-      <article class="option carousel">
-        <p class="option-tag">OPTION 02 · PROMPT CAROUSEL</p>
-        <h2>A few honest examples, calmly rotating.</h2>
-        <p>Prompt text fades between examples without the typing energy of a cursor.</p>
-        <div class="widget" aria-hidden="true"><span class="burst">BRAIN DUMP HERE!</span><p class="prompt">Write the report. Start the report. Open the report. You know—the report.</p><p class="prompt">Plan the presentation that is next week and currently exists as a haunted tab.</p></div>
+      <article class="option rotating">
+        <p class="option-tag">OPTION 02 · BLOCK CURSOR</p>
+        <h2>A little more pixel, still very clear.</h2>
+        <p>A square, pixel-style caret pulses with a rotating example for a more retro terminal feel.</p>
+        <div class="widget" aria-hidden="true"><span class="burst">BRAIN DUMP HERE!</span><p class="prompt">Write the report. Start the report. Open the report. You know—the report.<span class="cursor cursor-block"></span></p><p class="prompt">Plan the presentation that is next week and currently exists as a haunted tab.<span class="cursor cursor-block"></span></p></div>
       </article>
       <article class="option nudge">
-        <p class="option-tag">OPTION 03 · FIRST-STEP NUDGE</p>
-        <h2>Dump it. Break it down. Start.</h2>
-        <p>A tiny action sequence adds momentum before the visitor begins typing.</p>
-        <div class="widget" aria-hidden="true"><div class="verbs"><span>DUMP</span><span>→ BREAK DOWN</span><span>→ START</span></div><span class="burst">BRAIN DUMP HERE!</span><p class="prompt">Sort the insurance forms, buy food, and somehow answer three messages.<span class="cursor"></span></p></div>
+        <p class="option-tag">OPTION 03 · STEP CURSOR</p>
+        <h2>A little burst of “start there.”</h2>
+        <p>An underscore cursor makes two tiny forward steps, then pauses beside the prompt.</p>
+        <div class="widget" aria-hidden="true"><div class="verbs"><span>DUMP</span><span>→ BREAK DOWN</span><span>→ START</span></div><span class="burst">BRAIN DUMP HERE!</span><p class="prompt">Sort the insurance forms, buy food, and somehow answer three messages.<span class="cursor cursor-underscore"></span></p></div>
       </article>
     </section>
     <section class="rules"><p class="kicker">NON-NEGOTIABLE BEHAVIOUR</p><h2>Friendly, not fake input.</h2><ul><li><strong>The real textarea stays blank:</strong> examples never prefill, submit, or overwrite someone’s words.</li><li><strong>Focus wins:</strong> the prompt overlay immediately hides when the field is focused or contains text.</li><li><strong>Motion is optional:</strong> reduced-motion visitors see the first example, no movement, and a solid caret.</li><li><strong>Access is preserved:</strong> the visual overlay is hidden from assistive technology; the existing “Task or brain dump” label remains the field’s accessible name.</li></ul></section>

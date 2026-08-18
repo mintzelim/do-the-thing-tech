@@ -14,13 +14,13 @@ A faint, VT323-style visual example appears inside the empty field with a 1px la
 
 This is the clearest option because the cue occurs exactly where typing begins, without adding an extra surface.
 
-## Option 02 — Prompt Carousel
+## Option 02 — Block Cursor
 
-A single non-blinking prompt fades between examples inside the empty field every five seconds. A compact “example brain dump” line sits above the field. This is calmer but less immediately interactive than Option 01.
+A square pixel cursor gently pulses beside a rotating example. It carries a slightly more retro-terminal character than Option 01 while remaining clear at a glance.
 
-## Option 03 — First-Step Nudge
+## Option 03 — Step Cursor
 
-The empty field displays a fixed prompt, while three small verbs animate in sequence above it: **DUMP → BREAK DOWN → START**. This is more playful but risks competing with the existing widget heading and Corner Burst.
+An underscore cursor makes two very small forward movements before pausing beside a fixed prompt. The existing **DUMP → BREAK DOWN → START** sequence sits above it as a light sense of momentum.
 
 ## Required behavior for any approved option
 
