@@ -963,3 +963,6 @@
 - [x] Preserve focus/value dismissal, keyboard text entry, `aria-hidden` visual-only prompts, and a static reduced-motion fallback
 - [x] Add regression coverage, validate desktop and mobile behavior, and publish the approved input cue
 - [x] Ensure the first prompt is visible immediately when the empty widget renders and that the rotating sequence has no blank interval
+
+## Pro Tip Panel Exploration
+- [x] Create three approval-only visual directions for a more engaging homepage Pro Tip panel, including a post-it treatment, without changing the live widget before user selection
