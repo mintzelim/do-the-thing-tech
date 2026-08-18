@@ -957,3 +957,9 @@
 
 ## Cursor Exploration Revision
 - [x] Revise the approval-only task-input exploration so it presents three distinct cursor-led directions in the dedicated HTML file, without changing the live widget before selection
+
+## Selected Task-Input Cue: Option 01 · Gentle Typewriter
+- [x] Apply the approved blinking VT323 cursor and rotating relatable prompt overlay to the empty live task textarea without changing task-generation behavior
+- [x] Preserve focus/value dismissal, keyboard text entry, `aria-hidden` visual-only prompts, and a static reduced-motion fallback
+- [x] Add regression coverage, validate desktop and mobile behavior, and publish the approved input cue
+- [x] Ensure the first prompt is visible immediately when the empty widget renders and that the rotating sequence has no blank interval

@@ -26,6 +26,13 @@ type Step = {
 type FlowState = "input" | "breakdown" | "completion";
 type GranularityPreset = "tiny" | "balanced" | "big";
 
+const taskInputCuePrompts = [
+  "Email the dentist, reply to Sam, and work out why the laundry is now a chair.",
+  "Write the report. Start the report. Open the report. You know—the report.",
+  "Plan the presentation that is next week and currently exists as a haunted tab.",
+  "Sort the insurance forms, buy food, and somehow answer three messages.",
+];
+
 export default function Home() {
   const [, navigate] = useLocation();
   const [flowState, setFlowState] = useState<FlowState>("input");
@@ -36,6 +43,7 @@ export default function Home() {
     updateMetaTags(pageMetaTags.home);
   }, []);
   const [brainDump, setBrainDump] = useState("");
+  const [isTaskInputFocused, setIsTaskInputFocused] = useState(false);
   const [focusLevel, setFocusLevel] = useState<"hyperfocus" | "normal" | "distracted">("normal");
   const [granularity, setGranularity] = useState(50);
   const [granularityPreset, setGranularityPreset] = useState<GranularityPreset>("balanced");
@@ -379,12 +387,23 @@ export default function Home() {
 
               <div className="reference-task-input-cue">
                 <span className="reference-input-corner-burst" aria-hidden="true">BRAIN DUMP HERE!</span>
+                {!brainDump && !isTaskInputFocused && (
+                  <div className="reference-task-input-overlay" aria-hidden="true">
+                    {taskInputCuePrompts.map((prompt, index) => (
+                      <span className="reference-task-input-prompt" key={prompt} style={{ animationDelay: `${index * 5}s` }}>
+                        {prompt}<span className="reference-task-input-cursor" />
+                      </span>
+                    ))}
+                  </div>
+                )}
                 <textarea
                   className="mobile-textarea"
                   aria-label="Task or brain dump"
-                  placeholder="Write project proposal, update documentation, respond to emails, plan team meeting..."
+                  placeholder=""
                   value={brainDump}
                   onChange={(e) => setBrainDump(e.target.value)}
+                  onFocus={() => setIsTaskInputFocused(true)}
+                  onBlur={() => setIsTaskInputFocused(false)}
                 />
               </div>
 

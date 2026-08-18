@@ -68,7 +68,8 @@ describe("homepage visual-edit safeguards", () => {
     expect(stylesheet).toContain("box-shadow:2px 2px 0 var(--pixel-border)");
     expect(stylesheet).toContain("transform:rotate(-6deg)");
     expect(stylesheet).toContain("pointer-events:none");
-    expect(stylesheet).toContain("@media(max-width:560px){.reference-input-corner-burst");
+    expect(stylesheet).toContain("@media(max-width:560px){.reference-task-input-overlay");
+    expect(stylesheet).toContain(".reference-input-corner-burst{top:-13px");
   });
 });
 
