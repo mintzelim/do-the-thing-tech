@@ -89,7 +89,7 @@ describe("post-hero copy preservation", () => {
       "Frequently Asked Questions",
       "Built by Someone Who Gets It",
       "Start Here: Choose Your Learning Path",
-      "Featured Posts: ADHD & Productivity",
+      "If you have room for one more read.",
       "Try DoTheThing Now",
     ];
 

@@ -999,6 +999,9 @@
 ## Friendly ADHD Quiz Outcome Names
 - [x] Replace clinical-sounding reader-facing outcome titles with relevant, fun pattern names while showing the corresponding Dr. Amen/Amen Clinics framework label in the visible non-diagnostic source note
 
+## Personal-Support Quiz Reflections
+- [ ] Make every A Kind Next Step a practical self-support action rather than a tool prompt and add a positive person-centred reminder quote for all seven outcomes
+
 ## Homepage Visual Edit Follow-Up
 - [x] Verify the visual-editor request to remove the homepage input target, apply the intended removal manually if needed, and ensure the task-entry workflow remains intact
 
@@ -1009,6 +1012,11 @@
 ## Minimal Featured Posts Continuation
 - [x] Create an approval-only minimal Featured Posts layout that sits quietly beneath Learning Paths without competing with it
 - [x] Create three minimal Featured Posts layout options in a dedicated approval-only HTML exploration for user selection
+- [x] Apply Option 03 · One More Thing as the live Featured Posts layout: one optional lead guide plus a compact secondary reading stack
+
+## Homepage Action-Section Alignment
+- [x] Balance the first post-How-It-Works CTA with left-aligned copy and a right-side action on desktop, with professional responsive spacing
+- [x] Remove the Featured Posts micro-label and centre its heading and supporting copy above the selected lead-and-stack layout
 
 ## Task Widget Icon Restoration
 - [x] Restore the intended visible icon beside the “What needs doing?” task-widget heading

@@ -54,8 +54,8 @@ export default function HomeContent() {
             <p className="reference-eyebrow cta-eyebrow"><span>✦</span> A SMALLER NEXT STEP</p>
             <h2 className="section-heading cta-reference-title">Ready to Break Down Your First Task?</h2>
             <p className="section-content cta-reference-description">Stop overthinking. Start with one small step.</p>
-            <a href="#widget" className="cta-button cta-reference-button">↑ SCROLL UP TO START</a>
           </div>
+          <a href="#widget" className="cta-button cta-reference-button">↑ SCROLL UP TO START</a>
         </div>
       </section>
 
@@ -226,35 +226,27 @@ export default function HomeContent() {
 
       {/* SECTION 7: FEATURED POSTS */}
       <section className="content-section featured-posts-section">
-        <h2 className="section-heading" style={{ textAlign: 'center' }}>Featured Posts: ADHD & Productivity</h2>
-        <p className="section-subtitle" style={{ textAlign: 'center' }}>Hand-picked articles to help you understand ADHD and get things done</p>
-        
-        <div className="blog-links-grid">
-          <Link href="/blog/adhd-in-women" className="blog-link-card">
+        <h2 className="section-heading featured-posts-title">If you have room for one more read.</h2>
+        <p className="section-subtitle featured-posts-deck">One gentle recommendation, plus a short stack for later.</p>
+
+        <div className="featured-posts-one-more">
+          <Link href="/blog/adhd-in-women" className="featured-posts-lead">
+            <span className="featured-posts-label">FEATURED GUIDE</span>
             <h3>ADHD in Women: The Symptoms Nobody Told You About</h3>
             <p>ADHD in women looks internal, not hyperactive — and hormones make it worse. Here's what it actually feels like and why it's missed.</p>
+            <span className="featured-posts-read-more">READ GUIDE <span aria-hidden="true">→</span></span>
           </Link>
-          <Link href="/blog/adhd-burnout-recovery" className="blog-link-card">
-            <h3>ADHD Burnout: Why It's Different and How to Actually Recover</h3>
-            <p>93% of ADHD adults experience burnout. But it's not like regular burnout. Here's the neuroscience and the 3-stage recovery plan.</p>
-          </Link>
-          <Link href="/blog/how-adhd-affects-task-management" className="blog-link-card">
-            <h3>How ADHD Affects Task Management</h3>
-            <p>The neuroscience behind executive dysfunction and why traditional systems fall flat.</p>
-          </Link>
-          <Link href="/blog/time-blindness-in-adhd" className="blog-link-card">
-            <h3>Time Blindness in ADHD: Why You're Always Late</h3>
-            <p>What's actually happening neurologically, and strategies that genuinely compensate.</p>
-          </Link>
-          <Link href="/blog/adhd-perfectionism" className="blog-link-card">
-            <h3>ADHD and Perfectionism: Why You Can't Finish Tasks</h3>
-            <p>Perfectionism in ADHD isn't about caring too much. It's about protecting yourself from shame. Here's how to break the cycle.</p>
-          </Link>
+          <div className="featured-posts-stack" aria-label="More featured reading">
+            <Link href="/blog/adhd-burnout-recovery" className="featured-posts-stack-link"><span>02</span><h3>ADHD Burnout: Why It&apos;s Different and How to Actually Recover</h3><i aria-hidden="true">→</i></Link>
+            <Link href="/blog/how-adhd-affects-task-management" className="featured-posts-stack-link"><span>03</span><h3>How ADHD Affects Task Management</h3><i aria-hidden="true">→</i></Link>
+            <Link href="/blog/time-blindness-in-adhd" className="featured-posts-stack-link"><span>04</span><h3>Time Blindness in ADHD: Why You&apos;re Always Late</h3><i aria-hidden="true">→</i></Link>
+            <Link href="/blog/adhd-perfectionism" className="featured-posts-stack-link"><span>05</span><h3>ADHD and Perfectionism: Why You Can&apos;t Finish Tasks</h3><i aria-hidden="true">→</i></Link>
+          </div>
         </div>
-        
+
         <div className="featured-posts-action-wrap">
-          <Link href="/blog" className="cta-button" style={{ display: 'inline-block', padding: '10px 24px', backgroundColor: 'var(--pixel-border)', color: 'white', textDecoration: 'none', fontWeight: 'bold', fontSize: '14px', border: '2px solid var(--pixel-border)', cursor: 'pointer' }}>
-            VIEW ALL POSTS
+          <Link href="/blog" className="featured-posts-library-link">
+            VIEW ALL POSTS <span aria-hidden="true">↗</span>
           </Link>
         </div>
       </section>

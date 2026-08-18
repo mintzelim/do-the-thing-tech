@@ -223,18 +223,140 @@
   transform: translateY(-2px);
 }
 
-.home-content-sections .featured-posts-section .blog-links-grid {
-  max-width: 1120px;
-  gap: 14px;
-  margin-top: var(--landing-content-gap);
-  margin-right: auto;
-  margin-left: auto;
+.home-content-sections .featured-posts-section {
+  background: #fffefb !important;
 }
 
-.home-content-sections .featured-posts-section .blog-link-card:last-child {
-  grid-column: 1 / -1;
-  width: calc(50% - 7px);
-  justify-self: center;
+.home-content-sections .featured-posts-kicker {
+  margin: 0 0 8px;
+  color: var(--pixel-accent-dark);
+  font-family: var(--display-font);
+  font-size: 1.05rem;
+  letter-spacing: .1em;
+}
+
+.home-content-sections .featured-posts-title,
+.home-content-sections .featured-posts-deck {
+  text-align: left !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.home-content-sections .featured-posts-title {
+  max-width: 700px;
+}
+
+.home-content-sections .featured-posts-deck {
+  max-width: 600px;
+}
+
+.home-content-sections .featured-posts-one-more {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(260px, .92fr);
+  max-width: 1080px;
+  margin-top: var(--landing-content-gap);
+  border-top: 1px solid var(--landing-item-border);
+  border-bottom: 1px solid var(--landing-item-border);
+}
+
+.home-content-sections .featured-posts-lead {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 250px;
+  padding: 28px clamp(22px, 3vw, 38px) 28px 0;
+  border-right: 1px solid var(--landing-item-border);
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-content-sections .featured-posts-label,
+.home-content-sections .featured-posts-stack-link > span {
+  color: var(--pixel-accent-dark);
+  font-family: var(--display-font);
+  font-size: 1rem;
+  letter-spacing: .09em;
+}
+
+.home-content-sections .featured-posts-lead h3 {
+  max-width: 630px;
+  margin: auto 0 10px;
+  color: var(--pixel-text);
+  font-family: var(--ui-font);
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
+  font-weight: 800;
+  letter-spacing: -.05em;
+  line-height: 1.08;
+}
+
+.home-content-sections .featured-posts-lead p {
+  max-width: 570px;
+  margin: 0;
+  color: var(--pixel-text-light);
+  font-size: .95rem;
+  line-height: 1.58;
+}
+
+.home-content-sections .featured-posts-read-more,
+.home-content-sections .featured-posts-library-link {
+  display: inline-flex;
+  gap: 8px;
+  margin-top: 22px;
+  color: var(--pixel-accent-dark);
+  font-size: .86rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.home-content-sections .featured-posts-lead:hover h3,
+.home-content-sections .featured-posts-library-link:hover,
+.home-content-sections .featured-posts-stack-link:hover h3 {
+  color: var(--pixel-accent-dark);
+}
+
+.home-content-sections .featured-posts-stack {
+  display: grid;
+  align-content: stretch;
+}
+
+.home-content-sections .featured-posts-stack-link {
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) 18px;
+  gap: 10px;
+  align-items: start;
+  padding: 18px 0 18px 24px;
+  border-bottom: 1px solid var(--landing-item-border);
+  color: inherit;
+  text-decoration: none;
+}
+
+.home-content-sections .featured-posts-stack-link:last-child {
+  border-bottom: 0;
+}
+
+.home-content-sections .featured-posts-stack-link h3 {
+  margin: 0;
+  color: var(--pixel-text);
+  font-family: var(--ui-font);
+  font-size: .95rem;
+  font-weight: 800;
+  letter-spacing: -.025em;
+  line-height: 1.3;
+}
+
+.home-content-sections .featured-posts-stack-link i {
+  color: var(--pixel-accent);
+  font-style: normal;
+}
+
+.home-content-sections .featured-posts-action-wrap {
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.home-content-sections .featured-posts-library-link {
+  margin-top: 0;
 }
 
 /* How It Works stays open and playful. Its cards are the compact-card variant
@@ -555,8 +677,19 @@
     gap: 18px;
   }
 
-  .home-content-sections .featured-posts-section .blog-link-card:last-child {
-    width: 100%;
+  .home-content-sections .featured-posts-one-more {
+    grid-template-columns: 1fr;
+  }
+
+  .home-content-sections .featured-posts-lead {
+    min-height: auto;
+    padding: 22px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--landing-item-border);
+  }
+
+  .home-content-sections .featured-posts-stack-link {
+    padding: 16px 0;
   }
 
   .home-content-sections .learning-path-wayfinder {
@@ -598,5 +731,65 @@
   .home-content-sections .blog-link-card,
   .home-content-sections .learning-path-card {
     transition: none !important;
+  }
+}
+
+/* Approved alignment refinements: a balanced desktop CTA and a calmer,
+ * centred Featured Posts handoff beneath the learning paths. */
+.home-content-sections .cta-reference-card {
+  grid-template-columns: minmax(128px, .34fr) minmax(0, 1fr) auto;
+  gap: clamp(24px, 3.5vw, 52px);
+  min-height: 218px;
+  align-items: center;
+}
+
+.home-content-sections .cta-reference-card .cta-reference-art {
+  min-height: 120px;
+}
+
+.home-content-sections .cta-reference-card .cta-reference-art img {
+  width: min(100%, 184px);
+  max-height: 132px;
+}
+
+.home-content-sections .cta-reference-card .cta-reference-copy {
+  padding: 4px 0;
+}
+
+.home-content-sections .cta-reference-card .cta-reference-button {
+  width: max-content;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.home-content-sections .featured-posts-title,
+.home-content-sections .featured-posts-deck {
+  text-align: center !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.home-content-sections .featured-posts-one-more {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 760px) {
+  .home-content-sections .cta-reference-card {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .home-content-sections .cta-reference-card .cta-reference-art {
+    justify-content: center;
+  }
+
+  .home-content-sections .cta-reference-card .cta-reference-copy {
+    padding: 0;
+    text-align: center;
+  }
+
+  .home-content-sections .cta-reference-card .cta-reference-button {
+    justify-self: center;
   }
 }

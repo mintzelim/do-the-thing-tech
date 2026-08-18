@@ -8,8 +8,8 @@ const markdown = read('docs/featured-posts-minimal-exploration.md');
 const homeContent = read('client/src/components/HomeContent.tsx');
 
 describe('Featured Posts minimal exploration', () => {
-  it('presents three quieter reading-continuation directions for approval', () => {
-    expect(html).toContain('APPROVAL ONLY');
+  it('preserves three quieter reading-continuation directions in the selection record', () => {
+    expect(html).toContain('APPROVAL RECORD');
     expect(html).toContain('Quiet List');
     expect(html).toContain('Editorial Shelf');
     expect(html).toContain('One More Thing');
@@ -19,11 +19,13 @@ describe('Featured Posts minimal exploration', () => {
     expect(markdown).toContain('**03 · One More Thing**');
   });
 
-  it('preserves a single-surface, no-image continuation system without changing the live section', () => {
+  it('preserves the two unselected directions as references while recording Option 03 as live', () => {
     expect(html).toContain('no illustrations, no competing CTA card, one warm-white surface');
     expect(html).toContain('VIEW ALL POSTS');
+    expect(html).toContain('Option 03 · One More Thing was selected');
     expect(homeContent).not.toContain('Quiet List');
     expect(homeContent).not.toContain('Editorial Shelf');
-    expect(homeContent).not.toContain('One More Thing');
+    expect(homeContent).toContain('featured-posts-one-more');
+    expect(markdown).toContain('**Option 03 · One More Thing** was selected');
   });
 });

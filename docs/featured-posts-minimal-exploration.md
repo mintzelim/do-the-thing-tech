@@ -10,7 +10,9 @@ This approval-only exploration keeps **Learning Paths** as the homepage’s prim
 
 All directions retain the existing five post destinations and the **View all posts** exit. They use a single warm-white surface, quiet outlines, Inter for reading, VT323 only for micro-labels, and no images or nested card treatments.
 
-> This document does not change the live homepage. Select an option before implementation.
+## Selected implementation
+
+**Option 03 · One More Thing** was selected and is now applied to the live homepage. It presents one optional lead guide and four compact secondary links, allowing Learning Paths to remain the primary homepage starting point. Options 01 and 02 remain reference-only.
 
 ## Visual review record
 
