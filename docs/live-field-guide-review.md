@@ -7,3 +7,7 @@ The development route for **ADHD in Women** was reviewed after the Field Guide i
 Research-detail quotations, including the 2025 *Journal of Attention Disorders* systematic-review text, remain present verbatim but are intentionally quieter than the practical guidance: smaller Inter text, regular weight, muted ink, a single light-gray 1px left rule, and no filled callout surface. This treats studies as optional evidence for interested readers rather than competing with the main reading flow.
 
 Final visual verification confirmed the systematic-review note has a transparent background, neutral `#d5d9e2` 1px left rule, 13.44px regular text, and unchanged wording. It now reads as factual supporting detail rather than a highlighted callout.
+
+## Follow-up typography refinement
+
+After reader feedback, the research-detail treatment was reduced again to **11.52px** regular text (`.72rem`) against the article body’s **16.32px**, with a tighter 17.28px line height, 14px outside spacing, and 6px internal top spacing. The exact systematic-review wording remains intact and visibly reads as optional background evidence.

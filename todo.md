@@ -1031,3 +1031,4 @@
 - [x] Add approved card and Pixel Post-It component treatments to the Option 01 Field Guide preview without changing article content
 - [x] Apply the selected Field Guide template and accessible reading-progress bar to live blog posts without rewriting article copy
 - [x] Restyle research-detail quotations and study summaries as visually secondary “for further reading” evidence while preserving their exact source text
+- [x] Further reduce research-detail quotation type scale and spacing so studies read as clearly optional supporting evidence

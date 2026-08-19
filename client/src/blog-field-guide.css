@@ -120,17 +120,17 @@
 
 /* Research detail remains available to readers but does not compete with the main guidance. */
 .blog-article-body .blog-evidence-note {
-  margin: 18px 0;
-  padding: 9px 12px;
+  margin: 14px 0;
+  padding: 6px 10px;
   border-left: 1px solid #d5d9e2 !important;
   border-radius: 0;
   background: transparent !important;
-  color: #6b7280 !important;
+  color: #7c8594 !important;
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-  font-size: .84rem;
+  font-size: .72rem !important;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.58;
+  line-height: 1.5;
 }
 
 .blog-article-body .blog-evidence-note strong {
@@ -164,8 +164,8 @@
   }
 
   .blog-article-body .blog-evidence-note {
-    font-size: .84rem;
-    line-height: 1.6;
+    font-size: .72rem !important;
+    line-height: 1.5;
   }
 }
 
@@ -195,7 +195,7 @@
   }
 
   .blog-article-body .blog-evidence-note {
-    padding: 9px 11px;
-    font-size: .82rem;
+    padding: 6px 9px;
+    font-size: .7rem !important;
   }
 }

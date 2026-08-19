@@ -59,7 +59,7 @@ describe("blog design-system refresh", () => {
     expect(fieldGuideStyles).toContain("background: #fff8bf");
     expect(fieldGuideStyles).toContain("transform: rotate(-1.1deg)");
     expect(fieldGuideStyles).toContain(".blog-article-body .blog-evidence-note");
-    expect(fieldGuideStyles).toContain("font-size: .84rem");
+    expect(fieldGuideStyles).toContain("font-size: .72rem !important");
     expect(fieldGuideStyles).toContain("border-left: 1px solid #d5d9e2 !important");
     expect(fieldGuideStyles).toContain("background: transparent !important");
   });
