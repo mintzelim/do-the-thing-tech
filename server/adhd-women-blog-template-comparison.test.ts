@@ -37,4 +37,17 @@ describe("ADHD in Women blog template comparison", () => {
     expect(html).toContain("data-exact-content");
     expect(html).toContain("renderMarkdown(exactSource)");
   });
+
+  it("uses approved cards and one source-derived Pixel Post-It in the selected Field Guide treatment", () => {
+    const html = readFileSync(comparisonPath, "utf8");
+
+    expect(html).toContain("field-guide-card-stack");
+    expect(html).toContain("border-radius: 10px");
+    expect(html).toContain("box-shadow: 3px 4px 0 rgba(210, 211, 224, .65)");
+    expect(html).toContain("field-guide-postit");
+    expect(html).toContain("background: var(--warm-yellow)");
+    expect(html).toContain("transform: rotate(-1.1deg)");
+    expect(html).toContain('"The way out isn\'t more effort. It\'s less masking."');
+    expect(html).toContain('class="field-hero-map" aria-hidden="true"></div>');
+  });
 });

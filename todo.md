@@ -1028,3 +1028,4 @@
 ## Blog Template and Reading-Progress Comparison
 - [x] Create an approval-only HTML comparison of the ADHD in Women post using Option 01 · Field Guide and Option 02 · Focus Ledger, each with a restrained reading-progress bar
 - [x] Correct both comparison previews to render the exact live ADHD in Women article content with no omitted, shortened, or paraphrased text, links, tables, FAQs, or sources
+- [x] Add approved card and Pixel Post-It component treatments to the Option 01 Field Guide preview without changing article content

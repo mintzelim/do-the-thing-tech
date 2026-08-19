@@ -79,6 +79,12 @@
       .start-here li::before { display: grid; width: 21px; height: 21px; place-items: center; border-radius: 50%; background: var(--accent-pale); color: var(--accent-deep); content: counter(start); counter-increment: start; font: .95rem/1 var(--display); }
       .field-guide-quote { margin: 25px 0; padding: 14px 16px; border-left: 3px solid var(--accent); background: linear-gradient(90deg, var(--accent-pale), transparent); color: var(--muted); font-size: .78rem; }
       .field-guide-quote strong { display: block; margin-bottom: 5px; }
+      .field-guide-card-stack { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 15px 0 26px; }
+      .field-guide-card { min-width: 0; padding: 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: 3px 4px 0 rgba(210, 211, 224, .65); color: var(--muted); font-size: .76rem; line-height: 1.5; }
+      .field-guide-card:nth-child(2n) { transform: translateY(8px); }
+      .field-guide-card strong { color: var(--ink); }
+      .field-guide-postit { margin: 24px 4px 27px; padding: 16px 17px 17px; border: 1px solid var(--ink); border-radius: 8px; background: var(--warm-yellow); box-shadow: 4px 4px 0 #d9c6f4; color: var(--ink) !important; font-size: .84rem !important; line-height: 1.5; transform: rotate(-1.1deg); }
+      .field-guide-postit strong { color: var(--ink); }
 
       /* Option 02 · Focus Ledger */
       .ledger-article { padding-left: 19px; }
@@ -129,6 +135,8 @@
         .field-map-note { left: 18px; }
         .ledger-head { grid-template-columns: 1fr 78px; }
         .selection-guide { grid-template-columns: 1fr; padding: 20px; }
+        .field-guide-card-stack { grid-template-columns: 1fr; }
+        .field-guide-card:nth-child(2n) { transform: none; }
       }
       @media (prefers-reduced-motion: reduce) { .progress-fill { transition: none; } }
     </style>
@@ -503,12 +511,27 @@ For most women, yes. Diagnosis and understanding provide validation, reduce self
           return output.join('');
         };
         const header = (kind) => kind === 'field'
-          ? `<nav class="crumbs" aria-label="Breadcrumb"><span>Home</span><span>›</span><span>Blog</span><span>›</span><span>ADHD Basics</span></nav><p class="category">ADHD BASICS · FIELD GUIDE</p><h2 class="article-title">${title}</h2><p class="standfirst">${excerpt}</p><p class="article-byline"><span class="author-mark" aria-hidden="true">L</span><span><strong>Lim Min Tze</strong> · August 4, 2026 · Updated August 4, 2026 · 10 min read · 2,458 words</span></p><div class="field-hero-map" aria-hidden="true"><p class="field-map-note">A gentle map for seeing the pattern, the cycle, and the next support.</p></div><section class="start-here" aria-label="Start here"><p class="start-here-label">START HERE</p><ol><li>See why internal symptoms and masking are easy to miss.</li><li>Follow the hormone-aware context without treating it as a diagnosis.</li><li>Keep the support ideas that make your real life more workable.</li></ol></section>`
-          : `<nav class="crumbs" aria-label="Breadcrumb"><span>Home</span><span>›</span><span>Blog</span><span>›</span><span>ADHD Basics</span></nav><div class="ledger-head"><div><p class="category">ADHD BASICS · FOCUS LEDGER</p><h2 class="article-title">${title}</h2><p class="standfirst">${excerpt}</p></div><aside class="ledger-signals" aria-label="Article signals"><span class="signal">Updated<br>Aug 4, 2026</span><span class="signal">10 min<br>2,458 words</span><span class="signal">8 cited<br>sources</span><span class="signal">Educational<br>not diagnostic</span></aside></div><p class="article-byline"><span class="author-mark" aria-hidden="true">L</span><span><strong>Lim Min Tze</strong> · Founder, Creative Director, Product Developer</span></p><section class="ledger-direct-answer"><b>ARTICLE CONTEXT</b><p>Exact article body begins below. The Focus Ledger adds provenance signals but does not add, remove, rewrite, or summarize the source content.</p></section>`;
+          ? `<nav class="crumbs" aria-label="Breadcrumb"><span>Home</span><span>›</span><span>Blog</span><span>›</span><span>ADHD Basics</span></nav><p class="category">ADHD BASICS · FIELD GUIDE</p><h2 class="article-title">${title}</h2><p class="standfirst">${excerpt}</p><p class="article-byline"><span class="author-mark" aria-hidden="true">L</span><span><strong>Lim Min Tze</strong> · August 4, 2026 · Updated August 4, 2026 · 10 min read · 2,458 words</span></p><div class="field-hero-map" aria-hidden="true"></div>`
+          : `<nav class="crumbs" aria-label="Breadcrumb"><span>Home</span><span>›</span><span>Blog</span><span>›</span><span>ADHD Basics</span></nav><div class="ledger-head"><div><p class="category">ADHD BASICS · FOCUS LEDGER</p><h2 class="article-title">${title}</h2><p class="standfirst">${excerpt}</p></div><aside class="ledger-signals" aria-label="Article signals"><span class="signal">Updated<br>Aug 4, 2026</span><span class="signal">10 min<br>2,458 words</span><span class="signal">8 cited<br>sources</span><span class="signal">Educational<br>not diagnostic</span></aside></div><p class="article-byline"><span class="author-mark" aria-hidden="true">L</span><span><strong>Lim Min Tze</strong> · Founder, Creative Director, Product Developer</span></p>`;
         document.querySelectorAll('.article-preview').forEach((preview, index) => {
           const kind = index === 0 ? 'field' : 'ledger';
           preview.innerHTML = `${header(kind)}<div class="exact-content" data-exact-content="${kind}">${renderMarkdown(exactSource)}</div>`;
         });
+        const fieldGuide = document.querySelector('[data-exact-content="field"]');
+        const tldrHeading = Array.from(fieldGuide.querySelectorAll('h3')).find((heading) => heading.textContent.trim() === 'TL;DR');
+        const tldrList = tldrHeading?.nextElementSibling;
+        if (tldrList?.tagName === 'UL') {
+          const cardStack = document.createElement('div');
+          cardStack.className = 'field-guide-card-stack';
+          Array.from(tldrList.children).forEach((item) => {
+            const card = document.createElement('article');
+            card.className = 'field-guide-card';
+            card.innerHTML = item.innerHTML;
+            cardStack.appendChild(card);
+          });
+          tldrList.replaceWith(cardStack);
+        }
+        Array.from(fieldGuide.querySelectorAll('p')).find((paragraph) => paragraph.textContent.trim() === "The way out isn't more effort. It's less masking.")?.classList.add('field-guide-postit');
       })();
     </script>
   </body>
