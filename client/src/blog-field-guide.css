@@ -118,10 +118,58 @@
   line-height: 1.65;
 }
 
-/* Research detail remains available to readers but does not compete with the main guidance. */
-.blog-article-body .blog-evidence-note {
+/* Research detail remains available to readers without competing with the main guidance. */
+.blog-article-body .blog-evidence-fold {
   margin: 14px 0;
-  padding: 6px 10px;
+  border-top: 1px solid #e0e2e8;
+  border-bottom: 1px solid #e0e2e8;
+  background: transparent !important;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.blog-article-body .blog-evidence-fold summary {
+  display: flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 2px;
+  color: #737d8d;
+  cursor: pointer;
+  font-size: .72rem !important;
+  font-weight: 600;
+  line-height: 1.35;
+  list-style: none;
+}
+
+.blog-article-body .blog-evidence-fold summary::-webkit-details-marker {
+  display: none;
+}
+
+.blog-article-body .blog-evidence-fold summary::after {
+  margin-left: auto;
+  color: #5b5ce2;
+  content: "+";
+  font-family: VT323, monospace;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.blog-article-body .blog-evidence-fold[open] summary {
+  border-bottom: 1px solid #eceef2;
+}
+
+.blog-article-body .blog-evidence-fold[open] summary::after {
+  content: "−";
+}
+
+.blog-article-body .blog-evidence-fold summary:focus-visible {
+  outline: 2px solid #5b5ce2;
+  outline-offset: 3px;
+}
+
+.blog-article-body .blog-evidence-fold .blog-evidence-note {
+  display: block;
+  margin: 0;
+  padding: 9px 0 10px 10px;
   border-left: 1px solid #d5d9e2 !important;
   border-radius: 0;
   background: transparent !important;
@@ -133,7 +181,7 @@
   line-height: 1.5;
 }
 
-.blog-article-body .blog-evidence-note strong {
+.blog-article-body .blog-evidence-fold .blog-evidence-note strong {
   color: #5b6472;
   font-weight: 700;
 }
@@ -163,7 +211,8 @@
     font-size: .92rem;
   }
 
-  .blog-article-body .blog-evidence-note {
+  .blog-article-body .blog-evidence-fold summary,
+  .blog-article-body .blog-evidence-fold .blog-evidence-note {
     font-size: .72rem !important;
     line-height: 1.5;
   }
@@ -194,8 +243,13 @@
     font-size: .98rem !important;
   }
 
-  .blog-article-body .blog-evidence-note {
-    padding: 6px 9px;
+  .blog-article-body .blog-evidence-fold summary {
+    min-height: 40px;
+    font-size: .7rem !important;
+  }
+
+  .blog-article-body .blog-evidence-fold .blog-evidence-note {
+    padding: 8px 0 9px 9px;
     font-size: .7rem !important;
   }
 }

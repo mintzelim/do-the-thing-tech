@@ -45,20 +45,26 @@ describe("blog design-system refresh", () => {
     expect(blogPost).not.toContain('className="blog-article-category"');
   });
 
-  it("uses the selected Field Guide components and makes research-detail quotations visually secondary without changing renderer text", () => {
+  it("uses the selected Field Guide components and makes research-detail quotations a source-preserving Curious Fold", () => {
     expect(blogContentRenderer).toContain("field-guide-tldr-stack");
     expect(blogContentRenderer).toContain("field-guide-tldr-card");
     expect(blogContentRenderer).toContain("line.substring(3).trim().toLowerCase() === 'tl;dr'");
     expect(blogContentRenderer).toContain("The way out isn't more effort. It's less masking.");
     expect(blogContentRenderer).toContain("field-guide-postit");
     expect(blogContentRenderer).toContain('replace(/^\\*\\*(.+)\\*\\*$/, "$1")');
+    expect(blogContentRenderer).toContain('className="blog-evidence-fold"');
+    expect(blogContentRenderer).toContain("<summary>Research detail</summary>");
+    expect(blogContentRenderer).toContain("<details");
     expect(blogContentRenderer).toContain("blog-evidence-note");
     expect(blogContentRenderer).toContain("Research detail");
     expect(fieldGuideStyles).toContain(".blog-article-body .field-guide-tldr-stack");
     expect(fieldGuideStyles).toContain("grid-template-columns: repeat(2, minmax(0, 1fr))");
     expect(fieldGuideStyles).toContain("background: #fff8bf");
     expect(fieldGuideStyles).toContain("transform: rotate(-1.1deg)");
-    expect(fieldGuideStyles).toContain(".blog-article-body .blog-evidence-note");
+    expect(fieldGuideStyles).toContain(".blog-article-body .blog-evidence-fold");
+    expect(fieldGuideStyles).toContain(".blog-article-body .blog-evidence-fold summary");
+    expect(fieldGuideStyles).toContain(".blog-evidence-fold[open] summary::after");
+    expect(fieldGuideStyles).toContain("summary:focus-visible");
     expect(fieldGuideStyles).toContain("font-size: .72rem !important");
     expect(fieldGuideStyles).toContain("border-left: 1px solid #d5d9e2 !important");
     expect(fieldGuideStyles).toContain("background: transparent !important");

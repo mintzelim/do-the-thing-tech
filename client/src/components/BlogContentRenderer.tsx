@@ -223,11 +223,22 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
     if (line.startsWith('> ')) {
       const quote = line.substring(2);
       const isResearchDetail = /\b(?:202\d|systematic review|study|survey|journal|researchers found|research found)\b/i.test(quote);
+      if (isResearchDetail) {
+        elements.push(
+          <details key={`blockquote-${i}`} className="blog-evidence-fold" aria-label="Research detail">
+            <summary>Research detail</summary>
+            <blockquote className="blog-evidence-note">
+              {parseInlineMarkdown(quote)}
+            </blockquote>
+          </details>
+        );
+        i++;
+        continue;
+      }
       elements.push(
         <blockquote
           key={`blockquote-${i}`}
-          className={isResearchDetail ? 'blog-evidence-note' : 'blog-article-quote'}
-          aria-label={isResearchDetail ? 'Research detail' : undefined}
+          className="blog-article-quote"
         >
           {parseInlineMarkdown(quote)}
         </blockquote>

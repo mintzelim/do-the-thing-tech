@@ -11,3 +11,7 @@ Final visual verification confirmed the systematic-review note has a transparent
 ## Follow-up typography refinement
 
 After reader feedback, the research-detail treatment was reduced again to **11.52px** regular text (`.72rem`) against the article body’s **16.32px**, with a tighter 17.28px line height, 14px outside spacing, and 6px internal top spacing. The exact systematic-review wording remains intact and visibly reads as optional background evidence.
+
+## Selected Curious Fold treatment
+
+The selected live pattern is **Option 02 · Curious Fold**. Every detected research-detail quotation now begins as a compact 42px native `details` row labelled “Research detail,” with a low-emphasis plus marker. Selecting it reveals the original quotation unchanged in the existing 11.52px secondary type treatment. Development review of the ADHD in Women systematic-review quotation confirmed the fold is initially collapsed, expands on selection, and preserves the exact source wording before the practical guidance continues.

@@ -1033,3 +1033,4 @@
 - [x] Restyle research-detail quotations and study summaries as visually secondary “for further reading” evidence while preserving their exact source text
 - [x] Further reduce research-detail quotation type scale and spacing so studies read as clearly optional supporting evidence
 - [x] Add three approval-only research-detail quotation treatments to the ADHD in Women template exploration for user selection
+- [x] Apply Option 02 Curious Fold to live research-detail quotations while preserving exact article text and accessible disclosure behavior
