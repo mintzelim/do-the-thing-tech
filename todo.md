@@ -1024,3 +1024,6 @@
 ## Scheduled Canonical Blog-Image Refresh
 - [x] Verify Article 25’s five replacement storage URLs resolve, then replace the remaining approved Article 26, 27, 28, and 30 inline legacy images with newly generated canonical mascot illustrations only
 - [x] Route inline Markdown storage URLs through the shared deployment-safe asset helper so refreshed article images load on both Manus and Vercel
+
+## Blog Template and Reading-Progress Comparison
+- [x] Create an approval-only HTML comparison of the ADHD in Women post using Option 01 · Field Guide and Option 02 · Focus Ledger, each with a restrained reading-progress bar

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>ADHD in Women · Blog Template Comparison</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=VT323&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --canvas: #f6f5f2;
+        --surface: #fffefb;
+        --ink: #26364a;
+        --muted: #5d6879;
+        --border: #c5cada;
+        --line: #dde0e8;
+        --accent: #5b5ce2;
+        --accent-deep: #4a4bc4;
+        --accent-pale: #eef0ff;
+        --lime: #c7db3e;
+        --lavender: #c8b1ef;
+        --warm-yellow: #fff8bf;
+        --ui: Inter, Arial, sans-serif;
+        --display: VT323, monospace;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { margin: 0; background: var(--canvas); color: var(--ink); font: 16px/1.6 var(--ui); }
+      button { font: inherit; }
+      .banner { padding: 10px 20px; background: var(--ink); color: var(--surface); font: 1.1rem/1 var(--display); letter-spacing: .08em; text-align: center; }
+      .banner strong { color: var(--lime); }
+      .page { width: min(1240px, calc(100% - 40px)); margin: 0 auto; padding: 42px 0 72px; }
+      .page-heading { max-width: 810px; margin-bottom: 34px; }
+      .eyebrow { margin: 0 0 10px; color: var(--accent-deep); font: 1.1rem/1 var(--display); letter-spacing: .1em; }
+      h1, h2, h3, p { margin-top: 0; }
+      h1 { margin-bottom: 14px; font-size: clamp(2.2rem, 4vw, 4rem); letter-spacing: -.07em; line-height: .98; }
+      .intro { max-width: 700px; margin: 0; color: var(--muted); font-size: 1.04rem; }
+      .comparison-notes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0 36px; }
+      .comparison-notes p { min-height: 100%; margin: 0; padding: 13px 14px; border-top: 1px solid var(--border); color: var(--muted); font-size: .78rem; }
+      .comparison-notes strong { display: block; margin-bottom: 3px; color: var(--ink); font-size: .78rem; }
+      .template-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px; align-items: start; }
+      .template-option { min-width: 0; overflow: hidden; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: 7px 8px 0 rgba(210, 211, 224, .62); }
+      .option-label { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 15px 18px; border-bottom: 1px solid var(--border); background: #fafafd; }
+      .option-label b { color: var(--accent-deep); font: 1.15rem/1 var(--display); letter-spacing: .08em; }
+      .option-label span { color: var(--muted); font-size: .72rem; font-weight: 700; }
+      .preview-scroll { height: 690px; overflow: auto; scrollbar-color: var(--accent) var(--accent-pale); scrollbar-width: thin; background: var(--surface); }
+      .preview-scroll:focus-visible { outline: 3px solid var(--accent); outline-offset: -4px; }
+      .progress-wrap { position: sticky; z-index: 5; top: 0; padding: 12px 18px 10px; border-bottom: 1px solid var(--border); background: rgba(255, 254, 251, .96); backdrop-filter: blur(8px); }
+      .progress-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 7px; color: var(--muted); font-size: .67rem; font-weight: 800; letter-spacing: .03em; }
+      .progress-meta b { color: var(--accent-deep); font: 1rem/1 var(--display); letter-spacing: .08em; }
+      .progress-track { height: 5px; overflow: hidden; border-radius: 99px; background: var(--accent-pale); }
+      .progress-fill { width: 0%; height: 100%; border-radius: inherit; background: var(--accent); transition: width .12s linear; }
+      .article-preview { padding: 0 28px 48px; }
+      .crumbs { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 26px; color: var(--muted); font-size: .68rem; }
+      .category { display: inline-block; margin: 24px 0 11px; color: var(--accent-deep); font: 1.05rem/1 var(--display); letter-spacing: .1em; }
+      .article-title { margin: 0; font-size: clamp(1.8rem, 3vw, 2.65rem); letter-spacing: -.07em; line-height: 1; }
+      .standfirst { margin: 16px 0 0; color: var(--muted); font-size: .92rem; line-height: 1.55; }
+      .article-byline { display: flex; gap: 8px; align-items: center; margin: 18px 0 23px; color: var(--muted); font-size: .68rem; }
+      .author-mark { display: grid; width: 25px; height: 25px; place-items: center; border: 1px solid var(--ink); border-radius: 50%; background: var(--lavender); color: var(--ink); font: .95rem/1 var(--display); }
+      .preview-content h3 { margin: 31px 0 8px; font-size: 1.18rem; letter-spacing: -.04em; line-height: 1.15; }
+      .preview-content p { margin-bottom: 14px; color: var(--muted); font-size: .84rem; }
+      .preview-content strong { color: var(--ink); }
+      .preview-content ul { margin: 12px 0 17px; padding-left: 20px; color: var(--muted); font-size: .82rem; }
+      .preview-content li { margin: 7px 0; }
+      .helper-link { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 3px; }
+
+      /* Option 01 · Field Guide */
+      .field-hero-map { position: relative; min-height: 150px; margin: 23px -28px 27px; overflow: hidden; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); background: linear-gradient(135deg, #eef0ff 0 58%, #f8fce9 58% 100%); }
+      .field-hero-map::before { position: absolute; right: 12%; bottom: -19px; width: 120px; height: 120px; border: 2px solid var(--ink); border-radius: 50%; background: var(--lavender); box-shadow: inset 0 0 0 10px #ded2f6; content: ""; }
+      .field-hero-map::after { position: absolute; right: 33%; bottom: 20px; width: 6px; height: 72px; background: var(--ink); box-shadow: 14px 0 0 -4px var(--lime); content: ""; }
+      .field-map-note { position: absolute; z-index: 1; bottom: 18px; left: 28px; max-width: 190px; margin: 0; color: var(--accent-deep); font: 1.08rem/1.08 var(--display); letter-spacing: .07em; }
+      .start-here { margin: 23px 0 30px; padding: 17px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+      .start-here-label { margin: 0 0 10px; color: var(--accent-deep); font: 1.05rem/1 var(--display); letter-spacing: .08em; }
+      .start-here ol { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; counter-reset: start; }
+      .start-here li { display: grid; grid-template-columns: 22px 1fr; gap: 9px; color: var(--muted); font-size: .78rem; }
+      .start-here li::before { display: grid; width: 21px; height: 21px; place-items: center; border-radius: 50%; background: var(--accent-pale); color: var(--accent-deep); content: counter(start); counter-increment: start; font: .95rem/1 var(--display); }
+      .field-guide-quote { margin: 25px 0; padding: 14px 16px; border-left: 3px solid var(--accent); background: linear-gradient(90deg, var(--accent-pale), transparent); color: var(--muted); font-size: .78rem; }
+      .field-guide-quote strong { display: block; margin-bottom: 5px; }
+
+      /* Option 02 · Focus Ledger */
+      .ledger-article { padding-left: 19px; }
+      .ledger-article::before { position: absolute; content: ""; }
+      .ledger-head { display: grid; grid-template-columns: minmax(0, 1fr) 94px; gap: 15px; margin: 22px 0 26px; padding-bottom: 17px; border-bottom: 1px solid var(--border); }
+      .ledger-signals { display: grid; gap: 7px; align-content: start; padding-top: 2px; }
+      .signal { display: grid; grid-template-columns: 8px 1fr; gap: 5px; color: var(--muted); font-size: .61rem; font-weight: 700; line-height: 1.2; }
+      .signal::before { width: 7px; height: 7px; margin-top: 1px; border-radius: 2px; background: var(--accent); content: ""; }
+      .signal:nth-child(2)::before { background: var(--lime); }
+      .signal:nth-child(3)::before { background: var(--lavender); }
+      .signal:nth-child(4)::before { background: #f1cb62; }
+      .ledger-direct-answer { margin: 22px 0 29px; padding: 15px 0 15px 15px; border-left: 3px solid var(--accent); background: linear-gradient(90deg, var(--accent-pale), transparent); }
+      .ledger-direct-answer b { display: block; margin-bottom: 6px; color: var(--accent-deep); font: 1.04rem/1 var(--display); letter-spacing: .08em; }
+      .ledger-direct-answer p { margin: 0; font-size: .8rem; }
+      .ledger-tldr { margin: 25px 0 28px; padding: 16px; border: 1px solid var(--border); border-radius: 8px; background: #fafafd; }
+      .ledger-tldr b { display: block; margin-bottom: 9px; color: var(--accent-deep); font: 1.03rem/1 var(--display); letter-spacing: .08em; }
+      .ledger-tldr ul { margin: 0; }
+      .ledger-table { width: 100%; margin: 21px 0 24px; border: 1px solid var(--border); border-collapse: separate; border-spacing: 0; border-radius: 8px; overflow: hidden; font-size: .7rem; }
+      .ledger-table caption { padding: 9px 10px; background: var(--surface); color: var(--accent-deep); font: .98rem/1 var(--display); letter-spacing: .07em; text-align: left; }
+      .ledger-table th, .ledger-table td { padding: 8px; border-top: 1px solid var(--line); vertical-align: top; text-align: left; }
+      .ledger-table th { background: var(--accent-pale); color: var(--ink); font-size: .64rem; }
+      .ledger-table td { color: var(--muted); }
+      .ledger-note { max-width: 265px; margin: 24px 0; padding: 13px; border: 1px solid var(--ink); border-radius: 8px; background: var(--warm-yellow); box-shadow: 3px 4px 0 #d9c6f4; transform: rotate(-.8deg); }
+      .ledger-note b { display: block; margin-bottom: 5px; color: var(--accent-deep); font: 1rem/1 var(--display); letter-spacing: .06em; }
+      .ledger-note p { margin: 0; color: var(--ink); font-size: .73rem; line-height: 1.42; }
+      .source-mini { margin-top: 31px; padding-top: 16px; border-top: 1px solid var(--border); }
+      .source-mini b { color: var(--accent-deep); font: 1rem/1 var(--display); letter-spacing: .08em; }
+      .source-mini ol { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: .7rem; }
+
+      .selection-guide { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 42px; padding: 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+      .selection-guide h2 { margin: 0 0 8px; font-size: 1.35rem; letter-spacing: -.04em; }
+      .selection-guide p { margin: 0; color: var(--muted); font-size: .82rem; }
+      .selection-guide ul { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+      .selection-guide li { padding-left: 17px; color: var(--muted); font-size: .79rem; }
+      .selection-guide li::before { position: absolute; margin-left: -17px; color: var(--accent-deep); content: "→"; }
+
+      @media (max-width: 920px) {
+        .template-grid { grid-template-columns: 1fr; max-width: 680px; margin: 0 auto; }
+        .comparison-notes { grid-template-columns: 1fr; }
+      }
+      @media (max-width: 560px) {
+        .page { width: min(100% - 26px, 1240px); padding-top: 28px; }
+        .template-option { border-radius: 11px; }
+        .preview-scroll { height: 620px; }
+        .article-preview { padding-right: 18px; padding-left: 18px; }
+        .progress-wrap { padding-right: 18px; padding-left: 18px; }
+        .field-hero-map { margin-right: -18px; margin-left: -18px; }
+        .field-map-note { left: 18px; }
+        .ledger-head { grid-template-columns: 1fr 78px; }
+        .selection-guide { grid-template-columns: 1fr; padding: 20px; }
+      }
+      @media (prefers-reduced-motion: reduce) { .progress-fill { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <div class="banner"><strong>APPROVAL-ONLY PREVIEW</strong> · ADHD in Women article templates · not connected to the live blog</div>
+    <main class="page">
+      <header class="page-heading">
+        <p class="eyebrow">BLOG READING EXPERIENCE</p>
+        <h1>ADHD in Women, in two calmer ways to read.</h1>
+        <p class="intro">Both previews use the current article’s exact title, excerpt, metadata, facts, sections, tables, FAQs, and sources. The difference is the reading orientation: a gentle map in <strong>Option 01</strong>, or a quiet provenance-led rail in <strong>Option 02</strong>.</p>
+      </header>
+
+      <section class="comparison-notes" aria-label="Comparison rules">
+        <p><strong>Reading progress</strong>Each preview uses a thin sticky progress line. It updates within the preview while preserving a calm, screen-reader-labelled reading state.</p>
+        <p><strong>No content rewrite</strong>Template structure changes presentation only. The post’s facts, medical-information boundaries, table content, and source posture remain intact.</p>
+        <p><strong>Responsive intent</strong>On a live article, the Field Guide map and Focus Ledger evidence rail collapse into short in-flow orientation blocks on mobile.</p>
+      </section>
+
+      <section class="template-grid" aria-label="Blog template options">
+        <section class="template-option" aria-labelledby="field-guide-title">
+          <header class="option-label"><b id="field-guide-title">OPTION 01 · THE FIELD GUIDE</b><span>Orientation-first</span></header>
+          <div class="preview-scroll" tabindex="0" data-reading-preview="field-guide" aria-label="Scrollable Field Guide article preview">
+            <div class="progress-wrap">
+              <div class="progress-meta"><b>READING PROGRESS</b><span data-progress-label>0% · START HERE</span></div>
+              <div class="progress-track" role="progressbar" aria-label="Field Guide reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-fill"></div></div>
+            </div>
+            <article class="article-preview preview-content">
+              <nav class="crumbs" aria-label="Breadcrumb"><span>Home</span><span>›</span><span>Blog</span><span>›</span><span>ADHD Basics</span></nav>
+              <p class="category">ADHD BASICS · FIELD GUIDE</p>
+              <h2 class="article-title">ADHD in Women: The Symptoms Nobody Told You About</h2>
+              <p class="standfirst">ADHD in women looks internal, not hyperactive — and hormones make it worse. Here's what it actually feels like, why it's missed, and how understanding it changes everything.</p>
+              <p class="article-byline"><span class="author-mark" aria-hidden="true">L</span><span><strong>Lim Min Tze</strong> · August 4, 2026 · Updated August 4, 2026 · 10 min read · 2,458 words</span></p>
+              <div class="field-hero-map" aria-hidden="true"><p class="field-map-note">A gentle map for seeing the pattern, the cycle, and the next support.</p></div>
+              <section class="start-here" aria-label="Start here">
+                <p class="start-here-label">START HERE</p>
+                <ol><li>See why internal symptoms and masking are easy to miss.</li><li>Follow the hormone-aware context without treating it as a diagnosis.</li><li>Keep the support ideas that make your real life more workable.</li></ol>
+              </section>
+              <p>You've spent years feeling like you're running on a treadmill that's slightly too fast. You're smart. You're capable. You've built systems, made lists, apologized for being "too much" or "not enough" in equal measure. And somewhere along the way, you started wondering: is there a reason this is so hard?</p>
+              <p>There is.</p>
+              <p>ADHD in women looks different from the stereotype. It's quieter. It hides behind good grades, careful masking, and a constant internal monologue that sounds nothing like "can't sit still." And the good news? Once you see it clearly, everything starts to make sense.</p>
+              <aside class="field-guide-quote"><strong>ARTICLE CONTEXT</strong>ADHD in women can be internalized, frequently masked, and shaped by hormonal fluctuations across the menstrual cycle and life stages. That context is useful for understanding patterns, not for self-diagnosis.</aside>
+              <h3>Why ADHD Looks Different in Women</h3>
+              <p>The classic ADHD image is a kid bouncing off the walls. That's the externalized, hyperactive presentation, and it's the one researchers built the original diagnostic criteria around.</p>
+              <p>Women more often have the <strong>inattentive presentation</strong>. Instead of bouncing off walls, it can look like:</p>
+              <ul><li>A mind that races through 14 thoughts while someone's talking</li><li>Daydreaming that makes you miss entire conversations</li><li>Chronic lateness despite planning to be early</li><li>Losing things in a way that feels like magic</li></ul>
+              <p>Because these symptoms point inward instead of outward, they're easy to miss. If adult symptoms are part of your question, the article’s <span class="helper-link">guide to ADHD symptoms in adults</span> remains available in its usual place.</p>
+              <h3>The Hormonal Story: Estrogen, Dopamine, and Your Cycle</h3>
+              <p>Here's the part almost nobody told you. Your ADHD symptoms aren't static. They ebb and flow with your hormones, because <strong>estrogen directly interacts with the dopamine systems that ADHD affects.</strong></p>
+              <p>When estrogen is high, your brain has more dopamine available. When estrogen drops, so does dopamine, and ADHD symptoms can get louder.</p>
+              <h3>What to Do: From “I Think This Is Me” to “I’m Building a Life That Works”</h3>
+              <p>Read through the symptoms again. Note which ones hit home. Track your energy, focus, and mood across a month to see your hormonal rhythm. You're building a map of your own brain, and that map is the foundation for everything else.</p>
+              <p>Ask for an assessment that's gender-informed. If you can, find a clinician who specializes in adult ADHD, especially in women.</p>
+              <p>Continue reading through the full article’s <strong>seven symptoms</strong>, <strong>life stages</strong>, <strong>masking-burnout cycle</strong>, practical steps, FAQs, and source list in this same uninterrupted rail.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="template-option" aria-labelledby="focus-ledger-title">
+          <header class="option-label"><b id="focus-ledger-title">OPTION 02 · FOCUS LEDGER</b><span>Evidence-first</span></header>
+          <div class="preview-scroll" tabindex="0" data-reading-preview="focus-ledger" aria-label="Scrollable Focus Ledger article preview">
+            <div class="progress-wrap">
+              <div class="progress-meta"><b>READING PROGRESS</b><span data-progress-label>0% · START HERE</span></div>
+              <div class="progress-track" role="progressbar" aria-label="Focus Ledger reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="progress-fill"></div></div>
+            </div>
+            <article class="article-preview preview-content ledger-article">
+              <nav class="crumbs" aria-label="Breadcrumb"><span>Home</span><span>›</span><span>Blog</span><span>›</span><span>ADHD Basics</span></nav>
+              <div class="ledger-head">
+                <div><p class="category">ADHD BASICS · FOCUS LEDGER</p><h2 class="article-title">ADHD in Women: The Symptoms Nobody Told You About</h2><p class="standfirst">ADHD in women looks internal, not hyperactive — and hormones make it worse. Here's what it actually feels like, why it's missed, and how understanding it changes everything.</p></div>
+                <aside class="ledger-signals" aria-label="Article signals"><span class="signal">Updated<br>Aug 4, 2026</span><span class="signal">10 min<br>2,458 words</span><span class="signal">8 cited<br>sources</span><span class="signal">Educational<br>not diagnostic</span></aside>
+              </div>
+              <p class="article-byline"><span class="author-mark" aria-hidden="true">L</span><span><strong>Lim Min Tze</strong> · Founder, Creative Director, Product Developer</span></p>
+              <section class="ledger-direct-answer"><b>DIRECT ANSWER</b><p>ADHD in women often presents through internalized symptoms, masking, and hormone-linked changes in focus and emotional regulation. Recognition can guide useful questions and supports, while formal assessment remains a clinician’s role.</p></section>
+              <section class="ledger-tldr"><b>TL;DR</b><ul><li><strong>ADHD in women usually looks internal, not hyperactive.</strong> Daydreaming, overthinking, rejection sensitivity, and exhaustion can be more visible than fidgeting.</li><li><strong>Symptoms can fluctuate.</strong> Estrogen interacts with dopamine systems involved in ADHD.</li><li><strong>You’re not lazy or broken.</strong> Understanding patterns can reduce self-blame and inform support.</li></ul></section>
+              <h3>Why ADHD Looks Different in Women</h3>
+              <p>The classic ADHD image is a kid bouncing off the walls. That's the externalized, hyperactive presentation, and it is the one researchers built the original diagnostic criteria around.</p>
+              <p>Women more often have the <strong>inattentive presentation</strong>. Because these symptoms point inward instead of outward, they can be easy to miss.</p>
+              <table class="ledger-table"><caption>QUIET LEDGER · THE 7 SYMPTOMS WOMEN ACTUALLY EXPERIENCE</caption><thead><tr><th>Symptom</th><th>Day to day</th><th>Reframe</th></tr></thead><tbody><tr><td><strong>Inattentive presentation</strong></td><td>Zoning out in meetings, losing the thread of books</td><td>A wiring difference, not a flaw.</td></tr><tr><td><strong>Masking</strong></td><td>Performing “fine” while no one sees the struggle</td><td>Adaptation can be skill and exhausting.</td></tr><tr><td><strong>Time blindness</strong></td><td>“10 minutes” becomes two hours</td><td>External cues can help more than shame.</td></tr></tbody></table>
+              <h3>The Hormonal Story: Estrogen, Dopamine, and Your Cycle</h3>
+              <p>Symptoms are not necessarily static. They can ebb and flow with hormones because <strong>estrogen directly interacts with the dopamine systems that ADHD affects.</strong></p>
+              <p>Tracking patterns can be useful; treatment or medication changes should be discussed with the relevant prescriber or health professional.</p>
+              <aside class="ledger-note"><b>ARTICLE REFRAME</b><p>The way out isn't more effort. It’s less masking—and support that makes the actual day more workable.</p></aside>
+              <h3>What to Do: From “I Think This Is Me” to “I’m Building a Life That Works”</h3>
+              <p>Learn your pattern. Ask for an assessment with the right lens. Explore treatment with a clinician. Build systems around your real brain. Find your people.</p>
+              <p>Continue through the full article’s life-stage context, masking-burnout cycle, practical steps, common mistakes, FAQs, and original source list in the same evidence-aware rail.</p>
+              <section class="source-mini"><b>SOURCE LEDGER</b><ol><li>Cameira et al. (2025), <em>European Psychiatry</em></li><li>(2025), ADHD and sex hormones in females: a systematic review</li><li>(2024), Adult diagnosis of ADHD in women: a mixed-methods study</li></ol></section>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="selection-guide" aria-labelledby="selection-guide-heading">
+        <div><h2 id="selection-guide-heading">How to choose</h2><p>Both retain the exact article record and keep the progress bar deliberately quieter than the reading copy.</p></div>
+        <ul><li><strong>Choose Field Guide</strong> if orientation, warmth, and a gentle opening map should lead ADHD Basics articles.</li><li><strong>Choose Focus Ledger</strong> if authorship, evidence, updates, and source posture should be visible from the start.</li><li><strong>Progress-bar contract:</strong> thin sticky indicator; no animation unless the reader scrolls; visible value for assistive technologies; no progress percentage in page metadata.</li></ul>
+      </section>
+    </main>
+    <script>
+      document.querySelectorAll('[data-reading-preview]').forEach((preview) => {
+        const fill = preview.querySelector('.progress-fill');
+        const bar = preview.querySelector('[role="progressbar"]');
+        const label = preview.querySelector('[data-progress-label]');
+        const update = () => {
+          const remaining = preview.scrollHeight - preview.clientHeight;
+          const percent = remaining > 0 ? Math.round((preview.scrollTop / remaining) * 100) : 100;
+          fill.style.width = percent + '%';
+          bar.setAttribute('aria-valuenow', String(percent));
+          label.textContent = percent + '% · ' + (percent < 25 ? 'START HERE' : percent < 75 ? 'KEEP GOING' : 'NEARLY THERE');
+        };
+        preview.addEventListener('scroll', update, { passive: true });
+        update();
+      });
+    </script>
+  </body>
+</html>
