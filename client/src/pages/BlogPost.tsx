@@ -10,6 +10,7 @@ import { getBlogCategoryEyebrow } from "@/lib/blogCategoryUtils";
 import { usePreloadedBlogPosts, type BlogPostRecord } from "@/contexts/BlogPostsContext";
 import "../pixel-art-refined.css";
 import "../blog-refined.css";
+import "../blog-field-guide.css";
 import "../blog-breadcrumb.css";
 
 type BlogPost = BlogPostRecord;
@@ -42,6 +43,7 @@ export default function BlogPost() {
   const [allPosts, setAllPosts] = useState<BlogPost[]>(() => preloadedPosts ?? []);
   const [isLoading, setIsLoading] = useState(() => preloadedPosts === null);
   const [error, setError] = useState<string | null>(null);
+  const [readingProgress, setReadingProgress] = useState(0);
 
   useEffect(() => {
     if (preloadedPosts !== null) {
@@ -76,6 +78,25 @@ export default function BlogPost() {
     updateMetaTags({ title: `${foundPost.title} | DoTheThing Blog`, description: foundPost.excerpt, canonicalUrl: blogPostUrl, ogUrl: blogPostUrl, ogId: `${blogPostUrl}#blogpost`, keywords: foundPost.seoKeywords?.join(", ") });
   }, [slug, allPosts]);
 
+  useEffect(() => {
+    if (!post) return;
+    const updateReadingProgress = () => {
+      const article = document.querySelector<HTMLElement>(".blog-field-guide-article");
+      if (!article) return;
+      const articleStart = window.scrollY + article.getBoundingClientRect().top;
+      const readableDistance = Math.max(article.offsetHeight - window.innerHeight, 1);
+      const value = Math.min(100, Math.max(0, Math.round(((window.scrollY - articleStart + 128) / readableDistance) * 100)));
+      setReadingProgress(value);
+    };
+    updateReadingProgress();
+    window.addEventListener("scroll", updateReadingProgress, { passive: true });
+    window.addEventListener("resize", updateReadingProgress);
+    return () => {
+      window.removeEventListener("scroll", updateReadingProgress);
+      window.removeEventListener("resize", updateReadingProgress);
+    };
+  }, [post]);
+
   const relatedPostsList = post ? post.relatedPosts.map((id) => allPosts.find((candidate) => candidate.id === id)).filter(Boolean) as BlogPost[] : [];
   if (!match) return null;
   if (isLoading) return <BlogPostStatus message="Loading blog post..." />;
@@ -86,9 +107,13 @@ export default function BlogPost() {
     <div className="mobile-frame blog-post-page">
       <Navigation />
       <main className="blog-article-shell">
+        <div className="blog-reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin={0} aria-valuemax={100} aria-valuenow={readingProgress} aria-valuetext={`${readingProgress}% read`}>
+          <span className="blog-reading-progress-label" aria-hidden="true">READING <b>{readingProgress}%</b></span>
+          <span className="blog-reading-progress-track" aria-hidden="true"><span className="blog-reading-progress-fill" style={{ transform: `scaleX(${readingProgress / 100})` }} /></span>
+        </div>
         <div className="blog-breadcrumb-wrap"><Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Blog", href: "/blog" }, { label: post.title }]} /></div>
-        <article>
-          <header className="blog-article-hero">
+        <article className="blog-field-guide-article">
+          <header className="blog-article-hero blog-field-guide-header">
             <div className="blog-article-title-copy">
               <p className="blog-eyebrow"><span aria-hidden="true">✦</span> {articleEyebrow}</p>
               <h1>{post.title}</h1>

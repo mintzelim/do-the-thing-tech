@@ -174,6 +174,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
   const lines = content.split('\n');
   const elements: React.ReactNode[] = [];
   let i = 0;
+  let isTldrSection = false;
 
   while (i < lines.length) {
     const line = lines[i];
@@ -197,6 +198,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
     }
 
     if (line.startsWith('## ')) {
+      isTldrSection = line.substring(3).trim().toLowerCase() === 'tl;dr';
       elements.push(
         <h2 key={`h2-${i}`} className="mobile-heading-2" style={{ marginBottom: '16px', marginTop: '24px', fontFamily: "'VT323', monospace", paddingBottom: '8px', borderBottom: '1px solid var(--pixel-border)' }}>
           {parseInlineMarkdown(line.substring(3))}
@@ -207,6 +209,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
     }
 
     if (line.startsWith('### ')) {
+      isTldrSection = line.substring(4).trim().toLowerCase() === 'tl;dr';
       elements.push(
         <h3 key={`h3-${i}`} className="mobile-heading-3" style={{ marginBottom: '12px', marginTop: '16px', fontFamily: "'VT323', monospace" }}>
           {parseInlineMarkdown(line.substring(4))}
@@ -218,26 +221,15 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
 
     // Blockquotes
     if (line.startsWith('> ')) {
+      const quote = line.substring(2);
+      const isResearchDetail = /\b(?:202\d|systematic review|study|survey|journal|researchers found|research found)\b/i.test(quote);
       elements.push(
         <blockquote
           key={`blockquote-${i}`}
-          style={{
-            borderLeft: '4px solid var(--pixel-accent)',
-            paddingLeft: '16px',
-            marginLeft: '0',
-            marginRight: '0',
-            marginBottom: '20px',
-            marginTop: '20px',
-            fontStyle: 'italic',
-            color: 'var(--pixel-text)',
-            fontFamily: "'Roboto Mono', monospace",
-            fontWeight: 500,
-            backgroundColor: 'rgba(99, 102, 241, 0.05)',
-            padding: '12px 16px',
-            borderRadius: '2px'
-          }}
+          className={isResearchDetail ? 'blog-evidence-note' : 'blog-article-quote'}
+          aria-label={isResearchDetail ? 'Research detail' : undefined}
         >
-          {parseInlineMarkdown(line.substring(2))}
+          {parseInlineMarkdown(quote)}
         </blockquote>
       );
       i++;
@@ -255,11 +247,16 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
         );
         i++;
       }
-      elements.push(
-        <ul key={`ul-${i}`} style={{ paddingLeft: '28px', marginBottom: '20px', marginTop: '12px', fontFamily: "'Roboto Mono', monospace", fontWeight: 500 }}>
-          {listItems}
-        </ul>
-      );
+      if (isTldrSection) {
+        elements.push(<div key={`tldr-${i}`} className="field-guide-tldr-stack">{listItems.map((item, index) => <article key={`tldr-card-${index}`} className="field-guide-tldr-card">{item}</article>)}</div>);
+        isTldrSection = false;
+      } else {
+        elements.push(
+          <ul key={`ul-${i}`} style={{ paddingLeft: '28px', marginBottom: '20px', marginTop: '12px', fontFamily: "'Roboto Mono', monospace", fontWeight: 500 }}>
+            {listItems}
+          </ul>
+        );
+      }
       continue;
     }
 
@@ -411,8 +408,10 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
     }
 
     // Regular paragraph
+    const sourceLine = line.trim().replace(/^\*\*(.+)\*\*$/, "$1");
+    const isSourceReframe = sourceLine === "The way out isn't more effort. It's less masking.";
     elements.push(
-      <p key={`p-${i}`} style={{ marginBottom: '16px', lineHeight: '1.8', fontFamily: "'Roboto Mono', monospace", fontSize: '16px', fontWeight: 500, color: 'var(--pixel-text)' }}>
+      <p key={`p-${i}`} className={isSourceReframe ? 'field-guide-postit' : undefined} style={{ marginBottom: '16px', lineHeight: '1.8', fontFamily: "'Roboto Mono', monospace", fontSize: '16px', fontWeight: 500, color: 'var(--pixel-text)' }}>
         {parseInlineMarkdown(line)}
       </p>
     );

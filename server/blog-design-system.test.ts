@@ -10,6 +10,7 @@ const tableRenderer = blogContentRenderer.slice(
   blogContentRenderer.indexOf("// Horizontal rule"),
 );
 const styles = readFileSync(resolve(process.cwd(), "client/src/blog-refined.css"), "utf8");
+const fieldGuideStyles = readFileSync(resolve(process.cwd(), "client/src/blog-field-guide.css"), "utf8");
 const breadcrumbStyles = readFileSync(resolve(process.cwd(), "client/src/blog-breadcrumb.css"), "utf8");
 
 describe("blog design-system refresh", () => {
@@ -26,7 +27,11 @@ describe("blog design-system refresh", () => {
   it("preserves article metadata, server-rendered schema compatibility, sources, CTA, and related-post navigation in the refined template", () => {
     expect(blogPost).toContain("updateMetaTags({ title: `${foundPost.title} | DoTheThing Blog`");
     expect(blogPost).not.toContain("injectBlogPostingSchema(");
-    expect(blogPost).toContain('className="blog-article-hero"');
+    expect(blogPost).toContain('className="blog-article-hero blog-field-guide-header"');
+    expect(blogPost).toContain('className="blog-field-guide-article"');
+    expect(blogPost).toContain('className="blog-reading-progress"');
+    expect(blogPost).toContain('role="progressbar"');
+    expect(blogPost).toContain('aria-valuetext={`${readingProgress}% read`}');
     expect(blogPost).toContain('className="blog-article-body"');
     expect(blogPost).toContain('className="blog-sources-panel"');
     expect(blogPost).toContain('className="blog-article-cta"');
@@ -38,6 +43,25 @@ describe("blog design-system refresh", () => {
     expect(blogPost).toContain("START WHEN READY");
     expect(blogPost).not.toContain("A SMALLER NEXT STEP");
     expect(blogPost).not.toContain('className="blog-article-category"');
+  });
+
+  it("uses the selected Field Guide components and makes research-detail quotations visually secondary without changing renderer text", () => {
+    expect(blogContentRenderer).toContain("field-guide-tldr-stack");
+    expect(blogContentRenderer).toContain("field-guide-tldr-card");
+    expect(blogContentRenderer).toContain("line.substring(3).trim().toLowerCase() === 'tl;dr'");
+    expect(blogContentRenderer).toContain("The way out isn't more effort. It's less masking.");
+    expect(blogContentRenderer).toContain("field-guide-postit");
+    expect(blogContentRenderer).toContain('replace(/^\\*\\*(.+)\\*\\*$/, "$1")');
+    expect(blogContentRenderer).toContain("blog-evidence-note");
+    expect(blogContentRenderer).toContain("Research detail");
+    expect(fieldGuideStyles).toContain(".blog-article-body .field-guide-tldr-stack");
+    expect(fieldGuideStyles).toContain("grid-template-columns: repeat(2, minmax(0, 1fr))");
+    expect(fieldGuideStyles).toContain("background: #fff8bf");
+    expect(fieldGuideStyles).toContain("transform: rotate(-1.1deg)");
+    expect(fieldGuideStyles).toContain(".blog-article-body .blog-evidence-note");
+    expect(fieldGuideStyles).toContain("font-size: .84rem");
+    expect(fieldGuideStyles).toContain("border-left: 1px solid #d5d9e2 !important");
+    expect(fieldGuideStyles).toContain("background: transparent !important");
   });
 
   it("applies documented panel, card, motion, and reduced-motion rules without reintroducing heavy legacy styling", () => {
@@ -79,6 +103,8 @@ describe("blog design-system refresh", () => {
     expect(styles).toContain('.blog-post-page .blog-article-shell>article{width:100%!important;min-width:0!important;max-width:100%!important}');
     expect(styles).toContain('.blog-post-page .blog-article-mascot{order:-1!important;display:flex!important;min-height:76px!important;justify-content:flex-end!important;align-items:center!important;overflow:hidden}');
     expect(styles).toContain('.blog-post-page .blog-article-feature img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important;max-height:340px!important;object-fit:cover!important}');
+    expect(fieldGuideStyles).toContain(".blog-article-body .field-guide-tldr-stack {\n    grid-template-columns: 1fr;");
+    expect(fieldGuideStyles).toContain(".blog-reading-progress {\n    gap: 9px;");
     expect(breadcrumbStyles).toContain('text-overflow:ellipsis');
     expect(breadcrumbStyles).toContain('.blog-breadcrumb-item:last-child{min-width:0;overflow:hidden}');
   });
