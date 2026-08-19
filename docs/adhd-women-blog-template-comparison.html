@@ -86,6 +86,31 @@
       .field-guide-postit { margin: 24px 4px 27px; padding: 16px 17px 17px; border: 1px solid var(--ink); border-radius: 8px; background: var(--warm-yellow); box-shadow: 4px 4px 0 #d9c6f4; color: var(--ink) !important; font-size: .84rem !important; line-height: 1.5; transform: rotate(-1.1deg); }
       .field-guide-postit strong { color: var(--ink); }
 
+      /* Approval-only study-detail alternatives. The source quotation is identical in every option. */
+      .research-treatment-exploration { margin: 0 0 36px; padding: 22px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: 7px 8px 0 rgba(210, 211, 224, .42); }
+      .research-treatment-heading { display: flex; align-items: end; justify-content: space-between; gap: 18px; margin-bottom: 18px; padding-bottom: 13px; border-bottom: 1px solid var(--border); }
+      .research-treatment-heading h2 { margin: 0; font-size: 1.45rem; letter-spacing: -.04em; }
+      .research-treatment-heading p { max-width: 520px; margin: 0; color: var(--muted); font-size: .78rem; text-align: right; }
+      .research-treatment-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+      .research-treatment-option { min-width: 0; padding: 15px; border: 1px solid var(--line); border-radius: 10px; background: #fbfbfa; }
+      .research-treatment-option h3 { margin: 0 0 5px; color: var(--accent-deep); font: 1.06rem/1 var(--display); letter-spacing: .08em; }
+      .research-treatment-option > p { min-height: 37px; margin: 0 0 13px; color: var(--muted); font-size: .7rem; line-height: 1.4; }
+      .research-quote { margin: 0; color: #717b8b; font-size: .72rem; font-style: normal; font-weight: 400; line-height: 1.5; }
+      .research-quote em { color: #687283; }
+      .research-whisper { padding: 7px 0 7px 10px; border-left: 1px solid #d5d9e2; }
+      .research-whisper .research-quote { font-size: .69rem; line-height: 1.48; }
+      .research-fold { overflow: hidden; border: 1px solid #e0e2e8; border-radius: 7px; background: var(--surface); }
+      .research-fold summary { display: flex; align-items: center; min-height: 30px; padding: 7px 9px; color: var(--muted); cursor: pointer; font-size: .68rem; font-weight: 700; list-style: none; }
+      .research-fold summary::-webkit-details-marker { display: none; }
+      .research-fold summary::after { margin-left: auto; color: var(--accent-deep); content: "+"; font: 1rem/1 var(--display); }
+      .research-fold[open] summary { border-bottom: 1px solid var(--line); }
+      .research-fold[open] summary::after { content: "−"; }
+      .research-fold .research-quote { padding: 9px 10px; font-size: .69rem; line-height: 1.48; }
+      .research-footnote { display: grid; grid-template-columns: 17px minmax(0, 1fr); gap: 8px; align-items: start; padding-top: 3px; }
+      .research-footnote-index { display: grid; width: 17px; height: 17px; place-items: center; border-radius: 50%; background: #eef0ff; color: var(--accent-deep); font: .86rem/1 var(--display); }
+      .research-footnote .research-quote { font-size: .69rem; line-height: 1.48; }
+      .research-treatment-option summary:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+
       /* Option 02 · Focus Ledger */
       .ledger-article { padding-left: 19px; }
       .ledger-article::before { position: absolute; content: ""; }
@@ -124,6 +149,7 @@
       @media (max-width: 920px) {
         .template-grid { grid-template-columns: 1fr; max-width: 680px; margin: 0 auto; }
         .comparison-notes { grid-template-columns: 1fr; }
+        .research-treatment-grid { grid-template-columns: 1fr; }
       }
       @media (max-width: 560px) {
         .page { width: min(100% - 26px, 1240px); padding-top: 28px; }
@@ -133,6 +159,10 @@
         .progress-wrap { padding-right: 18px; padding-left: 18px; }
         .field-hero-map { margin-right: -18px; margin-left: -18px; }
         .field-map-note { left: 18px; }
+        .research-treatment-exploration { padding: 18px; }
+        .research-treatment-heading { display: block; }
+        .research-treatment-heading h2 { margin-bottom: 8px; }
+        .research-treatment-heading p { text-align: left; }
         .ledger-head { grid-template-columns: 1fr 78px; }
         .selection-guide { grid-template-columns: 1fr; padding: 20px; }
         .field-guide-card-stack { grid-template-columns: 1fr; }
@@ -154,6 +184,30 @@
         <p><strong>Reading progress</strong>Each preview uses a thin sticky progress line. It updates within the preview while preserving a calm, screen-reader-labelled reading state.</p>
         <p><strong>No content rewrite</strong>Template structure changes presentation only. The post’s facts, medical-information boundaries, table content, and source posture remain intact.</p>
         <p><strong>Responsive intent</strong>On a live article, the Field Guide map and Focus Ledger evidence rail collapse into short in-flow orientation blocks on mobile.</p>
+      </section>
+
+      <section class="research-treatment-exploration" aria-labelledby="research-treatment-heading">
+        <header class="research-treatment-heading">
+          <div><p class="eyebrow">STUDY DETAILS · APPROVAL-ONLY</p><h2 id="research-treatment-heading">Three quieter ways to keep the evidence available.</h2></div>
+          <p>Each alternative repeats the same existing study quotation verbatim. These are presentation choices only; none changes the article’s source text.</p>
+        </header>
+        <div class="research-treatment-grid">
+          <article class="research-treatment-option" data-research-treatment-option="whisper-note">
+            <h3>OPTION 01 · WHISPER NOTE</h3>
+            <p>A minimal left rule keeps the study in flow, but with less visual weight than the practical guidance.</p>
+            <aside class="research-whisper"><p class="research-quote">A 2025 systematic review in the <em>Journal of Attention Disorders</em> found ADHD symptoms worsen in the mid-luteal and premenstrual phases, affecting emotional regulation, executive function, attention, and concentration. Medication can also feel less effective during these windows.</p></aside>
+          </article>
+          <article class="research-treatment-option" data-research-treatment-option="curious-fold">
+            <h3>OPTION 02 · CURIOUS FOLD</h3>
+            <p>A compact disclosure row leaves the evidence available for readers who want the study detail, without interrupting the main path.</p>
+            <details class="research-fold"><summary>Study detail · 2025 systematic review</summary><p class="research-quote">A 2025 systematic review in the <em>Journal of Attention Disorders</em> found ADHD symptoms worsen in the mid-luteal and premenstrual phases, affecting emotional regulation, executive function, attention, and concentration. Medication can also feel less effective during these windows.</p></details>
+          </article>
+          <article class="research-treatment-option" data-research-treatment-option="margin-footnote">
+            <h3>OPTION 03 · MARGIN FOOTNOTE</h3>
+            <p>A small numbered reference signals optional context: present and credible, but clearly secondary to the article’s advice.</p>
+            <aside class="research-footnote"><span class="research-footnote-index" aria-hidden="true">1</span><p class="research-quote">A 2025 systematic review in the <em>Journal of Attention Disorders</em> found ADHD symptoms worsen in the mid-luteal and premenstrual phases, affecting emotional regulation, executive function, attention, and concentration. Medication can also feel less effective during these windows.</p></aside>
+          </article>
+        </div>
       </section>
 
       <section class="template-grid" aria-label="Blog template options">

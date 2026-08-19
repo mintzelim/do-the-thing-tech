@@ -50,4 +50,18 @@ describe("ADHD in Women blog template comparison", () => {
     expect(html).toContain('"The way out isn\'t more effort. It\'s less masking."');
     expect(html).toContain('class="field-hero-map" aria-hidden="true"></div>');
   });
+
+  it("offers three approval-only, exact-text hierarchy choices for research-detail quotations", () => {
+    const html = readFileSync(comparisonPath, "utf8");
+    const systematicReview = "A 2025 systematic review in the Journal of Attention Disorders found ADHD symptoms worsen in the mid-luteal and premenstrual phases, affecting emotional regulation, executive function, attention, and concentration. Medication can also feel less effective during these windows.";
+
+    expect((html.match(/data-research-treatment-option=/g) || []).length).toBe(3);
+    expect(html).toContain("OPTION 01 · WHISPER NOTE");
+    expect(html).toContain("OPTION 02 · CURIOUS FOLD");
+    expect(html).toContain("OPTION 03 · MARGIN FOOTNOTE");
+    expect((html.match(/A 2025 systematic review in the <em>Journal of Attention Disorders<\/em> found ADHD symptoms worsen/g) || []).length).toBe(3);
+    expect(html).toContain('class="research-fold"');
+    expect(html).toContain("research-treatment-option summary:focus-visible");
+    expect(systematicReview).toContain("Medication can also feel less effective during these windows.");
+  });
 });

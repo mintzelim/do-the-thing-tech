@@ -21,6 +21,22 @@ Both previews must render the **exact live ADHD in Women Markdown body** from `b
 
 The revised Field Guide expresses the source article through two already approved component rules without adding copy. The live article’s existing TL;DR list is re-presented as a small two-column **card group** using the shared warm-white surface, ink border, 10px radius, and 3px/4px lavender shadow. The article’s own masking-burnout sentence, “The way out isn't more effort. It's less masking.”, becomes the single **Pixel Post-It**: `#fff8bf`, 1px ink outline, 8px radius, 4px lavender shadow, and a restrained `-1.1deg` rotation. No generated labels, summaries, claims, or new reading instructions are introduced.
 
+## Study-detail alternatives awaiting selection
+
+The comparison now includes three **approval-only** treatments for the existing 2025 *Journal of Attention Disorders* systematic-review quotation. Every option repeats the same source sentence verbatim and makes no live-blog change.
+
+| Option | Treatment | Reader effect | Best fit |
+| --- | --- | --- | --- |
+| **Option 01 · Whisper Note** | A narrow neutral rule with compact in-flow type. | Keeps the evidence visible but clearly quieter than practical guidance. | When every source statement should remain immediately scannable. |
+| **Option 02 · Curious Fold** | A native, keyboard-accessible disclosure row containing the source text. | Lets readers opt into dry study detail without breaking the main reading path. | When study specifics are useful primarily to interested readers. |
+| **Option 03 · Margin Footnote** | A small numbered reference with compact source text. | Makes the evidence feel like supporting editorial context rather than a callout. | When a reference-like hierarchy better suits research-backed explainers. |
+
+All three treatments are responsive and retain visible keyboard focus. The live Field Guide continues using the currently published quiet evidence-note treatment until a new option is selected.
+
+## Study-detail visual review
+
+Desktop review confirms the three alternatives appear together above the two full template previews without modifying either live template. **Whisper Note** is the quietest always-visible option. **Curious Fold** begins as a compact one-line study-detail row and expands to reveal the exact quotation when selected. **Margin Footnote** keeps the full quotation visible with a small numbered source cue. The disclosure control expanded correctly during the review, preserving the quotation and its reading order.
+
 ## Visual review
 
 Desktop review confirms the two options sit side by side within the landing rail without competing with the page introduction. The Field Guide’s contained reader rail updated from `0% · START HERE` while being scrolled, while the Focus Ledger remained independently at its starting state. The existing TL;DR entries now render as a readable two-column card group, and the single Pixel Post-It is reserved for the exact source reframe sentence further down the article. Both progress lines stay visually secondary to the article hierarchy. The corrected preview now adds a regression requirement that the embedded source template exactly matches the live article body.
