@@ -1034,3 +1034,6 @@
 - [x] Further reduce research-detail quotation type scale and spacing so studies read as clearly optional supporting evidence
 - [x] Add three approval-only research-detail quotation treatments to the ADHD in Women template exploration for user selection
 - [x] Apply Option 02 Curious Fold to live research-detail quotations while preserving exact article text and accessible disclosure behavior
+- [ ] Replace quiz placeholders with seven consistent approved purple mascot illustrations, one for each reader-facing ADHD pattern result
+- [ ] Integrate the seven quiz mascot illustrations without changing quiz scoring, result wording, or clinical boundaries
+- [ ] Rewrite all seven quiz result explanations and reflection cards in direct, relatable, personality-style language while preserving scoring and non-diagnostic boundaries
