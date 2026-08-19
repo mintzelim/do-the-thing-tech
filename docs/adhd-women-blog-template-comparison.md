@@ -13,10 +13,10 @@ The HTML preview at `docs/adhd-women-blog-template-comparison.html` uses the cur
 
 The progress bar is a visible in-page orientation cue, not schema or metadata. It updates only from reader scroll, has a matching `role="progressbar"` with current value, and respects reduced-motion preferences by avoiding decorative animation. On small screens, it remains one thin sticky line with text rather than becoming a new control surface.
 
-## Selection boundary
+## Exact-content boundary
 
-Once the user selects **Field Guide** or **Focus Ledger**, implementation will apply that template consistently across live posts and add the shared reading-progress behavior. No post-body text, citation, source, table, metadata, route, or non-diagnostic boundary will be rewritten as part of the layout work.
+Both previews must render the **exact live ADHD in Women Markdown body** from `blog/31-adhd-in-women.md`. Neither option may paraphrase, summarize, omit, reorder, or add to the article’s paragraphs, headings, links, tables, FAQs, sources, medical-information boundaries, metadata, or route. The Field Guide map and Focus Ledger provenance signals are surrounding layout only; they are not replacements for source content.
 
 ## Visual review
 
-Desktop review confirms the two options sit side by side within the landing rail without competing with the page introduction. The Field Guide’s contained reader rail updated from `0% · START HERE` to `80% · NEARLY THERE` when scrolled, while the Focus Ledger remained independently at its starting state. Both progress lines stay visually secondary to the article hierarchy.
+Desktop review confirms the two options sit side by side within the landing rail without competing with the page introduction. The Field Guide’s contained reader rail updated from `0% · START HERE` to `80% · NEARLY THERE` when scrolled, while the Focus Ledger remained independently at its starting state. Both progress lines stay visually secondary to the article hierarchy. The corrected preview now adds a regression requirement that the embedded source template exactly matches the live article body.

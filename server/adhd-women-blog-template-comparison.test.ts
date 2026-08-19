@@ -24,4 +24,17 @@ describe("ADHD in Women blog template comparison", () => {
     expect(html).toContain("prefers-reduced-motion");
     expect(html).toContain("preview.addEventListener('scroll', update");
   });
+
+  it("embeds the exact live ADHD in Women article body for both visual templates", () => {
+    const html = readFileSync(comparisonPath, "utf8");
+    const source = readFileSync(resolve(process.cwd(), "blog/31-adhd-in-women.md"), "utf8");
+    const frontmatterEnd = source.indexOf("\n---\n", 4);
+    const liveArticleBody = frontmatterEnd >= 0 ? source.slice(frontmatterEnd + "\n---\n".length).trim() : "";
+    const embeddedArticleBody = html.match(/<template id="exact-article-source">([\s\S]*?)<\/template>/)?.[1]?.trim();
+
+    expect(liveArticleBody).toBeTruthy();
+    expect(embeddedArticleBody).toBe(liveArticleBody);
+    expect(html).toContain("data-exact-content");
+    expect(html).toContain("renderMarkdown(exactSource)");
+  });
 });
