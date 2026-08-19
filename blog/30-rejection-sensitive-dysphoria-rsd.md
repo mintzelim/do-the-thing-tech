@@ -117,7 +117,7 @@ internalLinks:
     text: "ADHD Perfectionism"
 ---
 
-![Pixel-art illustration showing rejection sensitive dysphoria: external calm vs internal emotional storm](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post30-featured-rsd-rejection-sensitivity-AV8vpFZ6v3qauaw8Q54kWk.webp)
+![Pixel-art illustration showing rejection sensitive dysphoria: external calm vs internal emotional storm](/manus-storage/body-30-rejection-grounding_9c698db3.png)
 
 ## Direct Answer
 

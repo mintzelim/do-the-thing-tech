@@ -1,4 +1,5 @@
 import React from 'react';
+import { assetUrl } from '@/lib/assetUrl';
 import { Link } from 'wouter';
 
 interface BlogContentRendererProps {
@@ -390,7 +391,7 @@ export default function BlogContentRenderer({ content, onInternalLinkClick }: Bl
         elements.push(
           <img
             key={`img-${i}`}
-            src={imageUrl}
+            src={assetUrl(imageUrl)}
             alt={altText}
             style={{
               width: '100%',

@@ -109,7 +109,7 @@ The label can be validating, but it should not replace a careful look at what is
 ---
 
 
-![The ADHD Hyperfocus-Collapse Burnout Cycle](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-hyperfocus-collapse-cycle-AXvipsJi2xf9Qx9tpNhXng.webp)
+![The ADHD Hyperfocus-Collapse Burnout Cycle](/manus-storage/body-28-hyperfocus-recovery-cycle_0e059f1a.png)
 
 ## What Is ADHD Burnout?
 
@@ -120,7 +120,7 @@ Turjeman-Levi et al. (2024) found executive function deficits directly mediate t
 ---
 
 
-![ADHD Burnout vs Regular Burnout Brain Mechanism Comparison](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-burnout-comparison-brain-Leu2GDQRhcNpWZ2oCiekYz.webp)
+![ADHD Burnout vs Regular Burnout Brain Mechanism Comparison](/manus-storage/body-28-burnout-demands-support_39be8d35.png)
 
 ## Why It Can Feel Different From Ordinary Tiredness
 
@@ -133,7 +133,7 @@ If symptoms are new, severe, or worsening, seek a qualified medical or mental-he
 ---
 
 
-![ADHD Burnout Recovery Timeline: Acute Rest, Stabilization, and Rebuilding Phases](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post28-recovery-timeline-aTB7dpFqNLZe6azb7Fq6cj.webp)
+![ADHD Burnout Recovery Timeline: Acute Rest, Stabilization, and Rebuilding Phases](/manus-storage/body-28-gentle-recovery-steps_7d0d3490.png)
 
 ## The Hyperfocus-Collapse Cycle
 

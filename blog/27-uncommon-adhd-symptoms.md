@@ -99,7 +99,7 @@ Some of these experiences are associated with ADHD in research or clinical conve
 
 ## 1. Intense Reactions to Real or Perceived Rejection
 
-![Rejection Sensitive Dysphoria: The Physical Pain of Criticism](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-rsd-physical-pain-FedyzrVvfAQWSrfGKD8hxm.webp)
+![Rejection Sensitive Dysphoria: The Physical Pain of Criticism](/manus-storage/body-27-rejection-response_29ccfb0d.png)
 
 **Rejection sensitive dysphoria (RSD)** is an informal term many people use for a sharp emotional reaction to criticism, exclusion, or the possibility of disappointing someone. The experience can feel physical and immediate. It may lead to shutting down, over-explaining, people-pleasing, anger, or avoiding feedback altogether.
 
@@ -109,7 +109,7 @@ RSD is not an official diagnosis, and intense rejection feelings can also be con
 
 ## 2. Trouble Feeling the Passage of Time
 
-![Time Blindness: Hours Disappear, Deadlines Appear](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-time-blindness-C8P7uE6u7iD4pxefZq6pZ4.webp)
+![Time Blindness: Hours Disappear, Deadlines Appear](/manus-storage/body-27-time-cues_fe6a5418.png)
 
 "Time blindness" is a useful informal phrase for difficulty estimating duration, noticing time pass, or translating a future obligation into action now. Research on time perception in ADHD supports that timing and estimation can be challenging for some people, but it does not mean every late arrival or unrealistic plan has one cause.
 
@@ -117,7 +117,7 @@ RSD is not an official diagnosis, and intense rejection feelings can also be con
 
 ## 3. Sensory Differences and Overload
 
-![Sensory Overload: The ADHD Brain Can't Filter](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-sensory-overload-eqWm7GLH82go5mr7TKR34W.webp)
+![Sensory Overload: The ADHD Brain Can't Filter](/manus-storage/body-27-sensory-overload_3f6a7307.png)
 
 Noise, bright lights, busy rooms, scratchy clothing, and competing conversations can make it harder to think. Sensory differences are reported in ADHD research and are also common in autism and other conditions. They are not evidence of one diagnosis by themselves.
 
@@ -125,7 +125,7 @@ Noise, bright lights, busy rooms, scratchy clothing, and competing conversations
 
 ## 4. Task Initiation That Feels Like a Locked Door
 
-![Task Paralysis: Wanting to Start But Can't](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-task-paralysis-QpUQHoCywydSKkoX8JZVVk.webp)
+![Task Paralysis: Wanting to Start But Can't](/manus-storage/body-27-first-action_a91a9f1d.png)
 
 "Task paralysis" is another informal phrase. It describes the gap between wanting to do something and being able to begin it—especially when the task is vague, emotionally loaded, or full of hidden decisions. It is not a moral failure, and it is not always procrastination in the casual sense.
 
@@ -133,7 +133,7 @@ Noise, bright lights, busy rooms, scratchy clothing, and competing conversations
 
 ## 5. Strong or Fast-Moving Emotions
 
-![Emotional Dysregulation: The Intensity Dial Is Stuck on High](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-emotional-dysregulation-aFA9er5NWMA2q4Yzv3BjWF.webp)
+![Emotional Dysregulation: The Intensity Dial Is Stuck on High](/manus-storage/body-27-emotion-pause_c9e03d80.png)
 
 Some people with ADHD describe emotions that arrive quickly, feel hard to downshift, or make it difficult to pause before acting. Emotional regulation is an important clinical and research topic, but it is not one of the core ADHD diagnostic criteria. Strong emotions can also signal mood, trauma, relationship, sleep, or substance-related concerns.
 
@@ -141,7 +141,7 @@ Some people with ADHD describe emotions that arrive quickly, feel hard to downsh
 
 ## 6. Difficulty Following Speech in a Noisy Setting
 
-![Auditory Processing: The Brain Hears But Doesn't Decode](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-auditory-processing-6Vyy9fy9wttQ4d77pnaqqx.webp)
+![Auditory Processing: The Brain Hears But Doesn't Decode](/manus-storage/body-27-speech-noise_b58c8f5a.png)
 
 You may be able to hear a person but struggle to follow words when several people are talking, the room echoes, or you are already overloaded. That can be related to attention, sensory processing, hearing, auditory-processing differences, fatigue, or anxiety. It is not enough to assume the cause from one experience.
 
@@ -149,7 +149,7 @@ You may be able to hear a person but struggle to follow words when several peopl
 
 ## 7. Sleep Timing and Sleep Quality Problems
 
-![Delayed Sleep Phase: Your Clock Runs Late](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post27-delayed-sleep-phase-NeTXK7Pb9ExeZCSvRLnwDn.webp)
+![Delayed Sleep Phase: Your Clock Runs Late](/manus-storage/body-27-sleep-rhythm_70224205.png)
 
 Sleep difficulties are common in adults with ADHD, but insomnia and delayed sleep-wake phase disorder are separate conditions that need appropriate evaluation. A late sleep pattern is not proof that your biology is broken, and generic online advice cannot tell you whether a supplement, medication, or light-based intervention is right for you.
 

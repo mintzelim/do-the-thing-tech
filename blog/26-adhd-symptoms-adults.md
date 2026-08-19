@@ -108,7 +108,7 @@ The core diagnostic domains remain inattention and hyperactivity-impulsivity. Ad
 ---
 
 
-![Childhood vs Adult ADHD: The Invisible Struggle](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/childhood-vs-adult-adhd-4JD5B5hy6YHrLCx7SvdHaN.webp)
+![Childhood vs Adult ADHD: The Invisible Struggle](/manus-storage/body-26-childhood-adult-symptoms_eded15d3.png)
 
 ## The Core Symptoms
 
@@ -129,7 +129,7 @@ Impulsivity can show up as interrupting, replying before pausing, making a purch
 ---
 
 
-![Internal Restlessness: The Adult Hyperactivity](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/internal-restlessness-FpESRKTFBZsgK9WuHqEwhH.webp)
+![Internal Restlessness: The Adult Hyperactivity](/manus-storage/body-26-internal-restlessness_4ecad889.png)
 
 ## The Symptoms the Checklist Misses
 
@@ -142,7 +142,7 @@ Impulsivity can show up as interrupting, replying before pausing, making a purch
 ---
 
 
-![Time Blindness: The ADHD Brain and Time Perception](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/time-blindness-kxhZKyiLBv7chZ5WjiFA6g.webp)
+![Time Blindness: The ADHD Brain and Time Perception](/manus-storage/body-26-time-blindness_c9f141ac.png)
 
 ## Why Some Adults Are Identified Later
 
@@ -153,7 +153,7 @@ Masking, over-preparation, perfectionism, people-pleasing, or relying on a partn
 ---
 
 
-![Rejection Sensitive Dysphoria: The Emotional Spike](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/rejection-sensitivity-2T8weL2kYzSzKrG8CYfyir.webp)
+![Rejection Sensitive Dysphoria: The Emotional Spike](/manus-storage/body-26-emotional-spike_0742e9ca.png)
 
 ## Late Diagnosis
 
@@ -164,7 +164,7 @@ For many people, a careful explanation reframes "I am not trying hard enough" in
 ---
 
 
-![The Potential-Output Gap: Chronic Underachievement](https://d2xsxph8kpxj0f.cloudfront.net/310519663538355759/ZkgYTwAXq838NxcizNS3bD/post26-featured-adhd-symptoms-TfPkHKRCuoxaY7Q6fUQngE.webp)
+![The Potential-Output Gap: Chronic Underachievement](/manus-storage/body-26-support-structure_2087eb13.png)
 
 ## What Helps
 
