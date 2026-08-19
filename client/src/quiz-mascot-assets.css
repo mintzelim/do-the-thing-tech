@@ -1,0 +1,22 @@
+.quiz-mascot-stage .quiz-mascot-image {
+  display: block;
+  width: min(100%, 208px);
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(4px 5px 0 rgba(210, 211, 224, .72));
+}
+
+.quiz-mascot-stage .quiz-mascot-body {
+  display: none !important;
+}
+
+.quiz-result-mascot .quiz-mascot-image {
+  width: min(100%, 224px);
+}
+
+@media (max-width: 760px) {
+  .quiz-mascot-stage .quiz-mascot-image,
+  .quiz-result-mascot .quiz-mascot-image {
+    width: min(100%, 170px);
+  }
+}

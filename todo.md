@@ -1036,4 +1036,6 @@
 - [x] Apply Option 02 Curious Fold to live research-detail quotations while preserving exact article text and accessible disclosure behavior
 - [ ] Replace quiz placeholders with seven consistent approved purple mascot illustrations, one for each reader-facing ADHD pattern result
 - [ ] Integrate the seven quiz mascot illustrations without changing quiz scoring, result wording, or clinical boundaries
-- [ ] Rewrite all seven quiz result explanations and reflection cards in direct, relatable, personality-style language while preserving scoring and non-diagnostic boundaries
+- [x] Rewrite all seven quiz result explanations and reflection cards in direct, relatable, personality-style language while preserving scoring and non-diagnostic boundaries
+- [ ] Generate and validate seven separate no-text purple mascot assets for the approved Spark Starter, Thought Wanderer, Deep-Dive Mind, Signal Catcher, Mood-Powered Mind, Many-Tabs Mind, and Careful Scout scenes
+- [x] Apply the approved result-copy refresh and use the hosted canonical purple mascot as the temporary replacement for all quiz placeholder visuals

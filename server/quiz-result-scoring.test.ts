@@ -15,14 +15,14 @@ describe('ADHD Type Quiz weighted result paths', () => {
   it('gives every framework outcome a distinct plain-language pattern explanation rather than a generic label', () => {
     const descriptions = Object.values(ADHD_TYPE_RESULTS).map((profile) => profile.description);
     expect(new Set(descriptions).size).toBe(7);
-    expect(ADHD_TYPE_RESULTS.classic.description).toContain('action-first pattern');
-    expect(ADHD_TYPE_RESULTS.inattentive.description).toContain('internally busy pattern');
-    expect(ADHD_TYPE_RESULTS.overfocused.description).toContain('strong-stickiness pattern');
-    expect(ADHD_TYPE_RESULTS.temporal.description).toContain('time, memory cues, and emotional reactions');
-    expect(ADHD_TYPE_RESULTS.limbic.description).toContain('low-gear pattern');
+    expect(ADHD_TYPE_RESULTS.classic.description).toContain('big green GO button');
+    expect(ADHD_TYPE_RESULTS.inattentive.description).toContain('wander off-screen');
+    expect(ADHD_TYPE_RESULTS.overfocused.description).toContain('good book on the last page');
+    expect(ADHD_TYPE_RESULTS.temporal.description).toContain('volume set higher than everyone else');
+    expect(ADHD_TYPE_RESULTS.limbic.description).toContain('mountain in flip-flops');
     expect(ADHD_TYPE_RESULTS.ringOfFire.description).toContain('sixteen tabs');
-    expect(ADHD_TYPE_RESULTS.anxious.description).toContain('risk scanner');
-    descriptions.forEach((description) => expect(description).toContain('This result points to'));
+    expect(ADHD_TYPE_RESULTS.anxious.description).toContain('midnight fact-finding mission');
+    descriptions.forEach((description) => expect(description).not.toContain('This result points to'));
   });
 
   it('gives every type at least three selectable paths in the ten-question quiz', () => {
