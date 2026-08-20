@@ -29,7 +29,8 @@ describe('approved quiz result voice and canonical mascot interim refresh', () =
   });
 
   it('replaces the shared CSS placeholder with the hosted canonical purple mascot for the entire quiz', () => {
-    expect(mascot).toContain("assetUrl('/manus-storage/audience-howitworks-remote-workers_7ce7f448.png')");
+    expect(mascot).toContain("const mascotPath = imagePath ?? '/manus-storage/audience-howitworks-remote-workers_7ce7f448.png'");
+    expect(mascot).toContain('src={assetUrl(mascotPath)}');
     expect(mascot).toContain('className="quiz-mascot-image"');
     expect(results).toContain('quiz-result-mascot--${result.resultKey}');
     expect(page).toContain("import '../quiz-mascot-assets.css'");

@@ -1,0 +1,29 @@
+.quiz-pattern-card {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-content: start;
+}
+
+.quiz-pattern-mascot {
+  display: block;
+  width: min(100%, 132px);
+  height: 94px;
+  margin: 0 auto 10px;
+  object-fit: contain;
+  image-rendering: auto;
+}
+
+@media (max-width: 760px) {
+  .quiz-pattern-mascot {
+    width: min(100%, 118px);
+    height: 82px;
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 440px) {
+  .quiz-pattern-mascot {
+    width: min(100%, 150px);
+    height: 104px;
+  }
+}

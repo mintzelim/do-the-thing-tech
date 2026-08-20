@@ -10,6 +10,7 @@ import QuizResults from '@/components/quiz/QuizResults';
 import '../quiz-system.css';
 import '../quiz-result-reflections.css';
 import '../quiz-mascot-assets.css';
+import '../quiz-pattern-mascots.css';
 
 export type QuizStep = 'hero' | 'quiz' | 'results';
 export interface QuizResult { resultKey: string; type: string; sourceLabel: string; score: number; character: string; description: string; }

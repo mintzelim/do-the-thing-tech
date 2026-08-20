@@ -1034,8 +1034,13 @@
 - [x] Further reduce research-detail quotation type scale and spacing so studies read as clearly optional supporting evidence
 - [x] Add three approval-only research-detail quotation treatments to the ADHD in Women template exploration for user selection
 - [x] Apply Option 02 Curious Fold to live research-detail quotations while preserving exact article text and accessible disclosure behavior
-- [ ] Replace quiz placeholders with seven consistent approved purple mascot illustrations, one for each reader-facing ADHD pattern result
-- [ ] Integrate the seven quiz mascot illustrations without changing quiz scoring, result wording, or clinical boundaries
+- [x] Replace quiz placeholders with seven consistent approved purple mascot illustrations, one for each reader-facing ADHD pattern result
+- [x] Integrate the seven quiz mascot illustrations without changing quiz scoring, result wording, or clinical boundaries
 - [x] Rewrite all seven quiz result explanations and reflection cards in direct, relatable, personality-style language while preserving scoring and non-diagnostic boundaries
-- [ ] Generate and validate seven separate no-text purple mascot assets for the approved Spark Starter, Thought Wanderer, Deep-Dive Mind, Signal Catcher, Mood-Powered Mind, Many-Tabs Mind, and Careful Scout scenes
+- [x] Generate and validate seven separate no-text purple mascot assets for the approved Spark Starter, Thought Wanderer, Deep-Dive Mind, Signal Catcher, Mood-Powered Mind, Many-Tabs Mind, and Careful Scout scenes
 - [x] Apply the approved result-copy refresh and use the hosted canonical purple mascot as the temporary replacement for all quiz placeholder visuals
+- [x] Replace the temporary shared quiz mascot with a verified per-result illustration map once all seven approved scenes are available
+- [x] Retry the approved Spark Starter reference scene once image-generation capacity is available, then generate the remaining six matching scenes
+- [x] Remove the baked-in checkerboard from all seven quiz mascot images and replace them with verifiably true-alpha assets in the live result map
+- [x] Add the matching seven purple mascot scenes to the pre-quiz pattern cards without changing their pattern names or supporting copy
+- [x] Remove the baked-in checkerboard from all seven quiz mascot images and replace them with verifiably true-alpha assets in the live result map
