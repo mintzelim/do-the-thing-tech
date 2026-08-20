@@ -1043,4 +1043,6 @@
 - [x] Retry the approved Spark Starter reference scene once image-generation capacity is available, then generate the remaining six matching scenes
 - [x] Remove the baked-in checkerboard from all seven quiz mascot images and replace them with verifiably true-alpha assets in the live result map
 - [x] Add the matching seven purple mascot scenes to the pre-quiz pattern cards without changing their pattern names or supporting copy
+- [x] Rewrite the seven “A Reminder for You” messages so they provide distinct encouragement rather than repeat “A Kind Next Step” guidance (superseded by retaining the existing quotes as the single reassurance element)
+- [x] Remove the duplicate “One Kind Reminder” Post-It from quiz results, retaining the existing “A Reminder for You” quote as the single reassurance element
 - [x] Remove the baked-in checkerboard from all seven quiz mascot images and replace them with verifiably true-alpha assets in the live result map

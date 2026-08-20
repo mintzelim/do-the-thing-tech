@@ -23,4 +23,11 @@ describe('personal-support quiz reflections', () => {
     }
     expect(steps).toContain('Put both feet on the floor, breathe out a little longer than you breathe in, then choose the kindest two-minute action.');
   });
+
+  it('keeps one distinct reminder quote per result and removes the duplicate One Kind Reminder Post-It', () => {
+    expect(results).toContain('A REMINDER FOR YOU');
+    expect(results).not.toContain('ONE KIND REMINDER');
+    expect(results).not.toContain('quiz-result-postit');
+    expect(results).not.toContain('note:');
+  });
 });
