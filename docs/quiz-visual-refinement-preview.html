@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DoTheThing · Quiz Visual Refinement Preview</title>
+  <style>
+    :root { --bg:#f6f5f2; --paper:#fffefb; --ink:#26364a; --muted:#667080; --line:#c5cada; --violet:#5b5ce2; --lav:#eeeaff; --lime:#c7db3e; --shadow:3px 4px 0 rgba(210,211,224,.65); --display:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; --ui:Inter, Arial, sans-serif; }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ui);line-height:1.5}.wrap{width:min(1180px,calc(100% - 32px));margin:0 auto;padding:52px 0 84px}.eyebrow{margin:0 0 10px;color:var(--violet);font:700 .78rem/1 var(--display);letter-spacing:.13em}.intro{max-width:700px;margin:0 0 42px;color:var(--muted);font-size:1rem}.option{margin:42px 0;padding:clamp(22px,4vw,42px);border:1px solid #a8afc2;border-radius:14px;background:var(--paper);box-shadow:7px 8px 0 rgba(210,211,224,.7)}.option-head{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;margin-bottom:24px}.option h2{margin:0;font-size:clamp(1.7rem,3.4vw,2.6rem);letter-spacing:-.045em}.option p{margin:.4rem 0 0;color:var(--muted);max-width:650px}.tag{align-self:start;padding:5px 8px;border:1px solid var(--line);border-radius:5px;background:#f8f7ff;color:#4a4bc4;font:700 .72rem/1 var(--display);letter-spacing:.08em;white-space:nowrap}.guide{margin:0 0 20px;color:#657084;font-size:.88rem}.grid{display:grid;gap:10px}.scene-stack{grid-template-columns:repeat(4,minmax(0,1fr))}.scene-card{position:relative;min-height:244px;padding:14px;border:1px solid var(--line);border-radius:10px;background:var(--paper);box-shadow:var(--shadow);overflow:hidden}.scene-card:nth-child(5){grid-column:2}.scene-art{height:134px;margin:-14px -14px 14px;background:linear-gradient(145deg,#f5f2ff 0%,#fffefb 72%);overflow:hidden}.scene-art img{display:block;width:100%;height:100%;object-fit:contain;transform:scale(1.62);transform-origin:center 58%}.num{display:block;color:var(--violet);font:700 .75rem/1 var(--display);letter-spacing:.11em}.scene-card h3,.domino-copy h3,.trail-copy h3{margin:7px 0 5px;font-size:1rem;letter-spacing:-.025em}.scene-card p,.domino-copy p,.trail-copy p{margin:0;font-size:.79rem;line-height:1.4}.dominoes{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.domino{display:grid;grid-template-columns:142px minmax(0,1fr);min-height:142px;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:var(--paper);box-shadow:var(--shadow)}.domino:nth-child(7){grid-column:1 / span 2;max-width:calc(50% - 6px)}.domino-art{position:relative;overflow:hidden;background:linear-gradient(155deg,#eeeaff,#fffefb)}.domino-art img{position:absolute;inset:-18% -36%;width:172%;height:136%;object-fit:contain}.domino-copy{padding:15px 15px 14px}.trail{grid-template-columns:repeat(7,minmax(135px,1fr));overflow:auto;padding-bottom:6px}.trail-card{position:relative;min-height:210px;padding:15px;border:1px solid var(--line);border-radius:10px;background:var(--paper);box-shadow:var(--shadow);overflow:hidden}.trail-card::after{position:absolute;right:-20px;bottom:24px;width:38px;height:1px;background:var(--line);content:""}.trail-card:last-child::after{display:none}.trail-art{height:92px;margin-bottom:11px;overflow:hidden}.trail-art img{width:100%;height:100%;object-fit:contain;transform:scale(1.7);transform-origin:center 58%}.trail-copy p{font-size:.75rem}.approved{border-color:#5b5ce2}.approved .tag{border-color:#5b5ce2;background:var(--violet);color:white}@media(max-width:900px){.scene-stack{grid-template-columns:repeat(2,minmax(0,1fr))}.scene-card:nth-child(5){grid-column:auto}.option-head{grid-template-columns:1fr}.domino:nth-child(7){grid-column:auto;max-width:none}}@media(max-width:560px){.wrap{width:min(100% - 24px,1180px);padding-top:30px}.option{padding:18px}.scene-stack,.dominoes{grid-template-columns:1fr}.domino{grid-template-columns:120px minmax(0,1fr);min-height:120px}.trail{grid-template-columns:repeat(7,154px)}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p class="eyebrow">APPROVAL-ONLY · QUIZ VISUAL PASS</p>
+    <h1>Give the seven patterns room to show up.</h1>
+    <p class="intro">The existing pattern names and descriptions remain exactly as published. These three compositions only change how the newly added mascot scenes are sized, arranged, and recognised before someone begins the quiz.</p>
+
+    <section class="option approved">
+      <header class="option-head"><div><p class="eyebrow">OPTION 01 · SCENE STACK</p><h2>Four-up gallery, then a breathable final row.</h2><p>Recommended. Larger scenes make each pattern easy to spot without turning the section into seven heavy nested surfaces.</p></div><span class="tag">RECOMMENDED</span></header>
+      <p class="guide">Best for: a calm, scannable “meet the patterns” moment. On smaller screens it becomes two generous columns, then one card.</p>
+      <div class="grid scene-stack" data-layout="stack"></div>
+    </section>
+
+    <section class="option">
+      <header class="option-head"><div><p class="eyebrow">OPTION 02 · PATTERN DOMINOES</p><h2>Short, story-like rows with the scene leading.</h2><p>Each scene gets a strong left edge, while the existing title and description remain a quick, readable companion.</p></div><span class="tag">MORE EDITORIAL</span></header>
+      <p class="guide">Best for: slower reading and a more intentional introduction before the first quiz question.</p>
+      <div class="grid dominoes" data-layout="domino"></div>
+    </section>
+
+    <section class="option">
+      <header class="option-head"><div><p class="eyebrow">OPTION 03 · QUIET TRAIL</p><h2>A compact visual route through all seven patterns.</h2><p>A horizontal rail keeps the page short while allowing the mascot scenes to suggest a small journey.</p></div><span class="tag">MOST COMPACT</span></header>
+      <p class="guide">Best for: preserving a quick route to the quiz while giving readers an optional visual browse.</p>
+      <div class="grid trail" data-layout="trail"></div>
+    </section>
+  </main>
+  <script>
+    const base = 'https://dothething-zkgytwax.manus.space';
+    const patterns = [
+      ['01','The Spark Starter','Quick to act and quick to spot a lively next move.','/manus-storage/quiz-spark-starter-alpha_c537785a.png','Purple mascot moving from a starting flag toward a checklist finish line'],
+      ['02','The Thought Wanderer','A busy inner world where attention can quietly wander.','/manus-storage/quiz-thought-wanderer-alpha_ed8084e4.png','Purple mascot following a floating idea dot beside a reminder card'],
+      ['03','The Deep-Dive Mind','Locks on hard; switching tracks may take a moment.','/manus-storage/quiz-deep-dive-mind-alpha_f1140570.png','Purple mascot peering into a glowing pixel portal beside a small timer'],
+      ['04','The Signal Catcher','Picks up time, memory, and emotion cues intensely.','/manus-storage/quiz-signal-catcher-alpha_5be86008.png','Purple mascot beside gentle signal waves while holding a grounding pebble'],
+      ['05','The Mood-Powered Mind','Energy and motivation can shift with the day’s emotional weather.','/manus-storage/quiz-mood-powered-mind-alpha_ad11b96f.png','Purple mascot climbing a tiny hill beside a low-battery symbol'],
+      ['06','The Many-Tabs Mind','Ideas, energy, and inputs all arrive at once.','/manus-storage/quiz-many-tabs-mind-alpha_ae85bd31.png','Purple mascot calmly closing floating browser tabs until one remains'],
+      ['07','The Careful Scout','Always scanning ahead when the stakes feel high.','/manus-storage/quiz-careful-scout-alpha_0d92965f.png','Purple mascot holding a map and lantern at a small safe campsite']
+    ];
+    const markup = { stack: ([n,t,d,s,a]) => `<article class="scene-card"><div class="scene-art"><img src="${base+s}" alt="${a}"></div><span class="num">${n}</span><h3>${t}</h3><p>${d}</p></article>`, domino: ([n,t,d,s,a]) => `<article class="domino"><div class="domino-art"><img src="${base+s}" alt="${a}"></div><div class="domino-copy"><span class="num">${n}</span><h3>${t}</h3><p>${d}</p></div></article>`, trail: ([n,t,d,s,a]) => `<article class="trail-card"><div class="trail-art"><img src="${base+s}" alt="${a}"></div><div class="trail-copy"><span class="num">${n}</span><h3>${t}</h3><p>${d}</p></div></article>` };
+    document.querySelectorAll('[data-layout]').forEach((target) => { target.innerHTML = patterns.map(markup[target.dataset.layout]).join(''); });
+  </script>
+</body>
+</html>

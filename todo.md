@@ -1046,3 +1046,5 @@
 - [x] Rewrite the seven “A Reminder for You” messages so they provide distinct encouragement rather than repeat “A Kind Next Step” guidance (superseded by retaining the existing quotes as the single reassurance element)
 - [x] Remove the duplicate “One Kind Reminder” Post-It from quiz results, retaining the existing “A Reminder for You” quote as the single reassurance element
 - [x] Remove the baked-in checkerboard from all seven quiz mascot images and replace them with verifiably true-alpha assets in the live result map
+- [x] Create an approval-only quiz visual refinement preview for the seven pattern-card mascot composition and result-screen image hierarchy
+- [ ] Apply the user-approved quiz visual refinement without changing pattern copy, result copy, or scoring
