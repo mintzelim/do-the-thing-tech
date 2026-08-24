@@ -1047,4 +1047,10 @@
 - [x] Remove the duplicate “One Kind Reminder” Post-It from quiz results, retaining the existing “A Reminder for You” quote as the single reassurance element
 - [x] Remove the baked-in checkerboard from all seven quiz mascot images and replace them with verifiably true-alpha assets in the live result map
 - [x] Create an approval-only quiz visual refinement preview for the seven pattern-card mascot composition and result-screen image hierarchy
-- [ ] Apply the user-approved quiz visual refinement without changing pattern copy, result copy, or scoring
+- [x] Apply the user-approved Option 01 Scene Stack quiz visual refinement without changing pattern copy, result copy, or scoring
+- [x] Audit every quiz mascot reference for duplicated result scenes and prove each of the seven patterns uses a distinct image asset
+- [x] Audit all blog image references for legacy human pixel art and replace confirmed violations only with newly generated canonical purple-mascot illustrations (no legacy human art found)
+- [ ] Identify and repair every broken live quiz or blog image reference, then verify its published URL resolves successfully
+- [x] Update the About-page founder description to position Boundless One Ventures as an AI × craft software company
+- [ ] Audit the whole live site for functional, visual, mobile, accessibility, metadata, link, and asset-delivery issues; repair clear defects and surface product decisions
+- [ ] Migrate all site image delivery from Manus storage URLs to GitHub-hosted project assets and verify live availability

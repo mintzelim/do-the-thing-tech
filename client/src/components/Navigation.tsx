@@ -1,6 +1,7 @@
 import { useLocation } from "wouter";
 import { useState, useEffect } from "react";
 import { assetUrl } from "@/lib/assetUrl";
+import "@/navigation-layout.css";
 
 export default function Navigation() {
   const [location, navigate] = useLocation();

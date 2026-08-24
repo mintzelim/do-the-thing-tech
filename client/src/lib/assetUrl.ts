@@ -1,10 +1,14 @@
 /**
- * Vercel serves dothething.tech, but it does not proxy Manus's /manus-storage
- * route. Keep storage assets on the project deployment origin so the same
- * uploaded asset is available in local preview, Manus production, and Vercel.
+ * The public GitHub release is the durable browser-facing host for the
+ * project's image library. Source content may retain concise /manus-storage/
+ * paths, but the browser never requests the Manus storage route directly.
  */
-export const MANUS_ASSET_ORIGIN = "https://dothething-zkgytwax.manus.space";
+export const GITHUB_ASSET_RELEASE_ORIGIN =
+  "https://github.com/mintzelim/do-the-thing-tech/releases/download/dothething-assets-v1";
 
 export function assetUrl(path: string): string {
-  return path.startsWith("/manus-storage/") ? `${MANUS_ASSET_ORIGIN}${path}` : path;
+  if (!path.startsWith("/manus-storage/")) return path;
+
+  const filename = path.split("/").at(-1);
+  return filename ? `${GITHUB_ASSET_RELEASE_ORIGIN}/${filename}` : path;
 }

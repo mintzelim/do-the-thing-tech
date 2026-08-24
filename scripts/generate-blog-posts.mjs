@@ -9,16 +9,20 @@ const outputFiles = [
   path.join(__dirname, '../client/public/blog-posts.json'),
   path.join(__dirname, '../public/blog-posts.json'),
 ];
-const PUBLIC_MANUS_ASSET_ORIGIN = 'https://dothething-zkgytwax.manus.space';
+const PUBLIC_GITHUB_ASSET_RELEASE_ORIGIN =
+  'https://github.com/mintzelim/do-the-thing-tech/releases/download/dothething-assets-v1';
 
 function toProductionAssetUrl(value) {
-  return typeof value === 'string' && value.startsWith('/manus-storage/')
-    ? `${PUBLIC_MANUS_ASSET_ORIGIN}${value}`
-    : value;
+  if (typeof value !== 'string' || !value.startsWith('/manus-storage/')) return value;
+
+  const filename = value.split('/').at(-1);
+  return filename ? `${PUBLIC_GITHUB_ASSET_RELEASE_ORIGIN}/${filename}` : value;
 }
 
 function normalizeMarkdownAssetUrls(markdown) {
-  return markdown.replaceAll('](/manus-storage/', `](${PUBLIC_MANUS_ASSET_ORIGIN}/manus-storage/`);
+  return markdown.replace(/\]\(\/manus-storage\/([^\s)]+)\)/g, (_, filename) =>
+    `](${PUBLIC_GITHUB_ASSET_RELEASE_ORIGIN}/${filename})`
+  );
 }
 
 function parseDateValue(dateString) {

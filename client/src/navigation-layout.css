@@ -1,0 +1,193 @@
+.reference-header-shell {
+  width: min(calc(100% - 32px), 1240px);
+  margin: 16px auto 0;
+  position: relative;
+  z-index: 10;
+}
+
+.reference-header {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 20px;
+  border: 1px solid #a8afc2;
+  border-radius: 14px;
+  background: rgba(255, 254, 251, .96);
+  box-shadow: 0 8px 20px rgba(44, 54, 80, .07);
+}
+
+.reference-brand {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  flex: 0 0 auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.reference-brand-logo {
+  display: block;
+  width: 184px;
+  height: auto;
+  max-width: 100%;
+  image-rendering: pixelated;
+}
+
+.reference-desktop-nav,
+.reference-nav-links {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+}
+
+.reference-desktop-nav {
+  justify-content: flex-end;
+  gap: 22px;
+}
+
+.reference-nav-links {
+  justify-content: flex-end;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.reference-nav-link,
+.reference-header-cta,
+.reference-mobile-link,
+.reference-mobile-cta,
+.reference-mobile-task-link,
+.reference-menu-button {
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.reference-nav-link {
+  min-height: 42px;
+  padding: 8px 13px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  color: #223047;
+  font-size: .88rem;
+  cursor: pointer;
+}
+
+.reference-nav-link.is-active {
+  border-color: #ccd0df;
+  background: #eef0ff;
+  color: #4a4bc4;
+}
+
+.reference-header-cta,
+.reference-mobile-cta {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border: 1px solid #4a4bc4;
+  border-radius: 8px;
+  background: #5b5ce2;
+  color: #fff;
+  font-size: .91rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 rgba(74, 75, 196, .18);
+}
+
+.reference-mobile-actions,
+.reference-mobile-menu {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .reference-header-shell {
+    width: min(calc(100% - 24px), 1240px);
+    margin-top: 12px;
+  }
+
+  .reference-header {
+    min-height: 66px;
+  }
+
+  .reference-desktop-nav {
+    display: none;
+  }
+
+  .reference-mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .reference-mobile-task-link {
+    min-height: 42px;
+    padding: 8px 12px;
+    border: 1px solid #c5cada;
+    border-radius: 8px;
+    background: #fff;
+    color: #4a4bc4;
+    font-size: .78rem;
+  }
+
+  .reference-menu-button {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    place-content: center;
+    gap: 4px;
+    border: 1px solid #a8afc2;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+  }
+
+  .reference-menu-button span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #26364a;
+  }
+
+  .reference-mobile-menu {
+    display: grid;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1px solid #a8afc2;
+    border-radius: 12px;
+    background: #fffefb;
+    box-shadow: 4px 5px 0 rgba(210, 211, 224, .7);
+  }
+
+  .reference-mobile-link {
+    min-height: 44px;
+    padding: 10px 12px;
+    border: 1px solid #d1d5e1;
+    border-radius: 8px;
+    background: #fff;
+    color: #223047;
+    text-align: left;
+  }
+
+  .reference-mobile-cta {
+    width: 100%;
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 560px) {
+  .reference-header {
+    padding: 10px 12px;
+  }
+
+  .reference-brand-logo {
+    width: 148px;
+  }
+}

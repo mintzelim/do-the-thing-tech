@@ -20,6 +20,12 @@ describe('seven result-specific purple mascot scenes', () => {
     expect(results).toContain('imagePath={mascot.path} imageAlt={mascot.alt}');
   });
 
+  it('does not reuse a result-scene image across the seven friendly patterns', () => {
+    const paths = Array.from(mascotMap.matchAll(/path: '([^']+)'/g), ([, path]) => path);
+    expect(paths).toHaveLength(7);
+    expect(new Set(paths).size).toBe(7);
+  });
+
   it('uses the same matching image map on all seven pre-quiz pattern cards', () => {
     expect(typeDisplay).toContain("import { QUIZ_RESULT_MASCOTS } from './quizResultMascots'");
     expect(typeDisplay).toContain("resultKey: 'classic'");

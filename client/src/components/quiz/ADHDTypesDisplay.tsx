@@ -27,12 +27,14 @@ export default function ADHDTypesDisplay() {
           <h2>The 7 Quiz Patterns</h2>
           <p>We use friendly pattern names below. They are inspired by <a className="quiz-source-link" href="https://www.amenclinics.com/conditions/adhd-add/" target="_blank" rel="noreferrer">Dr. Amen/Amen Clinics&apos; seven-type framework</a>, in which each pattern has its own perks and challenges.</p>
         </div>
-        <div className="quiz-pattern-grid">
+        <div className="quiz-pattern-grid quiz-scene-stack" aria-label="Seven ADHD quiz patterns">
           {ADHD_TYPES.map((type) => {
             const mascot = QUIZ_RESULT_MASCOTS[type.resultKey];
             return (
               <article className="quiz-pattern-card" key={type.id}>
-                <img className="quiz-pattern-mascot" src={assetUrl(mascot.path)} alt={mascot.alt} />
+                <div className="quiz-pattern-art">
+                  <img className="quiz-pattern-mascot" src={assetUrl(mascot.path)} alt={mascot.alt} />
+                </div>
                 <b>{String(type.id).padStart(2, '0')}</b>
                 <h3>{type.title}</h3>
                 <p>{type.description}</p>

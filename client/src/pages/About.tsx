@@ -72,7 +72,7 @@ export default function About() {
             <p>I spent months researching ADHD neuroscience, interviewing others with ADHD, and testing different approaches to task breakdown and time estimation. The result is DoTheThing: a tool built specifically for how ADHD brains actually work.</p>
             <p><strong>About Lim Min Tze:</strong></p>
             <ul className="about-check-list">
-              <li>Founder of <strong>Boundless One Ventures</strong>, a neurodivergent-focused software company</li>
+              <li>Founder of <strong>Boundless One Ventures</strong>, an AI × craft software company creating thoughtful, human-centred digital tools</li>
               <li>10+ years in product development and software engineering</li>
               <li>Personal experience with late-diagnosis ADHD and time-blindness management</li>
               <li>Research into ADHD neuroscience, executive function, and time perception (Barkley, 2022; Ayano et al., 2023)</li>
