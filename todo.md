@@ -1050,7 +1050,7 @@
 - [x] Apply the user-approved Option 01 Scene Stack quiz visual refinement without changing pattern copy, result copy, or scoring
 - [x] Audit every quiz mascot reference for duplicated result scenes and prove each of the seven patterns uses a distinct image asset
 - [x] Audit all blog image references for legacy human pixel art and replace confirmed violations only with newly generated canonical purple-mascot illustrations (no legacy human art found)
-- [ ] Identify and repair every broken live quiz or blog image reference, then verify its published URL resolves successfully
+- [x] Identify and repair every broken live quiz or blog image reference, then verify its published URL resolves successfully
 - [x] Update the About-page founder description to position Boundless One Ventures as an AI × craft software company
-- [ ] Audit the whole live site for functional, visual, mobile, accessibility, metadata, link, and asset-delivery issues; repair clear defects and surface product decisions
-- [ ] Migrate all site image delivery from Manus storage URLs to GitHub-hosted project assets and verify live availability
+- [x] Audit the whole live site for functional, visual, mobile, accessibility, metadata, link, and asset-delivery issues; repair clear defects and surface product decisions
+- [x] Migrate all site image delivery from Manus storage URLs to GitHub-hosted project assets and verify live availability

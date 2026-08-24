@@ -21,3 +21,7 @@ Visual review of the staged 31 featured blog illustrations and 21 supporting bod
 ## Responsive review
 
 Mobile checks at 375px for the homepage, blog index, quiz, and About page found the shared header, GitHub-hosted artwork, primary actions, filtering controls, and hero copy within the available viewport. The mobile header consistently collapses to the branded logo and menu control; no horizontal overflow or broken image placeholder was visible in the reviewed first folds.
+
+## Published verification
+
+After checkpoint `a7f5c1ca` propagated, the live homepage, quiz, blog index, and About page emitted GitHub release URLs for their visible illustrations. The live quiz showed all seven Scene Stack images with their intended alternatives, the blog index showed its refreshed featured-image cards, and the About page showed the approved Boundless One Ventures description. A post-deployment crawl of all 42 sitemap URLs returned no HTTP failures.
