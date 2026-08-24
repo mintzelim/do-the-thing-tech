@@ -13,26 +13,14 @@ tags:
   - emotional regulation
   - executive function
 sources:
-  - text: "ADHD and Perfectionism: ADDitude Magazine"
-    url: "https://www.additudemag.com/adhd-perfectionism/"
   - text: "Rejection Sensitive Dysphoria: ADDitude"
     url: "https://www.additudemag.com/rejection-sensitive-dysphoria-adhd/"
-  - text: "CHADD - Emotional Regulation and ADHD"
-    url: "https://chadd.org/about-adhd/emotional-regulation/"
   - text: "Barkley, R.A. Executive Functions and Emotional Regulation"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
   - text: "Dodson, W. ADHD and Emotional Dysregulation"
     url: "https://www.additudemag.com/emotional-dysregulation-adhd/"
   - text: "NIMH - ADHD and Emotional Regulation"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "ADHD Perfectionism and Procrastination: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-perfectionism"
-  - text: "CDC - ADHD and Mental Health"
-    url: "https://www.cdc.gov/adhd/research.html"
-  - text: "Understood.org - ADHD and Perfectionism"
-    url: "https://www.understood.org/en/articles/perfectionism-and-adhd"
-  - text: "ADHD and All-or-Nothing Thinking: Verywell Mind"
-    url: "https://www.verywellmind.com/adhd-all-or-nothing-thinking-5224481"
 ---
 
 # ADHD and Perfectionism: The Hidden Connection

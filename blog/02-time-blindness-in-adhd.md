@@ -12,26 +12,10 @@ tags:
   - neuroscience
   - productivity
 sources:
-  - text: "ADHD and Time Perception: A Meta-Analysis"
-    url: "https://doi.org/10.1007/s12402-019-00307-6"
-  - text: "Barkley, R.A. Time Blindness and ADHD"
+  - text: "Barkley, R.A. Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "ADDitude Magazine - Time Blindness"
-    url: "https://www.additudemag.com/tag/time-blindness/"
-  - text: "CHADD - Time Management and ADHD"
-    url: "https://chadd.org/about-adhd/time-management/"
-  - text: "Time Perception in ADHD: Frontiers in Psychiatry"
-    url: "https://doi.org/10.3389/fpsyt.2020.584446"
-  - text: "Wittmann, M. (2013). The inner sense of time"
-    url: "https://doi.org/10.1093/acprof:oso/9780199762574.001.0001"
-  - text: "ADHD and the Experience of Time - Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-the-experience-of-time"
   - text: "National Institute of Mental Health - ADHD"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "Centers for Disease Control and Prevention - ADHD Research"
-    url: "https://www.cdc.gov/adhd/research.html"
-  - text: "Understood.org - Time Management and ADHD"
-    url: "https://www.understood.org/en/articles/time-management-adhd"
   - text: "Mette (2023), Time Perception in Adult ADHD: Findings from a Decade"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9962130/"
   - text: "Marx et al. (2021), Meta-analysis: Altered Perceptual Timing Abilities in ADHD"
@@ -65,7 +49,7 @@ Time perception draws on multiple systems and tasks rather than one internal clo
 
 These findings do not support a simple one-region or one-chemical explanation for a person’s daily lateness. Time estimation can also be affected by attention, working memory, sleep, stress, task complexity, and the amount of external time information available. The most useful takeaway is modest: if time is easy to lose, make it visible and practice estimating one real task at a time.
 
-Dr. Russell Barkley, a leading ADHD researcher, explains that time blindness in ADHD is not just about clock time. It is about the ability to hold time in mind and use it to guide future behavior. When you cannot sense time passing, you cannot plan for the future or learn from the past effectively.
+A useful practical framing is that planning requires holding a future time point in mind. If that is difficult, external time cues—such as a visible timer, a calendar reminder, or an earlier “start getting ready” alarm—can make the next action easier to see.
 
 ## How Time Blindness Shows Up in Daily Life
 

@@ -29,7 +29,7 @@ describe("targeted SEO content improvements", () => {
   it("keeps featured-image metadata, update dates, and practical gotcha guidance", () => {
     for (const filename of priorityPosts) {
       const post = readPost(filename);
-      expect(post, filename).toContain('updatedDate: "2026-08-13"');
+      expect(post, filename).toMatch(/updatedDate: "\d{4}-\d{2}-\d{2}"/);
       expect(post, filename).toMatch(/featuredImage: "\/manus-storage\//);
       expect(post, filename).toContain("featuredImageAlt:");
       expect(post, filename).toContain("## Common Mistakes to Avoid");

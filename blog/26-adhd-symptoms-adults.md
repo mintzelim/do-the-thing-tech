@@ -37,21 +37,14 @@ seoKeywords:
 sources:
   - title: 'Ginapp et al. (2022) — Lived Experiences of Adults With ADHD (Yale)'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9403235/
-  - title: 'Zalsman & Shilton (2016) — Adult ADHD: A Comprehensive Review'
-    url: https://pubmed.ncbi.nlm.nih.gov/27866128/
-  - title: 'Fayyad et al. (2016) — Prevalence of Adult ADHD (WHO World Mental Health)'
-    url: https://pubmed.ncbi.nlm.nih.gov/27482889/
-  - title: 'Barkley (2015) — ADHD in Adults: Executive Function and Emotional Regulation'
-    url: https://www.simplypsychology.org/adhd-emotional-dysregulation.html
+  - title: 'Fayyad et al. (2017) — The Descriptive Epidemiology of DSM-IV Adult ADHD in the WHO World Mental Health Surveys'
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5325787/
   - title: 'APA (2013) — DSM-5'
     url: https://www.psychiatry.org/psychiatrists/practice/dsm
   - title: CHADD — General Prevalence of Adult ADHD
     url: https://chadd.org/about-adhd/general-prevalence/
   - title: ADDA — Impact of ADHD at Work
     url: https://add.org/impact-of-adhd-at-work/
-  - title: 'Ohio State University (2024) — 1 in 4 Adults Have Undiagnosed ADHD'
-    url: >-
-      https://news.osu.edu/1-in-4-adults-think-they-could-have-undiagnosed-adhd-but-few-discuss-it-with-doctors/
 relatedPosts:
   - '1'
   - '2'

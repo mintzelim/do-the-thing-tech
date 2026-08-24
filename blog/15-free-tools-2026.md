@@ -13,20 +13,14 @@ tags:
   - productivity
   - apps
 sources:
-  - text: "ADDitude Magazine - Best Free ADHD Apps"
-    url: "https://www.additudemag.com/free-adhd-apps/"
-  - text: "CHADD - Technology Resources for ADHD"
-    url: "https://chadd.org/adhd-weekly/technology-for-adhd/"
   - text: "NIMH - ADHD Treatment Options"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "ADHD and Free Digital Tools: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-digital-tools"
-  - text: "CDC - ADHD Management"
-    url: "https://www.cdc.gov/adhd/treatment.html"
-  - text: "Understood.org - Free Tools for ADHD"
-    url: "https://www.understood.org/en/articles/free-tools-for-adhd"
-  - text: "Best Free Productivity Apps: Verywell Mind"
-    url: "https://www.verywellmind.com/free-productivity-apps-adhd-5224481"
+  - text: "Microsoft To Do - Official Features"
+    url: "https://www.microsoft.com/en-us/microsoft-365/microsoft-to-do-list-app"
+  - text: "Todoist - Official Features"
+    url: "https://www.todoist.com/features"
+  - text: "TickTick - Official Features"
+    url: "https://ticktick.com/"
 ---
 
 # 15 Free Tools for ADHD Adults in 2026

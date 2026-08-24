@@ -31,7 +31,7 @@ seoKeywords:
   - how to finish things with ADHD
   - ADHD follow through
 sources:
-  - title: 'ADDitude — Why ADHD Brains Struggle to Complete Tasks (Barkley, 2025)'
+  - title: 'ADDitude — Executive Function: 7 ADHD Planning and Prioritizing Deficits'
     url: https://www.additudemag.com/7-executive-function-deficits-linked-to-adhd/
   - title: 'PMC — Hyperfocus in ADHD: A Misunderstood Cognitive Phenomenon (2024)'
     url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12437476/
@@ -39,10 +39,6 @@ sources:
     url: https://add.org/adhd-paralysis/
   - title: 'Frontiers in Psychiatry — Arousal Dysregulation and Executive Dysfunction in ADHD (Isaac, Lopez, Escobar, 2024)'
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10827919/
-  - title: 'ScienceDirect — Creativity and ADHD: 31 Behavioral Studies (Hoogman et al., 2020)'
-    url: https://www.sciencedirect.com/science/article/abs/pii/S0149763420305935
-  - title: DoTheThing
-    url: https://www.dothething.tech
   - title: 'Kofler et al. (2024), Executive function deficits in ADHD and autism'
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11485171/
 relatedPosts:
@@ -214,4 +210,4 @@ https://www.additudemag.com/7-executive-function-deficits-linked-to-adhd/
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12437476/
 https://add.org/adhd-paralysis/
 https://pmc.ncbi.nlm.nih.gov/articles/PMC10827919/
-https://www.sciencedirect.com/science/article/abs/pii/S0149763420305935
+

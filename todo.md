@@ -1082,3 +1082,4 @@
 - [x] Revise article 31 with a clear source-versus-story distinction, qualified sex/hormonal wording, and a questions-for-a-clinician aid
 - [x] Review remaining health-adjacent guides for absolute or insufficiently sourced medical claims and apply evidence-aware wording where needed
 - [x] Add factual, reusable authorship, update, editorial-standards, corrections, and comparison-disclosure signals to article pages without fabricating credentials or reviews
+- [x] Verify every blog source and inline citation destination for reachability, redirects, source identity, and claim support; correct or remove unsupported references

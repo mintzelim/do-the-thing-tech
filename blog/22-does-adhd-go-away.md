@@ -28,22 +28,10 @@ seoKeywords:
   - adult ADHD symptoms
   - ADHD and ageing
 sources:
-  - title: 'Sagepub — Longitudinal Associations Between ADHD and Life Success: Henning et al. (2024)'
-    url: https://journals.sagepub.com/doi/10.1177/10870547241239148
-  - title: 'World Psychiatry — ADHD in Adults: Evidence, Uncertainties and Controversies: Cortese (2025)'
-    url: https://onlinelibrary.wiley.com/doi/10.1002/wps.21374
-  - title: 'Faraone et al. (2021) — The World Federation of ADHD International Consensus Statement'
-    url: https://www.sciencedirect.com/science/article/pii/S0149763421001512
-  - title: 'Agnew-Blais et al. (2016) — Persistence, Remission, and New Onset of ADHD, JAMA Psychiatry'
-    url: https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2490956
-  - title: 'Sagepub — Examining the Link Between ADHD Symptoms and Menopausal Experiences: Chapman et al. (2025)'
-    url: https://journals.sagepub.com/doi/10.1177/10870547251355006
   - title: ADDA — ADHD and Perimenopause/Menopause
     url: https://add.org/adhd-and-perimenopause-menopause/
   - title: 'Samphire Neuroscience — ADHD and Menopause (citing Jakobsdóttir Smári et al., European Psychiatry, 2025)'
     url: https://www.samphireneuro.com/en-us/blog/adhd-and-menopause
-  - title: DoTheThing
-    url: https://www.dothething.tech
 relatedPosts:
   - 0
   - 26
@@ -205,10 +193,10 @@ Retirement can change the routines that supported organization. A small, meaning
 
 ---
 
-https://journals.sagepub.com/doi/10.1177/10870547241239148
-https://onlinelibrary.wiley.com/doi/10.1002/wps.21374
-https://www.sciencedirect.com/science/article/pii/S0149763421001512
-https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2490956
+
+
+
+
 https://journals.sagepub.com/doi/10.1177/10870547251355006
 https://add.org/adhd-and-perimenopause-menopause/
 https://www.samphireneuro.com/en-us/blog/adhd-and-menopause

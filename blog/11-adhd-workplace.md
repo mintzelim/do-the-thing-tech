@@ -12,26 +12,12 @@ tags:
   - accommodations
   - executive function
 sources:
-  - text: "ADHD in the Workplace: ADDitude Magazine"
-    url: "https://www.additudemag.com/adhd-workplace-accommodations/"
-  - text: "CHADD - ADHD and Employment"
-    url: "https://chadd.org/about-adhd/employment/"
   - text: "Job Accommodation Network - ADHD"
     url: "https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-AD-HD.cfm"
   - text: "NIMH - ADHD and Daily Functioning"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
   - text: "Barkley, R.A. ADHD in Adults: Workplace Challenges"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "ADA National Network - ADHD Accommodations"
-    url: "https://adata.org/factsheet/adhd"
-  - text: "ADHD and Career Success: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-career-success"
-  - text: "CDC - ADHD and Adults"
-    url: "https://www.cdc.gov/adhd/adults.html"
-  - text: "Understood.org - ADHD at Work"
-    url: "https://www.understood.org/en/articles/adhd-at-work"
-  - text: "ADHD Career Guidance: ADDtitude"
-    url: "https://www.additudemag.com/careers-for-adhd/"
 ---
 
 # ADHD in the Workplace: Thriving at Work with ADHD

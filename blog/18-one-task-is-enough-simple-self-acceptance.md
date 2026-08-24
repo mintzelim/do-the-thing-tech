@@ -12,22 +12,12 @@ tags:
   - overwhelm
   - mindset
 sources:
-  - text: "ADHD and Self-Compassion: ADDitude"
-    url: "https://www.additudemag.com/adhd-self-compassion/"
-  - text: "CHADD - ADHD and Mental Health"
-    url: "https://chadd.org/about-adhd/mental-health/"
   - text: "NIMH - ADHD and Quality of Life"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "ADHD and Shame: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-shame"
   - text: "Barkley, R.A. ADHD and Emotional Regulation"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
   - text: "ADHD and Burnout: ADDitude"
     url: "https://www.additudemag.com/adhd-burnout/"
-  - text: "CDC - ADHD and Adults"
-    url: "https://www.cdc.gov/adhd/adults.html"
-  - text: "Understood.org - ADHD and Emotional Health"
-    url: "https://www.understood.org/en/articles/adhd-and-emotional-health"
 ---
 
 # One Task Is Enough: Simple Self-Acceptance for the ADHD Brain

@@ -43,8 +43,6 @@ sources:
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9187895/
   - title: 'van der Ham et al. (2024) — Sleep Problems in Adults With ADHD'
     url: https://pubmed.ncbi.nlm.nih.gov/39354860/
-  - title: 'Jurek et al. (2025) — Atypical sensory processing in ADHD'
-    url: https://www.jaacap.org/article/S0890-8567(25)00152-0/fulltext
   - title: 'Autistica — ADHD and autism'
     url: https://www.autistica.org.uk/what-is-autism/adhd-and-autism
 relatedPosts:

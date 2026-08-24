@@ -13,22 +13,12 @@ tags:
   - productivity
   - strategies
 sources:
-  - text: "ADHD and Task Initiation: ADDitude Magazine"
-    url: "https://www.additudemag.com/task-initiation-adhd/"
   - text: "CHADD - Executive Function Skills"
     url: "https://chadd.org/about-adhd/executive-function-skills/"
   - text: "NIMH - ADHD and Executive Function"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
   - text: "Barkley, R.A. Executive Functions and Task Management"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "ADDitude - Task Paralysis and ADHD"
-    url: "https://www.additudemag.com/task-paralysis-adhd/"
-  - text: "CDC - ADHD and Daily Life"
-    url: "https://www.cdc.gov/adhd/adults.html"
-  - text: "Understood.org - Breaking Down Tasks"
-    url: "https://www.understood.org/en/articles/breaking-down-tasks"
-  - text: "ADHD and Chunking: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-chunking"
 ---
 
 # How to Break Down Tasks: An ADHD Guide

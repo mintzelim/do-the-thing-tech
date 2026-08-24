@@ -15,24 +15,8 @@ tags:
 sources:
   - text: "NIMH - ADHD Medication Research"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "FDA - ADHD Medications"
-    url: "https://www.fda.gov/drugs/information-drug-class/attention-deficit-hyperactivity-disorder-adhd-drug-class"
-  - text: "CHADD - ADHD Medication"
-    url: "https://chadd.org/about-adhd/medications/"
-  - text: "Stimulant Medication and Executive Function: ADDitude"
-    url: "https://www.additudemag.com/understanding-adhd-medication/"
   - text: "Cortese, S. et al. (2018). Systematic Review of ADHD Medications"
     url: "https://doi.org/10.1016/S2215-0366(18)30269-4"
-  - text: "Faraone, S.V. et al. (2021). The World Federation of ADHD Guidelines"
-    url: "https://doi.org/10.1007/s00787-021-01845-7"
-  - text: "Long-term Effects of ADHD Medication: ADHD UK"
-    url: "https://www.adduk.org.uk/medication-long-term-effects/"
-  - text: "ADHD Medication and Cognitive Function: PMC"
-    url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7907627/"
-  - text: "CDC - ADHD Treatment Guidelines"
-    url: "https://www.cdc.gov/adhd/treatment.html"
-  - text: "Non-Stimulant ADHD Medications: Child Mind Institute"
-    url: "https://childmind.org/article/non-stimulant-adhd-medication/"
 ---
 
 # ADHD Medication and Productivity: What Science Says

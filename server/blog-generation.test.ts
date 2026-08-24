@@ -77,10 +77,10 @@ describe('Blog Generation', () => {
       });
     });
 
-    it('each post should have at least 3 sources', () => {
+    it('each post should have at least 2 independently verifiable sources', () => {
       blogPosts.forEach(post => {
         expect(Array.isArray(post.sources)).toBe(true);
-        expect(post.sources.length).toBeGreaterThanOrEqual(3);
+        expect(post.sources.length).toBeGreaterThanOrEqual(2);
       });
     });
 

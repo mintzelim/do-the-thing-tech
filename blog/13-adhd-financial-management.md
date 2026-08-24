@@ -13,26 +13,10 @@ tags:
   - executive function
   - strategies
 sources:
-  - text: "ADHD and Money Management: ADDitude Magazine"
-    url: "https://www.additudemag.com/adhd-money-management/"
-  - text: "CHADD - ADHD and Financial Challenges"
-    url: "https://chadd.org/adhd-weekly/adhd-and-finances/"
   - text: "NIMH - ADHD and Impulse Control"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "ADHD and Impulse Spending: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-impulse-spending"
   - text: "Barkley, R.A. ADHD and Executive Function: Financial Implications"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "ADHD and Dopamine-Seeking Behavior: Frontiers in Psychiatry"
-    url: "https://doi.org/10.3389/fpsyt.2020.00584"
-  - text: "CDC - ADHD and Quality of Life"
-    url: "https://www.cdc.gov/adhd/research.html"
-  - text: "Understood.org - ADHD and Financial Management"
-    url: "https://www.understood.org/en/articles/adhd-and-money"
-  - text: "ADHD and Financial Stress: ADDitude"
-    url: "https://www.additudemag.com/adhd-financial-stress/"
-  - text: "ADHD Money Management Tools: Verywell Mind"
-    url: "https://www.verywellmind.com/adhd-money-management-5224481"
 ---
 
 # ADHD and Financial Management: Taming Impulse Spending

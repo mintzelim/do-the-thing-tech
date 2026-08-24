@@ -12,26 +12,12 @@ tags:
   - productivity
   - strategies
 sources:
-  - text: "ADHD and Task Initiation: ADDitude Magazine"
-    url: "https://www.additudemag.com/task-initiation-adhd/"
   - text: "Executive Function and Task Breakdown"
     url: "https://chadd.org/about-adhd/executive-function-skills/"
-  - text: "Brown, T.E. (2013). A New Understanding of ADHD"
-    url: "https://www.routledge.com/A-New-Understanding-of-ADHD-in-Children-and-Adults-Executive-Function-Impairments/Brown/p/book/9780415814258"
   - text: "Barkley, R.A. Executive Functions: What They Are"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
   - text: "NIH - Task Management and ADHD"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "CDC - ADHD Research and Practice"
-    url: "https://www.cdc.gov/adhd/research.html"
-  - text: "ADHD and Motivation: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-motivation"
-  - text: "Task Chunking: Cambridge Cognition"
-    url: "https://www.cambridgecognition.com/blog/entry/what-is-chunking"
-  - text: "ADHD and Procrastination: Understood.org"
-    url: "https://www.understood.org/en/articles/adhd-procrastination"
-  - text: "The Pomodoro Technique for ADHD"
-    url: "https://www.additudemag.com/pomodoro-technique-adhd/"
 ---
 
 # Breaking Down Big Tasks: An ADHD-Friendly Guide

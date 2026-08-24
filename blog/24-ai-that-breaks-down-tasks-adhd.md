@@ -33,14 +33,10 @@ sources:
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11485171/
   - title: 'CHADD, Time Management and ADHD: To-Do Lists'
     url: https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/
-  - title: 'AJMC, Mental Health App Abandonment (2024)'
-    url: https://www.ajmc.com/view/addressing-uptake-adherence-and-attrition-in-mental-health-apps
   - title: 'Goblin Tools, Magic ToDo'
     url: https://goblin.tools/ToDo
   - title: 'Tiimo, official product information'
     url: https://www.tiimoapp.com/
-  - title: DoTheThing
-    url: https://www.dothething.tech
 relatedPosts:
   - '3'
   - '4'

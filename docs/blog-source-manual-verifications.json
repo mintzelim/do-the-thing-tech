@@ -1,0 +1,70 @@
+{
+  "checkedAt": "2026-08-24T16:08:00.000Z",
+  "entries": {
+    "https://chadd.org/": {
+      "title": "CHADD",
+      "method": "independent page extraction",
+      "reason": "The source is live; the sandbox fetch failure was not a missing-page result."
+    },
+    "https://chadd.org/about-adhd/executive-function-skills/": {
+      "title": "Executive Function Skills - CHADD",
+      "method": "independent browser review",
+      "reason": "The page is live and its content matches the declared executive-function source."
+    },
+    "https://chadd.org/about-adhd/general-prevalence/": {
+      "title": "General Prevalence of ADHD - CHADD",
+      "method": "independent page extraction",
+      "reason": "The page is live and presents CHADD’s prevalence information and cited references."
+    },
+    "https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/": {
+      "title": "Time Management and ADHD: To-Do Lists - CHADD",
+      "method": "independent page extraction",
+      "reason": "The page is live and directly supports the declared to-do-list source."
+    },
+    "https://pubmed.ncbi.nlm.nih.gov/39354860/": {
+      "title": "Sleep Problems in Adults With ADHD: Prevalences and Their Relationship With Psychiatric Comorbidity",
+      "method": "independent page extraction",
+      "reason": "The source title, authors, date, and topic match the declared citation."
+    },
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5325787/": {
+      "title": "The Descriptive Epidemiology of DSM-IV Adult ADHD in the World Health Organization World Mental Health Surveys",
+      "method": "research-index and page identity review",
+      "reason": "The article title and Fayyad et al. authorship match the declared adult-ADHD prevalence source."
+    },
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9187895/": {
+      "title": "Do Executive Dysfunction, Delay Aversion, and Time Perception Deficit Predict ADHD Symptoms and Early Academic Performance in Preschoolers",
+      "method": "independent page extraction",
+      "reason": "The title, 2022 publication date, Zheng et al. authorship, and time-perception subject match the declared citations; its preschool population is recorded in the source-verification notes."
+    },
+    "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725": {
+      "title": "Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment",
+      "method": "independent page extraction",
+      "reason": "The publisher page identifies the fourth edition, Russell A. Barkley as editor, ISBN 9781462517725, and the declared ADHD reference title."
+    },
+    "https://doi.org/10.1016/j.jaac.2021.12.004": {
+      "title": "Meta-analysis: Altered Perceptual Timing Abilities in Attention-Deficit/Hyperactivity Disorder",
+      "method": "independent page extraction",
+      "reason": "The DOI resolves to the declared 2022 JAACAP meta-analysis of perceptual timing in ADHD."
+    },
+    "https://www.microsoft.com/en-us/microsoft-365/microsoft-to-do-list-app": {
+      "title": "Microsoft To Do",
+      "method": "independent page extraction",
+      "reason": "The official provider page confirms the product identity and the listed task, reminder, step, free-access, and cross-device features."
+    },
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12145478/": {
+      "title": "ADHD and Sex Hormones in Females: A Systematic Review",
+      "method": "independent page extraction",
+      "reason": "The PMC record confirms the 2025 Journal of Attention Disorders systematic-review title, authorship, DOI, and qualified conclusions."
+    },
+    "https://www.understood.org/en/press-releases/new-understood-org-research-finds-adhd-in-women-is-overwhelmingly": {
+      "title": "New Understood.org research finds ADHD in women is overwhelmingly misunderstood",
+      "method": "independent page extraction",
+      "reason": "The live 17 June 2024 Understood.org release identifies its Harris Poll sample, scope, and stated survey findings."
+    },
+    "https://www.aimspress.com/article/doi/10.3934/publichealth.2024015": {
+      "title": "Executive function deficits mediate the relationship between employees' ADHD and job burnout",
+      "method": "independent page extraction",
+      "reason": "The 2024 AIMS Public Health article title, Turjeman-Levi et al. authorship, employee ADHD sample, and executive-function/burnout scope match the declared citation."
+    }
+  }
+}

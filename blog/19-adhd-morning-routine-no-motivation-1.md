@@ -15,18 +15,10 @@ tags:
 sources:
   - text: "ADHD and Morning Routines: ADDitude Magazine"
     url: "https://www.additudemag.com/adhd-morning-routine/"
-  - text: "CHADD - ADHD and Daily Structure"
-    url: "https://chadd.org/about-adhd/daily-structure/"
   - text: "NIMH - ADHD and Daily Functioning"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
   - text: "Barkley, R.A. ADHD and Executive Function"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "ADHD and Motivation: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-motivation"
-  - text: "CDC - ADHD and Adults: Daily Living"
-    url: "https://www.cdc.gov/adhd/adults.html"
-  - text: "Understood.org - ADHD and Morning Routines"
-    url: "https://www.understood.org/en/articles/adhd-morning-routine"
   - text: "ADHD and Sleep Hygiene: Sleep Foundation"
     url: "https://www.sleepfoundation.org/mental-health/adhd-and-sleep"
 ---

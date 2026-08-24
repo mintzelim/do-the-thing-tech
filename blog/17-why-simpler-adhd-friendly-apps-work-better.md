@@ -12,20 +12,12 @@ tags:
   - cognitive load
   - productivity
 sources:
-  - text: "ADHD and Cognitive Load: ADDitude"
-    url: "https://www.additudemag.com/adhd-cognitive-load/"
-  - text: "CHADD - Technology and ADHD"
-    url: "https://chadd.org/adhd-weekly/technology-for-adhd/"
   - text: "NIMH - ADHD and Executive Function"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "ADHD App Design: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-app-design"
-  - text: "CDC - ADHD Treatment and Support"
-    url: "https://www.cdc.gov/adhd/treatment.html"
-  - text: "Understood.org - ADHD and Technology"
-    url: "https://www.understood.org/en/articles/technology-for-adhd"
-  - text: "Cognitive Load Theory: ScienceDirect"
-    url: "https://www.sciencedirect.com/topics/psychology/cognitive-load-theory"
+  - text: "CHADD - Executive Function Skills"
+    url: "https://chadd.org/about-adhd/executive-function-skills/"
+  - text: "CHADD - Time Management and ADHD: To-Do Lists"
+    url: "https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/"
 ---
 
 # Why Simpler ADHD-Friendly Apps Work Better

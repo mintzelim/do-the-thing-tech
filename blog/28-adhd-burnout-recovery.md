@@ -36,8 +36,6 @@ sources:
       Turjeman-Levi et al. (2024) — Executive function deficits mediate
       ADHD-burnout relationship
     url: https://www.aimspress.com/article/doi/10.3934/publichealth.2024015
-  - title: 'Porto et al. (2024) — ADHD and burnout in university students'
-    url: https://www.scielo.br/j/paideia/a/QDChkNWLTCCxf7tztDh38hr/
   - title: >-
       Oscarsson et al. (2025) — Web-based stress management for working adults
       with ADHD

@@ -36,10 +36,6 @@ sources:
     url: https://www.autistica.org.uk/what-is-autism/adhd-and-autism
   - title: 'NIMH — Attention-Deficit/Hyperactivity Disorder: What You Need to Know'
     url: https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know
-  - title: 'Lai et al. (2019) — Co-occurring diagnoses in autism'
-    url: https://www.thelancet.com/journals/lanpsy/article/PIIS2215-0366%2819%2930289-5/fulltext
-  - title: 'Ayano et al. (2023) — Global prevalence of ADHD in adults'
-    url: https://www.sciencedirect.com/science/article/pii/S0165178123003992
   - title: 'DSM-5-TR, American Psychiatric Association (2022)'
     url: https://www.psychiatry.org/psychiatrists/practice/dsm
 relatedPosts:

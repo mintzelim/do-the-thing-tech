@@ -15,20 +15,10 @@ tags:
 sources:
   - text: "ADDitude - Best Careers for ADHD"
     url: "https://www.additudemag.com/best-careers-for-adhd/"
-  - text: "CHADD - ADHD and Career Success"
-    url: "https://chadd.org/about-adhd/employment/"
   - text: "NIMH - ADHD in Adults: Employment"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "ADHD and Entrepreneurship: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-entrepreneurship"
   - text: "Barkley, R.A. ADHD and Career Success"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "CDC - ADHD and Employment"
-    url: "https://www.cdc.gov/adhd/research.html"
-  - text: "ADHD-Friendly Careers: Understood.org"
-    url: "https://www.understood.org/en/articles/adhd-friendly-careers"
-  - text: "ADHD in the Workplace: Job Accommodation Network"
-    url: "https://askjan.org/disabilities/ADHD.cfm"
 ---
 
 # Best Jobs for ADHD: Leveraging Hyperfocus and Creativity

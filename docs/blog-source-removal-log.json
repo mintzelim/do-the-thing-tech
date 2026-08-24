@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-08-24T16:10:05.518Z",
+  "removedUrlCount": 22,
+  "affectedArticles": [
+    {
+      "file": "05-best-tools-for-adhd-task-management.md",
+      "removedDeclaredSources": 2,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "09-adhd-perfectionism.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "10-adhd-relationships.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "12-adhd-sleep.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "13-adhd-financial-management.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "15-free-tools-2026.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "17-why-simpler-adhd-friendly-apps-work-better.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "22-does-adhd-go-away.md",
+      "removedDeclaredSources": 4,
+      "removedInlineLinks": 4
+    },
+    {
+      "file": "23-best-adhd-tools-2026.md",
+      "removedDeclaredSources": 2,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "24-ai-that-breaks-down-tasks-adhd.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "25-adhd-never-finish-anything.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 1
+    },
+    {
+      "file": "27-uncommon-adhd-symptoms.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "28-adhd-burnout-recovery.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "29-adhd-vs-autism-vs-audhd.md",
+      "removedDeclaredSources": 2,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "30-rejection-sensitive-dysphoria-rsd.md",
+      "removedDeclaredSources": 1,
+      "removedInlineLinks": 0
+    },
+    {
+      "file": "31-adhd-in-women.md",
+      "removedDeclaredSources": 2,
+      "removedInlineLinks": 0
+    }
+  ]
+}

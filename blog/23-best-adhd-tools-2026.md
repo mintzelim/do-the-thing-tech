@@ -39,12 +39,6 @@ sources:
     url: https://www.healthline.com/health/adhd/body-double-adhd
   - title: Inflow, Best Apps for ADHD (2026)
     url: https://www.getinflow.io/post/best-apps-for-adhd
-  - title: 'AJMC, Mental Health App Abandonment Study (2024)'
-    url: https://www.ajmc.com/view/addressing-uptake-adherence-and-attrition-in-mental-health-apps
-  - title: Market Reports World, ADHD Apps Market Forecast (2024)
-    url: https://www.marketreportsworld.com/market-reports/adhd-apps-market-14713447
-  - title: DoTheThing
-    url: https://www.dothething.tech
   - title: Todoist, official features
     url: https://www.todoist.com/features
   - title: Forest, official features

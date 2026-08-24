@@ -12,26 +12,12 @@ tags:
   - circadian rhythm
   - executive function
 sources:
-  - text: "ADHD and Sleep Disorders: ADDitude Magazine"
-    url: "https://www.additudemag.com/adhd-and-sleep/"
-  - text: "CHADD - ADHD and Sleep"
-    url: "https://chadd.org/about-adhd/sleep/"
   - text: "NIMH - ADHD and Sleep Research"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
   - text: "ADHD and Delayed Sleep Phase Syndrome: Sleep Foundation"
     url: "https://www.sleepfoundation.org/mental-health/adhd-and-sleep"
-  - text: "ADHD and Circadian Rhythm: Nature Reviews"
-    url: "https://doi.org/10.1038/s41572-019-0108-y"
   - text: "Barkley, R.A. ADHD and Sleep Regulation"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "ADHD and Melatonin: ADDitude"
-    url: "https://www.additudemag.com/adhd-sleep-melatonin/"
-  - text: "CDC - ADHD and Sleep"
-    url: "https://www.cdc.gov/adhd/research.html"
-  - text: "Understood.org - ADHD and Sleep Problems"
-    url: "https://www.understood.org/en/articles/adhd-and-sleep"
-  - text: "ADHD Insomnia Treatment: Verywell Health"
-    url: "https://www.verywellhealth.com/adhd-and-insomnia-5224481"
 ---
 
 # ADHD and Sleep: Breaking the Insomnia Cycle

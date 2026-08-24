@@ -12,26 +12,10 @@ tags:
   - divergent thinking
   - strengths
 sources:
-  - text: "ADHD and Creativity: ADDitude Magazine"
-    url: "https://www.additudemag.com/adhd-and-creativity/"
-  - text: "CHADD - ADHD and Strengths"
-    url: "https://chadd.org/about-adhd/strengths/"
   - text: "NIMH - ADHD and Cognitive Function"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "ADHD and Divergent Thinking: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-divergent-thinking"
   - text: "Barkley, R.A. ADHD and Creative Potential"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "ADHD and Innovation: Scientific American"
-    url: "https://www.scientificamerican.com/article/adhd-and-innovation/"
-  - text: "CDC - ADHD Across the Lifespan"
-    url: "https://www.cdc.gov/adhd/research.html"
-  - text: "Understood.org - ADHD and Creative Thinking"
-    url: "https://www.understood.org/en/articles/adhd-and-creativity"
-  - text: "ADHD and Entrepreneurship: ADDitude"
-    url: "https://www.additudemag.com/adhd-entrepreneurs/"
-  - text: "The Creative Advantage of ADHD: Verywell Mind"
-    url: "https://www.verywellmind.com/adhd-and-creativity-5224481"
 ---
 
 # ADHD and Creativity: Harnessing the Divergent Mind

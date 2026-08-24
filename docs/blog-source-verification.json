@@ -1,0 +1,1589 @@
+{
+  "generatedAt": "2026-08-24T16:27:43.119Z",
+  "articleCount": 31,
+  "referenceCount": 137,
+  "uniqueUrlCount": 70,
+  "counts": {
+    "reachable": 57,
+    "manually_verified": 13
+  },
+  "entries": [
+    {
+      "url": "https://add.org/adhd-and-perimenopause-menopause/",
+      "references": [
+        {
+          "file": "22-does-adhd-go-away.md",
+          "kind": "declared_source",
+          "label": "ADDA — ADHD and Perimenopause/Menopause"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://add.org/adhd-and-perimenopause-menopause/",
+      "pageTitle": "ADHD and Perimenopause/Menopause: How Symptoms Overlap and Tips to Manage - ADDA - Attention Deficit Disorder Association",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://add.org/adhd-burnout/",
+      "references": [
+        {
+          "file": "28-adhd-burnout-recovery.md",
+          "kind": "declared_source",
+          "label": "ADDA — ADHD Burnout: Cycle, Symptoms, and Causes"
+        }
+      ],
+      "status": 202,
+      "finalUrl": "https://add.org/adhd-burnout/",
+      "pageTitle": "",
+      "contentType": "text/html",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://add.org/adhd-paralysis/",
+      "references": [
+        {
+          "file": "25-adhd-never-finish-anything.md",
+          "kind": "declared_source",
+          "label": "ADDA — ADHD Paralysis (2024)"
+        }
+      ],
+      "status": 202,
+      "finalUrl": "https://add.org/adhd-paralysis/",
+      "pageTitle": "",
+      "contentType": "text/html",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://add.org/adhd-tools-for-adults/",
+      "references": [
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "ADDA, ADHD Tools for Adults (2024)"
+        }
+      ],
+      "status": 202,
+      "finalUrl": "https://add.org/adhd-tools-for-adults/",
+      "pageTitle": "",
+      "contentType": "text/html",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://add.org/impact-of-adhd-at-work/",
+      "references": [
+        {
+          "file": "26-adhd-symptoms-adults.md",
+          "kind": "declared_source",
+          "label": "ADDA — Impact of ADHD at Work"
+        }
+      ],
+      "status": 202,
+      "finalUrl": "https://add.org/impact-of-adhd-at-work/",
+      "pageTitle": "",
+      "contentType": "text/html",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-AD-HD.cfm",
+      "references": [
+        {
+          "file": "11-adhd-workplace.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "11-adhd-workplace.md",
+          "kind": "inline_citation",
+          "label": "Job Accommodation Network’s ADHD resource"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-AD-HD.cfm",
+      "pageTitle": "Attention Deficit/Hyperactivity Disorder (ADHD)",
+      "contentType": "text/html;charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://chadd.org/",
+      "references": [
+        {
+          "file": "01-how-adhd-affects-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 0,
+      "finalUrl": "",
+      "pageTitle": "CHADD",
+      "contentType": "",
+      "error": "fetch failed",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "CHADD",
+        "method": "independent page extraction",
+        "reason": "The source is live; the sandbox fetch failure was not a missing-page result."
+      }
+    },
+    {
+      "url": "https://chadd.org/about-adhd/executive-function-skills/",
+      "references": [
+        {
+          "file": "01-how-adhd-affects-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "03-breaking-down-big-tasks.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "04-executive-dysfunction-vs-task-paralysis.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "07-neuroscience-task-avoidance.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "16-neurodivergent-productivity-7-tactics.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "17-why-simpler-adhd-friendly-apps-work-better.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "20-how-to-break-down-tasks-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 0,
+      "finalUrl": "",
+      "pageTitle": "Executive Function Skills - CHADD",
+      "contentType": "",
+      "error": "fetch failed",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "Executive Function Skills - CHADD",
+        "method": "independent browser review",
+        "reason": "The page is live and its content matches the declared executive-function source."
+      }
+    },
+    {
+      "url": "https://chadd.org/about-adhd/general-prevalence/",
+      "references": [
+        {
+          "file": "26-adhd-symptoms-adults.md",
+          "kind": "declared_source",
+          "label": "CHADD — General Prevalence of Adult ADHD"
+        }
+      ],
+      "status": 0,
+      "finalUrl": "",
+      "pageTitle": "General Prevalence of ADHD - CHADD",
+      "contentType": "",
+      "error": "fetch failed",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "General Prevalence of ADHD - CHADD",
+        "method": "independent page extraction",
+        "reason": "The page is live and presents CHADD’s prevalence information and cited references."
+      }
+    },
+    {
+      "url": "https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/",
+      "references": [
+        {
+          "file": "17-why-simpler-adhd-friendly-apps-work-better.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "CHADD, Time Management and ADHD: To-Do Lists"
+        },
+        {
+          "file": "24-ai-that-breaks-down-tasks-adhd.md",
+          "kind": "declared_source",
+          "label": "CHADD, Time Management and ADHD: To-Do Lists"
+        }
+      ],
+      "status": 0,
+      "finalUrl": "",
+      "pageTitle": "Time Management and ADHD: To-Do Lists - CHADD",
+      "contentType": "",
+      "error": "fetch failed",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "Time Management and ADHD: To-Do Lists - CHADD",
+        "method": "independent page extraction",
+        "reason": "The page is live and directly supports the declared to-do-list source."
+      }
+    },
+    {
+      "url": "https://culturedcode.com/things/",
+      "references": [
+        {
+          "file": "05-best-tools-for-adhd-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://culturedcode.com/things/",
+      "pageTitle": "Things - To-Do List App for Mac &amp; iOS",
+      "contentType": "text/html",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jaac.2021.12.004",
+      "references": [
+        {
+          "file": "02-time-blindness-in-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S0890856721020451",
+      "pageTitle": "Meta-analysis: Altered Perceptual Timing Abilities in Attention-Deficit/Hyperactivity Disorder",
+      "contentType": "text/html;charset=UTF-8",
+      "error": "",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "Meta-analysis: Altered Perceptual Timing Abilities in Attention-Deficit/Hyperactivity Disorder",
+        "method": "independent page extraction",
+        "reason": "The DOI resolves to the declared 2022 JAACAP meta-analysis of perceptual timing in ADHD."
+      }
+    },
+    {
+      "url": "https://doi.org/10.1016/S2215-0366(18)30269-4",
+      "references": [
+        {
+          "file": "06-adhd-medication-and-productivity.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S2215036618302694",
+      "pageTitle": "Redirecting",
+      "contentType": "text/html;charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://doi.org/10.1371/journal.pone.0200161",
+      "references": [
+        {
+          "file": "07-neuroscience-task-avoidance.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0200161",
+      "pageTitle": "Characterized non-transient microbiota from stinkbug (Nezara viridula) midgut deactivates soybean chemical defenses | PLOS One",
+      "contentType": "text/html;charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://forestapp.cc/",
+      "references": [
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "Forest, official features"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://forestapp.cc/",
+      "pageTitle": "Forest — The #1 Focus App for Time Well Spent",
+      "contentType": "text/html",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://goblin.tools/ToDo",
+      "references": [
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "Goblin Tools, Magic ToDo"
+        },
+        {
+          "file": "24-ai-that-breaks-down-tasks-adhd.md",
+          "kind": "declared_source",
+          "label": "Goblin Tools, Magic ToDo"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://goblin.tools/ToDo",
+      "pageTitle": "Magic ToDo - Goblin Tools",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://icd.who.int/browse11/l-m/en",
+      "references": [
+        {
+          "file": "01-how-adhd-affects-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://icd.who.int/browse/2025-01/mms/en",
+      "pageTitle": "ICD-11 for Mortality and Morbidity Statistics",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0263366",
+      "references": [
+        {
+          "file": "30-rejection-sensitive-dysphoria-rsd.md",
+          "kind": "declared_source",
+          "label": "Biederman et al. (2022), Emotional dysregulation in adults with ADHD"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0263366",
+      "pageTitle": "Experiences of criticism in adults with ADHD: A qualitative study | PLOS One",
+      "contentType": "text/html;charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://my.clevelandclinic.org/health/diseases/24099-rejection-sensitive-dysphoria-rsd",
+      "references": [
+        {
+          "file": "30-rejection-sensitive-dysphoria-rsd.md",
+          "kind": "declared_source",
+          "label": "Cleveland Clinic, Rejection Sensitive Dysphoria"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://my.clevelandclinic.org/health/diseases/24099-rejection-sensitive-dysphoria-rsd",
+      "pageTitle": "Rejection Sensitive Dysphoria (RSD): Symptoms &amp; Treatment",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10827919/",
+      "references": [
+        {
+          "file": "25-adhd-never-finish-anything.md",
+          "kind": "declared_source",
+          "label": "Frontiers in Psychiatry — Arousal Dysregulation and Executive Dysfunction in ADHD (Isaac, Lopez, Escobar, 2024)"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10827919/",
+      "pageTitle": "Arousal dysregulation and executive dysfunction in attention deficit hyperactivity disorder (ADHD) - PMC",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11485171/",
+      "references": [
+        {
+          "file": "01-how-adhd-affects-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "04-executive-dysfunction-vs-task-paralysis.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "24-ai-that-breaks-down-tasks-adhd.md",
+          "kind": "declared_source",
+          "label": "Kofler et al. (2024), Executive function deficits in ADHD and autism"
+        },
+        {
+          "file": "25-adhd-never-finish-anything.md",
+          "kind": "declared_source",
+          "label": "Kofler et al. (2024), Executive function deficits in ADHD and autism"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11485171/",
+      "pageTitle": "Executive function deficits in attention-deficit/hyperactivity disorder and autism spectrum disorder - PMC",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12140506/",
+      "references": [
+        {
+          "file": "28-adhd-burnout-recovery.md",
+          "kind": "declared_source",
+          "label": "Oscarsson et al. (2025) — Web-based stress management for working adults with ADHD"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12140506/",
+      "pageTitle": "Web-Based Stress Management for Working Adults With Attention-Deficit/Hyperactivity Disorder (ADHD): Single-Arm, Open Pilot Trial - PMC",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12145478/",
+      "references": [
+        {
+          "file": "31-adhd-in-women.md",
+          "kind": "declared_source",
+          "label": "(2025), ADHD and sex hormones in females: a systematic review, Journal of Attention Disorders"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12145478/",
+      "pageTitle": "ADHD and Sex Hormones in Females: A Systematic Review",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "ADHD and Sex Hormones in Females: A Systematic Review",
+        "method": "independent page extraction",
+        "reason": "The PMC record confirms the 2025 Journal of Attention Disorders systematic-review title, authorship, DOI, and qualified conclusions."
+      }
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12822938/",
+      "references": [
+        {
+          "file": "30-rejection-sensitive-dysphoria-rsd.md",
+          "kind": "declared_source",
+          "label": "Rowney-Smith et al. (2026), The lived experience of rejection sensitivity in ADHD"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12822938/",
+      "pageTitle": "The lived experience of rejection sensitivity in ADHD - A qualitative exploration - PMC",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5325787/",
+      "references": [
+        {
+          "file": "26-adhd-symptoms-adults.md",
+          "kind": "declared_source",
+          "label": "Fayyad et al. (2017) — The Descriptive Epidemiology of DSM-IV Adult ADHD in the WHO World Mental Health Surveys"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5325787/",
+      "pageTitle": "The Descriptive Epidemiology of DSM-IV Adult ADHD in the World Health Organization World Mental Health Surveys",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "The Descriptive Epidemiology of DSM-IV Adult ADHD in the World Health Organization World Mental Health Surveys",
+        "method": "research-index and page identity review",
+        "reason": "The article title and Fayyad et al. authorship match the declared adult-ADHD prevalence source."
+      }
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9187895/",
+      "references": [
+        {
+          "file": "27-uncommon-adhd-symptoms.md",
+          "kind": "declared_source",
+          "label": "Zheng et al. (2022) — Time perception in ADHD"
+        },
+        {
+          "file": "28-adhd-burnout-recovery.md",
+          "kind": "declared_source",
+          "label": "Zheng et al. (2022) — Time perception in ADHD"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9187895/",
+      "pageTitle": "Do Executive Dysfunction, Delay Aversion, and Time Perception Deficit Predict ADHD Symptoms and Early Academic Performance in Preschoolers",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "Do Executive Dysfunction, Delay Aversion, and Time Perception Deficit Predict ADHD Symptoms and Early Academic Performance in Preschoolers",
+        "method": "independent page extraction",
+        "reason": "The title, 2022 publication date, Zheng et al. authorship, and time-perception subject match the declared citations; its preschool population is recorded in the source-verification notes."
+      }
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9962130/",
+      "references": [
+        {
+          "file": "02-time-blindness-in-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9962130/",
+      "pageTitle": "Checking your browser - reCAPTCHA",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39354860/",
+      "references": [
+        {
+          "file": "27-uncommon-adhd-symptoms.md",
+          "kind": "declared_source",
+          "label": "van der Ham et al. (2024) — Sleep Problems in Adults With ADHD"
+        }
+      ],
+      "status": 203,
+      "finalUrl": "https://pubmed.ncbi.nlm.nih.gov/39354860/",
+      "pageTitle": "Sleep Problems in Adults With ADHD: Prevalences and Their Relationship With Psychiatric Comorbidity",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "Sleep Problems in Adults With ADHD: Prevalences and Their Relationship With Psychiatric Comorbidity",
+        "method": "independent page extraction",
+        "reason": "The source title, authors, date, and topic match the declared citation."
+      }
+    },
+    {
+      "url": "https://theconversation.com/what-is-rejection-sensitive-dysphoria-in-adhd-and-how-can-you-manage-it-259995",
+      "references": [
+        {
+          "file": "30-rejection-sensitive-dysphoria-rsd.md",
+          "kind": "declared_source",
+          "label": "The Conversation, What is rejection sensitive dysphoria in ADHD?"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://theconversation.com/what-is-rejection-sensitive-dysphoria-in-adhd-and-how-can-you-manage-it-259995",
+      "pageTitle": "What is rejection sensitive dysphoria in ADHD? And how can you manage it?",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://ticktick.com/",
+      "references": [
+        {
+          "file": "15-free-tools-2026.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://ticktick.com/",
+      "pageTitle": "TickTick: A To-Do List and Calendar to keep you organized",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/7-executive-function-deficits-linked-to-adhd/",
+      "references": [
+        {
+          "file": "25-adhd-never-finish-anything.md",
+          "kind": "declared_source",
+          "label": "ADDitude — Executive Function: 7 ADHD Planning and Prioritizing Deficits"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/7-executive-function-deficits-linked-to-adhd/",
+      "pageTitle": "Executive Function: 7 ADHD Planning, Prioritizing Deficits",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/adhd-burnout/",
+      "references": [
+        {
+          "file": "18-one-task-is-enough-simple-self-acceptance.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/webinar/adhd-burnout-chronic-stress-women/",
+      "pageTitle": "Podcast 483: ADHD Burnout in Women: Stop the Cycle of Chronic Stress",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/adhd-morning-routine/",
+      "references": [
+        {
+          "file": "19-adhd-morning-routine-no-motivation-1.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/adhd-morning-routine-stress-free-kids/",
+      "pageTitle": "Morning Routine for Families: Get to Work & School On Time",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/adhd-productivity/",
+      "references": [
+        {
+          "file": "16-neurodivergent-productivity-7-tactics.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/adhd-productivity-apps-tools/",
+      "pageTitle": "ADHD Productivity Apps & Products: Get More Done",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/adhd-relationship-problems/",
+      "references": [
+        {
+          "file": "10-adhd-relationships.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/slideshows/adhd-relationship-problems-how-add-can-hurt-couples/",
+      "pageTitle": "ADHD and Relationships: How ADD Can Hurt Couples",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/best-careers-for-adhd/",
+      "references": [
+        {
+          "file": "21-adhd-best-jobs-creativity-hyperfocus.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/best-careers-for-adhd-video/",
+      "pageTitle": "What Are the Best Careers for ADHD? 7 Questions to Find Oout",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/emotional-dysregulation-adhd/",
+      "references": [
+        {
+          "file": "09-adhd-perfectionism.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/emotional-dysregulation-adhd-brain/",
+      "pageTitle": "Emotional Dysregulation: A Core Feature of My ADHD Brain",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/neuroscience-of-adhd/",
+      "references": [
+        {
+          "file": "07-neuroscience-task-avoidance.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/neuroscience-of-adhd-brain/",
+      "pageTitle": "The ADHD Brain: Neuroscience Behind Attention Deficit Disorder",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/rejection-sensitive-dysphoria-adhd/",
+      "references": [
+        {
+          "file": "09-adhd-perfectionism.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "10-adhd-relationships.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/rejection-sensitive-dysphoria-adhd-anxiety-depression/",
+      "pageTitle": "Rejection Sensitive Dysphoria (RSD) and ADHD: Depression or Anxiety Misdiagnosis",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.additudemag.com/working-from-home-adhd/",
+      "references": [
+        {
+          "file": "08-remote-work-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.additudemag.com/working-from-home-adhd/",
+      "pageTitle": "Working From Home with ADHD: Telecommuting in Trying Times",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.adhdmarriage.com/",
+      "references": [
+        {
+          "file": "10-adhd-relationships.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.adhdmarriage.com/",
+      "pageTitle": "ADHD and Marriage | Learn to thrive in your relationship",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.aimspress.com/article/doi/10.3934/publichealth.2024015",
+      "references": [
+        {
+          "file": "28-adhd-burnout-recovery.md",
+          "kind": "declared_source",
+          "label": "Turjeman-Levi et al. (2024) — Executive function deficits mediate ADHD-burnout relationship"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.aimspress.com/article/doi/10.3934/publichealth.2024015",
+      "pageTitle": "Executive function deficits mediate the relationship between employees' ADHD and job burnout",
+      "contentType": "text/html;charset=UTF-8",
+      "error": "",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "Executive function deficits mediate the relationship between employees' ADHD and job burnout",
+        "method": "independent page extraction",
+        "reason": "The 2024 AIMS Public Health article title, Turjeman-Levi et al. authorship, employee ADHD sample, and executive-function/burnout scope match the declared citation."
+      }
+    },
+    {
+      "url": "https://www.autistica.org.uk/what-is-autism/adhd-and-autism",
+      "references": [
+        {
+          "file": "27-uncommon-adhd-symptoms.md",
+          "kind": "declared_source",
+          "label": "Autistica — ADHD and autism"
+        },
+        {
+          "file": "29-adhd-vs-autism-vs-audhd.md",
+          "kind": "declared_source",
+          "label": "Autistica — ADHD and autism: understanding the overlap"
+        },
+        {
+          "file": "29-adhd-vs-autism-vs-audhd.md",
+          "kind": "inline_citation",
+          "label": "Autistica's ADHD and autism overview"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.autistica.org.uk/what-is-autism/adhd-and-autism",
+      "pageTitle": "ADHD and autism | Autistica",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/european-psychiatry/article/practical-tools-for-femalespecific-adhd-the-impact-of-hormonal-fluctuations-in-clinical-practice-and-from-the-literature/F68A482817F1AD22DB99DEDF8E545C01",
+      "references": [
+        {
+          "file": "31-adhd-in-women.md",
+          "kind": "declared_source",
+          "label": "Cameira et al. (2025), Practical tools for female-specific ADHD, European Psychiatry"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.cambridge.org/core/journals/european-psychiatry/article/practical-tools-for-femalespecific-adhd-the-impact-of-hormonal-fluctuations-in-clinical-practice-and-from-the-literature/F68A482817F1AD22DB99DEDF8E545C01",
+      "pageTitle": "Practical tools for female-specific ADHD: The impact of hormonal fluctuations in clinical practice and from the literature | European Psychiatry | Cambridge Core",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.cdc.gov/adhd/",
+      "references": [
+        {
+          "file": "01-how-adhd-affects-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.cdc.gov/adhd/",
+      "pageTitle": "Attention-Deficit / Hyperactivity Disorder (ADHD) | CDC",
+      "contentType": "text/html",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.cdc.gov/adhd/about/adhd-in-adults.html",
+      "references": [
+        {
+          "file": "08-remote-work-adhd.md",
+          "kind": "inline_citation",
+          "label": "CDC notes that some adults with ADHD may find workplace accommodations helpful for staying on task or limiting distractions"
+        },
+        {
+          "file": "21-adhd-best-jobs-creativity-hyperfocus.md",
+          "kind": "inline_citation",
+          "label": "CDC notes that some adults with ADHD may find workplace accommodations helpful for staying on task or limiting distractions"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.cdc.gov/adhd/about/adhd-in-adults.html",
+      "pageTitle": "ADHD in Adults | Attention-Deficit / Hyperactivity Disorder (ADHD) | CDC",
+      "contentType": "text/html",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.focusmate.com/",
+      "references": [
+        {
+          "file": "05-best-tools-for-adhd-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "Focusmate, official product information"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.focusmate.com/",
+      "pageTitle": "Focusmate—Virtual body doubling for getting anything done",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.getinflow.io/post/best-apps-for-adhd",
+      "references": [
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "Inflow, Best Apps for ADHD (2026)"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.getinflow.io/post/best-apps-for-adhd",
+      "pageTitle": "The 12 Best Apps for ADHD in 2026: A Guide to Finding What Works for You",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725",
+      "references": [
+        {
+          "file": "01-how-adhd-affects-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "02-time-blindness-in-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "03-breaking-down-big-tasks.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "04-executive-dysfunction-vs-task-paralysis.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "07-neuroscience-task-avoidance.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "08-remote-work-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "09-adhd-perfectionism.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "10-adhd-relationships.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "11-adhd-workplace.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "12-adhd-sleep.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "13-adhd-financial-management.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "14-adhd-creativity.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "16-neurodivergent-productivity-7-tactics.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "18-one-task-is-enough-simple-self-acceptance.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "19-adhd-morning-routine-no-motivation-1.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "20-how-to-break-down-tasks-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "21-adhd-best-jobs-creativity-hyperfocus.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462538874",
+      "pageTitle": "Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "Attention-Deficit Hyperactivity Disorder: A Handbook for Diagnosis and Treatment",
+        "method": "independent page extraction",
+        "reason": "The publisher page identifies the fourth edition, Russell A. Barkley as editor, ISBN 9781462517725, and the declared ADHD reference title."
+      }
+    },
+    {
+      "url": "https://www.healthline.com/health/adhd/adhd-burnout",
+      "references": [
+        {
+          "file": "28-adhd-burnout-recovery.md",
+          "kind": "declared_source",
+          "label": "Healthline — ADHD Burnout: Causes, Signs, Management"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.healthline.com/health/adhd/adhd-burnout",
+      "pageTitle": "ADHD Burnout: Causes, Signs, and Management",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.healthline.com/health/adhd/body-double-adhd",
+      "references": [
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "Healthline, Body Doubling for ADHD (2024)"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.healthline.com/health/adhd/body-double-adhd",
+      "pageTitle": "Body Doubling for ADHD: What Is It and How Does It Work?",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/microsoft-365/microsoft-to-do-list-app",
+      "references": [
+        {
+          "file": "15-free-tools-2026.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 0,
+      "finalUrl": "",
+      "pageTitle": "Microsoft To Do",
+      "contentType": "",
+      "error": "This operation was aborted",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "Microsoft To Do",
+        "method": "independent page extraction",
+        "reason": "The official provider page confirms the product identity and the listed task, reminder, step, free-access, and cross-device features."
+      }
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12437476/",
+      "references": [
+        {
+          "file": "25-adhd-never-finish-anything.md",
+          "kind": "declared_source",
+          "label": "PMC — Hyperfocus in ADHD: A Misunderstood Cognitive Phenomenon (2024)"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12437476/",
+      "pageTitle": "Hyperfocus in ADHD: A Misunderstood Cognitive Phenomenon - PMC",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9403235/",
+      "references": [
+        {
+          "file": "26-adhd-symptoms-adults.md",
+          "kind": "declared_source",
+          "label": "Ginapp et al. (2022) — Lived Experiences of Adults With ADHD (Yale)"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9403235/",
+      "pageTitle": "The lived experiences of adults with attention-deficit/hyperactivity disorder: A rapid review of qualitative evidence - PMC",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/sleep-deprivation",
+      "references": [
+        {
+          "file": "12-adhd-sleep.md",
+          "kind": "inline_citation",
+          "label": "Read NHLBI’s overview"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nhlbi.nih.gov/health/sleep-deprivation",
+      "pageTitle": "Sleep Deprivation and Deficiency - What Are Sleep Deprivation and Deficiency? | NHLBI, NIH",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.nice.org.uk/guidance/ng87",
+      "references": [
+        {
+          "file": "28-adhd-burnout-recovery.md",
+          "kind": "declared_source",
+          "label": "NICE Guideline NG87 (2025) — ADHD: diagnosis and management"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nice.org.uk/guidance/ng87",
+      "pageTitle": "Overview | Attention deficit hyperactivity disorder: diagnosis and management | Guidance | NICE",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+      "references": [
+        {
+          "file": "19-adhd-morning-routine-no-motivation-1.md",
+          "kind": "inline_citation",
+          "label": "NIMH recommends practical supports such as routines, written reminders, and breaking large tasks into smaller steps"
+        },
+        {
+          "file": "20-how-to-break-down-tasks-adhd.md",
+          "kind": "inline_citation",
+          "label": "National Institute of Mental Health lists organizing tasks, managing time, meeting deadlines, and completing tasks requiring sustained attention among the areas that can be difficult"
+        },
+        {
+          "file": "27-uncommon-adhd-symptoms.md",
+          "kind": "declared_source",
+          "label": "NIMH — Attention-Deficit/Hyperactivity Disorder: What You Need to Know"
+        },
+        {
+          "file": "29-adhd-vs-autism-vs-audhd.md",
+          "kind": "declared_source",
+          "label": "NIMH — Attention-Deficit/Hyperactivity Disorder: What You Need to Know"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nimh.nih.gov/health/publications/attention-deficit-hyperactivity-disorder-what-you-need-to-know",
+      "pageTitle": "Attention-Deficit/Hyperactivity Disorder: What You Need to Know - National Institute of Mental Health (NIMH)",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.nimh.nih.gov/health/statistics/attention-deficit-hyperactivity-disorder-adhd",
+      "references": [
+        {
+          "file": "01-how-adhd-affects-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nimh.nih.gov/health/statistics/attention-deficit-hyperactivity-disorder-adhd",
+      "pageTitle": "Attention-Deficit/Hyperactivity Disorder (ADHD) - National Institute of Mental Health (NIMH)",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd",
+      "references": [
+        {
+          "file": "01-how-adhd-affects-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "02-time-blindness-in-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "03-breaking-down-big-tasks.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "04-executive-dysfunction-vs-task-paralysis.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "04-executive-dysfunction-vs-task-paralysis.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "05-best-tools-for-adhd-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "06-adhd-medication-and-productivity.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "06-adhd-medication-and-productivity.md",
+          "kind": "inline_citation",
+          "label": "NIMH’s ADHD overview"
+        },
+        {
+          "file": "07-neuroscience-task-avoidance.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "07-neuroscience-task-avoidance.md",
+          "kind": "inline_citation",
+          "label": "NIMH’s ADHD overview"
+        },
+        {
+          "file": "08-remote-work-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "09-adhd-perfectionism.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "10-adhd-relationships.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "11-adhd-workplace.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "12-adhd-sleep.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "13-adhd-financial-management.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "14-adhd-creativity.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "15-free-tools-2026.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "16-neurodivergent-productivity-7-tactics.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "16-neurodivergent-productivity-7-tactics.md",
+          "kind": "inline_citation",
+          "label": "NIMH ADHD overview"
+        },
+        {
+          "file": "17-why-simpler-adhd-friendly-apps-work-better.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "18-one-task-is-enough-simple-self-acceptance.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "18-one-task-is-enough-simple-self-acceptance.md",
+          "kind": "inline_citation",
+          "label": "NIMH’s ADHD resource"
+        },
+        {
+          "file": "19-adhd-morning-routine-no-motivation-1.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "20-how-to-break-down-tasks-adhd.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "21-adhd-best-jobs-creativity-hyperfocus.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd",
+      "pageTitle": "Attention-Deficit/Hyperactivity Disorder (ADHD) - National Institute of Mental Health (NIMH)",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.ovid.com/journals/bjps/fulltext/10.1192/bjp.2025.10376",
+      "references": [
+        {
+          "file": "31-adhd-in-women.md",
+          "kind": "declared_source",
+          "label": "(2025), Reflections on the manifestation of ADHD, British Journal of Psychiatry"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ovid.com/journals/bjps/fulltext/10.1192/bjp.2025.10376~reflections-on-the-manifestation-of-attention-deficit",
+      "pageTitle": "Reflections on the manifestation of... : British Journal of Psychiatry",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.ovid.com/journals/jatd/fulltext/10.1177/10870547241297897",
+      "references": [
+        {
+          "file": "31-adhd-in-women.md",
+          "kind": "declared_source",
+          "label": "(2024), Adult diagnosis of ADHD in women: a mixed-methods study, Journal of Attention Disorders"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ovid.com/journals/jatd/fulltext/10.1177/10870547241297897~adult-diagnosis-of-adhd-in-women-a-mixed-methods",
+      "pageTitle": "Adult Diagnosis of ADHD in Women : Journal of Attention Disorders",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+      "references": [
+        {
+          "file": "26-adhd-symptoms-adults.md",
+          "kind": "declared_source",
+          "label": "APA (2013) — DSM-5"
+        },
+        {
+          "file": "29-adhd-vs-autism-vs-audhd.md",
+          "kind": "declared_source",
+          "label": "DSM-5-TR, American Psychiatric Association (2022)"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+      "pageTitle": "Psychiatry.org - DSM",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.samphireneuro.com/en-us/blog/adhd-and-menopause",
+      "references": [
+        {
+          "file": "22-does-adhd-go-away.md",
+          "kind": "declared_source",
+          "label": "Samphire Neuroscience — ADHD and Menopause (citing Jakobsdóttir Smári et al., European Psychiatry, 2025)"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.samphireneuro.com/blog/adhd-and-menopause",
+      "pageTitle": "How Does Menopause and Perimenopause Affect ADHD? | Samphire Neuroscience",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.simplypsychology.org/adhd-emotional-dysregulation.html",
+      "references": [
+        {
+          "file": "28-adhd-burnout-recovery.md",
+          "kind": "declared_source",
+          "label": "Barkley — emotional dysregulation in ADHD"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.simplypsychology.org/adhd-emotional-dysregulation.html",
+      "pageTitle": "ADHD Emotional Dysregulation: When Emotions Become Too Much",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.sleepfoundation.org/mental-health/adhd-and-sleep",
+      "references": [
+        {
+          "file": "12-adhd-sleep.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "19-adhd-morning-routine-no-motivation-1.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.sleepfoundation.org/mental-health/adhd-and-sleep",
+      "pageTitle": "ADHD and Sleep Problems: How Are They Related?",
+      "contentType": "text/html; charset=UTF-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.tiimoapp.com/",
+      "references": [
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "Tiimo, official product information"
+        },
+        {
+          "file": "24-ai-that-breaks-down-tasks-adhd.md",
+          "kind": "declared_source",
+          "label": "Tiimo, official product information"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tiimoapp.com/",
+      "pageTitle": "Visual Planner for Every Neurotype | Tiimo",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.todoist.com/",
+      "references": [
+        {
+          "file": "05-best-tools-for-adhd-task-management.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.todoist.com/",
+      "pageTitle": "Todoist | A To-Do List to Organize Your Work &amp; Life",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.todoist.com/features",
+      "references": [
+        {
+          "file": "15-free-tools-2026.md",
+          "kind": "declared_source",
+          "label": ""
+        },
+        {
+          "file": "23-best-adhd-tools-2026.md",
+          "kind": "declared_source",
+          "label": "Todoist, official features"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.todoist.com/features",
+      "pageTitle": "Features | Todoist",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.understood.org/en/articles/adhd-and-the-brain",
+      "references": [
+        {
+          "file": "07-neuroscience-task-avoidance.md",
+          "kind": "declared_source",
+          "label": ""
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.understood.org/en/articles/adhd-and-the-brain",
+      "pageTitle": "ADHD and the brain",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "reachable",
+      "manualVerification": null
+    },
+    {
+      "url": "https://www.understood.org/en/press-releases/new-understood-org-research-finds-adhd-in-women-is-overwhelmingly",
+      "references": [
+        {
+          "file": "31-adhd-in-women.md",
+          "kind": "declared_source",
+          "label": "Understood.org (2024), ADHD in women research"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.understood.org/en/press-releases/new-understood-org-research-finds-adhd-in-women-is-overwhelmingly",
+      "pageTitle": "New Understood.org research finds ADHD in women is overwhelmingly misunderstood",
+      "contentType": "text/html; charset=utf-8",
+      "error": "",
+      "classification": "manually_verified",
+      "manualVerification": {
+        "title": "New Understood.org research finds ADHD in women is overwhelmingly misunderstood",
+        "method": "independent page extraction",
+        "reason": "The live 17 June 2024 Understood.org release identifies its Harris Poll sample, scope, and stated survey findings."
+      }
+    }
+  ]
+}

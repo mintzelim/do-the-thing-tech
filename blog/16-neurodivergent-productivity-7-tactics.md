@@ -20,16 +20,6 @@ sources:
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
   - text: "Barkley, R.A. Executive Functions and ADHD"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "Brown, T.E. Smart but Stuck: Executive Function"
-    url: "https://www.routledge.com/Smart-but-Stuck-Emotions-in-Adolescents-and-Adults-with-ADHD/Brown/p/book/9781118279212"
-  - text: "ADHD and Body Doubling: ADDitude"
-    url: "https://www.additudemag.com/body-doubling-adhd/"
-  - text: "CDC - ADHD and Adults"
-    url: "https://www.cdc.gov/adhd/adults.html"
-  - text: "ADHD and Gamification: Frontiers in Psychology"
-    url: "https://doi.org/10.3389/fpsyg.2023.1125016"
-  - text: "Understood.org - ADHD and Motivation"
-    url: "https://www.understood.org/en/articles/adhd-motivation"
 ---
 
 # 7 Neurodivergent Productivity Tactics That Actually Work

@@ -15,24 +15,10 @@ tags:
 sources:
   - text: "ADHD and Remote Work: ADDitude Magazine"
     url: "https://www.additudemag.com/working-from-home-adhd/"
-  - text: "Remote Work and ADHD: CHADD"
-    url: "https://chadd.org/adhd-weekly/remote-work-and-adhd/"
   - text: "NIMH - ADHD in Adults: Workplace Accommodations"
     url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
-  - text: "ADHD in the Workplace: Understood.org"
-    url: "https://www.understood.org/en/articles/adhd-in-the-workplace"
-  - text: "CDC - ADHD and Employment"
-    url: "https://www.cdc.gov/adhd/research.html"
   - text: "Barkley, R.A. (2015). ADHD in the Workplace"
     url: "https://www.guilford.com/books/Attention-Deficit-Hyperactivity-Disorder/Russell-Barkley/9781462517725"
-  - text: "ADHD and Home Office: Psychology Today"
-    url: "https://www.psychologytoday.com/us/blog/the-adhd-manifesto/202104/adhd-and-working-from-home"
-  - text: "ADHD-Friendly Work Environments: Job Accommodation Network"
-    url: "https://askjan.org/disabilities/Attention-Deficit-Hyperactivity-Disorder-ADHD.cfm"
-  - text: "Time Management for Remote ADHD Workers: ADDitude"
-    url: "https://www.additudemag.com/time-management-adhd-adults/"
-  - text: "ADHD Accommodations in Remote Work: ADA National Network"
-    url: "https://adata.org/factsheet/employment-and-adhd"
 ---
 
 # ADHD and Remote Work: Strategies for Success
