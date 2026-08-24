@@ -33,7 +33,7 @@ describe("approved second SEO content batch", () => {
       const post = readPost(filename);
       const words = post.match(/\b[\w’'-]+\b/g) ?? [];
       expect(words.length, filename).toBeGreaterThanOrEqual(800);
-      expect(post, filename).toMatch(/updatedDate:\s*["']2026-08-13["']/);
+      expect(post, filename).toMatch(/updatedDate:\s*["']2026-08-\d{2}["']/);
       expect(post, filename).toContain("## Common Mistakes");
     }
   });

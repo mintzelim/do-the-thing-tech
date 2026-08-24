@@ -4,7 +4,7 @@
 
 ## Baseline
 
-The source corpus contains **31 published blog articles** with an average source length of **1,241 words**. All 31 declare sources in front matter; 28 use an explicit recent update date and three use their publication date without a separate update field. The inventory in [`adsense-content-inventory.json`](./adsense-content-inventory.json) measures only structural signals—word count, headings, links, declared sources, FAQ presence, and direct-answer presence. It is a prioritisation aid, not a claim that a shorter article is inherently low quality.
+The source corpus contains **31 published blog articles** with an average source length of **1,241 words**. All 31 declare sources in front matter; 29 use an explicit update date and two use their publication date without a separate update field. The inventory in [`adsense-content-inventory.json`](./adsense-content-inventory.json) measures only structural signals—word count, headings, links, declared sources, FAQ presence, and direct-answer presence. It is a prioritisation aid, not a claim that a shorter article is inherently low quality.
 
 Search Console’s three-month report, checked on 24 August 2026, showed **2.28k impressions**, **36 clicks**, **1.6% CTR**, and average position **26.7** across the property. The priority shortlist combines that observed demand with the inventory’s depth and sourcing gaps.
 
@@ -43,3 +43,11 @@ The revisions will be additive and source-conscious. They will not invent person
 ## Safety and quality boundary
 
 The planned revisions must preserve the site’s non-diagnostic medical boundary, distinguish personal experience from evidence, avoid fabricated outcomes or testimonials, cite named primary or high-quality secondary sources, and never send sensitive task or quiz input to measurement systems.
+
+## Batch A research record and implementation
+
+On 24 August 2026, the approved first batch (`05`, `01`, `04`, `02`, and `03`) was revised with substantive reader aids, updated dates, preserved source metadata, and explicit non-diagnostic language. The articles now include a first-blocked-moment tool selector and seven-day trial in `05`; adult-life friction maps in `01`; a pattern-not-diagnosis aid in `04`; a one-week estimate-calibration experiment and departure-time calculator in `02`; and a full task-breakdown decision example in `03`.
+
+The medical and evidence wording was tightened against the sources below. CHADD describes executive function as an umbrella for organizing, prioritizing, activation, focus, effort, working memory, and action monitoring; it also recommends specific to-do-list actions and breaking broad items into steps.[1](https://chadd.org/about-adhd/executive-function-skills/) [2](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) Kofler et al.’s 2024 review reports group-level executive-function differences while emphasizing heterogeneity and measurement limits.[3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11485171/) For time perception, Mette’s adult review reports a limited and heterogeneous evidence base, while the Marx et al. meta-analysis found timing differences across multiple paradigms; neither supports treating one everyday pattern as a diagnosis.[4](https://pmc.ncbi.nlm.nih.gov/articles/PMC9962130/) [5](https://doi.org/10.1016/j.jaac.2021.12.004)
+
+The revised articles were regenerated into the public catalogue, passed the full 79-file / 479-test suite and production build, and were visually checked after a server restart. No AdSense review request was made.

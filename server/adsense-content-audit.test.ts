@@ -12,7 +12,7 @@ describe("AdSense content audit", () => {
     expect(inventory.articleCount).toBe(31);
     expect(inventory.articles).toHaveLength(31);
     expect(inventory.articles.every((article: { declaredSources: number }) => article.declaredSources >= 3)).toBe(true);
-    expect(inventory.articles.filter((article: { updatedDate: string | null }) => Boolean(article.updatedDate))).toHaveLength(28);
+    expect(inventory.articles.filter((article: { updatedDate: string | null }) => Boolean(article.updatedDate))).toHaveLength(29);
   });
 
   it("documents the first five remediation priorities without modifying article copy", () => {

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-24T15:12:28.540Z",
+  "generatedAt": "2026-08-24T15:30:18.058Z",
   "articleCount": 31,
-  "averageWords": 1241,
+  "averageWords": 1306,
   "articles": [
     {
       "file": "09-adhd-perfectionism.md",
@@ -64,21 +64,6 @@
       "baselineScore": 59.7
     },
     {
-      "file": "02-time-blindness-in-adhd.md",
-      "wordCount": 1218,
-      "h2Count": 5,
-      "h3Count": 13,
-      "internalLinks": 0,
-      "externalLinks": 0,
-      "declaredSources": 10,
-      "faqItems": 0,
-      "updatedDate": "2026-08-13",
-      "sourceHeading": true,
-      "faqHeading": false,
-      "directAnswer": false,
-      "baselineScore": 59.8
-    },
-    {
       "file": "14-adhd-creativity.md",
       "wordCount": 944,
       "h2Count": 7,
@@ -107,21 +92,6 @@
       "faqHeading": false,
       "directAnswer": false,
       "baselineScore": 60.5
-    },
-    {
-      "file": "03-breaking-down-big-tasks.md",
-      "wordCount": 1192,
-      "h2Count": 6,
-      "h3Count": 16,
-      "internalLinks": 0,
-      "externalLinks": 0,
-      "declaredSources": 10,
-      "faqItems": 0,
-      "updatedDate": "2026-08-13",
-      "sourceHeading": true,
-      "faqHeading": false,
-      "directAnswer": false,
-      "baselineScore": 61.5
     },
     {
       "file": "10-adhd-relationships.md",
@@ -169,21 +139,6 @@
       "baselineScore": 62.2
     },
     {
-      "file": "05-best-tools-for-adhd-task-management.md",
-      "wordCount": 1120,
-      "h2Count": 8,
-      "h3Count": 13,
-      "internalLinks": 0,
-      "externalLinks": 0,
-      "declaredSources": 8,
-      "faqItems": 0,
-      "updatedDate": "2026-08-13",
-      "sourceHeading": true,
-      "faqHeading": false,
-      "directAnswer": false,
-      "baselineScore": 62.7
-    },
-    {
       "file": "06-adhd-medication-and-productivity.md",
       "wordCount": 1124,
       "h2Count": 8,
@@ -212,21 +167,6 @@
       "faqHeading": false,
       "directAnswer": false,
       "baselineScore": 62.7
-    },
-    {
-      "file": "04-executive-dysfunction-vs-task-paralysis.md",
-      "wordCount": 1161,
-      "h2Count": 8,
-      "h3Count": 18,
-      "internalLinks": 0,
-      "externalLinks": 0,
-      "declaredSources": 10,
-      "faqItems": 0,
-      "updatedDate": "2026-08-13",
-      "sourceHeading": true,
-      "faqHeading": false,
-      "directAnswer": false,
-      "baselineScore": 63.3
     },
     {
       "file": "19-adhd-morning-routine-no-motivation-1.md",
@@ -304,19 +244,64 @@
       "baselineScore": 67.7
     },
     {
-      "file": "01-how-adhd-affects-task-management.md",
-      "wordCount": 1172,
-      "h2Count": 6,
-      "h3Count": 8,
+      "file": "03-breaking-down-big-tasks.md",
+      "wordCount": 1490,
+      "h2Count": 8,
+      "h3Count": 16,
       "internalLinks": 0,
       "externalLinks": 0,
       "declaredSources": 10,
-      "faqItems": 8,
-      "updatedDate": null,
+      "faqItems": 0,
+      "updatedDate": "2026-08-24",
       "sourceHeading": true,
-      "faqHeading": true,
-      "directAnswer": false,
-      "baselineScore": 71.3
+      "faqHeading": false,
+      "directAnswer": true,
+      "baselineScore": 75.9
+    },
+    {
+      "file": "04-executive-dysfunction-vs-task-paralysis.md",
+      "wordCount": 1555,
+      "h2Count": 10,
+      "h3Count": 18,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "declaredSources": 11,
+      "faqItems": 0,
+      "updatedDate": "2026-08-24",
+      "sourceHeading": true,
+      "faqHeading": false,
+      "directAnswer": true,
+      "baselineScore": 76.8
+    },
+    {
+      "file": "02-time-blindness-in-adhd.md",
+      "wordCount": 1669,
+      "h2Count": 7,
+      "h3Count": 14,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "declaredSources": 12,
+      "faqItems": 0,
+      "updatedDate": "2026-08-24",
+      "sourceHeading": true,
+      "faqHeading": false,
+      "directAnswer": true,
+      "baselineScore": 78.4
+    },
+    {
+      "file": "05-best-tools-for-adhd-task-management.md",
+      "wordCount": 1670,
+      "h2Count": 11,
+      "h3Count": 15,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "declaredSources": 12,
+      "faqItems": 0,
+      "updatedDate": "2026-08-24",
+      "sourceHeading": true,
+      "faqHeading": false,
+      "directAnswer": true,
+      "baselineScore": 78.4
     },
     {
       "file": "25-adhd-never-finish-anything.md",
@@ -437,6 +422,21 @@
       "faqHeading": true,
       "directAnswer": true,
       "baselineScore": 85.1
+    },
+    {
+      "file": "01-how-adhd-affects-task-management.md",
+      "wordCount": 1498,
+      "h2Count": 8,
+      "h3Count": 8,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "declaredSources": 11,
+      "faqItems": 8,
+      "updatedDate": "2026-08-24",
+      "sourceHeading": true,
+      "faqHeading": true,
+      "directAnswer": true,
+      "baselineScore": 86
     },
     {
       "file": "30-rejection-sensitive-dysphoria-rsd.md",
