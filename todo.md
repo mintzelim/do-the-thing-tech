@@ -1064,3 +1064,7 @@
 - [x] Add approved privacy-safe product events and designate task_breakdown_completed as the primary GA4 key event
 - [x] Update the privacy notice for Google measurement, advertising technology, and consent choices
 - [x] Submit the refreshed sitemap and attempt an AdSense ads.txt status recheck without requesting a new AdSense content review (no standalone recheck control is available while Low value content remains active)
+- [x] Audit existing blog articles for AdSense-readiness gaps in depth, originality, sourcing, and reader value; prioritize the highest-impact improvements
+- [ ] Apply the user-approved first batch of substantive, source-conscious article improvements before considering an AdSense review
+- [ ] Arrange a 48–72 hour follow-up check of GA4 key-event receipt and AdSense ads.txt status
+- [ ] Request a new AdSense review only after the audit fixes are complete and the user gives fresh approval
