@@ -1,5 +1,6 @@
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { TimerProvider } from "./contexts/TimerContext";
+import { lazy, Suspense } from "react";
 import "./pixel-art-refined.css";
 import "./landing-system-reconciliation.css";
 import Home from "./pages/Home";
@@ -9,7 +10,6 @@ import BlogPost from "./pages/BlogPost";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
-import CurrentTasks from "./pages/CurrentTasks";
 import Quiz from "./pages/Quiz";
 import ProductProof from "./pages/ProductProof";
 import GoblinToolsComparison from "./pages/GoblinToolsComparison";
@@ -20,11 +20,17 @@ import NotFound from "./pages/NotFound";
 import { Switch, Route } from "wouter";
 import { BlogPostsProvider, type BlogPostRecord } from "./contexts/BlogPostsContext";
 
+const CurrentTasks = lazy(() => import("./pages/CurrentTasks"));
+
+function DeferredCurrentTasks() {
+  return <Suspense fallback={<main className="min-h-screen bg-[#f6f5f2] px-4 py-24 text-center text-[#26364a]" aria-busy="true">Loading your current tasks…</main>}><CurrentTasks /></Suspense>;
+}
+
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
-      <Route path={"/current-tasks"} component={CurrentTasks} />
+      <Route path={"/current-tasks"} component={DeferredCurrentTasks} />
       <Route path={"/about"} component={About} />
       <Route path={"/how-it-works"} component={ProductProof} />
       <Route path={"/compare/goblin-tools"} component={GoblinToolsComparison} />

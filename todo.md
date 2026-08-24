@@ -1054,3 +1054,6 @@
 - [x] Update the About-page founder description to position Boundless One Ventures as an AI × craft software company
 - [x] Audit the whole live site for functional, visual, mobile, accessibility, metadata, link, and asset-delivery issues; repair clear defects and surface product decisions
 - [x] Migrate all site image delivery from Manus storage URLs to GitHub-hosted project assets and verify live availability
+- [x] Test representative live quiz answer paths and document distinct outcome coverage
+- [x] Create a reusable GitHub-hosted canonical purple-mascot visual kit for future blog posts
+- [x] Split noncritical client code to reduce the initial JavaScript bundle without changing route or metadata behavior
