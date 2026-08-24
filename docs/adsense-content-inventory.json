@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-24T15:30:18.058Z",
+  "generatedAt": "2026-08-24T15:47:36.400Z",
   "articleCount": 31,
-  "averageWords": 1306,
+  "averageWords": 1287,
   "articles": [
     {
       "file": "09-adhd-perfectionism.md",
@@ -304,34 +304,19 @@
       "baselineScore": 78.4
     },
     {
-      "file": "25-adhd-never-finish-anything.md",
-      "wordCount": 1003,
-      "h2Count": 9,
-      "h3Count": 5,
-      "internalLinks": 5,
+      "file": "30-rejection-sensitive-dysphoria-rsd.md",
+      "wordCount": 990,
+      "h2Count": 10,
+      "h3Count": 3,
+      "internalLinks": 4,
       "externalLinks": 0,
-      "declaredSources": 6,
-      "faqItems": 6,
-      "updatedDate": null,
+      "declaredSources": 7,
+      "faqItems": 5,
+      "updatedDate": "2026-08-24",
       "sourceHeading": true,
       "faqHeading": true,
       "directAnswer": true,
-      "baselineScore": 79
-    },
-    {
-      "file": "22-does-adhd-go-away.md",
-      "wordCount": 1043,
-      "h2Count": 8,
-      "h3Count": 9,
-      "internalLinks": 0,
-      "externalLinks": 0,
-      "declaredSources": 8,
-      "faqItems": 6,
-      "updatedDate": null,
-      "sourceHeading": true,
-      "faqHeading": true,
-      "directAnswer": true,
-      "baselineScore": 79.6
+      "baselineScore": 78.9
     },
     {
       "file": "28-adhd-burnout-recovery.md",
@@ -349,34 +334,19 @@
       "baselineScore": 81.1
     },
     {
-      "file": "23-best-adhd-tools-2026.md",
-      "wordCount": 1186,
-      "h2Count": 11,
-      "h3Count": 14,
+      "file": "22-does-adhd-go-away.md",
+      "wordCount": 1154,
+      "h2Count": 8,
+      "h3Count": 9,
       "internalLinks": 0,
       "externalLinks": 0,
-      "declaredSources": 7,
+      "declaredSources": 8,
       "faqItems": 6,
-      "updatedDate": "2026-08-12",
+      "updatedDate": "2026-08-24",
       "sourceHeading": true,
       "faqHeading": true,
       "directAnswer": true,
-      "baselineScore": 81.6
-    },
-    {
-      "file": "24-ai-that-breaks-down-tasks-adhd.md",
-      "wordCount": 1198,
-      "h2Count": 9,
-      "h3Count": 12,
-      "internalLinks": 0,
-      "externalLinks": 0,
-      "declaredSources": 6,
-      "faqItems": 6,
-      "updatedDate": "2026-08-13",
-      "sourceHeading": true,
-      "faqHeading": true,
-      "directAnswer": true,
-      "baselineScore": 81.8
+      "baselineScore": 81.2
     },
     {
       "file": "26-adhd-symptoms-adults.md",
@@ -392,6 +362,36 @@
       "faqHeading": true,
       "directAnswer": true,
       "baselineScore": 81.9
+    },
+    {
+      "file": "25-adhd-never-finish-anything.md",
+      "wordCount": 1238,
+      "h2Count": 10,
+      "h3Count": 6,
+      "internalLinks": 5,
+      "externalLinks": 0,
+      "declaredSources": 7,
+      "faqItems": 6,
+      "updatedDate": "2026-08-24",
+      "sourceHeading": true,
+      "faqHeading": true,
+      "directAnswer": true,
+      "baselineScore": 82.3
+    },
+    {
+      "file": "24-ai-that-breaks-down-tasks-adhd.md",
+      "wordCount": 1257,
+      "h2Count": 11,
+      "h3Count": 7,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "declaredSources": 6,
+      "faqItems": 5,
+      "updatedDate": "2026-08-24",
+      "sourceHeading": true,
+      "faqHeading": true,
+      "directAnswer": true,
+      "baselineScore": 82.6
     },
     {
       "file": "27-uncommon-adhd-symptoms.md",
@@ -424,6 +424,21 @@
       "baselineScore": 85.1
     },
     {
+      "file": "23-best-adhd-tools-2026.md",
+      "wordCount": 1477,
+      "h2Count": 13,
+      "h3Count": 14,
+      "internalLinks": 0,
+      "externalLinks": 0,
+      "declaredSources": 12,
+      "faqItems": 6,
+      "updatedDate": "2026-08-24",
+      "sourceHeading": true,
+      "faqHeading": true,
+      "directAnswer": true,
+      "baselineScore": 85.7
+    },
+    {
       "file": "01-how-adhd-affects-task-management.md",
       "wordCount": 1498,
       "h2Count": 8,
@@ -439,34 +454,19 @@
       "baselineScore": 86
     },
     {
-      "file": "30-rejection-sensitive-dysphoria-rsd.md",
-      "wordCount": 2356,
-      "h2Count": 12,
-      "h3Count": 8,
-      "internalLinks": 6,
-      "externalLinks": 14,
-      "declaredSources": 9,
-      "faqItems": 8,
-      "updatedDate": "July 17, 2026",
-      "sourceHeading": true,
-      "faqHeading": true,
-      "directAnswer": true,
-      "baselineScore": 98
-    },
-    {
       "file": "31-adhd-in-women.md",
-      "wordCount": 2467,
+      "wordCount": 2528,
       "h2Count": 13,
       "h3Count": 5,
       "internalLinks": 7,
       "externalLinks": 0,
       "declaredSources": 8,
       "faqItems": 6,
-      "updatedDate": "August 4, 2026",
+      "updatedDate": "2026-08-24",
       "sourceHeading": true,
       "faqHeading": true,
       "directAnswer": true,
-      "baselineScore": 99.5
+      "baselineScore": 100
     }
   ]
 }

@@ -38,7 +38,7 @@ Across the priority material, the most valuable improvements are substantive rat
 
 The recommended first batch is **five articles**: `05`, `01`, `04`, `02`, and `03`. This pairs the strongest observed search demand with the clearest substantive gains. A second, claim-tightening batch should follow for `23`, `24`, `25`, and `31`; it is suitable after the first batch is validated or if the user prefers a broader editorial pass.
 
-The revisions will be additive and source-conscious. They will not invent personal stories, user outcomes, reviews, ratings, author credentials, medical diagnoses, or claims of independent testing. No content will be changed without a separate explicit approval.
+The revisions are additive and source-conscious. They do not invent personal stories, user outcomes, reviews, ratings, author credentials, medical diagnoses, or claims of independent testing. No content was changed without a separate explicit approval.
 
 ## Safety and quality boundary
 
@@ -51,3 +51,11 @@ On 24 August 2026, the approved first batch (`05`, `01`, `04`, `02`, and `03`) w
 The medical and evidence wording was tightened against the sources below. CHADD describes executive function as an umbrella for organizing, prioritizing, activation, focus, effort, working memory, and action monitoring; it also recommends specific to-do-list actions and breaking broad items into steps.[1](https://chadd.org/about-adhd/executive-function-skills/) [2](https://chadd.org/for-adults/time-management-and-adhd-to-do-lists/) Kofler et al.’s 2024 review reports group-level executive-function differences while emphasizing heterogeneity and measurement limits.[3](https://pmc.ncbi.nlm.nih.gov/articles/PMC11485171/) For time perception, Mette’s adult review reports a limited and heterogeneous evidence base, while the Marx et al. meta-analysis found timing differences across multiple paradigms; neither supports treating one everyday pattern as a diagnosis.[4](https://pmc.ncbi.nlm.nih.gov/articles/PMC9962130/) [5](https://doi.org/10.1016/j.jaac.2021.12.004)
 
 The revised articles were regenerated into the public catalogue, passed the full 79-file / 479-test suite and production build, and were visually checked after a server restart. No AdSense review request was made.
+
+## Batch B and claim-review implementation
+
+Following fresh approval on 24 August 2026, the second editorial batch revised articles `23`, `24`, `25`, and `31`. The completed work adds a dated comparison method, provider-source links, realistic alternative stacks, and visible product-interest disclosures to `23`; an AI-plan quality check, private-information boundary, and review-before-acting panel to `24`; a non-diagnostic three-minute restart card to `25`; and a research-versus-lived-pattern distinction with cycle and clinician boundaries to `31`.
+
+The remaining health-adjacent corpus was screened for high-certainty diagnostic, neuroscience, hormone, medication, prevalence, and treatment language. The review found two additional priority corrections: `30` was rewritten as a non-diagnostic rejection-sensitivity guide with a reversible first-ten-minutes plan and no medication recommendation; `22` now makes clear that lifespan statistics are group findings rather than individual predictions and that hormonal evidence is developing. The existing safety language in the medication, sleep, neuroscience, symptom, burnout, and ADHD/autism guides was retained where it already qualified claims and directed readers toward appropriate professional help.
+
+Finally, the blog renderer now shows a factual accountability panel on every article: named author, last-updated date, editorial-standards link, corrections contact, and an optional product disclosure only where article metadata declares one. This is disclosure, not a fabricated expertise, review, rating, or independent-testing signal.

@@ -13,6 +13,7 @@ excerpt: >-
   Starting feels great. Finishing is where ADHD brains consistently stall.
   Here's why across 3 distinct patterns and the specific fix for each.
 date: 'May 18, 2026'
+updatedDate: '2026-08-24'
 readTime: 8 min read
 category: Psychology
 primaryEntity: ADHD Task Completion
@@ -42,6 +43,8 @@ sources:
     url: https://www.sciencedirect.com/science/article/abs/pii/S0149763420305935
   - title: DoTheThing
     url: https://www.dothething.tech
+  - title: 'Kofler et al. (2024), Executive function deficits in ADHD and autism'
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11485171/
 relatedPosts:
   - '3'
   - '4'
@@ -49,15 +52,14 @@ relatedPosts:
 faq:
   - q: Why do people with ADHD never finish anything?
     a: >-
-      3 mechanisms: novelty depletion (dopamine fades as project becomes
-      familiar), competing interest pull (new ideas generate stronger dopamine),
-      low-stimulation phase avoidance (boring phases trigger task paralysis).
+      People can stall for many reasons. Three common patterns are losing interest
+      after the exciting start, getting pulled to a newer idea, and facing a vague
+      or low-reward final phase. These are practical patterns, not diagnoses.
   - q: Is it ADHD if I start everything but finish nothing?
     a: >-
-      Yes — one of the most commonly reported patterns. Project starts are
-      high-novelty and generate strong dopamine. As projects move into
-      low-stimulation phases, dopamine support drops and the brain seeks a new
-      source.
+      It can be one possible pattern, but it can also reflect workload, sleep,
+      stress, mood, task clarity, or other factors. An assessment needs more than
+      one project pattern.
   - q: How do I actually finish things with ADHD?
     a: >-
       Match the fix to the pattern. Novelty depletion: chunk projects with clear
@@ -71,9 +73,9 @@ faq:
       as the project becomes familiar.
   - q: What is ADHD task paralysis and how does it affect completion?
     a: >-
-      A freeze response when a task triggers emotional overload or low
-      stimulation. Commonly strikes mid-project when initial excitement fades and
-      only refinement/admin remain.
+      “Task paralysis” is informal language for a stuck moment, not a formal
+      diagnosis. It can happen when a task feels overloaded, unclear, high-stakes,
+      or hard to re-enter.
   - q: Does DoTheThing help with finishing projects?
     a: >-
       Yes at 2 points: re-entering stalled projects (type what you've done and
@@ -85,17 +87,21 @@ faq:
 
 You start with genuine energy. The idea is good. A few days in, something shifts. The project sits at 70%, exactly where it will be in 3 months.
 
-This is one of the most consistent patterns in adult ADHD. It's not about discipline. It's about 3 specific neurological mechanisms, each with a different cause and fix.
+This can be a painful and common experience, but it does not have one single cause. Some people with ADHD notice recurring trouble with activation, planning, or sustaining effort; workload, sleep, stress, task ambiguity, and life context can matter too. The three patterns below are practical ways to notice where a project stalled—not diagnoses or a complete explanation of anyone’s brain.
+
+## Direct Answer
+
+Do not restart the entire project. Preserve what is already done, name the **current** barrier, and choose one visible re-entry action. A stalled project might need a smaller next step, a place to park a competing idea, clearer completion criteria, or support from another person. Treat the pattern as information, not proof that you cannot follow through.
 
 ---
 
 ## TL;DR
 
-- **ADHD incompletion follows 3 distinct patterns**, each with a different mechanism.
-- **Pattern 1: Novelty depletion** — dopamine fades as the project becomes familiar.
-- **Pattern 2: Competing interest pull** — new ideas generate stronger dopamine and pull attention away.
-- **Pattern 3: Low-stimulation phase avoidance** — boring phases trigger the freeze response.
-- **Each pattern has a specific fix.** Matching the fix to the pattern is what makes the difference.
+- **Projects can stall in different ways; these patterns can overlap.**
+- **Pattern 1: the early excitement fades.** The remaining work may need a smaller milestone.
+- **Pattern 2: a new idea competes for attention.** Give it a safe capture point and return date.
+- **Pattern 3: the final phase is vague or low-reward.** Make the next action and finish line visible.
+- **Each pattern suggests an experiment, not a cure.**
 - **DoTheThing helps re-enter stalled projects and power through low-stimulation phases.**
 
 ---
@@ -104,7 +110,7 @@ This is one of the most consistent patterns in adult ADHD. It's not about discip
 
 ## Why ADHD Brains Start So Well
 
-ADHD brains run on interest-based attention. Barkley frames it as driven by interest, challenge, urgency, and passion rather than importance. When a new project lands, it hits all four triggers. Novelty is high. The challenge feels fresh. The dopamine system activates strongly.
+Interest, challenge, urgency, and personal meaning can shape attention for many people. A new project may feel easier to enter because the outcome is vivid and the choices are still open. That does not mean every unfinished project is caused by a dopamine change or that people with ADHD are “built only for starting.”
 
 The ADHD brain is optimised for starting. The architecture that makes starting easy is the same one that makes finishing hard.
 
@@ -114,9 +120,9 @@ The ADHD brain is optimised for starting. The architecture that makes starting e
 
 ![The Project Lifecycle: Novelty Depletion Over Time](/manus-storage/body-25-novelty-depletion_571cf1a1.png)
 
-Every project starts with high novelty. As you work through it, what remains is refinement, editing, admin. The dopamine signal fades.
+As a project progresses, the work can become more repetitive, detailed, or ambiguous. That shift may make it harder to return, particularly when the finish line is unclear.
 
-A 2024 PMC study found 68% of ADHD adults report frequent hyperfocus, with most common triggers being novelty and personal interest. As both decline in a maturing project, hyperfocus becomes inaccessible.
+Research on hyperfocus and attention patterns is still developing and individual experiences vary. Rather than relying on a percentage from one study, use your own history: which project phase reliably loses you, and what is different about it?
 
 This is why projects reach 70-80% and stall. The interesting problems are solved. What remains carries low novelty.
 
@@ -128,9 +134,9 @@ This is why projects reach 70-80% and stall. The interesting problems are solved
 
 ![Competing Interest Pull: New Idea Shines, Old Project Fades](/manus-storage/body-25-competing-interests_19c71f25.png)
 
-A new idea arrives mid-project. It's fresh, unresolved, immediately more interesting. The ADHD brain responds more strongly to the new stimulus. The existing project gets backgrounded.
+A new idea can arrive mid-project and feel more urgent, fresh, or solvable than the work already open. That is a common human attention problem; for some people with ADHD, executive-function friction can make the switch back harder.
 
-Hoogman et al. found ADHD brains generate a higher volume of divergent ideas than neurotypical brains. That creative advantage also means new ideas arrive more frequently, creating more competing pulls.
+Creativity research in ADHD is mixed and does not mean every person will generate more ideas. The practical point remains useful without that claim: a capture list can let an idea exist without forcing an immediate project switch.
 
 **The fix:** Keep a dedicated capture list. When a new idea arrives, write it down, set a specific date to explore it (after the current project's next milestone), and return. "I'll spend 30 minutes on this on Friday after I send the draft" gives the idea a real destination.
 
@@ -140,9 +146,9 @@ Hoogman et al. found ADHD brains generate a higher volume of divergent ideas tha
 
 ![The Low-Stimulation Trap: 90% Done, 10% Feels Impossible](/manus-storage/body-25-low-stimulation-trap_3496c57a.png)
 
-Every project contains phases carrying low stimulation: editing a draft, admin, formatting. These trigger ADHD task paralysis — the freeze response when a task carries low interest.
+Many projects contain lower-interest phases such as editing, admin, or formatting. A stuck moment can follow when the next action is unclear, the task feels high-stakes, or the reward is distant. “Task paralysis” is informal language for that experience, not a proven trauma or neurological response.
 
-ADDA describes ADHD paralysis as an overload response, often outside conscious control. The brain registers the low-stimulation phase as aversive and shuts down initiation. The project sits at 90% because the final 10% carries no dopamine reward.
+ADDA describes ADHD paralysis as an overload experience. If a final phase repeatedly stalls, make the remaining action, time boundary, and definition of done visible; this is a support experiment, not proof of why the stall occurred.
 
 **The fix:** Build external structure for these phases. They don't respond to intrinsic motivation. Use DoTheThing to break the task into micro-steps. Use a time limit ("20 minutes, then stop"). Use body doubling — working alongside another person raises the activation threshold.
 
@@ -160,7 +166,15 @@ Understanding which pattern is active changes how you respond. Novelty depletion
 
 ## How to Re-Enter a Stalled Project Right Now
 
-Go to www.DoTheThing.tech. Type what you've done so far and what's left. Choose your focus level. Get a numbered list of the next steps. The first step will be small enough to start in under 5 minutes.
+### A Three-Minute Restart Card
+
+1. **Keep:** Write one thing that is already done. Do not restart from zero.
+2. **Name the barrier:** Is the next step unclear, boring, high-stakes, interrupted, or competing with a new idea?
+3. **Choose one visible action:** “Open the draft and highlight the last completed paragraph,” not “work on project.”
+4. **Set a short boundary:** Work for one small interval, then leave a “resume here” note.
+5. **Ask for support if needed:** A clarifying message, body double, or qualified professional may be more useful than another productivity system.
+
+You can use DoTheThing to draft a restart sequence, but edit every step until it fits your real task and capacity.
 
 ---
 

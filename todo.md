@@ -1076,3 +1076,9 @@
 - [x] Configure the user-requested one-off 24-hour GA4, Search Console, and AdSense status check without requesting review
 - [ ] Complete the scheduled 24-hour Google status check and record the observations without requesting review
 - [x] Assess complementary AdSense-readiness signals beyond Batch A and provide a source-backed, approval-only action checklist
+- [x] Revise article 23 with a dated comparison method, verifiable provider facts, alternative tool stacks, and transparent product-interest boundaries
+- [x] Revise article 24 with an editable AI-plan quality checklist, a review-before-acting safety panel, and qualified product/uniqueness claims
+- [x] Revise article 25 with a non-diagnostic project-restart tool and claim-to-source corrections
+- [x] Revise article 31 with a clear source-versus-story distinction, qualified sex/hormonal wording, and a questions-for-a-clinician aid
+- [x] Review remaining health-adjacent guides for absolute or insufficiently sourced medical claims and apply evidence-aware wording where needed
+- [x] Add factual, reusable authorship, update, editorial-standards, corrections, and comparison-disclosure signals to article pages without fabricating credentials or reviews

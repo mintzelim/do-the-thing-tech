@@ -134,6 +134,7 @@ function generateBlogPosts() {
         seoKeywords,
         sources,
         relatedPosts,
+        disclosure: typeof frontmatter.disclosure === 'string' ? frontmatter.disclosure : '',
         featuredImage: toProductionAssetUrl(frontmatter.featuredImage || ''),
         featuredImageAlt: frontmatter.featuredImageAlt || '',
         content: plainContent,

@@ -34,6 +34,10 @@ describe("blog design-system refresh", () => {
     expect(blogPost).toContain('aria-valuetext={`${readingProgress}% read`}');
     expect(blogPost).toContain('className="blog-article-body"');
     expect(blogPost).toContain('className="blog-sources-panel"');
+    expect(blogPost).toContain('className="blog-accountability-panel"');
+    expect(blogPost).toContain("Written, updated, and accountable");
+    expect(blogPost).toContain('href="mailto:support@dothething.tech"');
+    expect(blogPost).toContain("post.disclosure");
     expect(blogPost).toContain('className="blog-article-cta"');
     expect(blogPost).toContain('className="blog-related-section"');
     expect(blogPost).not.toContain("dothething-how-it-works-breakdown-transparent_3a48d1ce.png");
@@ -69,6 +73,8 @@ describe("blog design-system refresh", () => {
     expect(fieldGuideStyles).toContain("font-size: .72rem !important");
     expect(fieldGuideStyles).toContain("border-left: 1px solid #d5d9e2 !important");
     expect(fieldGuideStyles).toContain("background: transparent !important");
+    expect(fieldGuideStyles).toContain(".blog-accountability-panel");
+    expect(fieldGuideStyles).toContain(".blog-product-disclosure");
   });
 
   it("applies documented panel, card, motion, and reduced-motion rules without reintroducing heavy legacy styling", () => {

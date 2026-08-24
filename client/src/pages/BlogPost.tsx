@@ -29,6 +29,19 @@ function SourcesSection({ sources }: { sources: Array<{ title: string; url: stri
   );
 }
 
+function ArticleAccountability({ post }: { post: BlogPost }) {
+  return (
+    <section className="blog-accountability-panel" aria-labelledby="article-accountability-heading">
+      <p className="blog-panel-label">ABOUT THIS GUIDE</p>
+      <h2 id="article-accountability-heading">Written, updated, and accountable</h2>
+      <p>Written by <a href="/about#author">Lim Min Tze</a>, Founder, Creative Director, and Product Developer at DoTheThing. Last updated {post.updatedDate || post.date}.</p>
+      <p>We link factual claims to sources, distinguish research from practical suggestions, and keep medical information non-diagnostic. <a href="/editorial-standards">Read the editorial standards</a>.</p>
+      <p>Spot an error or need a clarification? <a href="mailto:support@dothething.tech">Contact the corrections desk</a>.</p>
+      {post.disclosure && <p className="blog-product-disclosure"><strong>Product disclosure.</strong> {post.disclosure}</p>}
+    </section>
+  );
+}
+
 function BlogPostStatus({ message, isError = false }: { message: string; isError?: boolean }) {
   return <div className="mobile-frame blog-post-page"><Navigation /><main className="blog-article-shell"><section className="blog-status-panel"><p className="blog-eyebrow">TOOLS &amp; RESOURCES</p><h1>BLOG</h1><p className={isError ? "blog-status-error" : "blog-status-copy"}>{message}</p></section></main><Footer /></div>;
 }
@@ -125,6 +138,7 @@ export default function BlogPost() {
           {post.featuredImage && <figure className="blog-article-feature"><img src={post.featuredImage} alt={post.featuredImageAlt || post.title} /></figure>}
           <div className="blog-article-body"><BlogContentRenderer content={post.content} onInternalLinkClick={(postId) => { const relatedPost = allPosts.find((candidate) => candidate.id === postId); if (relatedPost) navigate(`/blog/${relatedPost.slug}`, { replace: false }); }} /></div>
           {post.sources && post.sources.length > 0 && <SourcesSection sources={post.sources} />}
+          <ArticleAccountability post={post} />
 
           <section className="blog-article-cta" aria-labelledby="article-cta-heading">
             <div className="blog-article-cta-art" aria-hidden="true"><img src={ctaMascot} alt="" /></div>

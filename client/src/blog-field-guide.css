@@ -186,6 +186,50 @@
   font-weight: 700;
 }
 
+.blog-accountability-panel {
+  margin: 20px 0;
+  padding: 18px;
+  border: 1px solid #c5cada;
+  border-radius: 10px;
+  background: #fffefb;
+  box-shadow: 3px 4px 0 rgba(210, 211, 224, .52);
+  color: #52606e;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+.blog-accountability-panel .blog-panel-label {
+  margin: 0 0 5px;
+  color: var(--pixel-accent-dark);
+  font: 1rem/1.1 VT323, "Courier New", monospace;
+  letter-spacing: .07em;
+}
+
+.blog-accountability-panel h2 {
+  margin: 0 0 10px;
+  color: #223047;
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
+.blog-accountability-panel p {
+  margin: 8px 0 0;
+  font-size: .9rem;
+  line-height: 1.58;
+}
+
+.blog-accountability-panel a {
+  color: #4c4fbd;
+  font-weight: 700;
+  text-underline-offset: 2px;
+}
+
+.blog-product-disclosure {
+  margin-top: 12px !important;
+  padding-top: 12px;
+  border-top: 1px solid #d9dce4;
+  color: #3e4c60;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .blog-reading-progress-fill {
     transition: none;
@@ -215,6 +259,10 @@
   .blog-article-body .blog-evidence-fold .blog-evidence-note {
     font-size: .72rem !important;
     line-height: 1.5;
+  }
+
+  .blog-accountability-panel {
+    padding: 16px;
   }
 }
 
@@ -251,5 +299,10 @@
   .blog-article-body .blog-evidence-fold .blog-evidence-note {
     padding: 8px 0 9px 9px;
     font-size: .7rem !important;
+  }
+
+  .blog-accountability-panel {
+    margin: 16px 0;
+    padding: 14px;
   }
 }

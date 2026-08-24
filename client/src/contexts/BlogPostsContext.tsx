@@ -12,6 +12,7 @@ export type BlogPostRecord = {
   seoKeywords: string[];
   sources: Array<{ title: string; url: string }>;
   relatedPosts: string[];
+  disclosure?: string;
   content: string;
   slug: string;
   faq?: Array<{ q: string; a: string }>;
