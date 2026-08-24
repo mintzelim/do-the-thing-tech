@@ -1061,6 +1061,6 @@
 - [x] Remove the decorative small mascot badge from every blog-post header without changing article content, metadata, or reading-progress behavior
 - [x] Audit current Google Search Console, Tag Manager, Analytics, and AdSense readiness; implement only user-approved configuration and record account-side actions
 - [x] Recover the stalled Google account-login path or provide a safe alternative for account-dependent setup steps
-- [ ] Add approved privacy-safe product events and designate task_breakdown_completed as the primary GA4 key event
+- [x] Add approved privacy-safe product events and designate task_breakdown_completed as the primary GA4 key event
 - [x] Update the privacy notice for Google measurement, advertising technology, and consent choices
-- [ ] Submit the refreshed sitemap and request an AdSense ads.txt status recheck without requesting a new AdSense content review
+- [x] Submit the refreshed sitemap and attempt an AdSense ads.txt status recheck without requesting a new AdSense content review (no standalone recheck control is available while Low value content remains active)
