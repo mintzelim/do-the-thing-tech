@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import { LEARNING_PATHS } from "@/lib/learningPaths";
 import { assetUrl } from "@/lib/assetUrl";
+import { trackProductEvent } from "@/lib/analytics";
 import "../how-it-works-surface.css";
 
 export default function HomeContent() {
@@ -213,7 +214,7 @@ export default function HomeContent() {
           <div className="learning-path-mascot-guide" aria-hidden="true"><img src={assetUrl("/manus-storage/dothething-how-it-works-focus-transparent_c55dcc2f.png")} alt="" /></div>
           <div className="learning-path-card-grid">
             {LEARNING_PATHS.map((path, index) => (
-              <a key={path.title} className="learning-path-card" href={path.posts[0].href} aria-label={`Read ${path.posts[0].label} to start the ${path.title} learning path`}>
+              <a key={path.title} className="learning-path-card" href={path.posts[0].href} onClick={() => trackProductEvent("guide_opened", { guide_slug: path.posts[0].href.replace("/blog/", ""), source_section: "learning_path" })} aria-label={`Read ${path.posts[0].label} to start the ${path.title} learning path`}>
                 <span className="learning-path-card-number" aria-hidden="true">0{index + 1}</span>
                 <h3>{path.title}</h3>
                 <p>{path.description}</p>

@@ -1057,3 +1057,10 @@
 - [x] Test representative live quiz answer paths and document distinct outcome coverage
 - [x] Create a reusable GitHub-hosted canonical purple-mascot visual kit for future blog posts
 - [x] Split noncritical client code to reduce the initial JavaScript bundle without changing route or metadata behavior
+- [x] Assess whether the featured image should remain above the title on the ADHD in Women article and apply a user-approved treatment only
+- [x] Remove the decorative small mascot badge from every blog-post header without changing article content, metadata, or reading-progress behavior
+- [x] Audit current Google Search Console, Tag Manager, Analytics, and AdSense readiness; implement only user-approved configuration and record account-side actions
+- [x] Recover the stalled Google account-login path or provide a safe alternative for account-dependent setup steps
+- [ ] Add approved privacy-safe product events and designate task_breakdown_completed as the primary GA4 key event
+- [x] Update the privacy notice for Google measurement, advertising technology, and consent choices
+- [ ] Submit the refreshed sitemap and request an AdSense ads.txt status recheck without requesting a new AdSense content review

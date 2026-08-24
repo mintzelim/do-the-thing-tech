@@ -21,8 +21,9 @@ describe("utility page design system", () => {
       expect(page).toContain('className="mobile-frame utility-page"');
       expect(page).toContain('className="utility-legal-panel"');
       expect(page).toContain('className="utility-legal-copy"');
-      expect(page).toContain("Last Updated: April 2026");
     }
+    expect(privacy).toContain("Last Updated: August 2026");
+    expect(terms).toContain("Last Updated: April 2026");
     expect(privacy).toContain("Information Collection and Use");
     expect(terms).toContain("Terms of Service");
   });

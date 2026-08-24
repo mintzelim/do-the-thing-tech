@@ -11,6 +11,7 @@ import { ErrorModal } from "@/components/ErrorModal";
 import PocketsFullModal from "@/components/PocketsFullModal";
 import { updateMetaTags, pageMetaTags } from "@/lib/metaTags";
 import { assetUrl } from "@/lib/assetUrl";
+import { bucketCount, trackProductEvent } from "@/lib/analytics";
 import "../pixel-art-refined.css";
 import "../landing-system-reconciliation.css";
 
@@ -245,6 +246,10 @@ export default function Home() {
 
       setSteps(stepsWithIds);
       setFlowState("breakdown");
+      trackProductEvent("task_breakdown_completed", {
+        input_mode: "brain_dump",
+        step_count_bucket: bucketCount(stepsWithIds.length),
+      });
       // Redirect to current tasks page
       setTimeout(() => {
         navigate("/current-tasks");

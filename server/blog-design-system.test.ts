@@ -36,7 +36,8 @@ describe("blog design-system refresh", () => {
     expect(blogPost).toContain('className="blog-sources-panel"');
     expect(blogPost).toContain('className="blog-article-cta"');
     expect(blogPost).toContain('className="blog-related-section"');
-    expect(blogPost).toContain("dothething-how-it-works-breakdown-transparent_3a48d1ce.png");
+    expect(blogPost).not.toContain("dothething-how-it-works-breakdown-transparent_3a48d1ce.png");
+    expect(blogPost).not.toContain('className="blog-article-mascot"');
     expect(blogPost).toContain("dothething-how-it-works-timer-transparent_f4de844b.png");
     expect(blogPost).toContain("getBlogCategoryEyebrow(post.category)");
     expect(blogPost).toContain('import "../blog-breadcrumb.css"');

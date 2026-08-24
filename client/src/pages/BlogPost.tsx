@@ -15,7 +15,6 @@ import "../blog-breadcrumb.css";
 
 type BlogPost = BlogPostRecord;
 
-const articleMascot = assetUrl("/manus-storage/dothething-how-it-works-breakdown-transparent_3a48d1ce.png");
 const ctaMascot = assetUrl("/manus-storage/dothething-how-it-works-timer-transparent_f4de844b.png");
 
 function SourcesSection({ sources }: { sources: Array<{ title: string; url: string }> }) {
@@ -121,7 +120,6 @@ export default function BlogPost() {
               <div className="blog-article-meta"><span>Published {post.date}</span>{post.updatedDate && <><span aria-hidden="true">•</span><span>Updated {post.updatedDate}</span></>}<span aria-hidden="true">•</span><span>{post.readTime}</span>{post.wordCount && <><span aria-hidden="true">•</span><span>{post.wordCount.toLocaleString()} words</span></>}</div>
               <p className="blog-article-byline">Written by <a href="/about#author">Lim Min Tze</a>, Founder, Creative Director, Product Developer at DoTheThing. <a href="/editorial-standards">Editorial standards</a></p>
             </div>
-            <div className="blog-article-mascot" aria-hidden="true"><img src={articleMascot} alt="" /></div>
           </header>
 
           {post.featuredImage && <figure className="blog-article-feature"><img src={post.featuredImage} alt={post.featuredImageAlt || post.title} /></figure>}

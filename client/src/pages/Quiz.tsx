@@ -7,6 +7,7 @@ import WhyTakeQuiz from '@/components/quiz/WhyTakeQuiz';
 import FinalCTA from '@/components/quiz/FinalCTA';
 import QuizFlow from '@/components/quiz/QuizFlow';
 import QuizResults from '@/components/quiz/QuizResults';
+import { trackProductEvent } from '@/lib/analytics';
 import '../quiz-system.css';
 import '../quiz-result-reflections.css';
 import '../quiz-mascot-assets.css';
@@ -19,7 +20,7 @@ export default function Quiz() {
   const [step, setStep] = useState<QuizStep>('hero');
   const [result, setResult] = useState<QuizResult | null>(null);
   const handleStartQuiz = () => setStep('quiz');
-  const handleQuizComplete = (quizResult: QuizResult) => { setResult(quizResult); setStep('results'); };
+  const handleQuizComplete = (quizResult: QuizResult) => { trackProductEvent('quiz_completed'); setResult(quizResult); setStep('results'); };
   const handleRetakeQuiz = () => { setResult(null); setStep('quiz'); };
   const handleBackToHome = () => { setStep('hero'); setResult(null); };
 

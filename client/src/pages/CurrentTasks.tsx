@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import PinTabTutorial from "@/components/PinTabTutorial";
 import Footer from "@/components/Footer";
 import { assetUrl } from "@/lib/assetUrl";
+import { bucketCount, trackProductEvent } from "@/lib/analytics";
 import "../pixel-art-refined.css";
 import "../current-tasks-refined.css";
 
@@ -69,6 +70,14 @@ export default function CurrentTasks() {
 
   const toggleStepComplete = (stepId: string) => {
     playClickSound();
+    const stepIndex = steps.findIndex((step) => step.id === stepId);
+    const selectedStep = steps[stepIndex];
+    if (selectedStep && !selectedStep.completed) {
+      trackProductEvent("task_completed", {
+        task_position_bucket: bucketCount(stepIndex + 1),
+        session_task_count_bucket: bucketCount(steps.length),
+      });
+    }
     setSteps((previousSteps) => previousSteps.map((step) => {
       if (step.id !== stepId) return step;
       const isCompleting = !step.completed;
@@ -155,6 +164,14 @@ export default function CurrentTasks() {
   const remainingTotalSeconds = getRemainingTotalSeconds(steps);
   const completedCount = steps.filter((step) => step.completed).length;
   const allCompleted = steps.length > 0 && steps.every((step) => step.completed);
+  const handleTimerToggle = () => {
+    if (timerActive) {
+      stopTimer();
+      return;
+    }
+    startTimer(remainingTotalSeconds);
+    trackProductEvent("timer_started", { timer_source: "current_tasks_summary" });
+  };
 
   return (
     <div className="mobile-frame current-tasks-page">
@@ -183,7 +200,7 @@ export default function CurrentTasks() {
                 </div>
               </header>
 
-              <button className={`current-tasks-summary ${timerActive ? "is-active" : ""}`} onClick={timerActive ? stopTimer : () => startTimer(remainingTotalSeconds)} aria-pressed={timerActive}>
+              <button className={`current-tasks-summary ${timerActive ? "is-active" : ""}`} onClick={handleTimerToggle} aria-pressed={timerActive}>
                 <span className="current-tasks-summary-label">{timerActive ? "TIME REMAINING" : "TOTAL TIME"}</span>
                 <strong>{timerActive ? formatDisplayTime(timeRemaining) : formatDisplayTime(remainingTotalSeconds)}</strong>
                 <span className="current-tasks-summary-action">{timerActive ? "STOP COUNTDOWN" : "START COUNTDOWN"} <span aria-hidden="true">→</span></span>

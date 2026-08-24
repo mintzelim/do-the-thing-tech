@@ -23,7 +23,7 @@ export default function Privacy() {
           <h1 className="utility-title" style={{ marginBottom: "24px" }}>PRIVACY POLICY</h1>
 
           <div className="utility-legal-panel">
-            <h2 className="utility-date">Last Updated: April 2026</h2>
+            <h2 className="utility-date">Last Updated: August 2026</h2>
             
             <div className="utility-legal-copy">
               <p style={{ marginBottom: "16px" }}>
@@ -39,7 +39,7 @@ export default function Privacy() {
               <ul style={{ marginLeft: "20px", marginBottom: "16px" }}>
                 <li style={{ marginBottom: "8px" }}>Personal Data: Email address, name, usage data</li>
                 <li style={{ marginBottom: "8px" }}>Usage Data: Browser type, IP address, pages visited, time spent</li>
-                <li style={{ marginBottom: "8px" }}>Cookies: Session cookies for authentication</li>
+                <li style={{ marginBottom: "8px" }}>Cookies and similar technologies: cookies or device identifiers used to remember choices, measure site use, and support advertising where applicable</li>
                 <li style={{ marginBottom: "8px" }}>Task Data: Tasks you create are stored locally in your browser</li>
               </ul>
 
@@ -54,6 +54,14 @@ export default function Privacy() {
                 <li style={{ marginBottom: "8px" }}>To provide customer support</li>
                 <li style={{ marginBottom: "8px" }}>To gather analysis or valuable information to improve our Service</li>
               </ul>
+
+              <h3 className="mobile-heading-3" style={{ marginTop: "24px", marginBottom: "12px", fontFamily: 'VT323, monospace' }}>Google Measurement and Advertising</h3>
+              <p style={{ marginBottom: "16px" }}>
+                We use Google Tag Manager and Google Analytics to understand aggregate site use, such as pages viewed and meaningful product actions. We do not send your raw task text, task titles, quiz answers, or health-related inferences to these measurement tools. We may also use Google AdSense and related advertising technologies to display and measure advertising where available.
+              </p>
+              <p style={{ marginBottom: "16px" }}>
+                Google and its partners may use cookies or similar technologies for measurement, fraud prevention, frequency capping, and, where permitted and selected, advertising personalisation. Where a consent message is shown, you can use its controls to manage the available choices. You can also manage or delete cookies through your browser settings; doing so may affect some site features or advertising preferences.
+              </p>
 
               <h3 className="mobile-heading-3" style={{ marginTop: "24px", marginBottom: "12px", fontFamily: 'VT323, monospace' }}>Security of Data</h3>
               <p style={{ marginBottom: "16px" }}>
