@@ -59,3 +59,9 @@ The refreshed `https://dothething.tech/sitemap.xml` was submitted in the verifie
 AdSense still shows the site as **Needs attention** for **Low value content**, despite the valid public `ads.txt` file. The account’s site-detail view did not expose a standalone **Check for updates** action; it exposes only site ownership, the active policy violation, and a **Request review** control. No confirmation checkbox was selected and no AdSense content review was requested. The ads.txt status must therefore be allowed to refresh automatically or be revisited once the content-quality remediation is genuinely complete.
 
 GA4 now has `task_breakdown_completed` configured as a **key event**. It uses the direct, code-based event name implemented on the site, has no default monetary value, and counts once per event. The configuration is ready to receive the new privacy-safe events as visitors use the task-breakdown flow; the GA4 Events view will initially show no stream data until it receives its first production event.
+
+## Scheduled follow-up — 24 August 2026
+
+At the user’s request, one active, non-repeating **24-hour** follow-up is scheduled with the connected Google browser session. It will report only: receipt and key-event status for `task_breakdown_completed` in GA4; Search Console sitemap and indexing movement; and AdSense `ads.txt` plus the `Low value content` blocker. The scheduled work is explicitly prohibited from changing settings, resubmitting the sitemap, selecting a confirmation checkbox, completing account activation or payment steps, or requesting an AdSense review.
+
+For the full approval-only, source-backed set of additional risk-reduction actions, see [`adsense-readiness-next-steps.md`](./adsense-readiness-next-steps.md). It distinguishes controllable content, policy, UX, privacy, and account-readiness work from any guarantee of approval.

@@ -1075,3 +1075,4 @@
 - [x] Revise article 03 with a complete worked task-breakdown decision process and claim qualification
 - [x] Configure the user-requested one-off 24-hour GA4, Search Console, and AdSense status check without requesting review
 - [ ] Complete the scheduled 24-hour Google status check and record the observations without requesting review
+- [x] Assess complementary AdSense-readiness signals beyond Batch A and provide a source-backed, approval-only action checklist
