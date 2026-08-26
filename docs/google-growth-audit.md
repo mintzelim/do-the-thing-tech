@@ -77,3 +77,9 @@ The one-off schedule executed at `2026-08-25T07:57:40.374Z` and is now **paused*
 | AdSense | `dothething.tech` remains **Needs attention** with **Low value content**. The Sites list still shows **Ads.txt status: Not found**, last updated **19 July 2026, 08:42 GMT+8**. The dashboard also says payment information and site connection are still required before earning. | The `Low value content` blocker remains active, and the dashboard has not refreshed its stale `ads.txt` indicator despite the already verified public record. |
 
 The review gate remains closed. The citation and substantive-content work is complete and documented, but a new AdSense review must be requested **only after fresh, explicit user approval**. No approval decision is guaranteed.
+
+## AdSense review submission — 26 August 2026
+
+After the completed monitoring report and fresh explicit user approval, the `dothething.tech` site-detail flow was opened. The required confirmation, **“I confirm that I have fixed the issues,”** was selected and the **Request review** action was submitted. AdSense then changed the site-detail status to **Getting ready** and displayed **Review requested**. This records a submitted review, **not** an approval outcome.
+
+No payment information, account-activation workflow, `ads.txt` recheck, sitemap operation, or any other AdSense account control was completed as part of the submission. The account continues to display its separate payment/site-connection reminder. The outcome remains solely Google’s decision and should be monitored in AdSense rather than inferred from this status transition.

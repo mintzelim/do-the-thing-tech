@@ -17,3 +17,7 @@ The verified `sc-domain:dothething.tech` property continues to report **19 index
 ## AdSense observation
 
 The AdSense **Sites** list still shows `dothething.tech` as **Needs attention** with status detail **Low value content**. It also displays **Ads.txt status: Not found**, last updated **19 July 2026, 08:42 GMT+8**. The live public `ads.txt` endpoint was not changed or rechecked through AdSense, and no confirmation checkbox, activation/payment action, review request, or other account control was selected. The home dashboard separately still says payment information and site connection are required before earning.
+
+## User-approved review submission
+
+After fresh explicit user approval, the site-detail confirmation was selected and **Request review** was submitted. The detail view then showed **Getting ready** and **Review requested**. No payment, activation, `ads.txt` recheck, or other account action was performed.

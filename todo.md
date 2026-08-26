@@ -1067,7 +1067,7 @@
 - [x] Audit existing blog articles for AdSense-readiness gaps in depth, originality, sourcing, and reader value; prioritize the highest-impact improvements
 - [x] Apply the user-approved first batch of substantive, source-conscious article improvements before considering an AdSense review
 - [x] Arrange the user-requested one-off 24-hour follow-up check of GA4 key-event receipt, Search Console status, and AdSense ads.txt status
-- [ ] Request a new AdSense review only after the audit fixes are complete and the user gives fresh approval
+- [x] Request a new AdSense review only after the audit fixes are complete and the user gives fresh approval
 - [x] Revise article 05 with a transparent decision framework, a trial worksheet, current provider-fact verification, and editorial boundaries
 - [x] Revise article 01 with source-linked claim language and practical adult-life friction maps
 - [x] Revise article 04 with a non-diagnostic terminology boundary and an evidence-aware decision aid
