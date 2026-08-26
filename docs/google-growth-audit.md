@@ -62,6 +62,18 @@ GA4 now has `task_breakdown_completed` configured as a **key event**. It uses th
 
 ## Scheduled follow-up — 24 August 2026
 
-At the user’s request, one active, non-repeating **24-hour** follow-up is scheduled with the connected Google browser session. It will report only: receipt and key-event status for `task_breakdown_completed` in GA4; Search Console sitemap and indexing movement; and AdSense `ads.txt` plus the `Low value content` blocker. The scheduled work is explicitly prohibited from changing settings, resubmitting the sitemap, selecting a confirmation checkbox, completing account activation or payment steps, or requesting an AdSense review.
+At the user’s request, one non-repeating **24-hour** follow-up was scheduled with the connected Google browser session. It was explicitly limited to receipt and key-event status for `task_breakdown_completed` in GA4; Search Console sitemap and indexing movement; and AdSense `ads.txt` plus the `Low value content` blocker. The work was prohibited from changing settings, resubmitting the sitemap, selecting a confirmation checkbox, completing account activation or payment steps, or requesting an AdSense review.
 
 For the full approval-only, source-backed set of additional risk-reduction actions, see [`adsense-readiness-next-steps.md`](./adsense-readiness-next-steps.md). It distinguishes controllable content, policy, UX, privacy, and account-readiness work from any guarantee of approval.
+
+## Completed read-only monitoring — 25–26 August 2026
+
+The one-off schedule executed at `2026-08-25T07:57:40.374Z` and is now **paused**. The signed-in browser observations below were completed without changing a Google or AdSense setting, submitting a sitemap, selecting a confirmation checkbox, completing payment/activation, checking `ads.txt` within AdSense, or requesting an AdSense review.
+
+| Service | Read-only observation | Change from recorded baseline |
+| --- | --- | --- |
+| GA4 (`G-7GSBSS1DMV`) | `task_breakdown_completed` remains listed in the **Key events** tab. Its row says **“No stream data detected”** in the last 28 days. The view does not show a received production-event count. | The key-event configuration remains intact; there is no account-screen evidence yet that a production task-breakdown event has been received. |
+| Search Console | The submitted `https://dothething.tech/sitemap.xml` has **Status: Success**, was last read **25 August 2026**, and lists **42 discovered pages**. The property reports **19 indexed** and **24 not indexed** pages. | Sitemap status and discovered pages remain healthy at 42. Indexing shows **no delta** from the 19 indexed / 24 not-indexed baseline. |
+| AdSense | `dothething.tech` remains **Needs attention** with **Low value content**. The Sites list still shows **Ads.txt status: Not found**, last updated **19 July 2026, 08:42 GMT+8**. The dashboard also says payment information and site connection are still required before earning. | The `Low value content` blocker remains active, and the dashboard has not refreshed its stale `ads.txt` indicator despite the already verified public record. |
+
+The review gate remains closed. The citation and substantive-content work is complete and documented, but a new AdSense review must be requested **only after fresh, explicit user approval**. No approval decision is guaranteed.
