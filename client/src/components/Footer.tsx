@@ -63,8 +63,8 @@ export default function Footer() {
       <div className="site-footer__base">
         <p>© {new Date().getFullYear()} DoTheThing. Task management for ADHD brains. · {SITE_IDENTITY.productReviewedLabel}</p>
         <div className="site-footer__social" aria-label="Social links">
-          <a href="https://www.instagram.com/dothething.tech?igsh=MWxhM2xqMzM0ZHE1OQ==" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-          <a href="https://www.tiktok.com/@dothething.tech?_r=1&_t=ZS-967yRO88m9c" target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a>
+          <a href={SITE_IDENTITY.officialProfiles.instagram} target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+          <a href={SITE_IDENTITY.officialProfiles.tiktok} target="_blank" rel="noopener noreferrer">TikTok <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </footer>

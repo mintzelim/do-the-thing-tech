@@ -38,14 +38,14 @@ describe("public SSR and metadata rendering", () => {
     expect(entry).toContain('applicationCategory: "ProductivityApplication"');
     expect(entry).toContain('operatingSystem: "Web"');
     expect(entry).toContain('offers: { "@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock" }');
-    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema("/about"');
+    expect(entry).toContain('jsonLd: [brand, organization, website, software, pageSchema("/about"');
   });
 
   it("emits the same specific SoftwareApplication entity on blog and supporting public routes", () => {
-    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema("/blog"');
-    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema(url, post.title, post.excerpt), blogSchema(post), breadcrumbSchema(post)]');
-    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema("/editorial-standards"');
-    expect(entry).toContain('jsonLd: [organization, website, software, pageSchema(path, page.title, page.description)]');
+    expect(entry).toContain('jsonLd: [brand, organization, website, software, pageSchema("/blog"');
+    expect(entry).toContain('jsonLd: [brand, organization, website, software, pageSchema(url, post.title, post.excerpt), blogSchema(post), breadcrumbSchema(post)]');
+    expect(entry).toContain('jsonLd: [brand, organization, website, software, pageSchema("/editorial-standards"');
+    expect(entry).toContain('jsonLd: [brand, organization, website, software, pageSchema(path, page.title, page.description)]');
   });
 
   it("uses valid application metadata and public identity details without fabricating ratings", () => {

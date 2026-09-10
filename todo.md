@@ -1084,3 +1084,14 @@
 - [x] Add factual, reusable authorship, update, editorial-standards, corrections, and comparison-disclosure signals to article pages without fabricating credentials or reviews
 - [x] Verify every blog source and inline citation destination for reachability, redirects, source identity, and claim support; correct or remove unsupported references
 - [x] Assess and prioritize additional legitimate, policy-safe AdSense-readiness levers without artificial traffic, engagement, reviews, or premature review submission
+
+
+# GEO/AEO remediation request — 2026-09-07
+
+- [x] Verify production JSON-LD across homepage, About, FAQ, blog index, and representative articles against the supplied audit findings
+- [x] Tighten visible product/owner/entity boundaries on approved core pages without dense repetitive copy
+- [x] Preserve accurate SoftwareApplication and Organization schema; do not add mismatched commerce types or fabricated ratings/reviews
+- [x] Add regression coverage for canonical entity IDs, visible identity wording, and route-level structured-data consistency
+- [x] Run full tests, production build, metadata extraction, and responsive visual verification before checkpoint
+- [x] Save a validated checkpoint after all approved fixes are complete
+- [x] Preserve existing post-hero copy unless separately approved; do not add hidden claims or audit-only markup

@@ -17,4 +17,10 @@ export const SITE_IDENTITY = {
   softwareVersion: "1.0.0",
   productReviewedLabel: "Product information reviewed 18 August 2026.",
   productReviewedDate: "2026-08-18",
+  officialProfiles: {
+    instagram: "https://www.instagram.com/dothething.tech",
+    tiktok: "https://www.tiktok.com/@dothething.tech",
+    founderLinkedIn: "https://www.linkedin.com/in/mintze/",
+    founderGitHub: "https://github.com/mintzelim",
+  },
 } as const;

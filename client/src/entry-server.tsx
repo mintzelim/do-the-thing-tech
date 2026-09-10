@@ -27,6 +27,15 @@ export type HeadMeta = {
 
 export type RenderResult = { html: string; head: HeadMeta; blogPosts: BlogPostRecord[] | null };
 
+const brand = {
+  "@type": "Brand",
+  "@id": `${ORIGIN}/#brand`,
+  name: SITE_IDENTITY.name,
+  url: ORIGIN,
+  description: SITE_IDENTITY.businessDescription,
+  logo: `${ORIGIN}/favicon.ico`,
+};
+
 const organization = {
   "@type": "Organization",
   "@id": `${ORIGIN}/#organization`,
@@ -40,7 +49,8 @@ const organization = {
   address: { "@type": "PostalAddress", ...SITE_IDENTITY.address },
   founder: { "@type": "Person", name: "Lim Min Tze", jobTitle: "Founder, Creative Director, Product Developer", url: "https://www.linkedin.com/in/mintze/" },
   contactPoint: { "@type": "ContactPoint", contactType: "customer support", email: SITE_IDENTITY.supportEmail, telephone: SITE_IDENTITY.telephone, url: `${ORIGIN}/contact` },
-  sameAs: ["https://www.instagram.com/dothething.tech", "https://www.tiktok.com/@dothething.tech"],
+  brand: { "@id": `${ORIGIN}/#brand` },
+  sameAs: [SITE_IDENTITY.officialProfiles.instagram, SITE_IDENTITY.officialProfiles.tiktok],
 };
 
 const software = {
@@ -56,6 +66,7 @@ const software = {
   mainEntityOfPage: { "@id": `${ORIGIN}/#webpage` },
   offers: { "@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   author: { "@id": `${ORIGIN}/#organization` },
+  brand: { "@id": `${ORIGIN}/#brand` },
   featureList: ["AI task breakdown", "focus-level adjustment", "breakdown-size controls", "time estimates", "visible countdown timer", "no login required"],
 };
 
@@ -110,20 +121,20 @@ function faqPageSchema() {
 }
 
 function metadataFor(path: string, posts: BlogPostRecord[]): HeadMeta {
-  if (path === "/") return { title: "DoTheThing | Free ADHD Task Breakdown Tool", description: DEFAULT_DESCRIPTION, canonicalPath: "/", ogType: "website", jsonLd: [organization, website, software, pageSchema("/", "DoTheThing | Free ADHD Task Breakdown Tool", DEFAULT_DESCRIPTION)] };
-  if (path === "/about") return { title: "About DoTheThing | Task Breakdown for ADHD", description: "Learn who built DoTheThing, what the tool is designed to help with, and the boundaries of its practical ADHD-friendly task workflow.", canonicalPath: "/about", ogType: "website", jsonLd: [organization, website, software, pageSchema("/about", "About DoTheThing", "Learn who built DoTheThing and how its practical task workflow supports task initiation.")] };
-  if (path === "/how-it-works") return { title: "How DoTheThing Works | ADHD Task Initiation Support", description: "See how DoTheThing turns an overwhelming task or brain dump into small next steps, focus-aware estimates, and a visible task timer.", canonicalPath: "/how-it-works", ogType: "website", jsonLd: [organization, website, software, pageSchema("/how-it-works", "How DoTheThing Works", "A practical task-initiation workflow for turning overwhelming tasks into small next steps.")] };
-  if (path === "/compare/goblin-tools") return { title: "DoTheThing vs. Goblin.tools Magic ToDo | Task Workflow Comparison", description: "A fair comparison of DoTheThing and Goblin.tools Magic ToDo for task breakdown, execution flow, interface choices, and practical fit.", canonicalPath: "/compare/goblin-tools", ogType: "website", jsonLd: [organization, website, software, pageSchema("/compare/goblin-tools", "DoTheThing vs. Goblin.tools Magic ToDo", "A factual comparison of two task-breakdown workflows.")] };
-  if (path === "/editorial-standards") return { title: "Editorial Standards | DoTheThing", description: "How DoTheThing creates, reviews, updates, and corrects educational content about ADHD task management and executive function.", canonicalPath: "/editorial-standards", ogType: "website", jsonLd: [organization, website, software, pageSchema("/editorial-standards", "Editorial Standards", "How DoTheThing creates, reviews, and corrects its educational content.")] };
-  if (path === "/media") return { title: "Media and Independent Review Information | DoTheThing", description: "Factual information, product screenshots, and contact details for independent coverage or review of DoTheThing.", canonicalPath: "/media", ogType: "website", jsonLd: [organization, website, software, pageSchema("/media", "Media and Independent Review Information", "Factual product information for independent DoTheThing coverage.")] };
-  if (path === "/faq") return { title: FAQ_PAGE_META.title, description: FAQ_PAGE_META.description, canonicalPath: "/faq", ogType: "website", jsonLd: [organization, website, software, pageSchema("/faq", "DoTheThing FAQ", FAQ_PAGE_META.description), faqPageSchema()] };
-  if (path === "/blog") return { title: "ADHD Task Management Guides | DoTheThing Blog", description: "Practical, source-backed guides about ADHD, executive function, task management, and task initiation.", canonicalPath: "/blog", ogType: "website", jsonLd: [organization, website, software, pageSchema("/blog", "ADHD Task Management Guides", "Practical guides about ADHD, executive function, and task management.")] };
+  if (path === "/") return { title: "DoTheThing | Free ADHD Task Breakdown Tool", description: DEFAULT_DESCRIPTION, canonicalPath: "/", ogType: "website", jsonLd: [brand, organization, website, software, pageSchema("/", "DoTheThing | Free ADHD Task Breakdown Tool", DEFAULT_DESCRIPTION)] };
+  if (path === "/about") return { title: "About DoTheThing | Task Breakdown for ADHD", description: "Learn who built DoTheThing, what the tool is designed to help with, and the boundaries of its practical ADHD-friendly task workflow.", canonicalPath: "/about", ogType: "website", jsonLd: [brand, organization, website, software, pageSchema("/about", "About DoTheThing", "Learn who built DoTheThing and how its practical task workflow supports task initiation.")] };
+  if (path === "/how-it-works") return { title: "How DoTheThing Works | ADHD Task Initiation Support", description: "See how DoTheThing turns an overwhelming task or brain dump into small next steps, focus-aware estimates, and a visible task timer.", canonicalPath: "/how-it-works", ogType: "website", jsonLd: [brand, organization, website, software, pageSchema("/how-it-works", "How DoTheThing Works", "A practical task-initiation workflow for turning overwhelming tasks into small next steps.")] };
+  if (path === "/compare/goblin-tools") return { title: "DoTheThing vs. Goblin.tools Magic ToDo | Task Workflow Comparison", description: "A fair comparison of DoTheThing and Goblin.tools Magic ToDo for task breakdown, execution flow, interface choices, and practical fit.", canonicalPath: "/compare/goblin-tools", ogType: "website", jsonLd: [brand, organization, website, software, pageSchema("/compare/goblin-tools", "DoTheThing vs. Goblin.tools Magic ToDo", "A factual comparison of two task-breakdown workflows.")] };
+  if (path === "/editorial-standards") return { title: "Editorial Standards | DoTheThing", description: "How DoTheThing creates, reviews, updates, and corrects educational content about ADHD task management and executive function.", canonicalPath: "/editorial-standards", ogType: "website", jsonLd: [brand, organization, website, software, pageSchema("/editorial-standards", "Editorial Standards", "How DoTheThing creates, reviews, and corrects its educational content.")] };
+  if (path === "/media") return { title: "Media and Independent Review Information | DoTheThing", description: "Factual information, product screenshots, and contact details for independent coverage or review of DoTheThing.", canonicalPath: "/media", ogType: "website", jsonLd: [brand, organization, website, software, pageSchema("/media", "Media and Independent Review Information", "Factual product information for independent DoTheThing coverage.")] };
+  if (path === "/faq") return { title: FAQ_PAGE_META.title, description: FAQ_PAGE_META.description, canonicalPath: "/faq", ogType: "website", jsonLd: [brand, organization, website, software, pageSchema("/faq", "DoTheThing FAQ", FAQ_PAGE_META.description), faqPageSchema()] };
+  if (path === "/blog") return { title: "ADHD Task Management Guides | DoTheThing Blog", description: "Practical, source-backed guides about ADHD, executive function, task management, and task initiation.", canonicalPath: "/blog", ogType: "website", jsonLd: [brand, organization, website, software, pageSchema("/blog", "ADHD Task Management Guides", "Practical guides about ADHD, executive function, and task management.")] };
   if (path.startsWith("/blog/")) {
     const slug = path.slice("/blog/".length);
     const post = posts.find(item => item.slug === slug);
     if (!post) return { title: "Page not found | DoTheThing", description: DEFAULT_DESCRIPTION, canonicalPath: path, ogType: "website", noindex: true, notFound: true, jsonLd: [organization, website] };
     const url = `/blog/${post.slug}`;
-    return { title: `${post.title} | DoTheThing Blog`, description: post.excerpt, canonicalPath: url, ogType: "article", ogImage: absoluteUrl(post.featuredImage), jsonLd: [organization, website, software, pageSchema(url, post.title, post.excerpt), blogSchema(post), breadcrumbSchema(post)] };
+    return { title: `${post.title} | DoTheThing Blog`, description: post.excerpt, canonicalPath: url, ogType: "article", ogImage: absoluteUrl(post.featuredImage), jsonLd: [brand, organization, website, software, pageSchema(url, post.title, post.excerpt), blogSchema(post), breadcrumbSchema(post)] };
   }
   const staticPages: Record<string, { title: string; description: string }> = {
     "/contact": { title: "Contact DoTheThing", description: "Contact the DoTheThing team with product questions, feedback, or partnership enquiries." },
@@ -132,7 +143,7 @@ function metadataFor(path: string, posts: BlogPostRecord[]): HeadMeta {
     "/quiz": { title: "ADHD Productivity Quiz | DoTheThing", description: "Explore an ADHD-friendly productivity learning path." },
   };
   const page = staticPages[path];
-  if (page) return { title: page.title, description: page.description, canonicalPath: path, ogType: "website", jsonLd: [organization, website, software, pageSchema(path, page.title, page.description)] };
+  if (page) return { title: page.title, description: page.description, canonicalPath: path, ogType: "website", jsonLd: [brand, organization, website, software, pageSchema(path, page.title, page.description)] };
   if (path === "/current-tasks") return { title: "Current Tasks | DoTheThing", description: "Continue a local DoTheThing task session.", canonicalPath: path, ogType: "website", noindex: true, jsonLd: [organization, website] };
   return { title: "Page not found | DoTheThing", description: DEFAULT_DESCRIPTION, canonicalPath: path, ogType: "website", noindex: true, notFound: true, jsonLd: [organization, website] };
 }
